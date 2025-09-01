@@ -1,0 +1,26 @@
+var dir_b94ac65fd6b6212c4d2022b0f23d243a =
+[
+    [ "absorption.hpp", "absorption_8hpp.html", "absorption_8hpp" ],
+    [ "arithmetic.hpp", "arithmetic_8hpp.html", "arithmetic_8hpp" ],
+    [ "backend.hpp", "backend_8hpp.html", "backend_8hpp" ],
+    [ "commandline_parser.hpp", "commandline__parser_8hpp.html", "commandline__parser_8hpp" ],
+    [ "cpu_context.hpp", "cpu__context_8hpp.html", "cpu__context_8hpp" ],
+    [ "cuda_context.hpp", "cuda__context_8hpp.html", "cuda__context_8hpp" ],
+    [ "dispersion.hpp", "dispersion_8hpp.html", "dispersion_8hpp" ],
+    [ "equilibrium.hpp", "equilibrium_8hpp.html", "equilibrium_8hpp" ],
+    [ "jit.hpp", "jit_8hpp.html", "jit_8hpp" ],
+    [ "math.hpp", "math_8hpp.html", "math_8hpp" ],
+    [ "metal_context.hpp", "metal__context_8hpp.html", "metal__context_8hpp" ],
+    [ "newton.hpp", "newton_8hpp.html", "newton_8hpp" ],
+    [ "node.hpp", "node_8hpp.html", "node_8hpp" ],
+    [ "output.hpp", "output_8hpp.html", "output_8hpp" ],
+    [ "piecewise.hpp", "piecewise_8hpp.html", "piecewise_8hpp" ],
+    [ "random.hpp", "random_8hpp.html", "random_8hpp" ],
+    [ "register.hpp", "register_8hpp.html", "register_8hpp" ],
+    [ "solver.hpp", "solver_8hpp.html", "solver_8hpp" ],
+    [ "special_functions.hpp", "special__functions_8hpp.html", "special__functions_8hpp" ],
+    [ "timing.hpp", "timing_8hpp.html", "timing_8hpp" ],
+    [ "trigonometry.hpp", "trigonometry_8hpp.html", "trigonometry_8hpp" ],
+    [ "vector.hpp", "vector_8hpp.html", "vector_8hpp" ],
+    [ "workflow.hpp", "workflow_8hpp.html", "workflow_8hpp" ]
+];

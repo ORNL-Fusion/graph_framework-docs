@@ -1,0 +1,25 @@
+var register_8hpp =
+[
+    [ "jit::float_compare< T >", "classjit_1_1float__compare.html", "classjit_1_1float__compare" ],
+    [ "jit::complex_scalar", "conceptjit_1_1complex__scalar.html", null ],
+    [ "jit::float_scalar", "conceptjit_1_1float__scalar.html", null ],
+    [ "jit::scalar", "conceptjit_1_1scalar.html", null ],
+    [ "jit::float_base", "conceptjit_1_1float__base.html", null ],
+    [ "jit::double_base", "conceptjit_1_1double__base.html", null ],
+    [ "register_map", "register_8hpp.html#a9822ffd072bb1abcde9176028aa24a5e", null ],
+    [ "register_usage", "register_8hpp.html#a8f16308f3c321ac415daf451d0157a91", null ],
+    [ "texture1d_list", "register_8hpp.html#a040839202e492715169f0e33e63c1e2a", null ],
+    [ "texture2d_list", "register_8hpp.html#a7e7f6b3f955215cb43f9fde4d066ea2a", null ],
+    [ "visiter_map", "register_8hpp.html#aed5672337b45a8b11f1351456d2284b8", null ],
+    [ "add_type", "register_8hpp.html#a803c3e576f1d1ab5eef836abe7b76387", null ],
+    [ "format_to_string", "register_8hpp.html#a67f5624eaf42230fcddd7c6b5321900a", null ],
+    [ "get_type_string", "register_8hpp.html#ad6762d8f1a536f6a96b23994c3d73af3", null ],
+    [ "max_base", "register_8hpp.html#a45503952693698f7bb0af2633d4c07c9", null ],
+    [ "max_digits10", "register_8hpp.html#af3afe279550a377fcf61a53c8a7b0a6f", null ],
+    [ "smallest_int_type", "register_8hpp.html#a0007c62777fd314c7fc55e72c5c02483", null ],
+    [ "to_string", "register_8hpp.html#aff060cfc1e5b5a499390c636dc80e147", null ],
+    [ "type_to_string", "register_8hpp.html#a3d69cd6dbc877e0e4a1896300ba6576d", null ],
+    [ "use_cuda", "register_8hpp.html#ae80a1549652734bee27e671735538106", null ],
+    [ "use_gpu", "register_8hpp.html#a09ca8a90b892eacd9e1fdb8489e4eca2", null ],
+    [ "use_metal", "register_8hpp.html#a31680d3b4007bcf00ea3dec6b13a5bf9", null ]
+];

@@ -1,0 +1,25 @@
+var classgraph_1_1variable__node =
+[
+    [ "variable_node", "classgraph_1_1variable__node.html#ad2c46ea8b9a9dd459cc8dd77713c24f1", null ],
+    [ "variable_node", "classgraph_1_1variable__node.html#a21ed28953bf0358c4296bbba086a09d1", null ],
+    [ "variable_node", "classgraph_1_1variable__node.html#ae569afdbf9d51fd63c6acdcf7c678fd6", null ],
+    [ "variable_node", "classgraph_1_1variable__node.html#a083f81b2bb28bfa33ec133846775ac40", null ],
+    [ "compile", "classgraph_1_1variable__node.html#a6cc97fd212ea8cfbdf09f06d50560a46", null ],
+    [ "compile_preamble", "classgraph_1_1variable__node.html#a8870bffb7e4bab94ea55f57cd4c8de03", null ],
+    [ "data", "classgraph_1_1variable__node.html#aac74e0330929a0769dc9012b8202bd9a", null ],
+    [ "df", "classgraph_1_1variable__node.html#a1d490062a0e4d901816a89f47b9138e2", null ],
+    [ "evaluate", "classgraph_1_1variable__node.html#a8cf55878fa99f2055483dbd58a8a38cc", null ],
+    [ "get_power_base", "classgraph_1_1variable__node.html#a078836f124941302e892eee85f2903ae", null ],
+    [ "get_power_exponent", "classgraph_1_1variable__node.html#af50da5d118f3a2381888d673a30354a6", null ],
+    [ "get_symbol", "classgraph_1_1variable__node.html#af374d9df4e79dd7a08760f1d3cef34f7", null ],
+    [ "is_all_variables", "classgraph_1_1variable__node.html#a16843df5330020fcefdde6668808eac7", null ],
+    [ "is_power_like", "classgraph_1_1variable__node.html#ab04c05928d86fccac614bf5a019ae5d5", null ],
+    [ "reduce", "classgraph_1_1variable__node.html#a47b5dfbc948fa9a5b34cba85b3a02630", null ],
+    [ "set", "classgraph_1_1variable__node.html#ab2e631e40fa37919c3d88cb4c7738191", null ],
+    [ "set", "classgraph_1_1variable__node.html#ac3d0e0e77c983b6be2ffcb1c662051cd", null ],
+    [ "set", "classgraph_1_1variable__node.html#ae152f5b163fb1d0d370f4ef3904f0077", null ],
+    [ "set", "classgraph_1_1variable__node.html#aadcda07b5599c186d4e648a69fad3618", null ],
+    [ "size", "classgraph_1_1variable__node.html#a537b8880a2cb0c53b0f89ad3175607f7", null ],
+    [ "to_latex", "classgraph_1_1variable__node.html#a410a1f08b13f1ba3f207f3da70b296d5", null ],
+    [ "to_vizgraph", "classgraph_1_1variable__node.html#a77dff063669883fb188664ef1c814221", null ]
+];
