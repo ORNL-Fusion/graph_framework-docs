@@ -8,7 +8,7 @@ var searchData=
   ['basic_20expressions_5',['Basic Expressions',['../tutorial.html#tutorial_expression',1,'']]],
   ['basic_20nodes_6',['Basic Nodes',['../tutorial.html#tutorial_basic',1,'']]],
   ['bicubic_20splines_7',['Bicubic Splines',['../equilibrum_models.html#equilibrum_splines_2D',1,'']]],
-  ['bin_8',['bin',['..//Users/m4c/Projects/graph_framework/utilities/fix_NaN.py#autotoc_md8',1,'* &amp;ndash;max_z     Maximum vertical bin.'],['..//Users/m4c/Projects/graph_framework/utilities/bin.py#autotoc_md5',1,'* &amp;ndash;max_z     Maximum z bin.']]],
+  ['bin_8',['bin',['..//Users/m4c/Projects/graph_framework/utilities/fix_NaN.py#autotoc_md9',1,'* &amp;ndash;max_z     Maximum vertical bin.'],['..//Users/m4c/Projects/graph_framework/utilities/bin.py#autotoc_md6',1,'* &amp;ndash;max_z     Maximum z bin.']]],
   ['bin_2epy_9',['bin.py',['../bin_8py.html',1,'']]],
   ['bin_5fpower_10',['bin_power',['../xrays_8cpp.html#a350f533f51a508892dac45152bbee054',1,'xrays.cpp']]],
   ['binding_20interface_11',['Binding Interface',['../graph_c_binding.html#graph_c_binding_interface',1,'C Binding Interface'],['../graph_fortran_binding.html#graph_fortran_binding_interface',1,'Fortran Binding Interface']]],

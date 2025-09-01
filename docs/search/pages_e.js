@@ -1,5 +1,4 @@
 var searchData=
 [
-  ['xrays_20command_20line_20arguments_0',['xrays Command Line Arguments',['../xrays_commandline.html',1,'']]],
-  ['xrays_20output_20file_1',['xrays Output File',['../xrays_output.html',1,'']]]
+  ['tutorial_0',['Tutorial',['../new_operations_tutorial.html',1,'Adding New Operations Tutorial'],['../tutorial.html',1,'Tutorial']]]
 ];

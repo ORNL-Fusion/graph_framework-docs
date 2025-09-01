@@ -1,11 +1,11 @@
 var searchData=
 [
-  ['nan_20values_0',['Post processes result files to remove NaN values.',['../fix___na_n_8py.html#autotoc_md6',1,'']]],
-  ['ndash_20compiler_20compiler_20command_1',['* &amp;ndash;compiler Compiler command.',['..//Users/m4c/Projects/graph_framework/utilities/get_includes.py#autotoc_md11',1,'']]],
-  ['ndash_20max_5fz_20maximum_20vertical_20bin_2',['* &amp;ndash;max_z     Maximum vertical bin.',['..//Users/m4c/Projects/graph_framework/utilities/fix_NaN.py#autotoc_md8',1,'']]],
-  ['ndash_20max_5fz_20maximum_20z_20bin_3',['* &amp;ndash;max_z     Maximum z bin.',['..//Users/m4c/Projects/graph_framework/utilities/bin.py#autotoc_md5',1,'']]],
+  ['nan_20values_0',['Post processes result files to remove NaN values.',['../fix___na_n_8py.html#autotoc_md7',1,'']]],
+  ['ndash_20compiler_20compiler_20command_1',['* &amp;ndash;compiler Compiler command.',['..//Users/m4c/Projects/graph_framework/utilities/get_includes.py#autotoc_md12',1,'']]],
+  ['ndash_20max_5fz_20maximum_20vertical_20bin_2',['* &amp;ndash;max_z     Maximum vertical bin.',['..//Users/m4c/Projects/graph_framework/utilities/fix_NaN.py#autotoc_md9',1,'']]],
+  ['ndash_20max_5fz_20maximum_20z_20bin_3',['* &amp;ndash;max_z     Maximum z bin.',['..//Users/m4c/Projects/graph_framework/utilities/bin.py#autotoc_md6',1,'']]],
   ['ne_5fgrid_4',['ne_grid',['../classgold__data.html#a0c1a076375dfb2121079fa0f0881bee5',1,'gold_data']]],
-  ['needed_20include_20flags_20from_20the_20system_20compiler_5',['Get the needed include flags from the system compiler.',['../get__includes_8py.html#autotoc_md9',1,'']]],
+  ['needed_20include_20flags_20from_20the_20system_20compiler_5',['Get the needed include flags from the system compiler.',['../get__includes_8py.html#autotoc_md10',1,'']]],
   ['new_20absorption_20models_6',['Developing new absorption models',['../absorption_model.html#absorption_model_devel',1,'']]],
   ['new_20dispersion_20functions_7',['Developing new dispersion functions',['../dispersion_function.html#dispersion_function_devel',1,'']]],
   ['new_20equilibrium_20models_8',['Developing new equilibrium models',['../equilibrum_models.html#equilibrum_devel',1,'']]],

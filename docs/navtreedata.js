@@ -179,9 +179,10 @@ var NAVTREE =
       ] ],
       [ "Developing new solvers", "solvers.html#solvers_devel", null ]
     ] ],
-    [ "graph_framework", "md__r_e_a_d_m_e.html", [
-      [ "Dependencies", "md__r_e_a_d_m_e.html#autotoc_md1", null ],
-      [ "Compiling", "md__r_e_a_d_m_e.html#autotoc_md2", null ]
+    [ "Quick Start Guide", "md__r_e_a_d_m_e.html", [
+      [ "Documentation", "md__r_e_a_d_m_e.html#autotoc_md1", null ],
+      [ "Obtaining the Code", "md__r_e_a_d_m_e.html#autotoc_md2", null ],
+      [ "Compiling the Code", "md__r_e_a_d_m_e.html#autotoc_md3", null ]
     ] ],
     [ "Namespaces", "namespaces.html", [
       [ "Namespace List", "namespaces.html", "namespaces_dup" ],
@@ -228,8 +229,8 @@ var NAVTREEINDEX =
 "classsolver_1_1solver__interface.html#a87d0f0b95be0f073599cd0c6ea0f344c",
 "functions_f.html",
 "interfacegraph__fortran_1_1graph__float__context.html#a5c023607f23418e56b11abd167b5e89a",
-"namespacespecial.html#aae124f9917a45289947d51d884351efe",
-"vector_8hpp.html#abd4da768284aa2a7f275b66a174fa553"
+"namespacespecial.html#a8e79c36d1f8048f7c492e72ff6c0fd93",
+"vector_8hpp.html#aaf10e93720233046bb17a3738fca77ac"
 ];
 
 var SYNCONMSG = 'click to disable panel synchronisation';

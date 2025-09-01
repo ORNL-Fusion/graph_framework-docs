@@ -1,6 +1,6 @@
 var searchData=
 [
-  ['values_0',['Post processes result files to remove NaN values.',['../fix___na_n_8py.html#autotoc_md6',1,'']]],
+  ['values_0',['Post processes result files to remove NaN values.',['../fix___na_n_8py.html#autotoc_md7',1,'']]],
   ['variable_1',['variable',['../structgraph__fortran_1_1graph__context.html#a1c4cd7277f233e2e61e29c3684725410',1,'graph_fortran::graph_context::variable()'],['../namespacegraph.html#ab8673e7bc26ebc9c1742f99c9f448ad0',1,'graph::variable(const size_t s, const std::string &amp;symbol)'],['../namespacegraph.html#a82d369bafdff1804597e2b5057527d54',1,'graph::variable(const size_t s, const T d, const std::string &amp;symbol)'],['../namespacegraph.html#afa26a95a45c468b90f346a82c873ae00',1,'graph::variable(const std::vector&lt; T &gt; &amp;d, const std::string &amp;symbol)'],['../namespacegraph.html#a7911ec5906a3a8b6bd395cbbeeff35d8',1,'graph::variable(const backend::buffer&lt; T &gt; &amp;d, const std::string &amp;symbol)']]],
   ['variable_5fcast_2',['variable_cast',['../namespacegraph.html#a9321a15c96554d065da2ffe49e969ff4',1,'graph']]],
   ['variable_5fnode_3',['variable_node',['../classgraph_1_1variable__node.html',1,'graph::variable_node&lt; T, SAFE_MATH &gt;'],['../classgraph_1_1variable__node.html#ad2c46ea8b9a9dd459cc8dd77713c24f1',1,'graph::variable_node::variable_node(const size_t s, const std::string &amp;symbol)'],['../classgraph_1_1variable__node.html#a21ed28953bf0358c4296bbba086a09d1',1,'graph::variable_node::variable_node(const size_t s, const T d, const std::string &amp;symbol)'],['../classgraph_1_1variable__node.html#ae569afdbf9d51fd63c6acdcf7c678fd6',1,'graph::variable_node::variable_node(const std::vector&lt; T &gt; &amp;d, const std::string &amp;symbol)'],['../classgraph_1_1variable__node.html#a083f81b2bb28bfa33ec133846775ac40',1,'graph::variable_node::variable_node(const backend::buffer&lt; T &gt; &amp;d, const std::string &amp;symbol)']]],
@@ -8,7 +8,7 @@ var searchData=
   ['vector_2ehpp_5',['vector.hpp',['../vector_8hpp.html',1,'']]],
   ['vector_5fquantity_6',['vector_quantity',['../classgraph_1_1vector__quantity.html',1,'graph::vector_quantity&lt; T, SAFE_MATH &gt;'],['../classgraph_1_1vector__quantity.html#adffe90e88f6047e7388a42bb828bbf53',1,'graph::vector_quantity::vector_quantity()']]],
   ['vector_5ftest_2ecpp_7',['vector_test.cpp',['../vector__test_8cpp.html',1,'']]],
-  ['vertical_20bin_8',['* &amp;ndash;max_z     Maximum vertical bin.',['..//Users/m4c/Projects/graph_framework/utilities/fix_NaN.py#autotoc_md8',1,'']]],
+  ['vertical_20bin_8',['* &amp;ndash;max_z     Maximum vertical bin.',['..//Users/m4c/Projects/graph_framework/utilities/fix_NaN.py#autotoc_md9',1,'']]],
   ['visiter_5fmap_9',['visiter_map',['../namespacejit.html#aed5672337b45a8b11f1351456d2284b8',1,'jit']]],
   ['vizgraph_10',['To Vizgraph',['../new_operations_tutorial.html#new_operations_tutorial_to_vizgraph',1,'']]],
   ['vmec_11',['VMEC',['../equilibrum_models.html#equilibrum_vmec',1,'']]],

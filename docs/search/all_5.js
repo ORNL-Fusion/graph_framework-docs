@@ -8,7 +8,7 @@ var searchData=
   ['dataset_5',['dataset',['../classsolver_1_1solver__interface.html#a15afacc7555fd7135af97eb422d4a6f7',1,'solver::solver_interface']]],
   ['debugging_6',['Debugging',['../build_system.html#build_system_debug',1,'']]],
   ['definitions_7',['Definitions',['../general_concepts.html#general_concepts_definitions',1,'Definitions'],['../build_system.html#build_system_macros',1,'Macro Definitions']]],
-  ['dependencies_8',['Dependencies',['../build_system.html#build_system_user_dependencies',1,'Dependencies'],['../md__r_e_a_d_m_e.html#autotoc_md1',1,'Dependencies']]],
+  ['dependencies_8',['Dependencies',['../build_system.html#build_system_user_dependencies',1,'']]],
   ['developer_20guide_9',['Developer Guide',['../build_system.html#build_system_dev',1,'']]],
   ['developer_20guide_20for_20rf_20ray_20tracing_10',['Developer guide for RF Ray Tracing',['../index.html#framework_developer_tools',1,'']]],
   ['developer_20guides_11',['Framework developer guides',['../index.html#framework_developer',1,'']]],
@@ -41,10 +41,11 @@ var searchData=
   ['dkxdt_38',['dkxdt',['../classdispersion_1_1dispersion__interface.html#a2bb925ef29a9bdde70d85505095b8baa',1,'dispersion::dispersion_interface']]],
   ['dkydt_39',['dkydt',['../classdispersion_1_1dispersion__interface.html#a68e141271fd5e41347204ca702ad2415',1,'dispersion::dispersion_interface']]],
   ['dkzdt_40',['dkzdt',['../classdispersion_1_1dispersion__interface.html#aa7549d1ff2f93638f212cfae5f1a27ab',1,'dispersion::dispersion_interface']]],
-  ['dot_41',['dot',['../classgraph_1_1vector__quantity.html#a83209469f601edd1926285b673347f81',1,'graph::vector_quantity::dot()'],['../classgraph_1_1matrix__quantity.html#ab0e9860b646d25921db9ae0dd093658e',1,'graph::matrix_quantity::dot()']]],
-  ['dsdt_42',['dsdt',['../classdispersion_1_1dispersion__interface.html#ab041785ddcae50cc41e3ac84e17427a5',1,'dispersion::dispersion_interface']]],
-  ['dt_5fvar_43',['dt_var',['../classsolver_1_1adaptive__rk4.html#a6f4bfad2cccbbfa3e263c0ecff130c75',1,'solver::adaptive_rk4']]],
-  ['dxdt_44',['dxdt',['../classdispersion_1_1dispersion__interface.html#a4eaa2a6cf2d7ca1f2b1c4692767f71c5',1,'dispersion::dispersion_interface']]],
-  ['dydt_45',['dydt',['../classdispersion_1_1dispersion__interface.html#a556f3caabe149c364165b9f58c3bc0b7',1,'dispersion::dispersion_interface']]],
-  ['dzdt_46',['dzdt',['../classdispersion_1_1dispersion__interface.html#a7a6a40175a53ed332381a31b1c0ae3bd',1,'dispersion::dispersion_interface']]]
+  ['documentation_41',['Documentation',['../md__r_e_a_d_m_e.html#autotoc_md1',1,'']]],
+  ['dot_42',['dot',['../classgraph_1_1vector__quantity.html#a83209469f601edd1926285b673347f81',1,'graph::vector_quantity::dot()'],['../classgraph_1_1matrix__quantity.html#ab0e9860b646d25921db9ae0dd093658e',1,'graph::matrix_quantity::dot()']]],
+  ['dsdt_43',['dsdt',['../classdispersion_1_1dispersion__interface.html#ab041785ddcae50cc41e3ac84e17427a5',1,'dispersion::dispersion_interface']]],
+  ['dt_5fvar_44',['dt_var',['../classsolver_1_1adaptive__rk4.html#a6f4bfad2cccbbfa3e263c0ecff130c75',1,'solver::adaptive_rk4']]],
+  ['dxdt_45',['dxdt',['../classdispersion_1_1dispersion__interface.html#a4eaa2a6cf2d7ca1f2b1c4692767f71c5',1,'dispersion::dispersion_interface']]],
+  ['dydt_46',['dydt',['../classdispersion_1_1dispersion__interface.html#a556f3caabe149c364165b9f58c3bc0b7',1,'dispersion::dispersion_interface']]],
+  ['dzdt_47',['dzdt',['../classdispersion_1_1dispersion__interface.html#a7a6a40175a53ed332381a31b1c0ae3bd',1,'dispersion::dispersion_interface']]]
 ];

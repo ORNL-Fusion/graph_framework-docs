@@ -66,6 +66,7 @@ var NAVTREEINDEX8 =
 "md__r_e_a_d_m_e.html":[17],
 "md__r_e_a_d_m_e.html#autotoc_md1":[17,0],
 "md__r_e_a_d_m_e.html#autotoc_md2":[17,1],
+"md__r_e_a_d_m_e.html#autotoc_md3":[17,2],
 "metal__context_8hpp.html":[21,0,3,10],
 "metal__context_8hpp_source.html":[21,0,3,10],
 "namespaceabsorption.html":[18,0,0],
@@ -248,6 +249,5 @@ var NAVTREEINDEX8 =
 "namespacespecial.html#a5e1b921d08a68f04928f3bb982d69136":[18,0,10,12],
 "namespacespecial.html#a6c2a424ad47a020a8f6166a5745932c9":[18,0,10,9],
 "namespacespecial.html#a766025787b5810b52bbdc0a006eea25a":[18,0,10,13],
-"namespacespecial.html#a8ce757af89efe1eb7d5d7e2db3417d2a":[18,0,10,0],
-"namespacespecial.html#a8e79c36d1f8048f7c492e72ff6c0fd93":[18,0,10,4]
+"namespacespecial.html#a8ce757af89efe1eb7d5d7e2db3417d2a":[18,0,10,0]
 };
