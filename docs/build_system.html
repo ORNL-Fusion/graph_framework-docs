@@ -242,8 +242,9 @@ Build system Options</h3>
 <tr>
 <td><code>USE_SSH</code> </td><td>Use ssh for git instead of html. </td></tr>
 </table>
-<p><b>NOTE:</b>macOS uses will need to change the default option for <code>CMAKE_CXX_COMPILER</code> to <code>clang++</code>. This is due to the way the build systems determines default include directories for system libraries. This can be accomplished using the advacned options using the <code>t</code> command or setting this via the command line. </p><div class="fragment"><div class="line">cmake -DCMAKE_CXX_COMPILER=clang++ ../</div>
-</div><!-- fragment --><p>Every time an option is changed, or a new option is available, you need to use the configure <code>c</code> command for changes to take affect. Once all options are set, the a generate <code>g</code> options will appear. Using this option will build a make file.</p>
+<dl class="section note"><dt>Note</dt><dd>macOS uses will need to change the default option for <code>CMAKE_CXX_COMPILER</code> to <code>clang++</code>. This is due to the way the build systems determines default include directories for system libraries. This can be accomplished using the advacned options using the <code>t</code> command or setting this via the command line. <div class="fragment"><div class="line">cmake -DCMAKE_CXX_COMPILER=clang++ ../</div>
+</div><!-- fragment --></dd></dl>
+<p>Every time an option is changed, or a new option is available, you need to use the configure <code>c</code> command for changes to take affect. Once all options are set, the a generate <code>g</code> options will appear. Using this option will build a make file.</p>
 <h3><a class="anchor" id="build_system_trouble_shooting"></a>
 Trouble Shooting.</h3>
 <p>Some times, cmake will fail to locate the NetCDF library if it is not installed in a standard path. In these cases you can use the <code>CMAKE_PREFIX_PATH</code> to define the install location of the NetCDF library. For instance if the netcdf library is installed in <code>/foo/bar/lib</code> the prefix path should be set to <code>/foo/bar</code>.</p>
