@@ -133,7 +133,7 @@ $(function(){initNavTree('solvers.html',''); initResizable(true); });
 <div class="textblock"><p>A discription of the integation methods for solving the ray equations.</p>
 <h1><a class="anchor" id="solvers_intro"></a>
 Introduction</h1>
-<p>This page documents the types of dispersion functions available. These solver integrate the <a class="el" href="dispersion_function.html#dispersion_function_wave_propagation">wave propagation equations</a> to solve for the ray trajectory. Each solver builds an expressions for the updates for \(\vec{x}\) and \(\vec{k}\). These expressions are used to build <a class="el" href="general_concepts.html#general_concepts_compile_maps">map</a> kernels that can be iterated to integrate the ray equations. Available integrators are:</p>
+<p>This page documents the types of solver methods available. These solvers integrate the <a class="el" href="dispersion_function.html#dispersion_function_wave_propagation">wave propagation equations</a> to solve for the ray trajectory. Each solver builds expressions for the updates to \(\vec{x}\) and \(\vec{k}\). These expressions are used to build <a class="el" href="general_concepts.html#general_concepts_compile_maps">map</a> kernels that can be iterated to integrate the ray equations. Available integrators are:</p>
 <hr  />
  <h2><a class="anchor" id="solvers_split_simplextic"></a>
 Split Simplextic</h2>
@@ -203,14 +203,14 @@ Split Simplextic</h2>
 <hr  />
  <h2><a class="anchor" id="solvers_adaptive_rk4"></a>
 Adaptive 4th Order Runge Kutta</h2>
-<p>This method is an extension of the 4th Order Runge Kutta which adapts the step size to solutions error. We define a loss function </p><p class="formulaDsp">
+<p>This method is an extension of the 4th Order Runge Kutta which adapts the step size to the solutions error. We define a loss function </p><p class="formulaDsp">
 \begin{equation}f_{loss}\left(dt,\lambda\right)=\frac{1}{dt}-\lambda D^{2}\end{equation}
 </p>
 <p> We use a newton method to solve for \(dt \) and \(\lambda \) which minimize \(f_{loss}\). The new \(dt \) is then used in a standard 4th Order Runge Kutta iteration.</p>
 <hr  />
  <h1><a class="anchor" id="solvers_devel"></a>
 Developing new solvers</h1>
-<p>This section is intended for code developers and outlines how to create new solver methods. All solvers use the same <a class="el" href="classsolver_1_1solver__interface.html">solver::solver_interface</a> interface. New solver models can be created from a subclass of <a class="el" href="classsolver_1_1solver__interface.html">solver::solver_interface</a> or any other existing equilibrium class and overloading class methods. </p><div class="fragment"><div class="line">tempate&lt;dispersion::function DISPERSION_FUNCTION&gt;</div>
+<p>This section is intended for code developers and outlines how to create new solver methods. All solvers use the same <a class="el" href="classsolver_1_1solver__interface.html">solver::solver_interface</a> interface. New solver models can be created from a subclass of <a class="el" href="classsolver_1_1solver__interface.html">solver::solver_interface</a> or any other existing solver class and overloading class methods. </p><div class="fragment"><div class="line">tempate&lt;dispersion::function DISPERSION_FUNCTION&gt;</div>
 <div class="line"><span class="keyword">class </span>new_solver : <span class="keyword">public</span> solver_interface&lt;DISPERSION_FUNCTION&gt; {</div>
 <div class="line">   ...</div>
 <div class="line">}</div>

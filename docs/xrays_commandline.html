@@ -276,7 +276,7 @@ Command Options</h1>
 <th colspan="3">Ray Tracing Physics Options </th></tr>
 <tr>
 <td><div class="fragment"><div class="line">--<a class="code hl_namespace" href="namespaceequilibrium.html">equilibrium</a> </div>
-<div class="ttc" id="anamespaceequilibrium_html"><div class="ttname"><a href="namespaceequilibrium.html">equilibrium</a></div><div class="ttdoc">Name space for equilibrium models.</div><div class="ttdef"><b>Definition</b> equilibrium.hpp:223</div></div>
+<div class="ttc" id="anamespaceequilibrium_html"><div class="ttname"><a href="namespaceequilibrium.html">equilibrium</a></div><div class="ttdoc">Name space for equilibrium models.</div><div class="ttdef"><b>Definition</b> equilibrium.hpp:224</div></div>
 </div><!-- fragment --> </td><td><ul>
 <li><a class="el" href="equilibrum_models.html#equilibrum_efit">efit</a></li>
 <li><a class="el" href="equilibrum_models.html#equilibrum_vmec">vmec</a> </li>
@@ -287,7 +287,7 @@ Command Options</h1>
 </div><!-- fragment --> </td><td>Path to <a class="el" href="equilibrum_models.html">equilibrium file</a> </td><td>Equilibrium file path. </td></tr>
 <tr>
 <td><div class="fragment"><div class="line">--<a class="code hl_namespace" href="namespacedispersion.html">dispersion</a> </div>
-<div class="ttc" id="anamespacedispersion_html"><div class="ttname"><a href="namespacedispersion.html">dispersion</a></div><div class="ttdoc">Name space for dispersion functions.</div><div class="ttdef"><b>Definition</b> dispersion.hpp:137</div></div>
+<div class="ttc" id="anamespacedispersion_html"><div class="ttname"><a href="namespacedispersion.html">dispersion</a></div><div class="ttdoc">Name space for dispersion functions.</div><div class="ttdef"><b>Definition</b> dispersion.hpp:156</div></div>
 </div><!-- fragment --> </td><td><ul>
 <li><a class="el" href="dispersion_function.html#dispersion_function_simple">simple</a></li>
 <li><a class="el" href="dispersion_function.html#dispersion_function_bohm_gross">bohm_gross</a></li>
@@ -339,12 +339,12 @@ Ray intialization.</h2>
 <div class="fragment"><div class="line">--init_w_dist=normal --init_w_mean=700 --init_w_sigma=10.0</div>
 </div><!-- fragment --><p> Frequency uses a normal distribution with a mean of 700 and a standard deviation of 10.</p>
 <div class="fragment"><div class="line">--init_kx --init_kx_mean=-700.0 --init_ky_dist=normal --init_ky_mean=-100.0 --init_ky_sigma=10.0 --init_kz_dist=normal --init_kz_mean=0.0 --init_kz_sigma=10.0</div>
-</div><!-- fragment --><p> Inital values for \(k_{y}\) and \(k_{z}\) will be sampled from a normal distribution fuction. Both of them have a standard deviation of 10. \(k_{y}\) has a mean of 100 and \(k_{z}\) has zero mean. \(k_{x}\) uses the default uniform value of 100. However, it configured to solve for the a \(k_{x}\) which satisfies the dispersion function given the values of \(\omega,k_{y},k_{z},\vec{x}\).</p>
+</div><!-- fragment --><p> Inital values for \(k_{y}\) and \(k_{z}\) will be sampled from a normal distribution fuction. Both of them have a standard deviation of 10. \(k_{y}\) has a mean of -100 and \(k_{z}\) has zero mean. \(k_{x}\) uses the default uniform value of -700.0. However, it is configured to solve for \(k_{x}\) which satisfies the dispersion function given the values of \(\omega,k_{y},k_{z},\vec{x}\).</p>
 <h2><a class="anchor" id="xrays_commandline_example_model"></a>
 Ray Models.</h2>
 <div class="fragment"><div class="line">--<a class="code hl_namespace" href="namespaceequilibrium.html">equilibrium</a>=efit --equilibrium_file=../graph_tests/efit.nc</div>
 </div><!-- fragment --><p> We are using a <a class="el" href="equilibrum_models.html#equilibrum_efit">EFIT</a> equilibirum with values initalized from <code>../graph_tests/efit.nc</code>.</p>
-<div class="fragment"><div class="line">--absorption_model=weak_damping --<a class="code hl_namespace" href="namespacedispersion.html">dispersion</a>=ordinary_wave--<a class="code hl_namespace" href="namespacesolver.html">solver</a>=rk4</div>
+<div class="fragment"><div class="line">--absorption_model=weak_damping --<a class="code hl_namespace" href="namespacedispersion.html">dispersion</a>=ordinary_wave --<a class="code hl_namespace" href="namespacesolver.html">solver</a>=rk4</div>
 </div><!-- fragment --><p> It uses the <a class="el" href="dispersion_function.html#dispersion_function_o_wave">o-mode</a> dispersion function. Rays are integrated using a <a class="el" href="solvers.html#solvers_rk4">4th Order Runge Kutta</a> integrator. Power absorption uses the <a class="el" href="absorption_model.html#absorption_model_damping">Weak Damping</a> Model. </p>
 </div></div><!-- contents -->
 </div><!-- PageDoc -->

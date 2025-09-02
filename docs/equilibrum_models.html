@@ -153,15 +153,16 @@ $(function(){initNavTree('equilibrum_models.html',''); initResizable(true); });
 Introduction</h1>
 <p>This page documents the types and formatting of the equilibrium models. xrays currently supports two equilibrium models.</p><ul>
 <li>EFIT Are 2D axisymetric equilibria relevant to tokamak devices.</li>
-<li>VMEC Are 3D nested flux surface equulibria relevant for stellarator devices. This documentation assumes the user has some familiarity with EFIT or VMEC and focuses instead how quanties from these are formatted.</li>
+<li>VMEC Are 3D nested flux surface equilibria relevant for stellarator devices.</li>
 </ul>
+<p>This documentation assumes the user has some familiarity with EFIT or VMEC and focuses instead how quanties from these are formatted.</p>
 <h1><a class="anchor" id="equilibrum_splines"></a>
 Spline Formatting</h1>
 <p>The equilibrium models used in this section make use of Cubic and Bicubic splines.</p>
 <hr  />
  <h2><a class="anchor" id="equilibrum_splines_1D"></a>
 Cubic Splines</h2>
-<p>Cubic splines are 1D interpolation functions that consisting of 4 coeffient arrays. They take the form of </p><p class="formulaDsp">
+<p>Cubic splines are 1D interpolation functions consisting of 4 coeffient arrays. They take the form of </p><p class="formulaDsp">
 \begin{equation}y\left(x\right)=C_{0} + C_{1}x + C_{2}x^2 + C_{3}x^2\end{equation}
 </p>
 <p> where \(x\) is a normalized radial index. Cubic splines coefficients can be calculated using <a href="https://mathworld.wolfram.com/CubicSpline.html">Linear Solvers</a> However, to avoid needing account for index offsets, index offsets are pre computed into the spline coefficents. </p><p class="formulaDsp">
@@ -183,7 +184,7 @@ Cubic Splines</h2>
 <hr  />
  <h2><a class="anchor" id="equilibrum_splines_2D"></a>
 Bicubic Splines</h2>
-<p>Bicubic Splines are computed in a simular way instead they consist of a total of 16 coeffients. These represent 4 spline functions in one dimension which interpolate 4 coeffient values for the other dimension. Like the 1D splines, 2D spline coeffients are normalized to the spline arguments can be used as normalized indices. </p><p class="formulaDsp">
+<p>Bicubic Splines are computed in a simular way instead they consist of a total of 16 coeffients. These represent 4 spline functions in one dimension which interpolate 4 coeffient values for the other dimension. Like the 1D splines, 2D spline coeffients are normalized so the spline arguments can be used as normalized indices. </p><p class="formulaDsp">
 \begin{equation}C&#39;^{ij}_{00}=C^{ij}_{00}-C^{ij}_{01}j+C^{ij}_{02}j^{2}-C^{ij}_{03}j^{3}-C^{ij}_{10}i+C^{ij}_{11}ij-C^{ij}_{12}ij^{2}+C^{ij}_{13}ij^{3}+C^{ij}_{20}i^{2}-C^{ij}_{21}i^{2}j+C^{ij}_{22}i^{2}j^{2}-C^{ij}_{23}i^{2}j^{3}-C^{ij}_{30}i^{3}+C^{ij}_{31}i^{3}j-C^{ij}_{32}i^{3}j^{2}+C^{ij}_{33}i^{3}j^{3}j\end{equation}
 </p>
  <p class="formulaDsp">
@@ -302,7 +303,7 @@ EFIT file format</h2>
 <tr>
 <th>Name</th><th>Size </th><th>Discription </th></tr>
 <tr>
-<td><code>psi_c<em>ij</em></code> </td><td><code>(numr,numz)</code></td><td>\(t_{e}\) profile coefficents. </td></tr>
+<td><code>psi_c<em>ij</em></code> </td><td><code>(numr,numz)</code></td><td>\(\psi\left(r,z\right)\) coefficents. </td></tr>
 </table>
 <hr  />
  <h1><a class="anchor" id="equilibrum_vmec"></a>
@@ -314,7 +315,7 @@ Cross section of 3D flux surfaces.</div></div>
 <p> VMEC is an equilibium that comes from <a href="https://doi.org/10.1063/1.864116">minimizing mhd energy</a>. The solution gives us set of Fourier coefficents on a discrete radial grid. 1D profiles of electrion density \(n_{e}\left(\psi\right)\), electron temperature \(t_{e}\left(\psi\right)\), and pressure \(p\left(\psi\right)\) are mapped as functions of the normalized flux.</p>
 <h2><a class="anchor" id="equilibrum_vmec_format"></a>
 VMEC file format</h2>
-<p>Quantities are loaded into the ray tracer via a netcdf file. VMEC NetCDF files must contain the following quantities. Spline quanities have a common format of <em>name</em>_c<em>i</em>. All radial quantities are splined accross the magnetic axis to the opposite end. That is quantities extend from \(-s\rightarrow s \). Splines of fourier coeffients are one dimensional splines stored in a 2D array. Radial quantities are store as a full or half grid value. </p><a class="anchor" id="equilibrum_vmec_format_data"></a>
+<p>Quantities are loaded into the ray tracer via a netcdf file. VMEC NetCDF files must contain the following quantities. Spline quanities have a common format of <em>name</em>_c<em>i</em>. All radial quantities are splined accross the magnetic axis to the opposite end. That is quantities extend from \(-s\rightarrow s \). Splines of fourier coeffients are one dimensional splines stored in a 2D array. Radial quantities are stored as a full or half grid value. </p><a class="anchor" id="equilibrum_vmec_format_data"></a>
 <table class="doxtable">
 <caption>VMEC netcdf file quantities</caption>
 <tr>
@@ -330,9 +331,9 @@ VMEC file format</h2>
 <tr>
 <th colspan="3">Scalar Qantities </th></tr>
 <tr>
-<td colspan="2"><code>dphi</code> </td><td>Step size toroidal flux. </td></tr>
+<td colspan="2"><code>dphi</code> </td><td>Step size of toroidal flux. </td></tr>
 <tr>
-<td colspan="2"><code>ds</code> </td><td>Step size normalized toroidal flux. </td></tr>
+<td colspan="2"><code>ds</code> </td><td>Step size of normalized toroidal flux. </td></tr>
 <tr>
 <td colspan="2"><code>signj</code> </td><td>Sign of the Jacobian. </td></tr>
 <tr>
@@ -375,8 +376,8 @@ Developing new equilibrium models</h1>
 <li><a class="el" href="classequilibrium_1_1generic.html#a6f0f09966f961014c6e8237a5874f055">equilibrium::generic::get_ion_temperature</a></li>
 <li><a class="el" href="classequilibrium_1_1generic.html#ac986480b9421c674b9edf37919fd9d6d">equilibrium::generic::get_magnetic_field</a></li>
 </ul>
-<dl class="section note"><dt>Note</dt><dd><a class="el" href="classequilibrium_1_1generic.html#ac1daa39f058165b7538d8e697cb8075d">equilibrium::generic::get_characteristic_field</a> is only used by the normalized boris method for particle pushing for most cases this can simply return 1.</dd></dl>
-<p>For the remaining methods, or any other methods one wishes to override, the arguments provide expressions the input position of the ray. The methods return are expressions for the quantity at hand.</p>
+<dl class="section note"><dt>Note</dt><dd><a class="el" href="classequilibrium_1_1generic.html#ac1daa39f058165b7538d8e697cb8075d">equilibrium::generic::get_characteristic_field</a> is only used by the normalized boris method for particle pushing. For most cases this can simply return 1.</dd></dl>
+<p>For the remaining methods, or any other methods one wishes to override, the arguments provide expressions for the input position of the ray. The methods return are expressions for the quantity at hand.</p>
 <h2><a class="anchor" id="equilibrum_devel_coordinate"></a>
 Noncartesian Coordinates</h2>
 <p>While these methods take an \(x,y,z \) as the argument names, there is no reason these need to be assumed to be cartesian coordinates. For instance the <a class="el" href="#equilibrum_vmec">VMEC</a> treats \(x,y,z\rightarrow s,u,v \) as flux coordinates. In flux coordinate the coordinate system is no longer normalized nor orthogonal. So that other parts of the code can treat \(\vec{k}\) correctly there are methods to return the covariant basis vectors \(\vec{e}_{s},\vec{e}_{u},\vec{e}_{v}\).</p><ul>

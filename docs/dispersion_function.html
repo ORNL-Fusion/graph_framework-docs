@@ -225,7 +225,7 @@ Bohm Gross</h2>
 <p>This dispersion function now accounts for how occilations in the plasma propagate. </p><p class="formulaDsp">
 \begin{equation}D\left(\vec{x},\vec{k},\omega\right)=\omega_{pe}+\frac{3}{2}\vec{k}\cdot\vec{k}v^{2}_{th}-\omega^{2}\equiv 0 \end{equation}
 </p>
-<p> It has no resonances or cutoffs. But \(v_{g}\) can never exceed \(v_{th}\). </p><div class="image">
+<p> It has no resonances. Waves cannot propagate below \(\omega_{pe}\) and \(v_{g}\) can never exceed \(v_{th}\). </p><div class="image">
 <img src="bohm-gross.png" alt=""/>
 </div>
 <hr  />
@@ -240,7 +240,7 @@ Ordinary Wave</h2>
 <hr  />
  <h2><a class="anchor" id="dispersion_function_x_wave"></a>
 Extra Ordinary Wave</h2>
-<p>This dispersion relation encapsulates wave physics in a cold plasma medium. </p><p class="formulaDsp">
+<p>This disperison function represents a wave with a \(\vec{E}_{1}\perp\vec{B}_{0}\). That means the electric field occilates perpendicular to the magnetic field. </p><p class="formulaDsp">
 \begin{equation}D\left(\vec{x},\vec{k},\omega\right)=1-\frac{\omega_{pe}^2}{\omega^{2}}\frac{\omega^{2}-\omega_{pe}^2}{\omega^{2}-\omega_{h}^2}-\vec{n}_{\perp}\cdot\vec{n}_{\perp}\equiv 0 \end{equation}
 </p>
 <p> This mode has This wave has two branches. One branch is cannot not progagate below the \(\omega_{r}\) cutoff. The other branch cannot not progagate below the \(\omega_{l}\) cutoff. As the wave approches the upper hybrid fequency, wave propagation stops as the wave number approces \(\left|\vec{k}\right|\rightarrow\infty \). </p><div class="image">
@@ -249,10 +249,10 @@ Extra Ordinary Wave</h2>
 <hr  />
  <h2><a class="anchor" id="dispersion_function_cold_plasma"></a>
 Cold Plasma</h2>
-<p>This disperison function represents a wave in a vaccume. </p><p class="formulaDsp">
+<p>This disperison function represents a wave in a cold plasma medium. </p><p class="formulaDsp">
 \begin{equation}D\left(\vec{x},\vec{k},\omega\right)=det\left(\vec{\epsilon}+\vec{n}\vec{n}-\vec{n}\cdot\vec{n}\vec{I}\right)\equiv 0 \end{equation}
 </p>
-<p> The quantity \(\epsilon \) is the diaelectric tensor. Using Onsager symmetries, this tensor is defined as </p><p class="formulaDsp">
+<p> The quantity \(\vec{\epsilon}\) is the diaelectric tensor. Using Onsager symmetries, this tensor is defined as </p><p class="formulaDsp">
 \begin{equation}\vec{\epsilon}=\left(\begin{array}{ccc}\epsilon_{11}&amp;\epsilon_{12}&amp;0\\-\epsilon_{12}&amp;\epsilon_{11}&amp;0\\0&amp;0&amp;\epsilon_{33}\end{array}\right)\end{equation}
 </p>
 <p> where </p><p class="formulaDsp">
@@ -270,12 +270,28 @@ Cold Plasma</h2>
 <hr  />
  <h1><a class="anchor" id="dispersion_function_devel"></a>
 Developing new dispersion functions</h1>
-<p>This section is intended for code developers and outlines how to create new equilibrium models. New equilibrium models can be created from a subclass of <a class="el" href="classdispersion_1_1dispersion__function.html">dispersion::dispersion_function</a> or any other existing dispersion_function class and overloading class methods. For convinence the <a class="el" href="classdispersion_1_1physics.html">dispersion::physics</a> class contains several defined physical constants. </p><div class="fragment"><div class="line"><span class="keyword">template</span>&lt;jit::<span class="keywordtype">float</span>_scalar T, <span class="keywordtype">bool</span> SAFE_MATH=false&gt;</div>
+<p>This section is intended for code developers and outlines how to create new dispersion functions. New dispersion functions can be created from a subclass of <a class="el" href="classdispersion_1_1dispersion__function.html">dispersion::dispersion_function</a> or any other existing dispersion_function class and overloading class methods. For convinence the <a class="el" href="classdispersion_1_1physics.html">dispersion::physics</a> class contains several defined physical constants. </p><div class="fragment"><div class="line"><span class="keyword">template</span>&lt;jit::<span class="keywordtype">float</span>_scalar T, <span class="keywordtype">bool</span> SAFE_MATH=false&gt;</div>
 <div class="line"><span class="keyword">class </span>new_dispersion final : <span class="keyword">public</span> dispersion_function&lt;T, SAFE_MATH&gt; {</div>
 <div class="line">   ...</div>
 <div class="line">};</div>
-</div><!-- fragment --><p> When a new dispersion function is subclassed from <a class="el" href="classdispersion_1_1dispersion__function.html">dispersion::dispersion_function</a> an implimentation must be provided for the pure virtual method <a class="el" href="classdispersion_1_1dispersion__function.html#a30c60cf0ea23c4b7a89b4104a9991d3e">dispersion::dispersion_function::D</a>. </p>
-</div></div><!-- contents -->
+</div><!-- fragment --><p> When a new dispersion function is subclassed from <a class="el" href="classdispersion_1_1dispersion__function.html">dispersion::dispersion_function</a> an implimentation must be provided for the pure virtual method <a class="el" href="classdispersion_1_1dispersion__function.html#a30c60cf0ea23c4b7a89b4104a9991d3e">dispersion::dispersion_function::D</a>. </p><div class="fragment"><div class="line"><span class="keyword">template</span>&lt;jit::<span class="keywordtype">float</span>_scalar T, <span class="keywordtype">bool</span> SAFE_MATH=false&gt;</div>
+<div class="line"><span class="keyword">class </span>new_dispersion final : <span class="keyword">public</span> dispersion_function&lt;T, SAFE_MATH&gt; {</div>
+<div class="line"><span class="keyword">public</span>:</div>
+<div class="line">    <span class="keyword">virtual</span> <a class="code hl_typedef" href="namespacegraph.html#a7b93b9fe51238a5ca34a1a3d9352cace">graph::shared_leaf&lt;T, SAFE_MATH&gt;</a> D(<a class="code hl_typedef" href="namespacegraph.html#a7b93b9fe51238a5ca34a1a3d9352cace">graph::shared_leaf&lt;T, SAFE_MATH&gt;</a> w,</div>
+<div class="line">                                               <a class="code hl_typedef" href="namespacegraph.html#a7b93b9fe51238a5ca34a1a3d9352cace">graph::shared_leaf&lt;T, SAFE_MATH&gt;</a> kx,</div>
+<div class="line">                                               <a class="code hl_typedef" href="namespacegraph.html#a7b93b9fe51238a5ca34a1a3d9352cace">graph::shared_leaf&lt;T, SAFE_MATH&gt;</a> ky,</div>
+<div class="line">                                               <a class="code hl_typedef" href="namespacegraph.html#a7b93b9fe51238a5ca34a1a3d9352cace">graph::shared_leaf&lt;T, SAFE_MATH&gt;</a> kz,</div>
+<div class="line">                                               <a class="code hl_typedef" href="namespacegraph.html#a7b93b9fe51238a5ca34a1a3d9352cace">graph::shared_leaf&lt;T, SAFE_MATH&gt;</a> x,</div>
+<div class="line">                                               <a class="code hl_typedef" href="namespacegraph.html#a7b93b9fe51238a5ca34a1a3d9352cace">graph::shared_leaf&lt;T, SAFE_MATH&gt;</a> y,</div>
+<div class="line">                                               <a class="code hl_typedef" href="namespacegraph.html#a7b93b9fe51238a5ca34a1a3d9352cace">graph::shared_leaf&lt;T, SAFE_MATH&gt;</a> z,</div>
+<div class="line">                                               <a class="code hl_typedef" href="namespacegraph.html#a7b93b9fe51238a5ca34a1a3d9352cace">graph::shared_leaf&lt;T, SAFE_MATH&gt;</a> t,</div>
+<div class="line">                                               <a class="code hl_typedef" href="namespaceequilibrium.html#a35e922cfb2df6595e5e398e26c034f87">equilibrium::shared&lt;T, SAFE_MATH&gt;</a> &amp;eq) {</div>
+<div class="line">       ...</div>
+<div class="line">    }</div>
+<div class="line">};</div>
+<div class="ttc" id="anamespaceequilibrium_html_a35e922cfb2df6595e5e398e26c034f87"><div class="ttname"><a href="namespaceequilibrium.html#a35e922cfb2df6595e5e398e26c034f87">equilibrium::shared</a></div><div class="ttdeci">std::shared_ptr&lt; generic&lt; T, SAFE_MATH &gt; &gt; shared</div><div class="ttdoc">Convenience type alias for shared equilibria.</div><div class="ttdef"><b>Definition</b> equilibrium.hpp:472</div></div>
+<div class="ttc" id="anamespacegraph_html_a7b93b9fe51238a5ca34a1a3d9352cace"><div class="ttname"><a href="namespacegraph.html#a7b93b9fe51238a5ca34a1a3d9352cace">graph::shared_leaf</a></div><div class="ttdeci">std::shared_ptr&lt; leaf_node&lt; T, SAFE_MATH &gt; &gt; shared_leaf</div><div class="ttdoc">Convenience type alias for shared leaf nodes.</div><div class="ttdef"><b>Definition</b> node.hpp:672</div></div>
+</div><!-- fragment --> </div></div><!-- contents -->
 </div><!-- PageDoc -->
 </div><!-- doc-content -->
 <!-- start footer part -->

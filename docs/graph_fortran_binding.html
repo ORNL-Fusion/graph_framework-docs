@@ -116,10 +116,10 @@ $(function(){initNavTree('graph_fortran_binding.html',''); initResizable(true); 
   </li>
 </ul>
 </div>
-<div class="textblock"><p>Documentation for linking into Fortran code base.</p>
+<div class="textblock"><p>Documentation for linking into a Fortran code base.</p>
 <h1><a class="anchor" id="graph_fortran_binding_into"></a>
 Introduction</h1>
-<p>This section assumes the reader is already familar with developing Fortran codes. The simplist method is to create a C callable function like the <a class="el" href="graph_c_binding.html#graph_c_binding_into">C binding exmaple</a>. Then create a fortran interface for it. </p><div class="fragment"><div class="line"><span class="keyword">INTERFACE</span></div>
+<p>This section assumes the reader is already familar with developing Fortran codes. The simplist method is to create a C callable function like the <a class="el" href="graph_c_binding.html#graph_c_binding_into">C binding exmaple</a>. Then create a Fortran interface for it. </p><div class="fragment"><div class="line"><span class="keyword">INTERFACE</span></div>
 <div class="line">   <span class="keyword">SUBROUTINE </span>fortran_callable bind(C, NAME=&#39;c_callable_function&#39;)</div>
 <div class="line">   use, <span class="keywordtype">INTRINSIC</span> :: iso_c_binding</div>
 <div class="line">   <span class="keywordtype">IMPLICIT NONE</span></div>
@@ -175,7 +175,7 @@ Fortran Binding Interface</h1>
 <div class="ttc" id="anamespacegraph_html"><div class="ttname"><a href="namespacegraph.html">graph</a></div><div class="ttdoc">Name space for graph nodes.</div><div class="ttdef"><b>Definition</b> arithmetic.hpp:13</div></div>
 </div><!-- fragment --><dl class="section note"><dt>Note</dt><dd>Graphs need to use the <a class="el" href="namespacegraph__fortran.html#a58d6db65bd0453f4a31d61402621f9e8">graph_fortran::graph_ptr</a> function to get the pointer address of node. </dd>
 <dd>
-The <a class="el" href="namespacegraph__fortran.html#a43fdd53fd3b5d8b8d4b7de161a98b775">graph_fortran::graph_null_array</a> allows set arrays of nodes to null. </dd></dl>
+The <a class="el" href="namespacegraph__fortran.html#a43fdd53fd3b5d8b8d4b7de161a98b775">graph_fortran::graph_null_array</a> allows setting array of nodes arguments to null. </dd></dl>
 </div></div><!-- contents -->
 </div><!-- PageDoc -->
 </div><!-- doc-content -->

@@ -144,7 +144,7 @@ $(function(){initNavTree('tutorial.html',''); initResizable(true); });
 <h1><a class="anchor" id="tutorial_introduction"></a>
 Introduction</h1>
 <p>In this tutorial we will put the basic <a class="el" href="general_concepts.html">General Concepts</a> of the graph_framework into action. This will discuss building trees, generating kernels, and executing workflows.</p>
-<p>To accomplish this there is a playground tool in the <code>graph_framework</code> directory. This playground is a preconfigured executable target which can be used to test out the API's of this framework. The playground starts with a blank main function. </p><div class="fragment"><div class="line"><span class="preprocessor">#include &quot;../graph_framework/jit.hpp&quot;</span></div>
+<p>To accomplish this there is a playground tool in the <code>graph_playground</code> directory. This playground is a preconfigured executable target which can be used to test out the API's of this framework. The playground starts with a blank main function. </p><div class="fragment"><div class="line"><span class="preprocessor">#include &quot;../graph_framework/jit.hpp&quot;</span></div>
 <div class="line"> </div>
 <div class="line"><span class="keywordtype">int</span> main(<span class="keywordtype">int</span> argc, <span class="keyword">const</span> <span class="keywordtype">char</span> * argv[]) {</div>
 <div class="line">    <a class="code hl_define" href="graph__c__binding_8h.html#ad8adc1545da096be4d3c3323b41f6d85">START_GPU</a></div>
@@ -158,7 +158,7 @@ Introduction</h1>
 <div class="line">}</div>
 <div class="ttc" id="agraph__c__binding_8h_html_a9ed5f8a3efebcba6fb2b7eef9817d896"><div class="ttname"><a href="graph__c__binding_8h.html#a9ed5f8a3efebcba6fb2b7eef9817d896">END_GPU</a></div><div class="ttdeci">#define END_GPU</div><div class="ttdef"><b>Definition</b> graph_c_binding.h:133</div></div>
 <div class="ttc" id="agraph__c__binding_8h_html_ad8adc1545da096be4d3c3323b41f6d85"><div class="ttname"><a href="graph__c__binding_8h.html#ad8adc1545da096be4d3c3323b41f6d85">START_GPU</a></div><div class="ttdeci">#define START_GPU</div><div class="ttdef"><b>Definition</b> graph_c_binding.h:132</div></div>
-</div><!-- fragment --><p> To start, create a template function above main and call that function from main. This will allow us to play with different floating point types. For now we will start with a simple floating point type. </p><div class="fragment"><div class="line"><span class="preprocessor">#include &quot;../graph_framework/jit.hpp&quot;</span></div>
+</div><!-- fragment --><p> To start, create a template function above main and call that function from main. This will allow us to play with different floating point types. For now we will start with a simple float type. </p><div class="fragment"><div class="line"><span class="preprocessor">#include &quot;../graph_framework/jit.hpp&quot;</span></div>
 <div class="line"> </div>
 <div class="line"><span class="keyword">template</span>&lt;jit::<span class="keywordtype">float</span>_scalar T&gt;</div>
 <div class="line"><span class="keywordtype">void</span> run_tutorial() {</div>
@@ -174,7 +174,7 @@ Introduction</h1>
 <div class="line"> </div>
 <div class="line">    <a class="code hl_define" href="graph__c__binding_8h.html#a9ed5f8a3efebcba6fb2b7eef9817d896">END_GPU</a></div>
 <div class="line">}</div>
-</div><!-- fragment --><p> Here <a class="el" href="conceptjit_1_1float__scalar.html">jit::float_scalar</a> is a <a href="https://www.cppreference.com/w/cpp/20.html">C++20</a> <a href="https://www.cppreference.com/w/cpp/concepts.html">Concept</a> for valid floating point types allowed by the framework.</p>
+</div><!-- fragment --><p> Here <a class="el" href="conceptjit_1_1float__scalar.html">jit::float_scalar</a> is a <a href="https://www.cppreference.com/w/cpp/20.html">C++20</a> <a href="https://www.cppreference.com/w/cpp/concepts.html">Concept</a> of valid floating point types allowed by the framework.</p>
 <hr  />
  <h1><a class="anchor" id="tutorial_basic"></a>
 Basic Nodes</h1>
@@ -182,14 +182,14 @@ Basic Nodes</h1>
 <div class="line"><span class="keywordtype">void</span> run_tutorial() {</div>
 <div class="line">    <span class="keyword">auto</span> x = <a class="code hl_function" href="namespacegraph.html#ab8673e7bc26ebc9c1742f99c9f448ad0">graph::variable&lt;T&gt;</a> (1000, <span class="stringliteral">&quot;x&quot;</span>);</div>
 <div class="line">}</div>
-<div class="ttc" id="anamespacegraph_html_ab8673e7bc26ebc9c1742f99c9f448ad0"><div class="ttname"><a href="namespacegraph.html#ab8673e7bc26ebc9c1742f99c9f448ad0">graph::variable</a></div><div class="ttdeci">shared_leaf&lt; T, SAFE_MATH &gt; variable(const size_t s, const std::string &amp;symbol)</div><div class="ttdoc">Construct a variable.</div><div class="ttdef"><b>Definition</b> node.hpp:1665</div></div>
-</div><!-- fragment --><p> Here we are creating a <a class="el" href="classgraph_1_1variable__node.html">graph::variable_node</a> with the symbol \(x\) which holds 1000 elements. The symbol is used to by the \(\LaTeX\) renderer to use as a symbol place holder. Any graph can be rendered to latex by calling the <a class="el" href="classgraph_1_1leaf__node.html#a352c9f2f999474709decec8acd8f79d0">graph::leaf_node::to_latex</a> method. </p><div class="fragment"><div class="line"><span class="keyword">template</span>&lt;jit::<span class="keywordtype">float</span>_scalar T&gt;</div>
+<div class="ttc" id="anamespacegraph_html_ab8673e7bc26ebc9c1742f99c9f448ad0"><div class="ttname"><a href="namespacegraph.html#ab8673e7bc26ebc9c1742f99c9f448ad0">graph::variable</a></div><div class="ttdeci">shared_leaf&lt; T, SAFE_MATH &gt; variable(const size_t s, const std::string &amp;symbol)</div><div class="ttdoc">Construct a variable.</div><div class="ttdef"><b>Definition</b> node.hpp:1673</div></div>
+</div><!-- fragment --><p> Here we are creating a <a class="el" href="classgraph_1_1variable__node.html">graph::variable_node</a> with the symbol \(x\) which holds 1000 elements. The symbol is used by the \(\LaTeX\) renderer as a symbol place holder. Any graph can be rendered to \(\LaTeX\) by calling the <a class="el" href="classgraph_1_1leaf__node.html#a352c9f2f999474709decec8acd8f79d0">graph::leaf_node::to_latex</a> method. </p><div class="fragment"><div class="line"><span class="keyword">template</span>&lt;jit::<span class="keywordtype">float</span>_scalar T&gt;</div>
 <div class="line"><span class="keywordtype">void</span> run_tutorial() {</div>
 <div class="line">    <span class="keyword">auto</span> x = <a class="code hl_function" href="namespacegraph.html#ab8673e7bc26ebc9c1742f99c9f448ad0">graph::variable&lt;T&gt;</a> (1000, <span class="stringliteral">&quot;x&quot;</span>);</div>
 <div class="line">    x-&gt;to_latex();</div>
 <div class="line">    std::cout &lt;&lt; std::endl;</div>
 <div class="line">}</div>
-</div><!-- fragment --><p> When compiling and running the code, this will print out the \(\LaTeX\) code needed to generate the equation. By copy and pasting this into a \(\LaTeX\) it produces the symbol \(x\). Note that all nodes of a graph are wrapped in a <a href="https://www.cppreference.com/w/cpp/memory/shared_ptr.html"><code>std::shared_ptr</code></a>. so all method are called using the <code>-&gt;</code> operator.</p>
+</div><!-- fragment --><p> When compiling and running the code, this will print out the \(\LaTeX\) code needed to generate the equation. By copy and pasting this into \(\LaTeX\) it produces the symbol \(x\). Note that all nodes of a graph are wrapped in a <a href="https://www.cppreference.com/w/cpp/memory/shared_ptr.html"><code>std::shared_ptr</code></a>. so all method are called using the <code>-&gt;</code> operator.</p>
 <h2><a class="anchor" id="tutorial_constant"></a>
 Constant Nodes</h2>
 <p>Next we want to define a constant. There are two method to define constants explicitly or implicitly. </p><div class="fragment"><div class="line"><span class="keyword">template</span>&lt;jit::<span class="keywordtype">float</span>_scalar T&gt;</div>
@@ -201,8 +201,8 @@ Constant Nodes</h2>
 <div class="line"><span class="comment">// Define implicit constant.</span></div>
 <div class="line">    <span class="keyword">const</span> T b = 0.6;</div>
 <div class="line">}</div>
-<div class="ttc" id="anamespacegraph_html_aac9c42e584204a9fad529d2614a3eae9"><div class="ttname"><a href="namespacegraph.html#aac9c42e584204a9fad529d2614a3eae9">graph::constant</a></div><div class="ttdeci">shared_leaf&lt; T, SAFE_MATH &gt; constant(const backend::buffer&lt; T &gt; &amp;d)</div><div class="ttdoc">Construct a constant.</div><div class="ttdef"><b>Definition</b> node.hpp:942</div></div>
-</div><!-- fragment --><p> An explicit <a class="el" href="classgraph_1_1constant__node.html">graph::constant_node</a> is create for <code>m</code> while an impicit constant was defined for <code>b</code>. Note in the implicit case, the actual node for <code>b</code> is not created until we use it in an expression.</p>
+<div class="ttc" id="anamespacegraph_html_aac9c42e584204a9fad529d2614a3eae9"><div class="ttname"><a href="namespacegraph.html#aac9c42e584204a9fad529d2614a3eae9">graph::constant</a></div><div class="ttdeci">shared_leaf&lt; T, SAFE_MATH &gt; constant(const backend::buffer&lt; T &gt; &amp;d)</div><div class="ttdoc">Construct a constant.</div><div class="ttdef"><b>Definition</b> node.hpp:950</div></div>
+</div><!-- fragment --><p> An explicit <a class="el" href="classgraph_1_1constant__node.html">graph::constant_node</a> is created for <code>m</code> while an impicit constant was defined for <code>b</code>. Note in the implicit case, the actual node for <code>b</code> is not created until we use it in an expression.</p>
 <hr  />
  <h1><a class="anchor" id="tutorial_expression"></a>
 Basic Expressions</h1>
@@ -243,7 +243,7 @@ Auto Differentiation</h2>
 </div><!-- fragment --><p> Here we take derivatives using the <a class="el" href="classgraph_1_1leaf__node.html#a4785ca42cddfcfd126bba0bc78a62cab">graph::leaf_node::df</a> method. We can also take several variations of this. </p><div class="fragment"><div class="line"><span class="keyword">auto</span> dydm = y-&gt;df(m);</div>
 <div class="line"><span class="keyword">auto</span> dydy = y-&gt;df(y);</div>
 <div class="line"><span class="keyword">auto</span> dydb = y-&gt;df(m*x);</div>
-</div><!-- fragment --><p> The results will be \(x\), \(1\), and \(0\) respectively.</p>
+</div><!-- fragment --><p> The results will be \(0.4\), \(x\), \(1\), and \(0\) respectively.</p>
 <hr  />
  <h1><a class="anchor" id="tutorial_workflow"></a>
 Making workflows.</h1>
@@ -273,7 +273,7 @@ Making workflows.</h1>
 <div class="line">}, {</div>
 <div class="line">    y, dydx</div>
 <div class="line">}, {}, NULL, <span class="stringliteral">&quot;my_first_kernel&quot;</span>, 3);</div>
-<div class="ttc" id="anamespacegraph_html_a9321a15c96554d065da2ffe49e969ff4"><div class="ttname"><a href="namespacegraph.html#a9321a15c96554d065da2ffe49e969ff4">graph::variable_cast</a></div><div class="ttdeci">shared_variable&lt; T, SAFE_MATH &gt; variable_cast(shared_leaf&lt; T, SAFE_MATH &gt; x)</div><div class="ttdoc">Cast to a variable node.</div><div class="ttdef"><b>Definition</b> node.hpp:1737</div></div>
+<div class="ttc" id="anamespacegraph_html_a9321a15c96554d065da2ffe49e969ff4"><div class="ttname"><a href="namespacegraph.html#a9321a15c96554d065da2ffe49e969ff4">graph::variable_cast</a></div><div class="ttdeci">shared_variable&lt; T, SAFE_MATH &gt; variable_cast(shared_leaf&lt; T, SAFE_MATH &gt; x)</div><div class="ttdoc">Cast to a variable node.</div><div class="ttdef"><b>Definition</b> node.hpp:1745</div></div>
 </div><!-- fragment --><p> Here we have created a kernel which computes the outputs of \(y\) and \(\frac{\partial y}{\partial x}\). The third and forth arguments are blank because there are no maps and we are not using random numbers. The last argument needs to match the dimensions of the inputs. Inputs need to be cast from generic <a class="el" href="classgraph_1_1leaf__node.html">graph::leaf_node</a> to the specific <a class="el" href="classgraph_1_1variable__node.html">graph::variable_node</a>.</p>
 <p>To evaluate the kernel, we need to first compile it. Then set the values for \(x\) and run the kernel. To see the results we can print the values of the nodes used. </p><div class="fragment"><div class="line">x-&gt;set({1.0, 2.0, 3.0});</div>
 <div class="line"> </div>
@@ -315,7 +315,7 @@ Making workflows.</h1>
 <div class="line">work.print(0, {x, y, dydx});</div>
 <div class="line">work.print(1, {x, y, dydx});</div>
 <div class="line">work.print(2, {x, y, dydx});</div>
-</div><!-- fragment --><p> Restore the expected result. </p><div class="fragment"><div class="line">1 1 0.4</div>
+</div><!-- fragment --><p> This restores the expected result. </p><div class="fragment"><div class="line">1 1 0.4</div>
 <div class="line">2 1.4 0.4</div>
 <div class="line">3 1.8 0.4</div>
 </div><!-- fragment --><h2><a class="anchor" id="tutorial_workflow_iter"></a>
@@ -334,7 +334,7 @@ Iteration</h2>
 <div class="line">    work.run();</div>
 <div class="line">    work.print(1, {x});</div>
 <div class="line">}</div>
-<div class="ttc" id="anamespacegraph_html_a9b84f5a5f048fe7931dc4f9d39f5efa6"><div class="ttname"><a href="namespacegraph.html#a9b84f5a5f048fe7931dc4f9d39f5efa6">graph::i</a></div><div class="ttdeci">constexpr T i</div><div class="ttdoc">Convinece type for imaginary constant.</div><div class="ttdef"><b>Definition</b> node.hpp:1017</div></div>
+<div class="ttc" id="anamespacegraph_html_a9b84f5a5f048fe7931dc4f9d39f5efa6"><div class="ttname"><a href="namespacegraph.html#a9b84f5a5f048fe7931dc4f9d39f5efa6">graph::i</a></div><div class="ttdeci">constexpr T i</div><div class="ttdoc">Convinece type for imaginary constant.</div><div class="ttdef"><b>Definition</b> node.hpp:1025</div></div>
 </div><!-- fragment --><p> Running this code shows the value of x continously updating. </p><div class="fragment"><div class="line">1.4</div>
 <div class="line">1.16</div>
 <div class="line">1.064</div>
@@ -348,10 +348,10 @@ Iteration</h2>
 </div><!-- fragment --><hr  />
  <h1><a class="anchor" id="tutorial_workflow_newton"></a>
 Newton's Method.</h1>
-<p>In this tutorial we are going to show how we can put all these concepts together to implement a newtons method. Newton's method is defined as </p><p class="formulaDsp">
+<p>In this tutorial we are going to show how we can put all these concepts together to implement a Newton's method. Newton's method is defined as </p><p class="formulaDsp">
 \begin{equation}x = x - \frac{f\left(x\right)}{\frac{\partial}{\partial x}f\left(x\right)}\end{equation}
 </p>
-<p> From the iteration example, its step update can be handled by a simple map. However we need a measure for convergence. To do that we output the value of \(f\left(x\right)\). Lets setup a test function. </p><div class="fragment"><div class="line"><span class="keyword">template</span>&lt;jit::<span class="keywordtype">float</span>_scalar T&gt;</div>
+<p> From the iteration example, its step update can be handled by a simple map. However, we need a measure for convergence. To do that we output the value of \(f\left(x\right)\). Lets setup a test function. </p><div class="fragment"><div class="line"><span class="keyword">template</span>&lt;jit::<span class="keywordtype">float</span>_scalar T&gt;</div>
 <div class="line"><span class="keywordtype">void</span> run_tutorial() {</div>
 <div class="line">    <span class="keyword">auto</span> x = <a class="code hl_function" href="namespacegraph.html#ab8673e7bc26ebc9c1742f99c9f448ad0">graph::variable&lt;T&gt;</a> (3, <span class="stringliteral">&quot;x&quot;</span>);</div>
 <div class="line">    x-&gt;set({1.0, 2.0, 3.0});</div>

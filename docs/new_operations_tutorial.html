@@ -157,15 +157,14 @@ $(function(){initNavTree('new_operations_tutorial.html',''); initResizable(true)
   </li>
 </ul>
 </div>
-<div class="textblock"><p>A discription of the models for power absorption.</p>
+<div class="textblock"><p>A tutorial for creating new operations.</p>
 <h1><a class="anchor" id="new_operations_tutorial_intro"></a>
 Introduction</h1>
-<p>In most cases, physics problems can be generated from combinations of graph nodes. For instance, the <a class="el" href="namespacegraph.html#a02c80d52ad57a00e98cb07d771caf993">graph::tan</a> nodes are built from \(\frac{\sin\left(x\right)}{\cos\left(x\right)}\).</p>
-<p>However, some problems will call for adding new operations. This page provides a basic example of how to impliment a new operator \(foo\left(x\right)\) in the graph framework.</p>
+<p>In most cases, physics problems can be generated from combinations of graph nodes. For instance, the <a class="el" href="namespacegraph.html#a02c80d52ad57a00e98cb07d771caf993">graph::tan</a> nodes are built from \(\frac{\sin\left(x\right)}{\cos\left(x\right)}\). However, some problems will call for adding new operations. This page provides a basic example of how to impliment a new operator \(foo\left(x\right)\) in the graph_framework.</p>
 <hr  />
  <h1><a class="anchor" id="new_operations_tutorial_node_subclass"></a>
 Node Subclasses</h1>
-<p>All graph nodes are subclasses of <a class="el" href="classgraph_1_1leaf__node.html">graph::leaf_node</a> or subclasses or other nodes. In the case of our \(foo\left(x\right)\) example we can sublass the <a class="el" href="classgraph_1_1straight__node.html">graph::straight_node</a> instead. If there are two or three operands you can subclass</p><ul>
+<p>All graph nodes are subclasses of <a class="el" href="classgraph_1_1leaf__node.html">graph::leaf_node</a> or subclasses of other nodes. In the case of our \(foo\left(x\right)\) example we can sublass the <a class="el" href="classgraph_1_1straight__node.html">graph::straight_node</a> since these assume single arguments. If there are two or three operands you can subclass</p><ul>
 <li><a class="el" href="classgraph_1_1branch__node.html">graph::branch_node</a></li>
 <li><a class="el" href="classgraph_1_1triple__node.html">graph::triple_node</a></li>
 </ul>
@@ -186,7 +185,7 @@ Node Subclasses</h1>
 <div class="line">};</div>
 <div class="ttc" id="anamespacejit_html_a67f5624eaf42230fcddd7c6b5321900a"><div class="ttname"><a href="namespacejit.html#a67f5624eaf42230fcddd7c6b5321900a">jit::format_to_string</a></div><div class="ttdeci">std::string format_to_string(const T value)</div><div class="ttdoc">Convert a value to a string while avoiding locale.</div><div class="ttdef"><b>Definition</b> register.hpp:211</div></div>
 </div><!-- fragment --><p> The static <code>to_string</code> method provices an idenifier that can be used to generate a hash for the node. This hash will be used later in a factory function to exsure nodes only exist once.</p>
-<p>A factor function constructs a node then immedately reduces it. The reduced node is then checked if it already exists in the leaf_node::caches::node. If the node is a new node, we add it to the cache and return it. Otherwise we discard the node and return the cached node. In it's place. </p><div class="fragment"><div class="line"><span class="keyword">template</span>&lt;jit::<span class="keywordtype">float</span>_scalar T, <span class="keywordtype">bool</span> SAFE_MATH=false&gt;</div>
+<p>A factory function constructs a node then immedately reduces it. The reduced node is then checked if it already exists in the <a class="el" href="structgraph_1_1leaf__node_1_1caches__t.html#a8763928d01d20b97b3a6ec9ea347c0f0">graph::leaf_node::caches_t::nodes</a>. If the node is a new node, we add it to the cache and return it. Otherwise we discard the node and return the cached node in it's place. </p><div class="fragment"><div class="line"><span class="keyword">template</span>&lt;jit::<span class="keywordtype">float</span>_scalar T, <span class="keywordtype">bool</span> SAFE_MATH=false&gt;</div>
 <div class="line">shared_leaf&lt;T, SAFE_MATH&gt; foo(shared_leaf&lt;T, SAFE_MATH&gt; x) {</div>
 <div class="line">    <span class="keyword">auto</span> temp = std::make_shared&lt;foo_node&lt;T, SAFE_MATH&gt;&gt; (x)-&gt;reduce();</div>
 <div class="line"><span class="comment">//  Test for hash collisions.</span></div>
@@ -201,7 +200,7 @@ Node Subclasses</h1>
 <div class="line">        }</div>
 <div class="line">    }</div>
 <div class="line">}</div>
-</div><!-- fragment --><p>To aid in introspection we also need a function to case a generic <a class="el" href="namespacegraph.html#a7b93b9fe51238a5ca34a1a3d9352cace">graph::shared_leaf</a> back to the specifi node tpe. For convience, we also define a type alias for shared type. </p><div class="fragment"><div class="line"><span class="keyword">template</span>&lt;jit::<span class="keywordtype">float</span>_scalar T, <span class="keywordtype">bool</span> SAFE_MATH=false&gt;</div>
+</div><!-- fragment --><p>To aid in introspection we also need a function to cast a generic <a class="el" href="namespacegraph.html#a7b93b9fe51238a5ca34a1a3d9352cace">graph::shared_leaf</a> back to the specific node type. For convience, we also define a type alias for shared type. </p><div class="fragment"><div class="line"><span class="keyword">template</span>&lt;jit::<span class="keywordtype">float</span>_scalar T, <span class="keywordtype">bool</span> SAFE_MATH=false&gt;</div>
 <div class="line"><span class="keyword">using </span>shared_foo = std::shared_ptr&lt;add_node&lt;T, SAFE_MATH&gt;&gt;;</div>
 <div class="line"> </div>
 <div class="line"><span class="keyword">template</span>&lt;jit::<span class="keywordtype">float</span>_scalar T, <span class="keywordtype">bool</span> SAFE_MATH=false&gt;</div>
@@ -215,18 +214,18 @@ Methods overloads</h1>
 <hr  />
  <h2><a class="anchor" id="new_operations_tutorial_evalute"></a>
 Evaluate</h2>
-<p>To start, lets provide a way to <a class="el" href="classgraph_1_1leaf__node.html#a9dffad49122136d0353d709e0906e8b4">evalute the node</a>. The first step to evaluate a node is to the nodes argument. </p><div class="fragment"><div class="line"><span class="keyword">virtual</span> shared_leaf&lt;T, SAFE_MATH&gt; evaluate() {</div>
+<p>To start, lets provide a way to <a class="el" href="classgraph_1_1leaf__node.html#a9dffad49122136d0353d709e0906e8b4">evalute the node</a>. The first step to evaluate a node is to evaluate the nodes argument. </p><div class="fragment"><div class="line"><span class="keyword">virtual</span> shared_leaf&lt;T, SAFE_MATH&gt; evaluate() {</div>
 <div class="line">    <a class="code hl_class" href="classbackend_1_1buffer.html">backend::buffer&lt;T&gt;</a> result = this-&gt;arg-&gt;evaluate();</div>
 <div class="line">}</div>
 <div class="ttc" id="aclassbackend_1_1buffer_html"><div class="ttname"><a href="classbackend_1_1buffer.html">backend::buffer</a></div><div class="ttdoc">Class representing a generic buffer.</div><div class="ttdef"><b>Definition</b> backend.hpp:29</div></div>
-</div><!-- fragment --><p> <a class="el" href="classbackend_1_1buffer.html">backend::buffer</a> are quick ways we can evalute the node on the GPU before needing to generate GPU kernels and is used by the <a class="el" href="classgraph_1_1leaf__node.html#adc40a5a5597f45f962cf297e3f4afec7">graph::leaf_node::reduce</a> method to precompute constant values. We can extend the <a class="el" href="classbackend_1_1buffer.html">backend::buffer</a> class with a new method to evaluate foo or you can use the existing operators. In this case lets assume \(foo\left(x\right)=x^{2}\). </p><div class="fragment"><div class="line"><span class="keyword">virtual</span> shared_leaf&lt;T, SAFE_MATH&gt; evaluate() {</div>
+</div><!-- fragment --><p> <a class="el" href="classbackend_1_1buffer.html">backend::buffer</a> are quick ways we can evalute the node on the host before needing to generate device kernels and is used by the <a class="el" href="classgraph_1_1leaf__node.html#adc40a5a5597f45f962cf297e3f4afec7">graph::leaf_node::reduce</a> method to precompute constant values. We can extend the <a class="el" href="classbackend_1_1buffer.html">backend::buffer</a> class with a new method to evaluate foo or you can use the existing operators. In this case lets assume \(foo\left(x\right)=x^{2}\). </p><div class="fragment"><div class="line"><span class="keyword">virtual</span> shared_leaf&lt;T, SAFE_MATH&gt; evaluate() {</div>
 <div class="line">    <a class="code hl_class" href="classbackend_1_1buffer.html">backend::buffer&lt;T&gt;</a> result = this-&gt;arg-&gt;evaluate();</div>
 <div class="line">    <span class="keywordflow">return</span> result*result;</div>
 <div class="line">}</div>
 </div><!-- fragment --><hr  />
  <h2><a class="anchor" id="new_operations_tutorial_is_match"></a>
 Is Match</h2>
-<p>This methiod checks if the node matches another node. The first thing to check is if the pointers match. Then we can check if the structure of the graphs match. </p><div class="fragment"><div class="line"><span class="keyword">virtual</span> <span class="keywordtype">bool</span> is_match(shared_leaf&lt;T, SAFE_MATH&gt; x) {</div>
+<p>This methiod checks if the node matches another node. The first thing to check is if the pointers match. Then we can check if the structure of the graphs match. This is important for the factory function. When checking for cached nodes, two graphs can be identical but have different pointer values. Checking the structure of the graphs ensures that we catch identical graphs. </p><div class="fragment"><div class="line"><span class="keyword">virtual</span> <span class="keywordtype">bool</span> is_match(shared_leaf&lt;T, SAFE_MATH&gt; x) {</div>
 <div class="line">    <span class="keywordflow">if</span> (<span class="keyword">this</span> == x.get()) {</div>
 <div class="line">        <span class="keywordflow">return</span> <span class="keyword">true</span>;</div>
 <div class="line">    }</div>
@@ -252,7 +251,7 @@ Reduce</h2>
 <hr  />
  <h2><a class="anchor" id="new_operations_tutorial_df"></a>
 df</h2>
-<p>Auto differentiation is provided by returning the derivative expression. \(\frac{\partial}{\partial y}foo\left(x\right)=2x\frac{\partial x}{\partial y}\). However, in this frame it is also possible to take a derivative with respect to itself \(\frac{\partial foo\left(x\right)}{\partial foo\left(x\right)}=1 \). </p><div class="fragment"><div class="line"><span class="keyword">virtual</span> shared_leaf&lt;T, SAFE_MATH&gt; df(shared_leaf&lt;T, SAFE_MATH&gt; x) {</div>
+<p>Auto differentiation is provided by returning the derivative expression. \(\frac{\partial}{\partial y}foo\left(x\right)=2x\frac{\partial x}{\partial y}\). However, in this framework it is also possible to take a derivative with respect to itself \(\frac{\partial foo\left(x\right)}{\partial foo\left(x\right)}=1 \). </p><div class="fragment"><div class="line"><span class="keyword">virtual</span> shared_leaf&lt;T, SAFE_MATH&gt; df(shared_leaf&lt;T, SAFE_MATH&gt; x) {</div>
 <div class="line">    <span class="keywordflow">if</span> (this-&gt;is_match(x)) {</div>
 <div class="line">        <span class="keywordflow">return</span> one&lt;T, SAFE_MATH&gt; ();</div>
 <div class="line">    }</div>
@@ -267,7 +266,7 @@ df</h2>
 <hr  />
  <h2><a class="anchor" id="new_operations_tutorial_compile_preamble"></a>
 Compile preamble</h2>
-<p>The <a class="el" href="classgraph_1_1leaf__node.html#afc102b9a3b9a61ec917750fe96e98f53">graph::leaf_node::compile_preamble</a> method provides ways that header files or define functions. Lets use this method to define a function that can be called from the kerne. </p><div class="fragment"><div class="line"><span class="keyword">virtual</span> <span class="keywordtype">void</span> compile_preamble(std::ostringstream &amp;stream,</div>
+<p>The <a class="el" href="classgraph_1_1leaf__node.html#afc102b9a3b9a61ec917750fe96e98f53">graph::leaf_node::compile_preamble</a> method provides ways to include header files or define functions. Lets use this method to define a function that can be called from the kernel. </p><div class="fragment"><div class="line"><span class="keyword">virtual</span> <span class="keywordtype">void</span> compile_preamble(std::ostringstream &amp;stream,</div>
 <div class="line">                              <a class="code hl_typedef" href="namespacejit.html#a9822ffd072bb1abcde9176028aa24a5e">jit::register_map</a> &amp;registers,</div>
 <div class="line">                              <a class="code hl_typedef" href="namespacejit.html#aed5672337b45a8b11f1351456d2284b8">jit::visiter_map</a> &amp;visited,</div>
 <div class="line">                              <a class="code hl_typedef" href="namespacejit.html#a8f16308f3c321ac415daf451d0157a91">jit::register_usage</a> &amp;usage,</div>
@@ -346,19 +345,19 @@ Is Power Like</h2>
 </div><!-- fragment --><hr  />
  <h2><a class="anchor" id="new_operations_tutorial_get_power_base"></a>
 Get power base</h2>
-<p>Return the base of the power node. This provides information for other nodes about how this works for reduction methods. </p><div class="fragment"><div class="line"><span class="keyword">virtual</span> shared_leaf&lt;T, SAFE_MATH&gt; get_power_base()<span class="keyword"> const </span>{</div>
+<p>Return the base of the power node. This provides information for other nodes about how this works for reduction methods. In this case the power base is the function argument. </p><div class="fragment"><div class="line"><span class="keyword">virtual</span> shared_leaf&lt;T, SAFE_MATH&gt; get_power_base()<span class="keyword"> const </span>{</div>
 <div class="line">    <span class="keywordflow">return</span> this-&gt;arg;</div>
 <div class="line">}</div>
 </div><!-- fragment --><hr  />
  <h2><a class="anchor" id="new_operations_tutorial_get_power_exponent"></a>
 Get power exponent</h2>
-<p>Return the exponent of the power node. This provides information for other nodes about how this works for reduction methods. </p><div class="fragment"><div class="line"><span class="keyword">virtual</span> shared_leaf&lt;T, SAFE_MATH&gt; get_power_exponent()<span class="keyword"> const </span>{</div>
+<p>Return the exponent of the power node. This provides information for other nodes about how this works for reduction methods. In this case, the power exponent is \(2 \). </p><div class="fragment"><div class="line"><span class="keyword">virtual</span> shared_leaf&lt;T, SAFE_MATH&gt; get_power_exponent()<span class="keyword"> const </span>{</div>
 <div class="line">    <span class="keywordflow">return</span> constant&lt;T, SAFE_MATH&gt; (<span class="keyword">static_cast&lt;</span>T<span class="keyword">&gt;</span> (2.0));</div>
 <div class="line">}</div>
 </div><!-- fragment --><hr  />
  <h2><a class="anchor" id="new_operations_tutorial_remove_pseudo"></a>
 Remove Pseudo</h2>
-<p>Return the node with pseduo variables removed. </p><div class="fragment"><div class="line"><span class="keyword">virtual</span> shared_leaf&lt;T, SAFE_MATH&gt; remove_pseudo() {</div>
+<p>Return the node with pseduo variables removed. <a class="el" href="classgraph_1_1pseudo__variable__node.html">graph::pseudo_variable_node</a> are used to end derivatives construction by treating a sub graph as a pseduo variable. Before graphs can be evaluated, these <a class="el" href="classgraph_1_1pseudo__variable__node.html">graph::pseudo_variable_node</a> need to be removed. </p><div class="fragment"><div class="line"><span class="keyword">virtual</span> shared_leaf&lt;T, SAFE_MATH&gt; remove_pseudo() {</div>
 <div class="line">    <span class="keywordflow">if</span> (this-&gt;has_pseudo()) {</div>
 <div class="line">        <span class="keywordflow">return</span> sqrt(this-&gt;arg-&gt;remove_pseudo());</div>
 <div class="line">    }</div>
@@ -367,7 +366,7 @@ Remove Pseudo</h2>
 </div><!-- fragment --><hr  />
  <h2><a class="anchor" id="new_operations_tutorial_to_vizgraph"></a>
 To Vizgraph</h2>
-<p>Generates a vizgraph node for visualization. </p><div class="fragment"><div class="line"><span class="keyword">virtual</span> shared_leaf&lt;T, SAFE_MATH&gt; to_vizgraph(std::stringstream &amp;stream,</div>
+<p>Generates a <a href="https://graphviz.org">vizgraph</a> node for visualization. </p><div class="fragment"><div class="line"><span class="keyword">virtual</span> shared_leaf&lt;T, SAFE_MATH&gt; to_vizgraph(std::stringstream &amp;stream,</div>
 <div class="line">                                              <a class="code hl_typedef" href="namespacejit.html#a9822ffd072bb1abcde9176028aa24a5e">jit::register_map</a> &amp;registers) {</div>
 <div class="line">    <span class="keywordflow">if</span> (registers.find(<span class="keyword">this</span>) == registers.end()) {</div>
 <div class="line">        <span class="keyword">const</span> std::string name = <a class="code hl_function" href="namespacejit.html#aff060cfc1e5b5a499390c636dc80e147">jit::to_string</a>(<span class="charliteral">&#39;r&#39;</span>, <span class="keyword">this</span>);</div>
