@@ -214,15 +214,16 @@ Developing new solvers</h1>
 <div class="line"><span class="keyword">class </span>new_solver : <span class="keyword">public</span> solver_interface&lt;DISPERSION_FUNCTION&gt; {</div>
 <div class="line">   ...</div>
 <div class="line">}</div>
-</div><!-- fragment --><p> When a new dispersion function is subclassed from <a class="el" href="classdispersion_1_1dispersion__function.html">dispersion::dispersion_function</a> no methods need to be overloaded, In stead expressions for</p><ul>
-<li>dispersion::dispersion_function::kx_next</li>
-<li>dispersion::dispersion_function::ky_next</li>
-<li>dispersion::dispersion_function::kz_next</li>
-<li>dispersion::dispersion_function::x_next</li>
-<li>dispersion::dispersion_function::y_next</li>
-<li>dispersion::dispersion_function::z_next</li>
-<li>dispersion::dispersion_function::t_next </li>
+</div><!-- fragment --><p> When a new solver method is subclassed from <a class="el" href="classsolver_1_1solver__interface.html">solver::solver_interface</a> no methods need to be overloaded, Instead expressions for</p><ul>
+<li><a class="el" href="classsolver_1_1solver__interface.html#ac5e0f3e51363b807720e69465a874c21">solver::solver_interface::kx_next</a></li>
+<li><a class="el" href="classsolver_1_1solver__interface.html#af47cf20ec18f3b2d7294033256337a3e">solver::solver_interface::ky_next</a></li>
+<li><a class="el" href="classsolver_1_1solver__interface.html#a3ed144167be2697e1b51e97d994ace46">solver::solver_interface::kz_next</a></li>
+<li><a class="el" href="classsolver_1_1solver__interface.html#a64200cf799645c791f4ea6e7f66127f4">solver::solver_interface::x_next</a></li>
+<li><a class="el" href="classsolver_1_1solver__interface.html#ae328ff2e48a0e19efc5824a3065ef25f">solver::solver_interface::y_next</a></li>
+<li><a class="el" href="classsolver_1_1solver__interface.html#acb113f2f2eb71a4d7a9525e15fdaa7b6">solver::solver_interface::z_next</a></li>
+<li><a class="el" href="classsolver_1_1solver__interface.html#a26da65e3f21f504a1f8e6adabf94b9b8">solver::solver_interface::t_next</a></li>
 </ul>
+<p>must be created. </p>
 </div></div><!-- contents -->
 </div><!-- PageDoc -->
 </div><!-- doc-content -->
