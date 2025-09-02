@@ -116,8 +116,7 @@ $(function(){initNavTree('graph_fortran_binding.html',''); initResizable(true); 
   </li>
 </ul>
 </div>
-<div class="textblock"><p>Module contains subroutines for calling this from fortran.</p>
-<p>Documentation for linking into Fortran code base.</p>
+<div class="textblock"><p>Documentation for linking into Fortran code base.</p>
 <h1><a class="anchor" id="graph_fortran_binding_into"></a>
 Introduction</h1>
 <p>This section assumes the reader is already familar with developing Fortran codes. The simplist method is to create a C callable function like the <a class="el" href="graph_c_binding.html#graph_c_binding_into">C binding exmaple</a>. Then create a fortran interface for it. </p><div class="fragment"><div class="line"><span class="keyword">INTERFACE</span></div>
@@ -130,8 +129,8 @@ Introduction</h1>
 </div><!-- fragment --><hr  />
  <h1><a class="anchor" id="graph_fortran_binding_interface"></a>
 Fortran Binding Interface</h1>
-<p>An alternative is to use the Fortran Language interface. The Fortran binding interface can be enabled as one of the <code>cmake</code> <a class="el" href="build_system.html#build_system_user_options">conifgure options</a>. As an example, we will convert the <a class="el" href="tutorial.html#tutorial_workflow">making workflows</a> turorial to use the Fortran language bindings. </p><div class="fragment"><div class="line"><span class="keyword">SUBROUTINE </span>fortran_binding</div>
-<div class="line"><span class="keywordtype">USE </span>graph_fortran</div>
+<p>An alternative is to use the <a class="el" href="namespacegraph__fortran.html">Fortran Language interface</a>. The Fortran binding interface can be enabled as one of the <code>cmake</code> <a class="el" href="build_system.html#build_system_user_options">conifgure options</a>. As an example, we will convert the <a class="el" href="tutorial.html#tutorial_workflow">making workflows</a> turorial to use the Fortran language bindings. </p><div class="fragment"><div class="line"><span class="keyword">SUBROUTINE </span>fortran_binding</div>
+<div class="line"><span class="keywordtype">USE </span><a class="code hl_namespace" href="namespacegraph__fortran.html">graph_fortran</a></div>
 <div class="line">use, <span class="keywordtype">INTRINSIC</span> :: iso_c_binding</div>
 <div class="line"> </div>
 <div class="line"><span class="keywordtype">IMPLICIT NONE</span></div>
@@ -157,23 +156,26 @@ Fortran Binding Interface</h1>
 <div class="line"><span class="keyword">CALL </span><a class="code hl_namespace" href="namespacegraph.html">graph</a>%set_variable(x, (/ 1.0_c_double, 2.0_c_double, 3.0_c_double /))</div>
 <div class="line"> </div>
 <div class="line"><span class="keyword">CALL </span><a class="code hl_namespace" href="namespacegraph.html">graph</a>%set_device_number(0)</div>
-<div class="line"><span class="keyword">CALL </span><a class="code hl_namespace" href="namespacegraph.html">graph</a>%add_item((/ graph_ptr(x) /),                                    &amp;</div>
-<div class="line">                    (/ graph_ptr(y), graph_ptr(dydx) /))                   &amp;</div>
-<div class="line">                    graph_null_array, graph_null_array, c_null_ptr,        &amp;</div>
+<div class="line"><span class="keyword">CALL </span><a class="code hl_namespace" href="namespacegraph.html">graph</a>%add_item((/ <a class="code hl_function" href="namespacegraph__fortran.html#a58d6db65bd0453f4a31d61402621f9e8">graph_ptr</a>(x) /),                                    &amp;</div>
+<div class="line">                    (/ <a class="code hl_function" href="namespacegraph__fortran.html#a58d6db65bd0453f4a31d61402621f9e8">graph_ptr</a>(y), <a class="code hl_function" href="namespacegraph__fortran.html#a58d6db65bd0453f4a31d61402621f9e8">graph_ptr</a>(dydx) /))                   &amp;</div>
+<div class="line">                    <a class="code hl_variable" href="namespacegraph__fortran.html#a43fdd53fd3b5d8b8d4b7de161a98b775">graph_null_array</a>, <a class="code hl_variable" href="namespacegraph__fortran.html#a43fdd53fd3b5d8b8d4b7de161a98b775">graph_null_array</a>, c_null_ptr,        &amp;</div>
 <div class="line">                    <span class="stringliteral">&#39;my_first_kernel&#39;</span> // c_null_char, 3_c_long)</div>
 <div class="line"><span class="keyword">CALL </span><a class="code hl_namespace" href="namespacegraph.html">graph</a>%compile</div>
 <div class="line"><span class="keyword">CALL </span><a class="code hl_namespace" href="namespacegraph.html">graph</a>%run</div>
-<div class="line"><span class="keyword">CALL </span><a class="code hl_namespace" href="namespacegraph.html">graph</a>%print(0, (/ graph_ptr(x), graph_ptr(y), graph_ptr(dydx) /))</div>
-<div class="line"><span class="keyword">CALL </span><a class="code hl_namespace" href="namespacegraph.html">graph</a>%print(1, (/ graph_ptr(x), graph_ptr(y), graph_ptr(dydx) /))</div>
-<div class="line"><span class="keyword">CALL </span><a class="code hl_namespace" href="namespacegraph.html">graph</a>%print(2, (/ graph_ptr(x), graph_ptr(y), graph_ptr(dydx) /))</div>
+<div class="line"><span class="keyword">CALL </span><a class="code hl_namespace" href="namespacegraph.html">graph</a>%print(0, (/ <a class="code hl_function" href="namespacegraph__fortran.html#a58d6db65bd0453f4a31d61402621f9e8">graph_ptr</a>(x), <a class="code hl_function" href="namespacegraph__fortran.html#a58d6db65bd0453f4a31d61402621f9e8">graph_ptr</a>(y), <a class="code hl_function" href="namespacegraph__fortran.html#a58d6db65bd0453f4a31d61402621f9e8">graph_ptr</a>(dydx) /))</div>
+<div class="line"><span class="keyword">CALL </span><a class="code hl_namespace" href="namespacegraph.html">graph</a>%print(1, (/ <a class="code hl_function" href="namespacegraph__fortran.html#a58d6db65bd0453f4a31d61402621f9e8">graph_ptr</a>(x), <a class="code hl_function" href="namespacegraph__fortran.html#a58d6db65bd0453f4a31d61402621f9e8">graph_ptr</a>(y), <a class="code hl_function" href="namespacegraph__fortran.html#a58d6db65bd0453f4a31d61402621f9e8">graph_ptr</a>(dydx) /))</div>
+<div class="line"><span class="keyword">CALL </span><a class="code hl_namespace" href="namespacegraph.html">graph</a>%print(2, (/ <a class="code hl_function" href="namespacegraph__fortran.html#a58d6db65bd0453f4a31d61402621f9e8">graph_ptr</a>(x), <a class="code hl_function" href="namespacegraph__fortran.html#a58d6db65bd0453f4a31d61402621f9e8">graph_ptr</a>(y), <a class="code hl_function" href="namespacegraph__fortran.html#a58d6db65bd0453f4a31d61402621f9e8">graph_ptr</a>(dydx) /))</div>
 <div class="line"> </div>
 <div class="line"><span class="keyword">DEALLOCATE</span>(<a class="code hl_namespace" href="namespacegraph.html">graph</a>)</div>
 <div class="line"><span class="keyword">END SUBROUTINE</span></div>
-<div class="ttc" id="ainterfacegraph__fortran_1_1graph__double__context_html"><div class="ttname"><a href="interfacegraph__fortran_1_1graph__double__context.html">graph_fortran::graph_double_context</a></div><div class="ttdoc">Interface for the graph_context constructor with double type.</div><div class="ttdef"><b>Definition</b> graph_fortran_binding.f90:211</div></div>
+<div class="ttc" id="ainterfacegraph__fortran_1_1graph__double__context_html"><div class="ttname"><a href="interfacegraph__fortran_1_1graph__double__context.html">graph_fortran::graph_double_context</a></div><div class="ttdoc">Interface for the graph_context constructor with double type.</div><div class="ttdef"><b>Definition</b> graph_fortran_binding.f90:206</div></div>
+<div class="ttc" id="anamespacegraph__fortran_html"><div class="ttname"><a href="namespacegraph__fortran.html">graph_fortran</a></div><div class="ttdoc">Module contains subroutines for calling this from fortran.</div><div class="ttdef"><b>Definition</b> graph_fortran_binding.f90:83</div></div>
+<div class="ttc" id="anamespacegraph__fortran_html_a43fdd53fd3b5d8b8d4b7de161a98b775"><div class="ttname"><a href="namespacegraph__fortran.html#a43fdd53fd3b5d8b8d4b7de161a98b775">graph_fortran::graph_null_array</a></div><div class="ttdeci">integer(c_intptr_t), dimension(0) graph_null_array</div><div class="ttdoc">A null array for empty.</div><div class="ttdef"><b>Definition</b> graph_fortran_binding.f90:89</div></div>
+<div class="ttc" id="anamespacegraph__fortran_html_a58d6db65bd0453f4a31d61402621f9e8"><div class="ttname"><a href="namespacegraph__fortran.html#a58d6db65bd0453f4a31d61402621f9e8">graph_fortran::graph_ptr</a></div><div class="ttdeci">integer(c_intptr_t) function graph_ptr(node)</div><div class="ttdoc">Convert a node to the pointer value.</div><div class="ttdef"><b>Definition</b> graph_fortran_binding.f90:916</div></div>
 <div class="ttc" id="anamespacegraph_html"><div class="ttname"><a href="namespacegraph.html">graph</a></div><div class="ttdoc">Name space for graph nodes.</div><div class="ttdef"><b>Definition</b> arithmetic.hpp:13</div></div>
-</div><!-- fragment --><dl class="section note"><dt>Note</dt><dd>Graphs need to use the <a class="el" href="graph__fortran__binding_8f90.html#a58d6db65bd0453f4a31d61402621f9e8">graph_fortran::graph_ptr</a> function to get the pointer address of node. </dd>
+</div><!-- fragment --><dl class="section note"><dt>Note</dt><dd>Graphs need to use the <a class="el" href="namespacegraph__fortran.html#a58d6db65bd0453f4a31d61402621f9e8">graph_fortran::graph_ptr</a> function to get the pointer address of node. </dd>
 <dd>
-The <a class="el" href="graph__fortran__binding_8f90.html#a43fdd53fd3b5d8b8d4b7de161a98b775">graph_fortran::graph_null_array</a> allows set arrays of nodes to null. </dd></dl>
+The <a class="el" href="namespacegraph__fortran.html#a43fdd53fd3b5d8b8d4b7de161a98b775">graph_fortran::graph_null_array</a> allows set arrays of nodes to null. </dd></dl>
 </div></div><!-- contents -->
 </div><!-- PageDoc -->
 </div><!-- doc-content -->

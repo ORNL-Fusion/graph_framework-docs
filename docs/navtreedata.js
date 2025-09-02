@@ -57,16 +57,16 @@ var NAVTREE =
           [ "Trouble Shooting.", "build_system.html#build_system_trouble_shooting", null ]
         ] ],
         [ "Building the code.", "build_system.html#build_system_build", null ],
-        [ "Running unit tests.", "build_system.html#build_system_test", null ]
+        [ "Running unit tests", "build_system.html#build_system_test", null ]
       ] ],
       [ "Developer Guide", "build_system.html#build_system_dev", [
         [ "Macro Definitions", "build_system.html#build_system_macros", [
-          [ "Tool targets.", "build_system.html#build_system_targets", null ],
+          [ "Tool targets", "build_system.html#build_system_targets", null ],
           [ "Sanatizer flags", "build_system.html#build_system_sanitizer", null ],
           [ "Register an external project", "build_system.html#build_system_project", null ]
         ] ],
         [ "Debugging", "build_system.html#build_system_debug", [
-          [ "Build system Options", "build_system.html#build_system_dev_options", null ]
+          [ "Build System Options", "build_system.html#build_system_dev_options", null ]
         ] ]
       ] ]
     ] ],
@@ -95,7 +95,7 @@ var NAVTREE =
       [ "Making workflows.", "tutorial.html#tutorial_workflow", [
         [ "Iteration", "tutorial.html#tutorial_workflow_iter", null ]
       ] ],
-      [ "Newtons Method.", "tutorial.html#tutorial_workflow_newton", null ]
+      [ "Newton's Method.", "tutorial.html#tutorial_workflow_newton", null ]
     ] ],
     [ "xrays Command Line Arguments", "xrays_commandline.html", [
       [ "Introduction", "xrays_commandline.html#xrays_commandline_intro", null ],
@@ -187,7 +187,7 @@ var NAVTREE =
     [ "Namespaces", "namespaces.html", [
       [ "Namespace List", "namespaces.html", "namespaces_dup" ],
       [ "Namespace Members", "namespacemembers.html", [
-        [ "All", "namespacemembers.html", null ],
+        [ "All", "namespacemembers.html", "namespacemembers_dup" ],
         [ "Functions", "namespacemembers_func.html", null ],
         [ "Variables", "namespacemembers_vars.html", null ],
         [ "Typedefs", "namespacemembers_type.html", null ]
@@ -228,9 +228,9 @@ var NAVTREEINDEX =
 "classgraph_1_1variable__node.html#a6cc97fd212ea8cfbdf09f06d50560a46",
 "classsolver_1_1solver__interface.html#a87d0f0b95be0f073599cd0c6ea0f344c",
 "functions_f.html",
-"interfacegraph__fortran_1_1graph__float__context.html#a5c023607f23418e56b11abd167b5e89a",
-"namespacespecial.html#a8e79c36d1f8048f7c492e72ff6c0fd93",
-"vector_8hpp.html#aaf10e93720233046bb17a3738fca77ac"
+"interfacegraph__fortran_1_1graph__construct__context.html",
+"namespacegraph.html#ae5b6a8636a9604506935459453c7f267",
+"solver__test_8cpp.html#a549d8acce0278424033d32d170eefcd5"
 ];
 
 var SYNCONMSG = 'click to disable panel synchronisation';

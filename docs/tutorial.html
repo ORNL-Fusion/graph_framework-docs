@@ -136,14 +136,14 @@ $(function(){initNavTree('tutorial.html',''); initResizable(true); });
     </ul>
   </li>
   <li class="level1">
-    <a href="#tutorial_workflow_newton">Newtons Method.</a>
+    <a href="#tutorial_workflow_newton">Newton&#39;s Method.</a>
   </li>
 </ul>
 </div>
-<div class="textblock"><p>Hands on tutorial for building expressions and running workflow.</p>
+<div class="textblock"><p>Hands on tutorial for building expressions and running workflows.</p>
 <h1><a class="anchor" id="tutorial_introduction"></a>
 Introduction</h1>
-<p>In this tutorial we will put the basic <a class="el" href="general_concepts.html">General Concepts</a> of the graph_into action. This will discuss building trees, generating, and executing workflows.</p>
+<p>In this tutorial we will put the basic <a class="el" href="general_concepts.html">General Concepts</a> of the graph_framework into action. This will discuss building trees, generating kernels, and executing workflows.</p>
 <p>To accomplish this there is a playground tool in the <code>graph_framework</code> directory. This playground is a preconfigured executable target which can be used to test out the API's of this framework. The playground starts with a blank main function. </p><div class="fragment"><div class="line"><span class="preprocessor">#include &quot;../graph_framework/jit.hpp&quot;</span></div>
 <div class="line"> </div>
 <div class="line"><span class="keywordtype">int</span> main(<span class="keywordtype">int</span> argc, <span class="keyword">const</span> <span class="keywordtype">char</span> * argv[]) {</div>
@@ -158,7 +158,7 @@ Introduction</h1>
 <div class="line">}</div>
 <div class="ttc" id="agraph__c__binding_8h_html_a9ed5f8a3efebcba6fb2b7eef9817d896"><div class="ttname"><a href="graph__c__binding_8h.html#a9ed5f8a3efebcba6fb2b7eef9817d896">END_GPU</a></div><div class="ttdeci">#define END_GPU</div><div class="ttdef"><b>Definition</b> graph_c_binding.h:133</div></div>
 <div class="ttc" id="agraph__c__binding_8h_html_ad8adc1545da096be4d3c3323b41f6d85"><div class="ttname"><a href="graph__c__binding_8h.html#ad8adc1545da096be4d3c3323b41f6d85">START_GPU</a></div><div class="ttdeci">#define START_GPU</div><div class="ttdef"><b>Definition</b> graph_c_binding.h:132</div></div>
-</div><!-- fragment --><p> To start, create a template function above main and call that function from main. This will allow to play with different floating point types. For now we will start with a simple floating point type. </p><div class="fragment"><div class="line"><span class="preprocessor">#include &quot;../graph_framework/jit.hpp&quot;</span></div>
+</div><!-- fragment --><p> To start, create a template function above main and call that function from main. This will allow us to play with different floating point types. For now we will start with a simple floating point type. </p><div class="fragment"><div class="line"><span class="preprocessor">#include &quot;../graph_framework/jit.hpp&quot;</span></div>
 <div class="line"> </div>
 <div class="line"><span class="keyword">template</span>&lt;jit::<span class="keywordtype">float</span>_scalar T&gt;</div>
 <div class="line"><span class="keywordtype">void</span> run_tutorial() {</div>
@@ -174,7 +174,7 @@ Introduction</h1>
 <div class="line"> </div>
 <div class="line">    <a class="code hl_define" href="graph__c__binding_8h.html#a9ed5f8a3efebcba6fb2b7eef9817d896">END_GPU</a></div>
 <div class="line">}</div>
-</div><!-- fragment --><p> Here <a class="el" href="conceptjit_1_1float__scalar.html">jit::float_scalar</a> is a C++20 <a href="https://www.cppreference.com/w/cpp/concepts.html">Concept</a> for valid types of floating point types allowed by the framework.</p>
+</div><!-- fragment --><p> Here <a class="el" href="conceptjit_1_1float__scalar.html">jit::float_scalar</a> is a <a href="https://www.cppreference.com/w/cpp/20.html">C++20</a> <a href="https://www.cppreference.com/w/cpp/concepts.html">Concept</a> for valid floating point types allowed by the framework.</p>
 <hr  />
  <h1><a class="anchor" id="tutorial_basic"></a>
 Basic Nodes</h1>
@@ -202,7 +202,7 @@ Constant Nodes</h2>
 <div class="line">    <span class="keyword">const</span> T b = 0.6;</div>
 <div class="line">}</div>
 <div class="ttc" id="anamespacegraph_html_aac9c42e584204a9fad529d2614a3eae9"><div class="ttname"><a href="namespacegraph.html#aac9c42e584204a9fad529d2614a3eae9">graph::constant</a></div><div class="ttdeci">shared_leaf&lt; T, SAFE_MATH &gt; constant(const backend::buffer&lt; T &gt; &amp;d)</div><div class="ttdoc">Construct a constant.</div><div class="ttdef"><b>Definition</b> node.hpp:942</div></div>
-</div><!-- fragment --><p> An explicit <a class="el" href="classgraph_1_1constant__node.html">graph::constant_node</a> is create for <code>m</code> while an impicit constant was defined for <code>b</code>. Node in the implicit case, the actual node for <code>b</code> is not created until we use it in an expression.</p>
+</div><!-- fragment --><p> An explicit <a class="el" href="classgraph_1_1constant__node.html">graph::constant_node</a> is create for <code>m</code> while an impicit constant was defined for <code>b</code>. Note in the implicit case, the actual node for <code>b</code> is not created until we use it in an expression.</p>
 <hr  />
  <h1><a class="anchor" id="tutorial_expression"></a>
 Basic Expressions</h1>
@@ -240,14 +240,14 @@ Auto Differentiation</h2>
 <div class="line">    dydx-&gt;to_latex();</div>
 <div class="line">    std::cout &lt;&lt; std::endl;</div>
 <div class="line">}</div>
-</div><!-- fragment --><p> Here we take derivatives using the <a class="el" href="classgraph_1_1leaf__node.html#a4785ca42cddfcfd126bba0bc78a62cab">graph::leaf_node::df</a> method. We can also take several variation of this. </p><div class="fragment"><div class="line"><span class="keyword">auto</span> dydm = y-&gt;df(m);</div>
+</div><!-- fragment --><p> Here we take derivatives using the <a class="el" href="classgraph_1_1leaf__node.html#a4785ca42cddfcfd126bba0bc78a62cab">graph::leaf_node::df</a> method. We can also take several variations of this. </p><div class="fragment"><div class="line"><span class="keyword">auto</span> dydm = y-&gt;df(m);</div>
 <div class="line"><span class="keyword">auto</span> dydy = y-&gt;df(y);</div>
 <div class="line"><span class="keyword">auto</span> dydb = y-&gt;df(m*x);</div>
-</div><!-- fragment --><p> The respective results will be \(x\), \(1\), and \(0\) respectively.</p>
+</div><!-- fragment --><p> The results will be \(x\), \(1\), and \(0\) respectively.</p>
 <hr  />
  <h1><a class="anchor" id="tutorial_workflow"></a>
 Making workflows.</h1>
-<p>In this section we will build workflow from these nodes we created. For simplicity we will decrease the number of elements in variable so we can set the values easier. First thing we do is create a <a class="el" href="classworkflow_1_1manager.html">workflow::manager</a>. </p><div class="fragment"><div class="line"><span class="keyword">template</span>&lt;jit::<span class="keywordtype">float</span>_scalar T&gt;</div>
+<p>In this section we will build a workflow from these nodes we created. For simplicity we will decrease the number of elements in the variable so we can set the values easier. First thing we do is create a <a class="el" href="classworkflow_1_1manager.html">workflow::manager</a>. </p><div class="fragment"><div class="line"><span class="keyword">template</span>&lt;jit::<span class="keywordtype">float</span>_scalar T&gt;</div>
 <div class="line"><span class="keywordtype">void</span> run_tutorial() {</div>
 <div class="line">    <span class="keyword">auto</span> x = <a class="code hl_function" href="namespacegraph.html#ab8673e7bc26ebc9c1742f99c9f448ad0">graph::variable</a>(3, <span class="stringliteral">&quot;x&quot;</span>);</div>
 <div class="line"> </div>
@@ -320,7 +320,7 @@ Making workflows.</h1>
 <div class="line">3 1.8 0.4</div>
 </div><!-- fragment --><h2><a class="anchor" id="tutorial_workflow_iter"></a>
 Iteration</h2>
-<p>In this section we are going to make use of maps to iterate a variable. I want to evaluate the value of \(y\) and set it as the new value of \(x\). We do this my modifying call to <a class="el" href="classworkflow_1_1manager.html#a8c6bd2f70c3740751fc22ffcfc596e77">workflow::manager::add_item</a> to define a map. This generates a kernel where after \(y\) is computed it is stored in the \(x\) buffer. </p><div class="fragment"><div class="line">x-&gt;set({1.0, 2.0, 3.0});</div>
+<p>In this section we are going to make use of maps to iterate a variable. We want to evaluate the value of \(y\) and set it as the new value of \(x\). We do this my modifying call to <a class="el" href="classworkflow_1_1manager.html#a8c6bd2f70c3740751fc22ffcfc596e77">workflow::manager::add_item</a> to define a map. This generates a kernel where after \(y\) is computed it is stored in the \(x\) buffer. </p><div class="fragment"><div class="line">x-&gt;set({1.0, 2.0, 3.0});</div>
 <div class="line"> </div>
 <div class="line"><a class="code hl_class" href="classworkflow_1_1manager.html">workflow::manager&lt;T&gt;</a> work(0);</div>
 <div class="line">work.add_item({</div>
@@ -347,11 +347,11 @@ Iteration</h2>
 <div class="line">1.0001</div>
 </div><!-- fragment --><hr  />
  <h1><a class="anchor" id="tutorial_workflow_newton"></a>
-Newtons Method.</h1>
-<p>In this tutorial we are going to show how we can put all these concepts together to impliment a newtons method. Newtons method if defined as </p><p class="formulaDsp">
+Newton's Method.</h1>
+<p>In this tutorial we are going to show how we can put all these concepts together to implement a newtons method. Newton's method is defined as </p><p class="formulaDsp">
 \begin{equation}x = x - \frac{f\left(x\right)}{\frac{\partial}{\partial x}f\left(x\right)}\end{equation}
 </p>
-<p> From the iteration example, it's step update can be handled by a simple map. However we need a measure for convergence. To do that we output the value of \(f\left(x\right)\). Lets setup a test function. </p><div class="fragment"><div class="line"><span class="keyword">template</span>&lt;jit::<span class="keywordtype">float</span>_scalar T&gt;</div>
+<p> From the iteration example, its step update can be handled by a simple map. However we need a measure for convergence. To do that we output the value of \(f\left(x\right)\). Lets setup a test function. </p><div class="fragment"><div class="line"><span class="keyword">template</span>&lt;jit::<span class="keywordtype">float</span>_scalar T&gt;</div>
 <div class="line"><span class="keywordtype">void</span> run_tutorial() {</div>
 <div class="line">    <span class="keyword">auto</span> x = <a class="code hl_function" href="namespacegraph.html#ab8673e7bc26ebc9c1742f99c9f448ad0">graph::variable&lt;T&gt;</a> (3, <span class="stringliteral">&quot;x&quot;</span>);</div>
 <div class="line">    x-&gt;set({1.0, 2.0, 3.0});</div>
@@ -396,7 +396,7 @@ Newtons Method.</h1>
 <div class="line">-2.6006</div>
 <div class="line">-2.6006</div>
 <div class="line">-2.6006</div>
-</div><!-- fragment --><p>However there are some things that are not optimial here. We are performing a reduction on the host side and transfer the entire array to the host. To improve this we can use a converge item instead. </p><div class="fragment"><div class="line"><span class="comment">// Create a workflow manager.</span></div>
+</div><!-- fragment --><p>However there are some things that are not optimial here. We are performing a reduction on the host side and transfering the entire array to the host. To improve this we can use a converge item instead. </p><div class="fragment"><div class="line"><span class="comment">// Create a workflow manager.</span></div>
 <div class="line"><a class="code hl_class" href="classworkflow_1_1manager.html">workflow::manager&lt;T&gt;</a> work(0);</div>
 <div class="line">work.add_converge_item({</div>
 <div class="line">    <a class="code hl_function" href="namespacegraph.html#a9321a15c96554d065da2ffe49e969ff4">graph::variable_cast</a>(x)</div>

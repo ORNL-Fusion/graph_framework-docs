@@ -75,7 +75,7 @@ var annotated_dup =
       [ "variable_node", "classgraph_1_1variable__node.html", "classgraph_1_1variable__node" ],
       [ "vector_quantity", "classgraph_1_1vector__quantity.html", "classgraph_1_1vector__quantity" ]
     ] ],
-    [ "graph_fortran", null, [
+    [ "graph_fortran", "namespacegraph__fortran.html", [
       [ "graph_add", "interfacegraph__fortran_1_1graph__add.html", null ],
       [ "graph_add_converge_item", "interfacegraph__fortran_1_1graph__add__converge__item.html", null ],
       [ "graph_add_item", "interfacegraph__fortran_1_1graph__add__item.html", null ],

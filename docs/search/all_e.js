@@ -38,7 +38,7 @@ var searchData=
   ['measure_5fdiagnostic_5fthreaded_35',['measure_diagnostic_threaded',['../classtiming_1_1measure__diagnostic__threaded.html',1,'timing::measure_diagnostic_threaded'],['../classtiming_1_1measure__diagnostic__threaded.html#a99c2c9c7893cddd1b2418d061359ab68',1,'timing::measure_diagnostic_threaded::measure_diagnostic_threaded()']]],
   ['metal_5fcontext_36',['metal_context',['../classgpu_1_1metal__context.html',1,'gpu::metal_context&lt; SAFE_MATH &gt;'],['../classgpu_1_1metal__context.html#ac367ab92af50b6c3ed082bf595afeb47',1,'gpu::metal_context::metal_context()']]],
   ['metal_5fcontext_2ehpp_37',['metal_context.hpp',['../metal__context_8hpp.html',1,'']]],
-  ['method_38',['Newtons Method.',['../tutorial.html#tutorial_workflow_newton',1,'']]],
+  ['method_38',['Newton&apos;s Method.',['../tutorial.html#tutorial_workflow_newton',1,'']]],
   ['method_39',['method',['../classabsorption_1_1method.html',1,'absorption']]],
   ['method_3c_20t_2c_20true_20_3e_40',['method&lt; T, true &gt;',['../classabsorption_1_1method.html',1,'absorption']]],
   ['methods_20overloads_41',['Methods overloads',['../new_operations_tutorial.html#new_operations_tutorial_method',1,'']]],

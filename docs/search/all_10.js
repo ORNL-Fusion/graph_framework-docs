@@ -14,7 +14,7 @@ var searchData=
   ['operator_3d_3d_11',['operator==',['../namespacebackend.html#a768ea528fdcc3eb536222a87b772c688',1,'backend']]],
   ['operator_5b_5d_12',['operator[]',['../classbackend_1_1buffer.html#a469c0413ed1c24db7218946c12f7068a',1,'backend::buffer::operator[](const size_t index)'],['../classbackend_1_1buffer.html#ae4e6739924f467005f7c35fb961f886d',1,'backend::buffer::operator[](const size_t index) const']]],
   ['optional_13',['Optional',['../build_system.html#build_system_user_dependencies_optional',1,'']]],
-  ['options_14',['Options',['../build_system.html#build_system_user_options',1,'Build system Options'],['../build_system.html#build_system_dev_options',1,'Build system Options'],['../xrays_commandline.html#xrays_commandline_args',1,'Command Options']]],
+  ['options_14',['Options',['../build_system.html#build_system_dev_options',1,'Build System Options'],['../build_system.html#build_system_user_options',1,'Build system Options'],['../xrays_commandline.html#xrays_commandline_args',1,'Command Options']]],
   ['order_20runge_20kutta_15',['Order Runge Kutta',['../solvers.html#solvers_rk2',1,'2nd Order Runge Kutta'],['../solvers.html#solvers_rk4',1,'4th Order Runge Kutta'],['../solvers.html#solvers_adaptive_rk4',1,'Adaptive 4th Order Runge Kutta']]],
   ['ordinary_20wave_16',['Ordinary Wave',['../dispersion_function.html#dispersion_function_x_wave',1,'Extra Ordinary Wave'],['../dispersion_function.html#dispersion_function_o_wave',1,'Ordinary Wave']]],
   ['ordinary_5fwave_17',['ordinary_wave',['../classdispersion_1_1ordinary__wave.html',1,'dispersion']]],

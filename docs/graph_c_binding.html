@@ -119,11 +119,11 @@ $(function(){initNavTree('graph_c_binding.html',''); initResizable(true); });
 <div class="textblock"><p>Documentation for linking into a C code base.</p>
 <h1><a class="anchor" id="graph_c_binding_into"></a>
 Introduction</h1>
-<p>This section assumes the reader is already familar with developing C codes. The simplist method to link framework code into a C code is to create a c++ function with </p><div class="fragment"><div class="line"><span class="keyword">extern</span> <span class="stringliteral">&quot;C&quot;</span> </div>
+<p>This section assumes the reader is already familar with developing C codes. The simplist method to link framework code into a C code is to create a C++ function with </p><div class="fragment"><div class="line"><span class="keyword">extern</span> <span class="stringliteral">&quot;C&quot;</span> </div>
 </div><!-- fragment --><p> First create a header file <code><em>c_callable</em>.h</code> </p><div class="fragment"><div class="line"><span class="keyword">extern</span> <span class="stringliteral">&quot;C&quot;</span> {</div>
 <div class="line">    <span class="keywordtype">void</span> c_callable_function();</div>
 <div class="line">}</div>
-</div><!-- fragment --><p>Next create a source file <code><em>c_callable</em>.c</code> and add the framework. This example uses the line <a class="el" href="tutorial.html#tutorial_workflow">making workflows</a> turorial. </p><div class="fragment"><div class="line"><span class="comment">//  Include the necessary framework headers.</span></div>
+</div><!-- fragment --><p>Next create a source file <code><em>c_callable</em>.c</code> and add the framework. This example uses the equation of a line example from the <a class="el" href="tutorial.html#tutorial_workflow">making workflows</a> turorial. </p><div class="fragment"><div class="line"><span class="comment">//  Include the necessary framework headers.</span></div>
 <div class="line"> </div>
 <div class="line"><span class="keyword">extern</span> <span class="stringliteral">&quot;C&quot;</span> {</div>
 <div class="line">    <span class="keywordtype">void</span> c_callable_function() {</div>

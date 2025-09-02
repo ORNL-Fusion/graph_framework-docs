@@ -159,11 +159,11 @@ Definitions</h1>
 <tr>
 <td><b>node</b> </td><td>A leaf or branch on the graph tree. </td></tr>
 <tr>
-<td><b>graph</b> </td><td>A data stucture connecting leaf nodes. </td></tr>
+<td><b>graph</b> </td><td>A data stucture connecting nodes. </td></tr>
 <tr>
-<td><b>reduce</b> </td><td>A tranformation of the graph to remove leaf_nodes. </td></tr>
+<td><b>reduce</b> </td><td>A transformation of the graph to remove leaf_nodes. </td></tr>
 <tr>
-<td><b>auto differentiation</b></td><td>A tranformation of the graph build derivatives. </td></tr>
+<td><b>auto differentiation</b></td><td>A transformation of the graph build derivatives. </td></tr>
 <tr>
 <td><b>compiler</b> </td><td>A tool for translating from one language to another. </td></tr>
 <tr>
@@ -189,22 +189,22 @@ Definitions</h1>
 <tr>
 <td><b>Host</b> </td><td>The place where kernels are launched from. </td></tr>
 <tr>
-<td><b>Device</b> </td><td>The device side where kernels are run. </td></tr>
+<td><b>Device</b> </td><td>The side where kernels are run. </td></tr>
 </table>
 <hr  />
  <h1><a class="anchor" id="general_concepts_graph"></a>
 Graph</h1>
-<p>The graph_framework operates by building tree structure of math operations. For an example of building expression structures see the <a class="el" href="tutorial.html#tutorial_expression">basic expressions tutroial</a>. In tree form it is easy to traverse nodes in the graph. Take the example of equation of a line. </p><p class="formulaDsp">
+<p>The graph_framework operates by building a tree structure of math operations. For an example of building expression structures see the <a class="el" href="tutorial.html#tutorial_expression">basic expressions tutroial</a>. In tree form it is easy to traverse nodes in the graph. Take the example of equation of a line. </p><p class="formulaDsp">
 \begin{equation}y=mx + b\end{equation}
 </p>
-<p> This equation consists of five leaf nodes. The ends of the tree are clasified as either variables \(x\) or constants \(m,b\). These leaf_nodes are connected by leaf nodes for multiply and additon operations. The ouptut \(y\) represents the entire graph of operations. </p><div class="image">
+<p> This equation consists of five nodes. The ends of the tree are clasified as either variables \(x\) or constants \(m,b\). These nodes are connected by nodes for multiply and addition operations. The output \(y\) represents the entire graph of operations. </p><div class="image">
 <img src="line_graph.png" alt=""/>
 <div class="caption">
 The graph stucture for y = mx + b.</div></div>
-<p> Evaluation of graphs start from the top most node in this case the \(+\) operation. Evaluation of a node is not performed until all subnodes are evaluated starting with the left operand. Evaluation starts by recursively evaluating the left operands until the last leaf_node is reached \(m\). </p><div class="image">
+<p> Evaluation of graphs start from the top most node in this case the \(+\) operation. Evaluation of a node is not performed until all subnodes are evaluated starting with the left operand. Evaluation starts by recursively evaluating the left operands until the last node is reached \(m\). </p><div class="image">
 <img src="line_graph_eval1.png" alt=""/>
 </div>
-<p> Once \(m\) the result is returned ot the \(+\) then the right operand is evaluated. </p><div class="image">
+<p> Once \(m\) the result is returned to the \(+\) then the right operand is evaluated. </p><div class="image">
 <img src="line_graph_eval2.png" alt=""/>
 </div>
 <p> Evaluation is repeated until every node in the graph is evaluated. </p><div class="image">
@@ -213,7 +213,7 @@ The graph stucture for y = mx + b.</div></div>
 <hr  />
  <h1><a class="anchor" id="general_concepts_diff"></a>
 Auto Differentiation</h1>
-<p>From the previous <a class="el" href="#general_concepts_graph">section</a>, it was shown how graph can be evaluated. This same evaluation can be applied to build graphs of a function derivative. For an example of taking derivatives see the <a class="el" href="tutorial.html#tutorial_derivatives">auto differentiation tutroial</a>. Lets say that we want to take the derivative of \(\frac{\partial y}{\partial x}\). This is achieved by evaluating the until bottom left most leaf_node is reached. Then a new graph is build starting with \(\frac{\partial m}{\partial x}=0\). Applying the first half of the chain rule we build a new graph for \(0x\) </p><div class="image">
+<p>From the previous <a class="el" href="#general_concepts_graph">section</a>, it was shown how graphs can be evaluated. This same evaluation can be applied to build graphs of a function derivative. For an example of taking derivatives see the <a class="el" href="tutorial.html#tutorial_derivatives">auto differentiation tutroial</a>. Lets say that we want to take the derivative of \(\frac{\partial y}{\partial x}\). This is achieved by evaluating the until bottom left most node is reached. Then a new graph is build starting with \(\frac{\partial m}{\partial x}=0\). Applying the first half of the chain rule we build a new graph for \(0x\) </p><div class="image">
 <img src="line_graph_dydf1.png" alt=""/>
 </div>
 <p> Then we take the derivative of the right operand and apply the second half of the chain rule to build a new graph for \(0x=0\). </p><div class="image">
@@ -225,26 +225,26 @@ Auto Differentiation</h1>
 <hr  />
  <h1><a class="anchor" id="general_concepts_reduction"></a>
 Reduction</h1>
-<p>The final expression for \(\frac{\partial y}{\partial x}\) contains many unnecessary nodes in the graph. Instead of building full graphs, we can simplify and eleminate node as we build them. For instance, when the expression \(0x\) this create can be immediately reduced to a single node. </p><div class="image">
+<p>The final expression for \(\frac{\partial y}{\partial x}\) contains many unnecessary nodes in the graph. Instead of building full graphs, we can simplify and eleminate nodes as we build them. For instance, when the expression \(0x\) this created can be immediately reduce it to a single node. </p><div class="image">
 <img src="line_graph_reduce1.png" alt=""/>
 </div>
-<p> Applying all possible reduction reduces the final expression to \(\frac{\partial y}{\partial x}=m\). </p><div class="image">
+<p> Applying all possible reductions reduces the final expression to \(\frac{\partial y}{\partial x}=m\). </p><div class="image">
 <img src="line_graph_reduce_final.png" alt=""/>
 </div>
 <p> By reducing graphs as they are build, we can eliminate nodes one by one.</p>
 <hr  />
  <h1><a class="anchor" id="general_concepts_compile"></a>
 Compile</h1>
-<p>Once graph expressions are build, they can be compiled to a compute kernel. For an example of compiling expression trees into kernels see the <a class="el" href="tutorial.html#tutorial_workflow">workflow tutroial</a>. Using the same recursive evaluation, we can visit each node of a graph and and create a line of kernel source code. There are three important parts for creating kernels, inputs, outputs, and maps. These three concepts define buffers on the compute device and how they are changed. Compute kernels can be genereted from multiple outputs and maps.</p>
+<p>Once graph expressions are built, they can be compiled to a compute kernel. For an example of compiling expression trees into kernels see the <a class="el" href="tutorial.html#tutorial_workflow">workflow tutroial</a>. Using the same recursive evaluation, we can visit each node of a graph and and create a line of kernel source code. There are three important parts for creating kernels, inputs, outputs, and maps. These three concepts define buffers on the compute device and how they are changed. Compute kernels can be genereted from multiple outputs and maps.</p>
 <h2><a class="anchor" id="general_concepts_compile_inputs"></a>
 Inputs</h2>
-<p>Inputs are the varible nodes that define the graph. In the line example \(\frac{\partial y}{\partial x}\), the input variable would be the node for \(x\). Some graphs have no inputs. The graph for \(\frac{\partial y}{\partial x}=m\) has eliminated all the variable nodes in the graph.</p>
+<p>Inputs are the variable nodes that define the graph inputs. In the line example \(\frac{\partial y}{\partial x}\), the input variable would be the node for \(x\). Some graphs have no inputs. The graph for \(\frac{\partial y}{\partial x}=m\) has eliminated all the variable nodes in the graph.</p>
 <h2><a class="anchor" id="general_concepts_compile_outputs"></a>
 Outputs</h2>
-<p>Outputs are the ends of the nodes. These are the values we want to compute. Any node of a graph can be a potential output. For each out put a device buffer is generated to store the results of the evalutaion. For nodes that are not used as outputs, no buffers need to be created since those results are never stored.</p>
+<p>Outputs are the ends of the nodes. These are the values we want to compute. Any node of a graph can be a potential output. For each output a device buffer is generated to store the results of the evalutaion. For nodes that are not used as outputs, no buffers need to be created since those results are never stored.</p>
 <h2><a class="anchor" id="general_concepts_compile_maps"></a>
 Maps</h2>
-<p>Maps enable the results of an output node to stored in an input node. This is use for a wide varity of steps. For instance take a gradient decent step. </p><p class="formulaDsp">
+<p>Maps enable the results of an output node to be stored in an input node. This is use for a wide varity of steps. For instance take a gradient decent step. </p><p class="formulaDsp">
 \begin{equation}y = y + \frac{\partial f}{\partial x}\end{equation}
 </p>
 <p> In this case the output of the expression \(y + \frac{\partial f}{\partial x}\) can be mapped to update \(y\).</p>
@@ -255,7 +255,7 @@ Workflows</h1>
 <hr  />
  <h1><a class="anchor" id="general_concepts_safe_math"></a>
 Safe Math</h1>
-<p>There are some conditions where mathematically, a graph should evaluate to normal number. However, when evaluted suing floating point precison, can lead to <code>Inf</code> or <code>NaN</code>. An example of this the \(\exp\left(x\right)\) function. For large argument values, \(\exp\left(x\right)\) overflows the maximum floating point precision and returns <code>Inf</code>. \(\frac{1}{\exp\left(x\right)}\) should evaluate zero however, in floating point this becomes a <code>NaN</code>. Safe math avoids problems like this by checking for large argument values. But since these run time checks slow down kernel evaluation, most of the time safe math should be avoided. </p>
+<p>There are some conditions where mathematically, a graph should evaluate to a normal number. However, when evaluted suing floating point precison, can lead to <code>Inf</code> or <code>NaN</code>. An example of this the \(\exp\left(x\right)\) function. For large argument values, \(\exp\left(x\right)\) overflows the maximum floating point precision and returns <code>Inf</code>. \(\frac{1}{\exp\left(x\right)}\) should evaluate zero however, in floating point this becomes a <code>NaN</code>. Safe math avoids problems like this by checking for large argument values. But since these run time checks slow down kernel evaluation, most of the time safe math should be avoided. </p>
 </div></div><!-- contents -->
 </div><!-- PageDoc -->
 </div><!-- doc-content -->

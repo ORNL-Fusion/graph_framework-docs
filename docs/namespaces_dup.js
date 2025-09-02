@@ -7,6 +7,7 @@ var namespaces_dup =
     [ "equilibrium", "namespaceequilibrium.html", "namespaceequilibrium" ],
     [ "gpu", "namespacegpu.html", "namespacegpu" ],
     [ "graph", "namespacegraph.html", "namespacegraph" ],
+    [ "graph_fortran", "namespacegraph__fortran.html", "namespacegraph__fortran" ],
     [ "jit", "namespacejit.html", "namespacejit" ],
     [ "output", "namespaceoutput.html", "namespaceoutput" ],
     [ "solver", "namespacesolver.html", "namespacesolver" ],

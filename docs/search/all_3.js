@@ -20,10 +20,11 @@ var searchData=
   ['buffer_17',['buffer',['../classbackend_1_1buffer.html',1,'backend::buffer&lt; T &gt;'],['../classbackend_1_1buffer.html#a53bb9f0b588bf60c0a25d92a3723f9c0',1,'backend::buffer::buffer()'],['../classbackend_1_1buffer.html#a3eeea616233a6a5f6d73664a553a13d8',1,'backend::buffer::buffer(const size_t s)'],['../classbackend_1_1buffer.html#a924eec82d8c8543ab99e5ef07c2793b3',1,'backend::buffer::buffer(const size_t s, const T d)'],['../classbackend_1_1buffer.html#a8d33b18ea66fdefc82366395bdcea3da',1,'backend::buffer::buffer(const std::vector&lt; T &gt; &amp;d)'],['../classbackend_1_1buffer.html#a3aba86f4aabdc99f9d73b8774f5dbace',1,'backend::buffer::buffer(const buffer &amp;d)']]],
   ['build_20system_18',['Build System',['../build_system.html',1,'']]],
   ['build_20system_19',['Generating the build system',['../build_system.html#build_system_gen',1,'']]],
-  ['build_20system_20options_20',['Build system Options',['../build_system.html#build_system_user_options',1,'Build system Options'],['../build_system.html#build_system_dev_options',1,'Build system Options']]],
-  ['build_5f1d_5fspline_21',['build_1D_spline',['../namespaceequilibrium.html#af5381850f5f350604b0d00fa40514376',1,'equilibrium']]],
-  ['building_20the_20code_22',['Building the code.',['../build_system.html#build_system_build',1,'']]],
-  ['bx_5fgrid_23',['bx_grid',['../classgold__data.html#a3e2bfbc27bbe64a6465a61a5ff98eec0',1,'gold_data']]],
-  ['by_5fgrid_24',['by_grid',['../classgold__data.html#a1361db6260994e2927a20ec34fd232d7',1,'gold_data']]],
-  ['bz_5fgrid_25',['bz_grid',['../classgold__data.html#ab3212d83593928fc4f4f9354522696b2',1,'gold_data']]]
+  ['build_20system_20options_20',['Build System Options',['../build_system.html#build_system_dev_options',1,'']]],
+  ['build_20system_20options_21',['Build system Options',['../build_system.html#build_system_user_options',1,'']]],
+  ['build_5f1d_5fspline_22',['build_1D_spline',['../namespaceequilibrium.html#af5381850f5f350604b0d00fa40514376',1,'equilibrium']]],
+  ['building_20the_20code_23',['Building the code.',['../build_system.html#build_system_build',1,'']]],
+  ['bx_5fgrid_24',['bx_grid',['../classgold__data.html#a3e2bfbc27bbe64a6465a61a5ff98eec0',1,'gold_data']]],
+  ['by_5fgrid_25',['by_grid',['../classgold__data.html#a1361db6260994e2927a20ec34fd232d7',1,'gold_data']]],
+  ['bz_5fgrid_26',['bz_grid',['../classgold__data.html#ab3212d83593928fc4f4f9354522696b2',1,'gold_data']]]
 ];
