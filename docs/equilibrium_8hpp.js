@@ -8,7 +8,7 @@ var equilibrium_8hpp =
     [ "equilibrium::guassian_density< T, SAFE_MATH >", "classequilibrium_1_1guassian__density.html", "classequilibrium_1_1guassian__density" ],
     [ "equilibrium::efit< T, SAFE_MATH >", "classequilibrium_1_1efit.html", "classequilibrium_1_1efit" ],
     [ "equilibrium::vmec< T, SAFE_MATH >", "classequilibrium_1_1vmec.html", "classequilibrium_1_1vmec" ],
-    [ "shared", "equilibrium_8hpp.html#a35e922cfb2df6595e5e398e26c034f87", null ],
+    [ "shared", "equilibrium_8hpp.html#a9f4ba1563110e2443131808c94663444", null ],
     [ "build_1D_spline", "equilibrium_8hpp.html#af5381850f5f350604b0d00fa40514376", null ],
     [ "make_efit", "equilibrium_8hpp.html#afe3234694e2e2d1e2dcd4cbde92f3e36", null ],
     [ "make_guassian_density", "equilibrium_8hpp.html#ad661550ec8701505f1565feda5a6c47e", null ],

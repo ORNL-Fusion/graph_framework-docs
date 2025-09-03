@@ -1,9 +1,9 @@
 var piecewise_8hpp =
 [
-    [ "graph::piecewise_1D_node< T, SAFE_MATH >", "classgraph_1_1piecewise__1_d__node.html", "classgraph_1_1piecewise__1_d__node" ],
-    [ "graph::piecewise_2D_node< T, SAFE_MATH >", "classgraph_1_1piecewise__2_d__node.html", "classgraph_1_1piecewise__2_d__node" ],
-    [ "shared_piecewise_1D", "piecewise_8hpp.html#a98591c1c2f697fcb0acb4d9513425cfd", null ],
-    [ "shared_piecewise_2D", "piecewise_8hpp.html#a7c3ad055fbce0cda87de32bfdf066aeb", null ],
+    [ "graph::piecewise_1D_node< T, SAFE_MATH >", "classgraph_1_1piecewise__1D__node.html", "classgraph_1_1piecewise__1D__node" ],
+    [ "graph::piecewise_2D_node< T, SAFE_MATH >", "classgraph_1_1piecewise__2D__node.html", "classgraph_1_1piecewise__2D__node" ],
+    [ "shared_piecewise_1D", "piecewise_8hpp.html#a99b95f3cc2b2bc0fe21f358e5846c615", null ],
+    [ "shared_piecewise_2D", "piecewise_8hpp.html#a7252ee243e146869cd4cc88c78b8151a", null ],
     [ "compile_index", "piecewise_8hpp.html#aea565fa46ece58a60bf07f661eaec3a3", null ],
     [ "piecewise_1D", "piecewise_8hpp.html#a34339f8df99db8f289fa238dbc87482c", null ],
     [ "piecewise_1D_cast", "piecewise_8hpp.html#a6c68be0ec80218d4b18cca9bb4ad94a1", null ],

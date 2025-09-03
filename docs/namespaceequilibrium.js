@@ -8,7 +8,7 @@ var namespaceequilibrium =
     [ "slab_density", "classequilibrium_1_1slab__density.html", "classequilibrium_1_1slab__density" ],
     [ "slab_field", "classequilibrium_1_1slab__field.html", "classequilibrium_1_1slab__field" ],
     [ "vmec", "classequilibrium_1_1vmec.html", "classequilibrium_1_1vmec" ],
-    [ "shared", "namespaceequilibrium.html#a35e922cfb2df6595e5e398e26c034f87", null ],
+    [ "shared", "namespaceequilibrium.html#a9f4ba1563110e2443131808c94663444", null ],
     [ "build_1D_spline", "namespaceequilibrium.html#af5381850f5f350604b0d00fa40514376", null ],
     [ "make_efit", "namespaceequilibrium.html#afe3234694e2e2d1e2dcd4cbde92f3e36", null ],
     [ "make_guassian_density", "namespaceequilibrium.html#ad661550ec8701505f1565feda5a6c47e", null ],

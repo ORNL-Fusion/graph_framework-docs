@@ -1,9 +1,9 @@
 var searchData=
 [
-  ['nan_20values_0',['Post processes result files to remove NaN values.',['../fix___na_n_8py.html#autotoc_md7',1,'']]],
-  ['ndash_20compiler_20compiler_20command_1',['* &amp;ndash;compiler Compiler command.',['..//Users/m4c/Projects/graph_framework/utilities/get_includes.py#autotoc_md12',1,'']]],
-  ['ndash_20max_5fz_20maximum_20vertical_20bin_2',['* &amp;ndash;max_z     Maximum vertical bin.',['..//Users/m4c/Projects/graph_framework/utilities/fix_NaN.py#autotoc_md9',1,'']]],
-  ['ndash_20max_5fz_20maximum_20z_20bin_3',['* &amp;ndash;max_z     Maximum z bin.',['..//Users/m4c/Projects/graph_framework/utilities/bin.py#autotoc_md6',1,'']]],
+  ['nan_20values_0',['Post processes result files to remove NaN values.',['../fix__NaN_8py.html#autotoc_md7',1,'']]],
+  ['ndash_20compiler_20compiler_20command_1',['* &amp;ndash;compiler Compiler command.',['..//home/runner/work/graph_framework/graph_framework/utilities/get_includes.py#autotoc_md12',1,'']]],
+  ['ndash_20max_5fz_20maximum_20vertical_20bin_2',['* &amp;ndash;max_z     Maximum vertical bin.',['..//home/runner/work/graph_framework/graph_framework/utilities/fix_NaN.py#autotoc_md9',1,'']]],
+  ['ndash_20max_5fz_20maximum_20z_20bin_3',['* &amp;ndash;max_z     Maximum z bin.',['..//home/runner/work/graph_framework/graph_framework/utilities/bin.py#autotoc_md6',1,'']]],
   ['ne_5fgrid_4',['ne_grid',['../classgold__data.html#a0c1a076375dfb2121079fa0f0881bee5',1,'gold_data']]],
   ['needed_20include_20flags_20from_20the_20system_20compiler_5',['Get the needed include flags from the system compiler.',['../get__includes_8py.html#autotoc_md10',1,'']]],
   ['new_20absorption_20models_6',['Developing new absorption models',['../absorption_model.html#absorption_model_devel',1,'']]],
@@ -14,14 +14,13 @@ var searchData=
   ['newton_11',['newton',['../namespacesolver.html#a9ea33ed41cdc7b896ecd6004eb5b36e4',1,'solver']]],
   ['newton_20s_20method_12',['Newton&apos;s Method.',['../tutorial.html#tutorial_workflow_newton',1,'']]],
   ['newton_2ehpp_13',['newton.hpp',['../newton_8hpp.html',1,'']]],
-  ['no_5fmagnetic_5ffield_14',['no_magnetic_field',['../classequilibrium_1_1no__magnetic__field.html',1,'equilibrium::no_magnetic_field&lt; T, SAFE_MATH &gt;'],['../classequilibrium_1_1no__magnetic__field.html#a3ac6d36c51842f331ea3f3b555b4cd4e',1,'equilibrium::no_magnetic_field::no_magnetic_field()']]],
+  ['no_5fmagnetic_5ffield_14',['no_magnetic_field',['../classequilibrium_1_1no__magnetic__field.html#a3ac6d36c51842f331ea3f3b555b4cd4e',1,'equilibrium::no_magnetic_field::no_magnetic_field()'],['../classequilibrium_1_1no__magnetic__field.html',1,'equilibrium::no_magnetic_field&lt; T, SAFE_MATH &gt;']]],
   ['node_20subclasses_15',['Node Subclasses',['../new_operations_tutorial.html#new_operations_tutorial_node_subclass',1,'']]],
   ['node_2ehpp_16',['node.hpp',['../node_8hpp.html',1,'']]],
   ['node_5ftest_2ecpp_17',['node_test.cpp',['../node__test_8cpp.html',1,'']]],
-  ['nodes_18',['Nodes',['../tutorial.html#tutorial_basic',1,'Basic Nodes'],['../tutorial.html#tutorial_constant',1,'Constant Nodes']]],
-  ['nodes_19',['nodes',['../structgraph__c__context__type.html#a9d7830d014405502ea1da2dc01c997e4',1,'graph_c_context_type::nodes'],['../structgraph_1_1leaf__node_1_1caches__t.html#a8763928d01d20b97b3a6ec9ea347c0f0',1,'graph::leaf_node::caches_t::nodes']]],
-  ['noncartesian_20coordinates_20',['Noncartesian Coordinates',['../equilibrum_models.html#equilibrum_devel_coordinate',1,'']]],
-  ['none_21',['none',['../namespacegraph.html#a6d8d7ee5d4fc9e09a3a4af9052a50e71',1,'graph']]],
-  ['normalization_22',['Normalization',['../dispersion_function.html#dispersion_function_normal',1,'']]],
-  ['null_5fleaf_23',['null_leaf',['../namespacegraph.html#ade7b500a0a100fc650a95f3b71a263cc',1,'graph']]]
+  ['nodes_18',['nodes',['../tutorial.html#tutorial_basic',1,'Basic Nodes'],['../tutorial.html#tutorial_constant',1,'Constant Nodes'],['../structgraph_1_1leaf__node_1_1caches__t.html#a8763928d01d20b97b3a6ec9ea347c0f0',1,'graph::leaf_node::caches_t::nodes'],['../structgraph__c__context__type.html#a9d7830d014405502ea1da2dc01c997e4',1,'graph_c_context_type::nodes']]],
+  ['noncartesian_20coordinates_19',['Noncartesian Coordinates',['../equilibrum_models.html#equilibrum_devel_coordinate',1,'']]],
+  ['none_20',['none',['../namespacegraph.html#a6d8d7ee5d4fc9e09a3a4af9052a50e71',1,'graph']]],
+  ['normalization_21',['Normalization',['../dispersion_function.html#dispersion_function_normal',1,'']]],
+  ['null_5fleaf_22',['null_leaf',['../namespacegraph.html#ade7b500a0a100fc650a95f3b71a263cc',1,'graph']]]
 ];

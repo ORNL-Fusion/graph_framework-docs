@@ -62,7 +62,7 @@ var NAVTREE =
       [ "Developer Guide", "build_system.html#build_system_dev", [
         [ "Macro Definitions", "build_system.html#build_system_macros", [
           [ "Tool targets", "build_system.html#build_system_targets", null ],
-          [ "Sanitizer flags", "build_system.html#build_system_sanitizer", null ],
+          [ "Sanatizer flags", "build_system.html#build_system_sanitizer", null ],
           [ "Register an external project", "build_system.html#build_system_project", null ]
         ] ],
         [ "Debugging", "build_system.html#build_system_debug", [
@@ -179,10 +179,10 @@ var NAVTREE =
       ] ],
       [ "Developing new solvers", "solvers.html#solvers_devel", null ]
     ] ],
-    [ "Quick Start Guide", "md__r_e_a_d_m_e.html", [
-      [ "Documentation", "md__r_e_a_d_m_e.html#autotoc_md1", null ],
-      [ "Obtaining the Code", "md__r_e_a_d_m_e.html#autotoc_md2", null ],
-      [ "Compiling the Code", "md__r_e_a_d_m_e.html#autotoc_md3", null ]
+    [ "Quick Start Guide", "md_README.html", [
+      [ "Documentation", "md_README.html#autotoc_md1", null ],
+      [ "Obtaining the Code", "md_README.html#autotoc_md2", null ],
+      [ "Compiling the Code", "md_README.html#autotoc_md3", null ]
     ] ],
     [ "Namespaces", "namespaces.html", [
       [ "Namespace List", "namespaces.html", "namespaces_dup" ],
@@ -224,12 +224,12 @@ var NAVTREEINDEX =
 "classdispersion_1_1dispersion__interface.html#a4eaa2a6cf2d7ca1f2b1c4692767f71c5",
 "classequilibrium_1_1vmec.html#a53fea8fce98504fc03503e2697064a3d",
 "classgraph_1_1divide__node.html#a61e3b01877adcc2d06a035941e1f9fdd",
-"classgraph_1_1piecewise__2_d__node.html#a840b44453602c43e0a5b79b3f955ad6f",
+"classgraph_1_1piecewise__2D__node.html#a840b44453602c43e0a5b79b3f955ad6f",
 "classgraph_1_1variable__node.html#a6cc97fd212ea8cfbdf09f06d50560a46",
-"classsolver_1_1solver__interface.html#a87d0f0b95be0f073599cd0c6ea0f344c",
+"classsolver_1_1solver__interface.html#a7656f153710d7f98898354f88b97d3fb",
 "functions_f.html",
 "interfacegraph__fortran_1_1graph__construct__context.html",
-"namespacegraph.html#ae5b6a8636a9604506935459453c7f267",
+"namespacegraph.html#aec6eba24be7791a55b1830331daa4a61",
 "solver__test_8cpp.html#a549d8acce0278424033d32d170eefcd5"
 ];
 

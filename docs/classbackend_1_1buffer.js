@@ -1,6 +1,6 @@
 var classbackend_1_1buffer =
 [
-    [ "base", "classbackend_1_1buffer.html#a952489d591b81525529126049e1bbe78", null ],
+    [ "base", "classbackend_1_1buffer.html#abf2931fade38e44e5d7acf9ea2ab35d7", null ],
     [ "buffer", "classbackend_1_1buffer.html#a53bb9f0b588bf60c0a25d92a3723f9c0", null ],
     [ "buffer", "classbackend_1_1buffer.html#a3eeea616233a6a5f6d73664a553a13d8", null ],
     [ "buffer", "classbackend_1_1buffer.html#a924eec82d8c8543ab99e5ef07c2793b3", null ],

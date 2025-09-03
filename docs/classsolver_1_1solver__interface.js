@@ -1,7 +1,7 @@
 var classsolver_1_1solver__interface =
 [
-    [ "base", "classsolver_1_1solver__interface.html#afe1f49dec0b9d91dd3178c63b326f922", null ],
-    [ "dispersion_function", "classsolver_1_1solver__interface.html#a88938ee018ae05355576cbf1270c758c", null ],
+    [ "base", "classsolver_1_1solver__interface.html#a0ec704eb97de5906dfa9e6214950b15d", null ],
+    [ "dispersion_function", "classsolver_1_1solver__interface.html#a760cab4a7660cc65e756dd061226f46b", null ],
     [ "solver_interface", "classsolver_1_1solver__interface.html#ae842d06ddcc3dd368cef3b0e3bb7a553", null ],
     [ "~solver_interface", "classsolver_1_1solver__interface.html#af21faed7e727acf2f50f07052bbdeff7", null ],
     [ "check_residule", "classsolver_1_1solver__interface.html#a6b4c8f469ef6134854147acc6a9c1b4a", null ],

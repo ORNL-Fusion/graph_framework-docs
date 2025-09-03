@@ -2,8 +2,8 @@ var vector_8hpp =
 [
     [ "graph::vector_quantity< T, SAFE_MATH >", "classgraph_1_1vector__quantity.html", "classgraph_1_1vector__quantity" ],
     [ "graph::matrix_quantity< T, SAFE_MATH >", "classgraph_1_1matrix__quantity.html", "classgraph_1_1matrix__quantity" ],
-    [ "shared_matrix", "vector_8hpp.html#abd4da768284aa2a7f275b66a174fa553", null ],
-    [ "shared_vector", "vector_8hpp.html#ad0ee19155cfc3953c8ebb693c1b2dd34", null ],
+    [ "shared_matrix", "vector_8hpp.html#ac5be53f3bb1775d7fea3e1b02c25457d", null ],
+    [ "shared_vector", "vector_8hpp.html#a47ef492a27a3cc8d725d93a607f81f3b", null ],
     [ "matrix", "vector_8hpp.html#ac5335d12af469ef39ed0eae55c1b4f89", null ],
     [ "operator*", "vector_8hpp.html#a22ddc864f0180aab6a40d31ab6095338", null ],
     [ "operator+", "vector_8hpp.html#a884e417bd951426a099d199d6cc315eb", null ],

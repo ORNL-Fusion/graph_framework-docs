@@ -1,6 +1,6 @@
 var searchData=
 [
-  ['d_0',['D',['../classdispersion_1_1dispersion__interface.html#a762be5369c655bdc8a1ece11979c1abc',1,'dispersion::dispersion_interface::D'],['../classsolver_1_1solver__interface.html#a7656f153710d7f98898354f88b97d3fb',1,'solver::solver_interface::D'],['../classsolver_1_1adaptive__rk4.html#a31a75b21fb5208d5a3dad8bf01ecc81d',1,'solver::adaptive_rk4::D']]],
+  ['d_0',['d',['../classdispersion_1_1dispersion__interface.html#a762be5369c655bdc8a1ece11979c1abc',1,'dispersion::dispersion_interface::D'],['../classsolver_1_1solver__interface.html#a7656f153710d7f98898354f88b97d3fb',1,'solver::solver_interface::D'],['../classsolver_1_1adaptive__rk4.html#a31a75b21fb5208d5a3dad8bf01ecc81d',1,'solver::adaptive_rk4::D']]],
   ['dataset_1',['dataset',['../classsolver_1_1solver__interface.html#a15afacc7555fd7135af97eb422d4a6f7',1,'solver::solver_interface']]],
   ['df_5fcache_2',['df_cache',['../classgraph_1_1leaf__node.html#aa5c836403ccaa4fe8231cbaaaac02060',1,'graph::leaf_node']]],
   ['dkxdt_3',['dkxdt',['../classdispersion_1_1dispersion__interface.html#a2bb925ef29a9bdde70d85505095b8baa',1,'dispersion::dispersion_interface']]],
