@@ -62,7 +62,7 @@ var NAVTREE =
       [ "Developer Guide", "build_system.html#build_system_dev", [
         [ "Macro Definitions", "build_system.html#build_system_macros", [
           [ "Tool targets", "build_system.html#build_system_targets", null ],
-          [ "Sanatizer flags", "build_system.html#build_system_sanitizer", null ],
+          [ "Sanitizer flags", "build_system.html#build_system_sanitizer", null ],
           [ "Register an external project", "build_system.html#build_system_project", null ]
         ] ],
         [ "Debugging", "build_system.html#build_system_debug", [

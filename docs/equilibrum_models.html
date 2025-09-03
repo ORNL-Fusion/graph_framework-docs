@@ -155,14 +155,14 @@ Introduction</h1>
 <li>EFIT Are 2D axisymetric equilibria relevant to tokamak devices.</li>
 <li>VMEC Are 3D nested flux surface equilibria relevant for stellarator devices.</li>
 </ul>
-<p>This documentation assumes the user has some familiarity with EFIT or VMEC and focuses instead how quanties from these are formatted.</p>
+<p>This documentation assumes the user has some familiarity with EFIT or VMEC and focuses instead how quantities from these are formatted.</p>
 <h1><a class="anchor" id="equilibrum_splines"></a>
 Spline Formatting</h1>
 <p>The equilibrium models used in this section make use of Cubic and Bicubic splines.</p>
 <hr  />
  <h2><a class="anchor" id="equilibrum_splines_1D"></a>
 Cubic Splines</h2>
-<p>Cubic splines are 1D interpolation functions consisting of 4 coeffient arrays. They take the form of </p><p class="formulaDsp">
+<p>Cubic splines are 1D interpolation functions consisting of 4 coefficient arrays. They take the form of </p><p class="formulaDsp">
 \begin{equation}y\left(x\right)=C_{0} + C_{1}x + C_{2}x^2 + C_{3}x^2\end{equation}
 </p>
 <p> where \(x\) is a normalized radial index. Cubic splines coefficients can be calculated using <a href="https://mathworld.wolfram.com/CubicSpline.html">Linear Solvers</a> However, to avoid needing account for index offsets, index offsets are pre computed into the spline coefficents. </p><p class="formulaDsp">
@@ -177,14 +177,14 @@ Cubic Splines</h2>
  <p class="formulaDsp">
 \begin{equation}C&#39;^{i}_{3}=C^{i}_{3}\end{equation}
 </p>
-<p> Where \(i\) is the index of the coeffient array. This allows to normalize the spline argument \(x\) so that it can both index the array and evaluate the spline. </p><p class="formulaDsp">
+<p> Where \(i\) is the index of the coefficient array. This allows to normalize the spline argument \(x\) so that it can both index the array and evaluate the spline. </p><p class="formulaDsp">
 \begin{equation}x = \frac{x_{real} - x_{min}}{dx}\end{equation}
 </p>
 <p> Rounding down the value of \(x\) gives the correct coefficient index.</p>
 <hr  />
  <h2><a class="anchor" id="equilibrum_splines_2D"></a>
 Bicubic Splines</h2>
-<p>Bicubic Splines are computed in a simular way instead they consist of a total of 16 coeffients. These represent 4 spline functions in one dimension which interpolate 4 coeffient values for the other dimension. Like the 1D splines, 2D spline coeffients are normalized so the spline arguments can be used as normalized indices. </p><p class="formulaDsp">
+<p>Bicubic Splines are computed in a similar way instead they consist of a total of 16 coefficients. These represent 4 spline functions in one dimension which interpolate 4 coefficient values for the other dimension. Like the 1D splines, 2D spline coefficients are normalized so the spline arguments can be used as normalized indices. </p><p class="formulaDsp">
 \begin{equation}C&#39;^{ij}_{00}=C^{ij}_{00}-C^{ij}_{01}j+C^{ij}_{02}j^{2}-C^{ij}_{03}j^{3}-C^{ij}_{10}i+C^{ij}_{11}ij-C^{ij}_{12}ij^{2}+C^{ij}_{13}ij^{3}+C^{ij}_{20}i^{2}-C^{ij}_{21}i^{2}j+C^{ij}_{22}i^{2}j^{2}-C^{ij}_{23}i^{2}j^{3}-C^{ij}_{30}i^{3}+C^{ij}_{31}i^{3}j-C^{ij}_{32}i^{3}j^{2}+C^{ij}_{33}i^{3}j^{3}j\end{equation}
 </p>
  <p class="formulaDsp">
@@ -248,7 +248,7 @@ EFIT</h1>
 <img src="Efit.png" alt=""/>
 <div class="caption">
 Cross section of poloidal flux surfaces.</div></div>
-<p> EFIT is an equilibium that comes from a solution of the <a href="https://en.wikipedia.org/wiki/Grad–Shafranov_equation">Grad–Shafranov equation</a>. The solution gives us a map of the poloidal flux \(\psi\) on 2D grid and a 1D flux function \(f_{pol}\). 1D profiles of electrion density \(n_{e}\left(\psi\right)\), electron temperature \(t_{e}\left(\psi\right)\), and pressure \(p\left(\psi\right)\) are mapped as functions of the normalized flux.</p>
+<p> EFIT is an equilibrium that comes from a solution of the <a href="https://en.wikipedia.org/wiki/Grad–Shafranov_equation">Grad–Shafranov equation</a>. The solution gives us a map of the poloidal flux \(\psi\) on 2D grid and a 1D flux function \(f_{pol}\). 1D profiles of electron density \(n_{e}\left(\psi\right)\), electron temperature \(t_{e}\left(\psi\right)\), and pressure \(p\left(\psi\right)\) are mapped as functions of the normalized flux.</p>
 <h2><a class="anchor" id="equilibrum_efit_format"></a>
 EFIT file format</h2>
 <p>Quantities are loaded into the ray tracer via a netcdf file. EFIT NetCDF files must contain the following quantities. Spline quanities have a common format of <em>name</em>_c<em>i</em> or <em>name</em>_c<em>ij</em>. </p><a class="anchor" id="equilibrum_efit_format_data"></a>
@@ -271,7 +271,7 @@ EFIT file format</h2>
 <tr>
 <td colspan="2"><code>dr</code> </td><td>Step size of the radial grid. </td></tr>
 <tr>
-<td colspan="2"><code>dz</code> </td><td>Step size of the vertial grid. </td></tr>
+<td colspan="2"><code>dz</code> </td><td>Step size of the vertical grid. </td></tr>
 <tr>
 <td colspan="2"><code>ne_scale</code> </td><td>Scale of the \(n_{e}\) profile. </td></tr>
 <tr>
@@ -285,7 +285,7 @@ EFIT file format</h2>
 <tr>
 <td colspan="2"><code>te_scale</code> </td><td>Scale of the electron temperature profile. </td></tr>
 <tr>
-<td colspan="2"><code>zmin</code> </td><td>Minimum vertial value. </td></tr>
+<td colspan="2"><code>zmin</code> </td><td>Minimum vertical value. </td></tr>
 <tr>
 <th colspan="3">1D Qantities </th></tr>
 <tr>
@@ -312,10 +312,10 @@ VMEC</h1>
 <img src="vmec.png" alt=""/>
 <div class="caption">
 Cross section of 3D flux surfaces.</div></div>
-<p> VMEC is an equilibium that comes from <a href="https://doi.org/10.1063/1.864116">minimizing mhd energy</a>. The solution gives us set of Fourier coefficents on a discrete radial grid. 1D profiles of electrion density \(n_{e}\left(\psi\right)\), electron temperature \(t_{e}\left(\psi\right)\), and pressure \(p\left(\psi\right)\) are mapped as functions of the normalized flux.</p>
+<p> VMEC is an equilibrium that comes from <a href="https://doi.org/10.1063/1.864116">minimizing mhd energy</a>. The solution gives us set of Fourier coefficents on a discrete radial grid. 1D profiles of electron density \(n_{e}\left(\psi\right)\), electron temperature \(t_{e}\left(\psi\right)\), and pressure \(p\left(\psi\right)\) are mapped as functions of the normalized flux.</p>
 <h2><a class="anchor" id="equilibrum_vmec_format"></a>
 VMEC file format</h2>
-<p>Quantities are loaded into the ray tracer via a netcdf file. VMEC NetCDF files must contain the following quantities. Spline quanities have a common format of <em>name</em>_c<em>i</em>. All radial quantities are splined accross the magnetic axis to the opposite end. That is quantities extend from \(-s\rightarrow s \). Splines of fourier coeffients are one dimensional splines stored in a 2D array. Radial quantities are stored as a full or half grid value. </p><a class="anchor" id="equilibrum_vmec_format_data"></a>
+<p>Quantities are loaded into the ray tracer via a netcdf file. VMEC NetCDF files must contain the following quantities. Spline quanities have a common format of <em>name</em>_c<em>i</em>. All radial quantities are splined across the magnetic axis to the opposite end. That is quantities extend from \(-s\rightarrow s \). Splines of fourier coefficients are one dimensional splines stored in a 2D array. Radial quantities are stored as a full or half grid value. </p><a class="anchor" id="equilibrum_vmec_format_data"></a>
 <table class="doxtable">
 <caption>VMEC netcdf file quantities</caption>
 <tr>
@@ -368,7 +368,7 @@ Developing new equilibrium models</h1>
 <div class="line"><span class="keyword">class </span>new_equilibrium final : <span class="keyword">public</span> generic&lt;T, SAFE_MATH&gt; {</div>
 <div class="line">   ...</div>
 <div class="line">};</div>
-</div><!-- fragment --><p>When a new equilibrium is subclassed from <a class="el" href="classequilibrium_1_1generic.html">equilibrium::generic</a> implimentations must be provided for the following pure virtual methods.</p><ul>
+</div><!-- fragment --><p>When a new equilibrium is subclassed from <a class="el" href="classequilibrium_1_1generic.html">equilibrium::generic</a> implementations must be provided for the following pure virtual methods.</p><ul>
 <li><a class="el" href="classequilibrium_1_1generic.html#ac1daa39f058165b7538d8e697cb8075d">equilibrium::generic::get_characteristic_field</a></li>
 <li><a class="el" href="classequilibrium_1_1generic.html#a7a342e960684313d1b60bdbbd3467dfc">equilibrium::generic::get_electron_density</a></li>
 <li><a class="el" href="classequilibrium_1_1generic.html#ab52a1520466c1e9d346a51c450837910">equilibrium::generic::get_electron_temperature</a></li>
