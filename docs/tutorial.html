@@ -214,9 +214,10 @@ Auto Differentiation</h2>
 <div class="line">    std::cout &lt;&lt; std::endl;</div>
 <div class="line">}</div>
 </div><!-- fragment --><p> Here we take derivatives using the <a class="el" href="classgraph_1_1leaf__node.html#a4785ca42cddfcfd126bba0bc78a62cab">graph::leaf_node::df</a> method. We can also take several variations of this. </p><div class="fragment"><div class="line"><span class="keyword">auto</span> dydm = y-&gt;df(m);</div>
+<div class="line"><span class="keyword">auto</span> dydb = y-&gt;df(b)</div>
 <div class="line"><span class="keyword">auto</span> dydy = y-&gt;df(y);</div>
 <div class="line"><span class="keyword">auto</span> dydb = y-&gt;df(m*x);</div>
-</div><!-- fragment --><p> The results will be \(0.4\), \(x\), \(1\), and \(0\) respectively.</p>
+</div><!-- fragment --><p> The results will be \(0.4\), \(x\), \(1\), \(1\), and \(1\) respectively.</p>
 <hr  />
  <h1><a class="anchor" id="tutorial_workflow"></a>
 Making workflows.</h1>
