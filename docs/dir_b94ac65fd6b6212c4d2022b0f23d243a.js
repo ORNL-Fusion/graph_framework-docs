@@ -8,6 +8,7 @@ var dir_b94ac65fd6b6212c4d2022b0f23d243a =
     [ "cuda_context.hpp", "cuda__context_8hpp.html", "cuda__context_8hpp" ],
     [ "dispersion.hpp", "dispersion_8hpp.html", "dispersion_8hpp" ],
     [ "equilibrium.hpp", "equilibrium_8hpp.html", "equilibrium_8hpp" ],
+    [ "graph_framework.hpp", "graph__framework_8hpp.html", null ],
     [ "jit.hpp", "jit_8hpp.html", "jit_8hpp" ],
     [ "math.hpp", "math_8hpp.html", "math_8hpp" ],
     [ "metal_context.hpp", "metal__context_8hpp.html", "metal__context_8hpp" ],
