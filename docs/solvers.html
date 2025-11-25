@@ -109,7 +109,7 @@ $(document).ready(function(){initNavTree('solvers.html',''); initResizable(); })
 <li class="level1"><a href="#solvers_devel">Developing new solvers</a></li>
 </ul>
 </div>
-<div class="textblock"><p>A discription of the integation methods for solving the ray equations.</p>
+<div class="textblock"><p>A description of the integration methods for solving the ray equations.</p>
 <h1><a class="anchor" id="solvers_intro"></a>
 Introduction</h1>
 <p>This page documents the types of solver methods available. These solvers integrate the <a class="el" href="dispersion_function.html#dispersion_function_wave_propagation">wave propagation equations</a> to solve for the ray trajectory. Each solver builds expressions for the updates to \(\vec{x}\) and \(\vec{k}\). These expressions are used to build <a class="el" href="general_concepts.html#general_concepts_compile_maps">map</a> kernels that can be iterated to integrate the ray equations. Available integrators are:</p>
@@ -128,19 +128,19 @@ Split Simplextic</h2>
 <hr  />
  <h2><a class="anchor" id="solvers_rk2"></a>
 2nd Order Runge Kutta</h2>
-<p>This solver integates coupled differential equations using the Runge Kutta to second order. It starts by computing a substep for \(\vec{x}\) and \(\vec{k}\). </p><p class="formulaDsp">
+<p>This solver integrates coupled differential equations using the Runge Kutta to second order. It starts by computing a sub-step for \(\vec{x}\) and \(\vec{k}\). </p><p class="formulaDsp">
 \begin{equation}\vec{x}_{1}=dt\frac{\partial\vec{x}}{\partial t}\left(\vec{x},\vec{k},\omega\right)\end{equation}
 </p>
  <p class="formulaDsp">
 \begin{equation}\vec{k}_{1}=dt\frac{\partial\vec{k}}{\partial t}\left(\vec{x},\vec{k},\omega\right)\end{equation}
 </p>
-<p> That substep is used to compute a second substep. </p><p class="formulaDsp">
+<p> That sub-step is used to compute a second sub-step. </p><p class="formulaDsp">
 \begin{equation}\vec{x}_{2}=dt\frac{\partial\vec{x}}{\partial t}\left(\vec{x} + \vec{x}_{1},\vec{k} + \vec{k}_{1},\omega\right)\end{equation}
 </p>
  <p class="formulaDsp">
 \begin{equation}\vec{k}_{2}=dt\frac{\partial\vec{k}}{\partial t}\left(\vec{x} + \vec{x}_{1},\vec{k} + \vec{k}_{1},\omega\right)\end{equation}
 </p>
-<p> These substeps are combined into a single step update. </p><p class="formulaDsp">
+<p> These sub-steps are combined into a single step update. </p><p class="formulaDsp">
 \begin{equation}\vec{x}_{next}=\vec{x}+\frac{\vec{x}_{1}+\vec{x}_{2}}{2}\end{equation}
 </p>
  <p class="formulaDsp">
@@ -149,7 +149,7 @@ Split Simplextic</h2>
 <hr  />
  <h2><a class="anchor" id="solvers_rk4"></a>
 4th Order Runge Kutta</h2>
-<p>This solver integates coupled differential equations using the Runge Kutta to fouth order. Like the second order Runge Kutta, this solver computes 4 substeps. </p><p class="formulaDsp">
+<p>This solver integrates coupled differential equations using the Runge Kutta to fourth order. Like the second order Runge Kutta, this solver computes 4 sub-steps. </p><p class="formulaDsp">
 \begin{equation}\vec{x}_{1}=dt\frac{\partial\vec{x}}{\partial t}\left(\vec{x},\vec{k},\omega\right)\end{equation}
 </p>
  <p class="formulaDsp">
@@ -173,7 +173,7 @@ Split Simplextic</h2>
  <p class="formulaDsp">
 \begin{equation}\vec{k}_{4}=dt\frac{\partial\vec{k}}{\partial t}\left(\vec{x} + \vec{x}_{3},\vec{k} + \vec{k}_{3},\omega\right)\end{equation}
 </p>
-<p> These substeps are combined into a single step update. </p><p class="formulaDsp">
+<p> These sub-steps are combined into a single step update. </p><p class="formulaDsp">
 \begin{equation}\vec{x}_{next}=\vec{x}+\frac{\vec{x}_{1}+2\left(\vec{x}_{2}+\vec{x}_{3}\right)+\vec{x}_{4}}{6}\end{equation}
 </p>
  <p class="formulaDsp">
@@ -189,7 +189,7 @@ Adaptive 4th Order Runge Kutta</h2>
 <hr  />
  <h1><a class="anchor" id="solvers_devel"></a>
 Developing new solvers</h1>
-<p>This section is intended for code developers and outlines how to create new solver methods. All solvers use the same <a class="el" href="classsolver_1_1solver__interface.html">solver::solver_interface</a> interface. New solver models can be created from a subclass of <a class="el" href="classsolver_1_1solver__interface.html">solver::solver_interface</a> or any other existing solver class and overloading class methods. </p><div class="fragment"><div class="line">tempate&lt;dispersion::function DISPERSION_FUNCTION&gt;</div>
+<p>This section is intended for code developers and outlines how to create new solver methods. All solvers use the same <a class="el" href="classsolver_1_1solver__interface.html">solver::solver_interface</a> interface. New solver models can be created from a subclass of <a class="el" href="classsolver_1_1solver__interface.html">solver::solver_interface</a> or any other existing solver class and overloading class methods. </p><div class="fragment"><div class="line"><span class="keyword">template</span>&lt;dispersion::function DISPERSION_FUNCTION&gt;</div>
 <div class="line"><span class="keyword">class </span>new_solver : <span class="keyword">public</span> solver_interface&lt;DISPERSION_FUNCTION&gt; {</div>
 <div class="line">   ...</div>
 <div class="line">}</div>

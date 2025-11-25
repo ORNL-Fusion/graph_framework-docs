@@ -62,7 +62,7 @@ var NAVTREE =
       [ "Developer Guide", "build_system.html#build_system_dev", [
         [ "Macro Definitions", "build_system.html#build_system_macros", [
           [ "Tool targets", "build_system.html#build_system_targets", null ],
-          [ "Sanatizer flags", "build_system.html#build_system_sanitizer", null ],
+          [ "Sanitizer flags", "build_system.html#build_system_sanitizer", null ],
           [ "Register an external project", "build_system.html#build_system_project", null ]
         ] ],
         [ "Debugging", "build_system.html#build_system_debug", [
@@ -101,7 +101,7 @@ var NAVTREE =
       [ "Introduction", "xrays_commandline.html#xrays_commandline_intro", null ],
       [ "Command Options", "xrays_commandline.html#xrays_commandline_args", null ],
       [ "Example commandline", "xrays_commandline.html#xrays_commandline_example", [
-        [ "Ray intialization.", "xrays_commandline.html#xrays_commandline_example_dist", null ],
+        [ "Ray initialization.", "xrays_commandline.html#xrays_commandline_example_dist", null ],
         [ "Ray Models.", "xrays_commandline.html#xrays_commandline_example_model", null ]
       ] ]
     ] ],
@@ -113,9 +113,9 @@ var NAVTREE =
       [ "Introduction", "graph_fortran_binding.html#graph_fortran_binding_into", null ],
       [ "Fortran Binding Interface", "graph_fortran_binding.html#graph_fortran_binding_interface", null ]
     ] ],
-    [ "Absoption Models", "absorption_model.html", [
+    [ "Absorption Models", "absorption_model.html", [
       [ "Introduction", "absorption_model.html#absorption_model_intro", [
-        [ "Hot Plasma Disperison Function", "absorption_model.html#absorption_model_hot", [
+        [ "Hot Plasma Dispersion Function", "absorption_model.html#absorption_model_hot", [
           [ "Expansion Terms", "absorption_model.html#absorption_model_hotexpand", null ]
         ] ]
       ] ],
@@ -136,27 +136,27 @@ var NAVTREE =
       ] ],
       [ "Developing new dispersion functions", "dispersion_function.html#dispersion_function_devel", null ]
     ] ],
-    [ "Equilibrium Models", "equilibrum_models.html", [
-      [ "Introduction", "equilibrum_models.html#equilibrum_models_intro", null ],
-      [ "Spline Formatting", "equilibrum_models.html#equilibrum_splines", [
-        [ "Cubic Splines", "equilibrum_models.html#equilibrum_splines_1D", null ],
-        [ "Bicubic Splines", "equilibrum_models.html#equilibrum_splines_2D", null ]
+    [ "Equilibrium Models", "equilibrium_models.html", [
+      [ "Introduction", "equilibrium_models.html#equilibrium_models_intro", null ],
+      [ "Spline Formatting", "equilibrium_models.html#equilibrium_splines", [
+        [ "Cubic Splines", "equilibrium_models.html#equilibrium_splines_1D", null ],
+        [ "Bicubic Splines", "equilibrium_models.html#equilibrium_splines_2D", null ]
       ] ],
-      [ "EFIT", "equilibrum_models.html#equilibrum_efit", [
-        [ "EFIT file format", "equilibrum_models.html#equilibrum_efit_format", null ]
+      [ "EFIT", "equilibrium_models.html#equilibrium_efit", [
+        [ "EFIT file format", "equilibrium_models.html#equilibrium_efit_format", null ]
       ] ],
-      [ "VMEC", "equilibrum_models.html#equilibrum_vmec", [
-        [ "VMEC file format", "equilibrum_models.html#equilibrum_vmec_format", null ]
+      [ "VMEC", "equilibrium_models.html#equilibrium_vmec", [
+        [ "VMEC file format", "equilibrium_models.html#equilibrium_vmec_format", null ]
       ] ],
-      [ "Developing new equilibrium models", "equilibrum_models.html#equilibrum_devel", [
-        [ "Noncartesian Coordinates", "equilibrum_models.html#equilibrum_devel_coordinate", null ]
+      [ "Developing new equilibrium models", "equilibrium_models.html#equilibrium_devel", [
+        [ "Non-cartesian Coordinates", "equilibrium_models.html#equilibrium_devel_coordinate", null ]
       ] ]
     ] ],
     [ "Adding New Operations Tutorial", "new_operations_tutorial.html", [
       [ "Introduction", "new_operations_tutorial.html#new_operations_tutorial_intro", null ],
       [ "Node Subclasses", "new_operations_tutorial.html#new_operations_tutorial_node_subclass", null ],
       [ "Methods overloads", "new_operations_tutorial.html#new_operations_tutorial_method", [
-        [ "Evaluate", "new_operations_tutorial.html#new_operations_tutorial_evalute", null ],
+        [ "Evaluate", "new_operations_tutorial.html#new_operations_tutorial_evaluate", null ],
         [ "Is Match", "new_operations_tutorial.html#new_operations_tutorial_is_match", null ],
         [ "Reduce", "new_operations_tutorial.html#new_operations_tutorial_reduce", null ],
         [ "df", "new_operations_tutorial.html#new_operations_tutorial_df", null ],
@@ -226,11 +226,11 @@ var NAVTREEINDEX =
 "classgraph_1_1divide__node.html#a61e3b01877adcc2d06a035941e1f9fdd",
 "classgraph_1_1piecewise__2D__node.html#a840b44453602c43e0a5b79b3f955ad6f",
 "classgraph_1_1variable__node.html#a6cc97fd212ea8cfbdf09f06d50560a46",
-"classsolver_1_1solver__interface.html#a7656f153710d7f98898354f88b97d3fb",
-"functions_f.html",
-"interfacegraph__fortran_1_1graph__constant__c.html",
-"namespacegraph.html#aec5a4f52752e6d0207df183ffb93f015",
-"solver__test_8cpp.html"
+"classsolver_1_1solver__interface.html#a64200cf799645c791f4ea6e7f66127f4",
+"functions_d.html",
+"interfacegraph__fortran_1_1graph__constant.html",
+"namespacegraph.html#aea565fa46ece58a60bf07f661eaec3a3",
+"solver_8hpp.html"
 ];
 
 var SYNCONMSG = 'click to disable panel synchronisation';

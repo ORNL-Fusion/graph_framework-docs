@@ -10,7 +10,7 @@ var dispersion_8hpp =
     [ "dispersion::bohm_gross< T, SAFE_MATH >", "classdispersion_1_1bohm__gross.html", "classdispersion_1_1bohm__gross" ],
     [ "dispersion::light_wave< T, SAFE_MATH >", "classdispersion_1_1light__wave.html", "classdispersion_1_1light__wave" ],
     [ "dispersion::acoustic_wave< T, SAFE_MATH >", "classdispersion_1_1acoustic__wave.html", "classdispersion_1_1acoustic__wave" ],
-    [ "dispersion::guassian_well< T, SAFE_MATH >", "classdispersion_1_1guassian__well.html", "classdispersion_1_1guassian__well" ],
+    [ "dispersion::gaussian_well< T, SAFE_MATH >", "classdispersion_1_1gaussian__well.html", "classdispersion_1_1gaussian__well" ],
     [ "dispersion::ion_cyclotron< T, SAFE_MATH >", "classdispersion_1_1ion__cyclotron.html", "classdispersion_1_1ion__cyclotron" ],
     [ "dispersion::ordinary_wave< T, SAFE_MATH >", "classdispersion_1_1ordinary__wave.html", "classdispersion_1_1ordinary__wave" ],
     [ "dispersion::extra_ordinary_wave< T, SAFE_MATH >", "classdispersion_1_1extra__ordinary__wave.html", "classdispersion_1_1extra__ordinary__wave" ],

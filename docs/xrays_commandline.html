@@ -102,7 +102,7 @@ $(document).ready(function(){initNavTree('xrays_commandline.html',''); initResiz
 <div class="toc"><h3>Table of Contents</h3>
 <ul><li class="level1"><a href="#xrays_commandline_intro">Introduction</a></li>
 <li class="level1"><a href="#xrays_commandline_args">Command Options</a></li>
-<li class="level1"><a href="#xrays_commandline_example">Example commandline</a><ul><li class="level2"><a href="#xrays_commandline_example_dist">Ray intialization.</a></li>
+<li class="level1"><a href="#xrays_commandline_example">Example commandline</a><ul><li class="level2"><a href="#xrays_commandline_example_dist">Ray initialization.</a></li>
 <li class="level2"><a href="#xrays_commandline_example_model">Ray Models.</a></li>
 </ul>
 </li>
@@ -116,7 +116,7 @@ Introduction</h1>
 Command Options</h1>
 <table class="doxtable">
 <tr>
-<th>Command </th><th>Values </th><th>Discription </th></tr>
+<th>Command </th><th>Values </th><th>Description </th></tr>
 <tr>
 <th colspan="3">General Options </th></tr>
 <tr>
@@ -252,23 +252,23 @@ Command Options</h1>
 </div><!-- fragment --> </td><td>Positive Number </td><td>Standard deviation of for the ray z position distribution function. </td></tr>
 <tr>
 <td><div class="fragment"><div class="line">--use_cyl_xy </div>
-</div><!-- fragment --> </td><td></td><td>Use cylindical coordinates for x and y. </td></tr>
+</div><!-- fragment --> </td><td></td><td>Use cylindrical coordinates for x and y. </td></tr>
 <tr>
 <th colspan="3">Ray Tracing Physics Options </th></tr>
 <tr>
 <td><div class="fragment"><div class="line">--<a class="code hl_namespace" href="namespaceequilibrium.html">equilibrium</a> </div>
 <div class="ttc" id="anamespaceequilibrium_html"><div class="ttname"><a href="namespaceequilibrium.html">equilibrium</a></div><div class="ttdoc">Name space for equilibrium models.</div><div class="ttdef"><b>Definition</b> equilibrium.hpp:224</div></div>
 </div><!-- fragment --> </td><td><ul>
-<li><a class="el" href="equilibrum_models.html#equilibrum_efit">efit</a></li>
-<li><a class="el" href="equilibrum_models.html#equilibrum_vmec">vmec</a> </li>
+<li><a class="el" href="equilibrium_models.html#equilibrium_efit">efit</a></li>
+<li><a class="el" href="equilibrium_models.html#equilibrium_vmec">vmec</a> </li>
 </ul>
 </td><td>Equilibrium to use. </td></tr>
 <tr>
 <td><div class="fragment"><div class="line">--equilibrium_file </div>
-</div><!-- fragment --> </td><td>Path to <a class="el" href="equilibrum_models.html">equilibrium file</a> </td><td>Equilibrium file path. </td></tr>
+</div><!-- fragment --> </td><td>Path to <a class="el" href="equilibrium_models.html">equilibrium file</a> </td><td>Equilibrium file path. </td></tr>
 <tr>
 <td><div class="fragment"><div class="line">--<a class="code hl_namespace" href="namespacedispersion.html">dispersion</a> </div>
-<div class="ttc" id="anamespacedispersion_html"><div class="ttname"><a href="namespacedispersion.html">dispersion</a></div><div class="ttdoc">Name space for dispersion functions.</div><div class="ttdef"><b>Definition</b> dispersion.hpp:156</div></div>
+<div class="ttc" id="anamespacedispersion_html"><div class="ttname"><a href="namespacedispersion.html">dispersion</a></div><div class="ttdoc">Name space for dispersion functions.</div><div class="ttdef"><b>Definition</b> dispersion.hpp:157</div></div>
 </div><!-- fragment --> </td><td><ul>
 <li><a class="el" href="dispersion_function.html#dispersion_function_simple">simple</a></li>
 <li><a class="el" href="dispersion_function.html#dispersion_function_bohm_gross">bohm_gross</a></li>
@@ -276,14 +276,14 @@ Command Options</h1>
 <li><a class="el" href="dispersion_function.html#dispersion_function_x_wave">extra_ordinary_wave</a></li>
 <li><a class="el" href="dispersion_function.html#dispersion_function_cold_plasma">code_plasma</a> </li>
 </ul>
-</td><td>Wave disperion function to trace rays from. </td></tr>
+</td><td>Wave dispersion function to trace rays from. </td></tr>
 <tr>
 <td><div class="fragment"><div class="line">--absorption_model </div>
 </div><!-- fragment --> </td><td><ul>
 <li><a class="el" href="absorption_model.html#absorption_model_root">root_find</a></li>
 <li><a class="el" href="absorption_model.html#absorption_model_root">weak_damping</a> </li>
 </ul>
-</td><td>Power absoption model to use. </td></tr>
+</td><td>Power absorption model to use. </td></tr>
 <tr>
 <td><div class="fragment"><div class="line">--<a class="code hl_namespace" href="namespacesolver.html">solver</a> </div>
 <div class="ttc" id="anamespacesolver_html"><div class="ttname"><a href="namespacesolver.html">solver</a></div><div class="ttdoc">Name space for solvers.</div><div class="ttdef"><b>Definition</b> newton.hpp:13</div></div>
@@ -314,17 +314,17 @@ Example commandline</h1>
 <td>\(t \) </td><td>2.0 </td><td>\(2.0c \) \(s \) </td></tr>
 </table>
 <h2><a class="anchor" id="xrays_commandline_example_dist"></a>
-Ray intialization.</h2>
+Ray initialization.</h2>
 <div class="fragment"><div class="line">--init_x_mean=2.5 --init_y_dist=normal --init_y_mean=0.0 --init_y_sigma=0.05 --init_z_dist=normal --init_z_mean=0.0 --init_z_sigma=0.05 --use_cyl_xy</div>
-</div><!-- fragment --><p> Inital values for the position for \(y \) and \(z \) will be sampled from a normal distribution fuction. Both values have a mean of zero and as standard devation of 0.05. \(x \) is initalized with a uniform value of 2.5. We also set the command to use cylindical coordinates. So \(xyz\rightarrow r\phi z \).</p>
+</div><!-- fragment --><p> Initial values for the position for \(y \) and \(z \) will be sampled from a normal distribution function. Both values have a mean of zero and as standard deviation of 0.05. \(x \) is initialized with a uniform value of 2.5. We also set the command to use cylindrical coordinates. So \(xyz\rightarrow r\phi z \).</p>
 <div class="fragment"><div class="line">--init_w_dist=normal --init_w_mean=700 --init_w_sigma=10.0</div>
 </div><!-- fragment --><p> Frequency uses a normal distribution with a mean of 700 and a standard deviation of 10.</p>
 <div class="fragment"><div class="line">--init_kx --init_kx_mean=-700.0 --init_ky_dist=normal --init_ky_mean=-100.0 --init_ky_sigma=10.0 --init_kz_dist=normal --init_kz_mean=0.0 --init_kz_sigma=10.0</div>
-</div><!-- fragment --><p> Inital values for \(k_{y}\) and \(k_{z}\) will be sampled from a normal distribution fuction. Both of them have a standard deviation of 10. \(k_{y}\) has a mean of -100 and \(k_{z}\) has zero mean. \(k_{x}\) uses the default uniform value of -700.0. However, it is configured to solve for \(k_{x}\) which satisfies the dispersion function given the values of \(\omega,k_{y},k_{z},\vec{x}\).</p>
+</div><!-- fragment --><p> Initial values for \(k_{y}\) and \(k_{z}\) will be sampled from a normal distribution function. Both of them have a standard deviation of 10. \(k_{y}\) has a mean of -100 and \(k_{z}\) has zero mean. \(k_{x}\) uses the default uniform value of -700.0. However, it is configured to solve for \(k_{x}\) which satisfies the dispersion function given the values of \(\omega,k_{y},k_{z},\vec{x}\).</p>
 <h2><a class="anchor" id="xrays_commandline_example_model"></a>
 Ray Models.</h2>
 <div class="fragment"><div class="line">--<a class="code hl_namespace" href="namespaceequilibrium.html">equilibrium</a>=efit --equilibrium_file=../graph_tests/efit.nc</div>
-</div><!-- fragment --><p> We are using a <a class="el" href="equilibrum_models.html#equilibrum_efit">EFIT</a> equilibirum with values initalized from <code>../graph_tests/efit.nc</code>.</p>
+</div><!-- fragment --><p> We are using a <a class="el" href="equilibrium_models.html#equilibrium_efit">EFIT</a> equilibrium with values initialized from <code>../graph_tests/efit.nc</code>.</p>
 <div class="fragment"><div class="line">--absorption_model=weak_damping --<a class="code hl_namespace" href="namespacedispersion.html">dispersion</a>=ordinary_wave --<a class="code hl_namespace" href="namespacesolver.html">solver</a>=rk4</div>
 </div><!-- fragment --><p> It uses the <a class="el" href="dispersion_function.html#dispersion_function_o_wave">o-mode</a> dispersion function. Rays are integrated using a <a class="el" href="solvers.html#solvers_rk4">4th Order Runge Kutta</a> integrator. Power absorption uses the <a class="el" href="absorption_model.html#absorption_model_damping">Weak Damping</a> Model. </p>
 </div></div><!-- contents -->

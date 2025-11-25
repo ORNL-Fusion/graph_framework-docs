@@ -128,7 +128,7 @@ Introduction</h1>
 <tr>
 <td>\(t_{e}\) </td><td>\(K \) </td><td>Electron temperature </td></tr>
 <tr>
-<td>\(n_{e}\) </td><td>\(m^{-3}\) </td><td>Electron Denisty </td></tr>
+<td>\(n_{e}\) </td><td>\(m^{-3}\) </td><td>Electron Density </td></tr>
 <tr>
 <td>\(q \) </td><td>\(C \) </td><td>Fundamental Charge </td></tr>
 <tr>
@@ -154,9 +154,9 @@ Introduction</h1>
 </table>
 <h1><a class="anchor" id="dispersion_function_normal"></a>
 Normalization</h1>
-<p>The dispersion functions use normalized quantities for frequncy \(\omega \) and time \(t \). These are scaled to the speed of light \(c \). </p><a class="anchor" id="dispersion_function_normal_units"></a>
+<p>The dispersion functions use normalized quantities for frequency \(\omega \) and time \(t \). These are scaled to the speed of light \(c \). </p><a class="anchor" id="dispersion_function_normal_units"></a>
 <table class="doxtable">
-<caption>Disperion function units and normalizations</caption>
+<caption>Dispersion function units and normalizations</caption>
 <tr>
 <th>Symbol </th><th>Real Unit </th><th>Modified </th><th>Modified Unit</th><th>Description </th></tr>
 <tr>
@@ -166,7 +166,7 @@ Normalization</h1>
 <tr>
 <td>\(t \) </td><td>\(s \) </td><td>\(t&#39;=tc \) </td><td>\(m \) </td><td>Time </td></tr>
 <tr>
-<td>\(\vec{x}\) </td><td>\(m \) </td><td>\(\vec{x}\) </td><td>\(m \) </td><td>Postion </td></tr>
+<td>\(\vec{x}\) </td><td>\(m \) </td><td>\(\vec{x}\) </td><td>\(m \) </td><td>Position </td></tr>
 <tr>
 <td>\(v_{p}=\frac{\omega}{k}\) </td><td>\(\frac{m}{s}\)</td><td>\(v&#39;_{p}=\frac{\omega&#39;}{k}\) </td><td>\(1 \) </td><td>Phase velocity </td></tr>
 <tr>
@@ -186,14 +186,14 @@ Available Dispersion Functions</h1>
 <p>The following dispersion functions are available in xrays.</p>
 <h2><a class="anchor" id="dispersion_function_simple"></a>
 Simple</h2>
-<p>This disperison function represents a wave in a vacuum. </p><p class="formulaDsp">
+<p>This dispersion function represents a wave in a vacuum. </p><p class="formulaDsp">
 \begin{equation}D\left(\vec{x},\vec{k},\omega\right)=\frac{\vec{k}\cdot\vec{k}}{\omega^{2}}-1\equiv 0 \end{equation}
 </p>
 <p> It has no resonances or cutoffs.</p>
 <hr  />
  <h2><a class="anchor" id="dispersion_function_bohm_gross"></a>
 Bohm Gross</h2>
-<p>This dispersion function now accounts for how occilations in the plasma propagate. </p><p class="formulaDsp">
+<p>This dispersion function now accounts for how occupations in the plasma propagate. </p><p class="formulaDsp">
 \begin{equation}D\left(\vec{x},\vec{k},\omega\right)=\omega_{pe}+\frac{3}{2}\vec{k}\cdot\vec{k}v^{2}_{th}-\omega^{2}\equiv 0 \end{equation}
 </p>
 <p> It has no resonances. Waves cannot propagate below \(\omega_{pe}\) and \(v_{g}\) can never exceed \(v_{th}\). </p><div class="image">
@@ -202,7 +202,7 @@ Bohm Gross</h2>
 <hr  />
  <h2><a class="anchor" id="dispersion_function_o_wave"></a>
 Ordinary Wave</h2>
-<p>This disperison function represents a wave with a \(\vec{E}_{1}||\vec{B}_{0}\). That means the electric field occilates parallel to the magnetic field. </p><p class="formulaDsp">
+<p>This dispersion function represents a wave with a \(\vec{E}_{1}||\vec{B}_{0}\). That means the electric field occilates parallel to the magnetic field. </p><p class="formulaDsp">
 \begin{equation}D\left(\vec{x},\vec{k},\omega\right)=1-\frac{\omega^{2}_{pe}}{\omega^{2}}-\vec{n}_{\perp}\cdot\vec{n}_{\perp}\equiv 0 \end{equation}
 </p>
 <p> This wave is cut off below \(\omega_{pe}\). </p><div class="image">
@@ -211,19 +211,19 @@ Ordinary Wave</h2>
 <hr  />
  <h2><a class="anchor" id="dispersion_function_x_wave"></a>
 Extra Ordinary Wave</h2>
-<p>This disperison function represents a wave with a \(\vec{E}_{1}\perp\vec{B}_{0}\). That means the electric field occilates perpendicular to the magnetic field. </p><p class="formulaDsp">
+<p>This dispersion function represents a wave with a \(\vec{E}_{1}\perp\vec{B}_{0}\). That means the electric field occilates perpendicular to the magnetic field. </p><p class="formulaDsp">
 \begin{equation}D\left(\vec{x},\vec{k},\omega\right)=1-\frac{\omega_{pe}^2}{\omega^{2}}\frac{\omega^{2}-\omega_{pe}^2}{\omega^{2}-\omega_{h}^2}-\vec{n}_{\perp}\cdot\vec{n}_{\perp}\equiv 0 \end{equation}
 </p>
-<p> This mode has This wave has two branches. One branch is cannot not progagate below the \(\omega_{r}\) cutoff. The other branch cannot not progagate below the \(\omega_{l}\) cutoff. As the wave approches the upper hybrid fequency, wave propagation stops as the wave number approces \(\left|\vec{k}\right|\rightarrow\infty \). </p><div class="image">
+<p> This mode has This wave has two branches. One branch is cannot not propagate below the \(\omega_{r}\) cutoff. The other branch cannot not propagate below the \(\omega_{l}\) cutoff. As the wave approaches the upper hybrid frequency, wave propagation stops as the wave number approaches \(\left|\vec{k}\right|\rightarrow\infty \). </p><div class="image">
 <img src="X-Mode.png" alt=""/>
 </div>
 <hr  />
  <h2><a class="anchor" id="dispersion_function_cold_plasma"></a>
 Cold Plasma</h2>
-<p>This disperison function represents a wave in a cold plasma medium. </p><p class="formulaDsp">
+<p>This dispersion function represents a wave in a cold plasma medium. </p><p class="formulaDsp">
 \begin{equation}D\left(\vec{x},\vec{k},\omega\right)=det\left(\vec{\epsilon}+\vec{n}\vec{n}-\vec{n}\cdot\vec{n}\vec{I}\right)\equiv 0 \end{equation}
 </p>
-<p> The quantity \(\vec{\epsilon}\) is the diaelectric tensor. Using Onsager symmetries, this tensor is defined as </p><p class="formulaDsp">
+<p> The quantity \(\vec{\epsilon}\) is the dielectric tensor. Using Onsager symmetries, this tensor is defined as </p><p class="formulaDsp">
 \begin{equation}\vec{\epsilon}=\left(\begin{array}{ccc}\epsilon_{11}&amp;\epsilon_{12}&amp;0\\-\epsilon_{12}&amp;\epsilon_{11}&amp;0\\0&amp;0&amp;\epsilon_{33}\end{array}\right)\end{equation}
 </p>
 <p> where </p><p class="formulaDsp">
@@ -235,17 +235,17 @@ Cold Plasma</h2>
  <p class="formulaDsp">
 \begin{equation}\epsilon_{33}=1-\sum_{s}\frac{\omega^{2}_{p}}{\omega^{2}}\end{equation}
 </p>
-<p> Note here we are including the plasma frequency for ions aswell. This dispersion function is effectively a super position of the O-Mode and X-Mode dispersion functions and as such has the same cutoffs and resonaces. </p><div class="image">
+<p> Note here we are including the plasma frequency for ions as well. This dispersion function is effectively a super position of the O-Mode and X-Mode dispersion functions and as such has the same cutoffs and resonances. </p><div class="image">
 <img src="ColdPlasma.png" alt=""/>
 </div>
 <hr  />
  <h1><a class="anchor" id="dispersion_function_devel"></a>
 Developing new dispersion functions</h1>
-<p>This section is intended for code developers and outlines how to create new dispersion functions. New dispersion functions can be created from a subclass of <a class="el" href="classdispersion_1_1dispersion__function.html">dispersion::dispersion_function</a> or any other existing dispersion_function class and overloading class methods. For convinence the <a class="el" href="classdispersion_1_1physics.html">dispersion::physics</a> class contains several defined physical constants. </p><div class="fragment"><div class="line"><span class="keyword">template</span>&lt;jit::<span class="keywordtype">float</span>_scalar T, <span class="keywordtype">bool</span> SAFE_MATH=false&gt;</div>
+<p>This section is intended for code developers and outlines how to create new dispersion functions. New dispersion functions can be created from a subclass of <a class="el" href="classdispersion_1_1dispersion__function.html">dispersion::dispersion_function</a> or any other existing dispersion_function class and overloading class methods. For convenience the <a class="el" href="classdispersion_1_1physics.html">dispersion::physics</a> class contains several defined physical constants. </p><div class="fragment"><div class="line"><span class="keyword">template</span>&lt;jit::<span class="keywordtype">float</span>_scalar T, <span class="keywordtype">bool</span> SAFE_MATH=false&gt;</div>
 <div class="line"><span class="keyword">class </span>new_dispersion final : <span class="keyword">public</span> dispersion_function&lt;T, SAFE_MATH&gt; {</div>
 <div class="line">   ...</div>
 <div class="line">};</div>
-</div><!-- fragment --><p> When a new dispersion function is subclassed from <a class="el" href="classdispersion_1_1dispersion__function.html">dispersion::dispersion_function</a> an implimentation must be provided for the pure virtual method <a class="el" href="classdispersion_1_1dispersion__function.html#a30c60cf0ea23c4b7a89b4104a9991d3e">dispersion::dispersion_function::D</a>. </p><div class="fragment"><div class="line"><span class="keyword">template</span>&lt;jit::<span class="keywordtype">float</span>_scalar T, <span class="keywordtype">bool</span> SAFE_MATH=false&gt;</div>
+</div><!-- fragment --><p> When a new dispersion function is subclassed from <a class="el" href="classdispersion_1_1dispersion__function.html">dispersion::dispersion_function</a> an implementation must be provided for the pure virtual method <a class="el" href="classdispersion_1_1dispersion__function.html#a30c60cf0ea23c4b7a89b4104a9991d3e">dispersion::dispersion_function::D</a>. </p><div class="fragment"><div class="line"><span class="keyword">template</span>&lt;jit::<span class="keywordtype">float</span>_scalar T, <span class="keywordtype">bool</span> SAFE_MATH=false&gt;</div>
 <div class="line"><span class="keyword">class </span>new_dispersion final : <span class="keyword">public</span> dispersion_function&lt;T, SAFE_MATH&gt; {</div>
 <div class="line"><span class="keyword">public</span>:</div>
 <div class="line">    <span class="keyword">virtual</span> <a class="code hl_typedef" href="namespacegraph.html#ac8853b055dcbbfd35dff9b4584d5ef36">graph::shared_leaf&lt;T, SAFE_MATH&gt;</a> D(<a class="code hl_typedef" href="namespacegraph.html#ac8853b055dcbbfd35dff9b4584d5ef36">graph::shared_leaf&lt;T, SAFE_MATH&gt;</a> w,</div>
@@ -261,7 +261,7 @@ Developing new dispersion functions</h1>
 <div class="line">    }</div>
 <div class="line">};</div>
 <div class="ttc" id="anamespaceequilibrium_html_a9f4ba1563110e2443131808c94663444"><div class="ttname"><a href="namespaceequilibrium.html#a9f4ba1563110e2443131808c94663444">equilibrium::shared</a></div><div class="ttdeci">std::shared_ptr&lt; generic&lt; T, SAFE_MATH &gt; &gt; shared</div><div class="ttdoc">Convenience type alias for shared equilibria.</div><div class="ttdef"><b>Definition</b> equilibrium.hpp:472</div></div>
-<div class="ttc" id="anamespacegraph_html_ac8853b055dcbbfd35dff9b4584d5ef36"><div class="ttname"><a href="namespacegraph.html#ac8853b055dcbbfd35dff9b4584d5ef36">graph::shared_leaf</a></div><div class="ttdeci">std::shared_ptr&lt; leaf_node&lt; T, SAFE_MATH &gt; &gt; shared_leaf</div><div class="ttdoc">Convenience type alias for shared leaf nodes.</div><div class="ttdef"><b>Definition</b> node.hpp:673</div></div>
+<div class="ttc" id="anamespacegraph_html_ac8853b055dcbbfd35dff9b4584d5ef36"><div class="ttname"><a href="namespacegraph.html#ac8853b055dcbbfd35dff9b4584d5ef36">graph::shared_leaf</a></div><div class="ttdeci">std::shared_ptr&lt; leaf_node&lt; T, SAFE_MATH &gt; &gt; shared_leaf</div><div class="ttdoc">Convenience type alias for shared leaf nodes.</div><div class="ttdef"><b>Definition</b> node.hpp:674</div></div>
 </div><!-- fragment --> </div></div><!-- contents -->
 </div><!-- PageDoc -->
 </div><!-- doc-content -->

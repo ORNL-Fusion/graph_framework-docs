@@ -11,6 +11,6 @@ var searchData=
   ['vertical_20bin_8',['* &amp;ndash;max_z     Maximum vertical bin.',['..//home/runner/work/graph_framework/graph_framework/utilities/fix_NaN.py#autotoc_md9',1,'']]],
   ['visiter_5fmap_9',['visiter_map',['../namespacejit.html#aed5672337b45a8b11f1351456d2284b8',1,'jit']]],
   ['vizgraph_10',['To Vizgraph',['../new_operations_tutorial.html#new_operations_tutorial_to_vizgraph',1,'']]],
-  ['vmec_11',['vmec',['../classequilibrium_1_1vmec.html#ae401049f586e2381048f9c0ebe6baabe',1,'equilibrium::vmec::vmec()'],['../equilibrum_models.html#equilibrum_vmec',1,'VMEC'],['../classequilibrium_1_1vmec.html',1,'equilibrium::vmec&lt; T, SAFE_MATH &gt;']]],
-  ['vmec_20file_20format_12',['VMEC file format',['../equilibrum_models.html#equilibrum_vmec_format',1,'']]]
+  ['vmec_11',['vmec',['../classequilibrium_1_1vmec.html#ae401049f586e2381048f9c0ebe6baabe',1,'equilibrium::vmec::vmec()'],['../equilibrium_models.html#equilibrium_vmec',1,'VMEC'],['../classequilibrium_1_1vmec.html',1,'equilibrium::vmec&lt; T, SAFE_MATH &gt;']]],
+  ['vmec_20file_20format_12',['VMEC file format',['../equilibrium_models.html#equilibrium_vmec_format',1,'']]]
 ];

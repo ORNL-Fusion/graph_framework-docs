@@ -4,7 +4,7 @@ var searchData=
   ['make_5fefit_1',['make_efit',['../namespaceequilibrium.html#afe3234694e2e2d1e2dcd4cbde92f3e36',1,'equilibrium']]],
   ['make_5fengine_2',['make_engine',['../xrays_8cpp.html#a95fe1f3936da0684820a1a689929ab32',1,'xrays.cpp']]],
   ['make_5fequilibrium_3',['make_equilibrium',['../xrays_8cpp.html#aa6f7904f236afbf68a23c2e6c16fe6ed',1,'xrays.cpp']]],
-  ['make_5fguassian_5fdensity_4',['make_guassian_density',['../namespaceequilibrium.html#ad661550ec8701505f1565feda5a6c47e',1,'equilibrium']]],
+  ['make_5fgaussian_5fdensity_4',['make_gaussian_density',['../namespaceequilibrium.html#a5c681ea4a42cdbb3bfbcdc9a8c584d9b',1,'equilibrium']]],
   ['make_5fno_5fmagnetic_5ffield_5',['make_no_magnetic_field',['../namespaceequilibrium.html#ae82a467ab4ba8577e820b8a60a717c02',1,'equilibrium']]],
   ['make_5fslab_6',['make_slab',['../namespaceequilibrium.html#af6cb4eb52ad26ab176efe85e91a30de9',1,'equilibrium']]],
   ['make_5fslab_5fdensity_7',['make_slab_density',['../namespaceequilibrium.html#a5f265e70beee3ce23874440bba0e53be',1,'equilibrium']]],

@@ -125,7 +125,7 @@ Functions</h2></td></tr>
 <tr class="separator:a53334b8ed1ce4661804ebe19d1b53e8b"><td class="memSeparator" colspan="2">&#160;</td></tr>
 <tr class="memitem:a8cf3f21ba3d7c14ab374a961477cfa66" id="r_a8cf3f21ba3d7c14ab374a961477cfa66"><td class="memTemplParams" colspan="2">template&lt;typename T , bool SAFE_MATH&gt; </td></tr>
 <tr class="memitem:a8cf3f21ba3d7c14ab374a961477cfa66"><td class="memTemplItemLeft" align="right" valign="top">void&#160;</td><td class="memTemplItemRight" valign="bottom"><a class="el" href="xrays_8cpp.html#a8cf3f21ba3d7c14ab374a961477cfa66">set_variable</a> (const <a class="el" href="classcommandline_1_1parser.html">commandline::parser</a> &amp;cl, <a class="el" href="namespacegraph.html#ac8853b055dcbbfd35dff9b4584d5ef36">graph::shared_leaf</a>&lt; T, SAFE_MATH &gt; var, const std::string &amp;name, std::mt19937_64 &amp;engine, const size_t num_rays)</td></tr>
-<tr class="memdesc:a8cf3f21ba3d7c14ab374a961477cfa66"><td class="mdescLeft">&#160;</td><td class="mdescRight">Initalize value.  <br /></td></tr>
+<tr class="memdesc:a8cf3f21ba3d7c14ab374a961477cfa66"><td class="mdescLeft">&#160;</td><td class="mdescRight">Initialize value.  <br /></td></tr>
 <tr class="separator:a8cf3f21ba3d7c14ab374a961477cfa66"><td class="memSeparator" colspan="2">&#160;</td></tr>
 <tr class="memitem:a4c7cec7a43cc00b8a55ea128a8a7b6f3" id="r_a4c7cec7a43cc00b8a55ea128a8a7b6f3"><td class="memTemplParams" colspan="2">template&lt;typename T , bool SAFE_MATH&gt; </td></tr>
 <tr class="memitem:a4c7cec7a43cc00b8a55ea128a8a7b6f3"><td class="memTemplItemLeft" align="right" valign="top">void&#160;</td><td class="memTemplItemRight" valign="bottom"><a class="el" href="xrays_8cpp.html#a4c7cec7a43cc00b8a55ea128a8a7b6f3">set_xy_variables</a> (const <a class="el" href="classcommandline_1_1parser.html">commandline::parser</a> &amp;cl, <a class="el" href="namespacegraph.html#ac8853b055dcbbfd35dff9b4584d5ef36">graph::shared_leaf</a>&lt; T, SAFE_MATH &gt; x, <a class="el" href="namespacegraph.html#ac8853b055dcbbfd35dff9b4584d5ef36">graph::shared_leaf</a>&lt; T, SAFE_MATH &gt; y, std::mt19937_64 &amp;engine, const size_t num_rays)</td></tr>
@@ -137,11 +137,11 @@ Functions</h2></td></tr>
 <tr class="separator:a92be2ed895f66862b75418fe2c1f89f8"><td class="memSeparator" colspan="2">&#160;</td></tr>
 <tr class="memitem:a739faf653d0f073ad59aa718d72df21e" id="r_a739faf653d0f073ad59aa718d72df21e"><td class="memTemplParams" colspan="2">template&lt;<a class="el" href="conceptdispersion_1_1function.html">dispersion::function</a> DISPERSION_FUNCTION&gt; </td></tr>
 <tr class="memitem:a739faf653d0f073ad59aa718d72df21e"><td class="memTemplItemLeft" align="right" valign="top">void&#160;</td><td class="memTemplItemRight" valign="bottom"><a class="el" href="xrays_8cpp.html#a739faf653d0f073ad59aa718d72df21e">run_dispersion</a> (const <a class="el" href="classcommandline_1_1parser.html">commandline::parser</a> &amp;cl, <a class="el" href="namespacegraph.html#ac8853b055dcbbfd35dff9b4584d5ef36">graph::shared_leaf</a>&lt; typename DISPERSION_FUNCTION::base, DISPERSION_FUNCTION::safe_math &gt; omega, <a class="el" href="namespacegraph.html#ac8853b055dcbbfd35dff9b4584d5ef36">graph::shared_leaf</a>&lt; typename DISPERSION_FUNCTION::base, DISPERSION_FUNCTION::safe_math &gt; kx, <a class="el" href="namespacegraph.html#ac8853b055dcbbfd35dff9b4584d5ef36">graph::shared_leaf</a>&lt; typename DISPERSION_FUNCTION::base, DISPERSION_FUNCTION::safe_math &gt; ky, <a class="el" href="namespacegraph.html#ac8853b055dcbbfd35dff9b4584d5ef36">graph::shared_leaf</a>&lt; typename DISPERSION_FUNCTION::base, DISPERSION_FUNCTION::safe_math &gt; kz, <a class="el" href="namespacegraph.html#ac8853b055dcbbfd35dff9b4584d5ef36">graph::shared_leaf</a>&lt; typename DISPERSION_FUNCTION::base, DISPERSION_FUNCTION::safe_math &gt; x, <a class="el" href="namespacegraph.html#ac8853b055dcbbfd35dff9b4584d5ef36">graph::shared_leaf</a>&lt; typename DISPERSION_FUNCTION::base, DISPERSION_FUNCTION::safe_math &gt; y, <a class="el" href="namespacegraph.html#ac8853b055dcbbfd35dff9b4584d5ef36">graph::shared_leaf</a>&lt; typename DISPERSION_FUNCTION::base, DISPERSION_FUNCTION::safe_math &gt; z, <a class="el" href="namespacegraph.html#ac8853b055dcbbfd35dff9b4584d5ef36">graph::shared_leaf</a>&lt; typename DISPERSION_FUNCTION::base, DISPERSION_FUNCTION::safe_math &gt; t, const typename DISPERSION_FUNCTION::base dt, <a class="el" href="namespaceequilibrium.html#a9f4ba1563110e2443131808c94663444">equilibrium::shared</a>&lt; typename DISPERSION_FUNCTION::base, DISPERSION_FUNCTION::safe_math &gt; &amp;eq, const size_t num_steps, const size_t sub_steps, std::mt19937_64 &amp;engine, const std::string &amp;filename=&quot;&quot;, const size_t num_rays=0, const size_t index=0)</td></tr>
-<tr class="memdesc:a739faf653d0f073ad59aa718d72df21e"><td class="mdescLeft">&#160;</td><td class="mdescRight">Run Disperison.  <br /></td></tr>
+<tr class="memdesc:a739faf653d0f073ad59aa718d72df21e"><td class="mdescLeft">&#160;</td><td class="mdescRight">Run Dispersion.  <br /></td></tr>
 <tr class="separator:a739faf653d0f073ad59aa718d72df21e"><td class="memSeparator" colspan="2">&#160;</td></tr>
 <tr class="memitem:aa6f7904f236afbf68a23c2e6c16fe6ed" id="r_aa6f7904f236afbf68a23c2e6c16fe6ed"><td class="memTemplParams" colspan="2">template&lt;<a class="el" href="conceptjit_1_1float__scalar.html">jit::float_scalar</a> T, bool SAFE_MATH = false&gt; </td></tr>
 <tr class="memitem:aa6f7904f236afbf68a23c2e6c16fe6ed"><td class="memTemplItemLeft" align="right" valign="top"><a class="el" href="namespaceequilibrium.html#a9f4ba1563110e2443131808c94663444">equilibrium::shared</a>&lt; T, SAFE_MATH &gt;&#160;</td><td class="memTemplItemRight" valign="bottom"><a class="el" href="xrays_8cpp.html#aa6f7904f236afbf68a23c2e6c16fe6ed">make_equilibrium</a> (const <a class="el" href="classcommandline_1_1parser.html">commandline::parser</a> &amp;cl)</td></tr>
-<tr class="memdesc:aa6f7904f236afbf68a23c2e6c16fe6ed"><td class="mdescLeft">&#160;</td><td class="mdescRight">Make an equilibrum.  <br /></td></tr>
+<tr class="memdesc:aa6f7904f236afbf68a23c2e6c16fe6ed"><td class="mdescLeft">&#160;</td><td class="mdescRight">Make an equilibrium.  <br /></td></tr>
 <tr class="separator:aa6f7904f236afbf68a23c2e6c16fe6ed"><td class="memSeparator" colspan="2">&#160;</td></tr>
 <tr class="memitem:a95fe1f3936da0684820a1a689929ab32" id="r_a95fe1f3936da0684820a1a689929ab32"><td class="memItemLeft" align="right" valign="top">std::mt19937_64&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="xrays_8cpp.html#a95fe1f3936da0684820a1a689929ab32">make_engine</a> (const <a class="el" href="classcommandline_1_1parser.html">commandline::parser</a> &amp;cl, const size_t index)</td></tr>
 <tr class="memdesc:a95fe1f3936da0684820a1a689929ab32"><td class="mdescLeft">&#160;</td><td class="mdescRight">Generate the engine.  <br /></td></tr>
@@ -225,7 +225,7 @@ template&lt;<a class="el" href="conceptjit_1_1float__scalar.html">jit::float_sca
   <table class="params">
     <tr><td class="paramdir">[in]</td><td class="paramname">cl</td><td>Parsed commandline. </td></tr>
     <tr><td class="paramdir">[in]</td><td class="paramname">num_times</td><td>Total number of time steps. </td></tr>
-    <tr><td class="paramdir">[in]</td><td class="paramname">sub_steps</td><td>Number of substeps to push the rays. </td></tr>
+    <tr><td class="paramdir">[in]</td><td class="paramname">sub_steps</td><td>Number of sub-steps to push the rays. </td></tr>
     <tr><td class="paramdir">[in]</td><td class="paramname">num_rays</td><td>Number of rays to trace. </td></tr>
   </table>
   </dd>
@@ -285,7 +285,7 @@ template&lt;<a class="el" href="conceptjit_1_1float__scalar.html">jit::float_sca
   <table class="params">
     <tr><td class="paramdir">[in]</td><td class="paramname">cl</td><td>Parsed commandline. </td></tr>
     <tr><td class="paramdir">[in]</td><td class="paramname">num_times</td><td>Total number of time steps. </td></tr>
-    <tr><td class="paramdir">[in]</td><td class="paramname">sub_steps</td><td>Number of substeps to push the rays. </td></tr>
+    <tr><td class="paramdir">[in]</td><td class="paramname">sub_steps</td><td>Number of sub-steps to push the rays. </td></tr>
     <tr><td class="paramdir">[in]</td><td class="paramname">num_rays</td><td>Number of rays to trace. </td></tr>
   </table>
   </dd>
@@ -385,7 +385,7 @@ template&lt;<a class="el" href="conceptjit_1_1float__scalar.html">jit::float_sca
       </table>
 </div><div class="memdoc">
 
-<p>Make an equilibrum. </p>
+<p>Make an equilibrium. </p>
 <dl class="tparams"><dt>Template Parameters</dt><dd>
   <table class="tparams">
     <tr><td class="paramname">T</td><td>Base type of the calculation. </td></tr>
@@ -542,7 +542,7 @@ template&lt;<a class="el" href="conceptabsorption_1_1model.html">absorption::mod
 <p>Run absorption model. </p>
 <dl class="tparams"><dt>Template Parameters</dt><dd>
   <table class="tparams">
-    <tr><td class="paramname">ABSORPTION_MODEL</td><td>Absoption model to use.</td></tr>
+    <tr><td class="paramname">ABSORPTION_MODEL</td><td>Absorption model to use.</td></tr>
   </table>
   </dd>
 </dl>
@@ -686,7 +686,7 @@ template&lt;<a class="el" href="conceptdispersion_1_1function.html">dispersion::
       </table>
 </div><div class="memdoc">
 
-<p>Run Disperison. </p>
+<p>Run Dispersion. </p>
 <dl class="tparams"><dt>Template Parameters</dt><dd>
   <table class="tparams">
     <tr><td class="paramname">DISPERSION_FUNCTION</td><td>The dispersion method.</td></tr>
@@ -704,7 +704,7 @@ template&lt;<a class="el" href="conceptdispersion_1_1function.html">dispersion::
     <tr><td class="paramdir">[in]</td><td class="paramname">y</td><td>Initial position in y direction. </td></tr>
     <tr><td class="paramdir">[in]</td><td class="paramname">z</td><td>Initial position in z direction. </td></tr>
     <tr><td class="paramdir">[in]</td><td class="paramname">t</td><td>Initial position in t direction. </td></tr>
-    <tr><td class="paramdir">[in]</td><td class="paramname">dt</td><td>Inital dt. </td></tr>
+    <tr><td class="paramdir">[in]</td><td class="paramname">dt</td><td>Initial dt. </td></tr>
     <tr><td class="paramdir">[in]</td><td class="paramname">eq</td><td>Equilibrium object. </td></tr>
     <tr><td class="paramdir">[in]</td><td class="paramname">num_steps</td><td>Equilibrium object. </td></tr>
     <tr><td class="paramdir">[in]</td><td class="paramname">sub_steps</td><td>Equilibrium object. </td></tr>
@@ -854,7 +854,7 @@ template&lt;<a class="el" href="conceptsolver_1_1method.html">solver::method</a>
     <tr><td class="paramdir">[in]</td><td class="paramname">y</td><td>Initial position in y direction. </td></tr>
     <tr><td class="paramdir">[in]</td><td class="paramname">z</td><td>Initial position in z direction. </td></tr>
     <tr><td class="paramdir">[in]</td><td class="paramname">t</td><td>Initial position in t direction. </td></tr>
-    <tr><td class="paramdir">[in]</td><td class="paramname">dt</td><td>Inital dt. </td></tr>
+    <tr><td class="paramdir">[in]</td><td class="paramname">dt</td><td>Initial dt. </td></tr>
     <tr><td class="paramdir">[in]</td><td class="paramname">eq</td><td>Equilibrium object. </td></tr>
     <tr><td class="paramdir">[in]</td><td class="paramname">num_steps</td><td>Equilibrium object. </td></tr>
     <tr><td class="paramdir">[in]</td><td class="paramname">sub_steps</td><td>Equilibrium object. </td></tr>
@@ -1004,7 +1004,7 @@ template&lt;typename T , bool SAFE_MATH&gt; </div>
       </table>
 </div><div class="memdoc">
 
-<p>Initalize value. </p>
+<p>Initialize value. </p>
 <dl class="tparams"><dt>Template Parameters</dt><dd>
   <table class="tparams">
     <tr><td class="paramname">T</td><td>Base type of the calculation. </td></tr>
@@ -1137,7 +1137,7 @@ template&lt;<a class="el" href="conceptjit_1_1float__scalar.html">jit::float_sca
   <table class="params">
     <tr><td class="paramdir">[in]</td><td class="paramname">cl</td><td>Parsed commandline. </td></tr>
     <tr><td class="paramdir">[in]</td><td class="paramname">num_times</td><td>Total number of time steps. </td></tr>
-    <tr><td class="paramdir">[in]</td><td class="paramname">sub_steps</td><td>Number of substeps to push the rays. </td></tr>
+    <tr><td class="paramdir">[in]</td><td class="paramname">sub_steps</td><td>Number of sub-steps to push the rays. </td></tr>
     <tr><td class="paramdir">[in]</td><td class="paramname">num_rays</td><td>Number of rays to trace. </td></tr>
   </table>
   </dd>

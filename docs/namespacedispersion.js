@@ -7,7 +7,7 @@ var namespacedispersion =
     [ "dispersion_function", "classdispersion_1_1dispersion__function.html", "classdispersion_1_1dispersion__function" ],
     [ "dispersion_interface", "classdispersion_1_1dispersion__interface.html", "classdispersion_1_1dispersion__interface" ],
     [ "extra_ordinary_wave", "classdispersion_1_1extra__ordinary__wave.html", "classdispersion_1_1extra__ordinary__wave" ],
-    [ "guassian_well", "classdispersion_1_1guassian__well.html", "classdispersion_1_1guassian__well" ],
+    [ "gaussian_well", "classdispersion_1_1gaussian__well.html", "classdispersion_1_1gaussian__well" ],
     [ "hot_plasma", "classdispersion_1_1hot__plasma.html", "classdispersion_1_1hot__plasma" ],
     [ "hot_plasma_expansion", "classdispersion_1_1hot__plasma__expansion.html", "classdispersion_1_1hot__plasma__expansion" ],
     [ "ion_cyclotron", "classdispersion_1_1ion__cyclotron.html", "classdispersion_1_1ion__cyclotron" ],

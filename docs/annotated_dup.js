@@ -19,7 +19,7 @@ var annotated_dup =
       [ "dispersion_function", "classdispersion_1_1dispersion__function.html", "classdispersion_1_1dispersion__function" ],
       [ "dispersion_interface", "classdispersion_1_1dispersion__interface.html", "classdispersion_1_1dispersion__interface" ],
       [ "extra_ordinary_wave", "classdispersion_1_1extra__ordinary__wave.html", "classdispersion_1_1extra__ordinary__wave" ],
-      [ "guassian_well", "classdispersion_1_1guassian__well.html", "classdispersion_1_1guassian__well" ],
+      [ "gaussian_well", "classdispersion_1_1gaussian__well.html", "classdispersion_1_1gaussian__well" ],
       [ "hot_plasma", "classdispersion_1_1hot__plasma.html", "classdispersion_1_1hot__plasma" ],
       [ "hot_plasma_expansion", "classdispersion_1_1hot__plasma__expansion.html", "classdispersion_1_1hot__plasma__expansion" ],
       [ "ion_cyclotron", "classdispersion_1_1ion__cyclotron.html", "classdispersion_1_1ion__cyclotron" ],
@@ -34,8 +34,8 @@ var annotated_dup =
     ] ],
     [ "equilibrium", "namespaceequilibrium.html", [
       [ "efit", "classequilibrium_1_1efit.html", "classequilibrium_1_1efit" ],
+      [ "gaussian_density", "classequilibrium_1_1gaussian__density.html", "classequilibrium_1_1gaussian__density" ],
       [ "generic", "classequilibrium_1_1generic.html", "classequilibrium_1_1generic" ],
-      [ "guassian_density", "classequilibrium_1_1guassian__density.html", "classequilibrium_1_1guassian__density" ],
       [ "no_magnetic_field", "classequilibrium_1_1no__magnetic__field.html", "classequilibrium_1_1no__magnetic__field" ],
       [ "slab", "classequilibrium_1_1slab.html", "classequilibrium_1_1slab" ],
       [ "slab_density", "classequilibrium_1_1slab__density.html", "classequilibrium_1_1slab__density" ],

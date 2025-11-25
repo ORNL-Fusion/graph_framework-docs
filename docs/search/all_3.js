@@ -7,7 +7,7 @@ var searchData=
   ['base_4',['base',['../classsolver_1_1solver__interface.html#a0ec704eb97de5906dfa9e6214950b15d',1,'solver::solver_interface::base'],['../classgraph_1_1leaf__node.html#a46fc78a0992850f2d1909afa7864f6bc',1,'graph::leaf_node::base'],['../classdispersion_1_1dispersion__function.html#a668f9782e0d1a7970fd734225ace6b5a',1,'dispersion::dispersion_function::base'],['../classdispersion_1_1z__function.html#a5b81e7b6fcf6ae288f0577b9ef7a5409',1,'dispersion::z_function::base'],['../classabsorption_1_1method.html#a9d28b9231aecb0e6d679b4c6f3e02c5d',1,'absorption::method::base'],['../classbackend_1_1buffer.html#abf2931fade38e44e5d7acf9ea2ab35d7',1,'backend::buffer::base'],['../new_operations_tutorial.html#new_operations_tutorial_get_power_base',1,'Get power base']]],
   ['basic_20expressions_5',['Basic Expressions',['../tutorial.html#tutorial_expression',1,'']]],
   ['basic_20nodes_6',['Basic Nodes',['../tutorial.html#tutorial_basic',1,'']]],
-  ['bicubic_20splines_7',['Bicubic Splines',['../equilibrum_models.html#equilibrum_splines_2D',1,'']]],
+  ['bicubic_20splines_7',['Bicubic Splines',['../equilibrium_models.html#equilibrium_splines_2D',1,'']]],
   ['bin_8',['bin',['..//home/runner/work/graph_framework/graph_framework/utilities/fix_NaN.py#autotoc_md9',1,'* &amp;ndash;max_z     Maximum vertical bin.'],['..//home/runner/work/graph_framework/graph_framework/utilities/bin.py#autotoc_md6',1,'* &amp;ndash;max_z     Maximum z bin.']]],
   ['bin_2epy_9',['bin.py',['../bin_8py.html',1,'']]],
   ['bin_5fpower_10',['bin_power',['../xrays_8cpp.html#a350f533f51a508892dac45152bbee054',1,'xrays.cpp']]],

@@ -10,7 +10,7 @@ var hierarchy =
     [ "output::data_set< T >", "classoutput_1_1data__set.html", null ],
     [ "output::data_set< typename DISPERSION_FUNCTION::base >", "classoutput_1_1data__set.html", null ],
     [ "dispersion::dispersion_function< T, SAFE_MATH >", "classdispersion_1_1dispersion__function.html", [
-      [ "dispersion::guassian_well< T, SAFE_MATH >", "classdispersion_1_1guassian__well.html", null ],
+      [ "dispersion::gaussian_well< T, SAFE_MATH >", "classdispersion_1_1gaussian__well.html", null ],
       [ "dispersion::physics< T, SAFE_MATH >", "classdispersion_1_1physics.html", [
         [ "dispersion::acoustic_wave< T, SAFE_MATH >", "classdispersion_1_1acoustic__wave.html", null ],
         [ "dispersion::bohm_gross< T, SAFE_MATH >", "classdispersion_1_1bohm__gross.html", null ],
@@ -74,7 +74,7 @@ var hierarchy =
     [ "jit::float_compare< T >", "classjit_1_1float__compare.html", null ],
     [ "equilibrium::generic< T, SAFE_MATH >", "classequilibrium_1_1generic.html", [
       [ "equilibrium::efit< T, SAFE_MATH >", "classequilibrium_1_1efit.html", null ],
-      [ "equilibrium::guassian_density< T, SAFE_MATH >", "classequilibrium_1_1guassian__density.html", null ],
+      [ "equilibrium::gaussian_density< T, SAFE_MATH >", "classequilibrium_1_1gaussian__density.html", null ],
       [ "equilibrium::no_magnetic_field< T, SAFE_MATH >", "classequilibrium_1_1no__magnetic__field.html", null ],
       [ "equilibrium::slab< T, SAFE_MATH >", "classequilibrium_1_1slab.html", null ],
       [ "equilibrium::slab_density< T, SAFE_MATH >", "classequilibrium_1_1slab__density.html", null ],
