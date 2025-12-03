@@ -17,10 +17,11 @@ var searchData=
   ['order_20runge_20kutta_14',['order runge kutta',['../solvers.html#solvers_rk2',1,'2nd Order Runge Kutta'],['../solvers.html#solvers_rk4',1,'4th Order Runge Kutta'],['../solvers.html#solvers_adaptive_rk4',1,'Adaptive 4th Order Runge Kutta']]],
   ['ordinary_20wave_15',['ordinary wave',['../dispersion_function.html#dispersion_function_x_wave',1,'Extra Ordinary Wave'],['../dispersion_function.html#dispersion_function_o_wave',1,'Ordinary Wave']]],
   ['ordinary_5fwave_16',['ordinary_wave',['../classdispersion_1_1ordinary__wave.html',1,'dispersion']]],
-  ['output_17',['output',['../namespaceoutput.html',1,'']]],
-  ['output_20file_18',['xrays Output File',['../xrays_output.html',1,'']]],
-  ['output_2ehpp_19',['output.hpp',['../output_8hpp.html',1,'']]],
-  ['output_5fnodes_20',['output_nodes',['../namespacegraph.html#aec6ce7b08d650c6b236b68bd68a2ce0a',1,'graph']]],
-  ['outputs_21',['outputs',['../general_concepts.html#general_concepts_compile_outputs',1,'Outputs'],['../classworkflow_1_1work__item.html#ae725a56eb6977da220d255aeb5537b9c',1,'workflow::work_item::outputs']]],
-  ['overloads_22',['Methods overloads',['../new_operations_tutorial.html#new_operations_tutorial_method',1,'']]]
+  ['other_20frameworks_17',['Comparison to other Frameworks',['../code_performance.html#code_performance_comparison',1,'']]],
+  ['output_18',['output',['../namespaceoutput.html',1,'']]],
+  ['output_20file_19',['xrays Output File',['../xrays_output.html',1,'']]],
+  ['output_2ehpp_20',['output.hpp',['../output_8hpp.html',1,'']]],
+  ['output_5fnodes_21',['output_nodes',['../namespacegraph.html#aec6ce7b08d650c6b236b68bd68a2ce0a',1,'graph']]],
+  ['outputs_22',['outputs',['../general_concepts.html#general_concepts_compile_outputs',1,'Outputs'],['../classworkflow_1_1work__item.html#ae725a56eb6977da220d255aeb5537b9c',1,'workflow::work_item::outputs']]],
+  ['overloads_23',['Methods overloads',['../new_operations_tutorial.html#new_operations_tutorial_method',1,'']]]
 ];

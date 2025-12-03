@@ -99,8 +99,24 @@ $(document).ready(function(){initNavTree('md_README.html',''); initResizable(); 
   <div class="headertitle"><div class="title">Quick Start Guide</div></div>
 </div><!--header-->
 <div class="contents">
-<div class="textblock"><p><a class="anchor" id="autotoc_md0"></a> <b>graph_framework</b>: A graph computation framework that supports auto differentiation. It is designed to allow domain scientists to create cross platform GPU accelerated code and embed those codes in existing legacy tools.</p>
-<p><a href="https://github.com/ORNL-Fusion/graph_framework/actions/workflows/ci_test.yaml"><img src="https://github.com/ORNL-Fusion/graph_framework/actions/workflows/ci_test.yaml/badge.svg?branch=main" alt="Continuous Integration Test" style="pointer-events: none;" class="inline"/></a></p>
+<div class="textblock"><p><a class="anchor" id="autotoc_md0"></a> <b>graph_framework</b>: A graph computation framework that supports auto differentiation. It is designed to allow domain scientists to create cross platform GPU accelerated code and embed those codes in existing legacy tools. It is designed for the domain of physics problems where there same physics is applied to a large ensemble of independent systems.</p>
+<p>This framework enables:</p><ol type="1">
+<li>Portability to Nvidia, AMD, and Apple GPUs and CPUs.</li>
+<li>Abstraction of the physics from the compute.</li>
+<li>Auto Differentiation.</li>
+<li>Embedding in C, C++, and Fortran codes.</li>
+</ol>
+<p>The compute kernels created have strong scaling to multiple devices</p>
+<div class="image">
+<img src="StrongScaling.png" alt=""/>
+<div class="caption">
+Strong Scaling</div></div>
+    <p>and the best throughput on both GPUs and CPUs compared to other frameworks like <a href="https://ml-explore.github.io/mlx/build/html/index.html">MLX</a> and <a href="https://docs.jax.dev/en/latest/">JAX</a></p>
+<div class="image">
+<img src="Comparison.png" alt=""/>
+<div class="caption">
+Throughput</div></div>
+    <p><a href="https://github.com/ORNL-Fusion/graph_framework/actions/workflows/ci_test.yaml"><img src="https://github.com/ORNL-Fusion/graph_framework/actions/workflows/ci_test.yaml/badge.svg?branch=main" alt="Continuous Integration Test" style="pointer-events: none;" class="inline"/></a></p>
 <h1><a class="anchor" id="autotoc_md1"></a>
 Documentation</h1>
 <p><a href="https://ornl-fusion.github.io/graph_framework-docs">graph_framework-docs</a> Documentation for the graph_framework.</p>

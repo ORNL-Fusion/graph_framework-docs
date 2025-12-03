@@ -39,6 +39,17 @@ var NAVTREE =
       [ "Introduction", "graph_c_binding.html#graph_c_binding_into", null ],
       [ "C Binding Interface", "graph_c_binding.html#graph_c_binding_interface", null ]
     ] ],
+    [ "Code Performance", "code_performance.html", [
+      [ "Introduction", "code_performance.html#code_performance_introduction", null ],
+      [ "Strong Scaling", "code_performance.html#code_performance_scaling", null ],
+      [ "Comparison to other Frameworks", "code_performance.html#code_performance_comparison", [
+        [ "Source codes for throughput benchmark comparison", "code_performance.html#code_performance_comparison_codes", [
+          [ "Graph Framework", "code_performance.html#code_performance_comparison_graph", null ],
+          [ "MLX", "code_performance.html#code_performance_comparison_mlx", null ],
+          [ "JAX", "code_performance.html#code_performance_comparison_jaxx", null ]
+        ] ]
+      ] ]
+    ] ],
     [ "Code Structure", "code_structure.html", [
       [ "Introduction", "code_structure.html#code_structure_intro", null ],
       [ "Framework", "code_structure.html#code_structure_framework", null ],
@@ -70,6 +81,14 @@ var NAVTREE =
         ] ]
       ] ]
     ] ],
+    [ "Discription", "discription.html", [
+      [ "Introduction", "discription.html#discription_introduction", [
+        [ "Graphs", "discription.html#discription_graphs", [
+          [ "Building Graphs", "discription.html#discription_graphs_builds", null ]
+        ] ],
+        [ "discription_workflows", "discription.html#discription_workflows", null ]
+      ] ]
+    ] ],
     [ "General Concepts", "general_concepts.html", [
       [ "Introduction", "general_concepts.html#general_concepts_introduction", null ],
       [ "Definitions", "general_concepts.html#general_concepts_definitions", null ],
@@ -96,6 +115,14 @@ var NAVTREE =
         [ "Iteration", "tutorial.html#tutorial_workflow_iter", null ]
       ] ],
       [ "Newton's Method.", "tutorial.html#tutorial_workflow_newton", null ]
+    ] ],
+    [ "Use Cases", "use_cases.html", [
+      [ "Introduction", "use_cases.html#use_cases_introduction", [
+        [ "RF Ray tracing", "use_cases.html#use_cases_rf", [
+          [ "Correctness", "use_cases.html#use_cases_rf_correctness", null ]
+        ] ]
+      ] ],
+      [ "Particle Pushing", "use_cases.html#use_cases_particle_pushing", null ]
     ] ],
     [ "xrays Command Line Arguments", "xrays_commandline.html", [
       [ "Introduction", "xrays_commandline.html#xrays_commandline_intro", null ],
@@ -227,10 +254,10 @@ var NAVTREEINDEX =
 "classgraph_1_1piecewise__2D__node.html#a840b44453602c43e0a5b79b3f955ad6f",
 "classgraph_1_1variable__node.html#a6cc97fd212ea8cfbdf09f06d50560a46",
 "classsolver_1_1solver__interface.html#a64200cf799645c791f4ea6e7f66127f4",
-"functions_d.html",
-"interfacegraph__fortran_1_1graph__constant.html",
-"namespacegraph.html#aea565fa46ece58a60bf07f661eaec3a3",
-"solver_8hpp.html"
+"f__binding__test_8f90.html#a4f96b07b7fc5000eb47373f50a6cb935",
+"interfacegraph__fortran_1_1graph__add__pre__item.html",
+"namespacegraph.html#ac8853b055dcbbfd35dff9b4584d5ef36",
+"register_8hpp.html#a3d69cd6dbc877e0e4a1896300ba6576d"
 ];
 
 var SYNCONMSG = 'click to disable panel synchronisation';

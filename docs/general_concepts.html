@@ -169,7 +169,7 @@ Graph</h1>
 <p> This equation consists of five nodes. The ends of the tree are classified as either variables \(x\) or constants \(m,b\). These nodes are connected by nodes for multiply and addition operations. The output \(y\) represents the entire graph of operations. </p><div class="image">
 <img src="line_graph.png" alt=""/>
 <div class="caption">
-The graph structure for y = mx + b.</div></div>
+The graph structure for @f$y=mx+b@f$.</div></div>
 <p> Evaluation of graphs start from the top most node in this case the \(+\) operation. Evaluation of a node is not performed until all sub-nodes are evaluated starting with the left operand. Evaluation starts by recursively evaluating the left operands until the last node is reached \(m\). </p><div class="image">
 <img src="line_graph_eval1.png" alt=""/>
 </div>
