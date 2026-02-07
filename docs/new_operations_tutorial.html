@@ -319,7 +319,7 @@ Get power exponent</h2>
 Remove Pseudo</h2>
 <p>Return the node with pseudo variables removed. <a class="el" href="classgraph_1_1pseudo__variable__node.html">graph::pseudo_variable_node</a> are used to end derivatives construction by treating a sub graph as a pseudo variable. Before graphs can be evaluated, these <a class="el" href="classgraph_1_1pseudo__variable__node.html">graph::pseudo_variable_node</a> need to be removed. </p><div class="fragment"><div class="line"><span class="keyword">virtual</span> shared_leaf&lt;T, SAFE_MATH&gt; remove_pseudo() {</div>
 <div class="line">    <span class="keywordflow">if</span> (this-&gt;has_pseudo()) {</div>
-<div class="line">        <span class="keywordflow">return</span> sqrt(this-&gt;arg-&gt;remove_pseudo());</div>
+<div class="line">        <span class="keywordflow">return</span> foo(this-&gt;arg-&gt;remove_pseudo());</div>
 <div class="line">    }</div>
 <div class="line">    <span class="keywordflow">return</span> this-&gt;shared_from_this();</div>
 <div class="line">}</div>

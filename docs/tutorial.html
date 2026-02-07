@@ -117,7 +117,7 @@ $(document).ready(function(){initNavTree('tutorial.html',''); initResizable(); }
 <h1><a class="anchor" id="tutorial_introduction"></a>
 Introduction</h1>
 <p>In this tutorial we will put the basic <a class="el" href="general_concepts.html">General Concepts</a> of the graph_framework into action. This will discuss building trees, generating kernels, and executing workflows.</p>
-<p>To accomplish this there is a playground tool in the <code>graph_playground</code> directory. This playground is a preconfigured executable target which can be used to test out the API's of this framework. The playground starts with a blank main function. </p><div class="fragment"><div class="line"><span class="preprocessor">#include &quot;../graph_framework/jit.hpp&quot;</span></div>
+<p>To accomplish this there is a playground tool in the <code>graph_playground</code> directory. This playground is a preconfigured executable target which can be used to test out the API's of this framework. The playground starts with a blank main function. </p><div class="fragment"><div class="line"><span class="preprocessor">#include &quot;<a class="code" href="graph__framework_8hpp.html">graph_framework.hpp</a>&quot;</span></div>
 <div class="line"> </div>
 <div class="line"><span class="keywordtype">int</span> main(<span class="keywordtype">int</span> argc, <span class="keyword">const</span> <span class="keywordtype">char</span> * argv[]) {</div>
 <div class="line">    <a class="code hl_define" href="graph__c__binding_8h.html#ad8adc1545da096be4d3c3323b41f6d85">START_GPU</a></div>
@@ -131,7 +131,8 @@ Introduction</h1>
 <div class="line">}</div>
 <div class="ttc" id="agraph__c__binding_8h_html_a9ed5f8a3efebcba6fb2b7eef9817d896"><div class="ttname"><a href="graph__c__binding_8h.html#a9ed5f8a3efebcba6fb2b7eef9817d896">END_GPU</a></div><div class="ttdeci">#define END_GPU</div><div class="ttdef"><b>Definition</b> graph_c_binding.h:134</div></div>
 <div class="ttc" id="agraph__c__binding_8h_html_ad8adc1545da096be4d3c3323b41f6d85"><div class="ttname"><a href="graph__c__binding_8h.html#ad8adc1545da096be4d3c3323b41f6d85">START_GPU</a></div><div class="ttdeci">#define START_GPU</div><div class="ttdef"><b>Definition</b> graph_c_binding.h:133</div></div>
-</div><!-- fragment --><p> To start, create a template function above main and call that function from main. This will allow us to play with different floating point types. For now we will start with a simple float type. </p><div class="fragment"><div class="line"><span class="preprocessor">#include &quot;../graph_framework/jit.hpp&quot;</span></div>
+<div class="ttc" id="agraph__framework_8hpp_html"><div class="ttname"><a href="graph__framework_8hpp.html">graph_framework.hpp</a></div><div class="ttdoc">Single include header for the entire framework.</div></div>
+</div><!-- fragment --><p> To start, create a template function above main and call that function from main. This will allow us to play with different floating point types. For now we will start with a simple float type. </p><div class="fragment"><div class="line"><span class="preprocessor">#include &quot;<a class="code" href="graph__framework_8hpp.html">graph_framework.hpp</a>&quot;</span></div>
 <div class="line"> </div>
 <div class="line"><span class="keyword">template</span>&lt;jit::<span class="keywordtype">float</span>_scalar T&gt;</div>
 <div class="line"><span class="keywordtype">void</span> run_tutorial() {</div>
@@ -165,13 +166,13 @@ Basic Nodes</h1>
 </div><!-- fragment --><p> When compiling and running the code, this will print out the \(\LaTeX\) code needed to generate the equation. By copy and pasting this into \(\LaTeX\) it produces the symbol \(x\). Note that all nodes of a graph are wrapped in a <a href="https://www.cppreference.com/w/cpp/memory/shared_ptr.html"><code>std::shared_ptr</code></a>. so all method are called using the <code>-&gt;</code> operator.</p>
 <h2><a class="anchor" id="tutorial_constant"></a>
 Constant Nodes</h2>
-<p>Next we want to define a constant. There are two method to define constants explicitly or implicitly. </p><div class="fragment"><div class="line"><span class="keyword">template</span>&lt;jit::<span class="keywordtype">float</span>_scalar T&gt;</div>
+<p>Next we want to define a constant. There are two methods to define constants explicitly or implicitly. </p><div class="fragment"><div class="line"><span class="keyword">template</span>&lt;jit::<span class="keywordtype">float</span>_scalar T&gt;</div>
 <div class="line"><span class="keywordtype">void</span> run_tutorial() {</div>
 <div class="line">    <span class="keyword">auto</span> x = <a class="code hl_function" href="namespacegraph.html#ab8673e7bc26ebc9c1742f99c9f448ad0">graph::variable</a>(1000, <span class="stringliteral">&quot;x&quot;</span>);</div>
 <div class="line"> </div>
-<div class="line"><span class="comment">// Define explicit constant.</span></div>
+<div class="line"><span class="comment">//  Define explicit constant.</span></div>
 <div class="line">    <span class="keyword">auto</span> m = <a class="code hl_function" href="namespacegraph.html#a2b36a8e136f4187b4de7e2e31a3e4168">graph::constant&lt;T&gt;</a> (0.4);</div>
-<div class="line"><span class="comment">// Define implicit constant.</span></div>
+<div class="line"><span class="comment">//  Define implicit constant.</span></div>
 <div class="line">    <span class="keyword">const</span> T b = 0.6;</div>
 <div class="line">}</div>
 <div class="ttc" id="anamespacegraph_html_ab8673e7bc26ebc9c1742f99c9f448ad0"><div class="ttname"><a href="namespacegraph.html#ab8673e7bc26ebc9c1742f99c9f448ad0">graph::variable</a></div><div class="ttdeci">shared_leaf&lt; T, SAFE_MATH &gt; variable(const size_t s, const std::string &amp;symbol)</div><div class="ttdoc">Construct a variable.</div><div class="ttdef"><b>Definition</b> node.hpp:1675</div></div>
@@ -183,9 +184,9 @@ Basic Expressions</h1>
 <div class="line"><span class="keywordtype">void</span> run_tutorial() {</div>
 <div class="line">    <span class="keyword">auto</span> x = <a class="code hl_function" href="namespacegraph.html#ab8673e7bc26ebc9c1742f99c9f448ad0">graph::variable</a>(1000, <span class="stringliteral">&quot;x&quot;</span>);</div>
 <div class="line"> </div>
-<div class="line"><span class="comment">// Define explicit constant.</span></div>
+<div class="line"><span class="comment">//  Define explicit constant.</span></div>
 <div class="line">    <span class="keyword">auto</span> m = <a class="code hl_function" href="namespacegraph.html#a2b36a8e136f4187b4de7e2e31a3e4168">graph::constant&lt;T&gt;</a> (0.4);</div>
-<div class="line"><span class="comment">// Define implicit constant.</span></div>
+<div class="line"><span class="comment">//  Define implicit constant.</span></div>
 <div class="line">    <span class="keyword">const</span> T b = 0.6;</div>
 <div class="line"> </div>
 <div class="line"><span class="comment">//  Equation of a line</span></div>
@@ -200,15 +201,15 @@ Auto Differentiation</h2>
 <div class="line"><span class="keywordtype">void</span> run_tutorial() {</div>
 <div class="line">    <span class="keyword">auto</span> x = <a class="code hl_function" href="namespacegraph.html#ab8673e7bc26ebc9c1742f99c9f448ad0">graph::variable</a>(1000, <span class="stringliteral">&quot;x&quot;</span>);</div>
 <div class="line"> </div>
-<div class="line"><span class="comment">// Define explicit constant.</span></div>
+<div class="line"><span class="comment">//  Define explicit constant.</span></div>
 <div class="line">    <span class="keyword">auto</span> m = <a class="code hl_function" href="namespacegraph.html#a2b36a8e136f4187b4de7e2e31a3e4168">graph::constant&lt;T&gt;</a> (0.4);</div>
-<div class="line"><span class="comment">// Define implicit constant.</span></div>
+<div class="line"><span class="comment">//  Define implicit constant.</span></div>
 <div class="line">    <span class="keyword">const</span> T b = 0.6;</div>
 <div class="line"> </div>
-<div class="line"><span class="comment">// Equation of a line</span></div>
+<div class="line"><span class="comment">//  Equation of a line</span></div>
 <div class="line">    <span class="keyword">auto</span> y = m*x + b;</div>
 <div class="line"> </div>
-<div class="line"><span class="comment">// Auto differentiation.</span></div>
+<div class="line"><span class="comment">//  Auto differentiation.</span></div>
 <div class="line">    <span class="keyword">auto</span> dydx = y-&gt;df(x);</div>
 <div class="line">    dydx-&gt;to_latex();</div>
 <div class="line">    std::cout &lt;&lt; std::endl;</div>
@@ -225,18 +226,18 @@ Making workflows.</h1>
 <div class="line"><span class="keywordtype">void</span> run_tutorial() {</div>
 <div class="line">    <span class="keyword">auto</span> x = <a class="code hl_function" href="namespacegraph.html#ab8673e7bc26ebc9c1742f99c9f448ad0">graph::variable</a>(3, <span class="stringliteral">&quot;x&quot;</span>);</div>
 <div class="line"> </div>
-<div class="line"><span class="comment">// Define explicit constant.</span></div>
+<div class="line"><span class="comment">//  Define explicit constant.</span></div>
 <div class="line">    <span class="keyword">auto</span> m = <a class="code hl_function" href="namespacegraph.html#a2b36a8e136f4187b4de7e2e31a3e4168">graph::constant&lt;T&gt;</a> (0.4);</div>
-<div class="line"><span class="comment">// Define implicit constant.</span></div>
+<div class="line"><span class="comment">//  Define implicit constant.</span></div>
 <div class="line">    <span class="keyword">const</span> T b = 0.6;</div>
 <div class="line"> </div>
-<div class="line"><span class="comment">// Equation of a line</span></div>
+<div class="line"><span class="comment">//  Equation of a line</span></div>
 <div class="line">    <span class="keyword">auto</span> y = m*x + b;</div>
 <div class="line"> </div>
-<div class="line"><span class="comment">// Auto differentiation.</span></div>
+<div class="line"><span class="comment">//  Auto differentiation.</span></div>
 <div class="line">    <span class="keyword">auto</span> dydx = y-&gt;df(x);</div>
 <div class="line"> </div>
-<div class="line"><span class="comment">// Create a workflow manager.</span></div>
+<div class="line"><span class="comment">//  Create a workflow manager.</span></div>
 <div class="line">    <a class="code hl_class" href="classworkflow_1_1manager.html">workflow::manager&lt;T&gt;</a> work(0);</div>
 <div class="line">}</div>
 <div class="ttc" id="aclassworkflow_1_1manager_html"><div class="ttname"><a href="classworkflow_1_1manager.html">workflow::manager</a></div><div class="ttdoc">Class representing a workflow manager.</div><div class="ttdef"><b>Definition</b> workflow.hpp:171</div></div>
@@ -330,13 +331,13 @@ Newton's Method.</h1>
 <div class="line">    <span class="keyword">auto</span> x = <a class="code hl_function" href="namespacegraph.html#a2b36a8e136f4187b4de7e2e31a3e4168">graph::variable&lt;T&gt;</a> (3, <span class="stringliteral">&quot;x&quot;</span>);</div>
 <div class="line">    x-&gt;set({1.0, 2.0, 3.0});</div>
 <div class="line"> </div>
-<div class="line"><span class="comment">// Define an objective function.</span></div>
+<div class="line"><span class="comment">//  Define an objective function.</span></div>
 <div class="line">    <span class="keyword">auto</span> f = 0.2*x*x*x + 0.6*x*x + 0.4*x + 0.5;</div>
 <div class="line"> </div>
 <div class="line"><span class="comment">//  Define a step update.</span></div>
 <div class="line">    <span class="keyword">auto</span> x_new = x - f/f-&gt;df(x);</div>
 <div class="line"> </div>
-<div class="line"><span class="comment">// Create a workflow manager.</span></div>
+<div class="line"><span class="comment">//  Create a workflow manager.</span></div>
 <div class="line">    <a class="code hl_class" href="classworkflow_1_1manager.html">workflow::manager&lt;T&gt;</a> work(0);</div>
 <div class="line">    work.add_item({</div>
 <div class="line">        <a class="code hl_function" href="namespacegraph.html#a9321a15c96554d065da2ffe49e969ff4">graph::variable_cast</a>(x)</div>
@@ -370,7 +371,7 @@ Newton's Method.</h1>
 <div class="line">-2.6006</div>
 <div class="line">-2.6006</div>
 <div class="line">-2.6006</div>
-</div><!-- fragment --><p>However there are some things that are not optimal here. We are performing a reduction on the host side and transferring the entire array to the host. To improve this we can use a converge item instead. </p><div class="fragment"><div class="line"><span class="comment">// Create a workflow manager.</span></div>
+</div><!-- fragment --><p>However there are some things that are not optimal here. We are performing a reduction on the host side and transferring the entire array to the host. To improve this we can use a converge item instead. </p><div class="fragment"><div class="line"><span class="comment">//  Create a workflow manager.</span></div>
 <div class="line"><a class="code hl_class" href="classworkflow_1_1manager.html">workflow::manager&lt;T&gt;</a> work(0);</div>
 <div class="line">work.add_converge_item({</div>
 <div class="line">    <a class="code hl_function" href="namespacegraph.html#a9321a15c96554d065da2ffe49e969ff4">graph::variable_cast</a>(x)</div>

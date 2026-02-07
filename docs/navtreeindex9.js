@@ -1,5 +1,6 @@
 var NAVTREEINDEX9 =
 {
+"namespacegraph.html#ac5d4840ef0c7532955bf41eae31aa1e8":[21,0,6,84],
 "namespacegraph.html#ac8853b055dcbbfd35dff9b4584d5ef36":[21,0,6,37],
 "namespacegraph.html#ac9155dba7d39a7030ae9e967fb85a4eb":[21,0,6,70],
 "namespacegraph.html#ac9c096c9f342c8baa9b0779154d70fab":[21,0,6,142],
@@ -248,6 +249,5 @@ var NAVTREEINDEX9 =
 "register_8hpp.html":[24,0,3,17],
 "register_8hpp.html#a0007c62777fd314c7fc55e72c5c02483":[24,0,3,17,16],
 "register_8hpp.html#a040839202e492715169f0e33e63c1e2a":[24,0,3,17,8],
-"register_8hpp.html#a09ca8a90b892eacd9e1fdb8489e4eca2":[24,0,3,17,20],
-"register_8hpp.html#a31680d3b4007bcf00ea3dec6b13a5bf9":[24,0,3,17,21]
+"register_8hpp.html#a09ca8a90b892eacd9e1fdb8489e4eca2":[24,0,3,17,20]
 };

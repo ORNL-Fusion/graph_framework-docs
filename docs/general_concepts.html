@@ -169,7 +169,7 @@ Graph</h1>
 <p> This equation consists of five nodes. The ends of the tree are classified as either variables \(x\) or constants \(m,b\). These nodes are connected by nodes for multiply and addition operations. The output \(y\) represents the entire graph of operations. </p><div class="image">
 <img src="line_graph.png" alt=""/>
 <div class="caption">
-The graph structure for @f$y=mx+b@f$.</div></div>
+The graph structure for y = mx + b.</div></div>
 <p> Evaluation of graphs start from the top most node in this case the \(+\) operation. Evaluation of a node is not performed until all sub-nodes are evaluated starting with the left operand. Evaluation starts by recursively evaluating the left operands until the last node is reached \(m\). </p><div class="image">
 <img src="line_graph_eval1.png" alt=""/>
 </div>
@@ -182,7 +182,7 @@ The graph structure for @f$y=mx+b@f$.</div></div>
 <hr  />
  <h1><a class="anchor" id="general_concepts_diff"></a>
 Auto Differentiation</h1>
-<p>From the previous <a class="el" href="general_concepts.html#general_concepts_graph">section</a>, it was shown how graphs can be evaluated. This same evaluation can be applied to build graphs of a function derivative. For an example of taking derivatives see the <a class="el" href="tutorial.html#tutorial_derivatives">auto differentiation tutorial</a>. Lets say that we want to take the derivative of \(\frac{\partial y}{\partial x}\). This is achieved by evaluating the until bottom left most node is reached. Then a new graph is build starting with \(\frac{\partial m}{\partial x}=0\). Applying the first half of the chain rule we build a new graph for \(0x\) </p><div class="image">
+<p>From the previous <a class="el" href="general_concepts.html#general_concepts_graph">section</a>, it was shown how graphs can be evaluated. This same evaluation can be applied to build graphs of a function derivative. For an example of taking derivatives see the <a class="el" href="tutorial.html#tutorial_derivatives">auto differentiation tutorial</a>. Lets say that we want to take the derivative of \(\frac{\partial y}{\partial x}\). This is achieved by evaluating the graph until the bottom left most node is reached. Then a new graph is constucted starting with \(\frac{\partial m}{\partial x}=0\). Applying the first half of the chain rule we build a new graph for \(0x\) </p><div class="image">
 <img src="line_graph_dydf1.png" alt=""/>
 </div>
 <p> Then we take the derivative of the right operand and apply the second half of the chain rule to build a new graph for \(0x=0\). </p><div class="image">
@@ -194,7 +194,7 @@ Auto Differentiation</h1>
 <hr  />
  <h1><a class="anchor" id="general_concepts_reduction"></a>
 Reduction</h1>
-<p>The final expression for \(\frac{\partial y}{\partial x}\) contains many unnecessary nodes in the graph. Instead of building full graphs, we can simplify and eliminate nodes as we build them. For instance, when the expression \(0x\) this created can be immediately reduce it to a single node. </p><div class="image">
+<p>The final expression for \(\frac{\partial y}{\partial x}\) contains many unnecessary nodes in the graph. Instead of building full graphs, we can simplify and eliminate nodes as we build them. For instance, when the expression \(0\times x\) is created, this can be immediately reduced to a single node \(0\). </p><div class="image">
 <img src="line_graph_reduce1.png" alt=""/>
 </div>
 <p> Applying all possible reductions reduces the final expression to \(\frac{\partial y}{\partial x}=m\). </p><div class="image">
@@ -214,7 +214,7 @@ Outputs</h2>
 <h2><a class="anchor" id="general_concepts_compile_maps"></a>
 Maps</h2>
 <p>Maps enable the results of an output node to be stored in an input node. This is used for a wide varity of cases. For instance take a gradient decent step. </p><p class="formulaDsp">
-\begin{equation}y = y + \frac{\partial f}{\partial x}\end{equation}
+\begin{equation}y_{i+1} = y_{i} + \frac{\partial f}{\partial x}\end{equation}
 </p>
 <p> In this case the output of the expression \(y + \frac{\partial f}{\partial x}\) can be mapped to update \(y\).</p>
 <hr  />
@@ -224,7 +224,7 @@ Workflows</h1>
 <hr  />
  <h1><a class="anchor" id="general_concepts_safe_math"></a>
 Safe Math</h1>
-<p>There are some conditions where mathematically, a graph should evaluate to a normal number. However, when evaluated suing floating point precision, can lead to <code>Inf</code> or <code>NaN</code>. An example of this the \(\exp\left(x\right)\) function. For large argument values, \(\exp\left(x\right)\) overflows the maximum floating point precision and returns <code>Inf</code>. \(\frac{1}{\exp\left(x\right)}\) should evaluate zero however, in floating point this becomes a <code>NaN</code>. Safe math avoids problems like this by checking for large argument values. But since these run time checks slow down kernel evaluation, most of the time safe math should be avoided. </p>
+<p>There are some conditions where mathematically, a graph should evaluate to a normal number. However, when evaluated using floating point precision, can lead to <code>Inf</code> or <code>NaN</code>. An example of this the \(\exp\left(x\right)\) function. For large argument values, \(\exp\left(x\right)\) overflows the maximum floating point precision and returns <code>Inf</code>. \(\frac{1}{\exp\left(x\right)}\) should evaluate zero however, in floating point this becomes a <code>NaN</code>. Safe math avoids problems like this by checking for large argument values. But since these run time checks slow down kernel evaluation, most of the time safe math should be avoided. </p>
 </div></div><!-- contents -->
 </div><!-- PageDoc -->
 </div><!-- doc-content -->

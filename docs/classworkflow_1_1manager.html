@@ -192,9 +192,11 @@ template&lt;<a class="el" href="conceptjit_1_1float__scalar.html">jit::float_sca
 </div><div class="memdoc">
 
 <p>Workflow manager constructor. </p>
+<p>For GPU devices, this select the device number to run on. For CPU devices this parameter is ignored.</p>
+<dl class="section note"><dt>Note</dt><dd>It is possible to create multiple workflow managers for the same GPU device and may have performance benefits todo so.</dd></dl>
 <dl class="params"><dt>Parameters</dt><dd>
   <table class="params">
-    <tr><td class="paramdir">[in]</td><td class="paramname">index</td><td>Concurrent index. </td></tr>
+    <tr><td class="paramdir">[in]</td><td class="paramname">index</td><td>Device index. </td></tr>
   </table>
   </dd>
 </dl>

@@ -46,7 +46,8 @@ var NAVTREE =
         [ "Source codes for throughput benchmark comparison", "code_performance.html#code_performance_comparison_codes", [
           [ "Graph Framework", "code_performance.html#code_performance_comparison_graph", null ],
           [ "MLX", "code_performance.html#code_performance_comparison_mlx", null ],
-          [ "JAX", "code_performance.html#code_performance_comparison_jaxx", null ]
+          [ "JAX", "code_performance.html#code_performance_comparison_jaxx", null ],
+          [ "Kokkos", "code_performance.html#code_performance_comparison_kokkos", null ]
         ] ]
       ] ]
     ] ],
@@ -254,10 +255,10 @@ var NAVTREEINDEX =
 "classgraph_1_1piecewise__2D__node.html#a840b44453602c43e0a5b79b3f955ad6f",
 "classgraph_1_1variable__node.html#a6cc97fd212ea8cfbdf09f06d50560a46",
 "classsolver_1_1solver__interface.html#a64200cf799645c791f4ea6e7f66127f4",
-"f__binding__test_8f90.html#a4f96b07b7fc5000eb47373f50a6cb935",
+"f__binding__test_8f90.html#a45791bcab17f03064594843191715e2a",
 "interfacegraph__fortran_1_1graph__add__pre__item.html",
-"namespacegraph.html#ac8853b055dcbbfd35dff9b4584d5ef36",
-"register_8hpp.html#a3d69cd6dbc877e0e4a1896300ba6576d"
+"namespacegraph.html#ac5d4840ef0c7532955bf41eae31aa1e8",
+"register_8hpp.html#a31680d3b4007bcf00ea3dec6b13a5bf9"
 ];
 
 var SYNCONMSG = 'click to disable panel synchronisation';
