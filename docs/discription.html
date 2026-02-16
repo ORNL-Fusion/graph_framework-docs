@@ -103,7 +103,7 @@ $(document).ready(function(){initNavTree('discription.html',''); initResizable()
 <ul><li class="level1"><a href="#discription_introduction">Introduction</a><ul><li class="level2"><a href="#discription_graphs">Graphs</a><ul><li class="level3"><a href="#discription_graphs_builds">Building Graphs</a></li>
 </ul>
 </li>
-<li class="level2"><a href="#discription_workflows">discription_workflows</a></li>
+<li class="level2"><a href="#discription_workflows">Workflows</a></li>
 </ul>
 </li>
 </ul>
@@ -131,7 +131,7 @@ Building Graphs</h3>
 </div><!-- fragment --><p> Reductions are performed transparently as expressions are created so the expression for \(\frac{\partial y}{\partial x}=0.5\). As noted before, since this framework makes no distinction between the various parts of a graph, derivatives and also be taken with respect to sub-expressions. </p><div class="fragment"><div class="line"><span class="keyword">auto</span> dydmx = y-&gt;df(0.5*x);</div>
 </div><!-- fragment --><p> In this case, the result will be \(\frac{\partial y}{\partial 0.5*x}=1.0\)</p>
 <h2><a class="anchor" id="discription_workflows"></a>
-discription_workflows</h2>
+Workflows</h2>
 <p>A <a class="el" href="classworkflow_1_1manager.html">workflow::manager</a> is responsible for compiling device kernels, and running them in order. One <a class="el" href="classworkflow_1_1manager.html">workflow::manager</a> is created for each device or thread. The user is responsible for creating threads. Each kernel is generated through a <a class="el" href="classworkflow_1_1work__item.html">workflow::work_item</a>. A work item is defined by kernel <a class="el" href="namespacegraph.html#a7f4f9ab246d37d23e0259709e626bc36">graph::input_nodes</a>, <a class="el" href="namespacegraph.html#aec6ce7b08d650c6b236b68bd68a2ce0a">graph::output_nodes</a>, and <a class="el" href="namespacegraph.html#acd48d32bd7925b056e932559379d9b55">graph::map_nodes</a>. Map items are used to take the results of a kernel and update an input buffer. Using our example of line equation, we can create a workflow to compute \(y\) and \(\frac{\partial y}{\partial x}\). </p><div class="fragment"><div class="line"><a class="code hl_class" href="classworkflow_1_1manager.html">workflow::manager&lt;T&gt;</a> work(0);</div>
 <div class="line">work.add_item({</div>
 <div class="line">    <a class="code hl_function" href="namespacegraph.html#a9321a15c96554d065da2ffe49e969ff4">graph::variable_cast</a>(x)</div>

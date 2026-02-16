@@ -13,7 +13,7 @@ var searchData=
   ['work_5fitem_3c_20t_2c_20false_20_3e_10',['work_item&lt; T, false &gt;',['../classworkflow_1_1work__item.html',1,'workflow']]],
   ['workflow_11',['workflow',['../namespaceworkflow.html',1,'']]],
   ['workflow_2ehpp_12',['workflow.hpp',['../workflow_8hpp.html',1,'']]],
-  ['workflows_13',['workflows',['../tutorial.html#tutorial_workflow',1,'Making workflows.'],['../general_concepts.html#general_concepts_workflow',1,'Workflows']]],
+  ['workflows_13',['workflows',['../tutorial.html#tutorial_workflow',1,'Making workflows.'],['../discription.html#discription_workflows',1,'Workflows'],['../general_concepts.html#general_concepts_workflow',1,'Workflows']]],
   ['write_14',['write',['../classoutput_1_1data__set.html#a78577474298a3b31a4b1e8f2058b10ab',1,'output::data_set::write(const result_file &amp;result, const size_t index)'],['../classoutput_1_1data__set.html#afb8a6eb4d0dc4a64ffd94a9b57224f0b',1,'output::data_set::write(const result_file &amp;result)']]],
   ['write_5fstep_15',['write_step',['../classsolver_1_1solver__interface.html#ad4802df60a4c6ce77ccdf4657894a0bc',1,'solver::solver_interface']]]
 ];

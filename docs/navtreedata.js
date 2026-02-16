@@ -87,7 +87,7 @@ var NAVTREE =
         [ "Graphs", "discription.html#discription_graphs", [
           [ "Building Graphs", "discription.html#discription_graphs_builds", null ]
         ] ],
-        [ "discription_workflows", "discription.html#discription_workflows", null ]
+        [ "Workflows", "discription.html#discription_workflows", null ]
       ] ]
     ] ],
     [ "General Concepts", "general_concepts.html", [
