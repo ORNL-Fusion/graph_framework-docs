@@ -18,6 +18,8 @@ var classbackend_1_1buffer =
     [ "erfi", "classbackend_1_1buffer.html#a23d8626d9b1c8f8f68a25394ed2e6552", null ],
     [ "exp", "classbackend_1_1buffer.html#ace2602a369e9cb754c1b588f7b123ad3", null ],
     [ "has_zero", "classbackend_1_1buffer.html#adfbb6b0d2cf1cfc48a3700a8d43973f4", null ],
+    [ "index_column", "classbackend_1_1buffer.html#acdfd926b4f725a4fb850a4cdd9d3e40b", null ],
+    [ "index_row", "classbackend_1_1buffer.html#a67996267fd61a7f6932cdeb75b722859", null ],
     [ "is_even", "classbackend_1_1buffer.html#abec5f89db28e6b977c943baab2742387", null ],
     [ "is_negative", "classbackend_1_1buffer.html#a67c60ed1d669e83cabc57d7e8a86a14c", null ],
     [ "is_none", "classbackend_1_1buffer.html#aaa96007f93de1d58180d7aafa7afc20d", null ],

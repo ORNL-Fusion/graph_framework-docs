@@ -179,6 +179,9 @@ Data Types</h2></td></tr>
 <tr class="memitem:"><td class="memItemLeft" align="right" valign="top">interface &#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="interfacegraph__fortran_1_1graph__get__max__concurrency.html">graph_get_max_concurrency</a></td></tr>
 <tr class="memdesc:"><td class="mdescLeft">&#160;</td><td class="mdescRight">Get the maximum number of concurrent devices.  <a href="interfacegraph__fortran_1_1graph__get__max__concurrency.html#details">More...</a><br /></td></tr>
 <tr class="separator:"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:"><td class="memItemLeft" align="right" valign="top">interface &#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="interfacegraph__fortran_1_1graph__index__1d.html">graph_index_1d</a></td></tr>
+<tr class="memdesc:"><td class="mdescLeft">&#160;</td><td class="mdescRight">Create 1D index node.  <a href="interfacegraph__fortran_1_1graph__index__1d.html#details">More...</a><br /></td></tr>
+<tr class="separator:"><td class="memSeparator" colspan="2">&#160;</td></tr>
 <tr class="memitem:"><td class="memItemLeft" align="right" valign="top">interface &#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="interfacegraph__fortran_1_1graph__log.html">graph_log</a></td></tr>
 <tr class="memdesc:"><td class="mdescLeft">&#160;</td><td class="mdescRight">Create Log node.  <a href="interfacegraph__fortran_1_1graph__log.html#details">More...</a><br /></td></tr>
 <tr class="separator:"><td class="memSeparator" colspan="2">&#160;</td></tr>
@@ -186,7 +189,7 @@ Data Types</h2></td></tr>
 <tr class="memdesc:"><td class="mdescLeft">&#160;</td><td class="mdescRight">Create Multiply node.  <a href="interfacegraph__fortran_1_1graph__mul.html#details">More...</a><br /></td></tr>
 <tr class="separator:"><td class="memSeparator" colspan="2">&#160;</td></tr>
 <tr class="memitem:"><td class="memItemLeft" align="right" valign="top">interface &#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="interfacegraph__fortran_1_1graph__piecewise__1d.html">graph_piecewise_1d</a></td></tr>
-<tr class="memdesc:"><td class="mdescLeft">&#160;</td><td class="mdescRight">Create 1D piecewise node with complex double buffer.  <a href="interfacegraph__fortran_1_1graph__piecewise__1d.html#details">More...</a><br /></td></tr>
+<tr class="memdesc:"><td class="mdescLeft">&#160;</td><td class="mdescRight">Create 1D piecewise node.  <a href="interfacegraph__fortran_1_1graph__piecewise__1d.html#details">More...</a><br /></td></tr>
 <tr class="separator:"><td class="memSeparator" colspan="2">&#160;</td></tr>
 <tr class="memitem:"><td class="memItemLeft" align="right" valign="top">interface &#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="interfacegraph__fortran_1_1graph__piecewise__2d.html">graph_piecewise_2d</a></td></tr>
 <tr class="memdesc:"><td class="mdescLeft">&#160;</td><td class="mdescRight">Create 2D piecewise node.  <a href="interfacegraph__fortran_1_1graph__piecewise__2d.html#details">More...</a><br /></td></tr>
@@ -365,6 +368,9 @@ Functions/Subroutines</h2></td></tr>
 <tr class="memitem:a158629a44faadcefb01fcf48b24b61f4" id="r_a158629a44faadcefb01fcf48b24b61f4"><td class="memItemLeft" align="right" valign="top">type(c_ptr) function&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="namespacegraph__fortran.html#a158629a44faadcefb01fcf48b24b61f4">graph_context_piecewise_2d_cdouble</a> (this,</td></tr>
 <tr class="memdesc:a158629a44faadcefb01fcf48b24b61f4"><td class="mdescLeft">&#160;</td><td class="mdescRight">Create 2D piecewise node with complex double buffer.  <br /></td></tr>
 <tr class="separator:a158629a44faadcefb01fcf48b24b61f4"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:af7c196c6abf95ecbfb08992aba2d868d" id="r_af7c196c6abf95ecbfb08992aba2d868d"><td class="memItemLeft" align="right" valign="top">type(c_ptr) function&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="namespacegraph__fortran.html#af7c196c6abf95ecbfb08992aba2d868d">graph_context_index_1d</a> (this, variable, arg, scale, offset</td></tr>
+<tr class="memdesc:af7c196c6abf95ecbfb08992aba2d868d"><td class="mdescLeft">&#160;</td><td class="mdescRight">Create 1D index node with float buffer.  <br /></td></tr>
+<tr class="separator:af7c196c6abf95ecbfb08992aba2d868d"><td class="memSeparator" colspan="2">&#160;</td></tr>
 <tr class="memitem:abaf21c7a1fc5d34f1ff7c534d17e56b5" id="r_abaf21c7a1fc5d34f1ff7c534d17e56b5"><td class="memItemLeft" align="right" valign="top">function&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="namespacegraph__fortran.html#abaf21c7a1fc5d34f1ff7c534d17e56b5">graph_context_get_max_concurrency</a> (this)</td></tr>
 <tr class="memdesc:abaf21c7a1fc5d34f1ff7c534d17e56b5"><td class="mdescLeft">&#160;</td><td class="mdescRight">Get the maximum number of concurrent devices.  <br /></td></tr>
 <tr class="separator:abaf21c7a1fc5d34f1ff7c534d17e56b5"><td class="memSeparator" colspan="2">&#160;</td></tr>
@@ -1471,6 +1477,65 @@ integer(c_intptr_t), dimension(0)&#160;</td><td class="memItemRight" valign="bot
 
 </div>
 </div>
+<a id="af7c196c6abf95ecbfb08992aba2d868d" name="af7c196c6abf95ecbfb08992aba2d868d"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#af7c196c6abf95ecbfb08992aba2d868d">&#9670;&#160;</a></span>graph_context_index_1d()</h2>
+
+<div class="memitem">
+<div class="memproto">
+      <table class="memname">
+        <tr>
+          <td class="memname">type(c_ptr) function graph_fortran::graph_context_index_1d </td>
+          <td>(</td>
+          <td class="paramtype">class(<a class="el" href="structgraph__fortran_1_1graph__context.html">graph_context</a>), intent(inout)&#160;</td>
+          <td class="paramname"><em>this</em>, </td>
+        </tr>
+        <tr>
+          <td class="paramkey"></td>
+          <td></td>
+          <td class="paramtype">type(c_ptr), intent(in)&#160;</td>
+          <td class="paramname"><em>variable</em>, </td>
+        </tr>
+        <tr>
+          <td class="paramkey"></td>
+          <td></td>
+          <td class="paramtype">type(c_ptr), intent(in)&#160;</td>
+          <td class="paramname"><em>arg</em>, </td>
+        </tr>
+        <tr>
+          <td class="paramkey"></td>
+          <td></td>
+          <td class="paramtype">real(c_double)&#160;</td>
+          <td class="paramname"><em>scale</em>, </td>
+        </tr>
+        <tr>
+          <td class="paramkey"></td>
+          <td></td>
+          <td class="paramtype">real(c_double)&#160;</td>
+          <td class="paramname"><em>offset</em>&#160;</td>
+        </tr>
+        <tr>
+          <td></td>
+          <td>)</td>
+          <td></td><td></td>
+        </tr>
+      </table>
+</div><div class="memdoc">
+
+<p>Create 1D index node with float buffer. </p>
+<dl class="params"><dt>Parameters</dt><dd>
+  <table class="params">
+    <tr><td class="paramdir">[in,out]</td><td class="paramname">this</td><td><a class="el" href="structgraph__fortran_1_1graph__context.html">graph_context</a> instance. </td></tr>
+    <tr><td class="paramdir">[in]</td><td class="paramname">variable</td><td>The variable </td></tr>
+    <tr><td class="paramdir">[in]</td><td class="paramname">arg</td><td>The function argument. </td></tr>
+    <tr><td class="paramdir">[in]</td><td class="paramname">scale</td><td>Scale factor argument. </td></tr>
+    <tr><td class="paramdir">[in]</td><td class="paramname">offset</td><td>Offset factor argument. </td></tr>
+  </table>
+  </dd>
+</dl>
+<dl class="section return"><dt>Returns</dt><dd>index_1D node. </dd></dl>
+
+</div>
+</div>
 <a id="ad1f2e3bd00efd31e7ba385d803649b94" name="ad1f2e3bd00efd31e7ba385d803649b94"></a>
 <h2 class="memtitle"><span class="permalink"><a href="#ad1f2e3bd00efd31e7ba385d803649b94">&#9670;&#160;</a></span>graph_context_log()</h2>
 
@@ -1603,7 +1668,7 @@ integer(c_intptr_t), dimension(0)&#160;</td><td class="memItemRight" valign="bot
   </table>
   </dd>
 </dl>
-<dl class="section return"><dt>Returns</dt><dd>random(state) </dd></dl>
+<dl class="section return"><dt>Returns</dt><dd>piecewise_1D node. </dd></dl>
 
 </div>
 </div>
@@ -1656,7 +1721,7 @@ integer(c_intptr_t), dimension(0)&#160;</td><td class="memItemRight" valign="bot
   </table>
   </dd>
 </dl>
-<dl class="section return"><dt>Returns</dt><dd>random(state) </dd></dl>
+<dl class="section return"><dt>Returns</dt><dd>piecewise_1D node. </dd></dl>
 
 </div>
 </div>
@@ -1709,7 +1774,7 @@ integer(c_intptr_t), dimension(0)&#160;</td><td class="memItemRight" valign="bot
   </table>
   </dd>
 </dl>
-<dl class="section return"><dt>Returns</dt><dd>random(state) </dd></dl>
+<dl class="section return"><dt>Returns</dt><dd>piecewise_1D node. </dd></dl>
 
 </div>
 </div>
@@ -1762,7 +1827,7 @@ integer(c_intptr_t), dimension(0)&#160;</td><td class="memItemRight" valign="bot
   </table>
   </dd>
 </dl>
-<dl class="section return"><dt>Returns</dt><dd>random(state) </dd></dl>
+<dl class="section return"><dt>Returns</dt><dd>piecewise_1D node. </dd></dl>
 
 </div>
 </div>
@@ -1796,7 +1861,7 @@ integer(c_intptr_t), dimension(0)&#160;</td><td class="memItemRight" valign="bot
   </table>
   </dd>
 </dl>
-<dl class="section return"><dt>Returns</dt><dd>random(state) </dd></dl>
+<dl class="section return"><dt>Returns</dt><dd>piecewise_2D node. </dd></dl>
 
 </div>
 </div>
@@ -1830,7 +1895,7 @@ integer(c_intptr_t), dimension(0)&#160;</td><td class="memItemRight" valign="bot
   </table>
   </dd>
 </dl>
-<dl class="section return"><dt>Returns</dt><dd>random(state) </dd></dl>
+<dl class="section return"><dt>Returns</dt><dd>piecewise_2D node. </dd></dl>
 
 </div>
 </div>
@@ -1864,7 +1929,7 @@ integer(c_intptr_t), dimension(0)&#160;</td><td class="memItemRight" valign="bot
   </table>
   </dd>
 </dl>
-<dl class="section return"><dt>Returns</dt><dd>random(state) </dd></dl>
+<dl class="section return"><dt>Returns</dt><dd>piecewise_2D node. </dd></dl>
 
 </div>
 </div>
@@ -1898,7 +1963,7 @@ integer(c_intptr_t), dimension(0)&#160;</td><td class="memItemRight" valign="bot
   </table>
   </dd>
 </dl>
-<dl class="section return"><dt>Returns</dt><dd>random(state) </dd></dl>
+<dl class="section return"><dt>Returns</dt><dd>piecewise_2D node. </dd></dl>
 
 </div>
 </div>

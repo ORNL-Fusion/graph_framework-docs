@@ -204,6 +204,12 @@ void&#160;</td><td class="memItemRight" valign="bottom"><b>erfi</b> ()</td></tr>
 <tr class="memitem:a46dbcf3bf4e55c8f2cc9d65fb8016ce1" id="r_a46dbcf3bf4e55c8f2cc9d65fb8016ce1"><td class="memItemLeft" align="right" valign="top">bool&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="classbackend_1_1buffer.html#a46dbcf3bf4e55c8f2cc9d65fb8016ce1">is_normal</a> () const</td></tr>
 <tr class="memdesc:a46dbcf3bf4e55c8f2cc9d65fb8016ce1"><td class="mdescLeft">&#160;</td><td class="mdescRight">Check for normal values.  <br /></td></tr>
 <tr class="separator:a46dbcf3bf4e55c8f2cc9d65fb8016ce1"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:a67996267fd61a7f6932cdeb75b722859" id="r_a67996267fd61a7f6932cdeb75b722859"><td class="memItemLeft" align="right" valign="top"><a class="el" href="classbackend_1_1buffer.html">buffer</a>&lt; T &gt;&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="classbackend_1_1buffer.html#a67996267fd61a7f6932cdeb75b722859">index_row</a> (const size_t index, const size_t num_columns)</td></tr>
+<tr class="memdesc:a67996267fd61a7f6932cdeb75b722859"><td class="mdescLeft">&#160;</td><td class="mdescRight">Index row.  <br /></td></tr>
+<tr class="separator:a67996267fd61a7f6932cdeb75b722859"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:acdfd926b4f725a4fb850a4cdd9d3e40b" id="r_acdfd926b4f725a4fb850a4cdd9d3e40b"><td class="memItemLeft" align="right" valign="top"><a class="el" href="classbackend_1_1buffer.html">buffer</a>&lt; T &gt;&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="classbackend_1_1buffer.html#acdfd926b4f725a4fb850a4cdd9d3e40b">index_column</a> (const size_t index, const size_t num_columns)</td></tr>
+<tr class="memdesc:acdfd926b4f725a4fb850a4cdd9d3e40b"><td class="mdescLeft">&#160;</td><td class="mdescRight">Index column.  <br /></td></tr>
+<tr class="separator:acdfd926b4f725a4fb850a4cdd9d3e40b"><td class="memSeparator" colspan="2">&#160;</td></tr>
 <tr class="memitem:abab248cb0417c1853e12401d36a29efe" id="r_abab248cb0417c1853e12401d36a29efe"><td class="memItemLeft" align="right" valign="top">void&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="classbackend_1_1buffer.html#abab248cb0417c1853e12401d36a29efe">add_row</a> (const <a class="el" href="classbackend_1_1buffer.html">buffer</a>&lt; T &gt; &amp;x)</td></tr>
 <tr class="memdesc:abab248cb0417c1853e12401d36a29efe"><td class="mdescLeft">&#160;</td><td class="mdescRight">Add row operation.  <br /></td></tr>
 <tr class="separator:abab248cb0417c1853e12401d36a29efe"><td class="memSeparator" colspan="2">&#160;</td></tr>
@@ -686,6 +692,102 @@ template&lt;<a class="el" href="conceptjit_1_1float__scalar.html">jit::float_sca
 
 <p>Is any element zero. </p>
 <dl class="section return"><dt>Returns</dt><dd>Returns true if any element is zero. </dd></dl>
+
+</div>
+</div>
+<a id="acdfd926b4f725a4fb850a4cdd9d3e40b" name="acdfd926b4f725a4fb850a4cdd9d3e40b"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#acdfd926b4f725a4fb850a4cdd9d3e40b">&#9670;&#160;</a></span>index_column()</h2>
+
+<div class="memitem">
+<div class="memproto">
+<div class="memtemplate">
+template&lt;<a class="el" href="conceptjit_1_1float__scalar.html">jit::float_scalar</a> T&gt; </div>
+<table class="mlabels">
+  <tr>
+  <td class="mlabels-left">
+      <table class="memname">
+        <tr>
+          <td class="memname"><a class="el" href="classbackend_1_1buffer.html">buffer</a>&lt; T &gt; <a class="el" href="classbackend_1_1buffer.html">backend::buffer</a>&lt; T &gt;::index_column </td>
+          <td>(</td>
+          <td class="paramtype">const size_t&#160;</td>
+          <td class="paramname"><em>index</em>, </td>
+        </tr>
+        <tr>
+          <td class="paramkey"></td>
+          <td></td>
+          <td class="paramtype">const size_t&#160;</td>
+          <td class="paramname"><em>num_columns</em>&#160;</td>
+        </tr>
+        <tr>
+          <td></td>
+          <td>)</td>
+          <td></td><td></td>
+        </tr>
+      </table>
+  </td>
+  <td class="mlabels-right">
+<span class="mlabels"><span class="mlabel">inline</span></span>  </td>
+  </tr>
+</table>
+</div><div class="memdoc">
+
+<p>Index column. </p>
+<dl class="params"><dt>Parameters</dt><dd>
+  <table class="params">
+    <tr><td class="paramdir">[in]</td><td class="paramname">index</td><td>The row index. </td></tr>
+    <tr><td class="paramdir">[in]</td><td class="paramname">num_columns</td><td>The number of coils. </td></tr>
+  </table>
+  </dd>
+</dl>
+<dl class="section return"><dt>Returns</dt><dd>A buffer containing the row. </dd></dl>
+
+</div>
+</div>
+<a id="a67996267fd61a7f6932cdeb75b722859" name="a67996267fd61a7f6932cdeb75b722859"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#a67996267fd61a7f6932cdeb75b722859">&#9670;&#160;</a></span>index_row()</h2>
+
+<div class="memitem">
+<div class="memproto">
+<div class="memtemplate">
+template&lt;<a class="el" href="conceptjit_1_1float__scalar.html">jit::float_scalar</a> T&gt; </div>
+<table class="mlabels">
+  <tr>
+  <td class="mlabels-left">
+      <table class="memname">
+        <tr>
+          <td class="memname"><a class="el" href="classbackend_1_1buffer.html">buffer</a>&lt; T &gt; <a class="el" href="classbackend_1_1buffer.html">backend::buffer</a>&lt; T &gt;::index_row </td>
+          <td>(</td>
+          <td class="paramtype">const size_t&#160;</td>
+          <td class="paramname"><em>index</em>, </td>
+        </tr>
+        <tr>
+          <td class="paramkey"></td>
+          <td></td>
+          <td class="paramtype">const size_t&#160;</td>
+          <td class="paramname"><em>num_columns</em>&#160;</td>
+        </tr>
+        <tr>
+          <td></td>
+          <td>)</td>
+          <td></td><td></td>
+        </tr>
+      </table>
+  </td>
+  <td class="mlabels-right">
+<span class="mlabels"><span class="mlabel">inline</span></span>  </td>
+  </tr>
+</table>
+</div><div class="memdoc">
+
+<p>Index row. </p>
+<dl class="params"><dt>Parameters</dt><dd>
+  <table class="params">
+    <tr><td class="paramdir">[in]</td><td class="paramname">index</td><td>The row index. </td></tr>
+    <tr><td class="paramdir">[in]</td><td class="paramname">num_columns</td><td>The number of coils. </td></tr>
+  </table>
+  </dd>
+</dl>
+<dl class="section return"><dt>Returns</dt><dd>A buffer containing the row. </dd></dl>
 
 </div>
 </div>

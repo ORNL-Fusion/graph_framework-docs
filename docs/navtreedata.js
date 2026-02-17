@@ -249,16 +249,17 @@ var NAVTREE =
 var NAVTREEINDEX =
 [
 "absorption_8hpp.html",
-"classdispersion_1_1dispersion__interface.html#a4eaa2a6cf2d7ca1f2b1c4692767f71c5",
-"classequilibrium_1_1vmec.html#a53fea8fce98504fc03503e2697064a3d",
-"classgraph_1_1divide__node.html#a61e3b01877adcc2d06a035941e1f9fdd",
-"classgraph_1_1piecewise__2D__node.html#a840b44453602c43e0a5b79b3f955ad6f",
-"classgraph_1_1variable__node.html#a6cc97fd212ea8cfbdf09f06d50560a46",
-"classsolver_1_1solver__interface.html#a64200cf799645c791f4ea6e7f66127f4",
-"f__binding__test_8f90.html#a45791bcab17f03064594843191715e2a",
-"interfacegraph__fortran_1_1graph__add__pre__item.html",
-"namespacegraph.html#ac5d4840ef0c7532955bf41eae31aa1e8",
-"register_8hpp.html#a31680d3b4007bcf00ea3dec6b13a5bf9"
+"classdispersion_1_1dispersion__interface.html#a2bb925ef29a9bdde70d85505095b8baa",
+"classequilibrium_1_1vmec.html#a4d7e9dca7bccb1cb600a18d89508bab9",
+"classgraph_1_1divide__node.html#a3e2b429f204c85414b30f483e8debc47",
+"classgraph_1_1piecewise__1D__node.html#a714de2e325fa2618f08f6da7f0568671",
+"classgraph_1_1subtract__node.html#a9c987362247a9e8fd63e7639f2bd6c8c",
+"classsolver_1_1rk4.html#af1ca20335a00d4d00fab827c6dae9ff4",
+"dispersion_function.html#dispersion_function_normal",
+"graph__fortran__binding_8f90.html#ab013656f2b9e677de6e2a7b1138e3ed1",
+"namespacegraph.html#a70989fc65101db8942d5cbb05ab82dcf",
+"physics__test_8cpp.html",
+"xrays_8cpp.html#a350f533f51a508892dac45152bbee054"
 ];
 
 var SYNCONMSG = 'click to disable panel synchronisation';

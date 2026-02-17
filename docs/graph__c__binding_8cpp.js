@@ -19,6 +19,7 @@ var graph__c__binding_8cpp =
     [ "graph_erfi", "graph__c__binding_8cpp.html#a65ead6ac05b8d6844de48372eaf28843", null ],
     [ "graph_exp", "graph__c__binding_8cpp.html#a1137d01eba0baf8006e5e52cd394b7b1", null ],
     [ "graph_get_max_concurrency", "graph__c__binding_8cpp.html#af7c4e0073f40cb0f406095aeb23a4b4c", null ],
+    [ "graph_index_1D", "graph__c__binding_8cpp.html#a92d653f63448af594e6e1299cc58b8f8", null ],
     [ "graph_log", "graph__c__binding_8cpp.html#a033424193a4afdb3d5a950dd6ae84832", null ],
     [ "graph_mul", "graph__c__binding_8cpp.html#a5edcfc86a240c21d7cc6bae66a1ddfab", null ],
     [ "graph_piecewise_1D", "graph__c__binding_8cpp.html#a58ffb233ca354f573a71290e63845b53", null ],

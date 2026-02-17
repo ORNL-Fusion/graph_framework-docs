@@ -247,6 +247,9 @@ GENERIC&#160;</td><td class="memItemRight" valign="bottom"><b>piecewise_2d</b> p
 <tr class="memitem:aed5e44e61f9234c502e20e8d8e1d1a3f" id="r_aed5e44e61f9234c502e20e8d8e1d1a3f"><td class="memItemLeft" align="right" valign="top"><a id="aed5e44e61f9234c502e20e8d8e1d1a3f" name="aed5e44e61f9234c502e20e8d8e1d1a3f"></a>
 &#160;</td><td class="memItemRight" valign="bottom"><b>piecewise_2d_cdouble</b> piecewise_2d_cdouble</td></tr>
 <tr class="separator:aed5e44e61f9234c502e20e8d8e1d1a3f"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:a056266a62fd9fa5cda0308761dd68884" id="r_a056266a62fd9fa5cda0308761dd68884"><td class="memItemLeft" align="right" valign="top">procedure&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="structgraph__fortran_1_1graph__context.html#a056266a62fd9fa5cda0308761dd68884">index_1d</a> (this, <a class="el" href="structgraph__fortran_1_1graph__context.html#a1c4cd7277f233e2e61e29c3684725410">variable</a>, arg, scale, offset</td></tr>
+<tr class="memdesc:a056266a62fd9fa5cda0308761dd68884"><td class="mdescLeft">&#160;</td><td class="mdescRight">Create 1D index node with float buffer.  <br /></td></tr>
+<tr class="separator:a056266a62fd9fa5cda0308761dd68884"><td class="memSeparator" colspan="2">&#160;</td></tr>
 <tr class="memitem:a3acc646f0c7b2782176e6a8253157a23" id="r_a3acc646f0c7b2782176e6a8253157a23"><td class="memItemLeft" align="right" valign="top"><a id="a3acc646f0c7b2782176e6a8253157a23" name="a3acc646f0c7b2782176e6a8253157a23"></a>
 procedure&#160;</td><td class="memItemRight" valign="bottom"><b>get_max_concurrency</b> graph_context_get_max_concu</td></tr>
 <tr class="separator:a3acc646f0c7b2782176e6a8253157a23"><td class="memSeparator" colspan="2">&#160;</td></tr>
@@ -1033,7 +1036,7 @@ type(c_ptr)&#160;</td><td class="memItemRight" valign="bottom"><b>c_context</b><
   </table>
   </dd>
 </dl>
-<dl class="section return"><dt>Returns</dt><dd>random(state) </dd></dl>
+<dl class="section return"><dt>Returns</dt><dd>piecewise_1D node. </dd></dl>
 
 </div>
 </div>
@@ -1069,6 +1072,65 @@ type(c_ptr)&#160;</td><td class="memItemRight" valign="bottom"><b>c_context</b><
   </table>
   </dd>
 </dl>
+
+</div>
+</div>
+<a id="a056266a62fd9fa5cda0308761dd68884" name="a056266a62fd9fa5cda0308761dd68884"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#a056266a62fd9fa5cda0308761dd68884">&#9670;&#160;</a></span>index_1d()</h2>
+
+<div class="memitem">
+<div class="memproto">
+      <table class="memname">
+        <tr>
+          <td class="memname">procedure graph_fortran::graph_context::index_1d </td>
+          <td>(</td>
+          <td class="paramtype">class(<a class="el" href="structgraph__fortran_1_1graph__context.html">graph_context</a>), intent(inout)&#160;</td>
+          <td class="paramname"><em>this</em>, </td>
+        </tr>
+        <tr>
+          <td class="paramkey"></td>
+          <td></td>
+          <td class="paramtype">type(c_ptr), intent(in)&#160;</td>
+          <td class="paramname"><em>variable</em>, </td>
+        </tr>
+        <tr>
+          <td class="paramkey"></td>
+          <td></td>
+          <td class="paramtype">type(c_ptr), intent(in)&#160;</td>
+          <td class="paramname"><em>arg</em>, </td>
+        </tr>
+        <tr>
+          <td class="paramkey"></td>
+          <td></td>
+          <td class="paramtype">real(c_double)&#160;</td>
+          <td class="paramname"><em>scale</em>, </td>
+        </tr>
+        <tr>
+          <td class="paramkey"></td>
+          <td></td>
+          <td class="paramtype">real(c_double)&#160;</td>
+          <td class="paramname"><em>offset</em>&#160;</td>
+        </tr>
+        <tr>
+          <td></td>
+          <td>)</td>
+          <td></td><td></td>
+        </tr>
+      </table>
+</div><div class="memdoc">
+
+<p>Create 1D index node with float buffer. </p>
+<dl class="params"><dt>Parameters</dt><dd>
+  <table class="params">
+    <tr><td class="paramdir">[in,out]</td><td class="paramname">this</td><td><a class="el" href="structgraph__fortran_1_1graph__context.html">graph_context</a> instance. </td></tr>
+    <tr><td class="paramdir">[in]</td><td class="paramname">variable</td><td>The variable </td></tr>
+    <tr><td class="paramdir">[in]</td><td class="paramname">arg</td><td>The function argument. </td></tr>
+    <tr><td class="paramdir">[in]</td><td class="paramname">scale</td><td>Scale factor argument. </td></tr>
+    <tr><td class="paramdir">[in]</td><td class="paramname">offset</td><td>Offset factor argument. </td></tr>
+  </table>
+  </dd>
+</dl>
+<dl class="section return"><dt>Returns</dt><dd>index_1D node. </dd></dl>
 
 </div>
 </div>
