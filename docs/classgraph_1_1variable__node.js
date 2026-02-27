@@ -14,7 +14,6 @@ var classgraph_1_1variable__node =
     [ "get_symbol", "classgraph_1_1variable__node.html#af374d9df4e79dd7a08760f1d3cef34f7", null ],
     [ "is_all_variables", "classgraph_1_1variable__node.html#a16843df5330020fcefdde6668808eac7", null ],
     [ "is_power_like", "classgraph_1_1variable__node.html#ab04c05928d86fccac614bf5a019ae5d5", null ],
-    [ "reduce", "classgraph_1_1variable__node.html#a47b5dfbc948fa9a5b34cba85b3a02630", null ],
     [ "set", "classgraph_1_1variable__node.html#ab2e631e40fa37919c3d88cb4c7738191", null ],
     [ "set", "classgraph_1_1variable__node.html#ac3d0e0e77c983b6be2ffcb1c662051cd", null ],
     [ "set", "classgraph_1_1variable__node.html#ae152f5b163fb1d0d370f4ef3904f0077", null ],

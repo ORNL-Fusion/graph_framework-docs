@@ -21,7 +21,7 @@ var classgraph_1_1leaf__node =
     [ "is_normal", "classgraph_1_1leaf__node.html#afce73c65cf2a4d134bf7a1f3ab6ca29a", null ],
     [ "is_power_base_match", "classgraph_1_1leaf__node.html#ab3294fbfa1603a401502cc339b9a9154", null ],
     [ "is_power_like", "classgraph_1_1leaf__node.html#a1675e40ac4623edc5df0b71e2f6b9725", null ],
-    [ "reduce", "classgraph_1_1leaf__node.html#adc40a5a5597f45f962cf297e3f4afec7", null ],
+    [ "reduce", "classgraph_1_1leaf__node.html#a7f71e922df4426c403a7c5df9b2fb47c", null ],
     [ "remove_pseudo", "classgraph_1_1leaf__node.html#a4d86845a2db28f977ca015d4d93b6f39", null ],
     [ "set", "classgraph_1_1leaf__node.html#a4ee90b25279f9ca84c7e21bd820b479a", null ],
     [ "set", "classgraph_1_1leaf__node.html#a7cbc0a3a2a7dc6319173644d5438ef89", null ],

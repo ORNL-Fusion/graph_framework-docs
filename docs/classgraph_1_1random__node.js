@@ -8,7 +8,6 @@ var classgraph_1_1random__node =
     [ "get_power_exponent", "classgraph_1_1random__node.html#a4f991105a24d3d3fe9f483a1e24c8cb0", null ],
     [ "is_all_variables", "classgraph_1_1random__node.html#a9c80084ff5ea3438fd852ff36413c484", null ],
     [ "is_match", "classgraph_1_1random__node.html#a24def5405a562bed1a570b9b0787b615", null ],
-    [ "reduce", "classgraph_1_1random__node.html#a4fd5a647d10ba6c9c27668a589795953", null ],
     [ "to_latex", "classgraph_1_1random__node.html#a51abe575cdce17347f1cf299babb94fe", null ],
     [ "to_vizgraph", "classgraph_1_1random__node.html#aa0931096117ee884438e71ae1390f2df", null ]
 ];

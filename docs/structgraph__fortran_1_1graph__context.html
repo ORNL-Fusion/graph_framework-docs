@@ -250,6 +250,9 @@ GENERIC&#160;</td><td class="memItemRight" valign="bottom"><b>piecewise_2d</b> p
 <tr class="memitem:a056266a62fd9fa5cda0308761dd68884" id="r_a056266a62fd9fa5cda0308761dd68884"><td class="memItemLeft" align="right" valign="top">procedure&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="structgraph__fortran_1_1graph__context.html#a056266a62fd9fa5cda0308761dd68884">index_1d</a> (this, <a class="el" href="structgraph__fortran_1_1graph__context.html#a1c4cd7277f233e2e61e29c3684725410">variable</a>, arg, scale, offset</td></tr>
 <tr class="memdesc:a056266a62fd9fa5cda0308761dd68884"><td class="mdescLeft">&#160;</td><td class="mdescRight">Create 1D index node with float buffer.  <br /></td></tr>
 <tr class="separator:a056266a62fd9fa5cda0308761dd68884"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:a9e8c6e88a15e9e73f15634d2833990c9" id="r_a9e8c6e88a15e9e73f15634d2833990c9"><td class="memItemLeft" align="right" valign="top">procedure&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="structgraph__fortran_1_1graph__context.html#a9e8c6e88a15e9e73f15634d2833990c9">index_2d</a> (this, <a class="el" href="structgraph__fortran_1_1graph__context.html#a1c4cd7277f233e2e61e29c3684725410">variable</a>, num_cols,</td></tr>
+<tr class="memdesc:a9e8c6e88a15e9e73f15634d2833990c9"><td class="mdescLeft">&#160;</td><td class="mdescRight">Create 2D index node with float buffer.  <br /></td></tr>
+<tr class="separator:a9e8c6e88a15e9e73f15634d2833990c9"><td class="memSeparator" colspan="2">&#160;</td></tr>
 <tr class="memitem:a3acc646f0c7b2782176e6a8253157a23" id="r_a3acc646f0c7b2782176e6a8253157a23"><td class="memItemLeft" align="right" valign="top"><a id="a3acc646f0c7b2782176e6a8253157a23" name="a3acc646f0c7b2782176e6a8253157a23"></a>
 procedure&#160;</td><td class="memItemRight" valign="bottom"><b>get_max_concurrency</b> graph_context_get_max_concu</td></tr>
 <tr class="separator:a3acc646f0c7b2782176e6a8253157a23"><td class="memSeparator" colspan="2">&#160;</td></tr>
@@ -1008,7 +1011,7 @@ type(c_ptr)&#160;</td><td class="memItemRight" valign="bottom"><b>c_context</b><
         <tr>
           <td class="paramkey"></td>
           <td></td>
-          <td class="paramtype">real(c_double)&#160;</td>
+          <td class="paramtype">real(c_double), intent(in)&#160;</td>
           <td class="paramname"><em>scale</em>, </td>
         </tr>
         <tr>
@@ -1102,13 +1105,13 @@ type(c_ptr)&#160;</td><td class="memItemRight" valign="bottom"><b>c_context</b><
         <tr>
           <td class="paramkey"></td>
           <td></td>
-          <td class="paramtype">real(c_double)&#160;</td>
+          <td class="paramtype">real(c_double), intent(in)&#160;</td>
           <td class="paramname"><em>scale</em>, </td>
         </tr>
         <tr>
           <td class="paramkey"></td>
           <td></td>
-          <td class="paramtype">real(c_double)&#160;</td>
+          <td class="paramtype">real(c_double), intent(in)&#160;</td>
           <td class="paramname"><em>offset</em>&#160;</td>
         </tr>
         <tr>
@@ -1127,6 +1130,57 @@ type(c_ptr)&#160;</td><td class="memItemRight" valign="bottom"><b>c_context</b><
     <tr><td class="paramdir">[in]</td><td class="paramname">arg</td><td>The function argument. </td></tr>
     <tr><td class="paramdir">[in]</td><td class="paramname">scale</td><td>Scale factor argument. </td></tr>
     <tr><td class="paramdir">[in]</td><td class="paramname">offset</td><td>Offset factor argument. </td></tr>
+  </table>
+  </dd>
+</dl>
+<dl class="section return"><dt>Returns</dt><dd>index_1D node. </dd></dl>
+
+</div>
+</div>
+<a id="a9e8c6e88a15e9e73f15634d2833990c9" name="a9e8c6e88a15e9e73f15634d2833990c9"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#a9e8c6e88a15e9e73f15634d2833990c9">&#9670;&#160;</a></span>index_2d()</h2>
+
+<div class="memitem">
+<div class="memproto">
+      <table class="memname">
+        <tr>
+          <td class="memname">procedure graph_fortran::graph_context::index_2d </td>
+          <td>(</td>
+          <td class="paramtype">class(<a class="el" href="structgraph__fortran_1_1graph__context.html">graph_context</a>), intent(inout)&#160;</td>
+          <td class="paramname"><em>this</em>, </td>
+        </tr>
+        <tr>
+          <td class="paramkey"></td>
+          <td></td>
+          <td class="paramtype">type(c_ptr), intent(in)&#160;</td>
+          <td class="paramname"><em>variable</em>, </td>
+        </tr>
+        <tr>
+          <td class="paramkey"></td>
+          <td></td>
+          <td class="paramtype">integer(c_long), intent(in)&#160;</td>
+          <td class="paramname"><em>num_cols</em>&#160;</td>
+        </tr>
+        <tr>
+          <td></td>
+          <td>)</td>
+          <td></td><td></td>
+        </tr>
+      </table>
+</div><div class="memdoc">
+
+<p>Create 2D index node with float buffer. </p>
+<dl class="params"><dt>Parameters</dt><dd>
+  <table class="params">
+    <tr><td class="paramdir">[in,out]</td><td class="paramname">this</td><td><a class="el" href="structgraph__fortran_1_1graph__context.html">graph_context</a> instance. </td></tr>
+    <tr><td class="paramdir">[in]</td><td class="paramname">variable</td><td>The variable </td></tr>
+    <tr><td class="paramdir">[in]</td><td class="paramname">num_cols</td><td>Number of columns. </td></tr>
+    <tr><td class="paramdir">[in]</td><td class="paramname">x_arg</td><td>The function x argument. </td></tr>
+    <tr><td class="paramdir">[in]</td><td class="paramname">x_scale</td><td>Scale factor for x argument. </td></tr>
+    <tr><td class="paramdir">[in]</td><td class="paramname">x_offset</td><td>Offset factor for x argument. </td></tr>
+    <tr><td class="paramdir">[in]</td><td class="paramname">y_arg</td><td>The function y argument. </td></tr>
+    <tr><td class="paramdir">[in]</td><td class="paramname">y_scale</td><td>Scale factor for y argument. </td></tr>
+    <tr><td class="paramdir">[in]</td><td class="paramname">y_offset</td><td>Offset factor for y argument. </td></tr>
   </table>
   </dd>
 </dl>

@@ -13,7 +13,6 @@ var classgraph_1_1constant__node =
     [ "is_integer", "classgraph_1_1constant__node.html#afd5510f00cbe121f257149ae0ba26afb", null ],
     [ "is_match", "classgraph_1_1constant__node.html#aa2931334ad62de16b41ba5c56ffee0fa", null ],
     [ "is_power_like", "classgraph_1_1constant__node.html#affcd925f2995fa5f3e54a18ddaef8854", null ],
-    [ "reduce", "classgraph_1_1constant__node.html#aeb655c1bc46a4bf999b6ea99141e8d0a", null ],
     [ "to_latex", "classgraph_1_1constant__node.html#a0b8cf93f1e120ed6bac8c2551235cb6c", null ],
     [ "to_vizgraph", "classgraph_1_1constant__node.html#ab6cd99273c9978a07fbf0722b132586f", null ]
 ];

@@ -51,7 +51,8 @@ var hierarchy =
           [ "graph::pow_node< T, SAFE_MATH >", "classgraph_1_1pow__node.html", null ],
           [ "graph::subtract_node< T, SAFE_MATH >", "classgraph_1_1subtract__node.html", null ],
           [ "graph::triple_node< T, SAFE_MATH >", "classgraph_1_1triple__node.html", [
-            [ "graph::fma_node< T, SAFE_MATH >", "classgraph_1_1fma__node.html", null ]
+            [ "graph::fma_node< T, SAFE_MATH >", "classgraph_1_1fma__node.html", null ],
+            [ "graph::index_2D_node< T, SAFE_MATH >", "classgraph_1_1index__2D__node.html", null ]
           ] ]
         ] ],
         [ "graph::constant_node< T, SAFE_MATH >", "classgraph_1_1constant__node.html", null ],
@@ -111,6 +112,7 @@ var hierarchy =
     [ "graph_fortran::graph_float_context", "interfacegraph__fortran_1_1graph__float__context.html", null ],
     [ "graph_fortran::graph_get_max_concurrency", "interfacegraph__fortran_1_1graph__get__max__concurrency.html", null ],
     [ "graph_fortran::graph_index_1d", "interfacegraph__fortran_1_1graph__index__1d.html", null ],
+    [ "graph_fortran::graph_index_2d", "interfacegraph__fortran_1_1graph__index__2d.html", null ],
     [ "graph_fortran::graph_log", "interfacegraph__fortran_1_1graph__log.html", null ],
     [ "graph_fortran::graph_mul", "interfacegraph__fortran_1_1graph__mul.html", null ],
     [ "graph_fortran::graph_piecewise_1d", "interfacegraph__fortran_1_1graph__piecewise__1d.html", null ],

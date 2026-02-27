@@ -12,7 +12,6 @@ var classgraph_1_1index__1D__node =
     [ "is_arg_match", "classgraph_1_1index__1D__node.html#a3a423c8d1ac54cfeb856da9baa67160d", null ],
     [ "is_constant", "classgraph_1_1index__1D__node.html#aef17a7a6a3a16858f27187c1cf9ec77e", null ],
     [ "is_power_like", "classgraph_1_1index__1D__node.html#a284a898b11b4e24a9e032fe1b1f258ad", null ],
-    [ "reduce", "classgraph_1_1index__1D__node.html#a3170b4e29bd69b0b566cf298f1a9b9a5", null ],
     [ "to_latex", "classgraph_1_1index__1D__node.html#af1d0b0406dba28364ec7edcfa4cb7dcb", null ],
     [ "to_vizgraph", "classgraph_1_1index__1D__node.html#ab1896706107fe6346682d94287c5a7b2", null ]
 ];

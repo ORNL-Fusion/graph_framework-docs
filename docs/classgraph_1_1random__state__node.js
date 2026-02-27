@@ -10,7 +10,6 @@ var classgraph_1_1random__state__node =
     [ "get_power_exponent", "classgraph_1_1random__state__node.html#ad3df8f7cebff28bf66a1b7d60ea97de8", null ],
     [ "get_size_bytes", "classgraph_1_1random__state__node.html#ad2baf6341821b80d197fdce007d075c8", null ],
     [ "is_all_variables", "classgraph_1_1random__state__node.html#a4ed0d1654fa013f14a610237208231c3", null ],
-    [ "reduce", "classgraph_1_1random__state__node.html#adcafa3aa7e79bcbf3adaecf542d1620d", null ],
     [ "size", "classgraph_1_1random__state__node.html#a1bef944bbbc825337b05dc7d42cdfb09", null ],
     [ "to_latex", "classgraph_1_1random__state__node.html#aaaec897a3520345d723132157e2a8552", null ],
     [ "to_vizgraph", "classgraph_1_1random__state__node.html#a05b5d539e8fde4b999cbde41e0b73273", null ]

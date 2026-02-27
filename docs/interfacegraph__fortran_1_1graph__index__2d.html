@@ -5,7 +5,7 @@
 <meta http-equiv="X-UA-Compatible" content="IE=11"/>
 <meta name="generator" content="Doxygen 1.9.8"/>
 <meta name="viewport" content="width=device-width, initial-scale=1"/>
-<title>Graph Framework: Quick Start Guide</title>
+<title>Graph Framework: graph_fortran::graph_index_2d Interface Reference</title>
 <link href="tabs.css" rel="stylesheet" type="text/css"/>
 <script type="text/javascript" src="jquery.js"></script>
 <script type="text/javascript" src="dynsections.js"></script>
@@ -70,7 +70,7 @@ $(function() {
 </div>
 <script type="text/javascript">
 /* @license magnet:?xt=urn:btih:d3d9a9a6595521f9666a5e94cc830dab83b65699&amp;dn=expat.txt MIT */
-$(document).ready(function(){initNavTree('md_README.html',''); initResizable(); });
+$(document).ready(function(){initNavTree('interfacegraph__fortran_1_1graph__index__2d.html',''); initResizable(); });
 /* @license-end */
 </script>
 <div id="doc-content">
@@ -95,44 +95,49 @@ $(document).ready(function(){initNavTree('md_README.html',''); initResizable(); 
 </div>
 </div>
 
-<div><div class="header">
-  <div class="headertitle"><div class="title">Quick Start Guide</div></div>
+<div class="header">
+  <div class="summary">
+<a href="#pub-methods">Public Member Functions</a> &#124;
+<a href="interfacegraph__fortran_1_1graph__index__2d-members.html">List of all members</a>  </div>
+  <div class="headertitle"><div class="title">graph_fortran::graph_index_2d Interface Reference</div></div>
 </div><!--header-->
 <div class="contents">
-<div class="textblock"><p><a class="anchor" id="autotoc_md0"></a> <b>graph_framework</b>: A graph computation framework that supports auto differentiation. It is designed to allow domain scientists to create cross platform GPU accelerated code and embed those codes in existing legacy tools. It is designed for the domain of physics problems where there same physics is applied to a large ensemble of independent systems.</p>
-<p>This framework enables:</p><ol type="1">
-<li>Portability to Nvidia, AMD, and Apple GPUs and CPUs.</li>
-<li>Abstraction of the physics from the compute.</li>
-<li>Auto Differentiation.</li>
-<li>Embedding in C, C++, and Fortran codes.</li>
-</ol>
-<p>The compute kernels created have strong scaling to multiple devices</p>
-<div class="image">
-<img src="StrongScaling.png" alt=""/>
-<div class="caption">
-Strong Scaling</div></div>
-    <p>and the best throughput on both GPUs and CPUs compared to other frameworks like <a href="https://ml-explore.github.io/mlx/build/html/index.html">MLX</a> and <a href="https://docs.jax.dev/en/latest/">JAX</a></p>
-<div class="image">
-<img src="Comparison.png" alt=""/>
-<div class="caption">
-Throughput</div></div>
-    <p><a href="https://github.com/ORNL-Fusion/graph_framework/actions/workflows/ci_test.yaml"><img src="https://github.com/ORNL-Fusion/graph_framework/actions/workflows/ci_test.yaml/badge.svg?branch=main" alt="Continuous Integration Test" style="pointer-events: none;" class="inline"/></a></p>
-<h1><a class="anchor" id="autotoc_md1"></a>
-Documentation</h1>
-<p><a href="https://ornl-fusion.github.io/graph_framework-docs">graph_framework-docs</a> Documentation for the graph_framework.</p>
-<h1><a class="anchor" id="autotoc_md2"></a>
-Obtaining the Code</h1>
-<p>To get started clone this repository using the command. </p><div class="fragment"><div class="line">git clone https://github.com/ORNL-Fusion/graph_framework.git</div>
-</div><!-- fragment --><h1><a class="anchor" id="autotoc_md3"></a>
-Compiling the Code</h1>
-<p>For instructions to build the code consult the <a href="https://ornl-fusion.github.io/graph_framework-docs/build_system.html">build system</a> documentation. This framework uses a <a href="https://cmake.org">cmake</a> based build system and requires the <a href="https://www.unidata.ucar.edu/software/netcdf/">NetCDF-C</a> library.</p>
-<p>NOTE: macOS users will need to change the <code>CMAKE_CXX_COMPILER</code> to <code>clang++</code>. Otherwise the framework will not set the includes correctly for CPU JIT. </p>
-</div></div><!-- contents -->
-</div><!-- PageDoc -->
+
+<p>Create 2D index node.  
+ <a href="interfacegraph__fortran_1_1graph__index__2d.html#details">More...</a></p>
+<table class="memberdecls">
+<tr class="heading"><td colspan="2"><h2 class="groupheader"><a id="pub-methods" name="pub-methods"></a>
+Public Member Functions</h2></td></tr>
+<tr class="memitem:a84a8371393d04e2187b91d009b7fca9e" id="r_a84a8371393d04e2187b91d009b7fca9e"><td class="memItemLeft" align="right" valign="top"><a id="a84a8371393d04e2187b91d009b7fca9e" name="a84a8371393d04e2187b91d009b7fca9e"></a>
+type(c_ptr) function&#160;</td><td class="memItemRight" valign="bottom"><b>graph_index_2d</b> (c, variable, num_cols,</td></tr>
+<tr class="separator:a84a8371393d04e2187b91d009b7fca9e"><td class="memSeparator" colspan="2">&#160;</td></tr>
+</table>
+<a name="details" id="details"></a><h2 class="groupheader">Detailed Description</h2>
+<div class="textblock"><p>Create 2D index node. </p>
+<dl class="params"><dt>Parameters</dt><dd>
+  <table class="params">
+    <tr><td class="paramdir">[in]</td><td class="paramname">c</td><td>The graph C context. </td></tr>
+    <tr><td class="paramdir">[in]</td><td class="paramname">variable</td><td>The variable to index. </td></tr>
+    <tr><td class="paramdir">[in]</td><td class="paramname">num_cols</td><td>Number of columns. </td></tr>
+    <tr><td class="paramdir">[in]</td><td class="paramname">x_arg</td><td>The function x argument. </td></tr>
+    <tr><td class="paramdir">[in]</td><td class="paramname">x_scale</td><td>Scale factor x argument. </td></tr>
+    <tr><td class="paramdir">[in]</td><td class="paramname">x_offset</td><td>Offset factor x argument. </td></tr>
+    <tr><td class="paramdir">[in]</td><td class="paramname">y_arg</td><td>The function y argument. </td></tr>
+    <tr><td class="paramdir">[in]</td><td class="paramname">y_scale</td><td>Scale factor y argument. </td></tr>
+    <tr><td class="paramdir">[in]</td><td class="paramname">y_offset</td><td>Offset factor y argument. </td></tr>
+  </table>
+  </dd>
+</dl>
+<dl class="section return"><dt>Returns</dt><dd>A 2D piecewise node. </dd></dl>
+</div><hr/>The documentation for this interface was generated from the following file:<ul>
+<li>graph_fortran_binding/<a class="el" href="graph__fortran__binding_8f90.html">graph_fortran_binding.f90</a></li>
+</ul>
+</div><!-- contents -->
 </div><!-- doc-content -->
 <!-- start footer part -->
 <div id="nav-path" class="navpath"><!-- id is needed for treeview function! -->
   <ul>
+    <li class="navelem"><a class="el" href="namespacegraph__fortran.html">graph_fortran</a></li><li class="navelem"><a class="el" href="interfacegraph__fortran_1_1graph__index__2d.html">graph_index_2d</a></li>
     <li class="footer">Generated by <a href="https://www.doxygen.org/index.html"><img class="footer" src="doxygen.svg" width="104" height="31" alt="doxygen"/></a> 1.9.8 </li>
   </ul>
 </div>

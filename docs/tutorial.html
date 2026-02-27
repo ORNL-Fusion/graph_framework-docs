@@ -156,7 +156,7 @@ Basic Nodes</h1>
 <div class="line"><span class="keywordtype">void</span> run_tutorial() {</div>
 <div class="line">    <span class="keyword">auto</span> x = <a class="code hl_function" href="namespacegraph.html#a2b36a8e136f4187b4de7e2e31a3e4168">graph::variable&lt;T&gt;</a> (1000, <span class="stringliteral">&quot;x&quot;</span>);</div>
 <div class="line">}</div>
-<div class="ttc" id="anamespacegraph_html_a2b36a8e136f4187b4de7e2e31a3e4168"><div class="ttname"><a href="namespacegraph.html#a2b36a8e136f4187b4de7e2e31a3e4168">graph::zero</a></div><div class="ttdeci">constexpr shared_leaf&lt; T, SAFE_MATH &gt; zero()</div><div class="ttdoc">Forward declare for zero.</div><div class="ttdef"><b>Definition</b> node.hpp:995</div></div>
+<div class="ttc" id="anamespacegraph_html_a2b36a8e136f4187b4de7e2e31a3e4168"><div class="ttname"><a href="namespacegraph.html#a2b36a8e136f4187b4de7e2e31a3e4168">graph::zero</a></div><div class="ttdeci">constexpr shared_leaf&lt; T, SAFE_MATH &gt; zero()</div><div class="ttdoc">Forward declare for zero.</div><div class="ttdef"><b>Definition</b> node.hpp:986</div></div>
 </div><!-- fragment --><p> Here we are creating a <a class="el" href="classgraph_1_1variable__node.html">graph::variable_node</a> with the symbol \(x\) which holds 1000 elements. The symbol is used by the \(\LaTeX\) renderer as a symbol place holder. Any graph can be rendered to \(\LaTeX\) by calling the <a class="el" href="classgraph_1_1leaf__node.html#a352c9f2f999474709decec8acd8f79d0">graph::leaf_node::to_latex</a> method. </p><div class="fragment"><div class="line"><span class="keyword">template</span>&lt;jit::<span class="keywordtype">float</span>_scalar T&gt;</div>
 <div class="line"><span class="keywordtype">void</span> run_tutorial() {</div>
 <div class="line">    <span class="keyword">auto</span> x = <a class="code hl_function" href="namespacegraph.html#a2b36a8e136f4187b4de7e2e31a3e4168">graph::variable&lt;T&gt;</a> (1000, <span class="stringliteral">&quot;x&quot;</span>);</div>
@@ -175,7 +175,7 @@ Constant Nodes</h2>
 <div class="line"><span class="comment">//  Define implicit constant.</span></div>
 <div class="line">    <span class="keyword">const</span> T b = 0.6;</div>
 <div class="line">}</div>
-<div class="ttc" id="anamespacegraph_html_ab8673e7bc26ebc9c1742f99c9f448ad0"><div class="ttname"><a href="namespacegraph.html#ab8673e7bc26ebc9c1742f99c9f448ad0">graph::variable</a></div><div class="ttdeci">shared_leaf&lt; T, SAFE_MATH &gt; variable(const size_t s, const std::string &amp;symbol)</div><div class="ttdoc">Construct a variable.</div><div class="ttdef"><b>Definition</b> node.hpp:1675</div></div>
+<div class="ttc" id="anamespacegraph_html_ab8673e7bc26ebc9c1742f99c9f448ad0"><div class="ttname"><a href="namespacegraph.html#ab8673e7bc26ebc9c1742f99c9f448ad0">graph::variable</a></div><div class="ttdeci">shared_leaf&lt; T, SAFE_MATH &gt; variable(const size_t s, const std::string &amp;symbol)</div><div class="ttdoc">Construct a variable.</div><div class="ttdef"><b>Definition</b> node.hpp:1655</div></div>
 </div><!-- fragment --><p> An explicit <a class="el" href="classgraph_1_1constant__node.html">graph::constant_node</a> is created for <code>m</code> while an implicit constant was defined for <code>b</code>. Note in the implicit case, the actual node for <code>b</code> is not created until we use it in an expression.</p>
 <hr  />
  <h1><a class="anchor" id="tutorial_expression"></a>
@@ -248,7 +248,7 @@ Making workflows.</h1>
 <div class="line">}, {</div>
 <div class="line">    y, dydx</div>
 <div class="line">}, {}, NULL, <span class="stringliteral">&quot;my_first_kernel&quot;</span>, 3);</div>
-<div class="ttc" id="anamespacegraph_html_a9321a15c96554d065da2ffe49e969ff4"><div class="ttname"><a href="namespacegraph.html#a9321a15c96554d065da2ffe49e969ff4">graph::variable_cast</a></div><div class="ttdeci">shared_variable&lt; T, SAFE_MATH &gt; variable_cast(shared_leaf&lt; T, SAFE_MATH &gt; x)</div><div class="ttdoc">Cast to a variable node.</div><div class="ttdef"><b>Definition</b> node.hpp:1747</div></div>
+<div class="ttc" id="anamespacegraph_html_a9321a15c96554d065da2ffe49e969ff4"><div class="ttname"><a href="namespacegraph.html#a9321a15c96554d065da2ffe49e969ff4">graph::variable_cast</a></div><div class="ttdeci">shared_variable&lt; T, SAFE_MATH &gt; variable_cast(shared_leaf&lt; T, SAFE_MATH &gt; x)</div><div class="ttdoc">Cast to a variable node.</div><div class="ttdef"><b>Definition</b> node.hpp:1727</div></div>
 </div><!-- fragment --><p> Here we have created a kernel which computes the outputs of \(y\) and \(\frac{\partial y}{\partial x}\). The third and forth arguments are blank because there are no maps and we are not using random numbers. The last argument needs to match the dimensions of the inputs. Inputs need to be cast from generic <a class="el" href="classgraph_1_1leaf__node.html">graph::leaf_node</a> to the specific <a class="el" href="classgraph_1_1variable__node.html">graph::variable_node</a>.</p>
 <p>To evaluate the kernel, we need to first compile it. Then set the values for \(x\) and run the kernel. To see the results we can print the values of the nodes used. </p><div class="fragment"><div class="line">x-&gt;set({1.0, 2.0, 3.0});</div>
 <div class="line"> </div>
@@ -309,7 +309,7 @@ Iteration</h2>
 <div class="line">    work.run();</div>
 <div class="line">    work.print(1, {x});</div>
 <div class="line">}</div>
-<div class="ttc" id="anamespacegraph_html_a9b84f5a5f048fe7931dc4f9d39f5efa6"><div class="ttname"><a href="namespacegraph.html#a9b84f5a5f048fe7931dc4f9d39f5efa6">graph::i</a></div><div class="ttdeci">constexpr T i</div><div class="ttdoc">Convenience type for imaginary constant.</div><div class="ttdef"><b>Definition</b> node.hpp:1027</div></div>
+<div class="ttc" id="anamespacegraph_html_a9b84f5a5f048fe7931dc4f9d39f5efa6"><div class="ttname"><a href="namespacegraph.html#a9b84f5a5f048fe7931dc4f9d39f5efa6">graph::i</a></div><div class="ttdeci">constexpr T i</div><div class="ttdoc">Convenience type for imaginary constant.</div><div class="ttdef"><b>Definition</b> node.hpp:1018</div></div>
 </div><!-- fragment --><p> Running this code shows the value of x continuously updating. </p><div class="fragment"><div class="line">1.4</div>
 <div class="line">1.16</div>
 <div class="line">1.064</div>

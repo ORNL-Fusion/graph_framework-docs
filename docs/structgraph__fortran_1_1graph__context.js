@@ -18,6 +18,7 @@ var structgraph__fortran_1_1graph__context =
     [ "graph_context_piecewise_1d_cdouble", "structgraph__fortran_1_1graph__context.html#adfc67064dd1ac29184027a25be2f7834", null ],
     [ "graph_destruct", "structgraph__fortran_1_1graph__context.html#a8f004ed42496b8acda51a512b3095800", null ],
     [ "index_1d", "structgraph__fortran_1_1graph__context.html#a056266a62fd9fa5cda0308761dd68884", null ],
+    [ "index_2d", "structgraph__fortran_1_1graph__context.html#a9e8c6e88a15e9e73f15634d2833990c9", null ],
     [ "log", "structgraph__fortran_1_1graph__context.html#aa2a7a5d7c6ad1f8ce542365f7e2f5206", null ],
     [ "mul", "structgraph__fortran_1_1graph__context.html#aa94e6342b44f1d5c52e3c158adbb6d63", null ],
     [ "pow", "structgraph__fortran_1_1graph__context.html#af89ec4c0f536a7b1375d206fe339be02", null ],
