@@ -104,6 +104,11 @@ var NAVTREE =
       [ "Workflows", "general_concepts.html#general_concepts_workflow", null ],
       [ "Safe Math", "general_concepts.html#general_concepts_safe_math", null ]
     ] ],
+    [ "Kernel Optimization", "kernel_optimization.html", [
+      [ "Introduction", "kernel_optimization.html#kernel_optimization_introduction", null ],
+      [ "Source Code", "kernel_optimization.html#kernel_optimization_source", null ],
+      [ "Kernel Performance", "kernel_optimization.html#kernel_optimization_performance", null ]
+    ] ],
     [ "Tutorial", "tutorial.html", [
       [ "Introduction", "tutorial.html#tutorial_introduction", null ],
       [ "Basic Nodes", "tutorial.html#tutorial_basic", [
@@ -257,9 +262,9 @@ var NAVTREEINDEX =
 "classsolver_1_1rk4.html#a892ac6051afb0776e30b2cfdaf471755",
 "dir_4c7fbeca50732397fc4db210159b350d.html",
 "graph__fortran__binding_8f90.html#a54b321a31c60683625ee68dcf4513cff",
-"namespacegraph.html#a42a050848d206e50ddfef3919d1f89f6",
-"node_8hpp.html#a725ec108c0dd6597dd51f1fdf1d50e99",
-"tutorial.html#tutorial_derivatives"
+"namespacegraph.html#a2f569df8804d891e962c3f209eb9098a",
+"node_8hpp.html",
+"trigonometry__test_8cpp.html#ae31c5c6a5f85c358c4378eaf015bebfb"
 ];
 
 var SYNCONMSG = 'click to disable panel synchronisation';

@@ -1,4 +1,4 @@
 var searchData=
 [
-  ['line_20arguments_0',['xrays Command Line Arguments',['../xrays_commandline.html',1,'']]]
+  ['kernel_20optimization_0',['Kernel Optimization',['../kernel_optimization.html',1,'']]]
 ];

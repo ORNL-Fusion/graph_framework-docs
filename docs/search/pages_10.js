@@ -1,4 +1,4 @@
 var searchData=
 [
-  ['use_20cases_0',['Use Cases',['../use_cases.html',1,'']]]
+  ['tutorial_0',['tutorial',['../new_operations_tutorial.html',1,'Adding New Operations Tutorial'],['../tutorial.html',1,'Tutorial']]]
 ];

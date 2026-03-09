@@ -1,4 +1,4 @@
 var searchData=
 [
-  ['models_0',['models',['../absorption_model.html',1,'Absorption Models'],['../equilibrium_models.html',1,'Equilibrium Models']]]
+  ['line_20arguments_0',['xrays Command Line Arguments',['../xrays_commandline.html',1,'']]]
 ];
