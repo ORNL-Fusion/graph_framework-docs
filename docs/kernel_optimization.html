@@ -121,7 +121,7 @@ Source Code</h1>
 <div class="line">    <span class="keyword">const</span> <span class="keywordtype">size_t</span> num_grid = 1000;</div>
 <div class="line">    <span class="keyword">auto</span> grid_value = <a class="code hl_function" href="namespacegraph.html#a2b36a8e136f4187b4de7e2e31a3e4168">graph::variable&lt;T&gt;</a> (num_grid, <span class="stringliteral">&quot;g&quot;</span>);</div>
 <div class="line">    <span class="keyword">auto</span> particle_index = <a class="code hl_function" href="namespacegraph.html#a2b36a8e136f4187b4de7e2e31a3e4168">graph::variable&lt;T&gt;</a> (num_grid, <span class="stringliteral">&quot;i&quot;</span>);</div>
-<div class="line">    <span class="keyword">auto</span> gird_position = <a class="code hl_function" href="namespacegraph.html#a2b36a8e136f4187b4de7e2e31a3e4168">graph::variable&lt;T&gt;</a> (num_grid, <span class="stringliteral">&quot;gx&quot;</span>);</div>
+<div class="line">    <span class="keyword">auto</span> grid_position = <a class="code hl_function" href="namespacegraph.html#a2b36a8e136f4187b4de7e2e31a3e4168">graph::variable&lt;T&gt;</a> (num_grid, <span class="stringliteral">&quot;gx&quot;</span>);</div>
 <div class="line"> </div>
 <div class="line">    std::vector&lt;T&gt; buffer(1000, <span class="keyword">static_cast&lt;</span>T<span class="keyword">&gt;</span> (0.0));</div>
 <div class="line">    grid_value-&gt;set(buffer);</div>
@@ -131,14 +131,14 @@ Source Code</h1>
 <div class="line">        buffer[index] = <span class="keyword">static_cast&lt;</span>T<span class="keyword">&gt;</span> (2*index)/<span class="keyword">static_cast&lt;</span>T<span class="keyword">&gt;</span> (999)</div>
 <div class="line">                      - <span class="keyword">static_cast&lt;</span>T<span class="keyword">&gt;</span> (1);</div>
 <div class="line">    }</div>
-<div class="line">    gx-&gt;set(buffer);</div>
+<div class="line">    flow_control-&gt;set(buffer);</div>
 <div class="line">    </div>
 <div class="line">    <span class="keyword">auto</span> indexed_particle = <a class="code hl_function" href="namespacegraph.html#a42a050848d206e50ddfef3919d1f89f6">graph::index_1D</a>(particle_positions,</div>
 <div class="line">                                            particle_index,</div>
 <div class="line">                                            <span class="keyword">static_cast&lt;</span>T<span class="keyword">&gt;</span> (1),</div>
 <div class="line">                                            <span class="keyword">static_cast&lt;</span>T<span class="keyword">&gt;</span> (0));</div>
 <div class="line">    <span class="keyword">auto</span> next_index = particle_index + <span class="keyword">static_cast&lt;</span>T<span class="keyword">&gt;</span> (1.0);</div>
-<div class="line">    <span class="keyword">auto</span> arg = indexed_particle - gird_position;</div>
+<div class="line">    <span class="keyword">auto</span> arg = indexed_particle - grid_position;</div>
 <div class="line">    <span class="keyword">auto</span> next_grid_value = grid_value</div>
 <div class="line">                         + <a class="code hl_function" href="namespacegraph.html#a77c6dbf6ba1c3ad9d8072d88de3d5edb">graph::exp</a>(<span class="keyword">static_cast&lt;</span>T<span class="keyword">&gt;</span> (-1)*arg*arg/<span class="keyword">static_cast&lt;</span>T<span class="keyword">&gt;</span> (10));</div>
 <div class="line"> </div>
@@ -150,7 +150,7 @@ Source Code</h1>
 <div class="line">                                           <span class="keyword">static_cast&lt;</span>T<span class="keyword">&gt;</span> (1),</div>
 <div class="line">                                           <span class="keyword">static_cast&lt;</span>T<span class="keyword">&gt;</span> (0));</div>
 <div class="line">        next_index = next_index + <span class="keyword">static_cast&lt;</span>T<span class="keyword">&gt;</span> (1.0);</div>
-<div class="line">        arg = indexed_particle - gird_position;</div>
+<div class="line">        arg = indexed_particle - grid_position;</div>
 <div class="line">        next_grid_value = next_grid_value</div>
 <div class="line">                        + <a class="code hl_function" href="namespacegraph.html#a77c6dbf6ba1c3ad9d8072d88de3d5edb">graph::exp</a>(<span class="keyword">static_cast&lt;</span>T<span class="keyword">&gt;</span> (-1)*arg*arg/<span class="keyword">static_cast&lt;</span>T<span class="keyword">&gt;</span> (10));</div>
 <div class="line">    }</div>
@@ -176,7 +176,7 @@ Source Code</h1>
 <div class="line">        <a class="code hl_function" href="namespacegraph.html#a9321a15c96554d065da2ffe49e969ff4">graph::variable_cast</a>(particle_positions),</div>
 <div class="line">        <a class="code hl_function" href="namespacegraph.html#a9321a15c96554d065da2ffe49e969ff4">graph::variable_cast</a>(indexed_particle),</div>
 <div class="line">        <a class="code hl_function" href="namespacegraph.html#a9321a15c96554d065da2ffe49e969ff4">graph::variable_cast</a>(grid_value),</div>
-<div class="line">        <a class="code hl_function" href="namespacegraph.html#a9321a15c96554d065da2ffe49e969ff4">graph::variable_cast</a>(gird_position)</div>
+<div class="line">        <a class="code hl_function" href="namespacegraph.html#a9321a15c96554d065da2ffe49e969ff4">graph::variable_cast</a>(grid_position)</div>
 <div class="line">    }, {}, {</div>
 <div class="line">        {next_index, <a class="code hl_function" href="namespacegraph.html#a9321a15c96554d065da2ffe49e969ff4">graph::variable_cast</a>(indexed_particle)},</div>
 <div class="line">        {next_grid_value, <a class="code hl_function" href="namespacegraph.html#a9321a15c96554d065da2ffe49e969ff4">graph::variable_cast</a>(grid_value)}</div>
