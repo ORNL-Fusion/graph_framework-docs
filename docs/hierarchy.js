@@ -157,7 +157,8 @@ var hierarchy =
       [ "solver::split_simplextic< DISPERSION_FUNCTION >", "classsolver_1_1split__simplextic.html", null ]
     ] ],
     [ "workflow::work_item< T, SAFE_MATH >", "classworkflow_1_1work__item.html", [
-      [ "workflow::converge_item< T, SAFE_MATH >", "classworkflow_1_1converge__item.html", null ]
+      [ "workflow::converge_item< T, SAFE_MATH >", "classworkflow_1_1converge__item.html", null ],
+      [ "workflow::loop_item< T, SAFE_MATH >", "classworkflow_1_1loop__item.html", null ]
     ] ],
     [ "workflow::work_item< T, false >", "classworkflow_1_1work__item.html", null ],
     [ "dispersion::z_function< T, SAFE_MATH >", "classdispersion_1_1z__function.html", [

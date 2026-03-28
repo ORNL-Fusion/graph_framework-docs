@@ -15,5 +15,6 @@ var dir_115a61dd814959c3b593944271dfe870 =
     [ "random_test.cpp", "random__test_8cpp.html", "random__test_8cpp" ],
     [ "solver_test.cpp", "solver__test_8cpp.html", "solver__test_8cpp" ],
     [ "trigonometry_test.cpp", "trigonometry__test_8cpp.html", "trigonometry__test_8cpp" ],
-    [ "vector_test.cpp", "vector__test_8cpp.html", "vector__test_8cpp" ]
+    [ "vector_test.cpp", "vector__test_8cpp.html", "vector__test_8cpp" ],
+    [ "workflow_test.cpp", "workflow__test_8cpp.html", "workflow__test_8cpp" ]
 ];

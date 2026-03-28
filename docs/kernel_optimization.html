@@ -146,7 +146,7 @@ Source Code</h1>
 <div class="line"><span class="comment">//  call.</span></div>
 <div class="line">    <span class="keywordflow">for</span> (<span class="keywordtype">size_t</span> i = 1; i &lt; batch; i++) {</div>
 <div class="line">        indexed_particle = <a class="code hl_function" href="namespacegraph.html#a42a050848d206e50ddfef3919d1f89f6">graph::index_1D</a>(particle_positions,</div>
-<div class="line">                                           particle_index,</div>
+<div class="line">                                           next_index,</div>
 <div class="line">                                           <span class="keyword">static_cast&lt;</span>T<span class="keyword">&gt;</span> (1),</div>
 <div class="line">                                           <span class="keyword">static_cast&lt;</span>T<span class="keyword">&gt;</span> (0));</div>
 <div class="line">        next_index = next_index + <span class="keyword">static_cast&lt;</span>T<span class="keyword">&gt;</span> (1.0);</div>
@@ -196,7 +196,7 @@ Source Code</h1>
 <div class="line">}</div>
 <div class="ttc" id="aclassjit_1_1context_html"><div class="ttname"><a href="classjit_1_1context.html">jit::context</a></div><div class="ttdoc">Class for JIT compile of the GPU kernels.</div><div class="ttdef"><b>Definition</b> jit.hpp:49</div></div>
 <div class="ttc" id="aclasstiming_1_1measure__diagnostic_html"><div class="ttname"><a href="classtiming_1_1measure__diagnostic.html">timing::measure_diagnostic</a></div><div class="ttdoc">A timing object.</div><div class="ttdef"><b>Definition</b> timing.hpp:18</div></div>
-<div class="ttc" id="aclassworkflow_1_1manager_html"><div class="ttname"><a href="classworkflow_1_1manager.html">workflow::manager</a></div><div class="ttdoc">Class representing a workflow manager.</div><div class="ttdef"><b>Definition</b> workflow.hpp:171</div></div>
+<div class="ttc" id="aclassworkflow_1_1manager_html"><div class="ttname"><a href="classworkflow_1_1manager.html">workflow::manager</a></div><div class="ttdoc">Class representing a workflow manager.</div><div class="ttdef"><b>Definition</b> workflow.hpp:215</div></div>
 <div class="ttc" id="ajit__test_8cpp_html_a27b34348d63e1712a46eef8cd89f8234"><div class="ttname"><a href="jit__test_8cpp.html#a27b34348d63e1712a46eef8cd89f8234">compile</a></div><div class="ttdeci">void compile(graph::input_nodes&lt; T &gt; inputs, graph::output_nodes&lt; T &gt; outputs, graph::map_nodes&lt; T &gt; setters, const T expected, const T tolerance)</div><div class="ttdoc">Compile kernal and check the result of the output.</div><div class="ttdef"><b>Definition</b> jit_test.cpp:49</div></div>
 <div class="ttc" id="anamespacegraph_html_a0eac7c529a4fbe74524b258537e3861b"><div class="ttname"><a href="namespacegraph.html#a0eac7c529a4fbe74524b258537e3861b">graph::random_state_cast</a></div><div class="ttdeci">shared_random_state&lt; T, SAFE_MATH &gt; random_state_cast(shared_leaf&lt; T, SAFE_MATH &gt; x)</div><div class="ttdoc">Cast to a random_state node.</div><div class="ttdef"><b>Definition</b> random.hpp:275</div></div>
 <div class="ttc" id="anamespacegraph_html_a2b36a8e136f4187b4de7e2e31a3e4168"><div class="ttname"><a href="namespacegraph.html#a2b36a8e136f4187b4de7e2e31a3e4168">graph::zero</a></div><div class="ttdeci">constexpr shared_leaf&lt; T, SAFE_MATH &gt; zero()</div><div class="ttdoc">Forward declare for zero.</div><div class="ttdef"><b>Definition</b> node.hpp:986</div></div>

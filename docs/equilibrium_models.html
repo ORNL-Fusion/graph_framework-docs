@@ -131,7 +131,7 @@ Spline Formatting</h1>
  <h2><a class="anchor" id="equilibrium_splines_1D"></a>
 Cubic Splines</h2>
 <p>Cubic splines are 1D interpolation functions consisting of 4 coefficient arrays. They take the form of </p><p class="formulaDsp">
-\begin{equation}y\left(x\right)=C_{0} + C_{1}x + C_{2}x^2 + C_{3}x^2\end{equation}
+\begin{equation}y\left(x\right)=C_{0} + C_{1}x + C_{2}x^{2} + C_{3}x^{3}\end{equation}
 </p>
 <p> where \(x\) is a normalized radial index. Cubic splines coefficients can be calculated using <a href="https://mathworld.wolfram.com/CubicSpline.html">Linear Solvers</a> However, to avoid needing account for index offsets, index offsets are pre computed into the spline coefficients. </p><p class="formulaDsp">
 \begin{equation}C&#39;^{i}_{0}=C^{i}_{0} - C^{i}_{1}i + C^{i}_{2}i^2 - C^{i}_{3}i^3\end{equation}

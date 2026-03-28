@@ -3,6 +3,7 @@ var classworkflow_1_1manager =
     [ "manager", "classworkflow_1_1manager.html#abcf904f1176e01f4cfbaeab9ad4aa7ec", null ],
     [ "add_converge_item", "classworkflow_1_1manager.html#a82d5c0b4c42ca682aa8ff2f5b79aefd1", null ],
     [ "add_item", "classworkflow_1_1manager.html#a8c6bd2f70c3740751fc22ffcfc596e77", null ],
+    [ "add_loop_item", "classworkflow_1_1manager.html#a723f03238ff188d347e8e47631823812", null ],
     [ "add_preitem", "classworkflow_1_1manager.html#a173a5a8554c3854a95677031b6e3731e", null ],
     [ "check_value", "classworkflow_1_1manager.html#af3e4acb64f5244c027f5d3e49255a10e", null ],
     [ "compile", "classworkflow_1_1manager.html#ad5b7f8de1e0b756b018f614c1ee52a31", null ],

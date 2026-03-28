@@ -1,5 +1,14 @@
 var NAVTREEINDEX9 =
 {
+"namespacegraph.html#a11366a45f109fa48b0c3ee26a6d926f8":[22,0,6,31],
+"namespacegraph.html#a15cc9036b5b69d62078b94dd9903d22a":[22,0,6,91],
+"namespacegraph.html#a191e692aae98d9e840c3ff37262b1e81":[22,0,6,84],
+"namespacegraph.html#a1eeeef8a913e81d7f229fc865057178b":[22,0,6,124],
+"namespacegraph.html#a22ddc864f0180aab6a40d31ab6095338":[22,0,6,103],
+"namespacegraph.html#a27f9ad3c5cebe40788f340b2f5bf2d36":[22,0,6,146],
+"namespacegraph.html#a2935fb1f6be101e4970f99bc0f454344":[22,0,6,137],
+"namespacegraph.html#a29400d1e01b9a544ac30eae7dc1dccad":[22,0,6,144],
+"namespacegraph.html#a2b36a8e136f4187b4de7e2e31a3e4168":[22,0,6,152],
 "namespacegraph.html#a2f569df8804d891e962c3f209eb9098a":[22,0,6,115],
 "namespacegraph.html#a34339f8df99db8f289fa238dbc87482c":[22,0,6,117],
 "namespacegraph.html#a3539bb5b860614479f2dc3fe56c3bba9":[22,0,6,135],
@@ -184,8 +193,8 @@ var NAVTREEINDEX9 =
 "namespacejit.html#aed5672337b45a8b11f1351456d2284b8":[22,0,8,11],
 "namespacejit.html#af3afe279550a377fcf61a53c8a7b0a6f":[22,0,8,16],
 "namespacejit.html#aff060cfc1e5b5a499390c636dc80e147":[22,0,8,18],
-"namespacemembers.html":[22,1,0,0],
 "namespacemembers.html":[22,1,0],
+"namespacemembers.html":[22,1,0,0],
 "namespacemembers_b.html":[22,1,0,1],
 "namespacemembers_c.html":[22,1,0,2],
 "namespacemembers_d.html":[22,1,0,3],
@@ -240,14 +249,5 @@ var NAVTREEINDEX9 =
 "new_operations_tutorial.html#new_operations_tutorial_get_power_exponent":[19,2,9],
 "new_operations_tutorial.html#new_operations_tutorial_intro":[19,0],
 "new_operations_tutorial.html#new_operations_tutorial_is_match":[19,2,1],
-"new_operations_tutorial.html#new_operations_tutorial_is_power_like":[19,2,7],
-"new_operations_tutorial.html#new_operations_tutorial_method":[19,2],
-"new_operations_tutorial.html#new_operations_tutorial_node_subclass":[19,1],
-"new_operations_tutorial.html#new_operations_tutorial_reduce":[19,2,2],
-"new_operations_tutorial.html#new_operations_tutorial_remove_pseudo":[19,2,10],
-"new_operations_tutorial.html#new_operations_tutorial_to_latex":[19,2,6],
-"new_operations_tutorial.html#new_operations_tutorial_to_vizgraph":[19,2,11],
-"newton_8hpp.html":[25,0,3,12],
-"newton_8hpp.html#af0236e2736c071193fed379d294cc437":[25,0,3,12,0],
-"newton_8hpp_source.html":[25,0,3,12]
+"new_operations_tutorial.html#new_operations_tutorial_is_power_like":[19,2,7]
 };

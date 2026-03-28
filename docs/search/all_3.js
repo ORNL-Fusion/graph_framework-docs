@@ -18,13 +18,15 @@ var searchData=
   ['branch_5fnode_15',['branch_node',['../classgraph_1_1branch__node.html',1,'graph::branch_node&lt; T, SAFE_MATH &gt;'],['../classgraph_1_1branch__node.html#a9b4c96356345636ebc277a6228a53f71',1,'graph::branch_node::branch_node(shared_leaf&lt; T, SAFE_MATH &gt; l, shared_leaf&lt; T, SAFE_MATH &gt; r, const std::string s)'],['../classgraph_1_1branch__node.html#a50c35d69c32417d6658cd66dfe5d8e8c',1,'graph::branch_node::branch_node(shared_leaf&lt; T, SAFE_MATH &gt; l, shared_leaf&lt; T, SAFE_MATH &gt; r, const std::string s, const size_t count, const bool pseudo)']]],
   ['branch_5fnode_3c_20t_2c_20false_20_3e_16',['branch_node&lt; T, false &gt;',['../classgraph_1_1branch__node.html',1,'graph']]],
   ['branch_5fnode_3c_20t_2c_20safe_5fmath_20_3e_17',['branch_node&lt; T, SAFE_MATH &gt;',['../classgraph_1_1branch__node.html',1,'graph']]],
-  ['buffer_18',['buffer',['../classbackend_1_1buffer.html',1,'backend::buffer&lt; T &gt;'],['../classbackend_1_1buffer.html#a3aba86f4aabdc99f9d73b8774f5dbace',1,'backend::buffer::buffer(const buffer &amp;d)'],['../classbackend_1_1buffer.html#a8d33b18ea66fdefc82366395bdcea3da',1,'backend::buffer::buffer(const std::vector&lt; T &gt; &amp;d)'],['../classbackend_1_1buffer.html#a53bb9f0b588bf60c0a25d92a3723f9c0',1,'backend::buffer::buffer()'],['../classbackend_1_1buffer.html#a3eeea616233a6a5f6d73664a553a13d8',1,'backend::buffer::buffer(const size_t s)'],['../classbackend_1_1buffer.html#a924eec82d8c8543ab99e5ef07c2793b3',1,'backend::buffer::buffer(const size_t s, const T d)']]],
+  ['buffer_18',['buffer',['../classbackend_1_1buffer.html#a3aba86f4aabdc99f9d73b8774f5dbace',1,'backend::buffer::buffer(const buffer &amp;d)'],['../classbackend_1_1buffer.html#a8d33b18ea66fdefc82366395bdcea3da',1,'backend::buffer::buffer(const std::vector&lt; T &gt; &amp;d)'],['../classbackend_1_1buffer.html',1,'backend::buffer&lt; T &gt;'],['../classbackend_1_1buffer.html#a924eec82d8c8543ab99e5ef07c2793b3',1,'backend::buffer::buffer(const size_t s, const T d)'],['../classbackend_1_1buffer.html#a3eeea616233a6a5f6d73664a553a13d8',1,'backend::buffer::buffer(const size_t s)'],['../classbackend_1_1buffer.html#a53bb9f0b588bf60c0a25d92a3723f9c0',1,'backend::buffer::buffer()']]],
   ['build_20system_19',['build system',['../build_system.html',1,'Build System'],['../build_system.html#build_system_gen',1,'Generating the build system']]],
-  ['build_20system_20options_20',['build system options',['../build_system.html#build_system_dev_options',1,'Build System Options'],['../build_system.html#build_system_user_options',1,'Build system Options']]],
+  ['build_20system_20options_20',['build system options',['../build_system.html#build_system_user_options',1,'Build system Options'],['../build_system.html#build_system_dev_options',1,'Build System Options']]],
   ['build_5f1d_5fspline_21',['build_1D_spline',['../namespaceequilibrium.html#af5381850f5f350604b0d00fa40514376',1,'equilibrium']]],
-  ['building_20graphs_22',['Building Graphs',['../discription.html#discription_graphs_builds',1,'']]],
-  ['building_20the_20code_23',['Building the code.',['../build_system.html#build_system_build',1,'']]],
-  ['bx_5fgrid_24',['bx_grid',['../classgold__data.html#a3e2bfbc27bbe64a6465a61a5ff98eec0',1,'gold_data']]],
-  ['by_5fgrid_25',['by_grid',['../classgold__data.html#a1361db6260994e2927a20ec34fd232d7',1,'gold_data']]],
-  ['bz_5fgrid_26',['bz_grid',['../classgold__data.html#ab3212d83593928fc4f4f9354522696b2',1,'gold_data']]]
+  ['build_5fdensity_22',['build_density',['../xpic_8cpp.html#a8e35107acb16e381337c9cf3956d46a2',1,'xpic.cpp']]],
+  ['build_5fparallel_5felectric_5ffield_23',['build_parallel_electric_field',['../xpic_8cpp.html#aec8a95aa997b1e6e722e6562eacfbc85',1,'xpic.cpp']]],
+  ['building_20graphs_24',['Building Graphs',['../discription.html#discription_graphs_builds',1,'']]],
+  ['building_20the_20code_25',['Building the code.',['../build_system.html#build_system_build',1,'']]],
+  ['bx_5fgrid_26',['bx_grid',['../classgold__data.html#a3e2bfbc27bbe64a6465a61a5ff98eec0',1,'gold_data']]],
+  ['by_5fgrid_27',['by_grid',['../classgold__data.html#a1361db6260994e2927a20ec34fd232d7',1,'gold_data']]],
+  ['bz_5fgrid_28',['bz_grid',['../classgold__data.html#ab3212d83593928fc4f4f9354522696b2',1,'gold_data']]]
 ];
