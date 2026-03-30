@@ -386,7 +386,7 @@ $(document).ready(function(){initNavTree('cuda__context_8hpp_source.html',''); i
 <div class="line"><a id="l00324" name="l00324"></a><span class="lineno">  324</span>            check_error(cuModuleGetFunction(&amp;function, module, kernel_name.c_str()), <span class="stringliteral">&quot;cuModuleGetFunction&quot;</span>);</div>
 <div class="line"><a id="l00325" name="l00325"></a><span class="lineno">  325</span> </div>
 <div class="line"><a id="l00326" name="l00326"></a><span class="lineno">  326</span>            std::vector&lt;void *&gt; buffers;</div>
-<div class="line"><a id="l00327" name="l00327"></a><span class="lineno">  327</span>            std::set&lt;graph::leaf_node&lt;float, SAFE_MATH&gt; *&gt; needed_buffers;</div>
+<div class="line"><a id="l00327" name="l00327"></a><span class="lineno">  327</span>            std::set&lt;graph::leaf_node&lt;T, SAFE_MATH&gt; *&gt; needed_buffers;</div>
 <div class="line"><a id="l00328" name="l00328"></a><span class="lineno">  328</span> </div>
 <div class="line"><a id="l00329" name="l00329"></a><span class="lineno">  329</span>            <span class="keyword">const</span> <span class="keywordtype">size_t</span> buffer_element_size = <span class="keyword">sizeof</span>(T);</div>
 <div class="line"><a id="l00330" name="l00330"></a><span class="lineno">  330</span>            <span class="keywordflow">for</span> (<span class="keyword">auto</span> &amp;input : inputs) {</div>
@@ -405,7 +405,7 @@ $(document).ready(function(){initNavTree('cuda__context_8hpp_source.html',''); i
 <div class="line"><a id="l00343" name="l00343"></a><span class="lineno">  343</span>                    needed_buffers.insert(input.get());</div>
 <div class="line"><a id="l00344" name="l00344"></a><span class="lineno">  344</span>                }</div>
 <div class="line"><a id="l00345" name="l00345"></a><span class="lineno">  345</span>                <span class="keywordflow">if</span> (!needed_buffers.contains(input.get())) {</div>
-<div class="line"><a id="l00346" name="l00346"></a><span class="lineno">  346</span>                    buffers.push_back(kernel_arguments[input.get()]);</div>
+<div class="line"><a id="l00346" name="l00346"></a><span class="lineno">  346</span>                    buffers.push_back(<span class="keyword">reinterpret_cast&lt;</span><span class="keywordtype">void</span> *<span class="keyword">&gt;</span> (&amp;kernel_arguments[input.get()]));</div>
 <div class="line"><a id="l00347" name="l00347"></a><span class="lineno">  347</span>                    needed_buffers.insert(input.get());</div>
 <div class="line"><a id="l00348" name="l00348"></a><span class="lineno">  348</span>                }</div>
 <div class="line"><a id="l00349" name="l00349"></a><span class="lineno">  349</span>            }</div>
@@ -420,7 +420,7 @@ $(document).ready(function(){initNavTree('cuda__context_8hpp_source.html',''); i
 <div class="line"><a id="l00358" name="l00358"></a><span class="lineno">  358</span>                    needed_buffers.insert(<a class="code hl_namespace" href="namespaceoutput.html">output</a>.get());</div>
 <div class="line"><a id="l00359" name="l00359"></a><span class="lineno">  359</span>                }</div>
 <div class="line"><a id="l00360" name="l00360"></a><span class="lineno">  360</span>                <span class="keywordflow">if</span> (!needed_buffers.contains(<a class="code hl_namespace" href="namespaceoutput.html">output</a>.get())) {</div>
-<div class="line"><a id="l00361" name="l00361"></a><span class="lineno">  361</span>                    buffers.push_back(kernel_arguments[<a class="code hl_namespace" href="namespaceoutput.html">output</a>.get()]);</div>
+<div class="line"><a id="l00361" name="l00361"></a><span class="lineno">  361</span>                    buffers.push_back(<span class="keyword">reinterpret_cast&lt;</span><span class="keywordtype">void</span> *<span class="keyword">&gt;</span> (&amp;kernel_arguments[<a class="code hl_namespace" href="namespaceoutput.html">output</a>.get()]));</div>
 <div class="line"><a id="l00362" name="l00362"></a><span class="lineno">  362</span>                    needed_buffers.insert(<a class="code hl_namespace" href="namespaceoutput.html">output</a>.get());</div>
 <div class="line"><a id="l00363" name="l00363"></a><span class="lineno">  363</span>                }</div>
 <div class="line"><a id="l00364" name="l00364"></a><span class="lineno">  364</span>            }</div>
@@ -795,23 +795,23 @@ $(document).ready(function(){initNavTree('cuda__context_8hpp_source.html',''); i
 <div class="line"><a id="l00756" name="l00756"></a><span class="lineno">  756</span>                }</div>
 <div class="line"><a id="l00757" name="l00757"></a><span class="lineno">  757</span>            }</div>
 <div class="line"><a id="l00758" name="l00758"></a><span class="lineno">  758</span>            <span class="keywordflow">for</span> (<span class="keywordtype">size_t</span> i = 0, ie = outputs.size(); i &lt; ie; i++) {</div>
-<div class="line"><a id="l00759" name="l00759"></a><span class="lineno">  759</span>                <span class="keywordflow">if</span> (i == 0) {</div>
-<div class="line"><a id="l00760" name="l00760"></a><span class="lineno">  760</span>                    <span class="keywordflow">if</span> (inputs.size()) {</div>
-<div class="line"><a id="l00761" name="l00761"></a><span class="lineno">  761</span>                        source_buffer &lt;&lt; <span class="stringliteral">&quot;, // &quot;</span></div>
-<div class="line"><a id="l00762" name="l00762"></a><span class="lineno">  762</span>                                      &lt;&lt; inputs[inputs.size() - 1]-&gt;get_symbol();</div>
-<div class="line"><a id="l00763" name="l00763"></a><span class="lineno">  763</span><span class="preprocessor">#ifndef USE_INPUT_CACHE</span></div>
-<div class="line"><a id="l00764" name="l00764"></a><span class="lineno">  764</span><span class="preprocessor">#ifdef SHOW_USE_COUNT</span></div>
-<div class="line"><a id="l00765" name="l00765"></a><span class="lineno">  765</span>                        source_buffer &lt;&lt; <span class="stringliteral">&quot; used &quot;</span></div>
-<div class="line"><a id="l00766" name="l00766"></a><span class="lineno">  766</span>                                      &lt;&lt; usage.at(inputs[inputs.size() - 1].get());</div>
-<div class="line"><a id="l00767" name="l00767"></a><span class="lineno">  767</span><span class="preprocessor">#endif</span></div>
+<div class="line"><a id="l00759" name="l00759"></a><span class="lineno">  759</span>                <span class="keywordflow">if</span> (!used_args.contains(outputs[i].get())) {</div>
+<div class="line"><a id="l00760" name="l00760"></a><span class="lineno">  760</span>                    <span class="keywordflow">if</span> (i == 0) {</div>
+<div class="line"><a id="l00761" name="l00761"></a><span class="lineno">  761</span>                        <span class="keywordflow">if</span> (inputs.size()) {</div>
+<div class="line"><a id="l00762" name="l00762"></a><span class="lineno">  762</span>                            source_buffer &lt;&lt; <span class="stringliteral">&quot;, // &quot;</span></div>
+<div class="line"><a id="l00763" name="l00763"></a><span class="lineno">  763</span>                                          &lt;&lt; inputs[inputs.size() - 1]-&gt;get_symbol();</div>
+<div class="line"><a id="l00764" name="l00764"></a><span class="lineno">  764</span><span class="preprocessor">#ifndef USE_INPUT_CACHE</span></div>
+<div class="line"><a id="l00765" name="l00765"></a><span class="lineno">  765</span><span class="preprocessor">#ifdef SHOW_USE_COUNT</span></div>
+<div class="line"><a id="l00766" name="l00766"></a><span class="lineno">  766</span>                            source_buffer &lt;&lt; <span class="stringliteral">&quot; used &quot;</span></div>
+<div class="line"><a id="l00767" name="l00767"></a><span class="lineno">  767</span>                                        &lt;&lt; usage.at(inputs[inputs.size() - 1].get());</div>
 <div class="line"><a id="l00768" name="l00768"></a><span class="lineno">  768</span><span class="preprocessor">#endif</span></div>
-<div class="line"><a id="l00769" name="l00769"></a><span class="lineno">  769</span>                        source_buffer &lt;&lt; std::endl;</div>
-<div class="line"><a id="l00770" name="l00770"></a><span class="lineno">  770</span>                    }</div>
-<div class="line"><a id="l00771" name="l00771"></a><span class="lineno">  771</span>                } <span class="keywordflow">else</span> {</div>
-<div class="line"><a id="l00772" name="l00772"></a><span class="lineno">  772</span>                    source_buffer &lt;&lt; <span class="stringliteral">&quot;,&quot;</span> &lt;&lt; std::endl;</div>
-<div class="line"><a id="l00773" name="l00773"></a><span class="lineno">  773</span>                }</div>
-<div class="line"><a id="l00774" name="l00774"></a><span class="lineno">  774</span> </div>
-<div class="line"><a id="l00775" name="l00775"></a><span class="lineno">  775</span>                <span class="keywordflow">if</span> (!used_args.contains(outputs[i].get())) {</div>
+<div class="line"><a id="l00769" name="l00769"></a><span class="lineno">  769</span><span class="preprocessor">#endif</span></div>
+<div class="line"><a id="l00770" name="l00770"></a><span class="lineno">  770</span>                            source_buffer &lt;&lt; std::endl;</div>
+<div class="line"><a id="l00771" name="l00771"></a><span class="lineno">  771</span>                        }</div>
+<div class="line"><a id="l00772" name="l00772"></a><span class="lineno">  772</span>                    } <span class="keywordflow">else</span> {</div>
+<div class="line"><a id="l00773" name="l00773"></a><span class="lineno">  773</span>                        source_buffer &lt;&lt; <span class="stringliteral">&quot;,&quot;</span> &lt;&lt; std::endl;</div>
+<div class="line"><a id="l00774" name="l00774"></a><span class="lineno">  774</span>                    }</div>
+<div class="line"><a id="l00775" name="l00775"></a><span class="lineno">  775</span> </div>
 <div class="line"><a id="l00776" name="l00776"></a><span class="lineno">  776</span>                    source_buffer &lt;&lt; <span class="stringliteral">&quot;    &quot;</span>;</div>
 <div class="line"><a id="l00777" name="l00777"></a><span class="lineno">  777</span>                    jit::add_type&lt;T&gt; (source_buffer);</div>
 <div class="line"><a id="l00778" name="l00778"></a><span class="lineno">  778</span>                    source_buffer &lt;&lt; <span class="stringliteral">&quot; *  __restrict__ &quot;</span></div>
