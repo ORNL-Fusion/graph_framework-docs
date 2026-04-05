@@ -192,8 +192,6 @@ Build system Options</h3>
 <tr>
 <td><code>USE_SSH</code> </td><td>Use ssh for git instead of html. </td></tr>
 </table>
-<dl class="section note"><dt>Note</dt><dd>macOS users will need to change the default option for <code>CMAKE_CXX_COMPILER</code> to <code>clang++</code>. This is due to the way the build systems determines default include directories for system libraries. This can be accomplished using the advanced options accessed from the <code>t</code> command or setting this via the command line. <div class="fragment"><div class="line">cmake -DCMAKE_CXX_COMPILER=clang++ ../</div>
-</div><!-- fragment --></dd></dl>
 <p>Any time an option is changed, or a new option becomes is available, you need to use the configure <code>c</code> command for changes to take affect. Once all options are set, a generate <code>g</code> options will appear. Using this option will generate the Makefile.</p>
 <h3><a class="anchor" id="build_system_trouble_shooting"></a>
 Trouble Shooting.</h3>
