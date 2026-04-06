@@ -1,5 +1,12 @@
 var NAVTREEINDEX11 =
 {
+"trigonometry_8hpp.html#a44565adda93d1d7c4832a5eb8aa946ad":[25,0,3,21,8],
+"trigonometry_8hpp.html#a646604571591639532973d70d84b0d35":[25,0,3,21,13],
+"trigonometry_8hpp.html#a6d3095e48c3f2d29aea8f69d506d171d":[25,0,3,21,6],
+"trigonometry_8hpp.html#a6f496951ce2905dc669f77005fe13b3c":[25,0,3,21,9],
+"trigonometry_8hpp.html#aa806a6b5073ae3212e8d5d6795f791a5":[25,0,3,21,7],
+"trigonometry_8hpp.html#abbf08462b5cc0a03d34d2c9a7855e7a6":[25,0,3,21,12],
+"trigonometry_8hpp.html#abf85f754db62a9f45783922f72fb86e7":[25,0,3,21,4],
 "trigonometry_8hpp.html#adee6667cf39b5808d7615ee86c3bfc26":[25,0,3,21,10],
 "trigonometry_8hpp.html#afb43b4ba31368cef42cc1f15726c62af":[25,0,3,21,11],
 "trigonometry_8hpp_source.html":[25,0,3,21],

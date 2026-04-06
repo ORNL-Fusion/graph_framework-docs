@@ -69,7 +69,7 @@ var searchData=
   ['sq_66',['sq',['../namespacespecial.html#a6c2a424ad47a020a8f6166a5745932c9',1,'special']]],
   ['sqrt_67',['sqrt',['../structgraph__fortran_1_1graph__context.html#ab5dda22689d7aa62ec4b73de2e0dbee6',1,'graph_fortran::graph_context::sqrt()'],['../classbackend_1_1buffer.html#a3cb1b8c4b31f67e64749dc17574dac30',1,'backend::buffer::sqrt()'],['../namespacegraph.html#abc69a73fbbc6f5901acfa252135211da',1,'graph::sqrt(shared_leaf&lt; T, SAFE_MATH &gt; x)']]],
   ['sqrt_5fcast_68',['sqrt_cast',['../namespacegraph.html#a3539bb5b860614479f2dc3fe56c3bba9',1,'graph']]],
-  ['sqrt_5fnode_69',['sqrt_node',['../classgraph_1_1sqrt__node.html#a952c0bfada1dc5ba6ac56899e4fef68a',1,'graph::sqrt_node::sqrt_node()'],['../classgraph_1_1sqrt__node.html',1,'graph::sqrt_node&lt; T, SAFE_MATH &gt;']]],
+  ['sqrt_5fnode_69',['sqrt_node',['../classgraph_1_1sqrt__node.html',1,'graph::sqrt_node&lt; T, SAFE_MATH &gt;'],['../classgraph_1_1sqrt__node.html#a952c0bfada1dc5ba6ac56899e4fef68a',1,'graph::sqrt_node::sqrt_node()']]],
   ['start_20guide_70',['Quick Start Guide',['../md_README.html',1,'']]],
   ['start_5fgpu_71',['start_gpu',['../graph__c__binding_8h.html#ad8adc1545da096be4d3c3323b41f6d85',1,'START_GPU:&#160;graph_c_binding.h'],['../jit_8hpp.html#ad8adc1545da096be4d3c3323b41f6d85',1,'START_GPU:&#160;jit.hpp']]],
   ['start_5ftime_72',['start_time',['../classtiming_1_1measure__diagnostic__threaded.html#a593119b521f8cd0490f172b27af53296',1,'timing::measure_diagnostic_threaded']]],
@@ -88,11 +88,12 @@ var searchData=
   ['subtract_5fcol_85',['subtract_col',['../classbackend_1_1buffer.html#abd4be594bf2cab4de961480813a3c703',1,'backend::buffer']]],
   ['subtract_5fnode_86',['subtract_node',['../classgraph_1_1subtract__node.html',1,'graph::subtract_node&lt; T, SAFE_MATH &gt;'],['../classgraph_1_1subtract__node.html#a53b31f83030fa86a88ba23d0ba4906e6',1,'graph::subtract_node::subtract_node()']]],
   ['subtract_5frow_87',['subtract_row',['../classbackend_1_1buffer.html#a08d3cb33ac7c972ca35e89a754475eeb',1,'backend::buffer']]],
-  ['sync_88',['sync',['../classsolver_1_1solver__interface.html#ab9346e3f948152d3189f070af4333fd5',1,'solver::solver_interface']]],
-  ['sync_5fdevice_89',['sync_device',['../classsolver_1_1solver__interface.html#a3b5735e0176ce0f1edcb12bad6c309b0',1,'solver::solver_interface']]],
-  ['sync_5ffile_90',['sync_file',['../classoutput_1_1result__file.html#afd4daca73706aff9f17931d435d5ae52',1,'output::result_file']]],
-  ['sync_5fhost_91',['sync_host',['../classsolver_1_1solver__interface.html#ad886121f3197c3322f4af49434601c14',1,'solver::solver_interface']]],
-  ['system_92',['system',['../build_system.html',1,'Build System'],['../build_system.html#build_system_gen',1,'Generating the build system']]],
-  ['system_20compiler_93',['Get the needed include flags from the system compiler.',['../get__includes_8py.html#autotoc_md10',1,'']]],
-  ['system_20options_94',['system options',['../build_system.html#build_system_dev_options',1,'Build System Options'],['../build_system.html#build_system_user_options',1,'Build system Options']]]
+  ['supporting_20generalized_20coordinates_88',['Supporting generalized coordinates',['../dispersion_function.html#dispersion_function_devel_general',1,'']]],
+  ['sync_89',['sync',['../classsolver_1_1solver__interface.html#ab9346e3f948152d3189f070af4333fd5',1,'solver::solver_interface']]],
+  ['sync_5fdevice_90',['sync_device',['../classsolver_1_1solver__interface.html#a3b5735e0176ce0f1edcb12bad6c309b0',1,'solver::solver_interface']]],
+  ['sync_5ffile_91',['sync_file',['../classoutput_1_1result__file.html#afd4daca73706aff9f17931d435d5ae52',1,'output::result_file']]],
+  ['sync_5fhost_92',['sync_host',['../classsolver_1_1solver__interface.html#ad886121f3197c3322f4af49434601c14',1,'solver::solver_interface']]],
+  ['system_93',['system',['../build_system.html',1,'Build System'],['../build_system.html#build_system_gen',1,'Generating the build system']]],
+  ['system_20compiler_94',['Get the needed include flags from the system compiler.',['../get__includes_8py.html#autotoc_md10',1,'']]],
+  ['system_20options_95',['system options',['../build_system.html#build_system_dev_options',1,'Build System Options'],['../build_system.html#build_system_user_options',1,'Build system Options']]]
 ];

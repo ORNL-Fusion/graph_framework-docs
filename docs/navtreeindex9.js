@@ -1,5 +1,12 @@
 var NAVTREEINDEX9 =
 {
+"namespacegraph.html#a02c80d52ad57a00e98cb07d771caf993":[22,0,6,138],
+"namespacegraph.html#a03bffe65515f45d1ae2105edf15c1f11":[22,0,6,102],
+"namespacegraph.html#a0481e19d5cda3b45838d546a6db7b479":[22,0,6,109],
+"namespacegraph.html#a0546af636034c61adf3b2eea421d3525":[22,0,6,110],
+"namespacegraph.html#a083affc3c844e85f66fdbcc565c97ffd":[22,0,6,101],
+"namespacegraph.html#a0eac7c529a4fbe74524b258537e3861b":[22,0,6,131],
+"namespacegraph.html#a0f43bc5f7875dc5648d72d7e99a26d62":[22,0,6,32],
 "namespacegraph.html#a11366a45f109fa48b0c3ee26a6d926f8":[22,0,6,31],
 "namespacegraph.html#a15cc9036b5b69d62078b94dd9903d22a":[22,0,6,91],
 "namespacegraph.html#a191e692aae98d9e840c3ff37262b1e81":[22,0,6,84],
@@ -242,12 +249,5 @@ var NAVTREEINDEX9 =
 "namespaceworkflow.html":[22,0,13],
 "new_operations_tutorial.html":[19],
 "new_operations_tutorial.html#new_operations_tutorial_compile":[19,2,5],
-"new_operations_tutorial.html#new_operations_tutorial_compile_preamble":[19,2,4],
-"new_operations_tutorial.html#new_operations_tutorial_df":[19,2,3],
-"new_operations_tutorial.html#new_operations_tutorial_evaluate":[19,2,0],
-"new_operations_tutorial.html#new_operations_tutorial_get_power_base":[19,2,8],
-"new_operations_tutorial.html#new_operations_tutorial_get_power_exponent":[19,2,9],
-"new_operations_tutorial.html#new_operations_tutorial_intro":[19,0],
-"new_operations_tutorial.html#new_operations_tutorial_is_match":[19,2,1],
-"new_operations_tutorial.html#new_operations_tutorial_is_power_like":[19,2,7]
+"new_operations_tutorial.html#new_operations_tutorial_compile_preamble":[19,2,4]
 };

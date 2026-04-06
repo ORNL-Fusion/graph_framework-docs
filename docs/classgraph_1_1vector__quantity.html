@@ -141,6 +141,12 @@ Public Member Functions</h2></td></tr>
 <tr class="memitem:a9bcf52376c25eccf362f50a1dbb4180d" id="r_a9bcf52376c25eccf362f50a1dbb4180d"><td class="memItemLeft" align="right" valign="top">std::shared_ptr&lt; <a class="el" href="classgraph_1_1vector__quantity.html">vector_quantity</a>&lt; T, <a class="el" href="namespacegraph.html#a2b36a8e136f4187b4de7e2e31a3e4168">SAFE_MATH</a> &gt; &gt;&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="classgraph_1_1vector__quantity.html#a9bcf52376c25eccf362f50a1dbb4180d">unit</a> ()</td></tr>
 <tr class="memdesc:a9bcf52376c25eccf362f50a1dbb4180d"><td class="mdescLeft">&#160;</td><td class="mdescRight">Get the unit vector.  <br /></td></tr>
 <tr class="separator:a9bcf52376c25eccf362f50a1dbb4180d"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:a9d7ef17322738115ed7eac23bc16b1e6" id="r_a9d7ef17322738115ed7eac23bc16b1e6"><td class="memItemLeft" align="right" valign="top">std::shared_ptr&lt; <a class="el" href="classgraph_1_1vector__quantity.html">vector_quantity</a>&lt; T, <a class="el" href="namespacegraph.html#a2b36a8e136f4187b4de7e2e31a3e4168">SAFE_MATH</a> &gt; &gt;&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="classgraph_1_1vector__quantity.html#a9d7ef17322738115ed7eac23bc16b1e6">df</a> (<a class="el" href="namespacegraph.html#ac8853b055dcbbfd35dff9b4584d5ef36">shared_leaf</a>&lt; T, <a class="el" href="namespacegraph.html#a2b36a8e136f4187b4de7e2e31a3e4168">SAFE_MATH</a> &gt; arg)</td></tr>
+<tr class="memdesc:a9d7ef17322738115ed7eac23bc16b1e6"><td class="mdescLeft">&#160;</td><td class="mdescRight">Take a derivative with respect to each component.  <br /></td></tr>
+<tr class="separator:a9d7ef17322738115ed7eac23bc16b1e6"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:aa1ae274c3eb8cfca7cbe6c89a2397973" id="r_aa1ae274c3eb8cfca7cbe6c89a2397973"><td class="memItemLeft" align="right" valign="top">std::shared_ptr&lt; <a class="el" href="classgraph_1_1vector__quantity.html">vector_quantity</a>&lt; T, <a class="el" href="namespacegraph.html#a2b36a8e136f4187b4de7e2e31a3e4168">SAFE_MATH</a> &gt; &gt;&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="classgraph_1_1vector__quantity.html#aa1ae274c3eb8cfca7cbe6c89a2397973">remove_pseudo</a> ()</td></tr>
+<tr class="memdesc:aa1ae274c3eb8cfca7cbe6c89a2397973"><td class="mdescLeft">&#160;</td><td class="mdescRight">Remove pseudo variables.  <br /></td></tr>
+<tr class="separator:aa1ae274c3eb8cfca7cbe6c89a2397973"><td class="memSeparator" colspan="2">&#160;</td></tr>
 </table><table class="memberdecls">
 <tr class="heading"><td colspan="2"><h2 class="groupheader"><a id="pro-attribs" name="pro-attribs"></a>
 Protected Attributes</h2></td></tr>
@@ -257,6 +263,43 @@ template&lt;<a class="el" href="conceptjit_1_1float__scalar.html">jit::float_sca
   </dd>
 </dl>
 <dl class="section return"><dt>Returns</dt><dd>v1 X v2 </dd></dl>
+
+</div>
+</div>
+<a id="a9d7ef17322738115ed7eac23bc16b1e6" name="a9d7ef17322738115ed7eac23bc16b1e6"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#a9d7ef17322738115ed7eac23bc16b1e6">&#9670;&#160;</a></span>df()</h2>
+
+<div class="memitem">
+<div class="memproto">
+<div class="memtemplate">
+template&lt;<a class="el" href="conceptjit_1_1float__scalar.html">jit::float_scalar</a> T, <a class="el" href="namespacegraph.html#a2b36a8e136f4187b4de7e2e31a3e4168">bool</a> SAFE_MATH = false&gt; </div>
+<table class="mlabels">
+  <tr>
+  <td class="mlabels-left">
+      <table class="memname">
+        <tr>
+          <td class="memname">std::shared_ptr&lt; <a class="el" href="classgraph_1_1vector__quantity.html">vector_quantity</a>&lt; T, <a class="el" href="namespacegraph.html#a2b36a8e136f4187b4de7e2e31a3e4168">SAFE_MATH</a> &gt; &gt; <a class="el" href="classgraph_1_1vector__quantity.html">graph::vector_quantity</a>&lt; T, <a class="el" href="namespacegraph.html#a2b36a8e136f4187b4de7e2e31a3e4168">SAFE_MATH</a> &gt;::df </td>
+          <td>(</td>
+          <td class="paramtype"><a class="el" href="namespacegraph.html#ac8853b055dcbbfd35dff9b4584d5ef36">shared_leaf</a>&lt; T, <a class="el" href="namespacegraph.html#a2b36a8e136f4187b4de7e2e31a3e4168">SAFE_MATH</a> &gt;&#160;</td>
+          <td class="paramname"><em>arg</em></td><td>)</td>
+          <td></td>
+        </tr>
+      </table>
+  </td>
+  <td class="mlabels-right">
+<span class="mlabels"><span class="mlabel">inline</span></span>  </td>
+  </tr>
+</table>
+</div><div class="memdoc">
+
+<p>Take a derivative with respect to each component. </p>
+<dl class="params"><dt>Parameters</dt><dd>
+  <table class="params">
+    <tr><td class="paramdir">[in]</td><td class="paramname">arg</td><td>The variable to take the derivative to. </td></tr>
+  </table>
+  </dd>
+</dl>
+<dl class="section return"><dt>Returns</dt><dd>A vector of the derivative components. </dd></dl>
 
 </div>
 </div>
@@ -414,6 +457,36 @@ template&lt;<a class="el" href="conceptjit_1_1float__scalar.html">jit::float_sca
 
 <p>Get the length of the vector. </p>
 <dl class="section return"><dt>Returns</dt><dd>|V| </dd></dl>
+
+</div>
+</div>
+<a id="aa1ae274c3eb8cfca7cbe6c89a2397973" name="aa1ae274c3eb8cfca7cbe6c89a2397973"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#aa1ae274c3eb8cfca7cbe6c89a2397973">&#9670;&#160;</a></span>remove_pseudo()</h2>
+
+<div class="memitem">
+<div class="memproto">
+<div class="memtemplate">
+template&lt;<a class="el" href="conceptjit_1_1float__scalar.html">jit::float_scalar</a> T, <a class="el" href="namespacegraph.html#a2b36a8e136f4187b4de7e2e31a3e4168">bool</a> SAFE_MATH = false&gt; </div>
+<table class="mlabels">
+  <tr>
+  <td class="mlabels-left">
+      <table class="memname">
+        <tr>
+          <td class="memname">std::shared_ptr&lt; <a class="el" href="classgraph_1_1vector__quantity.html">vector_quantity</a>&lt; T, <a class="el" href="namespacegraph.html#a2b36a8e136f4187b4de7e2e31a3e4168">SAFE_MATH</a> &gt; &gt; <a class="el" href="classgraph_1_1vector__quantity.html">graph::vector_quantity</a>&lt; T, <a class="el" href="namespacegraph.html#a2b36a8e136f4187b4de7e2e31a3e4168">SAFE_MATH</a> &gt;::remove_pseudo </td>
+          <td>(</td>
+          <td class="paramname"></td><td>)</td>
+          <td></td>
+        </tr>
+      </table>
+  </td>
+  <td class="mlabels-right">
+<span class="mlabels"><span class="mlabel">inline</span></span>  </td>
+  </tr>
+</table>
+</div><div class="memdoc">
+
+<p>Remove pseudo variables. </p>
+<dl class="section return"><dt>Returns</dt><dd>the vector with pseudo variables removed. </dd></dl>
 
 </div>
 </div>

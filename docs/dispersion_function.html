@@ -102,7 +102,11 @@ $(document).ready(function(){initNavTree('dispersion_function.html',''); initRes
 <div class="toc"><h3>Table of Contents</h3>
 <ul><li class="level1"><a href="#dispersion_function_intro">Introduction</a></li>
 <li class="level1"><a href="#dispersion_function_normal">Normalization</a></li>
-<li class="level1"><a href="#dispersion_function_wave_propagation">Wave propagation</a></li>
+<li class="level1"><a href="#dispersion_function_wave_propagation">Wave propagation</a><ul><li class="level2"><a href="#dispersion_function_generalized">Generalized to arbitrary coordinates</a><ul><li class="level3"><a href="#dispersion_function_generalized_cart">Reduction back to cartesian</a></li>
+</ul>
+</li>
+</ul>
+</li>
 <li class="level1"><a href="#dispersion_function_avail">Available Dispersion Functions</a><ul><li class="level2"><a href="#dispersion_function_simple">Simple</a></li>
 <li class="level2"><a href="#dispersion_function_bohm_gross">Bohm Gross</a></li>
 <li class="level2"><a href="#dispersion_function_o_wave">Ordinary Wave</a></li>
@@ -110,7 +114,9 @@ $(document).ready(function(){initNavTree('dispersion_function.html',''); initRes
 <li class="level2"><a href="#dispersion_function_cold_plasma">Cold Plasma</a></li>
 </ul>
 </li>
-<li class="level1"><a href="#dispersion_function_devel">Developing new dispersion functions</a></li>
+<li class="level1"><a href="#dispersion_function_devel">Developing new dispersion functions</a><ul><li class="level2"><a href="#dispersion_function_devel_general">Supporting generalized coordinates</a></li>
+</ul>
+</li>
 </ul>
 </div>
 <div class="textblock"><p>Dispersion function documentation for the xrays RF Ray tracing code.</p>
@@ -175,12 +181,98 @@ Normalization</h1>
 <h1><a class="anchor" id="dispersion_function_wave_propagation"></a>
 Wave propagation</h1>
 <p>From any dispersion function, the wave propagation equations are obtained from derivatives of the dispersion relation. </p><p class="formulaDsp">
-\begin{equation}\frac{\partial\vec{x}}{\partial {t}}=-\frac{\frac{\partial D}{\partial\vec{k}}}{\frac{\partial D}{\partial\omega}}\end{equation}
+\begin{equation}\frac{\partial\vec{x}}{\partial {t}}=-\frac{\frac{\partial D\left(\omega,\vec{k},\vec{x}\right)}{\partial\vec{k}}}{\frac{\partial D\left(\omega,\vec{k},\vec{x}\right)}{\partial\omega}}\end{equation}
 </p>
  <p class="formulaDsp">
-\begin{equation}\frac{\partial\vec{k}}{\partial {t}}=\frac{\frac{\partial D}{\partial\vec{x}}}{\frac{\partial D}{\partial\omega}}\end{equation}
+\begin{equation}\frac{\partial\vec{k}}{\partial {t}}=\frac{\frac{\partial D\left(\omega,\vec{k},\vec{x}\right)}{\partial\vec{x}}}{\frac{\partial D\left(\omega,\vec{k},\vec{x}\right)}{\partial\omega}}\end{equation}
 </p>
 <p> RF waves are traced by integrating this system of equations.</p>
+<h2><a class="anchor" id="dispersion_function_generalized"></a>
+Generalized to arbitrary coordinates</h2>
+<p>This section works through the math for generalizing the ray equations to generalized coordinates. This is needed for working in non-normalized, non-orthogonal coordinate systems like those used in stellarator equilibrium. A point in 3D space can be defined in a flux coordinate system \(\vec{x}\left(s,u,v\right)\). From here a set of covariant basis vector can be defined. </p><p class="formulaDsp">
+\begin{equation}\vec{e}_{s}=\frac{\partial \vec{x}}{\partial s}\end{equation}
+</p>
+ <p class="formulaDsp">
+\begin{equation}\vec{e}_{u}=\frac{\partial \vec{x}}{\partial u}\end{equation}
+</p>
+ <p class="formulaDsp">
+\begin{equation}\vec{e}_{v}=\frac{\partial \vec{x}}{\partial v}\end{equation}
+</p>
+<p> From this basis set, we can defined a coordinate system Jacobian \(\mathcal{J}=\vec{e}_{s}\cdot\vec{e}_{u}\times\vec{e}_{v}\). Using this the reciprocal (contravariant) basis set is defined as </p><p class="formulaDsp">
+\begin{equation}\vec{e}^{s}=\frac{\vec{e}_{u}\times\vec{e}_{v}}{\mathcal{J}}\end{equation}
+</p>
+ <p class="formulaDsp">
+\begin{equation}\vec{e}^{u}=\frac{\vec{e}_{v}\times\vec{e}_{s}}{\mathcal{J}}\end{equation}
+</p>
+ <p class="formulaDsp">
+\begin{equation}\vec{e}^{v}=\frac{\vec{e}_{s}\times\vec{e}_{u}}{\mathcal{J}}\end{equation}
+</p>
+<p> Any vector such as the wave number \(\vec{k}\) can be written in either basis. </p><p class="formulaDsp">
+\begin{equation}\vec{k}=k^{s}\vec{e}_{s}+k^{u}\vec{e}_{u}+k^{v}\vec{e}_{v}=k_{s}\vec{e}^{s}+k_{u}\vec{e}^{u}+k_{v}\vec{e}^{v}\end{equation}
+</p>
+<p> We now need to write our wave propagation equations in terms of the basis vectors. The left hand sides can be expanded to. </p><p class="formulaDsp">
+\begin{equation}\frac{\partial\vec{x}}{\partial {t}}=\frac{\partial s}{\partial t}\frac{\partial\vec{x}}{\partial s}+\frac{\partial u}{\partial t}\frac{\partial\vec{x}}{\partial u}+\frac{\partial v}{\partial t}\frac{\partial\vec{x}}{\partial v}=\frac{\partial s}{\partial t}\vec{e}_{s}+\frac{\partial u}{\partial t}\vec{e}_{u}+\frac{\partial v}{\partial t}\vec{e}_{v}\end{equation}
+</p>
+ <p class="formulaDsp">
+\begin{equation}\frac{\partial\vec{k}}{\partial {t}}=\frac{\partial k_{s}}{\partial t}\frac{\partial \vec{k}}{\partial k_{s}}+\frac{\partial k_{u}}{\partial t}\frac{\partial \vec{k}}{\partial k_{u}}+\frac{\partial k_{v}}{\partial t}\frac{\partial \vec{k}}{\partial k_{v}}=\frac{\partial k_{s}}{\partial t}\vec{e}^{s}+\frac{\partial k_{u}}{\partial t}\vec{e}^{u}+\frac{\partial k_{v}}{\partial t}\vec{e}^{v}\end{equation}
+</p>
+<p> We now need to write the righthand side in terms of the covariant and contravariant basis sets. Ignoring the scalar quantity in the denominator, </p><p class="formulaDsp">
+\begin{equation}\frac{\partial D\left(\omega,\vec{k},\vec{x}\right)}{\partial k_{s}}=\frac{\partial D\left(\omega,\vec{k},\vec{x}\right)}{\partial\vec{k}}\frac{\partial\vec{k}}{\partial k_{s}}=\frac{\partial D\left(\omega,\vec{k},\vec{x}\right)}{\partial\vec{k}}\vec{e}^{s}\end{equation}
+</p>
+ <p class="formulaDsp">
+\begin{equation}\frac{\partial D\left(\omega,\vec{k},\vec{x}\right)}{\partial k_{u}}=\frac{\partial D\left(\omega,\vec{k},\vec{x}\right)}{\partial\vec{k}}\frac{\partial\vec{k}}{\partial k_{u}}=\frac{\partial D\left(\omega,\vec{k},\vec{x}\right)}{\partial\vec{k}}\vec{e}^{u}\end{equation}
+</p>
+ <p class="formulaDsp">
+\begin{equation}\frac{\partial D\left(\omega,\vec{k},\vec{x}\right)}{\partial k_{v}}=\frac{\partial D\left(\omega,\vec{k},\vec{x}\right)}{\partial\vec{k}}\frac{\partial\vec{k}}{\partial k_{v}}=\frac{\partial D\left(\omega,\vec{k},\vec{x}\right)}{\partial\vec{k}}\vec{e}^{v}\end{equation}
+</p>
+<p> Noting that \(\vec{e}^{i}\cdot\vec{e}_{j}=\delta^{i}_{j}\) </p><p class="formulaDsp">
+\begin{equation}\frac{\partial D\left(\omega,\vec{k},\vec{x}\right)}{\partial k_{s}}\vec{e}_{s}=\frac{\partial D\left(\omega,\vec{k},\vec{x}\right)}{\partial\vec{k}}\vec{e}^{s}\cdot\vec{e}_{s}=\frac{\partial D\left(\omega,\vec{k},\vec{x}\right)}{\partial\vec{k}}\end{equation}
+</p>
+ <p class="formulaDsp">
+\begin{equation}\frac{\partial D\left(\omega,\vec{k},\vec{x}\right)}{\partial k_{u}}\vec{e}_{u}=\frac{\partial D\left(\omega,\vec{k},\vec{x}\right)}{\partial\vec{k}}\vec{e}^{u}\cdot\vec{e}_{u}=\frac{\partial D\left(\omega,\vec{k},\vec{x}\right)}{\partial\vec{k}}\end{equation}
+</p>
+ <p class="formulaDsp">
+\begin{equation}\frac{\partial D\left(\omega,\vec{k},\vec{x}\right)}{\partial k_{v}}\vec{e}_{v}=\frac{\partial D\left(\omega,\vec{k},\vec{x}\right)}{\partial\vec{k}}\vec{e}^{v}\cdot\vec{e}_{v}=\frac{\partial D\left(\omega,\vec{k},\vec{x}\right)}{\partial\vec{k}}\end{equation}
+</p>
+<p> Combining this with the expression for the lefthand side, we can arrive at the ray equation for the coordinates. </p><p class="formulaDsp">
+\begin{equation}\frac{\partial s}{\partial t}=-\frac{\frac{\partial D\left(\omega,\vec{k},\vec{x}\right)}{\partial k_{s}}}{\frac{\partial D\left(\omega,\vec{k},\vec{x}\right)}{\partial\omega}}\end{equation}
+</p>
+ <p class="formulaDsp">
+\begin{equation}\frac{\partial u}{\partial t}=-\frac{\frac{\partial D\left(\omega,\vec{k},\vec{x}\right)}{\partial k_{u}}}{\frac{\partial D\left(\omega,\vec{k},\vec{x}\right)}{\partial\omega}}\end{equation}
+</p>
+ <p class="formulaDsp">
+\begin{equation}\frac{\partial v}{\partial t}=-\frac{\frac{\partial D\left(\omega,\vec{k},\vec{x}\right)}{\partial k_{v}}}{\frac{\partial D\left(\omega,\vec{k},\vec{x}\right)}{\partial\omega}}\end{equation}
+</p>
+<p> For the second equation we can take derivatives with respect to the coordinates. </p><p class="formulaDsp">
+\begin{equation}\frac{D\left(\omega,\vec{k},\vec{x}\right)}{\partial s}=\frac{D\left(\omega,\vec{k},\vec{x}\right)}{\partial\vec{k}}\cdot\frac{\partial\vec{k}}{\partial s}+\frac{D\left(\omega,\vec{k},\vec{x}\right)}{\partial\vec{x}}\cdot\frac{\partial\vec{x}}{\partial s}=\frac{D\left(\omega,\vec{k},\vec{x}\right)}{\partial\vec{k}}\cdot\frac{\partial\vec{k}}{\partial s}+\frac{D\left(\omega,\vec{k},\vec{x}\right)}{\partial\vec{x}}\cdot\vec{e}_{s}\end{equation}
+</p>
+ <p class="formulaDsp">
+\begin{equation}\frac{D\left(\omega,\vec{k},\vec{x}\right)}{\partial u}=\frac{D\left(\omega,\vec{k},\vec{x}\right)}{\partial\vec{k}}\cdot\frac{\partial\vec{k}}{\partial u}+\frac{D\left(\omega,\vec{k},\vec{x}\right)}{\partial\vec{x}}\cdot\frac{\partial\vec{x}}{\partial u}=\frac{D\left(\omega,\vec{k},\vec{x}\right)}{\partial\vec{k}}\cdot\frac{\partial\vec{k}}{\partial u}+\frac{D\left(\omega,\vec{k},\vec{x}\right)}{\partial\vec{x}}\cdot\vec{e}_{u}\end{equation}
+</p>
+ <p class="formulaDsp">
+\begin{equation}\frac{D\left(\omega,\vec{k},\vec{x}\right)}{\partial v}=\frac{D\left(\omega,\vec{k},\vec{x}\right)}{\partial\vec{k}}\cdot\frac{\partial\vec{k}}{\partial v}+\frac{D\left(\omega,\vec{k},\vec{x}\right)}{\partial\vec{x}}\cdot\frac{\partial\vec{x}}{\partial v}=\frac{D\left(\omega,\vec{k},\vec{x}\right)}{\partial\vec{k}}\cdot\frac{\partial\vec{k}}{\partial v}+\frac{D\left(\omega,\vec{k},\vec{x}\right)}{\partial\vec{x}}\cdot\vec{e}_{v}\end{equation}
+</p>
+<p> Moving the expression to the left side and using the reciprocal basis </p><p class="formulaDsp">
+\begin{equation}\frac{D\left(\omega,\vec{k},\vec{x}\right)}{\partial s}\vec{e}^{s}-\frac{D\left(\omega,\vec{k},\vec{x}\right)}{\partial\vec{k}}\cdot\frac{\partial\vec{k}}{\partial s}\vec{e}^{s}=\frac{D\left(\omega,\vec{k},\vec{x}\right)}{\partial\vec{x}}\vec{e}_{s}\cdot\vec{e}^{s}=\frac{D\left(\omega,\vec{k},\vec{x}\right)}{\partial\vec{x}}\end{equation}
+</p>
+ <p class="formulaDsp">
+\begin{equation}\frac{D\left(\omega,\vec{k},\vec{x}\right)}{\partial u}\vec{e}^{u}-\frac{D\left(\omega,\vec{k},\vec{x}\right)}{\partial\vec{k}}\cdot\frac{\partial\vec{k}}{\partial u}\vec{e}^{u}=\frac{D\left(\omega,\vec{k},\vec{x}\right)}{\partial\vec{x}}\vec{e}_{u}\cdot\vec{e}^{u}=\frac{D\left(\omega,\vec{k},\vec{x}\right)}{\partial\vec{x}}\end{equation}
+</p>
+ <p class="formulaDsp">
+\begin{equation}\frac{D\left(\omega,\vec{k},\vec{x}\right)}{\partial v}\vec{e}^{v}-\frac{D\left(\omega,\vec{k},\vec{x}\right)}{\partial\vec{k}}\cdot\frac{\partial\vec{k}}{\partial v}\vec{e}^{v}=\frac{D\left(\omega,\vec{k},\vec{x}\right)}{\partial\vec{x}}\vec{e}_{v}\cdot\vec{e}^{v}=\frac{D\left(\omega,\vec{k},\vec{x}\right)}{\partial\vec{x}}\end{equation}
+</p>
+<p> Putting this back into the expression for the left land side we arrive at the ray equation for the wave number. </p><p class="formulaDsp">
+\begin{equation}\frac{\partial k_{s}}{\partial t}=\frac{\frac{D\left(\omega,\vec{k},\vec{x}\right)}{\partial s}-\frac{D\left(\omega,\vec{k},\vec{x}\right)}{\partial\vec{k}}\cdot\frac{\partial\vec{k}}{\partial s}}{\frac{\partial D\left(\omega,\vec{k},\vec{x}\right)}{\partial\omega}}\end{equation}
+</p>
+ <p class="formulaDsp">
+\begin{equation}\frac{\partial k_{u}}{\partial t}=\frac{\frac{D\left(\omega,\vec{k},\vec{x}\right)}{\partial u}-\frac{D\left(\omega,\vec{k},\vec{x}\right)}{\partial\vec{k}}\cdot\frac{\partial\vec{k}}{\partial u}}{\frac{\partial D\left(\omega,\vec{k},\vec{x}\right)}{\partial\omega}}\end{equation}
+</p>
+ <p class="formulaDsp">
+\begin{equation}\frac{\partial k_{v}}{\partial t}=\frac{\frac{D\left(\omega,\vec{k},\vec{x}\right)}{\partial v}-\frac{D\left(\omega,\vec{k},\vec{x}\right)}{\partial\vec{k}}\cdot\frac{\partial\vec{k}}{\partial v}}{\frac{\partial D\left(\omega,\vec{k},\vec{x}\right)}{\partial\omega}}\end{equation}
+</p>
+<h3><a class="anchor" id="dispersion_function_generalized_cart"></a>
+Reduction back to cartesian</h3>
+<p>In this section we check that we can reduced the generalized ray equations back to a the orginal in a cartesian coordinate system. First we note that in cartesian coordinates, the basis vectors are now orthonormal and there is no difference between the covariant and contravariant basis \(\vec{e}_{i}=\vec{e}^{i}=\hat{i}\). This implies that \(\frac{\partial\vec{k}_{i}}{\partial i}=0\). This eliminates the correction term in the evolution of the wave number and reduces the ray evolution equations to the original form.</p>
 <h1><a class="anchor" id="dispersion_function_avail"></a>
 Available Dispersion Functions</h1>
 <p>The following dispersion functions are available in xrays.</p>
@@ -262,6 +354,11 @@ Developing new dispersion functions</h1>
 <div class="line">};</div>
 <div class="ttc" id="anamespaceequilibrium_html_a9f4ba1563110e2443131808c94663444"><div class="ttname"><a href="namespaceequilibrium.html#a9f4ba1563110e2443131808c94663444">equilibrium::shared</a></div><div class="ttdeci">std::shared_ptr&lt; generic&lt; T, SAFE_MATH &gt; &gt; shared</div><div class="ttdoc">Convenience type alias for shared equilibria.</div><div class="ttdef"><b>Definition</b> equilibrium.hpp:470</div></div>
 <div class="ttc" id="anamespacegraph_html_ac8853b055dcbbfd35dff9b4584d5ef36"><div class="ttname"><a href="namespacegraph.html#ac8853b055dcbbfd35dff9b4584d5ef36">graph::shared_leaf</a></div><div class="ttdeci">std::shared_ptr&lt; leaf_node&lt; T, SAFE_MATH &gt; &gt; shared_leaf</div><div class="ttdoc">Convenience type alias for shared leaf nodes.</div><div class="ttdef"><b>Definition</b> node.hpp:676</div></div>
+</div><!-- fragment --><h2><a class="anchor" id="dispersion_function_devel_general"></a>
+Supporting generalized coordinates</h2>
+<p>The <a class="el" href="classdispersion_1_1dispersion__interface.html">dispersion::dispersion_interface</a> assumes these are generalized coordinates. Developers must use the contravariant basis vector any time they compute the wave number vector. </p><div class="fragment"><div class="line"><span class="keyword">auto</span> k_vec = kx*eq-&gt;get_esup1(x, y, z)</div>
+<div class="line">           + ky*eq-&gt;get_esup2(x, y, z)</div>
+<div class="line">           + kz*eq-&gt;get_esup3(x, y, z);</div>
 </div><!-- fragment --> </div></div><!-- contents -->
 </div><!-- PageDoc -->
 </div><!-- doc-content -->

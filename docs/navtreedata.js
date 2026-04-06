@@ -159,7 +159,11 @@ var NAVTREE =
     [ "Dispersion Functions", "dispersion_function.html", [
       [ "Introduction", "dispersion_function.html#dispersion_function_intro", null ],
       [ "Normalization", "dispersion_function.html#dispersion_function_normal", null ],
-      [ "Wave propagation", "dispersion_function.html#dispersion_function_wave_propagation", null ],
+      [ "Wave propagation", "dispersion_function.html#dispersion_function_wave_propagation", [
+        [ "Generalized to arbitrary coordinates", "dispersion_function.html#dispersion_function_generalized", [
+          [ "Reduction back to cartesian", "dispersion_function.html#dispersion_function_generalized_cart", null ]
+        ] ]
+      ] ],
       [ "Available Dispersion Functions", "dispersion_function.html#dispersion_function_avail", [
         [ "Simple", "dispersion_function.html#dispersion_function_simple", null ],
         [ "Bohm Gross", "dispersion_function.html#dispersion_function_bohm_gross", null ],
@@ -167,7 +171,9 @@ var NAVTREE =
         [ "Extra Ordinary Wave", "dispersion_function.html#dispersion_function_x_wave", null ],
         [ "Cold Plasma", "dispersion_function.html#dispersion_function_cold_plasma", null ]
       ] ],
-      [ "Developing new dispersion functions", "dispersion_function.html#dispersion_function_devel", null ]
+      [ "Developing new dispersion functions", "dispersion_function.html#dispersion_function_devel", [
+        [ "Supporting generalized coordinates", "dispersion_function.html#dispersion_function_devel_general", null ]
+      ] ]
     ] ],
     [ "Equilibrium Models", "equilibrium_models.html", [
       [ "Introduction", "equilibrium_models.html#equilibrium_models_intro", null ],
@@ -259,12 +265,12 @@ var NAVTREEINDEX =
 "classgraph_1_1divide__node.html#a4d00783341417b8e60bb68979c617c05",
 "classgraph_1_1multiply__node.html#a833cbbb38470b4516cf0516418167ab7",
 "classgraph_1_1straight__node.html#a672bbddf33781689c356abcfb9be972a",
-"classsolver_1_1rk4.html#a892ac6051afb0776e30b2cfdaf471755",
-"cpu__context_8hpp.html#a72813cdeb9c64abbd194c1c16e6b7ac7",
-"graph__fortran__binding_8f90.html#a15902d3c36099f6b2d75c35292de582c",
-"namespacegraph.html#a11366a45f109fa48b0c3ee26a6d926f8",
-"new_operations_tutorial.html#new_operations_tutorial_method",
-"trigonometry_8hpp.html#adee6667cf39b5808d7615ee86c3bfc26"
+"classsolver_1_1rk4.html#a7c26a17376c223c24d28682f3dd83271",
+"concepts.html",
+"graph__fortran__binding_8f90.html#a057379e9087dcf8c289e8280e396abed",
+"namespacegraph.html#a02c80d52ad57a00e98cb07d771caf993",
+"new_operations_tutorial.html#new_operations_tutorial_df",
+"trigonometry_8hpp.html#a44565adda93d1d7c4832a5eb8aa946ad"
 ];
 
 var SYNCONMSG = 'click to disable panel synchronisation';
