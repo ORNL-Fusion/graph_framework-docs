@@ -1,5 +1,7 @@
 var NAVTREEINDEX8 =
 {
+"graph__fortran__binding_8f90.html#a0128477869c20df276bc653d4fe59203":[25,0,2,0,82],
+"graph__fortran__binding_8f90.html#a04203667ca9f90424f7d782672d08ae4":[25,0,2,0,86],
 "graph__fortran__binding_8f90.html#a057379e9087dcf8c289e8280e396abed":[25,0,2,0,87],
 "graph__fortran__binding_8f90.html#a077e9db4ef395b5d2325e1f933328dbe":[25,0,2,0,49],
 "graph__fortran__binding_8f90.html#a08262be045f2512f48dd9c5c4aa3aa41":[25,0,2,0,70],
@@ -247,7 +249,5 @@ var NAVTREEINDEX8 =
 "namespacegpu.html":[22,0,5],
 "namespacegpu.html#ae9d54340c76c9aad388a8371a67dbdd3":[22,0,5,3],
 "namespacegraph.html":[22,0,6],
-"namespacegraph.html#a00b3dbe30432a41df1ac81814f5eb458":[22,0,6,120],
-"namespacegraph.html#a01ad87b7901bcba474cb79d9e1cf70c3":[22,0,6,129],
-"namespacegraph.html#a02c07712b1ec6b32febd2f184143c5e1":[22,0,6,76]
+"namespacegraph.html#a00b3dbe30432a41df1ac81814f5eb458":[22,0,6,120]
 };

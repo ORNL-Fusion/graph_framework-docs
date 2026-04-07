@@ -1,5 +1,7 @@
 var NAVTREEINDEX11 =
 {
+"trigonometry_8hpp.html#a0f43bc5f7875dc5648d72d7e99a26d62":[25,0,3,21,3],
+"trigonometry_8hpp.html#a3dd940adc490d3141924b748f6e5f329":[25,0,3,21,5],
 "trigonometry_8hpp.html#a44565adda93d1d7c4832a5eb8aa946ad":[25,0,3,21,8],
 "trigonometry_8hpp.html#a646604571591639532973d70d84b0d35":[25,0,3,21,13],
 "trigonometry_8hpp.html#a6d3095e48c3f2d29aea8f69d506d171d":[25,0,3,21,6],

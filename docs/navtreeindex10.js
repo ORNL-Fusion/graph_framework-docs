@@ -1,5 +1,7 @@
 var NAVTREEINDEX10 =
 {
+"new_operations_tutorial.html#new_operations_tutorial_compile":[19,2,5],
+"new_operations_tutorial.html#new_operations_tutorial_compile_preamble":[19,2,4],
 "new_operations_tutorial.html#new_operations_tutorial_df":[19,2,3],
 "new_operations_tutorial.html#new_operations_tutorial_evaluate":[19,2,0],
 "new_operations_tutorial.html#new_operations_tutorial_get_power_base":[19,2,8],
@@ -247,7 +249,5 @@ var NAVTREEINDEX10 =
 "timing_8hpp.html":[25,0,3,20],
 "timing_8hpp_source.html":[25,0,3,20],
 "trigonometry_8hpp.html":[25,0,3,21],
-"trigonometry_8hpp.html#a02c80d52ad57a00e98cb07d771caf993":[25,0,3,21,14],
-"trigonometry_8hpp.html#a0f43bc5f7875dc5648d72d7e99a26d62":[25,0,3,21,3],
-"trigonometry_8hpp.html#a3dd940adc490d3141924b748f6e5f329":[25,0,3,21,5]
+"trigonometry_8hpp.html#a02c80d52ad57a00e98cb07d771caf993":[25,0,3,21,14]
 };

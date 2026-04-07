@@ -1,8 +1,10 @@
 var NAVTREEINDEX7 =
 {
+"conceptjit_1_1scalar.html":[23,2,2],
+"conceptjit_1_1scalar.html":[22,0,8,4],
 "concepts.html":[23],
-"conceptsolver_1_1method.html":[22,0,10,5],
 "conceptsolver_1_1method.html":[23,3,0],
+"conceptsolver_1_1method.html":[22,0,10,5],
 "cpu__context_8hpp.html":[25,0,3,4],
 "cpu__context_8hpp.html#a72813cdeb9c64abbd194c1c16e6b7ac7":[25,0,3,4,1],
 "cpu__context_8hpp.html#ae9d54340c76c9aad388a8371a67dbdd3":[25,0,3,4,2],
@@ -84,8 +86,8 @@ var NAVTREEINDEX7 =
 "fix__NaN_8py.html#a075f6ec44927caa48ecf8e110c4bd7fb":[25,0,7,1,2],
 "fix__NaN_8py.html#ab13f04c637461cfc638137e95fe42e1b":[25,0,7,1,1],
 "fix__NaN_8py.html#ac586a50674c295d93261b714b6082f6b":[25,0,7,1,0],
-"functions.html":[24,3,0],
 "functions.html":[24,3,0,0],
+"functions.html":[24,3,0],
 "functions_b.html":[24,3,0,1],
 "functions_c.html":[24,3,0,2],
 "functions_d.html":[24,3,0,3],
@@ -247,7 +249,5 @@ var NAVTREEINDEX7 =
 "graph__c__binding_8h.html#af7ea070bd985b7fa0f8ff2694df73474":[25,0,0,1,44],
 "graph__c__binding_8h.html#afc054fa33cfc86bb3332501b15d4210c":[25,0,0,1,31],
 "graph__c__binding_8h_source.html":[25,0,0,1],
-"graph__fortran__binding_8f90.html":[25,0,2,0],
-"graph__fortran__binding_8f90.html#a0128477869c20df276bc653d4fe59203":[25,0,2,0,82],
-"graph__fortran__binding_8f90.html#a04203667ca9f90424f7d782672d08ae4":[25,0,2,0,86]
+"graph__fortran__binding_8f90.html":[25,0,2,0]
 };

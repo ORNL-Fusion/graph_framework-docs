@@ -25,5 +25,6 @@ var classdispersion_1_1dispersion__interface =
     [ "dsdt", "classdispersion_1_1dispersion__interface.html#ab041785ddcae50cc41e3ac84e17427a5", null ],
     [ "dxdt", "classdispersion_1_1dispersion__interface.html#a4eaa2a6cf2d7ca1f2b1c4692767f71c5", null ],
     [ "dydt", "classdispersion_1_1dispersion__interface.html#a556f3caabe149c364165b9f58c3bc0b7", null ],
-    [ "dzdt", "classdispersion_1_1dispersion__interface.html#a7a6a40175a53ed332381a31b1c0ae3bd", null ]
+    [ "dzdt", "classdispersion_1_1dispersion__interface.html#a7a6a40175a53ed332381a31b1c0ae3bd", null ],
+    [ "k_vec", "classdispersion_1_1dispersion__interface.html#a0491cee771e4a99743d6627cd6b9d5be", null ]
 ];
