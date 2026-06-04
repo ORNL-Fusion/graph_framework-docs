@@ -16,7 +16,7 @@ var register_8hpp =
     [ "get_type_string", "register_8hpp.html#ad6762d8f1a536f6a96b23994c3d73af3", null ],
     [ "max_base", "register_8hpp.html#a45503952693698f7bb0af2633d4c07c9", null ],
     [ "max_digits10", "register_8hpp.html#af3afe279550a377fcf61a53c8a7b0a6f", null ],
-    [ "smallest_int_type", "register_8hpp.html#a0007c62777fd314c7fc55e72c5c02483", null ],
+    [ "smallest_uint_type", "register_8hpp.html#a856b9bb9cf1d7cdd889911de16b8a6ff", null ],
     [ "to_string", "register_8hpp.html#aff060cfc1e5b5a499390c636dc80e147", null ],
     [ "type_to_string", "register_8hpp.html#a3d69cd6dbc877e0e4a1896300ba6576d", null ],
     [ "use_cuda", "register_8hpp.html#ae80a1549652734bee27e671735538106", null ],

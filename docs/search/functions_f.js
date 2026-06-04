@@ -15,7 +15,7 @@ var searchData=
   ['slab_12',['slab',['../classequilibrium_1_1slab.html#a716ebe6daabcca7feea70648708af406',1,'equilibrium::slab']]],
   ['slab_5fdensity_13',['slab_density',['../classequilibrium_1_1slab__density.html#aff53bcf75792d2f96e628d2c97aacee0',1,'equilibrium::slab_density']]],
   ['slab_5ffield_14',['slab_field',['../classequilibrium_1_1slab__field.html#a803af48ea422c51dec9bebf2b4e0ab6e',1,'equilibrium::slab_field']]],
-  ['smallest_5fint_5ftype_15',['smallest_int_type',['../namespacejit.html#a0007c62777fd314c7fc55e72c5c02483',1,'jit']]],
+  ['smallest_5fuint_5ftype_15',['smallest_uint_type',['../namespacejit.html#a856b9bb9cf1d7cdd889911de16b8a6ff',1,'jit']]],
   ['solve_16',['solve',['../classdispersion_1_1dispersion__interface.html#a9dd432331db9e929d1b51aa83020f3ce',1,'dispersion::dispersion_interface']]],
   ['solver_5finterface_17',['solver_interface',['../classsolver_1_1solver__interface.html#ae842d06ddcc3dd368cef3b0e3bb7a553',1,'solver::solver_interface']]],
   ['split_5fsimplextic_18',['split_simplextic',['../classsolver_1_1split__simplextic.html#ab59072980f4d9c83f0f4afaecbfa8ffe',1,'solver::split_simplextic']]],
