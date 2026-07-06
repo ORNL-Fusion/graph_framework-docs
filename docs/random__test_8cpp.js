@@ -4,5 +4,6 @@ var random__test_8cpp =
     [ "main", "random__test_8cpp.html#ac0f2228420376f4db7e1274f2b41667c", null ],
     [ "run_tests", "random__test_8cpp.html#a39a191e458e9f42440a52aea98969d94", null ],
     [ "test_dist", "random__test_8cpp.html#a05d9f4ce56bf0e15c0cded1f29996e03", null ],
-    [ "test_graph", "random__test_8cpp.html#acca9dad906e4f53e74dc5938ed78c415", null ]
+    [ "test_graph", "random__test_8cpp.html#acca9dad906e4f53e74dc5938ed78c415", null ],
+    [ "test_multi", "random__test_8cpp.html#aa56e0dcfea2048d17f9cdca5e51e7c41", null ]
 ];

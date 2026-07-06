@@ -98,6 +98,7 @@ $(document).ready(function(){initNavTree('classgraph_1_1random__node.html',''); 
 <div class="header">
   <div class="summary">
 <a href="#pub-methods">Public Member Functions</a> &#124;
+<a href="#pub-static-methods">Static Public Member Functions</a> &#124;
 <a href="classgraph_1_1random__node-members.html">List of all members</a>  </div>
   <div class="headertitle"><div class="title">graph::random_node&lt; T, SAFE_MATH &gt; Class Template Reference<span class="mlabels"><span class="mlabel">final</span></span></div></div>
 </div><!--header-->
@@ -220,6 +221,12 @@ Public Member Functions</h2></td></tr>
 <tr class="memitem:a0fcb10084c7623a732020e5807791ca0 inherit pub_methods_classgraph_1_1leaf__node" id="r_a0fcb10084c7623a732020e5807791ca0"><td class="memItemLeft" align="right" valign="top"><a class="el" href="namespacegraph.html#a2b36a8e136f4187b4de7e2e31a3e4168">virtual</a> <a class="el" href="namespacegraph.html#a2b36a8e136f4187b4de7e2e31a3e4168">void</a>&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="classgraph_1_1leaf__node.html#a0fcb10084c7623a732020e5807791ca0">endline</a> (std::ostringstream &amp;stream, <a class="el" href="namespacegraph.html#a2b36a8e136f4187b4de7e2e31a3e4168">const</a> <a class="el" href="namespacejit.html#a8f16308f3c321ac415daf451d0157a91">jit::register_usage</a> &amp;<a class="el" href="namespacegraph.html#a2b36a8e136f4187b4de7e2e31a3e4168">usage</a>) <a class="el" href="namespacegraph.html#a2b36a8e136f4187b4de7e2e31a3e4168">const</a> <a class="el" href="namespacegraph.html#a2b36a8e136f4187b4de7e2e31a3e4168">final</a></td></tr>
 <tr class="memdesc:a0fcb10084c7623a732020e5807791ca0 inherit pub_methods_classgraph_1_1leaf__node"><td class="mdescLeft">&#160;</td><td class="mdescRight">End a line in the kernel source.  <br /></td></tr>
 <tr class="separator:a0fcb10084c7623a732020e5807791ca0 inherit pub_methods_classgraph_1_1leaf__node"><td class="memSeparator" colspan="2">&#160;</td></tr>
+</table><table class="memberdecls">
+<tr class="heading"><td colspan="2"><h2 class="groupheader"><a id="pub-static-methods" name="pub-static-methods"></a>
+Static Public Member Functions</h2></td></tr>
+<tr class="memitem:a9358ad49cd858a0e0637e0850a652867" id="r_a9358ad49cd858a0e0637e0850a652867"><td class="memItemLeft" align="right" valign="top"><a class="el" href="namespacegraph.html#a2b36a8e136f4187b4de7e2e31a3e4168">static</a> <a class="el" href="namespacegraph.html#a2b36a8e136f4187b4de7e2e31a3e4168">void</a>&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="classgraph_1_1random__node.html#a9358ad49cd858a0e0637e0850a652867">compile_random</a> (std::ostringstream &amp;stream)</td></tr>
+<tr class="memdesc:a9358ad49cd858a0e0637e0850a652867"><td class="mdescLeft">&#160;</td><td class="mdescRight">Write the preamble for the random function.  <br /></td></tr>
+<tr class="separator:a9358ad49cd858a0e0637e0850a652867"><td class="memSeparator" colspan="2">&#160;</td></tr>
 </table><table class="memberdecls">
 <tr class="heading"><td colspan="2"><h2 class="groupheader"><a id="inherited" name="inherited"></a>
 Additional Inherited Members</h2></td></tr>
@@ -452,6 +459,42 @@ template&lt;<a class="el" href="conceptjit_1_1float__scalar.html">jit::float_sca
 
 </div>
 </div>
+<a id="a9358ad49cd858a0e0637e0850a652867" name="a9358ad49cd858a0e0637e0850a652867"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#a9358ad49cd858a0e0637e0850a652867">&#9670;&#160;</a></span>compile_random()</h2>
+
+<div class="memitem">
+<div class="memproto">
+<div class="memtemplate">
+template&lt;<a class="el" href="conceptjit_1_1float__scalar.html">jit::float_scalar</a> T, <a class="el" href="namespacegraph.html#a2b36a8e136f4187b4de7e2e31a3e4168">bool</a> SAFE_MATH = false&gt; </div>
+<table class="mlabels">
+  <tr>
+  <td class="mlabels-left">
+      <table class="memname">
+        <tr>
+          <td class="memname"><a class="el" href="namespacegraph.html#a2b36a8e136f4187b4de7e2e31a3e4168">static</a> <a class="el" href="namespacegraph.html#a2b36a8e136f4187b4de7e2e31a3e4168">void</a> <a class="el" href="classgraph_1_1random__node.html">graph::random_node</a>&lt; T, <a class="el" href="namespacegraph.html#a2b36a8e136f4187b4de7e2e31a3e4168">SAFE_MATH</a> &gt;::compile_random </td>
+          <td>(</td>
+          <td class="paramtype">std::ostringstream &amp;&#160;</td>
+          <td class="paramname"><em>stream</em></td><td>)</td>
+          <td></td>
+        </tr>
+      </table>
+  </td>
+  <td class="mlabels-right">
+<span class="mlabels"><span class="mlabel">inline</span><span class="mlabel">static</span></span>  </td>
+  </tr>
+</table>
+</div><div class="memdoc">
+
+<p>Write the preamble for the random function. </p>
+<dl class="params"><dt>Parameters</dt><dd>
+  <table class="params">
+    <tr><td class="paramdir">[in,out]</td><td class="paramname">stream</td><td>String buffer stream. </td></tr>
+  </table>
+  </dd>
+</dl>
+
+</div>
+</div>
 <a id="ada826d601d8a3be7b934b4f48cafe0ec" name="ada826d601d8a3be7b934b4f48cafe0ec"></a>
 <h2 class="memtitle"><span class="permalink"><a href="#ada826d601d8a3be7b934b4f48cafe0ec">&#9670;&#160;</a></span>df()</h2>
 
@@ -613,7 +656,7 @@ template&lt;<a class="el" href="conceptjit_1_1float__scalar.html">jit::float_sca
 </div><div class="memdoc">
 
 <p>Query if the nodes match. </p>
-<p>Arithmetic and math operations on random number umber distributions have the effect of changing the distribution. For instance rand1 + rand2 will to a pyramid shaped distribution function. Assume random numbers never match as a consequence.</p>
+<p>Arithmetic and math operations on random number umber distributions have the effect of changing the distribution. For instance rand1 + rand2 will change to a pyramid shaped distribution function. Assume random numbers never match as a consequence.</p>
 <dl class="params"><dt>Parameters</dt><dd>
   <table class="params">
     <tr><td class="paramdir">[in]</td><td class="paramname">x</td><td>Other graph to check if it is a match. </td></tr>

@@ -270,7 +270,7 @@ var NAVTREEINDEX =
 "graph__fortran__binding_8f90.html#a0128477869c20df276bc653d4fe59203",
 "namespacegraph.html#a01ad87b7901bcba474cb79d9e1cf70c3",
 "new_operations_tutorial.html#new_operations_tutorial_compile",
-"trigonometry_8hpp.html#a0f43bc5f7875dc5648d72d7e99a26d62"
+"trigonometry_8hpp.html#a02c80d52ad57a00e98cb07d771caf993"
 ];
 
 var SYNCONMSG = 'click to disable panel synchronisation';
