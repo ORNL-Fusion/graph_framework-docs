@@ -133,6 +133,9 @@ Public Member Functions</h2></td></tr>
 <tr class="memitem:a710469de512ce9463aa3878c10f6c5b6" id="r_a710469de512ce9463aa3878c10f6c5b6"><td class="memItemLeft" align="right" valign="top"><a class="el" href="namespacegraph.html#a2b36a8e136f4187b4de7e2e31a3e4168">virtual</a> <a class="el" href="namespacegraph.html#ac8853b055dcbbfd35dff9b4584d5ef36">shared_leaf</a>&lt; T, <a class="el" href="namespacegraph.html#a2b36a8e136f4187b4de7e2e31a3e4168">SAFE_MATH</a> &gt;&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="classgraph_1_1index__2D__node.html#a710469de512ce9463aa3878c10f6c5b6">compile</a> (std::ostringstream &amp;stream, <a class="el" href="namespacejit.html#a9822ffd072bb1abcde9176028aa24a5e">jit::register_map</a> &amp;registers, <a class="el" href="namespacejit.html#a9822ffd072bb1abcde9176028aa24a5e">jit::register_map</a> &amp;<a class="el" href="namespacegraph.html#a2b36a8e136f4187b4de7e2e31a3e4168">indices</a>, <a class="el" href="namespacegraph.html#a2b36a8e136f4187b4de7e2e31a3e4168">const</a> <a class="el" href="namespacejit.html#a8f16308f3c321ac415daf451d0157a91">jit::register_usage</a> &amp;<a class="el" href="namespacegraph.html#a2b36a8e136f4187b4de7e2e31a3e4168">usage</a>)</td></tr>
 <tr class="memdesc:a710469de512ce9463aa3878c10f6c5b6"><td class="mdescLeft">&#160;</td><td class="mdescRight">the node.  <br /></td></tr>
 <tr class="separator:a710469de512ce9463aa3878c10f6c5b6"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:a428a45a5b58588083ebd964b2fc4ff80" id="r_a428a45a5b58588083ebd964b2fc4ff80"><td class="memItemLeft" align="right" valign="top"><a class="el" href="namespacegraph.html#a2b36a8e136f4187b4de7e2e31a3e4168">virtual</a> <a class="el" href="namespacegraph.html#a2b36a8e136f4187b4de7e2e31a3e4168">bool</a>&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="classgraph_1_1index__2D__node.html#a428a45a5b58588083ebd964b2fc4ff80">is_match</a> (<a class="el" href="namespacegraph.html#ac8853b055dcbbfd35dff9b4584d5ef36">shared_leaf</a>&lt; T, <a class="el" href="namespacegraph.html#a2b36a8e136f4187b4de7e2e31a3e4168">SAFE_MATH</a> &gt; x)</td></tr>
+<tr class="memdesc:a428a45a5b58588083ebd964b2fc4ff80"><td class="mdescLeft">&#160;</td><td class="mdescRight">Query if the nodes match.  <br /></td></tr>
+<tr class="separator:a428a45a5b58588083ebd964b2fc4ff80"><td class="memSeparator" colspan="2">&#160;</td></tr>
 <tr class="memitem:a5b003862a56a20cc79e2287564db2896" id="r_a5b003862a56a20cc79e2287564db2896"><td class="memItemLeft" align="right" valign="top"><a class="el" href="namespacegraph.html#a2b36a8e136f4187b4de7e2e31a3e4168">virtual</a> <a class="el" href="namespacegraph.html#a2b36a8e136f4187b4de7e2e31a3e4168">void</a>&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="classgraph_1_1index__2D__node.html#a5b003862a56a20cc79e2287564db2896">to_latex</a> () <a class="el" href="namespacegraph.html#a2b36a8e136f4187b4de7e2e31a3e4168">const</a></td></tr>
 <tr class="memdesc:a5b003862a56a20cc79e2287564db2896"><td class="mdescLeft">&#160;</td><td class="mdescRight">Convert the node to latex.  <br /></td></tr>
 <tr class="separator:a5b003862a56a20cc79e2287564db2896"><td class="memSeparator" colspan="2">&#160;</td></tr>
@@ -816,6 +819,44 @@ template&lt;<a class="el" href="conceptjit_1_1float__scalar.html">jit::float_sca
 <dl class="section return"><dt>Returns</dt><dd>True if the node is a constant. </dd></dl>
 
 <p>Reimplemented from <a class="el" href="classgraph_1_1leaf__node.html#a71b4e927ba07c0b4f539f3aba5694ec4">graph::leaf_node&lt; T, SAFE_MATH &gt;</a>.</p>
+
+</div>
+</div>
+<a id="a428a45a5b58588083ebd964b2fc4ff80" name="a428a45a5b58588083ebd964b2fc4ff80"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#a428a45a5b58588083ebd964b2fc4ff80">&#9670;&#160;</a></span>is_match()</h2>
+
+<div class="memitem">
+<div class="memproto">
+<div class="memtemplate">
+template&lt;<a class="el" href="conceptjit_1_1float__scalar.html">jit::float_scalar</a> T, <a class="el" href="namespacegraph.html#a2b36a8e136f4187b4de7e2e31a3e4168">bool</a> SAFE_MATH = false&gt; </div>
+<table class="mlabels">
+  <tr>
+  <td class="mlabels-left">
+      <table class="memname">
+        <tr>
+          <td class="memname"><a class="el" href="namespacegraph.html#a2b36a8e136f4187b4de7e2e31a3e4168">virtual</a> <a class="el" href="namespacegraph.html#a2b36a8e136f4187b4de7e2e31a3e4168">bool</a> <a class="el" href="classgraph_1_1index__2D__node.html">graph::index_2D_node</a>&lt; T, <a class="el" href="namespacegraph.html#a2b36a8e136f4187b4de7e2e31a3e4168">SAFE_MATH</a> &gt;::is_match </td>
+          <td>(</td>
+          <td class="paramtype"><a class="el" href="namespacegraph.html#ac8853b055dcbbfd35dff9b4584d5ef36">shared_leaf</a>&lt; T, <a class="el" href="namespacegraph.html#a2b36a8e136f4187b4de7e2e31a3e4168">SAFE_MATH</a> &gt;&#160;</td>
+          <td class="paramname"><em>x</em></td><td>)</td>
+          <td></td>
+        </tr>
+      </table>
+  </td>
+  <td class="mlabels-right">
+<span class="mlabels"><span class="mlabel">inline</span><span class="mlabel">virtual</span></span>  </td>
+  </tr>
+</table>
+</div><div class="memdoc">
+
+<p>Query if the nodes match. </p>
+<p>Assumes both arguments are either set or not set.</p>
+<dl class="params"><dt>Parameters</dt><dd>
+  <table class="params">
+    <tr><td class="paramdir">[in]</td><td class="paramname">x</td><td>Other graph to check if it is a match. </td></tr>
+  </table>
+  </dd>
+</dl>
+<dl class="section return"><dt>Returns</dt><dd>True if the nodes are a match. </dd></dl>
 
 </div>
 </div>

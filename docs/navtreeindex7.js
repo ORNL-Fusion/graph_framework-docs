@@ -1,5 +1,9 @@
 var NAVTREEINDEX7 =
 {
+"conceptjit_1_1float__base.html":[22,0,8,5],
+"conceptjit_1_1float__base.html":[23,2,3],
+"conceptjit_1_1float__scalar.html":[23,2,1],
+"conceptjit_1_1float__scalar.html":[22,0,8,3],
 "conceptjit_1_1scalar.html":[22,0,8,4],
 "conceptjit_1_1scalar.html":[23,2,2],
 "concepts.html":[23],
@@ -245,9 +249,5 @@ var NAVTREEINDEX7 =
 "graph__c__binding_8h.html#acc7562479385b14d7073c95b1cb03992":[25,0,0,1,3],
 "graph__c__binding_8h.html#ad6018056303af30eb8e8c3166dbd9850":[25,0,0,1,35],
 "graph__c__binding_8h.html#ad8adc1545da096be4d3c3323b41f6d85":[25,0,0,1,2],
-"graph__c__binding_8h.html#ada667db9a37f62f99d3a88e3ede3a3ca":[25,0,0,1,29],
-"graph__c__binding_8h.html#af7ea070bd985b7fa0f8ff2694df73474":[25,0,0,1,44],
-"graph__c__binding_8h.html#afc054fa33cfc86bb3332501b15d4210c":[25,0,0,1,31],
-"graph__c__binding_8h_source.html":[25,0,0,1],
-"graph__fortran__binding_8f90.html":[25,0,2,0]
+"graph__c__binding_8h.html#ada667db9a37f62f99d3a88e3ede3a3ca":[25,0,0,1,29]
 };

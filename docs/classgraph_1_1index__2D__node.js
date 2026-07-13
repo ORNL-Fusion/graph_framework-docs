@@ -13,6 +13,7 @@ var classgraph_1_1index__2D__node =
     [ "is_all_variables", "classgraph_1_1index__2D__node.html#ad30b6c13cb6e830c50d6430a4d3eaccf", null ],
     [ "is_arg_match", "classgraph_1_1index__2D__node.html#a9a23ad8233123cdf1c7f6f40c767a122", null ],
     [ "is_constant", "classgraph_1_1index__2D__node.html#af8d1f1519b57c0c3dd47e75a6686cf1b", null ],
+    [ "is_match", "classgraph_1_1index__2D__node.html#a428a45a5b58588083ebd964b2fc4ff80", null ],
     [ "is_power_like", "classgraph_1_1index__2D__node.html#a39a959eac4e004dedd65362506b17eb5", null ],
     [ "to_latex", "classgraph_1_1index__2D__node.html#a5b003862a56a20cc79e2287564db2896", null ],
     [ "to_vizgraph", "classgraph_1_1index__2D__node.html#ac62ac7c736d545199a3707937a7fb9f3", null ]

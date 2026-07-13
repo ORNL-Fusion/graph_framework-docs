@@ -263,14 +263,14 @@ var NAVTREEINDEX =
 "classdispersion_1_1dispersion__interface.html#a2914b2d6fc11578f431e84ce04a66961",
 "classequilibrium_1_1vmec.html#a4970a52f2f57dc891bf947bdf0ec6b67",
 "classgraph_1_1divide__node.html#a3e2b429f204c85414b30f483e8debc47",
-"classgraph_1_1multiply__node.html#a76633aa7a8d77636b5c0d72d8c44235c",
-"classgraph_1_1straight__node.html#a26a730eb860c594c01d9eb2e2c011de2",
-"classsolver_1_1rk4.html#a7ba6337556fd41498879910583c5ddc7",
-"conceptjit_1_1scalar.html",
-"graph__fortran__binding_8f90.html#a0128477869c20df276bc653d4fe59203",
-"namespacegraph.html#a01ad87b7901bcba474cb79d9e1cf70c3",
-"new_operations_tutorial.html#new_operations_tutorial_compile",
-"trigonometry_8hpp.html#a02c80d52ad57a00e98cb07d771caf993"
+"classgraph_1_1multiply__node.html#a434963d065c6bf35b9ca2b7962d42786",
+"classgraph_1_1straight__node.html#a1cb6954066754e1b240e225a41e2b615",
+"classsolver_1_1rk4.html#a6802b3aa027892301faf587cb23a1a0e",
+"conceptjit_1_1float__base.html",
+"graph__c__binding_8h.html#af7ea070bd985b7fa0f8ff2694df73474",
+"namespacegpu.html",
+"namespacespecial.html#af6b90fefc8e8399e5b98b5e09e992820",
+"structgraph__fortran_1_1graph__context.html#aff4597e81bef5d942878aae442274e78"
 ];
 
 var SYNCONMSG = 'click to disable panel synchronisation';
