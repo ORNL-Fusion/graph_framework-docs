@@ -89,7 +89,7 @@ var graph__fortran__binding_8f90 =
     [ "graph_context_print", "graph__fortran__binding_8f90.html#a04203667ca9f90424f7d782672d08ae4", null ],
     [ "graph_context_pseudo_variable", "graph__fortran__binding_8f90.html#a057379e9087dcf8c289e8280e396abed", null ],
     [ "graph_context_random", "graph__fortran__binding_8f90.html#afa86738416369248f8fab1f825a4e60f", null ],
-    [ "graph_context_random_state", "graph__fortran__binding_8f90.html#a0e2d24c599b1f0ac1d37e11a18a4e66c", null ],
+    [ "graph_context_random_state", "graph__fortran__binding_8f90.html#ab41b12fb1935da86d6be83b28aec5c47", null ],
     [ "graph_context_remove_pseudo", "graph__fortran__binding_8f90.html#ae6bb7cdd3d86b01f074c5c6b2984b67b", null ],
     [ "graph_context_run", "graph__fortran__binding_8f90.html#a6eb0dfacf623db7120f49e843fe23dc7", null ],
     [ "graph_context_set_device_number", "graph__fortran__binding_8f90.html#a8e6be7b57e86ba3a6afaa5bea910cfc8", null ],

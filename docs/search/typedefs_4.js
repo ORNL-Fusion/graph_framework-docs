@@ -1,4 +1,4 @@
 var searchData=
 [
-  ['input_5fnodes_0',['input_nodes',['../namespacegraph.html#a7f4f9ab246d37d23e0259709e626bc36',1,'graph']]]
+  ['graph_5fnode_0',['graph_node',['../graph__c__binding_8h.html#a8e6fcd751f4c2482c8db8507457de11d',1,'graph_c_binding.h']]]
 ];

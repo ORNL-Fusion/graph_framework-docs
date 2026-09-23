@@ -89,7 +89,7 @@ var namespacegraph__fortran =
     [ "graph_context_print", "namespacegraph__fortran.html#a04203667ca9f90424f7d782672d08ae4", null ],
     [ "graph_context_pseudo_variable", "namespacegraph__fortran.html#a057379e9087dcf8c289e8280e396abed", null ],
     [ "graph_context_random", "namespacegraph__fortran.html#afa86738416369248f8fab1f825a4e60f", null ],
-    [ "graph_context_random_state", "namespacegraph__fortran.html#a0e2d24c599b1f0ac1d37e11a18a4e66c", null ],
+    [ "graph_context_random_state", "namespacegraph__fortran.html#ab41b12fb1935da86d6be83b28aec5c47", null ],
     [ "graph_context_remove_pseudo", "namespacegraph__fortran.html#ae6bb7cdd3d86b01f074c5c6b2984b67b", null ],
     [ "graph_context_run", "namespacegraph__fortran.html#a6eb0dfacf623db7120f49e843fe23dc7", null ],
     [ "graph_context_set_device_number", "namespacegraph__fortran.html#a8e6be7b57e86ba3a6afaa5bea910cfc8", null ],

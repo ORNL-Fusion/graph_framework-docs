@@ -98,7 +98,8 @@ $(document).ready(function(){initNavTree('workflow_8hpp.html',''); initResizable
 <div class="header">
   <div class="summary">
 <a href="#nested-classes">Classes</a> &#124;
-<a href="#namespaces">Namespaces</a>  </div>
+<a href="#namespaces">Namespaces</a> &#124;
+<a href="#enum-members">Enumerations</a>  </div>
   <div class="headertitle"><div class="title">workflow.hpp File Reference</div></div>
 </div><!--header-->
 <div class="contents">
@@ -111,6 +112,18 @@ $(document).ready(function(){initNavTree('workflow_8hpp.html',''); initResizable
 <table class="memberdecls">
 <tr class="heading"><td colspan="2"><h2 class="groupheader"><a id="nested-classes" name="nested-classes"></a>
 Classes</h2></td></tr>
+<tr class="memitem:"><td class="memItemLeft" align="right" valign="top">class &#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="classworkflow_1_1item.html">workflow::item&lt; T, SAFE_MATH &gt;</a></td></tr>
+<tr class="memdesc:"><td class="mdescLeft">&#160;</td><td class="mdescRight">Interface class representing items.  <a href="classworkflow_1_1item.html#details">More...</a><br /></td></tr>
+<tr class="separator:"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:"><td class="memItemLeft" align="right" valign="top">class &#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="classworkflow_1_1callback__item.html">workflow::callback_item&lt; T, SAFE_MATH &gt;</a></td></tr>
+<tr class="memdesc:"><td class="mdescLeft">&#160;</td><td class="mdescRight">Callback item.  <a href="classworkflow_1_1callback__item.html#details">More...</a><br /></td></tr>
+<tr class="separator:"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:"><td class="memItemLeft" align="right" valign="top">class &#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="classworkflow_1_1zero__item.html">workflow::zero_item&lt; T, SAFE_MATH &gt;</a></td></tr>
+<tr class="memdesc:"><td class="mdescLeft">&#160;</td><td class="mdescRight">Clear buffer item.  <a href="classworkflow_1_1zero__item.html#details">More...</a><br /></td></tr>
+<tr class="separator:"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:"><td class="memItemLeft" align="right" valign="top">class &#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="classworkflow_1_1copy__item.html">workflow::copy_item&lt; T, SAFE_MATH &gt;</a></td></tr>
+<tr class="memdesc:"><td class="mdescLeft">&#160;</td><td class="mdescRight">Copy one buffer item to another.  <a href="classworkflow_1_1copy__item.html#details">More...</a><br /></td></tr>
+<tr class="separator:"><td class="memSeparator" colspan="2">&#160;</td></tr>
 <tr class="memitem:"><td class="memItemLeft" align="right" valign="top">class &#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="classworkflow_1_1work__item.html">workflow::work_item&lt; T, SAFE_MATH &gt;</a></td></tr>
 <tr class="memdesc:"><td class="mdescLeft">&#160;</td><td class="mdescRight">Class representing a work item.  <a href="classworkflow_1_1work__item.html#details">More...</a><br /></td></tr>
 <tr class="separator:"><td class="memSeparator" colspan="2">&#160;</td></tr>
@@ -129,6 +142,15 @@ Namespaces</h2></td></tr>
 <tr class="memitem:namespaceworkflow" id="r_namespaceworkflow"><td class="memItemLeft" align="right" valign="top">namespace &#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="namespaceworkflow.html">workflow</a></td></tr>
 <tr class="memdesc:namespaceworkflow"><td class="mdescLeft">&#160;</td><td class="mdescRight">Name space for workflows. <br /></td></tr>
 <tr class="separator:"><td class="memSeparator" colspan="2">&#160;</td></tr>
+</table><table class="memberdecls">
+<tr class="heading"><td colspan="2"><h2 class="groupheader"><a id="enum-members" name="enum-members"></a>
+Enumerations</h2></td></tr>
+<tr class="memitem:aeae3837f80149c59941e67fa32704b22" id="r_aeae3837f80149c59941e67fa32704b22"><td class="memItemLeft" align="right" valign="top">enum &#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="namespaceworkflow.html#aeae3837f80149c59941e67fa32704b22">workflow::order</a> { <a class="el" href="namespaceworkflow.html#aeae3837f80149c59941e67fa32704b22a13d76fdec6722e377d25118819f9d518">workflow::pre_run_item</a>
+, <a class="el" href="namespaceworkflow.html#aeae3837f80149c59941e67fa32704b22ab06fa522dc55a3d5a321276a4375b470">workflow::run_item</a>
+, <a class="el" href="namespaceworkflow.html#aeae3837f80149c59941e67fa32704b22a63bdf31f6aae5bd7c3518730613e2452">workflow::post_run_item</a>
+ }</td></tr>
+<tr class="memdesc:aeae3837f80149c59941e67fa32704b22"><td class="mdescLeft">&#160;</td><td class="mdescRight">Items order.  <a href="namespaceworkflow.html#aeae3837f80149c59941e67fa32704b22">More...</a><br /></td></tr>
+<tr class="separator:aeae3837f80149c59941e67fa32704b22"><td class="memSeparator" colspan="2">&#160;</td></tr>
 </table>
 <a name="details" id="details"></a><h2 class="groupheader">Detailed Description</h2>
 <div class="textblock"><p>Classes to manage workflows,. </p>

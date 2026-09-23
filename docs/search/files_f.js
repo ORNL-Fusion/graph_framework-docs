@@ -1,5 +1,6 @@
 var searchData=
 [
-  ['vector_2ehpp_0',['vector.hpp',['../vector_8hpp.html',1,'']]],
-  ['vector_5ftest_2ecpp_1',['vector_test.cpp',['../vector__test_8cpp.html',1,'']]]
+  ['timing_2ehpp_0',['timing.hpp',['../timing_8hpp.html',1,'']]],
+  ['trigonometry_2ehpp_1',['trigonometry.hpp',['../trigonometry_8hpp.html',1,'']]],
+  ['trigonometry_5ftest_2ecpp_2',['trigonometry_test.cpp',['../trigonometry__test_8cpp.html',1,'']]]
 ];

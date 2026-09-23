@@ -1,10 +1,9 @@
 var searchData=
 [
-  ['z_0',['z',['../classsolver_1_1solver__interface.html#a87d0f0b95be0f073599cd0c6ea0f344c',1,'solver::solver_interface::z'],['../classgraph_1_1vector__quantity.html#ab8654032594f5e8da6fca1fcd6500a65',1,'graph::vector_quantity::z']]],
-  ['z1_1',['z1',['../classsolver_1_1rk2.html#a828ea87edf49979c87591754f1e1e1e8',1,'solver::rk2::z1'],['../classsolver_1_1rk4.html#a7c26a17376c223c24d28682f3dd83271',1,'solver::rk4::z1'],['../classsolver_1_1split__simplextic.html#add8ab9ca3c33f16e75101c3fe769ee5c',1,'solver::split_simplextic::z1']]],
-  ['z2_2',['z2',['../classsolver_1_1rk2.html#a96911114d6f64b2997ae82d18e283023',1,'solver::rk2::z2'],['../classsolver_1_1rk4.html#a1da3d9d408ea0a7163085d4498c0ea68',1,'solver::rk4::z2']]],
-  ['z3_3',['z3',['../classsolver_1_1rk4.html#ae7eefad64ed7b517190eb487d8337ccf',1,'solver::rk4']]],
-  ['z4_4',['z4',['../classsolver_1_1rk4.html#ab6698b0f79a459925812bc3c8617c53d',1,'solver::rk4']]],
-  ['z_5fgrid_5',['z_grid',['../classgold__data.html#ae0308edd29118e47c1479c6461954b08',1,'gold_data']]],
-  ['z_5fnext_6',['z_next',['../classsolver_1_1solver__interface.html#acb113f2f2eb71a4d7a9525e15fdaa7b6',1,'solver::solver_interface']]]
+  ['y_0',['y',['../classpic_1_1mesh.html#ab95cdb965621bc81ed56e8f0fc9cec2a',1,'pic::mesh::y'],['../classsolver_1_1solver__interface.html#acb689cfc34ec8d188c92e6e2c156a1af',1,'solver::solver_interface::y'],['../classgraph_1_1vector__quantity.html#a05a6a57a879e716568f0feb3093b792f',1,'graph::vector_quantity::y']]],
+  ['y1_1',['y1',['../classsolver_1_1rk2.html#a51a17cd0ed2a19ec7bc8a5987005bc43',1,'solver::rk2::y1'],['../classsolver_1_1rk4.html#ad463a1064e031c67e9ee9160927a43ca',1,'solver::rk4::y1'],['../classsolver_1_1split__simplextic.html#a0eb3aea9b30ef9f77570092b6eee1a93',1,'solver::split_simplextic::y1']]],
+  ['y2_2',['y2',['../classsolver_1_1rk2.html#a13789f52cc4ed87dbbf76fc75c4db66a',1,'solver::rk2::y2'],['../classsolver_1_1rk4.html#a888f6c6c0770e66c1a4bf8895be84621',1,'solver::rk4::y2']]],
+  ['y3_3',['y3',['../classsolver_1_1rk4.html#a7ba6337556fd41498879910583c5ddc7',1,'solver::rk4']]],
+  ['y4_4',['y4',['../classsolver_1_1rk4.html#a5b479161b547a639820c5c20c8b57004',1,'solver::rk4']]],
+  ['y_5fnext_5',['y_next',['../classsolver_1_1solver__interface.html#ae328ff2e48a0e19efc5824a3065ef25f',1,'solver::solver_interface']]]
 ];

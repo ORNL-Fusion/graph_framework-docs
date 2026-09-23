@@ -5,6 +5,7 @@ var arithmetic__test_8cpp =
     [ "test_add", "arithmetic__test_8cpp.html#a8195c3d8f2e62965e54df8ca687f1ef3", null ],
     [ "test_divide", "arithmetic__test_8cpp.html#a0b39ea08f412ec189aca74c8dd597bae", null ],
     [ "test_fma", "arithmetic__test_8cpp.html#ada034b9d747cdf0268c5a7f0ba5242da", null ],
+    [ "test_modulo", "arithmetic__test_8cpp.html#a7cdc5edc69d50a759783492b24ff0e92", null ],
     [ "test_multiply", "arithmetic__test_8cpp.html#a5d68c5de8a95e479f352e81fb1fca18a", null ],
     [ "test_subtract", "arithmetic__test_8cpp.html#a6a83f2ae2579f6b54b820a5ff01892df", null ]
 ];

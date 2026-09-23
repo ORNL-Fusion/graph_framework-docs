@@ -1,10 +1,6 @@
 var searchData=
 [
-  ['_7ecuda_5fcontext_0',['~cuda_context',['../classgpu_1_1cuda__context.html#a0f2e49a1501f0f797881727f755ffdab',1,'gpu::cuda_context']]],
-  ['_7egeneric_1',['~generic',['../classequilibrium_1_1generic.html#a648df3517d7c42714858b0991fb7bf82',1,'equilibrium::generic']]],
-  ['_7eleaf_5fnode_2',['~leaf_node',['../classgraph_1_1leaf__node.html#a0db803e2d6326bee4ec4d9ba8834598d',1,'graph::leaf_node']]],
-  ['_7eresult_5ffile_3',['~result_file',['../classoutput_1_1result__file.html#a32d6dd76a9a2f9ee1da2a01d32b495a0',1,'output::result_file']]],
-  ['_7eroot_5ffinder_4',['~root_finder',['../classabsorption_1_1root__finder.html#af595a1e6f021c39aa5ab25e18e428a7c',1,'absorption::root_finder']]],
-  ['_7esolver_5finterface_5',['~solver_interface',['../classsolver_1_1solver__interface.html#af21faed7e727acf2f50f07052bbdeff7',1,'solver::solver_interface']]],
-  ['_7eweak_5fdamping_6',['~weak_damping',['../classabsorption_1_1weak__damping.html#a8ed8ed92aaa9c04023a40510082e5ad5',1,'absorption::weak_damping']]]
+  ['z_0',['z',['../classdispersion_1_1z__function.html#a684807f35dca3909be52b87801c26e59',1,'dispersion::z_function::Z()'],['../classdispersion_1_1z__power__series.html#a78bac2637c9b9e255cef6a3ef40d11c7',1,'dispersion::z_power_series::Z()'],['../classdispersion_1_1z__erfi.html#a8138dd1c0e758a1bf11f2b25edb5a7ed',1,'dispersion::z_erfi::Z()']]],
+  ['zero_1',['zero',['../namespacegraph.html#a2b36a8e136f4187b4de7e2e31a3e4168',1,'graph']]],
+  ['zero_5fitem_2',['zero_item',['../classworkflow_1_1zero__item.html#af4cd95a07b447e355e5514b381d30b50',1,'workflow::zero_item']]]
 ];

@@ -1,6 +1,6 @@
 var searchData=
 [
-  ['timing_2ehpp_0',['timing.hpp',['../timing_8hpp.html',1,'']]],
-  ['trigonometry_2ehpp_1',['trigonometry.hpp',['../trigonometry_8hpp.html',1,'']]],
-  ['trigonometry_5ftest_2ecpp_2',['trigonometry_test.cpp',['../trigonometry__test_8cpp.html',1,'']]]
+  ['solver_2ehpp_0',['solver.hpp',['../solver_8hpp.html',1,'']]],
+  ['solver_5ftest_2ecpp_1',['solver_test.cpp',['../solver__test_8cpp.html',1,'']]],
+  ['special_5ffunctions_2ehpp_2',['special_functions.hpp',['../special__functions_8hpp.html',1,'']]]
 ];

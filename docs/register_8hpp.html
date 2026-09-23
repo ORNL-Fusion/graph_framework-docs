@@ -110,8 +110,8 @@ $(document).ready(function(){initNavTree('register_8hpp.html',''); initResizable
 <a href="#details">More...</a></p>
 <div class="textblock"><code>#include &lt;concepts&gt;</code><br />
 <code>#include &lt;cassert&gt;</code><br />
-<code>#include &lt;map&gt;</code><br />
-<code>#include &lt;set&gt;</code><br />
+<code>#include &lt;unordered_map&gt;</code><br />
+<code>#include &lt;unordered_set&gt;</code><br />
 <code>#include &lt;sstream&gt;</code><br />
 <code>#include &lt;complex&gt;</code><br />
 <code>#include &lt;type_traits&gt;</code><br />
@@ -154,26 +154,34 @@ Concepts</h2></td></tr>
 </table><table class="memberdecls">
 <tr class="heading"><td colspan="2"><h2 class="groupheader"><a id="typedef-members" name="typedef-members"></a>
 Typedefs</h2></td></tr>
-<tr class="memitem:a9822ffd072bb1abcde9176028aa24a5e" id="r_a9822ffd072bb1abcde9176028aa24a5e"><td class="memItemLeft" align="right" valign="top"><a id="a9822ffd072bb1abcde9176028aa24a5e" name="a9822ffd072bb1abcde9176028aa24a5e"></a>
-typedef std::map&lt; void *, std::string &gt;&#160;</td><td class="memItemRight" valign="bottom"><b>jit::register_map</b></td></tr>
-<tr class="memdesc:a9822ffd072bb1abcde9176028aa24a5e"><td class="mdescLeft">&#160;</td><td class="mdescRight">Type alias for mapping node pointers to register names. <br /></td></tr>
-<tr class="separator:a9822ffd072bb1abcde9176028aa24a5e"><td class="memSeparator" colspan="2">&#160;</td></tr>
-<tr class="memitem:a8f16308f3c321ac415daf451d0157a91" id="r_a8f16308f3c321ac415daf451d0157a91"><td class="memItemLeft" align="right" valign="top"><a id="a8f16308f3c321ac415daf451d0157a91" name="a8f16308f3c321ac415daf451d0157a91"></a>
-typedef std::map&lt; void *, size_t &gt;&#160;</td><td class="memItemRight" valign="bottom"><b>jit::register_usage</b></td></tr>
-<tr class="memdesc:a8f16308f3c321ac415daf451d0157a91"><td class="mdescLeft">&#160;</td><td class="mdescRight">Type alias for counting register usage. <br /></td></tr>
-<tr class="separator:a8f16308f3c321ac415daf451d0157a91"><td class="memSeparator" colspan="2">&#160;</td></tr>
-<tr class="memitem:aed5672337b45a8b11f1351456d2284b8" id="r_aed5672337b45a8b11f1351456d2284b8"><td class="memItemLeft" align="right" valign="top"><a id="aed5672337b45a8b11f1351456d2284b8" name="aed5672337b45a8b11f1351456d2284b8"></a>
-typedef std::set&lt; void * &gt;&#160;</td><td class="memItemRight" valign="bottom"><b>jit::visiter_map</b></td></tr>
-<tr class="memdesc:aed5672337b45a8b11f1351456d2284b8"><td class="mdescLeft">&#160;</td><td class="mdescRight">Type alias for listing visited nodes. <br /></td></tr>
-<tr class="separator:aed5672337b45a8b11f1351456d2284b8"><td class="memSeparator" colspan="2">&#160;</td></tr>
-<tr class="memitem:a040839202e492715169f0e33e63c1e2a" id="r_a040839202e492715169f0e33e63c1e2a"><td class="memItemLeft" align="right" valign="top"><a id="a040839202e492715169f0e33e63c1e2a" name="a040839202e492715169f0e33e63c1e2a"></a>
-typedef std::map&lt; void *, size_t &gt;&#160;</td><td class="memItemRight" valign="bottom"><b>jit::texture1d_list</b></td></tr>
-<tr class="memdesc:a040839202e492715169f0e33e63c1e2a"><td class="mdescLeft">&#160;</td><td class="mdescRight">Type alias for indexing 1D textures. <br /></td></tr>
-<tr class="separator:a040839202e492715169f0e33e63c1e2a"><td class="memSeparator" colspan="2">&#160;</td></tr>
-<tr class="memitem:a7e7f6b3f955215cb43f9fde4d066ea2a" id="r_a7e7f6b3f955215cb43f9fde4d066ea2a"><td class="memItemLeft" align="right" valign="top"><a id="a7e7f6b3f955215cb43f9fde4d066ea2a" name="a7e7f6b3f955215cb43f9fde4d066ea2a"></a>
-typedef std::map&lt; void *, std::array&lt; size_t, 2 &gt; &gt;&#160;</td><td class="memItemRight" valign="bottom"><b>jit::texture2d_list</b></td></tr>
-<tr class="memdesc:a7e7f6b3f955215cb43f9fde4d066ea2a"><td class="mdescLeft">&#160;</td><td class="mdescRight">Type alias for indexing 2D textures. <br /></td></tr>
-<tr class="separator:a7e7f6b3f955215cb43f9fde4d066ea2a"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:aaaa81016eb9cb161306980a63db3e720" id="r_aaaa81016eb9cb161306980a63db3e720"><td class="memItemLeft" align="right" valign="top"><a id="aaaa81016eb9cb161306980a63db3e720" name="aaaa81016eb9cb161306980a63db3e720"></a>
+typedef std::unordered_map&lt; void *, std::string &gt;&#160;</td><td class="memItemRight" valign="bottom"><b>jit::register_map</b></td></tr>
+<tr class="memdesc:aaaa81016eb9cb161306980a63db3e720"><td class="mdescLeft">&#160;</td><td class="mdescRight">Type alias for mapping node pointers to register names. <br /></td></tr>
+<tr class="separator:aaaa81016eb9cb161306980a63db3e720"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:a6b1e88895ada14e42dfad16181ceb266" id="r_a6b1e88895ada14e42dfad16181ceb266"><td class="memItemLeft" align="right" valign="top"><a id="a6b1e88895ada14e42dfad16181ceb266" name="a6b1e88895ada14e42dfad16181ceb266"></a>
+typedef std::unordered_map&lt; void *, size_t &gt;&#160;</td><td class="memItemRight" valign="bottom"><b>jit::register_usage</b></td></tr>
+<tr class="memdesc:a6b1e88895ada14e42dfad16181ceb266"><td class="mdescLeft">&#160;</td><td class="mdescRight">Type alias for counting register usage. <br /></td></tr>
+<tr class="separator:a6b1e88895ada14e42dfad16181ceb266"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:a10fd02967defc21d99a010c9025e1d78" id="r_a10fd02967defc21d99a010c9025e1d78"><td class="memItemLeft" align="right" valign="top"><a id="a10fd02967defc21d99a010c9025e1d78" name="a10fd02967defc21d99a010c9025e1d78"></a>
+typedef std::unordered_set&lt; void * &gt;&#160;</td><td class="memItemRight" valign="bottom"><b>jit::visiter_map</b></td></tr>
+<tr class="memdesc:a10fd02967defc21d99a010c9025e1d78"><td class="mdescLeft">&#160;</td><td class="mdescRight">Type alias for listing visited nodes. <br /></td></tr>
+<tr class="separator:a10fd02967defc21d99a010c9025e1d78"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:afd70e42a171bf30ee3f18dbd440cef51" id="r_afd70e42a171bf30ee3f18dbd440cef51"><td class="memItemLeft" align="right" valign="top"><a id="afd70e42a171bf30ee3f18dbd440cef51" name="afd70e42a171bf30ee3f18dbd440cef51"></a>
+typedef std::unordered_map&lt; void *, size_t &gt;&#160;</td><td class="memItemRight" valign="bottom"><b>jit::texture1d_list</b></td></tr>
+<tr class="memdesc:afd70e42a171bf30ee3f18dbd440cef51"><td class="mdescLeft">&#160;</td><td class="mdescRight">Type alias for indexing 1D textures. <br /></td></tr>
+<tr class="separator:afd70e42a171bf30ee3f18dbd440cef51"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:afc6a80494e39f0058a6121ba0949b9eb" id="r_afc6a80494e39f0058a6121ba0949b9eb"><td class="memItemLeft" align="right" valign="top"><a id="afc6a80494e39f0058a6121ba0949b9eb" name="afc6a80494e39f0058a6121ba0949b9eb"></a>
+typedef std::unordered_map&lt; void *, std::array&lt; size_t, 2 &gt; &gt;&#160;</td><td class="memItemRight" valign="bottom"><b>jit::texture2d_list</b></td></tr>
+<tr class="memdesc:afc6a80494e39f0058a6121ba0949b9eb"><td class="mdescLeft">&#160;</td><td class="mdescRight">Type alias for indexing 2D textures. <br /></td></tr>
+<tr class="separator:afc6a80494e39f0058a6121ba0949b9eb"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:a7f92c8c5094ad3c8c58438f2e73c8e81" id="r_a7f92c8c5094ad3c8c58438f2e73c8e81"><td class="memItemLeft" align="right" valign="top"><a id="a7f92c8c5094ad3c8c58438f2e73c8e81" name="a7f92c8c5094ad3c8c58438f2e73c8e81"></a>
+typedef std::unordered_set&lt; std::string &gt;&#160;</td><td class="memItemRight" valign="bottom"><b>jit::preamble_map</b></td></tr>
+<tr class="memdesc:a7f92c8c5094ad3c8c58438f2e73c8e81"><td class="mdescLeft">&#160;</td><td class="mdescRight">Type alias for preamble defined functions. <br /></td></tr>
+<tr class="separator:a7f92c8c5094ad3c8c58438f2e73c8e81"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:aff1d2e04194bc0f2161447446498e457" id="r_aff1d2e04194bc0f2161447446498e457"><td class="memItemLeft" align="right" valign="top"><a id="aff1d2e04194bc0f2161447446498e457" name="aff1d2e04194bc0f2161447446498e457"></a>
+typedef std::unordered_set&lt; void * &gt;&#160;</td><td class="memItemRight" valign="bottom"><b>jit::argument_set</b></td></tr>
+<tr class="memdesc:aff1d2e04194bc0f2161447446498e457"><td class="mdescLeft">&#160;</td><td class="mdescRight">Type for tacking thread shared memory. <br /></td></tr>
+<tr class="separator:aff1d2e04194bc0f2161447446498e457"><td class="memSeparator" colspan="2">&#160;</td></tr>
 </table><table class="memberdecls">
 <tr class="heading"><td colspan="2"><h2 class="groupheader"><a id="func-members" name="func-members"></a>
 Functions</h2></td></tr>
@@ -209,10 +217,10 @@ constexpr bool&#160;</td><td class="memItemRight" valign="bottom"><b>jit::use_cu
 <tr class="memitem:af3afe279550a377fcf61a53c8a7b0a6f"><td class="memTemplItemLeft" align="right" valign="top">constexpr int&#160;</td><td class="memTemplItemRight" valign="bottom"><a class="el" href="namespacejit.html#af3afe279550a377fcf61a53c8a7b0a6f">jit::max_digits10</a> ()</td></tr>
 <tr class="memdesc:af3afe279550a377fcf61a53c8a7b0a6f"><td class="mdescLeft">&#160;</td><td class="mdescRight">The maximum number of digits to represent a type literal.  <br /></td></tr>
 <tr class="separator:af3afe279550a377fcf61a53c8a7b0a6f"><td class="memSeparator" colspan="2">&#160;</td></tr>
-<tr class="memitem:a45503952693698f7bb0af2633d4c07c9" id="r_a45503952693698f7bb0af2633d4c07c9"><td class="memTemplParams" colspan="2">template&lt;float_scalar T&gt; </td></tr>
-<tr class="memitem:a45503952693698f7bb0af2633d4c07c9"><td class="memTemplItemLeft" align="right" valign="top">constexpr int&#160;</td><td class="memTemplItemRight" valign="bottom"><a class="el" href="namespacejit.html#a45503952693698f7bb0af2633d4c07c9">jit::max_base</a> ()</td></tr>
-<tr class="memdesc:a45503952693698f7bb0af2633d4c07c9"><td class="mdescLeft">&#160;</td><td class="mdescRight">The maximum value for a base type.  <br /></td></tr>
-<tr class="separator:a45503952693698f7bb0af2633d4c07c9"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:a9f7831d5923c910d55fe2bd610840678" id="r_a9f7831d5923c910d55fe2bd610840678"><td class="memTemplParams" colspan="2">template&lt;float_scalar T&gt; </td></tr>
+<tr class="memitem:a9f7831d5923c910d55fe2bd610840678"><td class="memTemplItemLeft" align="right" valign="top">constexpr T&#160;</td><td class="memTemplItemRight" valign="bottom"><a class="el" href="namespacejit.html#a9f7831d5923c910d55fe2bd610840678">jit::max_base</a> ()</td></tr>
+<tr class="memdesc:a9f7831d5923c910d55fe2bd610840678"><td class="mdescLeft">&#160;</td><td class="mdescRight">The maximum value for a base type.  <br /></td></tr>
+<tr class="separator:a9f7831d5923c910d55fe2bd610840678"><td class="memSeparator" colspan="2">&#160;</td></tr>
 <tr class="memitem:a67f5624eaf42230fcddd7c6b5321900a" id="r_a67f5624eaf42230fcddd7c6b5321900a"><td class="memTemplParams" colspan="2">template&lt;scalar T&gt; </td></tr>
 <tr class="memitem:a67f5624eaf42230fcddd7c6b5321900a"><td class="memTemplItemLeft" align="right" valign="top">std::string&#160;</td><td class="memTemplItemRight" valign="bottom"><a class="el" href="namespacejit.html#a67f5624eaf42230fcddd7c6b5321900a">jit::format_to_string</a> (const T value)</td></tr>
 <tr class="memdesc:a67f5624eaf42230fcddd7c6b5321900a"><td class="mdescLeft">&#160;</td><td class="mdescRight">Convert a value to a string while avoiding locale.  <br /></td></tr>

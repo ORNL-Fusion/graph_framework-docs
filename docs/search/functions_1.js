@@ -1,9 +1,29 @@
 var searchData=
 [
   ['bin_5fpower_0',['bin_power',['../xrays_8cpp.html#a350f533f51a508892dac45152bbee054',1,'xrays.cpp']]],
-  ['branch_5fnode_1',['branch_node',['../classgraph_1_1branch__node.html#a9b4c96356345636ebc277a6228a53f71',1,'graph::branch_node::branch_node(shared_leaf&lt; T, SAFE_MATH &gt; l, shared_leaf&lt; T, SAFE_MATH &gt; r, const std::string s)'],['../classgraph_1_1branch__node.html#a50c35d69c32417d6658cd66dfe5d8e8c',1,'graph::branch_node::branch_node(shared_leaf&lt; T, SAFE_MATH &gt; l, shared_leaf&lt; T, SAFE_MATH &gt; r, const std::string s, const size_t count, const bool pseudo)']]],
-  ['buffer_2',['buffer',['../classbackend_1_1buffer.html#a53bb9f0b588bf60c0a25d92a3723f9c0',1,'backend::buffer::buffer()'],['../classbackend_1_1buffer.html#a3eeea616233a6a5f6d73664a553a13d8',1,'backend::buffer::buffer(const size_t s)'],['../classbackend_1_1buffer.html#a924eec82d8c8543ab99e5ef07c2793b3',1,'backend::buffer::buffer(const size_t s, const T d)'],['../classbackend_1_1buffer.html#a8d33b18ea66fdefc82366395bdcea3da',1,'backend::buffer::buffer(const std::vector&lt; T &gt; &amp;d)'],['../classbackend_1_1buffer.html#a3aba86f4aabdc99f9d73b8774f5dbace',1,'backend::buffer::buffer(const buffer &amp;d)']]],
+  ['branch_5fnode_1',['branch_node',['../classgraph_1_1branch__node.html#a50c35d69c32417d6658cd66dfe5d8e8c',1,'graph::branch_node::branch_node(shared_leaf&lt; T, SAFE_MATH &gt; l, shared_leaf&lt; T, SAFE_MATH &gt; r, const std::string s, const size_t count, const bool pseudo)'],['../classgraph_1_1branch__node.html#a9b4c96356345636ebc277a6228a53f71',1,'graph::branch_node::branch_node(shared_leaf&lt; T, SAFE_MATH &gt; l, shared_leaf&lt; T, SAFE_MATH &gt; r, const std::string s)']]],
+  ['buffer_2',['buffer',['../classbackend_1_1buffer.html#a3eeea616233a6a5f6d73664a553a13d8',1,'backend::buffer::buffer(const size_t s)'],['../classbackend_1_1buffer.html#a924eec82d8c8543ab99e5ef07c2793b3',1,'backend::buffer::buffer(const size_t s, const T d)'],['../classbackend_1_1buffer.html#a8d33b18ea66fdefc82366395bdcea3da',1,'backend::buffer::buffer(const std::vector&lt; T &gt; &amp;d)'],['../classbackend_1_1buffer.html#a3aba86f4aabdc99f9d73b8774f5dbace',1,'backend::buffer::buffer(const buffer &amp;d)'],['../classbackend_1_1buffer.html#abaf1077c9de9c892c4d5e48e945d5777',1,'backend::buffer::buffer(const T min, const T dx, const size_t num)'],['../classbackend_1_1buffer.html#a53bb9f0b588bf60c0a25d92a3723f9c0',1,'backend::buffer::buffer()']]],
   ['build_5f1d_5fspline_3',['build_1D_spline',['../namespaceequilibrium.html#af5381850f5f350604b0d00fa40514376',1,'equilibrium']]],
-  ['build_5fdensity_4',['build_density',['../xpic_8cpp.html#a8e35107acb16e381337c9cf3956d46a2',1,'xpic.cpp']]],
-  ['build_5fparallel_5felectric_5ffield_5',['build_parallel_electric_field',['../xpic_8cpp.html#aec8a95aa997b1e6e722e6562eacfbc85',1,'xpic.cpp']]]
+  ['build_5fcolision_5frate_4',['build_colision_rate',['../particle__in__cell_8hpp.html#a381104139171232dd97d1089c88f98ff',1,'pic']]],
+  ['build_5fcommon_5fcollision_5',['build_common_collision',['../particle__in__cell_8hpp.html#a2285cc46a3877b242f04dfa59f9c026f',1,'pic']]],
+  ['build_5fdensity_6',['build_density',['../particle__in__cell_8hpp.html#a63e6ac09d3c9da18ded47344ad80ee4d',1,'pic']]],
+  ['build_5fdensity_5fgradient_7',['build_density_gradient',['../particle__in__cell_8hpp.html#aebd60c6421db5462e2e78de3ce9655cb',1,'pic']]],
+  ['build_5fdydx_5findex_8',['build_dydx_index',['../classpic_1_1mesh.html#a6a978539bad75a090e7f5f5bcc708eae',1,'pic::mesh']]],
+  ['build_5felectric_5fefield_9',['build_electric_efield',['../particle__in__cell_8hpp.html#ad85a18d8a087682e020213799e14cfcd',1,'pic']]],
+  ['build_5felectron_5ftemperature_10',['build_electron_temperature',['../particle__in__cell_8hpp.html#a72236a5e3268552ba04ed7ea5919a814',1,'pic']]],
+  ['build_5ff_5fexpressions_11',['build_F_expressions',['../particle__in__cell_8hpp.html#a37f3e671bf16723ecd1f1831b81b8af2',1,'pic']]],
+  ['build_5fi_5findex_12',['build_i_index',['../classpic_1_1mesh.html#a022c2ba27767cbbdcc0de514878ec4fe',1,'pic::mesh']]],
+  ['build_5finitialization_13',['build_initialization',['../particle__in__cell_8hpp.html#ad2d3bfad3c49a9a432c106bccd1644ce',1,'pic']]],
+  ['build_5finterpolate_5fefield_14',['build_interpolate_efield',['../particle__in__cell_8hpp.html#a0d529db16bd47572f540786b83123e7e',1,'pic']]],
+  ['build_5finterpolation_15',['build_interpolation',['../classpic_1_1mesh.html#ad9e30055afae8c1ae9688c867493717d',1,'pic::mesh']]],
+  ['build_5fion_5felectron_5fcollision_16',['build_ion_electron_collision',['../particle__in__cell_8hpp.html#a21fdd415466ce7e77ef5fe6612c23a6d',1,'pic']]],
+  ['build_5fion_5fion_5fcollision_17',['build_ion_ion_collision',['../particle__in__cell_8hpp.html#aa778c047e4c6348126b12070feec71c6',1,'pic']]],
+  ['build_5fmagnetic_5ffield_18',['build_magnetic_field',['../particle__in__cell_8hpp.html#a1e4a0b862f6276189b3f903223777cba',1,'pic']]],
+  ['build_5fmesh_5fsolve_19',['build_mesh_solve',['../classpic_1_1mesh.html#a42823ac69ba240dca4b7625400fd5a89',1,'pic::mesh']]],
+  ['build_5fprofile_20',['build_profile',['../classpic_1_1ion.html#a3f2c5e64a30b2a9cc8b546be42a9bf44',1,'pic::ion']]],
+  ['build_5freinjection_21',['build_reinjection',['../particle__in__cell_8hpp.html#ad739535a90cf59db7f324cc0c1f41283',1,'pic']]],
+  ['build_5frk4_5fstep_22',['build_rk4_step',['../particle__in__cell_8hpp.html#a86d151082e9aeb4f38d85dfaf7d9042a',1,'pic']]],
+  ['build_5fweights_23',['build_weights',['../classpic_1_1mesh.html#adc73daca0ffd2b5e928f44fb29cc44b2',1,'pic::mesh']]],
+  ['build_5fx_5findex_24',['build_x_index',['../classpic_1_1mesh.html#a2a7cc713d5c71ad5976e3e9e08b2782f',1,'pic::mesh']]],
+  ['build_5fy_5findex_25',['build_y_index',['../classpic_1_1mesh.html#a192a538872f9b0045476ad76b04de41a',1,'pic::mesh']]]
 ];

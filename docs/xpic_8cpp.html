@@ -105,18 +105,12 @@ $(document).ready(function(){initNavTree('xpic_8cpp.html',''); initResizable(); 
 <p>Driver program for the Particle In Cell (PIC) demo.  
 <a href="#details">More...</a></p>
 <div class="textblock"><code>#include &lt;random&gt;</code><br />
+<code>#include &lt;numbers&gt;</code><br />
+<code>#include &lt;thread&gt;</code><br />
 <code>#include &quot;<a class="el" href="graph__framework_8hpp_source.html">../graph_framework/graph_framework.hpp</a>&quot;</code><br />
 </div><table class="memberdecls">
 <tr class="heading"><td colspan="2"><h2 class="groupheader"><a id="func-members" name="func-members"></a>
 Functions</h2></td></tr>
-<tr class="memitem:a8e35107acb16e381337c9cf3956d46a2" id="r_a8e35107acb16e381337c9cf3956d46a2"><td class="memTemplParams" colspan="2">template&lt;<a class="el" href="conceptjit_1_1float__scalar.html">jit::float_scalar</a> T&gt; </td></tr>
-<tr class="memitem:a8e35107acb16e381337c9cf3956d46a2"><td class="memTemplItemLeft" align="right" valign="top"><a class="el" href="namespacegraph.html#ac8853b055dcbbfd35dff9b4584d5ef36">graph::shared_leaf</a>&lt; T &gt;&#160;</td><td class="memTemplItemRight" valign="bottom"><a class="el" href="xpic_8cpp.html#a8e35107acb16e381337c9cf3956d46a2">build_density</a> (<a class="el" href="namespacegraph.html#ac8853b055dcbbfd35dff9b4584d5ef36">graph::shared_leaf</a>&lt; T &gt; x)</td></tr>
-<tr class="memdesc:a8e35107acb16e381337c9cf3956d46a2"><td class="mdescLeft">&#160;</td><td class="mdescRight">Build density.  <br /></td></tr>
-<tr class="separator:a8e35107acb16e381337c9cf3956d46a2"><td class="memSeparator" colspan="2">&#160;</td></tr>
-<tr class="memitem:aec8a95aa997b1e6e722e6562eacfbc85" id="r_aec8a95aa997b1e6e722e6562eacfbc85"><td class="memTemplParams" colspan="2">template&lt;<a class="el" href="conceptjit_1_1float__scalar.html">jit::float_scalar</a> T&gt; </td></tr>
-<tr class="memitem:aec8a95aa997b1e6e722e6562eacfbc85"><td class="memTemplItemLeft" align="right" valign="top"><a class="el" href="namespacegraph.html#ac8853b055dcbbfd35dff9b4584d5ef36">graph::shared_leaf</a>&lt; T &gt;&#160;</td><td class="memTemplItemRight" valign="bottom"><a class="el" href="xpic_8cpp.html#aec8a95aa997b1e6e722e6562eacfbc85">build_parallel_electric_field</a> (<a class="el" href="namespacegraph.html#ac8853b055dcbbfd35dff9b4584d5ef36">graph::shared_leaf</a>&lt; T &gt; x)</td></tr>
-<tr class="memdesc:aec8a95aa997b1e6e722e6562eacfbc85"><td class="mdescLeft">&#160;</td><td class="mdescRight">Build parallel electric field.  <br /></td></tr>
-<tr class="separator:aec8a95aa997b1e6e722e6562eacfbc85"><td class="memSeparator" colspan="2">&#160;</td></tr>
 <tr class="memitem:adea81759b9ba77e972fc4c7cab081a9e" id="r_adea81759b9ba77e972fc4c7cab081a9e"><td class="memTemplParams" colspan="2">template&lt;<a class="el" href="conceptjit_1_1float__scalar.html">jit::float_scalar</a> T&gt; </td></tr>
 <tr class="memitem:adea81759b9ba77e972fc4c7cab081a9e"><td class="memTemplItemLeft" align="right" valign="top">void&#160;</td><td class="memTemplItemRight" valign="bottom"><a class="el" href="xpic_8cpp.html#adea81759b9ba77e972fc4c7cab081a9e">run_pic</a> ()</td></tr>
 <tr class="memdesc:adea81759b9ba77e972fc4c7cab081a9e"><td class="mdescLeft">&#160;</td><td class="mdescRight">Pic code.  <br /></td></tr>
@@ -128,74 +122,6 @@ Functions</h2></td></tr>
 <a name="details" id="details"></a><h2 class="groupheader">Detailed Description</h2>
 <div class="textblock"><p>Driver program for the Particle In Cell (PIC) demo. </p>
 </div><h2 class="groupheader">Function Documentation</h2>
-<a id="a8e35107acb16e381337c9cf3956d46a2" name="a8e35107acb16e381337c9cf3956d46a2"></a>
-<h2 class="memtitle"><span class="permalink"><a href="#a8e35107acb16e381337c9cf3956d46a2">&#9670;&#160;</a></span>build_density()</h2>
-
-<div class="memitem">
-<div class="memproto">
-<div class="memtemplate">
-template&lt;<a class="el" href="conceptjit_1_1float__scalar.html">jit::float_scalar</a> T&gt; </div>
-      <table class="memname">
-        <tr>
-          <td class="memname"><a class="el" href="namespacegraph.html#ac8853b055dcbbfd35dff9b4584d5ef36">graph::shared_leaf</a>&lt; T &gt; build_density </td>
-          <td>(</td>
-          <td class="paramtype"><a class="el" href="namespacegraph.html#ac8853b055dcbbfd35dff9b4584d5ef36">graph::shared_leaf</a>&lt; T &gt;&#160;</td>
-          <td class="paramname"><em>x</em></td><td>)</td>
-          <td></td>
-        </tr>
-      </table>
-</div><div class="memdoc">
-
-<p>Build density. </p>
-<dl class="tparams"><dt>Template Parameters</dt><dd>
-  <table class="tparams">
-    <tr><td class="paramname">T</td><td>Base type of the calculation.</td></tr>
-  </table>
-  </dd>
-</dl>
-<dl class="params"><dt>Parameters</dt><dd>
-  <table class="params">
-    <tr><td class="paramdir">[in]</td><td class="paramname">x</td><td>The particle position. </td></tr>
-  </table>
-  </dd>
-</dl>
-
-</div>
-</div>
-<a id="aec8a95aa997b1e6e722e6562eacfbc85" name="aec8a95aa997b1e6e722e6562eacfbc85"></a>
-<h2 class="memtitle"><span class="permalink"><a href="#aec8a95aa997b1e6e722e6562eacfbc85">&#9670;&#160;</a></span>build_parallel_electric_field()</h2>
-
-<div class="memitem">
-<div class="memproto">
-<div class="memtemplate">
-template&lt;<a class="el" href="conceptjit_1_1float__scalar.html">jit::float_scalar</a> T&gt; </div>
-      <table class="memname">
-        <tr>
-          <td class="memname"><a class="el" href="namespacegraph.html#ac8853b055dcbbfd35dff9b4584d5ef36">graph::shared_leaf</a>&lt; T &gt; build_parallel_electric_field </td>
-          <td>(</td>
-          <td class="paramtype"><a class="el" href="namespacegraph.html#ac8853b055dcbbfd35dff9b4584d5ef36">graph::shared_leaf</a>&lt; T &gt;&#160;</td>
-          <td class="paramname"><em>x</em></td><td>)</td>
-          <td></td>
-        </tr>
-      </table>
-</div><div class="memdoc">
-
-<p>Build parallel electric field. </p>
-<dl class="tparams"><dt>Template Parameters</dt><dd>
-  <table class="tparams">
-    <tr><td class="paramname">T</td><td>Base type of the calculation.</td></tr>
-  </table>
-  </dd>
-</dl>
-<dl class="params"><dt>Parameters</dt><dd>
-  <table class="params">
-    <tr><td class="paramdir">[in]</td><td class="paramname">x</td><td>The particle position. </td></tr>
-  </table>
-  </dd>
-</dl>
-
-</div>
-</div>
 <a id="ac0f2228420376f4db7e1274f2b41667c" name="ac0f2228420376f4db7e1274f2b41667c"></a>
 <h2 class="memtitle"><span class="permalink"><a href="#ac0f2228420376f4db7e1274f2b41667c">&#9670;&#160;</a></span>main()</h2>
 

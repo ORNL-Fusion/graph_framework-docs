@@ -98,6 +98,7 @@ $(document).ready(function(){initNavTree('classworkflow_1_1loop__item.html','');
 <div class="header">
   <div class="summary">
 <a href="#pub-methods">Public Member Functions</a> &#124;
+<a href="#pro-attribs">Protected Attributes</a> &#124;
 <a href="classworkflow_1_1loop__item-members.html">List of all members</a>  </div>
   <div class="headertitle"><div class="title">workflow::loop_item&lt; T, SAFE_MATH &gt; Class Template Reference<span class="mlabels"><span class="mlabel">final</span></span></div></div>
 </div><!--header-->
@@ -113,53 +114,52 @@ Inheritance diagram for workflow::loop_item&lt; T, SAFE_MATH &gt;:</div>
  <div class="center">
   <img src="classworkflow_1_1loop__item.png" usemap="#workflow::loop_5Fitem_3C_20T_2C_20SAFE_5FMATH_20_3E_map" alt=""/>
   <map id="workflow::loop_5Fitem_3C_20T_2C_20SAFE_5FMATH_20_3E_map" name="workflow::loop_5Fitem_3C_20T_2C_20SAFE_5FMATH_20_3E_map">
-<area href="classworkflow_1_1work__item.html" title="Class representing a work item." alt="workflow::work_item&lt; T, SAFE_MATH &gt;" shape="rect" coords="0,0,237,24"/>
+<area href="classworkflow_1_1item.html" title="Interface class representing items." alt="workflow::item&lt; T, SAFE_MATH &gt;" shape="rect" coords="0,0,237,24"/>
   </map>
 </div></div>
 <table class="memberdecls">
 <tr class="heading"><td colspan="2"><h2 class="groupheader"><a id="pub-methods" name="pub-methods"></a>
 Public Member Functions</h2></td></tr>
-<tr class="memitem:a08309183352844fe6cee864f5669eea0" id="r_a08309183352844fe6cee864f5669eea0"><td class="memItemLeft" align="right" valign="top">&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="classworkflow_1_1loop__item.html#a08309183352844fe6cee864f5669eea0">loop_item</a> (<a class="el" href="namespacegraph.html#a7f4f9ab246d37d23e0259709e626bc36">graph::input_nodes</a>&lt; T, SAFE_MATH &gt; <a class="el" href="classworkflow_1_1work__item.html#aa8b21da1f17bac4ede65af719cccf103">inputs</a>, <a class="el" href="namespacegraph.html#aec6ce7b08d650c6b236b68bd68a2ce0a">graph::output_nodes</a>&lt; T, SAFE_MATH &gt; <a class="el" href="classworkflow_1_1work__item.html#ae725a56eb6977da220d255aeb5537b9c">outputs</a>, <a class="el" href="namespacegraph.html#acd48d32bd7925b056e932559379d9b55">graph::map_nodes</a>&lt; T, SAFE_MATH &gt; maps, <a class="el" href="namespacegraph.html#a7d69a698d998bfb31f5611ad55e44092">graph::shared_random_state</a>&lt; T, SAFE_MATH &gt; <a class="el" href="classworkflow_1_1work__item.html#a5da5c0ca52607c1f77789eeb5fad7dea">state</a>, const std::string name, const size_t size, <a class="el" href="classjit_1_1context.html">jit::context</a>&lt; T, SAFE_MATH &gt; &amp;context, const size_t iterations)</td></tr>
-<tr class="memdesc:a08309183352844fe6cee864f5669eea0"><td class="mdescLeft">&#160;</td><td class="mdescRight">Construct a workflow item.  <br /></td></tr>
-<tr class="separator:a08309183352844fe6cee864f5669eea0"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:a4711009886eb00b5b0f1872867f4f41f" id="r_a4711009886eb00b5b0f1872867f4f41f"><td class="memItemLeft" align="right" valign="top">&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="classworkflow_1_1loop__item.html#a4711009886eb00b5b0f1872867f4f41f">loop_item</a> (<a class="el" href="namespacegraph.html#a7f4f9ab246d37d23e0259709e626bc36">graph::input_nodes</a>&lt; T, SAFE_MATH &gt; &amp;in, <a class="el" href="namespacegraph.html#aec6ce7b08d650c6b236b68bd68a2ce0a">graph::output_nodes</a>&lt; T, SAFE_MATH &gt; &amp;out, <a class="el" href="namespacegraph.html#acd48d32bd7925b056e932559379d9b55">graph::map_nodes</a>&lt; T, SAFE_MATH &gt; &amp;maps, <a class="el" href="namespacegraph.html#a7f4f9ab246d37d23e0259709e626bc36">graph::input_nodes</a>&lt; T, SAFE_MATH &gt; &amp;<a class="el" href="classworkflow_1_1loop__item.html#a747e3b3ff198e506faaedc285c80c3eb">atomics</a>, <a class="el" href="namespacegraph.html#a7d69a698d998bfb31f5611ad55e44092">graph::shared_random_state</a>&lt; T, SAFE_MATH &gt; &amp;<a class="el" href="classworkflow_1_1loop__item.html#a563c3b0419ffcb4babde5d4596e07e14">state</a>, const std::string name, const size_t size, <a class="el" href="classjit_1_1context.html">jit::context</a>&lt; T, SAFE_MATH &gt; &amp;context, const size_t iterations)</td></tr>
+<tr class="memdesc:a4711009886eb00b5b0f1872867f4f41f"><td class="mdescLeft">&#160;</td><td class="mdescRight">Construct a workflow item.  <br /></td></tr>
+<tr class="separator:a4711009886eb00b5b0f1872867f4f41f"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:aac9d69ecebb8daaaacd91d29c2d0cdbc" id="r_aac9d69ecebb8daaaacd91d29c2d0cdbc"><td class="memItemLeft" align="right" valign="top">virtual void&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="classworkflow_1_1loop__item.html#aac9d69ecebb8daaaacd91d29c2d0cdbc">create_kernel_call</a> (<a class="el" href="classjit_1_1context.html">jit::context</a>&lt; T, SAFE_MATH &gt; &amp;context)</td></tr>
+<tr class="memdesc:aac9d69ecebb8daaaacd91d29c2d0cdbc"><td class="mdescLeft">&#160;</td><td class="mdescRight">Set the kernel function.  <br /></td></tr>
+<tr class="separator:aac9d69ecebb8daaaacd91d29c2d0cdbc"><td class="memSeparator" colspan="2">&#160;</td></tr>
 <tr class="memitem:ab876906145d305111c3a740c40b80899" id="r_ab876906145d305111c3a740c40b80899"><td class="memItemLeft" align="right" valign="top">virtual void&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="classworkflow_1_1loop__item.html#ab876906145d305111c3a740c40b80899">run</a> ()</td></tr>
 <tr class="memdesc:ab876906145d305111c3a740c40b80899"><td class="mdescLeft">&#160;</td><td class="mdescRight">Run the workitem.  <br /></td></tr>
 <tr class="separator:ab876906145d305111c3a740c40b80899"><td class="memSeparator" colspan="2">&#160;</td></tr>
-<tr class="inherit_header pub_methods_classworkflow_1_1work__item"><td colspan="2" onclick="javascript:toggleInherit('pub_methods_classworkflow_1_1work__item')"><img src="closed.png" alt="-"/>&#160;Public Member Functions inherited from <a class="el" href="classworkflow_1_1work__item.html">workflow::work_item&lt; T, SAFE_MATH &gt;</a></td></tr>
-<tr class="memitem:a80dbe65a036e4a991a3af2adf1e7362e inherit pub_methods_classworkflow_1_1work__item" id="r_a80dbe65a036e4a991a3af2adf1e7362e"><td class="memItemLeft" align="right" valign="top">&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="classworkflow_1_1work__item.html#a80dbe65a036e4a991a3af2adf1e7362e">work_item</a> (<a class="el" href="namespacegraph.html#a7f4f9ab246d37d23e0259709e626bc36">graph::input_nodes</a>&lt; T, SAFE_MATH &gt; in, <a class="el" href="namespacegraph.html#aec6ce7b08d650c6b236b68bd68a2ce0a">graph::output_nodes</a>&lt; T, SAFE_MATH &gt; out, <a class="el" href="namespacegraph.html#acd48d32bd7925b056e932559379d9b55">graph::map_nodes</a>&lt; T, SAFE_MATH &gt; maps, <a class="el" href="namespacegraph.html#a7d69a698d998bfb31f5611ad55e44092">graph::shared_random_state</a>&lt; T, SAFE_MATH &gt; <a class="el" href="classworkflow_1_1work__item.html#a5da5c0ca52607c1f77789eeb5fad7dea">state</a>, const std::string name, const size_t size, <a class="el" href="classjit_1_1context.html">jit::context</a>&lt; T, SAFE_MATH &gt; &amp;context)</td></tr>
-<tr class="memdesc:a80dbe65a036e4a991a3af2adf1e7362e inherit pub_methods_classworkflow_1_1work__item"><td class="mdescLeft">&#160;</td><td class="mdescRight">Construct a workflow item.  <br /></td></tr>
-<tr class="separator:a80dbe65a036e4a991a3af2adf1e7362e inherit pub_methods_classworkflow_1_1work__item"><td class="memSeparator" colspan="2">&#160;</td></tr>
-<tr class="memitem:a56fdf9f64899a0a4c58e5bd612f7cd4a inherit pub_methods_classworkflow_1_1work__item" id="r_a56fdf9f64899a0a4c58e5bd612f7cd4a"><td class="memItemLeft" align="right" valign="top">virtual void&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="classworkflow_1_1work__item.html#a56fdf9f64899a0a4c58e5bd612f7cd4a">create_kernel_call</a> (<a class="el" href="classjit_1_1context.html">jit::context</a>&lt; T, SAFE_MATH &gt; &amp;context)</td></tr>
-<tr class="memdesc:a56fdf9f64899a0a4c58e5bd612f7cd4a inherit pub_methods_classworkflow_1_1work__item"><td class="mdescLeft">&#160;</td><td class="mdescRight">Set the kernel function.  <br /></td></tr>
-<tr class="separator:a56fdf9f64899a0a4c58e5bd612f7cd4a inherit pub_methods_classworkflow_1_1work__item"><td class="memSeparator" colspan="2">&#160;</td></tr>
 </table><table class="memberdecls">
-<tr class="heading"><td colspan="2"><h2 class="groupheader"><a id="inherited" name="inherited"></a>
-Additional Inherited Members</h2></td></tr>
-<tr class="inherit_header pro_attribs_classworkflow_1_1work__item"><td colspan="2" onclick="javascript:toggleInherit('pro_attribs_classworkflow_1_1work__item')"><img src="closed.png" alt="-"/>&#160;Protected Attributes inherited from <a class="el" href="classworkflow_1_1work__item.html">workflow::work_item&lt; T, SAFE_MATH &gt;</a></td></tr>
-<tr class="memitem:a297bfc111c9d859835ec766c71fb47c1 inherit pro_attribs_classworkflow_1_1work__item" id="r_a297bfc111c9d859835ec766c71fb47c1"><td class="memItemLeft" align="right" valign="top">
-const std::string&#160;</td><td class="memItemRight" valign="bottom"><b>kernel_name</b></td></tr>
-<tr class="memdesc:a297bfc111c9d859835ec766c71fb47c1 inherit pro_attribs_classworkflow_1_1work__item"><td class="mdescLeft">&#160;</td><td class="mdescRight">Name of the GPU kernel. <br /></td></tr>
-<tr class="separator:a297bfc111c9d859835ec766c71fb47c1 inherit pro_attribs_classworkflow_1_1work__item"><td class="memSeparator" colspan="2">&#160;</td></tr>
-<tr class="memitem:ad206d2930d6151f21cc0064e28fe8822 inherit pro_attribs_classworkflow_1_1work__item" id="r_ad206d2930d6151f21cc0064e28fe8822"><td class="memItemLeft" align="right" valign="top">
-const size_t&#160;</td><td class="memItemRight" valign="bottom"><b>kernel_size</b></td></tr>
-<tr class="memdesc:ad206d2930d6151f21cc0064e28fe8822 inherit pro_attribs_classworkflow_1_1work__item"><td class="mdescLeft">&#160;</td><td class="mdescRight">Name of the GPU kernel. <br /></td></tr>
-<tr class="separator:ad206d2930d6151f21cc0064e28fe8822 inherit pro_attribs_classworkflow_1_1work__item"><td class="memSeparator" colspan="2">&#160;</td></tr>
-<tr class="memitem:aa8b21da1f17bac4ede65af719cccf103 inherit pro_attribs_classworkflow_1_1work__item" id="r_aa8b21da1f17bac4ede65af719cccf103"><td class="memItemLeft" align="right" valign="top">
-<a class="el" href="namespacegraph.html#a7f4f9ab246d37d23e0259709e626bc36">graph::input_nodes</a>&lt; T, SAFE_MATH &gt;&#160;</td><td class="memItemRight" valign="bottom"><b>inputs</b></td></tr>
-<tr class="memdesc:aa8b21da1f17bac4ede65af719cccf103 inherit pro_attribs_classworkflow_1_1work__item"><td class="mdescLeft">&#160;</td><td class="mdescRight">Input nodes. <br /></td></tr>
-<tr class="separator:aa8b21da1f17bac4ede65af719cccf103 inherit pro_attribs_classworkflow_1_1work__item"><td class="memSeparator" colspan="2">&#160;</td></tr>
-<tr class="memitem:ae725a56eb6977da220d255aeb5537b9c inherit pro_attribs_classworkflow_1_1work__item" id="r_ae725a56eb6977da220d255aeb5537b9c"><td class="memItemLeft" align="right" valign="top">
-<a class="el" href="namespacegraph.html#aec6ce7b08d650c6b236b68bd68a2ce0a">graph::output_nodes</a>&lt; T, SAFE_MATH &gt;&#160;</td><td class="memItemRight" valign="bottom"><b>outputs</b></td></tr>
-<tr class="memdesc:ae725a56eb6977da220d255aeb5537b9c inherit pro_attribs_classworkflow_1_1work__item"><td class="mdescLeft">&#160;</td><td class="mdescRight">Output nodes. <br /></td></tr>
-<tr class="separator:ae725a56eb6977da220d255aeb5537b9c inherit pro_attribs_classworkflow_1_1work__item"><td class="memSeparator" colspan="2">&#160;</td></tr>
-<tr class="memitem:a5da5c0ca52607c1f77789eeb5fad7dea inherit pro_attribs_classworkflow_1_1work__item" id="r_a5da5c0ca52607c1f77789eeb5fad7dea"><td class="memItemLeft" align="right" valign="top">
-<a class="el" href="namespacegraph.html#a7d69a698d998bfb31f5611ad55e44092">graph::shared_random_state</a>&lt; T, SAFE_MATH &gt;&#160;</td><td class="memItemRight" valign="bottom"><b>state</b></td></tr>
-<tr class="memdesc:a5da5c0ca52607c1f77789eeb5fad7dea inherit pro_attribs_classworkflow_1_1work__item"><td class="mdescLeft">&#160;</td><td class="mdescRight">Random state node. <br /></td></tr>
-<tr class="separator:a5da5c0ca52607c1f77789eeb5fad7dea inherit pro_attribs_classworkflow_1_1work__item"><td class="memSeparator" colspan="2">&#160;</td></tr>
-<tr class="memitem:af29474a5bde34685a190cee900f8d860 inherit pro_attribs_classworkflow_1_1work__item" id="r_af29474a5bde34685a190cee900f8d860"><td class="memItemLeft" align="right" valign="top">
+<tr class="heading"><td colspan="2"><h2 class="groupheader"><a id="pro-attribs" name="pro-attribs"></a>
+Protected Attributes</h2></td></tr>
+<tr class="memitem:ac4b7c22021970c87a7efaefe9d6e97c2" id="r_ac4b7c22021970c87a7efaefe9d6e97c2"><td class="memItemLeft" align="right" valign="top"><a id="ac4b7c22021970c87a7efaefe9d6e97c2" name="ac4b7c22021970c87a7efaefe9d6e97c2"></a>
 std::function&lt; void(void)&gt;&#160;</td><td class="memItemRight" valign="bottom"><b>kernel</b></td></tr>
-<tr class="memdesc:af29474a5bde34685a190cee900f8d860 inherit pro_attribs_classworkflow_1_1work__item"><td class="mdescLeft">&#160;</td><td class="mdescRight">Kernel function. <br /></td></tr>
-<tr class="separator:af29474a5bde34685a190cee900f8d860 inherit pro_attribs_classworkflow_1_1work__item"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memdesc:ac4b7c22021970c87a7efaefe9d6e97c2"><td class="mdescLeft">&#160;</td><td class="mdescRight">Kernel function. <br /></td></tr>
+<tr class="separator:ac4b7c22021970c87a7efaefe9d6e97c2"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:acb2a1c28086dff0f158a60466ff3d21d" id="r_acb2a1c28086dff0f158a60466ff3d21d"><td class="memItemLeft" align="right" valign="top"><a id="acb2a1c28086dff0f158a60466ff3d21d" name="acb2a1c28086dff0f158a60466ff3d21d"></a>
+const std::string&#160;</td><td class="memItemRight" valign="bottom"><b>kernel_name</b></td></tr>
+<tr class="memdesc:acb2a1c28086dff0f158a60466ff3d21d"><td class="mdescLeft">&#160;</td><td class="mdescRight">Name of the GPU kernel. <br /></td></tr>
+<tr class="separator:acb2a1c28086dff0f158a60466ff3d21d"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:ab6c3532c0177ef3007db3282c3359e8c" id="r_ab6c3532c0177ef3007db3282c3359e8c"><td class="memItemLeft" align="right" valign="top"><a id="ab6c3532c0177ef3007db3282c3359e8c" name="ab6c3532c0177ef3007db3282c3359e8c"></a>
+const size_t&#160;</td><td class="memItemRight" valign="bottom"><b>kernel_size</b></td></tr>
+<tr class="memdesc:ab6c3532c0177ef3007db3282c3359e8c"><td class="mdescLeft">&#160;</td><td class="mdescRight">Size of the GPU kernel. <br /></td></tr>
+<tr class="separator:ab6c3532c0177ef3007db3282c3359e8c"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:a41fdf1bd23441bc98bc10f7ea327d685" id="r_a41fdf1bd23441bc98bc10f7ea327d685"><td class="memItemLeft" align="right" valign="top"><a id="a41fdf1bd23441bc98bc10f7ea327d685" name="a41fdf1bd23441bc98bc10f7ea327d685"></a>
+<a class="el" href="namespacegraph.html#a7f4f9ab246d37d23e0259709e626bc36">graph::input_nodes</a>&lt; T, SAFE_MATH &gt;&#160;</td><td class="memItemRight" valign="bottom"><b>inputs</b></td></tr>
+<tr class="memdesc:a41fdf1bd23441bc98bc10f7ea327d685"><td class="mdescLeft">&#160;</td><td class="mdescRight">Input nodes. <br /></td></tr>
+<tr class="separator:a41fdf1bd23441bc98bc10f7ea327d685"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:a7e8d75a22452f7abefbfe2577d348145" id="r_a7e8d75a22452f7abefbfe2577d348145"><td class="memItemLeft" align="right" valign="top"><a id="a7e8d75a22452f7abefbfe2577d348145" name="a7e8d75a22452f7abefbfe2577d348145"></a>
+<a class="el" href="namespacegraph.html#aec6ce7b08d650c6b236b68bd68a2ce0a">graph::output_nodes</a>&lt; T, SAFE_MATH &gt;&#160;</td><td class="memItemRight" valign="bottom"><b>outputs</b></td></tr>
+<tr class="memdesc:a7e8d75a22452f7abefbfe2577d348145"><td class="mdescLeft">&#160;</td><td class="mdescRight">Output nodes. <br /></td></tr>
+<tr class="separator:a7e8d75a22452f7abefbfe2577d348145"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:a747e3b3ff198e506faaedc285c80c3eb" id="r_a747e3b3ff198e506faaedc285c80c3eb"><td class="memItemLeft" align="right" valign="top"><a id="a747e3b3ff198e506faaedc285c80c3eb" name="a747e3b3ff198e506faaedc285c80c3eb"></a>
+<a class="el" href="namespacegraph.html#a7f4f9ab246d37d23e0259709e626bc36">graph::input_nodes</a>&lt; T, SAFE_MATH &gt;&#160;</td><td class="memItemRight" valign="bottom"><b>atomics</b></td></tr>
+<tr class="memdesc:a747e3b3ff198e506faaedc285c80c3eb"><td class="mdescLeft">&#160;</td><td class="mdescRight">Atomic nodes. <br /></td></tr>
+<tr class="separator:a747e3b3ff198e506faaedc285c80c3eb"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:a563c3b0419ffcb4babde5d4596e07e14" id="r_a563c3b0419ffcb4babde5d4596e07e14"><td class="memItemLeft" align="right" valign="top"><a id="a563c3b0419ffcb4babde5d4596e07e14" name="a563c3b0419ffcb4babde5d4596e07e14"></a>
+<a class="el" href="namespacegraph.html#a7d69a698d998bfb31f5611ad55e44092">graph::shared_random_state</a>&lt; T, SAFE_MATH &gt;&#160;</td><td class="memItemRight" valign="bottom"><b>state</b></td></tr>
+<tr class="memdesc:a563c3b0419ffcb4babde5d4596e07e14"><td class="mdescLeft">&#160;</td><td class="mdescRight">Random state node. <br /></td></tr>
+<tr class="separator:a563c3b0419ffcb4babde5d4596e07e14"><td class="memSeparator" colspan="2">&#160;</td></tr>
 </table>
 <a name="details" id="details"></a><h2 class="groupheader">Detailed Description</h2>
 <div class="textblock"><div class="compoundTemplParams">template&lt;<a class="el" href="conceptjit_1_1float__scalar.html">jit::float_scalar</a> T, bool SAFE_MATH = false&gt;<br />
@@ -172,8 +172,8 @@ class workflow::loop_item&lt; T, SAFE_MATH &gt;</div><p>Run a work item in a fix
   </dd>
 </dl>
 </div><h2 class="groupheader">Constructor &amp; Destructor Documentation</h2>
-<a id="a08309183352844fe6cee864f5669eea0" name="a08309183352844fe6cee864f5669eea0"></a>
-<h2 class="memtitle"><span class="permalink"><a href="#a08309183352844fe6cee864f5669eea0">&#9670;&#160;</a></span>loop_item()</h2>
+<a id="a4711009886eb00b5b0f1872867f4f41f" name="a4711009886eb00b5b0f1872867f4f41f"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#a4711009886eb00b5b0f1872867f4f41f">&#9670;&#160;</a></span>loop_item()</h2>
 
 <div class="memitem">
 <div class="memproto">
@@ -186,25 +186,31 @@ template&lt;<a class="el" href="conceptjit_1_1float__scalar.html">jit::float_sca
         <tr>
           <td class="memname"><a class="el" href="classworkflow_1_1loop__item.html">workflow::loop_item</a>&lt; T, SAFE_MATH &gt;::loop_item </td>
           <td>(</td>
-          <td class="paramtype"><a class="el" href="namespacegraph.html#a7f4f9ab246d37d23e0259709e626bc36">graph::input_nodes</a>&lt; T, SAFE_MATH &gt;&#160;</td>
-          <td class="paramname"><em>inputs</em>, </td>
+          <td class="paramtype"><a class="el" href="namespacegraph.html#a7f4f9ab246d37d23e0259709e626bc36">graph::input_nodes</a>&lt; T, SAFE_MATH &gt; &amp;&#160;</td>
+          <td class="paramname"><em>in</em>, </td>
         </tr>
         <tr>
           <td class="paramkey"></td>
           <td></td>
-          <td class="paramtype"><a class="el" href="namespacegraph.html#aec6ce7b08d650c6b236b68bd68a2ce0a">graph::output_nodes</a>&lt; T, SAFE_MATH &gt;&#160;</td>
-          <td class="paramname"><em>outputs</em>, </td>
+          <td class="paramtype"><a class="el" href="namespacegraph.html#aec6ce7b08d650c6b236b68bd68a2ce0a">graph::output_nodes</a>&lt; T, SAFE_MATH &gt; &amp;&#160;</td>
+          <td class="paramname"><em>out</em>, </td>
         </tr>
         <tr>
           <td class="paramkey"></td>
           <td></td>
-          <td class="paramtype"><a class="el" href="namespacegraph.html#acd48d32bd7925b056e932559379d9b55">graph::map_nodes</a>&lt; T, SAFE_MATH &gt;&#160;</td>
+          <td class="paramtype"><a class="el" href="namespacegraph.html#acd48d32bd7925b056e932559379d9b55">graph::map_nodes</a>&lt; T, SAFE_MATH &gt; &amp;&#160;</td>
           <td class="paramname"><em>maps</em>, </td>
         </tr>
         <tr>
           <td class="paramkey"></td>
           <td></td>
-          <td class="paramtype"><a class="el" href="namespacegraph.html#a7d69a698d998bfb31f5611ad55e44092">graph::shared_random_state</a>&lt; T, SAFE_MATH &gt;&#160;</td>
+          <td class="paramtype"><a class="el" href="namespacegraph.html#a7f4f9ab246d37d23e0259709e626bc36">graph::input_nodes</a>&lt; T, SAFE_MATH &gt; &amp;&#160;</td>
+          <td class="paramname"><em>atomics</em>, </td>
+        </tr>
+        <tr>
+          <td class="paramkey"></td>
+          <td></td>
+          <td class="paramtype"><a class="el" href="namespacegraph.html#a7d69a698d998bfb31f5611ad55e44092">graph::shared_random_state</a>&lt; T, SAFE_MATH &gt; &amp;&#160;</td>
           <td class="paramname"><em>state</em>, </td>
         </tr>
         <tr>
@@ -247,9 +253,10 @@ template&lt;<a class="el" href="conceptjit_1_1float__scalar.html">jit::float_sca
 <p>Construct a workflow item. </p>
 <dl class="params"><dt>Parameters</dt><dd>
   <table class="params">
-    <tr><td class="paramdir">[in]</td><td class="paramname">inputs</td><td>Input variables. </td></tr>
-    <tr><td class="paramdir">[in]</td><td class="paramname">outputs</td><td>Output nodes. </td></tr>
+    <tr><td class="paramdir">[in]</td><td class="paramname">in</td><td>Input variables. </td></tr>
+    <tr><td class="paramdir">[in]</td><td class="paramname">out</td><td>Output nodes. </td></tr>
     <tr><td class="paramdir">[in]</td><td class="paramname">maps</td><td>Setter maps. </td></tr>
+    <tr><td class="paramdir">[in]</td><td class="paramname">atomics</td><td>Input variables for atomic operations. </td></tr>
     <tr><td class="paramdir">[in]</td><td class="paramname">state</td><td>Random state node. </td></tr>
     <tr><td class="paramdir">[in]</td><td class="paramname">name</td><td>Name of the work item. </td></tr>
     <tr><td class="paramdir">[in]</td><td class="paramname">size</td><td>Size of the work item. </td></tr>
@@ -262,6 +269,44 @@ template&lt;<a class="el" href="conceptjit_1_1float__scalar.html">jit::float_sca
 </div>
 </div>
 <h2 class="groupheader">Member Function Documentation</h2>
+<a id="aac9d69ecebb8daaaacd91d29c2d0cdbc" name="aac9d69ecebb8daaaacd91d29c2d0cdbc"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#aac9d69ecebb8daaaacd91d29c2d0cdbc">&#9670;&#160;</a></span>create_kernel_call()</h2>
+
+<div class="memitem">
+<div class="memproto">
+<div class="memtemplate">
+template&lt;<a class="el" href="conceptjit_1_1float__scalar.html">jit::float_scalar</a> T, bool SAFE_MATH = false&gt; </div>
+<table class="mlabels">
+  <tr>
+  <td class="mlabels-left">
+      <table class="memname">
+        <tr>
+          <td class="memname">virtual void <a class="el" href="classworkflow_1_1loop__item.html">workflow::loop_item</a>&lt; T, SAFE_MATH &gt;::create_kernel_call </td>
+          <td>(</td>
+          <td class="paramtype"><a class="el" href="classjit_1_1context.html">jit::context</a>&lt; T, SAFE_MATH &gt; &amp;&#160;</td>
+          <td class="paramname"><em>context</em></td><td>)</td>
+          <td></td>
+        </tr>
+      </table>
+  </td>
+  <td class="mlabels-right">
+<span class="mlabels"><span class="mlabel">inline</span><span class="mlabel">virtual</span></span>  </td>
+  </tr>
+</table>
+</div><div class="memdoc">
+
+<p>Set the kernel function. </p>
+<dl class="params"><dt>Parameters</dt><dd>
+  <table class="params">
+    <tr><td class="paramdir">[in,out]</td><td class="paramname">context</td><td>Jit context. </td></tr>
+  </table>
+  </dd>
+</dl>
+
+<p>Implements <a class="el" href="classworkflow_1_1item.html#ae9f683efd9610caeabc69ffa34ff51d1">workflow::item&lt; T, SAFE_MATH &gt;</a>.</p>
+
+</div>
+</div>
 <a id="ab876906145d305111c3a740c40b80899" name="ab876906145d305111c3a740c40b80899"></a>
 <h2 class="memtitle"><span class="permalink"><a href="#ab876906145d305111c3a740c40b80899">&#9670;&#160;</a></span>run()</h2>
 
@@ -289,7 +334,7 @@ template&lt;<a class="el" href="conceptjit_1_1float__scalar.html">jit::float_sca
 
 <p>Run the workitem. </p>
 
-<p>Reimplemented from <a class="el" href="classworkflow_1_1work__item.html#a008c373f29d6618a042002a014892b8d">workflow::work_item&lt; T, SAFE_MATH &gt;</a>.</p>
+<p>Implements <a class="el" href="classworkflow_1_1item.html#aaa7fea1e18d92bb1fd0489f6f6857b57">workflow::item&lt; T, SAFE_MATH &gt;</a>.</p>
 
 </div>
 </div>

@@ -99,6 +99,7 @@ $(document).ready(function(){initNavTree('backend_8hpp.html',''); initResizable(
   <div class="summary">
 <a href="#nested-classes">Classes</a> &#124;
 <a href="#namespaces">Namespaces</a> &#124;
+<a href="#define-members">Macros</a> &#124;
 <a href="#func-members">Functions</a>  </div>
   <div class="headertitle"><div class="title">backend.hpp File Reference</div></div>
 </div><!--header-->
@@ -126,16 +127,63 @@ Namespaces</h2></td></tr>
 <tr class="memdesc:namespacebackend"><td class="mdescLeft">&#160;</td><td class="mdescRight">Name space for backend buffers. <br /></td></tr>
 <tr class="separator:"><td class="memSeparator" colspan="2">&#160;</td></tr>
 </table><table class="memberdecls">
+<tr class="heading"><td colspan="2"><h2 class="groupheader"><a id="define-members" name="define-members"></a>
+Macros</h2></td></tr>
+<tr class="memitem:ac561fd43b541e79f7ac9e8e95059fc0d" id="r_ac561fd43b541e79f7ac9e8e95059fc0d"><td class="memItemLeft" align="right" valign="top">#define&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="backend_8hpp.html#ac561fd43b541e79f7ac9e8e95059fc0d">apply_op</a>(op)</td></tr>
+<tr class="memdesc:ac561fd43b541e79f7ac9e8e95059fc0d"><td class="mdescLeft">&#160;</td><td class="mdescRight">Applies an operation over all elements in the buffer.  <br /></td></tr>
+<tr class="separator:ac561fd43b541e79f7ac9e8e95059fc0d"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:a6922349e75c0c52c04687bfb6c910f04" id="r_a6922349e75c0c52c04687bfb6c910f04"><td class="memItemLeft" align="right" valign="top">#define&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="backend_8hpp.html#a6922349e75c0c52c04687bfb6c910f04">row_op</a>(opp,  oppeq)</td></tr>
+<tr class="memdesc:a6922349e75c0c52c04687bfb6c910f04"><td class="mdescLeft">&#160;</td><td class="mdescRight">Applies an operator along a row.  <br /></td></tr>
+<tr class="separator:a6922349e75c0c52c04687bfb6c910f04"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:a3d0ad468ddc642881c841aca91dbddea" id="r_a3d0ad468ddc642881c841aca91dbddea"><td class="memItemLeft" align="right" valign="top">#define&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="backend_8hpp.html#a3d0ad468ddc642881c841aca91dbddea">col_op</a>(opp,  oppeq)</td></tr>
+<tr class="memdesc:a3d0ad468ddc642881c841aca91dbddea"><td class="mdescLeft">&#160;</td><td class="mdescRight">Applies an operator along a column.  <br /></td></tr>
+<tr class="separator:a3d0ad468ddc642881c841aca91dbddea"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:af1b2d7aaa32060cccbacad33924dd3eb" id="r_af1b2d7aaa32060cccbacad33924dd3eb"><td class="memItemLeft" align="right" valign="top">#define&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="backend_8hpp.html#af1b2d7aaa32060cccbacad33924dd3eb">row_fn</a>(fn)</td></tr>
+<tr class="memdesc:af1b2d7aaa32060cccbacad33924dd3eb"><td class="mdescLeft">&#160;</td><td class="mdescRight">Applies a function along a row.  <br /></td></tr>
+<tr class="separator:af1b2d7aaa32060cccbacad33924dd3eb"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:a53224aabd766afd4db59ed465d5eba35" id="r_a53224aabd766afd4db59ed465d5eba35"><td class="memItemLeft" align="right" valign="top">#define&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="backend_8hpp.html#a53224aabd766afd4db59ed465d5eba35">col_fn</a>(fn)</td></tr>
+<tr class="memdesc:a53224aabd766afd4db59ed465d5eba35"><td class="mdescLeft">&#160;</td><td class="mdescRight">Applies a function along a column.  <br /></td></tr>
+<tr class="separator:a53224aabd766afd4db59ed465d5eba35"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:ac066b65c2d53ea770b700c74ed1326df" id="r_ac066b65c2d53ea770b700c74ed1326df"><td class="memItemLeft" align="right" valign="top">#define&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="backend_8hpp.html#ac066b65c2d53ea770b700c74ed1326df">logic_is</a>(op)</td></tr>
+<tr class="memdesc:ac066b65c2d53ea770b700c74ed1326df"><td class="mdescLeft">&#160;</td><td class="mdescRight">Applies a logical is operator.  <br /></td></tr>
+<tr class="separator:ac066b65c2d53ea770b700c74ed1326df"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:a8af7d2de75c0073addfade26919bbd88" id="r_a8af7d2de75c0073addfade26919bbd88"><td class="memItemLeft" align="right" valign="top">#define&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="backend_8hpp.html#a8af7d2de75c0073addfade26919bbd88">build_assoc_func</a>(func)</td></tr>
+<tr class="memdesc:a8af7d2de75c0073addfade26919bbd88"><td class="mdescLeft">&#160;</td><td class="mdescRight">Applies an associative function.  <br /></td></tr>
+<tr class="separator:a8af7d2de75c0073addfade26919bbd88"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:aa2ccea33afc9af2214babc9670bffbdb" id="r_aa2ccea33afc9af2214babc9670bffbdb"><td class="memItemLeft" align="right" valign="top">#define&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="backend_8hpp.html#aa2ccea33afc9af2214babc9670bffbdb">build_assoc_op</a>(op)</td></tr>
+<tr class="memdesc:aa2ccea33afc9af2214babc9670bffbdb"><td class="mdescLeft">&#160;</td><td class="mdescRight">Applies an associative operator.  <br /></td></tr>
+<tr class="separator:aa2ccea33afc9af2214babc9670bffbdb"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:ac09e035d3e8556eb9b5b691ea310c14a" id="r_ac09e035d3e8556eb9b5b691ea310c14a"><td class="memItemLeft" align="right" valign="top">#define&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="backend_8hpp.html#ac09e035d3e8556eb9b5b691ea310c14a">build_non_assoc_op</a>(op,  opeq)</td></tr>
+<tr class="memdesc:ac09e035d3e8556eb9b5b691ea310c14a"><td class="mdescLeft">&#160;</td><td class="mdescRight">Applies a non-associative operator.  <br /></td></tr>
+<tr class="separator:ac09e035d3e8556eb9b5b691ea310c14a"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:a8af7d2de75c0073addfade26919bbd88" id="r_a8af7d2de75c0073addfade26919bbd88"><td class="memItemLeft" align="right" valign="top">#define&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="backend_8hpp.html#a8af7d2de75c0073addfade26919bbd88">build_assoc_func</a>(func)</td></tr>
+<tr class="memdesc:a8af7d2de75c0073addfade26919bbd88"><td class="mdescLeft">&#160;</td><td class="mdescRight">Applies an associative function.  <br /></td></tr>
+<tr class="separator:a8af7d2de75c0073addfade26919bbd88"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:a830349149e0982b9453ddbf5664d0055" id="r_a830349149e0982b9453ddbf5664d0055"><td class="memItemLeft" align="right" valign="top">#define&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="backend_8hpp.html#a830349149e0982b9453ddbf5664d0055">logic_op</a>(op)</td></tr>
+<tr class="memdesc:a830349149e0982b9453ddbf5664d0055"><td class="mdescLeft">&#160;</td><td class="mdescRight">Applies a logical operator.  <br /></td></tr>
+<tr class="separator:a830349149e0982b9453ddbf5664d0055"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:a54188510f5bf9fd5222727740636b36f" id="r_a54188510f5bf9fd5222727740636b36f"><td class="memItemLeft" align="right" valign="top">#define&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="backend_8hpp.html#a54188510f5bf9fd5222727740636b36f">branch_fn</a>(fn)</td></tr>
+<tr class="memdesc:a54188510f5bf9fd5222727740636b36f"><td class="mdescLeft">&#160;</td><td class="mdescRight">Applies a function with two operands.  <br /></td></tr>
+<tr class="separator:a54188510f5bf9fd5222727740636b36f"><td class="memSeparator" colspan="2">&#160;</td></tr>
+</table><table class="memberdecls">
 <tr class="heading"><td colspan="2"><h2 class="groupheader"><a id="func-members" name="func-members"></a>
 Functions</h2></td></tr>
-<tr class="memitem:abeae26338271283c565b82dac9f060da" id="r_abeae26338271283c565b82dac9f060da"><td class="memTemplParams" colspan="2">template&lt;<a class="el" href="conceptjit_1_1float__scalar.html">jit::float_scalar</a> T&gt; </td></tr>
-<tr class="memitem:abeae26338271283c565b82dac9f060da"><td class="memTemplItemLeft" align="right" valign="top"><a class="el" href="classbackend_1_1buffer.html">buffer</a>&lt; T &gt;&#160;</td><td class="memTemplItemRight" valign="bottom"><a class="el" href="namespacebackend.html#abeae26338271283c565b82dac9f060da">backend::operator+</a> (<a class="el" href="classbackend_1_1buffer.html">buffer</a>&lt; T &gt; &amp;a, <a class="el" href="classbackend_1_1buffer.html">buffer</a>&lt; T &gt; &amp;b)</td></tr>
-<tr class="memdesc:abeae26338271283c565b82dac9f060da"><td class="mdescLeft">&#160;</td><td class="mdescRight">Add operation.  <br /></td></tr>
-<tr class="separator:abeae26338271283c565b82dac9f060da"><td class="memSeparator" colspan="2">&#160;</td></tr>
 <tr class="memitem:a768ea528fdcc3eb536222a87b772c688" id="r_a768ea528fdcc3eb536222a87b772c688"><td class="memTemplParams" colspan="2">template&lt;<a class="el" href="conceptjit_1_1float__scalar.html">jit::float_scalar</a> T&gt; </td></tr>
 <tr class="memitem:a768ea528fdcc3eb536222a87b772c688"><td class="memTemplItemLeft" align="right" valign="top">bool&#160;</td><td class="memTemplItemRight" valign="bottom"><a class="el" href="namespacebackend.html#a768ea528fdcc3eb536222a87b772c688">backend::operator==</a> (const <a class="el" href="classbackend_1_1buffer.html">buffer</a>&lt; T &gt; &amp;a, const <a class="el" href="classbackend_1_1buffer.html">buffer</a>&lt; T &gt; &amp;b)</td></tr>
 <tr class="memdesc:a768ea528fdcc3eb536222a87b772c688"><td class="mdescLeft">&#160;</td><td class="mdescRight">Equal operation.  <br /></td></tr>
 <tr class="separator:a768ea528fdcc3eb536222a87b772c688"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:a63b5cd19a61729666865b65911e7411f" id="r_a63b5cd19a61729666865b65911e7411f"><td class="memTemplParams" colspan="2">template&lt;<a class="el" href="conceptjit_1_1float__scalar.html">jit::float_scalar</a> T&gt; </td></tr>
+<tr class="memitem:a63b5cd19a61729666865b65911e7411f"><td class="memTemplItemLeft" align="right" valign="top"><a class="el" href="classbackend_1_1buffer.html">buffer</a>&lt; T &gt;&#160;</td><td class="memTemplItemRight" valign="bottom"><a class="el" href="namespacebackend.html#a63b5cd19a61729666865b65911e7411f">backend::max</a> (<a class="el" href="classbackend_1_1buffer.html">buffer</a>&lt; T &gt; &amp;a, <a class="el" href="classbackend_1_1buffer.html">buffer</a>&lt; T &gt; &amp;b)</td></tr>
+<tr class="memdesc:a63b5cd19a61729666865b65911e7411f"><td class="mdescLeft">&#160;</td><td class="mdescRight">Max operation.  <br /></td></tr>
+<tr class="separator:a63b5cd19a61729666865b65911e7411f"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:a4e5f0b7330f1261e15c6ff277d18e62f" id="r_a4e5f0b7330f1261e15c6ff277d18e62f"><td class="memTemplParams" colspan="2">template&lt;<a class="el" href="conceptjit_1_1float__scalar.html">jit::float_scalar</a> T&gt; </td></tr>
+<tr class="memitem:a4e5f0b7330f1261e15c6ff277d18e62f"><td class="memTemplItemLeft" align="right" valign="top"><a class="el" href="classbackend_1_1buffer.html">buffer</a>&lt; T &gt;&#160;</td><td class="memTemplItemRight" valign="bottom"><a class="el" href="namespacebackend.html#a4e5f0b7330f1261e15c6ff277d18e62f">backend::min</a> (<a class="el" href="classbackend_1_1buffer.html">buffer</a>&lt; T &gt; &amp;a, <a class="el" href="classbackend_1_1buffer.html">buffer</a>&lt; T &gt; &amp;b)</td></tr>
+<tr class="memdesc:a4e5f0b7330f1261e15c6ff277d18e62f"><td class="mdescLeft">&#160;</td><td class="mdescRight">Min operation.  <br /></td></tr>
+<tr class="separator:a4e5f0b7330f1261e15c6ff277d18e62f"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:abeae26338271283c565b82dac9f060da" id="r_abeae26338271283c565b82dac9f060da"><td class="memTemplParams" colspan="2">template&lt;<a class="el" href="conceptjit_1_1float__scalar.html">jit::float_scalar</a> T&gt; </td></tr>
+<tr class="memitem:abeae26338271283c565b82dac9f060da"><td class="memTemplItemLeft" align="right" valign="top"><a class="el" href="classbackend_1_1buffer.html">buffer</a>&lt; T &gt;&#160;</td><td class="memTemplItemRight" valign="bottom"><a class="el" href="namespacebackend.html#abeae26338271283c565b82dac9f060da">backend::operator+</a> (<a class="el" href="classbackend_1_1buffer.html">buffer</a>&lt; T &gt; &amp;a, <a class="el" href="classbackend_1_1buffer.html">buffer</a>&lt; T &gt; &amp;b)</td></tr>
+<tr class="memdesc:abeae26338271283c565b82dac9f060da"><td class="mdescLeft">&#160;</td><td class="mdescRight">Add operation.  <br /></td></tr>
+<tr class="separator:abeae26338271283c565b82dac9f060da"><td class="memSeparator" colspan="2">&#160;</td></tr>
 <tr class="memitem:abe34a7f0b2bda67cd57f785c445d482c" id="r_abe34a7f0b2bda67cd57f785c445d482c"><td class="memTemplParams" colspan="2">template&lt;<a class="el" href="conceptjit_1_1float__scalar.html">jit::float_scalar</a> T&gt; </td></tr>
 <tr class="memitem:abe34a7f0b2bda67cd57f785c445d482c"><td class="memTemplItemLeft" align="right" valign="top"><a class="el" href="classbackend_1_1buffer.html">buffer</a>&lt; T &gt;&#160;</td><td class="memTemplItemRight" valign="bottom"><a class="el" href="namespacebackend.html#abe34a7f0b2bda67cd57f785c445d482c">backend::operator-</a> (<a class="el" href="classbackend_1_1buffer.html">buffer</a>&lt; T &gt; &amp;a, <a class="el" href="classbackend_1_1buffer.html">buffer</a>&lt; T &gt; &amp;b)</td></tr>
 <tr class="memdesc:abe34a7f0b2bda67cd57f785c445d482c"><td class="mdescLeft">&#160;</td><td class="mdescRight">Subtract operation.  <br /></td></tr>
@@ -148,10 +196,50 @@ Functions</h2></td></tr>
 <tr class="memitem:aadcc0c2905ccb03c83ebb1e579ac94d5"><td class="memTemplItemLeft" align="right" valign="top"><a class="el" href="classbackend_1_1buffer.html">buffer</a>&lt; T &gt;&#160;</td><td class="memTemplItemRight" valign="bottom"><a class="el" href="namespacebackend.html#aadcc0c2905ccb03c83ebb1e579ac94d5">backend::operator/</a> (<a class="el" href="classbackend_1_1buffer.html">buffer</a>&lt; T &gt; &amp;a, <a class="el" href="classbackend_1_1buffer.html">buffer</a>&lt; T &gt; &amp;b)</td></tr>
 <tr class="memdesc:aadcc0c2905ccb03c83ebb1e579ac94d5"><td class="mdescLeft">&#160;</td><td class="mdescRight">Divide operation.  <br /></td></tr>
 <tr class="separator:aadcc0c2905ccb03c83ebb1e579ac94d5"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:aedb8028cd6f07b7ca51a1ebc96515667" id="r_aedb8028cd6f07b7ca51a1ebc96515667"><td class="memTemplParams" colspan="2">template&lt;std::floating_point T&gt; </td></tr>
+<tr class="memitem:aedb8028cd6f07b7ca51a1ebc96515667"><td class="memTemplItemLeft" align="right" valign="top"><a class="el" href="classbackend_1_1buffer.html">buffer</a>&lt; T &gt;&#160;</td><td class="memTemplItemRight" valign="bottom"><a class="el" href="namespacebackend.html#aedb8028cd6f07b7ca51a1ebc96515667">backend::hypot</a> (<a class="el" href="classbackend_1_1buffer.html">buffer</a>&lt; T &gt; &amp;a, <a class="el" href="classbackend_1_1buffer.html">buffer</a>&lt; T &gt; &amp;b)</td></tr>
+<tr class="memdesc:aedb8028cd6f07b7ca51a1ebc96515667"><td class="mdescLeft">&#160;</td><td class="mdescRight">hypot operation.  <br /></td></tr>
+<tr class="separator:aedb8028cd6f07b7ca51a1ebc96515667"><td class="memSeparator" colspan="2">&#160;</td></tr>
 <tr class="memitem:a07b983b9ede20904a6a0c6ff783ba5b5" id="r_a07b983b9ede20904a6a0c6ff783ba5b5"><td class="memTemplParams" colspan="2">template&lt;<a class="el" href="conceptjit_1_1float__scalar.html">jit::float_scalar</a> T&gt; </td></tr>
 <tr class="memitem:a07b983b9ede20904a6a0c6ff783ba5b5"><td class="memTemplItemLeft" align="right" valign="top"><a class="el" href="classbackend_1_1buffer.html">buffer</a>&lt; T &gt;&#160;</td><td class="memTemplItemRight" valign="bottom"><a class="el" href="namespacebackend.html#a07b983b9ede20904a6a0c6ff783ba5b5">backend::fma</a> (<a class="el" href="classbackend_1_1buffer.html">buffer</a>&lt; T &gt; &amp;a, <a class="el" href="classbackend_1_1buffer.html">buffer</a>&lt; T &gt; &amp;b, <a class="el" href="classbackend_1_1buffer.html">buffer</a>&lt; T &gt; &amp;c)</td></tr>
 <tr class="memdesc:a07b983b9ede20904a6a0c6ff783ba5b5"><td class="mdescLeft">&#160;</td><td class="mdescRight">Fused multiply add operation.  <br /></td></tr>
 <tr class="separator:a07b983b9ede20904a6a0c6ff783ba5b5"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:ac61b2dc53f40cc0df369e58ae0f70df0" id="r_ac61b2dc53f40cc0df369e58ae0f70df0"><td class="memTemplParams" colspan="2">template&lt;std::floating_point T&gt; </td></tr>
+<tr class="memitem:ac61b2dc53f40cc0df369e58ae0f70df0"><td class="memTemplItemLeft" align="right" valign="top"><a class="el" href="classbackend_1_1buffer.html">buffer</a>&lt; T &gt;&#160;</td><td class="memTemplItemRight" valign="bottom"><a class="el" href="namespacebackend.html#ac61b2dc53f40cc0df369e58ae0f70df0">backend::operator%</a> (<a class="el" href="classbackend_1_1buffer.html">buffer</a>&lt; T &gt; &amp;a, <a class="el" href="classbackend_1_1buffer.html">buffer</a>&lt; T &gt; &amp;b)</td></tr>
+<tr class="memdesc:ac61b2dc53f40cc0df369e58ae0f70df0"><td class="mdescLeft">&#160;</td><td class="mdescRight">Modulo operation.  <br /></td></tr>
+<tr class="separator:ac61b2dc53f40cc0df369e58ae0f70df0"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:aa3bed31fe7a164dc56615bca06afe28a" id="r_aa3bed31fe7a164dc56615bca06afe28a"><td class="memTemplParams" colspan="2">template&lt;<a class="el" href="conceptjit_1_1float__scalar.html">jit::float_scalar</a> T&gt; </td></tr>
+<tr class="memitem:aa3bed31fe7a164dc56615bca06afe28a"><td class="memTemplItemLeft" align="right" valign="top"><a class="el" href="classbackend_1_1buffer.html">buffer</a>&lt; T &gt;&#160;</td><td class="memTemplItemRight" valign="bottom"><a class="el" href="namespacebackend.html#aa3bed31fe7a164dc56615bca06afe28a">backend::operator==</a> (<a class="el" href="classbackend_1_1buffer.html">buffer</a>&lt; T &gt; &amp;a, <a class="el" href="classbackend_1_1buffer.html">buffer</a>&lt; T &gt; &amp;b)</td></tr>
+<tr class="memdesc:aa3bed31fe7a164dc56615bca06afe28a"><td class="mdescLeft">&#160;</td><td class="mdescRight">Equal operation.  <br /></td></tr>
+<tr class="separator:aa3bed31fe7a164dc56615bca06afe28a"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:a8f01cffe6c1ac41d4b55c57ec59b6b28" id="r_a8f01cffe6c1ac41d4b55c57ec59b6b28"><td class="memTemplParams" colspan="2">template&lt;<a class="el" href="conceptjit_1_1float__scalar.html">jit::float_scalar</a> T&gt; </td></tr>
+<tr class="memitem:a8f01cffe6c1ac41d4b55c57ec59b6b28"><td class="memTemplItemLeft" align="right" valign="top"><a class="el" href="classbackend_1_1buffer.html">buffer</a>&lt; T &gt;&#160;</td><td class="memTemplItemRight" valign="bottom"><a class="el" href="namespacebackend.html#a8f01cffe6c1ac41d4b55c57ec59b6b28">backend::operator!=</a> (<a class="el" href="classbackend_1_1buffer.html">buffer</a>&lt; T &gt; &amp;a, <a class="el" href="classbackend_1_1buffer.html">buffer</a>&lt; T &gt; &amp;b)</td></tr>
+<tr class="memdesc:a8f01cffe6c1ac41d4b55c57ec59b6b28"><td class="mdescLeft">&#160;</td><td class="mdescRight">Not equal operation.  <br /></td></tr>
+<tr class="separator:a8f01cffe6c1ac41d4b55c57ec59b6b28"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:a7824632b7fe319537431531ec16a4633" id="r_a7824632b7fe319537431531ec16a4633"><td class="memTemplParams" colspan="2">template&lt;std::floating_point T&gt; </td></tr>
+<tr class="memitem:a7824632b7fe319537431531ec16a4633"><td class="memTemplItemLeft" align="right" valign="top"><a class="el" href="classbackend_1_1buffer.html">buffer</a>&lt; T &gt;&#160;</td><td class="memTemplItemRight" valign="bottom"><a class="el" href="namespacebackend.html#a7824632b7fe319537431531ec16a4633">backend::operator&gt;</a> (<a class="el" href="classbackend_1_1buffer.html">buffer</a>&lt; T &gt; &amp;a, <a class="el" href="classbackend_1_1buffer.html">buffer</a>&lt; T &gt; &amp;b)</td></tr>
+<tr class="memdesc:a7824632b7fe319537431531ec16a4633"><td class="mdescLeft">&#160;</td><td class="mdescRight">Greater than operation.  <br /></td></tr>
+<tr class="separator:a7824632b7fe319537431531ec16a4633"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:ae7299f93b484c610e52ce553922eb6a9" id="r_ae7299f93b484c610e52ce553922eb6a9"><td class="memTemplParams" colspan="2">template&lt;std::floating_point T&gt; </td></tr>
+<tr class="memitem:ae7299f93b484c610e52ce553922eb6a9"><td class="memTemplItemLeft" align="right" valign="top"><a class="el" href="classbackend_1_1buffer.html">buffer</a>&lt; T &gt;&#160;</td><td class="memTemplItemRight" valign="bottom"><a class="el" href="namespacebackend.html#ae7299f93b484c610e52ce553922eb6a9">backend::operator&lt;</a> (<a class="el" href="classbackend_1_1buffer.html">buffer</a>&lt; T &gt; &amp;a, <a class="el" href="classbackend_1_1buffer.html">buffer</a>&lt; T &gt; &amp;b)</td></tr>
+<tr class="memdesc:ae7299f93b484c610e52ce553922eb6a9"><td class="mdescLeft">&#160;</td><td class="mdescRight">Less than operation.  <br /></td></tr>
+<tr class="separator:ae7299f93b484c610e52ce553922eb6a9"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:a0d6dadbef1d12fbe8a0fe0e363e4c4c0" id="r_a0d6dadbef1d12fbe8a0fe0e363e4c4c0"><td class="memTemplParams" colspan="2">template&lt;std::floating_point T&gt; </td></tr>
+<tr class="memitem:a0d6dadbef1d12fbe8a0fe0e363e4c4c0"><td class="memTemplItemLeft" align="right" valign="top"><a class="el" href="classbackend_1_1buffer.html">buffer</a>&lt; T &gt;&#160;</td><td class="memTemplItemRight" valign="bottom"><a class="el" href="namespacebackend.html#a0d6dadbef1d12fbe8a0fe0e363e4c4c0">backend::operator&gt;=</a> (<a class="el" href="classbackend_1_1buffer.html">buffer</a>&lt; T &gt; &amp;a, <a class="el" href="classbackend_1_1buffer.html">buffer</a>&lt; T &gt; &amp;b)</td></tr>
+<tr class="memdesc:a0d6dadbef1d12fbe8a0fe0e363e4c4c0"><td class="mdescLeft">&#160;</td><td class="mdescRight">Greater than equal operation.  <br /></td></tr>
+<tr class="separator:a0d6dadbef1d12fbe8a0fe0e363e4c4c0"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:a8356abd536b746dbd5b07dab463f8f91" id="r_a8356abd536b746dbd5b07dab463f8f91"><td class="memTemplParams" colspan="2">template&lt;std::floating_point T&gt; </td></tr>
+<tr class="memitem:a8356abd536b746dbd5b07dab463f8f91"><td class="memTemplItemLeft" align="right" valign="top"><a class="el" href="classbackend_1_1buffer.html">buffer</a>&lt; T &gt;&#160;</td><td class="memTemplItemRight" valign="bottom"><a class="el" href="namespacebackend.html#a8356abd536b746dbd5b07dab463f8f91">backend::operator&lt;=</a> (<a class="el" href="classbackend_1_1buffer.html">buffer</a>&lt; T &gt; &amp;a, <a class="el" href="classbackend_1_1buffer.html">buffer</a>&lt; T &gt; &amp;b)</td></tr>
+<tr class="memdesc:a8356abd536b746dbd5b07dab463f8f91"><td class="mdescLeft">&#160;</td><td class="mdescRight">Less than equal operation.  <br /></td></tr>
+<tr class="separator:a8356abd536b746dbd5b07dab463f8f91"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:a49e9ba0a2c08c4401f421874d4c481e6" id="r_a49e9ba0a2c08c4401f421874d4c481e6"><td class="memTemplParams" colspan="2">template&lt;std::floating_point T&gt; </td></tr>
+<tr class="memitem:a49e9ba0a2c08c4401f421874d4c481e6"><td class="memTemplItemLeft" align="right" valign="top"><a class="el" href="classbackend_1_1buffer.html">buffer</a>&lt; T &gt;&#160;</td><td class="memTemplItemRight" valign="bottom"><a class="el" href="namespacebackend.html#a49e9ba0a2c08c4401f421874d4c481e6">backend::operator&amp;&amp;</a> (<a class="el" href="classbackend_1_1buffer.html">buffer</a>&lt; T &gt; &amp;a, <a class="el" href="classbackend_1_1buffer.html">buffer</a>&lt; T &gt; &amp;b)</td></tr>
+<tr class="memdesc:a49e9ba0a2c08c4401f421874d4c481e6"><td class="mdescLeft">&#160;</td><td class="mdescRight">And operation.  <br /></td></tr>
+<tr class="separator:a49e9ba0a2c08c4401f421874d4c481e6"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:acdae9eda6e12b27289cfa330be344821" id="r_acdae9eda6e12b27289cfa330be344821"><td class="memTemplParams" colspan="2">template&lt;std::floating_point T&gt; </td></tr>
+<tr class="memitem:acdae9eda6e12b27289cfa330be344821"><td class="memTemplItemLeft" align="right" valign="top"><a class="el" href="classbackend_1_1buffer.html">buffer</a>&lt; T &gt;&#160;</td><td class="memTemplItemRight" valign="bottom"><a class="el" href="namespacebackend.html#acdae9eda6e12b27289cfa330be344821">backend::operator||</a> (<a class="el" href="classbackend_1_1buffer.html">buffer</a>&lt; T &gt; &amp;a, <a class="el" href="classbackend_1_1buffer.html">buffer</a>&lt; T &gt; &amp;b)</td></tr>
+<tr class="memdesc:acdae9eda6e12b27289cfa330be344821"><td class="mdescLeft">&#160;</td><td class="mdescRight">Or operation.  <br /></td></tr>
+<tr class="separator:acdae9eda6e12b27289cfa330be344821"><td class="memSeparator" colspan="2">&#160;</td></tr>
 <tr class="memitem:aeaba48a58e10e1225cc01603bf48cf6f" id="r_aeaba48a58e10e1225cc01603bf48cf6f"><td class="memTemplParams" colspan="2">template&lt;<a class="el" href="conceptjit_1_1float__scalar.html">jit::float_scalar</a> T&gt; </td></tr>
 <tr class="memitem:aeaba48a58e10e1225cc01603bf48cf6f"><td class="memTemplItemLeft" align="right" valign="top"><a class="el" href="classbackend_1_1buffer.html">buffer</a>&lt; T &gt;&#160;</td><td class="memTemplItemRight" valign="bottom"><a class="el" href="namespacebackend.html#aeaba48a58e10e1225cc01603bf48cf6f">backend::pow</a> (<a class="el" href="classbackend_1_1buffer.html">buffer</a>&lt; T &gt; &amp;base, <a class="el" href="classbackend_1_1buffer.html">buffer</a>&lt; T &gt; &amp;exponent)</td></tr>
 <tr class="memdesc:aeaba48a58e10e1225cc01603bf48cf6f"><td class="mdescLeft">&#160;</td><td class="mdescRight">Take the power.  <br /></td></tr>
@@ -160,11 +248,593 @@ Functions</h2></td></tr>
 <tr class="memitem:a77587c1f530f3aaf1722ae3a26143c6d"><td class="memTemplItemLeft" align="right" valign="top"><a class="el" href="classbackend_1_1buffer.html">buffer</a>&lt; T &gt;&#160;</td><td class="memTemplItemRight" valign="bottom"><a class="el" href="namespacebackend.html#a77587c1f530f3aaf1722ae3a26143c6d">backend::atan</a> (<a class="el" href="classbackend_1_1buffer.html">buffer</a>&lt; T &gt; &amp;x, <a class="el" href="classbackend_1_1buffer.html">buffer</a>&lt; T &gt; &amp;y)</td></tr>
 <tr class="memdesc:a77587c1f530f3aaf1722ae3a26143c6d"><td class="mdescLeft">&#160;</td><td class="mdescRight">Take the inverse tangent.  <br /></td></tr>
 <tr class="separator:a77587c1f530f3aaf1722ae3a26143c6d"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:aeb49009a8e50c7fd3ee5d0ad4b20b9c7" id="r_aeb49009a8e50c7fd3ee5d0ad4b20b9c7"><td class="memTemplParams" colspan="2">template&lt;std::floating_point T&gt; </td></tr>
+<tr class="memitem:aeb49009a8e50c7fd3ee5d0ad4b20b9c7"><td class="memTemplItemLeft" align="right" valign="top"><a class="el" href="classbackend_1_1buffer.html">buffer</a>&lt; T &gt;&#160;</td><td class="memTemplItemRight" valign="bottom"><a class="el" href="namespacebackend.html#aeb49009a8e50c7fd3ee5d0ad4b20b9c7">backend::copysign</a> (<a class="el" href="classbackend_1_1buffer.html">buffer</a>&lt; T &gt; &amp;x, <a class="el" href="classbackend_1_1buffer.html">buffer</a>&lt; T &gt; &amp;y)</td></tr>
+<tr class="memdesc:aeb49009a8e50c7fd3ee5d0ad4b20b9c7"><td class="mdescLeft">&#160;</td><td class="mdescRight">Copy the sign of x and apply it to y.  <br /></td></tr>
+<tr class="separator:aeb49009a8e50c7fd3ee5d0ad4b20b9c7"><td class="memSeparator" colspan="2">&#160;</td></tr>
 </table>
 <a name="details" id="details"></a><h2 class="groupheader">Detailed Description</h2>
 <div class="textblock"><p>Class signature to implement compute backends. </p>
 <p>Defined the function interfaces to access compute resources. </p>
-</div></div><!-- contents -->
+</div><h2 class="groupheader">Macro Definition Documentation</h2>
+<a id="ac561fd43b541e79f7ac9e8e95059fc0d" name="ac561fd43b541e79f7ac9e8e95059fc0d"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#ac561fd43b541e79f7ac9e8e95059fc0d">&#9670;&#160;</a></span>apply_op</h2>
+
+<div class="memitem">
+<div class="memproto">
+      <table class="memname">
+        <tr>
+          <td class="memname">#define apply_op</td>
+          <td>(</td>
+          <td class="paramtype">&#160;</td>
+          <td class="paramname">op</td><td>)</td>
+          <td></td>
+        </tr>
+      </table>
+</div><div class="memdoc">
+<b>Value:</b><div class="fragment"><div class="line"><span class="keywordflow">for</span> (T &amp;d : *this) { \</div>
+<div class="line">    d = op(d);       \</div>
+<div class="line">}</div>
+</div><!-- fragment -->
+<p>Applies an operation over all elements in the buffer. </p>
+<dl class="params"><dt>Parameters</dt><dd>
+  <table class="params">
+    <tr><td class="paramname">op</td><td>The operation to apply. </td></tr>
+  </table>
+  </dd>
+</dl>
+
+</div>
+</div>
+<a id="a54188510f5bf9fd5222727740636b36f" name="a54188510f5bf9fd5222727740636b36f"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#a54188510f5bf9fd5222727740636b36f">&#9670;&#160;</a></span>branch_fn</h2>
+
+<div class="memitem">
+<div class="memproto">
+      <table class="memname">
+        <tr>
+          <td class="memname">#define branch_fn</td>
+          <td>(</td>
+          <td class="paramtype">&#160;</td>
+          <td class="paramname">fn</td><td>)</td>
+          <td></td>
+        </tr>
+      </table>
+</div><div class="memdoc">
+<b>Value:</b><div class="fragment"><div class="line"><span class="keywordflow">if</span> (b.size() == 1) {                                 \</div>
+<div class="line">    <span class="keyword">const</span> T right = b[0];                            \</div>
+<div class="line">    for (<span class="keywordtype">size_t</span> i = 0, ie = a.size(); i &lt; ie; i++) { \</div>
+<div class="line">        a[i] = fn(a[i], right);                      \</div>
+<div class="line">    }                                                \</div>
+<div class="line">    <span class="keywordflow">return</span> a;                                        \</div>
+<div class="line">} <span class="keywordflow">else</span> <span class="keywordflow">if</span> (a.size() == 1) {                          \</div>
+<div class="line">    <span class="keyword">const</span> T left = a[0];                             \</div>
+<div class="line">    for (<span class="keywordtype">size_t</span> i = 0, ie = b.size(); <a class="code hl_variable" href="namespacegraph.html#a9b84f5a5f048fe7931dc4f9d39f5efa6">i</a> &lt; ie; <a class="code hl_variable" href="namespacegraph.html#a9b84f5a5f048fe7931dc4f9d39f5efa6">i</a>++) { \</div>
+<div class="line">        b[<a class="code hl_variable" href="namespacegraph.html#a9b84f5a5f048fe7931dc4f9d39f5efa6">i</a>] = fn(left, b[i]);                       \</div>
+<div class="line">    }                                                \</div>
+<div class="line">    <span class="keywordflow">return</span> b;                                        \</div>
+<div class="line">}                                                    \</div>
+<div class="line">                                                     \</div>
+<div class="line">assert(a.size() == b.size() &amp;&amp;                       \</div>
+<div class="line">       <span class="stringliteral">&quot;Left and right sizes are incompatible.&quot;</span>);    \</div>
+<div class="line">for (<span class="keywordtype">size_t</span> i = 0, ie = a.size(); <a class="code hl_variable" href="namespacegraph.html#a9b84f5a5f048fe7931dc4f9d39f5efa6">i</a> &lt; ie; <a class="code hl_variable" href="namespacegraph.html#a9b84f5a5f048fe7931dc4f9d39f5efa6">i</a>++) {     \</div>
+<div class="line">    a[<a class="code hl_variable" href="namespacegraph.html#a9b84f5a5f048fe7931dc4f9d39f5efa6">i</a>] = fn(a[i], b[i]);                           \</div>
+<div class="line">}                                                    \</div>
+<div class="line"><span class="keywordflow">return</span> a;</div>
+<div class="ttc" id="anamespacegraph_html_a9b84f5a5f048fe7931dc4f9d39f5efa6"><div class="ttname"><a href="namespacegraph.html#a9b84f5a5f048fe7931dc4f9d39f5efa6">graph::i</a></div><div class="ttdeci">constexpr T i</div><div class="ttdoc">Convenience type for imaginary constant.</div><div class="ttdef"><b>Definition</b> node.hpp:1186</div></div>
+</div><!-- fragment -->
+<p>Applies a function with two operands. </p>
+<dl class="params"><dt>Parameters</dt><dd>
+  <table class="params">
+    <tr><td class="paramname">op</td><td>The operation to apply. </td></tr>
+  </table>
+  </dd>
+</dl>
+
+</div>
+</div>
+<a id="a8af7d2de75c0073addfade26919bbd88" name="a8af7d2de75c0073addfade26919bbd88"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#a8af7d2de75c0073addfade26919bbd88">&#9670;&#160;</a></span>build_assoc_func <span class="overload">[1/2]</span></h2>
+
+<div class="memitem">
+<div class="memproto">
+      <table class="memname">
+        <tr>
+          <td class="memname">#define build_assoc_func</td>
+          <td>(</td>
+          <td class="paramtype">&#160;</td>
+          <td class="paramname">func</td><td>)</td>
+          <td></td>
+        </tr>
+      </table>
+</div><div class="memdoc">
+<b>Value:</b><div class="fragment"><div class="line"><span class="keywordflow">if</span> (b.size() == 1) {                              \</div>
+<div class="line">    <span class="keyword">const</span> T right = b[0];                         \</div>
+<div class="line">    for (T &amp;l : a) {                              \</div>
+<div class="line">        l = func(std::real(l),                    \</div>
+<div class="line">                 std::real(right));               \</div>
+<div class="line">    }                                             \</div>
+<div class="line">    <span class="keywordflow">return</span> a;                                     \</div>
+<div class="line">} <span class="keywordflow">else</span> <span class="keywordflow">if</span> (a.size() == 1) {                       \</div>
+<div class="line">    <span class="keyword">const</span> T left = a[0];                          \</div>
+<div class="line">    for (T &amp;r : b) {                              \</div>
+<div class="line">        r = func(std::real(r),                    \</div>
+<div class="line">                 std::real(left));                \</div>
+<div class="line">    }                                             \</div>
+<div class="line">    <span class="keywordflow">return</span> b;                                     \</div>
+<div class="line">}                                                 \</div>
+<div class="line">                                                  \</div>
+<div class="line">assert(a.size() == b.size() &amp;&amp;                    \</div>
+<div class="line">       <span class="stringliteral">&quot;Left and right sizes are incompatible.&quot;</span>); \</div>
+<div class="line">for (<span class="keywordtype">size_t</span> i = 0, ie = a.size(); <a class="code hl_variable" href="namespacegraph.html#a9b84f5a5f048fe7931dc4f9d39f5efa6">i</a> &lt; ie; <a class="code hl_variable" href="namespacegraph.html#a9b84f5a5f048fe7931dc4f9d39f5efa6">i</a>++) {  \</div>
+<div class="line">    a[<a class="code hl_variable" href="namespacegraph.html#a9b84f5a5f048fe7931dc4f9d39f5efa6">i</a>] = func(std::real(a[i]),                  \</div>
+<div class="line">                std::real(b[i]));                 \</div>
+<div class="line">}                                                 \</div>
+<div class="line"><span class="keywordflow">return</span> a;</div>
+</div><!-- fragment -->
+<p>Applies an associative function. </p>
+<dl class="params"><dt>Parameters</dt><dd>
+  <table class="params">
+    <tr><td class="paramname">op</td><td>The operation to apply.</td></tr>
+    <tr><td class="paramname">func</td><td>The function to apply. </td></tr>
+  </table>
+  </dd>
+</dl>
+
+</div>
+</div>
+<a id="a8af7d2de75c0073addfade26919bbd88" name="a8af7d2de75c0073addfade26919bbd88"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#a8af7d2de75c0073addfade26919bbd88">&#9670;&#160;</a></span>build_assoc_func <span class="overload">[2/2]</span></h2>
+
+<div class="memitem">
+<div class="memproto">
+      <table class="memname">
+        <tr>
+          <td class="memname">#define build_assoc_func</td>
+          <td>(</td>
+          <td class="paramtype">&#160;</td>
+          <td class="paramname">func</td><td>)</td>
+          <td></td>
+        </tr>
+      </table>
+</div><div class="memdoc">
+<b>Value:</b><div class="fragment"><div class="line"><span class="keywordflow">if</span> (b.size() == 1) {                              \</div>
+<div class="line">    <span class="keyword">const</span> T right = b[0];                         \</div>
+<div class="line">    for (T &amp;l : a) {                              \</div>
+<div class="line">        l = func(l, right);                       \</div>
+<div class="line">    }                                             \</div>
+<div class="line">    <span class="keywordflow">return</span> a;                                     \</div>
+<div class="line">} <span class="keywordflow">else</span> <span class="keywordflow">if</span> (a.size() == 1) {                       \</div>
+<div class="line">    <span class="keyword">const</span> T left = a[0];                          \</div>
+<div class="line">    for (T &amp;r : b) {                              \</div>
+<div class="line">        r = func(r, left);                        \</div>
+<div class="line">    }                                             \</div>
+<div class="line">    <span class="keywordflow">return</span> b;                                     \</div>
+<div class="line">}                                                 \</div>
+<div class="line">                                                  \</div>
+<div class="line">assert(a.size() == b.size() &amp;&amp;                    \</div>
+<div class="line">       <span class="stringliteral">&quot;Left and right sizes are incompatible.&quot;</span>); \</div>
+<div class="line">for (<span class="keywordtype">size_t</span> i = 0, ie = a.size(); <a class="code hl_variable" href="namespacegraph.html#a9b84f5a5f048fe7931dc4f9d39f5efa6">i</a> &lt; ie; <a class="code hl_variable" href="namespacegraph.html#a9b84f5a5f048fe7931dc4f9d39f5efa6">i</a>++) {  \</div>
+<div class="line">    a[<a class="code hl_variable" href="namespacegraph.html#a9b84f5a5f048fe7931dc4f9d39f5efa6">i</a>] = func(a[i], b[i]);                      \</div>
+<div class="line">}                                                 \</div>
+<div class="line"><span class="keywordflow">return</span> a;</div>
+</div><!-- fragment -->
+<p>Applies an associative function. </p>
+<dl class="params"><dt>Parameters</dt><dd>
+  <table class="params">
+    <tr><td class="paramname">op</td><td>The operation to apply.</td></tr>
+    <tr><td class="paramname">func</td><td>The function to apply. </td></tr>
+  </table>
+  </dd>
+</dl>
+
+</div>
+</div>
+<a id="aa2ccea33afc9af2214babc9670bffbdb" name="aa2ccea33afc9af2214babc9670bffbdb"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#aa2ccea33afc9af2214babc9670bffbdb">&#9670;&#160;</a></span>build_assoc_op</h2>
+
+<div class="memitem">
+<div class="memproto">
+      <table class="memname">
+        <tr>
+          <td class="memname">#define build_assoc_op</td>
+          <td>(</td>
+          <td class="paramtype">&#160;</td>
+          <td class="paramname">op</td><td>)</td>
+          <td></td>
+        </tr>
+      </table>
+</div><div class="memdoc">
+<b>Value:</b><div class="fragment"><div class="line"><span class="keywordflow">if</span> (b.size() == 1) {                              \</div>
+<div class="line">    <span class="keyword">const</span> T right = b[0];                         \</div>
+<div class="line">    for (T &amp;l : a) {                              \</div>
+<div class="line">        l op right;                               \</div>
+<div class="line">    }                                             \</div>
+<div class="line">    <span class="keywordflow">return</span> a;                                     \</div>
+<div class="line">} <span class="keywordflow">else</span> <span class="keywordflow">if</span> (a.size() == 1) {                       \</div>
+<div class="line">    <span class="keyword">const</span> T left = a[0];                          \</div>
+<div class="line">    for (T &amp;r : b) {                              \</div>
+<div class="line">        r op left;                                \</div>
+<div class="line">    }                                             \</div>
+<div class="line">    <span class="keywordflow">return</span> b;                                     \</div>
+<div class="line">}                                                 \</div>
+<div class="line">                                                  \</div>
+<div class="line">assert(a.size() == b.size() &amp;&amp;                    \</div>
+<div class="line">       <span class="stringliteral">&quot;Left and right sizes are incompatible.&quot;</span>); \</div>
+<div class="line">for (<span class="keywordtype">size_t</span> i = 0, ie = a.size(); <a class="code hl_variable" href="namespacegraph.html#a9b84f5a5f048fe7931dc4f9d39f5efa6">i</a> &lt; ie; <a class="code hl_variable" href="namespacegraph.html#a9b84f5a5f048fe7931dc4f9d39f5efa6">i</a>++) {  \</div>
+<div class="line">    a[<a class="code hl_variable" href="namespacegraph.html#a9b84f5a5f048fe7931dc4f9d39f5efa6">i</a>] op b[<a class="code hl_variable" href="namespacegraph.html#a9b84f5a5f048fe7931dc4f9d39f5efa6">i</a>];                                 \</div>
+<div class="line">}                                                 \</div>
+<div class="line"><span class="keywordflow">return</span> a;</div>
+</div><!-- fragment -->
+<p>Applies an associative operator. </p>
+<dl class="params"><dt>Parameters</dt><dd>
+  <table class="params">
+    <tr><td class="paramname">op</td><td>The operation to apply. </td></tr>
+  </table>
+  </dd>
+</dl>
+
+</div>
+</div>
+<a id="ac09e035d3e8556eb9b5b691ea310c14a" name="ac09e035d3e8556eb9b5b691ea310c14a"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#ac09e035d3e8556eb9b5b691ea310c14a">&#9670;&#160;</a></span>build_non_assoc_op</h2>
+
+<div class="memitem">
+<div class="memproto">
+      <table class="memname">
+        <tr>
+          <td class="memname">#define build_non_assoc_op</td>
+          <td>(</td>
+          <td class="paramtype">&#160;</td>
+          <td class="paramname">op, </td>
+        </tr>
+        <tr>
+          <td class="paramkey"></td>
+          <td></td>
+          <td class="paramtype">&#160;</td>
+          <td class="paramname">opeq&#160;</td>
+        </tr>
+        <tr>
+          <td></td>
+          <td>)</td>
+          <td></td><td></td>
+        </tr>
+      </table>
+</div><div class="memdoc">
+<b>Value:</b><div class="fragment"><div class="line"><span class="keywordflow">if</span> (b.size() == 1) {                              \</div>
+<div class="line">    <span class="keyword">const</span> T right = b[0];                         \</div>
+<div class="line">    for (T &amp;l : a) {                              \</div>
+<div class="line">        l opeq right;                             \</div>
+<div class="line">    }                                             \</div>
+<div class="line">    <span class="keywordflow">return</span> a;                                     \</div>
+<div class="line">} <span class="keywordflow">else</span> <span class="keywordflow">if</span> (a.size() == 1) {                       \</div>
+<div class="line">    <span class="keyword">const</span> T left = a[0];                          \</div>
+<div class="line">    for (T &amp;r : b) {                              \</div>
+<div class="line">        r = left op r;                            \</div>
+<div class="line">    }                                             \</div>
+<div class="line">    <span class="keywordflow">return</span> b;                                     \</div>
+<div class="line">}                                                 \</div>
+<div class="line">                                                  \</div>
+<div class="line">assert(a.size() == b.size() &amp;&amp;                    \</div>
+<div class="line">       <span class="stringliteral">&quot;Left and right sizes are incompatible.&quot;</span>); \</div>
+<div class="line">for (<span class="keywordtype">size_t</span> i = 0, ie = a.size(); <a class="code hl_variable" href="namespacegraph.html#a9b84f5a5f048fe7931dc4f9d39f5efa6">i</a> &lt; ie; <a class="code hl_variable" href="namespacegraph.html#a9b84f5a5f048fe7931dc4f9d39f5efa6">i</a>++) {  \</div>
+<div class="line">    a[<a class="code hl_variable" href="namespacegraph.html#a9b84f5a5f048fe7931dc4f9d39f5efa6">i</a>] opeq b[<a class="code hl_variable" href="namespacegraph.html#a9b84f5a5f048fe7931dc4f9d39f5efa6">i</a>];                               \</div>
+<div class="line">}                                                 \</div>
+<div class="line"><span class="keywordflow">return</span> a;</div>
+</div><!-- fragment -->
+<p>Applies a non-associative operator. </p>
+<dl class="params"><dt>Parameters</dt><dd>
+  <table class="params">
+    <tr><td class="paramname">op</td><td>The operation to apply. </td></tr>
+    <tr><td class="paramname">opeq</td><td>The assign operation to apply. </td></tr>
+  </table>
+  </dd>
+</dl>
+
+</div>
+</div>
+<a id="a53224aabd766afd4db59ed465d5eba35" name="a53224aabd766afd4db59ed465d5eba35"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#a53224aabd766afd4db59ed465d5eba35">&#9670;&#160;</a></span>col_fn</h2>
+
+<div class="memitem">
+<div class="memproto">
+      <table class="memname">
+        <tr>
+          <td class="memname">#define col_fn</td>
+          <td>(</td>
+          <td class="paramtype">&#160;</td>
+          <td class="paramname">fn</td><td>)</td>
+          <td></td>
+        </tr>
+      </table>
+</div><div class="memdoc">
+<b>Value:</b><div class="fragment"><div class="line">        <span class="keywordflow">if</span> (size() &gt; x.size()) {                                                       \</div>
+<div class="line">            assert(size()%x.size() == 0 &amp;&amp;                                             \</div>
+<div class="line">                   <span class="stringliteral">&quot;Vector operand size is not a multiple of matrix operand size&quot;</span>);    \</div>
+<div class="line">                                                                                       \</div>
+<div class="line">            <span class="keyword">const</span> <span class="keywordtype">size_t</span> num_columns = size()/x.size();                                \</div>
+<div class="line">            <span class="keyword">const</span> <span class="keywordtype">size_t</span> num_rows = x.size();                                          \</div>
+<div class="line">            for (<span class="keywordtype">size_t</span> i = 0; i &lt; num_rows; i++) {                                    \</div>
+<div class="line">                for (<span class="keywordtype">size_t</span> j = 0; j &lt; num_columns; j++) {                             \</div>
+<div class="line">                    (*this)[i*num_columns + j] = fn((*<span class="keyword">this</span>)[i*num_columns + j], x[j]); \</div>
+<div class="line">                }                                                                      \</div>
+<div class="line">            }                                                                          \</div>
+<div class="line">        } <span class="keywordflow">else</span> {                                                                       \</div>
+<div class="line">            assert(x.size()%size() == 0 &amp;&amp;                                             \</div>
+<div class="line">                   <span class="stringliteral">&quot;Vector operand size is not a multiple of matrix operand size&quot;</span>);    \</div>
+<div class="line">                                                                                       \</div>
+<div class="line">            std::vector&lt;T&gt; m(x.size());                                                \</div>
+<div class="line">            <span class="keyword">const</span> <span class="keywordtype">size_t</span> num_columns = x.size()/size();                                \</div>
+<div class="line">            <span class="keyword">const</span> <span class="keywordtype">size_t</span> num_rows = size();                                            \</div>
+<div class="line">            for (<span class="keywordtype">size_t</span> i = 0; <a class="code hl_variable" href="namespacegraph.html#a9b84f5a5f048fe7931dc4f9d39f5efa6">i</a> &lt; num_rows; <a class="code hl_variable" href="namespacegraph.html#a9b84f5a5f048fe7931dc4f9d39f5efa6">i</a>++) {                                    \</div>
+<div class="line">                for (<span class="keywordtype">size_t</span> j = 0; j &lt; num_columns; j++) {                             \</div>
+<div class="line">                    m[<a class="code hl_variable" href="namespacegraph.html#a9b84f5a5f048fe7931dc4f9d39f5efa6">i</a>*num_columns + j] = fn((*<span class="keyword">this</span>)[j], x[i*num_columns + j]);       \</div>
+<div class="line">                }                                                                      \</div>
+<div class="line">            }                                                                          \</div>
+<div class="line">            *<span class="keyword">this</span> = m;                                                                 \</div>
+<div class="line">        }</div>
+</div><!-- fragment -->
+<p>Applies a function along a column. </p>
+<dl class="params"><dt>Parameters</dt><dd>
+  <table class="params">
+    <tr><td class="paramname">fn</td><td>The function to apply. </td></tr>
+  </table>
+  </dd>
+</dl>
+
+</div>
+</div>
+<a id="a3d0ad468ddc642881c841aca91dbddea" name="a3d0ad468ddc642881c841aca91dbddea"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#a3d0ad468ddc642881c841aca91dbddea">&#9670;&#160;</a></span>col_op</h2>
+
+<div class="memitem">
+<div class="memproto">
+      <table class="memname">
+        <tr>
+          <td class="memname">#define col_op</td>
+          <td>(</td>
+          <td class="paramtype">&#160;</td>
+          <td class="paramname">opp, </td>
+        </tr>
+        <tr>
+          <td class="paramkey"></td>
+          <td></td>
+          <td class="paramtype">&#160;</td>
+          <td class="paramname">oppeq&#160;</td>
+        </tr>
+        <tr>
+          <td></td>
+          <td>)</td>
+          <td></td><td></td>
+        </tr>
+      </table>
+</div><div class="memdoc">
+<b>Value:</b><div class="fragment"><div class="line"><span class="keywordflow">if</span> (size() &gt; x.size()) {                                                    \</div>
+<div class="line">    assert(size()%x.size() == 0 &amp;&amp;                                          \</div>
+<div class="line">           <span class="stringliteral">&quot;Vector operand size is not a multiple of matrix operand size&quot;</span>); \</div>
+<div class="line">                                                                            \</div>
+<div class="line">    <span class="keyword">const</span> <span class="keywordtype">size_t</span> num_columns = size()/x.size();                             \</div>
+<div class="line">    <span class="keyword">const</span> <span class="keywordtype">size_t</span> num_rows = x.size();                                       \</div>
+<div class="line">    for (<span class="keywordtype">size_t</span> i = 0; i &lt; num_rows; i++) {                                 \</div>
+<div class="line">        for (<span class="keywordtype">size_t</span> j = 0; j &lt; num_columns; j++) {                          \</div>
+<div class="line">            (*this)[i*num_columns + j] oppeq x[j];                          \</div>
+<div class="line">        }                                                                   \</div>
+<div class="line">    }                                                                       \</div>
+<div class="line">} <span class="keywordflow">else</span> {                                                                    \</div>
+<div class="line">    assert(x.size()%size() == 0 &amp;&amp;                                          \</div>
+<div class="line">           <span class="stringliteral">&quot;Vector operand size is not a multiple of matrix operand size&quot;</span>); \</div>
+<div class="line">                                                                            \</div>
+<div class="line">    std::vector&lt;T&gt; m(x.size());                                             \</div>
+<div class="line">    <span class="keyword">const</span> <span class="keywordtype">size_t</span> num_columns = x.size()/size();                             \</div>
+<div class="line">    <span class="keyword">const</span> <span class="keywordtype">size_t</span> num_rows = size();                                         \</div>
+<div class="line">    for (<span class="keywordtype">size_t</span> i = 0; <a class="code hl_variable" href="namespacegraph.html#a9b84f5a5f048fe7931dc4f9d39f5efa6">i</a> &lt; num_rows; <a class="code hl_variable" href="namespacegraph.html#a9b84f5a5f048fe7931dc4f9d39f5efa6">i</a>++) {                                 \</div>
+<div class="line">        for (<span class="keywordtype">size_t</span> j = 0; j &lt; num_columns; j++) {                          \</div>
+<div class="line">            m[<a class="code hl_variable" href="namespacegraph.html#a9b84f5a5f048fe7931dc4f9d39f5efa6">i</a>*num_columns + j] = (*this)[j] opp x[<a class="code hl_variable" href="namespacegraph.html#a9b84f5a5f048fe7931dc4f9d39f5efa6">i</a>*num_columns + j];     \</div>
+<div class="line">        }                                                                   \</div>
+<div class="line">    }                                                                       \</div>
+<div class="line">    *<span class="keyword">this</span> = m;                                                              \</div>
+<div class="line">}</div>
+</div><!-- fragment -->
+<p>Applies an operator along a column. </p>
+<dl class="params"><dt>Parameters</dt><dd>
+  <table class="params">
+    <tr><td class="paramname">opp</td><td>The operation to apply. </td></tr>
+    <tr><td class="paramname">oppeq</td><td>The assignment operator to apply. </td></tr>
+  </table>
+  </dd>
+</dl>
+
+</div>
+</div>
+<a id="ac066b65c2d53ea770b700c74ed1326df" name="ac066b65c2d53ea770b700c74ed1326df"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#ac066b65c2d53ea770b700c74ed1326df">&#9670;&#160;</a></span>logic_is</h2>
+
+<div class="memitem">
+<div class="memproto">
+      <table class="memname">
+        <tr>
+          <td class="memname">#define logic_is</td>
+          <td>(</td>
+          <td class="paramtype">&#160;</td>
+          <td class="paramname">op</td><td>)</td>
+          <td></td>
+        </tr>
+      </table>
+</div><div class="memdoc">
+<b>Value:</b><div class="fragment"><div class="line"><span class="keywordflow">for</span> (T &amp;d : *this) { \</div>
+<div class="line">    d = std::op(d);  \</div>
+<div class="line">}</div>
+</div><!-- fragment -->
+<p>Applies a logical is operator. </p>
+<dl class="params"><dt>Parameters</dt><dd>
+  <table class="params">
+    <tr><td class="paramname">op</td><td>The operation to apply. </td></tr>
+  </table>
+  </dd>
+</dl>
+
+</div>
+</div>
+<a id="a830349149e0982b9453ddbf5664d0055" name="a830349149e0982b9453ddbf5664d0055"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#a830349149e0982b9453ddbf5664d0055">&#9670;&#160;</a></span>logic_op</h2>
+
+<div class="memitem">
+<div class="memproto">
+      <table class="memname">
+        <tr>
+          <td class="memname">#define logic_op</td>
+          <td>(</td>
+          <td class="paramtype">&#160;</td>
+          <td class="paramname">op</td><td>)</td>
+          <td></td>
+        </tr>
+      </table>
+</div><div class="memdoc">
+<b>Value:</b><div class="fragment"><div class="line"><span class="keywordflow">if</span> (b.size() == 1) {                                 \</div>
+<div class="line">    <span class="keyword">const</span> T right = b[0];                            \</div>
+<div class="line">    for (<span class="keywordtype">size_t</span> i = 0, ie = a.size(); i &lt; ie; i++) { \</div>
+<div class="line">        a[i] = <span class="keyword">static_cast&lt;</span>T<span class="keyword">&gt;</span> (a[i] op right);       \</div>
+<div class="line">    }                                                \</div>
+<div class="line">    <span class="keywordflow">return</span> a;                                        \</div>
+<div class="line">} <span class="keywordflow">else</span> <span class="keywordflow">if</span> (a.size() == 1) {                          \</div>
+<div class="line">    <span class="keyword">const</span> T left = a[0];                             \</div>
+<div class="line">    for (<span class="keywordtype">size_t</span> i = 0, ie = b.size(); <a class="code hl_variable" href="namespacegraph.html#a9b84f5a5f048fe7931dc4f9d39f5efa6">i</a> &lt; ie; <a class="code hl_variable" href="namespacegraph.html#a9b84f5a5f048fe7931dc4f9d39f5efa6">i</a>++) { \</div>
+<div class="line">        b[<a class="code hl_variable" href="namespacegraph.html#a9b84f5a5f048fe7931dc4f9d39f5efa6">i</a>] = <span class="keyword">static_cast&lt;</span>T<span class="keyword">&gt;</span> (left op b[<a class="code hl_variable" href="namespacegraph.html#a9b84f5a5f048fe7931dc4f9d39f5efa6">i</a>]);        \</div>
+<div class="line">    }                                                \</div>
+<div class="line">    <span class="keywordflow">return</span> b;                                        \</div>
+<div class="line">}                                                    \</div>
+<div class="line">                                                     \</div>
+<div class="line">assert(a.size() == b.size() &amp;&amp;                       \</div>
+<div class="line">       <span class="stringliteral">&quot;Left and right sizes are incompatible.&quot;</span>);    \</div>
+<div class="line">for (<span class="keywordtype">size_t</span> i = 0, ie = a.size(); <a class="code hl_variable" href="namespacegraph.html#a9b84f5a5f048fe7931dc4f9d39f5efa6">i</a> &lt; ie; <a class="code hl_variable" href="namespacegraph.html#a9b84f5a5f048fe7931dc4f9d39f5efa6">i</a>++) {     \</div>
+<div class="line">    a[<a class="code hl_variable" href="namespacegraph.html#a9b84f5a5f048fe7931dc4f9d39f5efa6">i</a>] = <span class="keyword">static_cast&lt;</span>T<span class="keyword">&gt;</span> (a[<a class="code hl_variable" href="namespacegraph.html#a9b84f5a5f048fe7931dc4f9d39f5efa6">i</a>] op b[<a class="code hl_variable" href="namespacegraph.html#a9b84f5a5f048fe7931dc4f9d39f5efa6">i</a>]);            \</div>
+<div class="line">}                                                    \</div>
+<div class="line"><span class="keywordflow">return</span> a;</div>
+</div><!-- fragment -->
+<p>Applies a logical operator. </p>
+<dl class="params"><dt>Parameters</dt><dd>
+  <table class="params">
+    <tr><td class="paramname">op</td><td>The operation to apply. </td></tr>
+  </table>
+  </dd>
+</dl>
+
+</div>
+</div>
+<a id="af1b2d7aaa32060cccbacad33924dd3eb" name="af1b2d7aaa32060cccbacad33924dd3eb"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#af1b2d7aaa32060cccbacad33924dd3eb">&#9670;&#160;</a></span>row_fn</h2>
+
+<div class="memitem">
+<div class="memproto">
+      <table class="memname">
+        <tr>
+          <td class="memname">#define row_fn</td>
+          <td>(</td>
+          <td class="paramtype">&#160;</td>
+          <td class="paramname">fn</td><td>)</td>
+          <td></td>
+        </tr>
+      </table>
+</div><div class="memdoc">
+<b>Value:</b><div class="fragment"><div class="line">        <span class="keywordflow">if</span> (size() &gt; x.size()) {                                                       \</div>
+<div class="line">            assert(size()%x.size() == 0 &amp;&amp;                                             \</div>
+<div class="line">                   <span class="stringliteral">&quot;Vector operand size is not a multiple of matrix operand size&quot;</span>);    \</div>
+<div class="line">                                                                                       \</div>
+<div class="line">            <span class="keyword">const</span> <span class="keywordtype">size_t</span> num_columns = size()/x.size();                                \</div>
+<div class="line">            <span class="keyword">const</span> <span class="keywordtype">size_t</span> num_rows = x.size();                                          \</div>
+<div class="line">            for (<span class="keywordtype">size_t</span> i = 0; i &lt; num_rows; i++) {                                    \</div>
+<div class="line">                for (<span class="keywordtype">size_t</span> j = 0; j &lt; num_columns; j++) {                             \</div>
+<div class="line">                    (*this)[i*num_columns + j] = fn((*<span class="keyword">this</span>)[i*num_columns + j], x[i]); \</div>
+<div class="line">                }                                                                      \</div>
+<div class="line">            }                                                                          \</div>
+<div class="line">        } <span class="keywordflow">else</span> {                                                                       \</div>
+<div class="line">            assert(x.size()%size() == 0 &amp;&amp;                                             \</div>
+<div class="line">                   <span class="stringliteral">&quot;Vector operand size is not a multiple of matrix operand size&quot;</span>);    \</div>
+<div class="line">                                                                                       \</div>
+<div class="line">            std::vector&lt;T&gt; m(x.size());                                                \</div>
+<div class="line">            <span class="keyword">const</span> <span class="keywordtype">size_t</span> num_columns = x.size()/size();                                \</div>
+<div class="line">            <span class="keyword">const</span> <span class="keywordtype">size_t</span> num_rows = size();                                            \</div>
+<div class="line">            for (<span class="keywordtype">size_t</span> i = 0; <a class="code hl_variable" href="namespacegraph.html#a9b84f5a5f048fe7931dc4f9d39f5efa6">i</a> &lt; num_rows; <a class="code hl_variable" href="namespacegraph.html#a9b84f5a5f048fe7931dc4f9d39f5efa6">i</a>++) {                                    \</div>
+<div class="line">                for (<span class="keywordtype">size_t</span> j = 0; j &lt; num_columns; j++) {                             \</div>
+<div class="line">                    m[<a class="code hl_variable" href="namespacegraph.html#a9b84f5a5f048fe7931dc4f9d39f5efa6">i</a>*num_columns + j] = fn((*<span class="keyword">this</span>)[i], x[i*num_columns + j]);       \</div>
+<div class="line">                }                                                                      \</div>
+<div class="line">            }                                                                          \</div>
+<div class="line">            *<span class="keyword">this</span> = m;                                                                 \</div>
+<div class="line">        }</div>
+</div><!-- fragment -->
+<p>Applies a function along a row. </p>
+<dl class="params"><dt>Parameters</dt><dd>
+  <table class="params">
+    <tr><td class="paramname">fn</td><td>The function to apply. </td></tr>
+  </table>
+  </dd>
+</dl>
+
+</div>
+</div>
+<a id="a6922349e75c0c52c04687bfb6c910f04" name="a6922349e75c0c52c04687bfb6c910f04"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#a6922349e75c0c52c04687bfb6c910f04">&#9670;&#160;</a></span>row_op</h2>
+
+<div class="memitem">
+<div class="memproto">
+      <table class="memname">
+        <tr>
+          <td class="memname">#define row_op</td>
+          <td>(</td>
+          <td class="paramtype">&#160;</td>
+          <td class="paramname">opp, </td>
+        </tr>
+        <tr>
+          <td class="paramkey"></td>
+          <td></td>
+          <td class="paramtype">&#160;</td>
+          <td class="paramname">oppeq&#160;</td>
+        </tr>
+        <tr>
+          <td></td>
+          <td>)</td>
+          <td></td><td></td>
+        </tr>
+      </table>
+</div><div class="memdoc">
+<b>Value:</b><div class="fragment"><div class="line"><span class="keywordflow">if</span> (size() &gt; x.size()) {                                                    \</div>
+<div class="line">    assert(size()%x.size() == 0 &amp;&amp;                                          \</div>
+<div class="line">           <span class="stringliteral">&quot;Vector operand size is not a multiple of matrix operand size&quot;</span>); \</div>
+<div class="line">                                                                            \</div>
+<div class="line">    <span class="keyword">const</span> <span class="keywordtype">size_t</span> num_columns = size()/x.size();                             \</div>
+<div class="line">    <span class="keyword">const</span> <span class="keywordtype">size_t</span> num_rows = x.size();                                       \</div>
+<div class="line">    for (<span class="keywordtype">size_t</span> i = 0; i &lt; num_rows; i++) {                                 \</div>
+<div class="line">        for (<span class="keywordtype">size_t</span> j = 0; j &lt; num_columns; j++) {                          \</div>
+<div class="line">            (*this)[i*num_columns + j] oppeq x[i];                          \</div>
+<div class="line">        }                                                                   \</div>
+<div class="line">    }                                                                       \</div>
+<div class="line">} <span class="keywordflow">else</span> {                                                                    \</div>
+<div class="line">    assert(x.size()%size() == 0 &amp;&amp;                                          \</div>
+<div class="line">           <span class="stringliteral">&quot;Vector operand size is not a multiple of matrix operand size&quot;</span>); \</div>
+<div class="line">                                                                            \</div>
+<div class="line">    std::vector&lt;T&gt; m(x.size());                                             \</div>
+<div class="line">    <span class="keyword">const</span> <span class="keywordtype">size_t</span> num_columns = x.size()/size();                             \</div>
+<div class="line">    <span class="keyword">const</span> <span class="keywordtype">size_t</span> num_rows = size();                                         \</div>
+<div class="line">    for (<span class="keywordtype">size_t</span> i = 0; <a class="code hl_variable" href="namespacegraph.html#a9b84f5a5f048fe7931dc4f9d39f5efa6">i</a> &lt; num_rows; <a class="code hl_variable" href="namespacegraph.html#a9b84f5a5f048fe7931dc4f9d39f5efa6">i</a>++) {                                 \</div>
+<div class="line">        for (<span class="keywordtype">size_t</span> j = 0; j &lt; num_columns; j++) {                          \</div>
+<div class="line">            m[<a class="code hl_variable" href="namespacegraph.html#a9b84f5a5f048fe7931dc4f9d39f5efa6">i</a>*num_columns + j] = (*this)[<a class="code hl_variable" href="namespacegraph.html#a9b84f5a5f048fe7931dc4f9d39f5efa6">i</a>] opp x[<a class="code hl_variable" href="namespacegraph.html#a9b84f5a5f048fe7931dc4f9d39f5efa6">i</a>*num_columns + j];     \</div>
+<div class="line">        }                                                                   \</div>
+<div class="line">    }                                                                       \</div>
+<div class="line">    *<span class="keyword">this</span> = m;                                                              \</div>
+<div class="line">}</div>
+</div><!-- fragment -->
+<p>Applies an operator along a row. </p>
+<dl class="params"><dt>Parameters</dt><dd>
+  <table class="params">
+    <tr><td class="paramname">opp</td><td>The operation to apply. </td></tr>
+    <tr><td class="paramname">oppeq</td><td>The assignment operator to apply. </td></tr>
+  </table>
+  </dd>
+</dl>
+
+</div>
+</div>
+</div><!-- contents -->
 </div><!-- doc-content -->
 <!-- start footer part -->
 <div id="nav-path" class="navpath"><!-- id is needed for treeview function! -->

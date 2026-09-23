@@ -144,9 +144,9 @@ Node Subclasses</h1>
 <div class="line">    foo_node(shared_leaf&lt;T, SAFE_MATH&gt; x) :</div>
 <div class="line">    straight_node(x, foo_node::to_string(x.get())) {}</div>
 <div class="line">};</div>
-<div class="ttc" id="anamespacejit_html_a67f5624eaf42230fcddd7c6b5321900a"><div class="ttname"><a href="namespacejit.html#a67f5624eaf42230fcddd7c6b5321900a">jit::format_to_string</a></div><div class="ttdeci">std::string format_to_string(const T value)</div><div class="ttdoc">Convert a value to a string while avoiding locale.</div><div class="ttdef"><b>Definition</b> register.hpp:212</div></div>
+<div class="ttc" id="anamespacejit_html_a67f5624eaf42230fcddd7c6b5321900a"><div class="ttname"><a href="namespacejit.html#a67f5624eaf42230fcddd7c6b5321900a">jit::format_to_string</a></div><div class="ttdeci">std::string format_to_string(const T value)</div><div class="ttdoc">Convert a value to a string while avoiding locale.</div><div class="ttdef"><b>Definition</b> register.hpp:213</div></div>
 </div><!-- fragment --><p> The static <code>to_string</code> method provides an identifier that can be used to generate a hash for the node. This hash will be used later in a factory function to ensure nodes only exist once.</p>
-<p>A factory function constructs a node then immediately reduces it. The reduced node is then checked if it already exists in the <a class="el" href="structgraph_1_1leaf__node_1_1caches__t.html#a8763928d01d20b97b3a6ec9ea347c0f0">graph::leaf_node::caches_t::nodes</a>. If the node is a new node, we add it to the cache and return it. Otherwise we discard the node and return the cached node in it's place. </p><div class="fragment"><div class="line"><span class="keyword">template</span>&lt;jit::<span class="keywordtype">float</span>_scalar T, <span class="keywordtype">bool</span> SAFE_MATH=false&gt;</div>
+<p>A factory function constructs a node then immediately reduces it. The reduced node is then checked if it already exists in the <a class="el" href="structgraph_1_1leaf__node_1_1caches__t.html#abc44d81680f39b25dd66a77f5775bee3">graph::leaf_node::caches_t::nodes</a>. If the node is a new node, we add it to the cache and return it. Otherwise we discard the node and return the cached node in it's place. </p><div class="fragment"><div class="line"><span class="keyword">template</span>&lt;jit::<span class="keywordtype">float</span>_scalar T, <span class="keywordtype">bool</span> SAFE_MATH=false&gt;</div>
 <div class="line">shared_leaf&lt;T, SAFE_MATH&gt; foo(shared_leaf&lt;T, SAFE_MATH&gt; x) {</div>
 <div class="line">    <span class="keyword">auto</span> temp = std::make_shared&lt;foo_node&lt;T, SAFE_MATH&gt;&gt; (x)-&gt;reduce();</div>
 <div class="line"><span class="comment">//  Test for hash collisions.</span></div>
@@ -223,29 +223,24 @@ df</h2>
 <div class="line">    }</div>
 <div class="line">    <span class="keywordflow">return</span> this-&gt;df_cache[hash];</div>
 <div class="line">}</div>
-</div><!-- fragment --><p> Here we made use of the <a class="el" href="classgraph_1_1leaf__node.html#aa5c836403ccaa4fe8231cbaaaac02060">graph::leaf_node::df_cache</a> to avoid needing to rebuild expressions every time the same derivative is taken.</p>
+</div><!-- fragment --><p> Here we made use of the <a class="el" href="classgraph_1_1leaf__node.html#af8064cde16dec4e66390835da208dcc5">graph::leaf_node::df_cache</a> to avoid needing to rebuild expressions every time the same derivative is taken.</p>
 <hr  />
  <h2><a class="anchor" id="new_operations_tutorial_compile_preamble"></a>
 Compile preamble</h2>
-<p>The <a class="el" href="classgraph_1_1leaf__node.html#afc102b9a3b9a61ec917750fe96e98f53">graph::leaf_node::compile_preamble</a> method provides ways to include header files or define functions. Lets use this method to define a function that can be called from the kernel. </p><div class="fragment"><div class="line"><span class="keyword">virtual</span> <span class="keywordtype">void</span> compile_preamble(std::ostringstream &amp;stream,</div>
-<div class="line">                              <a class="code hl_typedef" href="namespacejit.html#a9822ffd072bb1abcde9176028aa24a5e">jit::register_map</a> &amp;registers,</div>
-<div class="line">                              <a class="code hl_typedef" href="namespacejit.html#aed5672337b45a8b11f1351456d2284b8">jit::visiter_map</a> &amp;visited,</div>
-<div class="line">                              <a class="code hl_typedef" href="namespacejit.html#a8f16308f3c321ac415daf451d0157a91">jit::register_usage</a> &amp;usage,</div>
-<div class="line">                              <a class="code hl_typedef" href="namespacejit.html#a040839202e492715169f0e33e63c1e2a">jit::texture1d_list</a> &amp;textures1d,</div>
-<div class="line">                              <a class="code hl_typedef" href="namespacejit.html#a7e7f6b3f955215cb43f9fde4d066ea2a">jit::texture2d_list</a> &amp;textures2d,</div>
+<p>The <a class="el" href="classgraph_1_1leaf__node.html#a0fd734d2fde7b7b0168ab90877e65c8a">graph::leaf_node::compile_preamble</a> method provides ways to include header files or define functions. Lets use this method to define a function that can be called from the kernel. </p><div class="fragment"><div class="line"><span class="keyword">virtual</span> <span class="keywordtype">void</span> compile_preamble(std::ostringstream &amp;stream,</div>
+<div class="line">                              <a class="code hl_typedef" href="namespacejit.html#aaaa81016eb9cb161306980a63db3e720">jit::register_map</a> &amp;registers,</div>
+<div class="line">                              <a class="code hl_typedef" href="namespacejit.html#a10fd02967defc21d99a010c9025e1d78">jit::visiter_map</a> &amp;visited,</div>
+<div class="line">                              <a class="code hl_typedef" href="namespacejit.html#a6b1e88895ada14e42dfad16181ceb266">jit::register_usage</a> &amp;usage,</div>
+<div class="line">                              <a class="code hl_typedef" href="namespacejit.html#afd70e42a171bf30ee3f18dbd440cef51">jit::texture1d_list</a> &amp;textures1d,</div>
+<div class="line">                              <a class="code hl_typedef" href="namespacejit.html#afc6a80494e39f0058a6121ba0949b9eb">jit::texture2d_list</a> &amp;textures2d,</div>
+<div class="line">                              <a class="code hl_typedef" href="namespacejit.html#a7f92c8c5094ad3c8c58438f2e73c8e81">jit::preamble_map</a> &amp;pre_funcs,</div>
 <div class="line">                              <span class="keywordtype">int</span> &amp;avail_const_mem) {</div>
-<div class="line">    <span class="keywordflow">if</span> (visited.find(<span class="keyword">this</span>) == visited.end()) {</div>
+<div class="line">    <span class="keywordflow">if</span> (!visited.contains(<span class="keyword">this</span>)) {</div>
 <div class="line">        this-&gt;arg-&gt;compile_preamble(stream, registers,</div>
 <div class="line">                                    visited, usage,</div>
 <div class="line">                                    textures1d, textures2d,</div>
+<div class="line">                                    pre_funcs,</div>
 <div class="line">                                    avail_const_mem);</div>
-<div class="line"> </div>
-<div class="line">        jit::add_type&lt;T&gt; (stream);</div>
-<div class="line">        stream &lt;&lt; <span class="stringliteral">&quot; foo(const &quot;</span></div>
-<div class="line">        jit::add_type&lt;T&gt; (stream);</div>
-<div class="line">        stream &lt;&lt; <span class="stringliteral">&quot;x) {&quot;</span></div>
-<div class="line">               &lt;&lt; <span class="stringliteral">&quot;    return 2*x;&quot;</span></div>
-<div class="line">               &lt;&lt; <span class="stringliteral">&quot;}&quot;</span>;</div>
 <div class="line"> </div>
 <div class="line">        visited.insert(<span class="keyword">this</span>);</div>
 <div class="line"><span class="preprocessor">#ifdef SHOW_USE_COUNT</span></div>
@@ -254,25 +249,37 @@ Compile preamble</h2>
 <div class="line">        ++usage[<span class="keyword">this</span>];</div>
 <div class="line"><span class="preprocessor">#endif</span></div>
 <div class="line">    }</div>
+<div class="line"> </div>
+<div class="line">    <span class="keywordflow">if</span> (!pre_funcs.contains(<span class="stringliteral">&quot;foo&quot;</span>)) {</div>
+<div class="line">        visited.insert(<span class="stringliteral">&quot;foo&quot;</span>);</div>
+<div class="line"> </div>
+<div class="line">        jit::add_type&lt;T&gt; (stream);</div>
+<div class="line">        stream &lt;&lt; <span class="stringliteral">&quot; foo(const &quot;</span></div>
+<div class="line">        jit::add_type&lt;T&gt; (stream);</div>
+<div class="line">        stream &lt;&lt; <span class="stringliteral">&quot;x) {&quot;</span> &lt;&lt; std::endl</div>
+<div class="line">               &lt;&lt; <span class="stringliteral">&quot;    return 2*x;&quot;</span> &lt;&lt; std::endl</div>
+<div class="line">               &lt;&lt; <span class="stringliteral">&quot;}&quot;</span> &lt;&lt; std::endl;</div>
+<div class="line">    }</div>
 <div class="line">}</div>
-<div class="ttc" id="anamespacejit_html_a040839202e492715169f0e33e63c1e2a"><div class="ttname"><a href="namespacejit.html#a040839202e492715169f0e33e63c1e2a">jit::texture1d_list</a></div><div class="ttdeci">std::map&lt; void *, size_t &gt; texture1d_list</div><div class="ttdoc">Type alias for indexing 1D textures.</div><div class="ttdef"><b>Definition</b> register.hpp:263</div></div>
-<div class="ttc" id="anamespacejit_html_a7e7f6b3f955215cb43f9fde4d066ea2a"><div class="ttname"><a href="namespacejit.html#a7e7f6b3f955215cb43f9fde4d066ea2a">jit::texture2d_list</a></div><div class="ttdeci">std::map&lt; void *, std::array&lt; size_t, 2 &gt; &gt; texture2d_list</div><div class="ttdoc">Type alias for indexing 2D textures.</div><div class="ttdef"><b>Definition</b> register.hpp:265</div></div>
-<div class="ttc" id="anamespacejit_html_a8f16308f3c321ac415daf451d0157a91"><div class="ttname"><a href="namespacejit.html#a8f16308f3c321ac415daf451d0157a91">jit::register_usage</a></div><div class="ttdeci">std::map&lt; void *, size_t &gt; register_usage</div><div class="ttdoc">Type alias for counting register usage.</div><div class="ttdef"><b>Definition</b> register.hpp:259</div></div>
-<div class="ttc" id="anamespacejit_html_a9822ffd072bb1abcde9176028aa24a5e"><div class="ttname"><a href="namespacejit.html#a9822ffd072bb1abcde9176028aa24a5e">jit::register_map</a></div><div class="ttdeci">std::map&lt; void *, std::string &gt; register_map</div><div class="ttdoc">Type alias for mapping node pointers to register names.</div><div class="ttdef"><b>Definition</b> register.hpp:257</div></div>
-<div class="ttc" id="anamespacejit_html_aed5672337b45a8b11f1351456d2284b8"><div class="ttname"><a href="namespacejit.html#aed5672337b45a8b11f1351456d2284b8">jit::visiter_map</a></div><div class="ttdeci">std::set&lt; void * &gt; visiter_map</div><div class="ttdoc">Type alias for listing visited nodes.</div><div class="ttdef"><b>Definition</b> register.hpp:261</div></div>
+<div class="ttc" id="anamespacejit_html_a10fd02967defc21d99a010c9025e1d78"><div class="ttname"><a href="namespacejit.html#a10fd02967defc21d99a010c9025e1d78">jit::visiter_map</a></div><div class="ttdeci">std::unordered_set&lt; void * &gt; visiter_map</div><div class="ttdoc">Type alias for listing visited nodes.</div><div class="ttdef"><b>Definition</b> register.hpp:263</div></div>
+<div class="ttc" id="anamespacejit_html_a6b1e88895ada14e42dfad16181ceb266"><div class="ttname"><a href="namespacejit.html#a6b1e88895ada14e42dfad16181ceb266">jit::register_usage</a></div><div class="ttdeci">std::unordered_map&lt; void *, size_t &gt; register_usage</div><div class="ttdoc">Type alias for counting register usage.</div><div class="ttdef"><b>Definition</b> register.hpp:261</div></div>
+<div class="ttc" id="anamespacejit_html_a7f92c8c5094ad3c8c58438f2e73c8e81"><div class="ttname"><a href="namespacejit.html#a7f92c8c5094ad3c8c58438f2e73c8e81">jit::preamble_map</a></div><div class="ttdeci">std::unordered_set&lt; std::string &gt; preamble_map</div><div class="ttdoc">Type alias for preamble defined functions.</div><div class="ttdef"><b>Definition</b> register.hpp:269</div></div>
+<div class="ttc" id="anamespacejit_html_aaaa81016eb9cb161306980a63db3e720"><div class="ttname"><a href="namespacejit.html#aaaa81016eb9cb161306980a63db3e720">jit::register_map</a></div><div class="ttdeci">std::unordered_map&lt; void *, std::string &gt; register_map</div><div class="ttdoc">Type alias for mapping node pointers to register names.</div><div class="ttdef"><b>Definition</b> register.hpp:259</div></div>
+<div class="ttc" id="anamespacejit_html_afc6a80494e39f0058a6121ba0949b9eb"><div class="ttname"><a href="namespacejit.html#afc6a80494e39f0058a6121ba0949b9eb">jit::texture2d_list</a></div><div class="ttdeci">std::unordered_map&lt; void *, std::array&lt; size_t, 2 &gt; &gt; texture2d_list</div><div class="ttdoc">Type alias for indexing 2D textures.</div><div class="ttdef"><b>Definition</b> register.hpp:267</div></div>
+<div class="ttc" id="anamespacejit_html_afd70e42a171bf30ee3f18dbd440cef51"><div class="ttname"><a href="namespacejit.html#afd70e42a171bf30ee3f18dbd440cef51">jit::texture1d_list</a></div><div class="ttdeci">std::unordered_map&lt; void *, size_t &gt; texture1d_list</div><div class="ttdoc">Type alias for indexing 1D textures.</div><div class="ttdef"><b>Definition</b> register.hpp:265</div></div>
 </div><!-- fragment --><p> The compile methods generate kernel source code. In this case we created a function in the preamble to evaluate foo. Since we only want this create this preamble once, we first check if this node has already been visited. The <a class="el" href="build_system.html#build_system_dev_options">build system option</a> <code>SHOW_USE_COUNT</code> tracks the number of times a node is used in the kernel. When this option is set we need to increment it's usage count. </p><dl class="section note"><dt>Note</dt><dd>Most nodes don't require a preamble so this method can be left out.</dd></dl>
 <hr  />
  <h2><a class="anchor" id="new_operations_tutorial_compile"></a>
 Compile</h2>
 <p>The compile method writes a line of source code to the kernel. Here we can use the function defined in the preamble. </p><div class="fragment"><div class="line"><span class="keyword">virtual</span> shared_leaf&lt;T, SAFE_MATH&gt;</div>
 <div class="line"><a class="code hl_function" href="jit__test_8cpp.html#a27b34348d63e1712a46eef8cd89f8234">compile</a>(std::ostringstream &amp;stream,</div>
-<div class="line">        <a class="code hl_typedef" href="namespacejit.html#a9822ffd072bb1abcde9176028aa24a5e">jit::register_map</a> &amp;registers,</div>
-<div class="line">        <a class="code hl_typedef" href="namespacejit.html#a9822ffd072bb1abcde9176028aa24a5e">jit::register_map</a> &amp;indices,</div>
-<div class="line">        <span class="keyword">const</span> <a class="code hl_typedef" href="namespacejit.html#a8f16308f3c321ac415daf451d0157a91">jit::register_usage</a> &amp;usage) {</div>
+<div class="line">        <a class="code hl_typedef" href="namespacejit.html#aaaa81016eb9cb161306980a63db3e720">jit::register_map</a> &amp;registers,</div>
+<div class="line">        <span class="keyword">const</span> <a class="code hl_typedef" href="namespacejit.html#aaaa81016eb9cb161306980a63db3e720">jit::register_map</a> &amp;thread_mem,</div>
+<div class="line">        <span class="keyword">const</span> <a class="code hl_typedef" href="namespacejit.html#a6b1e88895ada14e42dfad16181ceb266">jit::register_usage</a> &amp;usage) {</div>
 <div class="line">    <span class="keywordflow">if</span> (registers.find(<span class="keyword">this</span>) == registers.end()) {</div>
 <div class="line">        shared_leaf&lt;T, SAFE_MATH&gt; a = this-&gt;arg-&gt;compile(stream,</div>
 <div class="line">                                                         registers,</div>
-<div class="line">                                                         indices,</div>
+<div class="line">                                                         thread_mem,</div>
 <div class="line">                                                         usage);</div>
 <div class="line"> </div>
 <div class="line">        registers[<span class="keyword">this</span>] = <a class="code hl_function" href="namespacejit.html#aff060cfc1e5b5a499390c636dc80e147">jit::to_string</a>(<span class="charliteral">&#39;r&#39;</span>, <span class="keyword">this</span>);</div>
@@ -286,7 +293,7 @@ Compile</h2>
 <div class="line">    <span class="keywordflow">return</span> this-&gt;shared_from_this();</div>
 <div class="line">}</div>
 <div class="ttc" id="ajit__test_8cpp_html_a27b34348d63e1712a46eef8cd89f8234"><div class="ttname"><a href="jit__test_8cpp.html#a27b34348d63e1712a46eef8cd89f8234">compile</a></div><div class="ttdeci">void compile(graph::input_nodes&lt; T &gt; inputs, graph::output_nodes&lt; T &gt; outputs, graph::map_nodes&lt; T &gt; setters, const T expected, const T tolerance)</div><div class="ttdoc">Compile kernal and check the result of the output.</div><div class="ttdef"><b>Definition</b> jit_test.cpp:49</div></div>
-<div class="ttc" id="anamespacejit_html_aff060cfc1e5b5a499390c636dc80e147"><div class="ttname"><a href="namespacejit.html#aff060cfc1e5b5a499390c636dc80e147">jit::to_string</a></div><div class="ttdeci">std::string to_string(const char prefix, const NODE *pointer)</div><div class="ttdoc">Convert a graph::leaf_node pointer to a string.</div><div class="ttdef"><b>Definition</b> register.hpp:246</div></div>
+<div class="ttc" id="anamespacejit_html_aff060cfc1e5b5a499390c636dc80e147"><div class="ttname"><a href="namespacejit.html#aff060cfc1e5b5a499390c636dc80e147">jit::to_string</a></div><div class="ttdeci">std::string to_string(const char prefix, const NODE *pointer)</div><div class="ttdoc">Convert a graph::leaf_node pointer to a string.</div><div class="ttdef"><b>Definition</b> register.hpp:247</div></div>
 </div><!-- fragment --><p> Kernels are created by assuming infinite registers. In this case, a register is a temporary variable. To provide a unique name, the node pointer value is converted into a string. Since we only want to evaluate this once, we check if the register has already been created.</p>
 <hr  />
  <h2><a class="anchor" id="new_operations_tutorial_to_latex"></a>
@@ -327,7 +334,7 @@ Remove Pseudo</h2>
  <h2><a class="anchor" id="new_operations_tutorial_to_vizgraph"></a>
 To Vizgraph</h2>
 <p>Generates a <a href="https://graphviz.org">vizgraph</a> node for visualization. </p><div class="fragment"><div class="line"><span class="keyword">virtual</span> shared_leaf&lt;T, SAFE_MATH&gt; to_vizgraph(std::stringstream &amp;stream,</div>
-<div class="line">                                              <a class="code hl_typedef" href="namespacejit.html#a9822ffd072bb1abcde9176028aa24a5e">jit::register_map</a> &amp;registers) {</div>
+<div class="line">                                              <a class="code hl_typedef" href="namespacejit.html#aaaa81016eb9cb161306980a63db3e720">jit::register_map</a> &amp;registers) {</div>
 <div class="line">    <span class="keywordflow">if</span> (registers.find(<span class="keyword">this</span>) == registers.end()) {</div>
 <div class="line">        <span class="keyword">const</span> std::string name = <a class="code hl_function" href="namespacejit.html#aff060cfc1e5b5a499390c636dc80e147">jit::to_string</a>(<span class="charliteral">&#39;r&#39;</span>, <span class="keyword">this</span>);</div>
 <div class="line">        registers[<span class="keyword">this</span>] = name;</div>

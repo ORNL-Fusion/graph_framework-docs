@@ -1,6 +1,7 @@
 var classtiming_1_1measure__diagnostic__threaded =
 [
     [ "measure_diagnostic_threaded", "classtiming_1_1measure__diagnostic__threaded.html#a99c2c9c7893cddd1b2418d061359ab68", null ],
+    [ "measure_diagnostic_threaded", "classtiming_1_1measure__diagnostic__threaded.html#a0d87e85a9ce8382a96fd659e643541e5", null ],
     [ "end_time", "classtiming_1_1measure__diagnostic__threaded.html#ac61666ebe0aa8d565dcb37ff54636409", null ],
     [ "print", "classtiming_1_1measure__diagnostic__threaded.html#a6f864d3287a07966acf60478cf5bc2bd", null ],
     [ "print_max", "classtiming_1_1measure__diagnostic__threaded.html#a7220e3a79aed005168138f3a653bb5f9", null ],

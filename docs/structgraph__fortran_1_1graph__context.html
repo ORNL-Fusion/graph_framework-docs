@@ -190,9 +190,9 @@ GENERIC&#160;</td><td class="memItemRight" valign="bottom"><b>set_variable</b> s
 <tr class="memitem:a6cc1154ebc36b63104e0d26d85df80f0" id="r_a6cc1154ebc36b63104e0d26d85df80f0"><td class="memItemLeft" align="right" valign="top">procedure&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="structgraph__fortran_1_1graph__context.html#a6cc1154ebc36b63104e0d26d85df80f0">atan</a> (this, left, right)</td></tr>
 <tr class="memdesc:a6cc1154ebc36b63104e0d26d85df80f0"><td class="mdescLeft">&#160;</td><td class="mdescRight">Create atan node.  <br /></td></tr>
 <tr class="separator:a6cc1154ebc36b63104e0d26d85df80f0"><td class="memSeparator" colspan="2">&#160;</td></tr>
-<tr class="memitem:ae595173959ff86d894d7b7430b36ae35" id="r_ae595173959ff86d894d7b7430b36ae35"><td class="memItemLeft" align="right" valign="top">procedure&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="structgraph__fortran_1_1graph__context.html#ae595173959ff86d894d7b7430b36ae35">random_state</a> (this, seed)</td></tr>
-<tr class="memdesc:ae595173959ff86d894d7b7430b36ae35"><td class="mdescLeft">&#160;</td><td class="mdescRight">Get random size.  <br /></td></tr>
-<tr class="separator:ae595173959ff86d894d7b7430b36ae35"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:a5e5d580e2a60f9c2feb8a9d5d6f70985" id="r_a5e5d580e2a60f9c2feb8a9d5d6f70985"><td class="memItemLeft" align="right" valign="top">procedure&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="structgraph__fortran_1_1graph__context.html#a5e5d580e2a60f9c2feb8a9d5d6f70985">random_state</a> (this, size, seed)</td></tr>
+<tr class="memdesc:a5e5d580e2a60f9c2feb8a9d5d6f70985"><td class="mdescLeft">&#160;</td><td class="mdescRight">Get random size.  <br /></td></tr>
+<tr class="separator:a5e5d580e2a60f9c2feb8a9d5d6f70985"><td class="memSeparator" colspan="2">&#160;</td></tr>
 <tr class="memitem:a1eae06c5195e2dd3e812c9d7bc8d32aa" id="r_a1eae06c5195e2dd3e812c9d7bc8d32aa"><td class="memItemLeft" align="right" valign="top">procedure&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="structgraph__fortran_1_1graph__context.html#a1eae06c5195e2dd3e812c9d7bc8d32aa">random</a> (this, state)</td></tr>
 <tr class="memdesc:a1eae06c5195e2dd3e812c9d7bc8d32aa"><td class="mdescLeft">&#160;</td><td class="mdescRight">Create random node.  <br /></td></tr>
 <tr class="separator:a1eae06c5195e2dd3e812c9d7bc8d32aa"><td class="memSeparator" colspan="2">&#160;</td></tr>
@@ -443,6 +443,7 @@ type(c_ptr)&#160;</td><td class="memItemRight" valign="bottom"><b>c_context</b><
     <tr><td class="paramdir">[in]</td><td class="paramname">outputs</td><td>Array of output nodes. </td></tr>
     <tr><td class="paramdir">[in]</td><td class="paramname">map_inputs</td><td>Array of map input nodes. </td></tr>
     <tr><td class="paramdir">[in]</td><td class="paramname">map_outputs</td><td>Array of map output nodes. </td></tr>
+    <tr><td class="paramdir">[in]</td><td class="paramname">atomics</td><td>Array of atomic nodes. </td></tr>
     <tr><td class="paramdir">[in]</td><td class="paramname">random_state</td><td>Optional random state, can be NULL if not used. </td></tr>
     <tr><td class="paramdir">[in]</td><td class="paramname">name</td><td>Name for the kernel. </td></tr>
     <tr><td class="paramdir">[in]</td><td class="paramname">num_particles</td><td>Number of elements to operate on. </td></tr>
@@ -492,6 +493,7 @@ type(c_ptr)&#160;</td><td class="memItemRight" valign="bottom"><b>c_context</b><
     <tr><td class="paramdir">[in]</td><td class="paramname">outputs</td><td>Array of output nodes. </td></tr>
     <tr><td class="paramdir">[in]</td><td class="paramname">map_inputs</td><td>Array of map input nodes. </td></tr>
     <tr><td class="paramdir">[in]</td><td class="paramname">map_outputs</td><td>Array of map output nodes. </td></tr>
+    <tr><td class="paramdir">[in]</td><td class="paramname">atomics</td><td>Array of atomic nodes. </td></tr>
     <tr><td class="paramdir">[in]</td><td class="paramname">random_state</td><td>Optional random state, can be NULL if not used. </td></tr>
     <tr><td class="paramdir">[in]</td><td class="paramname">name</td><td>Name for the kernel. </td></tr>
     <tr><td class="paramdir">[in]</td><td class="paramname">num_particles</td><td>Number of elements to operate on. </td></tr>
@@ -1462,8 +1464,8 @@ type(c_ptr)&#160;</td><td class="memItemRight" valign="bottom"><b>c_context</b><
 
 </div>
 </div>
-<a id="ae595173959ff86d894d7b7430b36ae35" name="ae595173959ff86d894d7b7430b36ae35"></a>
-<h2 class="memtitle"><span class="permalink"><a href="#ae595173959ff86d894d7b7430b36ae35">&#9670;&#160;</a></span>random_state()</h2>
+<a id="a5e5d580e2a60f9c2feb8a9d5d6f70985" name="a5e5d580e2a60f9c2feb8a9d5d6f70985"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#a5e5d580e2a60f9c2feb8a9d5d6f70985">&#9670;&#160;</a></span>random_state()</h2>
 
 <div class="memitem">
 <div class="memproto">
@@ -1473,6 +1475,12 @@ type(c_ptr)&#160;</td><td class="memItemRight" valign="bottom"><b>c_context</b><
           <td>(</td>
           <td class="paramtype">class(<a class="el" href="structgraph__fortran_1_1graph__context.html">graph_context</a>), intent(inout)&#160;</td>
           <td class="paramname"><em>this</em>, </td>
+        </tr>
+        <tr>
+          <td class="paramkey"></td>
+          <td></td>
+          <td class="paramtype">integer(c_long), intent(in)&#160;</td>
+          <td class="paramname"><em>size</em>, </td>
         </tr>
         <tr>
           <td class="paramkey"></td>
@@ -1492,6 +1500,7 @@ type(c_ptr)&#160;</td><td class="memItemRight" valign="bottom"><b>c_context</b><
 <dl class="params"><dt>Parameters</dt><dd>
   <table class="params">
     <tr><td class="paramdir">[in,out]</td><td class="paramname">this</td><td><a class="el" href="structgraph__fortran_1_1graph__context.html">graph_context</a> instance. </td></tr>
+    <tr><td class="paramdir">[in]</td><td class="paramname">size</td><td>Number of random numbers needed. </td></tr>
     <tr><td class="paramdir">[in]</td><td class="paramname">seed</td><td>Initial random seed. </td></tr>
   </table>
   </dd>

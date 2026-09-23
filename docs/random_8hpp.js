@@ -9,5 +9,6 @@ var random_8hpp =
     [ "random_cast", "random_8hpp.html#ae1609f1525761c93cc940ab166dea908", null ],
     [ "random_scale", "random_8hpp.html#a01ad87b7901bcba474cb79d9e1cf70c3", null ],
     [ "random_state", "random_8hpp.html#ae2084dfa9523b7c8cab9a9912f65a974", null ],
-    [ "random_state_cast", "random_8hpp.html#a0eac7c529a4fbe74524b258537e3861b", null ]
+    [ "random_state_cast", "random_8hpp.html#a0eac7c529a4fbe74524b258537e3861b", null ],
+    [ "uniform_random", "random_8hpp.html#a0572ad95e9199fbd0b3c5536b9704363", null ]
 ];

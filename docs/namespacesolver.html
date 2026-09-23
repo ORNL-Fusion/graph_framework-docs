@@ -133,16 +133,16 @@ Concepts</h2></td></tr>
 </table><table class="memberdecls">
 <tr class="heading"><td colspan="2"><h2 class="groupheader"><a id="func-members" name="func-members"></a>
 Functions</h2></td></tr>
-<tr class="memitem:af0236e2736c071193fed379d294cc437" id="r_af0236e2736c071193fed379d294cc437"><td class="memTemplParams" colspan="2">template&lt;<a class="el" href="conceptjit_1_1float__scalar.html">jit::float_scalar</a> T, bool SAFE_MATH = false&gt; </td></tr>
-<tr class="memitem:af0236e2736c071193fed379d294cc437"><td class="memTemplItemLeft" align="right" valign="top">void&#160;</td><td class="memTemplItemRight" valign="bottom"><a class="el" href="namespacesolver.html#af0236e2736c071193fed379d294cc437">newton</a> (<a class="el" href="classworkflow_1_1manager.html">workflow::manager</a>&lt; T, SAFE_MATH &gt; &amp;work, <a class="el" href="namespacegraph.html#aec6ce7b08d650c6b236b68bd68a2ce0a">graph::output_nodes</a>&lt; T, SAFE_MATH &gt; vars, <a class="el" href="namespacegraph.html#a7f4f9ab246d37d23e0259709e626bc36">graph::input_nodes</a>&lt; T, SAFE_MATH &gt; inputs, <a class="el" href="namespacegraph.html#ac8853b055dcbbfd35dff9b4584d5ef36">graph::shared_leaf</a>&lt; T, SAFE_MATH &gt; func, <a class="el" href="namespacegraph.html#a7d69a698d998bfb31f5611ad55e44092">graph::shared_random_state</a>&lt; T, SAFE_MATH &gt; state, const T tolerance=1.0E-30, const size_t max_iterations=1000, const T step=1.0)</td></tr>
-<tr class="memdesc:af0236e2736c071193fed379d294cc437"><td class="mdescLeft">&#160;</td><td class="mdescRight">Determine the value of vars to minimize the loss function.  <br /></td></tr>
-<tr class="separator:af0236e2736c071193fed379d294cc437"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:ae31aae3b4744338e333c6989be8ed766" id="r_ae31aae3b4744338e333c6989be8ed766"><td class="memTemplParams" colspan="2">template&lt;<a class="el" href="conceptjit_1_1float__scalar.html">jit::float_scalar</a> T, bool SAFE_MATH = false&gt; </td></tr>
+<tr class="memitem:ae31aae3b4744338e333c6989be8ed766"><td class="memTemplItemLeft" align="right" valign="top">void&#160;</td><td class="memTemplItemRight" valign="bottom"><a class="el" href="namespacesolver.html#ae31aae3b4744338e333c6989be8ed766">newton</a> (<a class="el" href="classworkflow_1_1manager.html">workflow::manager</a>&lt; T, SAFE_MATH &gt; &amp;work, <a class="el" href="namespacegraph.html#aec6ce7b08d650c6b236b68bd68a2ce0a">graph::output_nodes</a>&lt; T, SAFE_MATH &gt; vars, <a class="el" href="namespacegraph.html#a7f4f9ab246d37d23e0259709e626bc36">graph::input_nodes</a>&lt; T, SAFE_MATH &gt; inputs, <a class="el" href="namespacegraph.html#a7f4f9ab246d37d23e0259709e626bc36">graph::input_nodes</a>&lt; T, SAFE_MATH &gt; atomics, <a class="el" href="namespacegraph.html#ac8853b055dcbbfd35dff9b4584d5ef36">graph::shared_leaf</a>&lt; T, SAFE_MATH &gt; func, <a class="el" href="namespacegraph.html#a7d69a698d998bfb31f5611ad55e44092">graph::shared_random_state</a>&lt; T, SAFE_MATH &gt; state, const T tolerance=1.0E-30, const size_t max_iterations=1000, const T step=1.0)</td></tr>
+<tr class="memdesc:ae31aae3b4744338e333c6989be8ed766"><td class="mdescLeft">&#160;</td><td class="mdescRight">Determine the value of vars to minimize the loss function.  <br /></td></tr>
+<tr class="separator:ae31aae3b4744338e333c6989be8ed766"><td class="memSeparator" colspan="2">&#160;</td></tr>
 </table>
 <a name="details" id="details"></a><h2 class="groupheader">Detailed Description</h2>
 <div class="textblock"><p>Name space for solvers. </p>
 </div><h2 class="groupheader">Function Documentation</h2>
-<a id="af0236e2736c071193fed379d294cc437" name="af0236e2736c071193fed379d294cc437"></a>
-<h2 class="memtitle"><span class="permalink"><a href="#af0236e2736c071193fed379d294cc437">&#9670;&#160;</a></span>newton()</h2>
+<a id="ae31aae3b4744338e333c6989be8ed766" name="ae31aae3b4744338e333c6989be8ed766"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#ae31aae3b4744338e333c6989be8ed766">&#9670;&#160;</a></span>newton()</h2>
 
 <div class="memitem">
 <div class="memproto">
@@ -166,6 +166,12 @@ template&lt;<a class="el" href="conceptjit_1_1float__scalar.html">jit::float_sca
           <td></td>
           <td class="paramtype"><a class="el" href="namespacegraph.html#a7f4f9ab246d37d23e0259709e626bc36">graph::input_nodes</a>&lt; T, SAFE_MATH &gt;&#160;</td>
           <td class="paramname"><em>inputs</em>, </td>
+        </tr>
+        <tr>
+          <td class="paramkey"></td>
+          <td></td>
+          <td class="paramtype"><a class="el" href="namespacegraph.html#a7f4f9ab246d37d23e0259709e626bc36">graph::input_nodes</a>&lt; T, SAFE_MATH &gt;&#160;</td>
+          <td class="paramname"><em>atomics</em>, </td>
         </tr>
         <tr>
           <td class="paramkey"></td>
@@ -219,6 +225,7 @@ template&lt;<a class="el" href="conceptjit_1_1float__scalar.html">jit::float_sca
     <tr><td class="paramdir">[in,out]</td><td class="paramname">work</td><td>Workflow manager. </td></tr>
     <tr><td class="paramdir">[in]</td><td class="paramname">vars</td><td>The unknowns to solver for. </td></tr>
     <tr><td class="paramdir">[in]</td><td class="paramname">inputs</td><td>Inputs for jit compile. </td></tr>
+    <tr><td class="paramdir">[in]</td><td class="paramname">atomics</td><td>Atomic inputs for jit compile. </td></tr>
     <tr><td class="paramdir">[in]</td><td class="paramname">func</td><td>Function to find the root of. </td></tr>
     <tr><td class="paramdir">[in]</td><td class="paramname">state</td><td>Random state node. </td></tr>
     <tr><td class="paramdir">[in]</td><td class="paramname">tolerance</td><td>Tolerance to solve the dispersion function to. </td></tr>

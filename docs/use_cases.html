@@ -101,6 +101,7 @@ $(document).ready(function(){initNavTree('use_cases.html',''); initResizable(); 
 <div class="contents">
 <div class="toc"><h3>Table of Contents</h3>
 <ul><li class="level1"><a href="#use_cases_introduction">Introduction</a><ul><li class="level2"><a href="#use_cases_rf">RF Ray tracing</a><ul><li class="level3"><a href="#use_cases_rf_correctness">Correctness</a></li>
+<li class="level3"><a href="#use_cases_rf_correctness_genray">Comparison to GENRAY</a></li>
 </ul>
 </li>
 </ul>
@@ -172,8 +173,8 @@ Wave trajectory with frequencies above the right-hand cutoff, ωr, for the cold 
 <div class="caption">
 Wave trajectory with frequencies between the upper hybrid resonance, ωh, and the left-hand cutoff, ωl, for the cold plasma dispersion relation. The X-Mode branch can pass the plasma frequency cutoff, ωpe, while O-mode cannot. The O-Mode can pass through the upper hybrid resonance, ωh, while the X-Mode branch is absorbed. The bottom plot tracks the resulting dispersion function residual, |D(k,ω)|, of the solver as the rays are traced.</div></div>
 <p> The figure above shows the wave trajectories for two waves between \(\omega_{h}\) and \(\omega_{l}\). The X-Mode branch can pass \(\omega_{pe}\) cutoff while the O-Mode branch is reflected. The X-Mode branch is absorbed in the upper hybrid resonance, \(\omega_{h}\), while the O-Mode branch can pass through it.</p>
-<h3><a class="anchor" id="use_cases_rf_correctness"></a>
-Correctness</h3>
+<h3><a class="anchor" id="use_cases_rf_correctness_genray"></a>
+Comparison to GENRAY</h3>
 <p><a href="https://compxco.com/genray.html">Genray</a> is an RF-Ray tracing code written in Fortran which operates in a cylindrical geometry. Toroidal equilibria can be imported using the <a href="https://dx.doi.org/10.1088/0029-5515/25/11/007">EFIT</a> EQDSK format. Derivative information must either be explicitly defined or used a numerical differentiation. Since Genray does not trace within the vacuum region care was taken to ensure the two codes started from the same initial conditions. A single ray was traced in Genray then initial position and wave number was used to initialize the Graph framework ray tracer. Additionally the plasma profiles from Genray were matched with expression in the graph framework. </p><div class="image">
 <img src="GenrayRays.png" alt=""/>
 <div class="caption">

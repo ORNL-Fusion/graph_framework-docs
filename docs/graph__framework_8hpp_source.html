@@ -131,15 +131,17 @@ $(document).ready(function(){initNavTree('graph__framework_8hpp_source.html','')
 <div class="line"><a id="l00027" name="l00027"></a><span class="lineno">   27</span><span class="preprocessor">#include &quot;<a class="code" href="trigonometry_8hpp.html">trigonometry.hpp</a>&quot;</span></div>
 <div class="line"><a id="l00028" name="l00028"></a><span class="lineno">   28</span><span class="preprocessor">#include &quot;<a class="code" href="vector_8hpp.html">vector.hpp</a>&quot;</span></div>
 <div class="line"><a id="l00029" name="l00029"></a><span class="lineno">   29</span><span class="preprocessor">#include &quot;<a class="code" href="workflow_8hpp.html">workflow.hpp</a>&quot;</span></div>
-<div class="line"><a id="l00030" name="l00030"></a><span class="lineno">   30</span> </div>
-<div class="line"><a id="l00031" name="l00031"></a><span class="lineno">   31</span><span class="preprocessor">#ifdef USE_CUDA</span></div>
-<div class="line"><a id="l00032" name="l00032"></a><span class="lineno">   32</span><span class="preprocessor">#include &quot;<a class="code" href="cuda__context_8hpp.html">cuda_context.hpp</a>&quot;</span></div>
-<div class="line"><a id="l00033" name="l00033"></a><span class="lineno">   33</span><span class="preprocessor">#endif</span></div>
-<div class="line"><a id="l00034" name="l00034"></a><span class="lineno">   34</span><span class="preprocessor">#ifdef USE_METAL</span></div>
-<div class="line"><a id="l00035" name="l00035"></a><span class="lineno">   35</span><span class="preprocessor">#include &quot;<a class="code" href="metal__context_8hpp.html">metal_context.hpp</a>&quot;</span></div>
-<div class="line"><a id="l00036" name="l00036"></a><span class="lineno">   36</span><span class="preprocessor">#endif</span></div>
-<div class="line"><a id="l00037" name="l00037"></a><span class="lineno">   37</span> </div>
-<div class="line"><a id="l00038" name="l00038"></a><span class="lineno">   38</span><span class="preprocessor">#endif </span><span class="comment">/* graph_framework_h */</span><span class="preprocessor"></span></div>
+<div class="line"><a id="l00030" name="l00030"></a><span class="lineno">   30</span><span class="preprocessor">#include &quot;<a class="code" href="particle__in__cell_8hpp.html">particle_in_cell.hpp</a>&quot;</span></div>
+<div class="line"><a id="l00031" name="l00031"></a><span class="lineno">   31</span><span class="preprocessor">#include &quot;<a class="code" href="logical_8hpp.html">logical.hpp</a>&quot;</span></div>
+<div class="line"><a id="l00032" name="l00032"></a><span class="lineno">   32</span> </div>
+<div class="line"><a id="l00033" name="l00033"></a><span class="lineno">   33</span><span class="preprocessor">#ifdef USE_CUDA</span></div>
+<div class="line"><a id="l00034" name="l00034"></a><span class="lineno">   34</span><span class="preprocessor">#include &quot;<a class="code" href="cuda__context_8hpp.html">cuda_context.hpp</a>&quot;</span></div>
+<div class="line"><a id="l00035" name="l00035"></a><span class="lineno">   35</span><span class="preprocessor">#endif</span></div>
+<div class="line"><a id="l00036" name="l00036"></a><span class="lineno">   36</span><span class="preprocessor">#ifdef USE_METAL</span></div>
+<div class="line"><a id="l00037" name="l00037"></a><span class="lineno">   37</span><span class="preprocessor">#include &quot;<a class="code" href="metal__context_8hpp.html">metal_context.hpp</a>&quot;</span></div>
+<div class="line"><a id="l00038" name="l00038"></a><span class="lineno">   38</span><span class="preprocessor">#endif</span></div>
+<div class="line"><a id="l00039" name="l00039"></a><span class="lineno">   39</span> </div>
+<div class="line"><a id="l00040" name="l00040"></a><span class="lineno">   40</span><span class="preprocessor">#endif </span><span class="comment">/* graph_framework_h */</span><span class="preprocessor"></span></div>
 <div class="ttc" id="aabsorption_8hpp_html"><div class="ttname"><a href="absorption_8hpp.html">absorption.hpp</a></div><div class="ttdoc">Base class for an absorption model.</div></div>
 <div class="ttc" id="aarithmetic_8hpp_html"><div class="ttname"><a href="arithmetic_8hpp.html">arithmetic.hpp</a></div><div class="ttdoc">Basic arithmetic operations.</div></div>
 <div class="ttc" id="abackend_8hpp_html"><div class="ttname"><a href="backend_8hpp.html">backend.hpp</a></div><div class="ttdoc">Class signature to implement compute backends.</div></div>
@@ -149,11 +151,13 @@ $(document).ready(function(){initNavTree('graph__framework_8hpp_source.html','')
 <div class="ttc" id="adispersion_8hpp_html"><div class="ttname"><a href="dispersion_8hpp.html">dispersion.hpp</a></div><div class="ttdoc">Base class for a dispersion relation.</div></div>
 <div class="ttc" id="aequilibrium_8hpp_html"><div class="ttname"><a href="equilibrium_8hpp.html">equilibrium.hpp</a></div><div class="ttdoc">Class signature to implement plasma equilibrium.</div></div>
 <div class="ttc" id="ajit_8hpp_html"><div class="ttname"><a href="jit_8hpp.html">jit.hpp</a></div><div class="ttdoc">Class to just in time compile a kernel.</div></div>
+<div class="ttc" id="alogical_8hpp_html"><div class="ttname"><a href="logical_8hpp.html">logical.hpp</a></div><div class="ttdoc">Nodes for boolean logic.</div></div>
 <div class="ttc" id="amath_8hpp_html"><div class="ttname"><a href="math_8hpp.html">math.hpp</a></div><div class="ttdoc">Defined basic math functions.</div></div>
 <div class="ttc" id="ametal__context_8hpp_html"><div class="ttname"><a href="metal__context_8hpp.html">metal_context.hpp</a></div><div class="ttdoc">Metal context for metal based gpus.</div></div>
 <div class="ttc" id="anewton_8hpp_html"><div class="ttname"><a href="newton_8hpp.html">newton.hpp</a></div><div class="ttdoc">Sets up the kernel for a newtons method.</div></div>
 <div class="ttc" id="anode_8hpp_html"><div class="ttname"><a href="node_8hpp.html">node.hpp</a></div><div class="ttdoc">Base nodes of graph computation framework.</div></div>
 <div class="ttc" id="aoutput_8hpp_html"><div class="ttname"><a href="output_8hpp.html">output.hpp</a></div><div class="ttdoc">Implements output files in a netcdf format.</div></div>
+<div class="ttc" id="aparticle__in__cell_8hpp_html"><div class="ttname"><a href="particle__in__cell_8hpp.html">particle_in_cell.hpp</a></div><div class="ttdoc">Utilities needed for a particle in cell code.</div></div>
 <div class="ttc" id="apiecewise_8hpp_html"><div class="ttname"><a href="piecewise_8hpp.html">piecewise.hpp</a></div><div class="ttdoc">Piecewise nodes.</div></div>
 <div class="ttc" id="arandom_8hpp_html"><div class="ttname"><a href="random_8hpp.html">random.hpp</a></div><div class="ttdoc">Random constants and distributions.</div></div>
 <div class="ttc" id="aregister_8hpp_html"><div class="ttname"><a href="register_8hpp.html">register.hpp</a></div><div class="ttdoc">Utilities for writing jit source code.</div></div>

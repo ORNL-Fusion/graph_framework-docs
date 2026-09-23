@@ -115,12 +115,18 @@ Public Member Functions</h2></td></tr>
 <tr class="memitem:a673c179cb1ae4ea23f65677be4bdf8ca" id="r_a673c179cb1ae4ea23f65677be4bdf8ca"><td class="memItemLeft" align="right" valign="top">&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="classjit_1_1context.html#a673c179cb1ae4ea23f65677be4bdf8ca">context</a> (const size_t index)</td></tr>
 <tr class="memdesc:a673c179cb1ae4ea23f65677be4bdf8ca"><td class="mdescLeft">&#160;</td><td class="mdescRight">Construct a jit context object.  <br /></td></tr>
 <tr class="separator:a673c179cb1ae4ea23f65677be4bdf8ca"><td class="memSeparator" colspan="2">&#160;</td></tr>
-<tr class="memitem:af59762b162e5b6c134c334e4052e0117" id="r_af59762b162e5b6c134c334e4052e0117"><td class="memItemLeft" align="right" valign="top">void&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="classjit_1_1context.html#af59762b162e5b6c134c334e4052e0117">add_kernel</a> (const std::string name, <a class="el" href="namespacegraph.html#a7f4f9ab246d37d23e0259709e626bc36">graph::input_nodes</a>&lt; T, SAFE_MATH &gt; inputs, <a class="el" href="namespacegraph.html#aec6ce7b08d650c6b236b68bd68a2ce0a">graph::output_nodes</a>&lt; T, SAFE_MATH &gt; outputs, <a class="el" href="namespacegraph.html#acd48d32bd7925b056e932559379d9b55">graph::map_nodes</a>&lt; T, SAFE_MATH &gt; setters, <a class="el" href="namespacegraph.html#a7d69a698d998bfb31f5611ad55e44092">graph::shared_random_state</a>&lt; T, SAFE_MATH &gt; state, const size_t size)</td></tr>
-<tr class="memdesc:af59762b162e5b6c134c334e4052e0117"><td class="mdescLeft">&#160;</td><td class="mdescRight">Add a kernel.  <br /></td></tr>
-<tr class="separator:af59762b162e5b6c134c334e4052e0117"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:aef7011dd12234b7bd060ad4694c8f96b" id="r_aef7011dd12234b7bd060ad4694c8f96b"><td class="memItemLeft" align="right" valign="top">void&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="classjit_1_1context.html#aef7011dd12234b7bd060ad4694c8f96b">add_kernel</a> (const std::string name, <a class="el" href="namespacegraph.html#a7f4f9ab246d37d23e0259709e626bc36">graph::input_nodes</a>&lt; T, SAFE_MATH &gt; &amp;inputs, <a class="el" href="namespacegraph.html#aec6ce7b08d650c6b236b68bd68a2ce0a">graph::output_nodes</a>&lt; T, SAFE_MATH &gt; &amp;outputs, <a class="el" href="namespacegraph.html#acd48d32bd7925b056e932559379d9b55">graph::map_nodes</a>&lt; T, SAFE_MATH &gt; &amp;setters, <a class="el" href="namespacegraph.html#a7f4f9ab246d37d23e0259709e626bc36">graph::input_nodes</a>&lt; T, SAFE_MATH &gt; &amp;atomics, <a class="el" href="namespacegraph.html#a7d69a698d998bfb31f5611ad55e44092">graph::shared_random_state</a>&lt; T, SAFE_MATH &gt; &amp;state, const size_t size, const size_t iterations=1)</td></tr>
+<tr class="memdesc:aef7011dd12234b7bd060ad4694c8f96b"><td class="mdescLeft">&#160;</td><td class="mdescRight">Add a kernel.  <br /></td></tr>
+<tr class="separator:aef7011dd12234b7bd060ad4694c8f96b"><td class="memSeparator" colspan="2">&#160;</td></tr>
 <tr class="memitem:abb574e028c4da2e8d730364f433cb8cb" id="r_abb574e028c4da2e8d730364f433cb8cb"><td class="memItemLeft" align="right" valign="top">void&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="classjit_1_1context.html#abb574e028c4da2e8d730364f433cb8cb">add_max_reduction</a> (const size_t size)</td></tr>
 <tr class="memdesc:abb574e028c4da2e8d730364f433cb8cb"><td class="mdescLeft">&#160;</td><td class="mdescRight">Add max reduction kernel.  <br /></td></tr>
 <tr class="separator:abb574e028c4da2e8d730364f433cb8cb"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:ab1c3063533a2b6f56e944d6d97121675" id="r_ab1c3063533a2b6f56e944d6d97121675"><td class="memItemLeft" align="right" valign="top">std::function&lt; void(void)&gt;&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="classjit_1_1context.html#ab1c3063533a2b6f56e944d6d97121675">create_zero_call</a> (<a class="el" href="namespacegraph.html#a7f4f9ab246d37d23e0259709e626bc36">graph::input_nodes</a>&lt; T, SAFE_MATH &gt; inputs)</td></tr>
+<tr class="memdesc:ab1c3063533a2b6f56e944d6d97121675"><td class="mdescLeft">&#160;</td><td class="mdescRight">Add zero.  <br /></td></tr>
+<tr class="separator:ab1c3063533a2b6f56e944d6d97121675"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:a0643ad182f1eb4aabf4be9537823148c" id="r_a0643ad182f1eb4aabf4be9537823148c"><td class="memItemLeft" align="right" valign="top">std::function&lt; void(void)&gt;&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="classjit_1_1context.html#a0643ad182f1eb4aabf4be9537823148c">create_copy_call</a> (<a class="el" href="namespacegraph.html#ab302ff23558d742b8b7cb899447f2ce1">graph::copy_nodes</a>&lt; T, SAFE_MATH &gt; setters)</td></tr>
+<tr class="memdesc:a0643ad182f1eb4aabf4be9537823148c"><td class="mdescLeft">&#160;</td><td class="mdescRight">Add copy.  <br /></td></tr>
+<tr class="separator:a0643ad182f1eb4aabf4be9537823148c"><td class="memSeparator" colspan="2">&#160;</td></tr>
 <tr class="memitem:af9ea5fd0da1464a3a3a6a5b1ca28e584" id="r_af9ea5fd0da1464a3a3a6a5b1ca28e584"><td class="memItemLeft" align="right" valign="top"><a id="af9ea5fd0da1464a3a3a6a5b1ca28e584" name="af9ea5fd0da1464a3a3a6a5b1ca28e584"></a>
 void&#160;</td><td class="memItemRight" valign="bottom"><b>print_source</b> ()</td></tr>
 <tr class="memdesc:af9ea5fd0da1464a3a3a6a5b1ca28e584"><td class="mdescLeft">&#160;</td><td class="mdescRight">Print the kernel source. <br /></td></tr>
@@ -132,9 +138,9 @@ void&#160;</td><td class="memItemRight" valign="bottom"><b>save_source</b> ()</t
 <tr class="memitem:a1b0a1180dc7b49c143ee1b5422f107b7" id="r_a1b0a1180dc7b49c143ee1b5422f107b7"><td class="memItemLeft" align="right" valign="top">void&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="classjit_1_1context.html#a1b0a1180dc7b49c143ee1b5422f107b7">compile</a> (const bool add_reduction=false)</td></tr>
 <tr class="memdesc:a1b0a1180dc7b49c143ee1b5422f107b7"><td class="mdescLeft">&#160;</td><td class="mdescRight">Compile the kernel.  <br /></td></tr>
 <tr class="separator:a1b0a1180dc7b49c143ee1b5422f107b7"><td class="memSeparator" colspan="2">&#160;</td></tr>
-<tr class="memitem:ac5d7dad83767b449ab17d9db4d5dfaf7" id="r_ac5d7dad83767b449ab17d9db4d5dfaf7"><td class="memItemLeft" align="right" valign="top">std::function&lt; void(void)&gt;&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="classjit_1_1context.html#ac5d7dad83767b449ab17d9db4d5dfaf7">create_kernel_call</a> (const std::string kernel_name, <a class="el" href="namespacegraph.html#a7f4f9ab246d37d23e0259709e626bc36">graph::input_nodes</a>&lt; T, SAFE_MATH &gt; inputs, <a class="el" href="namespacegraph.html#aec6ce7b08d650c6b236b68bd68a2ce0a">graph::output_nodes</a>&lt; T, SAFE_MATH &gt; outputs, <a class="el" href="namespacegraph.html#a7d69a698d998bfb31f5611ad55e44092">graph::shared_random_state</a>&lt; T, SAFE_MATH &gt; state, const size_t num_rays)</td></tr>
-<tr class="memdesc:ac5d7dad83767b449ab17d9db4d5dfaf7"><td class="mdescLeft">&#160;</td><td class="mdescRight">Create a kernel calling function.  <br /></td></tr>
-<tr class="separator:ac5d7dad83767b449ab17d9db4d5dfaf7"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:a5047883d31b0f0568338a0cdb61ac549" id="r_a5047883d31b0f0568338a0cdb61ac549"><td class="memItemLeft" align="right" valign="top">std::function&lt; void(void)&gt;&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="classjit_1_1context.html#a5047883d31b0f0568338a0cdb61ac549">create_kernel_call</a> (const std::string kernel_name, <a class="el" href="namespacegraph.html#a7f4f9ab246d37d23e0259709e626bc36">graph::input_nodes</a>&lt; T, SAFE_MATH &gt; inputs, <a class="el" href="namespacegraph.html#aec6ce7b08d650c6b236b68bd68a2ce0a">graph::output_nodes</a>&lt; T, SAFE_MATH &gt; outputs, <a class="el" href="namespacegraph.html#a7f4f9ab246d37d23e0259709e626bc36">graph::input_nodes</a>&lt; T, SAFE_MATH &gt; atomics, <a class="el" href="namespacegraph.html#a7d69a698d998bfb31f5611ad55e44092">graph::shared_random_state</a>&lt; T, SAFE_MATH &gt; state, const size_t num_rays)</td></tr>
+<tr class="memdesc:a5047883d31b0f0568338a0cdb61ac549"><td class="mdescLeft">&#160;</td><td class="mdescRight">Create a kernel calling function.  <br /></td></tr>
+<tr class="separator:a5047883d31b0f0568338a0cdb61ac549"><td class="memSeparator" colspan="2">&#160;</td></tr>
 <tr class="memitem:a9f87ab3252ebc38b99c268abfedc5794" id="r_a9f87ab3252ebc38b99c268abfedc5794"><td class="memItemLeft" align="right" valign="top">std::function&lt; T(void)&gt;&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="classjit_1_1context.html#a9f87ab3252ebc38b99c268abfedc5794">create_max_call</a> (<a class="el" href="namespacegraph.html#ac8853b055dcbbfd35dff9b4584d5ef36">graph::shared_leaf</a>&lt; T, SAFE_MATH &gt; &amp;argument, std::function&lt; void(void)&gt; run)</td></tr>
 <tr class="memdesc:a9f87ab3252ebc38b99c268abfedc5794"><td class="mdescLeft">&#160;</td><td class="mdescRight">Create a max compute kernel calling function.  <br /></td></tr>
 <tr class="separator:a9f87ab3252ebc38b99c268abfedc5794"><td class="memSeparator" colspan="2">&#160;</td></tr>
@@ -148,6 +154,9 @@ void&#160;</td><td class="memItemRight" valign="bottom"><b>save_source</b> ()</t
 void&#160;</td><td class="memItemRight" valign="bottom"><b>wait</b> ()</td></tr>
 <tr class="memdesc:a41a3f9a0ec0cb39f5b7028e72f9d8be5"><td class="mdescLeft">&#160;</td><td class="mdescRight">Wait for kernel to finish. <br /></td></tr>
 <tr class="separator:a41a3f9a0ec0cb39f5b7028e72f9d8be5"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:ae68dbae81eef4f9240a715354c024f64" id="r_ae68dbae81eef4f9240a715354c024f64"><td class="memItemLeft" align="right" valign="top">std::function&lt; void(void)&gt;&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="classjit_1_1context.html#ae68dbae81eef4f9240a715354c024f64">run_function</a> (std::function&lt; void(void)&gt; callback)</td></tr>
+<tr class="memdesc:ae68dbae81eef4f9240a715354c024f64"><td class="mdescLeft">&#160;</td><td class="mdescRight">Run a function.  <br /></td></tr>
+<tr class="separator:ae68dbae81eef4f9240a715354c024f64"><td class="memSeparator" colspan="2">&#160;</td></tr>
 <tr class="memitem:add3757db47a4d224350aa92d962efdbd" id="r_add3757db47a4d224350aa92d962efdbd"><td class="memItemLeft" align="right" valign="top">void&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="classjit_1_1context.html#add3757db47a4d224350aa92d962efdbd">copy_to_device</a> (<a class="el" href="namespacegraph.html#ac8853b055dcbbfd35dff9b4584d5ef36">graph::shared_leaf</a>&lt; T, SAFE_MATH &gt; &amp;node, T *source)</td></tr>
 <tr class="memdesc:add3757db47a4d224350aa92d962efdbd"><td class="mdescLeft">&#160;</td><td class="mdescRight">Copy contexts of buffer to device.  <br /></td></tr>
 <tr class="separator:add3757db47a4d224350aa92d962efdbd"><td class="memSeparator" colspan="2">&#160;</td></tr>
@@ -160,6 +169,9 @@ void&#160;</td><td class="memItemRight" valign="bottom"><b>wait</b> ()</td></tr>
 </table><table class="memberdecls">
 <tr class="heading"><td colspan="2"><h2 class="groupheader"><a id="pub-static-methods" name="pub-static-methods"></a>
 Static Public Member Functions</h2></td></tr>
+<tr class="memitem:a7318993de30eedb364ba1d048d6f3ceb" id="r_a7318993de30eedb364ba1d048d6f3ceb"><td class="memItemLeft" align="right" valign="top">static size_t&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="classjit_1_1context.html#a7318993de30eedb364ba1d048d6f3ceb">max_random_state_size</a> (const size_t size)</td></tr>
+<tr class="memdesc:a7318993de30eedb364ba1d048d6f3ceb"><td class="mdescLeft">&#160;</td><td class="mdescRight">Get the number of random states needed.  <br /></td></tr>
+<tr class="separator:a7318993de30eedb364ba1d048d6f3ceb"><td class="memSeparator" colspan="2">&#160;</td></tr>
 <tr class="memitem:a2d04d789825a5f04206a3d4d7765b930" id="r_a2d04d789825a5f04206a3d4d7765b930"><td class="memItemLeft" align="right" valign="top">static size_t&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="classjit_1_1context.html#a2d04d789825a5f04206a3d4d7765b930">max_concurrency</a> ()</td></tr>
 <tr class="memdesc:a2d04d789825a5f04206a3d4d7765b930"><td class="mdescLeft">&#160;</td><td class="mdescRight">Get the maximum number of concurrent instances.  <br /></td></tr>
 <tr class="separator:a2d04d789825a5f04206a3d4d7765b930"><td class="memSeparator" colspan="2">&#160;</td></tr>
@@ -219,8 +231,8 @@ template&lt;float_scalar T, bool SAFE_MATH = false&gt; </div>
 </div>
 </div>
 <h2 class="groupheader">Member Function Documentation</h2>
-<a id="af59762b162e5b6c134c334e4052e0117" name="af59762b162e5b6c134c334e4052e0117"></a>
-<h2 class="memtitle"><span class="permalink"><a href="#af59762b162e5b6c134c334e4052e0117">&#9670;&#160;</a></span>add_kernel()</h2>
+<a id="aef7011dd12234b7bd060ad4694c8f96b" name="aef7011dd12234b7bd060ad4694c8f96b"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#aef7011dd12234b7bd060ad4694c8f96b">&#9670;&#160;</a></span>add_kernel()</h2>
 
 <div class="memitem">
 <div class="memproto">
@@ -239,32 +251,44 @@ template&lt;float_scalar T, bool SAFE_MATH = false&gt; </div>
         <tr>
           <td class="paramkey"></td>
           <td></td>
-          <td class="paramtype"><a class="el" href="namespacegraph.html#a7f4f9ab246d37d23e0259709e626bc36">graph::input_nodes</a>&lt; T, SAFE_MATH &gt;&#160;</td>
+          <td class="paramtype"><a class="el" href="namespacegraph.html#a7f4f9ab246d37d23e0259709e626bc36">graph::input_nodes</a>&lt; T, SAFE_MATH &gt; &amp;&#160;</td>
           <td class="paramname"><em>inputs</em>, </td>
         </tr>
         <tr>
           <td class="paramkey"></td>
           <td></td>
-          <td class="paramtype"><a class="el" href="namespacegraph.html#aec6ce7b08d650c6b236b68bd68a2ce0a">graph::output_nodes</a>&lt; T, SAFE_MATH &gt;&#160;</td>
+          <td class="paramtype"><a class="el" href="namespacegraph.html#aec6ce7b08d650c6b236b68bd68a2ce0a">graph::output_nodes</a>&lt; T, SAFE_MATH &gt; &amp;&#160;</td>
           <td class="paramname"><em>outputs</em>, </td>
         </tr>
         <tr>
           <td class="paramkey"></td>
           <td></td>
-          <td class="paramtype"><a class="el" href="namespacegraph.html#acd48d32bd7925b056e932559379d9b55">graph::map_nodes</a>&lt; T, SAFE_MATH &gt;&#160;</td>
+          <td class="paramtype"><a class="el" href="namespacegraph.html#acd48d32bd7925b056e932559379d9b55">graph::map_nodes</a>&lt; T, SAFE_MATH &gt; &amp;&#160;</td>
           <td class="paramname"><em>setters</em>, </td>
         </tr>
         <tr>
           <td class="paramkey"></td>
           <td></td>
-          <td class="paramtype"><a class="el" href="namespacegraph.html#a7d69a698d998bfb31f5611ad55e44092">graph::shared_random_state</a>&lt; T, SAFE_MATH &gt;&#160;</td>
+          <td class="paramtype"><a class="el" href="namespacegraph.html#a7f4f9ab246d37d23e0259709e626bc36">graph::input_nodes</a>&lt; T, SAFE_MATH &gt; &amp;&#160;</td>
+          <td class="paramname"><em>atomics</em>, </td>
+        </tr>
+        <tr>
+          <td class="paramkey"></td>
+          <td></td>
+          <td class="paramtype"><a class="el" href="namespacegraph.html#a7d69a698d998bfb31f5611ad55e44092">graph::shared_random_state</a>&lt; T, SAFE_MATH &gt; &amp;&#160;</td>
           <td class="paramname"><em>state</em>, </td>
         </tr>
         <tr>
           <td class="paramkey"></td>
           <td></td>
           <td class="paramtype">const size_t&#160;</td>
-          <td class="paramname"><em>size</em>&#160;</td>
+          <td class="paramname"><em>size</em>, </td>
+        </tr>
+        <tr>
+          <td class="paramkey"></td>
+          <td></td>
+          <td class="paramtype">const size_t&#160;</td>
+          <td class="paramname"><em>iterations</em> = <code>1</code>&#160;</td>
         </tr>
         <tr>
           <td></td>
@@ -287,8 +311,10 @@ template&lt;float_scalar T, bool SAFE_MATH = false&gt; </div>
     <tr><td class="paramdir">[in]</td><td class="paramname">inputs</td><td>Input variables of the kernel. </td></tr>
     <tr><td class="paramdir">[in]</td><td class="paramname">outputs</td><td>Output nodes of the graph to compute. </td></tr>
     <tr><td class="paramdir">[in]</td><td class="paramname">setters</td><td>Map outputs back to input values. </td></tr>
+    <tr><td class="paramdir">[in]</td><td class="paramname">atomics</td><td>Input variables for atomic operations. </td></tr>
     <tr><td class="paramdir">[in]</td><td class="paramname">state</td><td>Random state node. </td></tr>
     <tr><td class="paramdir">[in]</td><td class="paramname">size</td><td>Size of the kernel. </td></tr>
+    <tr><td class="paramdir">[in]</td><td class="paramname">iterations</td><td>Number of iterations of the loop. </td></tr>
   </table>
   </dd>
 </dl>
@@ -509,8 +535,45 @@ template&lt;float_scalar T, bool SAFE_MATH = false&gt; </div>
 
 </div>
 </div>
-<a id="ac5d7dad83767b449ab17d9db4d5dfaf7" name="ac5d7dad83767b449ab17d9db4d5dfaf7"></a>
-<h2 class="memtitle"><span class="permalink"><a href="#ac5d7dad83767b449ab17d9db4d5dfaf7">&#9670;&#160;</a></span>create_kernel_call()</h2>
+<a id="a0643ad182f1eb4aabf4be9537823148c" name="a0643ad182f1eb4aabf4be9537823148c"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#a0643ad182f1eb4aabf4be9537823148c">&#9670;&#160;</a></span>create_copy_call()</h2>
+
+<div class="memitem">
+<div class="memproto">
+<div class="memtemplate">
+template&lt;float_scalar T, bool SAFE_MATH = false&gt; </div>
+<table class="mlabels">
+  <tr>
+  <td class="mlabels-left">
+      <table class="memname">
+        <tr>
+          <td class="memname">std::function&lt; void(void)&gt; <a class="el" href="classjit_1_1context.html">jit::context</a>&lt; T, SAFE_MATH &gt;::create_copy_call </td>
+          <td>(</td>
+          <td class="paramtype"><a class="el" href="namespacegraph.html#ab302ff23558d742b8b7cb899447f2ce1">graph::copy_nodes</a>&lt; T, SAFE_MATH &gt;&#160;</td>
+          <td class="paramname"><em>setters</em></td><td>)</td>
+          <td></td>
+        </tr>
+      </table>
+  </td>
+  <td class="mlabels-right">
+<span class="mlabels"><span class="mlabel">inline</span></span>  </td>
+  </tr>
+</table>
+</div><div class="memdoc">
+
+<p>Add copy. </p>
+<dl class="params"><dt>Parameters</dt><dd>
+  <table class="params">
+    <tr><td class="paramdir">[in]</td><td class="paramname">setters</td><td>Input variables of the kernel. </td></tr>
+  </table>
+  </dd>
+</dl>
+<dl class="section return"><dt>Returns</dt><dd>A lambda function to run the kernel. </dd></dl>
+
+</div>
+</div>
+<a id="a5047883d31b0f0568338a0cdb61ac549" name="a5047883d31b0f0568338a0cdb61ac549"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#a5047883d31b0f0568338a0cdb61ac549">&#9670;&#160;</a></span>create_kernel_call()</h2>
 
 <div class="memitem">
 <div class="memproto">
@@ -537,6 +600,12 @@ template&lt;float_scalar T, bool SAFE_MATH = false&gt; </div>
           <td></td>
           <td class="paramtype"><a class="el" href="namespacegraph.html#aec6ce7b08d650c6b236b68bd68a2ce0a">graph::output_nodes</a>&lt; T, SAFE_MATH &gt;&#160;</td>
           <td class="paramname"><em>outputs</em>, </td>
+        </tr>
+        <tr>
+          <td class="paramkey"></td>
+          <td></td>
+          <td class="paramtype"><a class="el" href="namespacegraph.html#a7f4f9ab246d37d23e0259709e626bc36">graph::input_nodes</a>&lt; T, SAFE_MATH &gt;&#160;</td>
+          <td class="paramname"><em>atomics</em>, </td>
         </tr>
         <tr>
           <td class="paramkey"></td>
@@ -569,6 +638,7 @@ template&lt;float_scalar T, bool SAFE_MATH = false&gt; </div>
     <tr><td class="paramdir">[in]</td><td class="paramname">kernel_name</td><td>Name of the kernel for later reference. </td></tr>
     <tr><td class="paramdir">[in]</td><td class="paramname">inputs</td><td>Input nodes of the kernel. </td></tr>
     <tr><td class="paramdir">[in]</td><td class="paramname">outputs</td><td>Output nodes of the kernel. </td></tr>
+    <tr><td class="paramdir">[in]</td><td class="paramname">atomics</td><td>Input variables for atomic operations. </td></tr>
     <tr><td class="paramdir">[in]</td><td class="paramname">state</td><td>Random states. </td></tr>
     <tr><td class="paramdir">[in]</td><td class="paramname">num_rays</td><td>Number of rays to trace. </td></tr>
   </table>
@@ -619,6 +689,43 @@ template&lt;float_scalar T, bool SAFE_MATH = false&gt; </div>
   <table class="params">
     <tr><td class="paramdir">[in]</td><td class="paramname">argument</td><td>Node to reduce. </td></tr>
     <tr><td class="paramdir">[in]</td><td class="paramname">run</td><td>Function to run before reduction. </td></tr>
+  </table>
+  </dd>
+</dl>
+<dl class="section return"><dt>Returns</dt><dd>A lambda function to run the kernel. </dd></dl>
+
+</div>
+</div>
+<a id="ab1c3063533a2b6f56e944d6d97121675" name="ab1c3063533a2b6f56e944d6d97121675"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#ab1c3063533a2b6f56e944d6d97121675">&#9670;&#160;</a></span>create_zero_call()</h2>
+
+<div class="memitem">
+<div class="memproto">
+<div class="memtemplate">
+template&lt;float_scalar T, bool SAFE_MATH = false&gt; </div>
+<table class="mlabels">
+  <tr>
+  <td class="mlabels-left">
+      <table class="memname">
+        <tr>
+          <td class="memname">std::function&lt; void(void)&gt; <a class="el" href="classjit_1_1context.html">jit::context</a>&lt; T, SAFE_MATH &gt;::create_zero_call </td>
+          <td>(</td>
+          <td class="paramtype"><a class="el" href="namespacegraph.html#a7f4f9ab246d37d23e0259709e626bc36">graph::input_nodes</a>&lt; T, SAFE_MATH &gt;&#160;</td>
+          <td class="paramname"><em>inputs</em></td><td>)</td>
+          <td></td>
+        </tr>
+      </table>
+  </td>
+  <td class="mlabels-right">
+<span class="mlabels"><span class="mlabel">inline</span></span>  </td>
+  </tr>
+</table>
+</div><div class="memdoc">
+
+<p>Add zero. </p>
+<dl class="params"><dt>Parameters</dt><dd>
+  <table class="params">
+    <tr><td class="paramdir">[in]</td><td class="paramname">inputs</td><td>Input variables of the kernel. </td></tr>
   </table>
   </dd>
 </dl>
@@ -692,6 +799,43 @@ template&lt;float_scalar T, bool SAFE_MATH = false&gt; </div>
 
 </div>
 </div>
+<a id="a7318993de30eedb364ba1d048d6f3ceb" name="a7318993de30eedb364ba1d048d6f3ceb"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#a7318993de30eedb364ba1d048d6f3ceb">&#9670;&#160;</a></span>max_random_state_size()</h2>
+
+<div class="memitem">
+<div class="memproto">
+<div class="memtemplate">
+template&lt;float_scalar T, bool SAFE_MATH = false&gt; </div>
+<table class="mlabels">
+  <tr>
+  <td class="mlabels-left">
+      <table class="memname">
+        <tr>
+          <td class="memname">static size_t <a class="el" href="classjit_1_1context.html">jit::context</a>&lt; T, SAFE_MATH &gt;::max_random_state_size </td>
+          <td>(</td>
+          <td class="paramtype">const size_t&#160;</td>
+          <td class="paramname"><em>size</em></td><td>)</td>
+          <td></td>
+        </tr>
+      </table>
+  </td>
+  <td class="mlabels-right">
+<span class="mlabels"><span class="mlabel">inline</span><span class="mlabel">static</span></span>  </td>
+  </tr>
+</table>
+</div><div class="memdoc">
+
+<p>Get the number of random states needed. </p>
+<dl class="params"><dt>Parameters</dt><dd>
+  <table class="params">
+    <tr><td class="paramdir">[in]</td><td class="paramname">size</td><td>Number of random numbers needed. </td></tr>
+  </table>
+  </dd>
+</dl>
+<dl class="section return"><dt>Returns</dt><dd>The maximum number of random states needed. </dd></dl>
+
+</div>
+</div>
 <a id="ad8de15095bc56bee0eeffaeeee36aafc" name="ad8de15095bc56bee0eeffaeeee36aafc"></a>
 <h2 class="memtitle"><span class="permalink"><a href="#ad8de15095bc56bee0eeffaeeee36aafc">&#9670;&#160;</a></span>print()</h2>
 
@@ -736,6 +880,37 @@ template&lt;float_scalar T, bool SAFE_MATH = false&gt; </div>
   </table>
   </dd>
 </dl>
+
+</div>
+</div>
+<a id="ae68dbae81eef4f9240a715354c024f64" name="ae68dbae81eef4f9240a715354c024f64"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#ae68dbae81eef4f9240a715354c024f64">&#9670;&#160;</a></span>run_function()</h2>
+
+<div class="memitem">
+<div class="memproto">
+<div class="memtemplate">
+template&lt;float_scalar T, bool SAFE_MATH = false&gt; </div>
+<table class="mlabels">
+  <tr>
+  <td class="mlabels-left">
+      <table class="memname">
+        <tr>
+          <td class="memname">std::function&lt; void(void)&gt; <a class="el" href="classjit_1_1context.html">jit::context</a>&lt; T, SAFE_MATH &gt;::run_function </td>
+          <td>(</td>
+          <td class="paramtype">std::function&lt; void(void)&gt;&#160;</td>
+          <td class="paramname"><em>callback</em></td><td>)</td>
+          <td></td>
+        </tr>
+      </table>
+  </td>
+  <td class="mlabels-right">
+<span class="mlabels"><span class="mlabel">inline</span></span>  </td>
+  </tr>
+</table>
+</div><div class="memdoc">
+
+<p>Run a function. </p>
+<dl class="section return"><dt>Returns</dt><dd>A lambda function to run run the function. </dd></dl>
 
 </div>
 </div>

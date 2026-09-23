@@ -6,5 +6,6 @@ var searchData=
   ['dispersion_5ffunction_3c_20t_2c_20false_20_3e_3',['dispersion_function&lt; T, false &gt;',['../classdispersion_1_1dispersion__function.html',1,'dispersion']]],
   ['dispersion_5ffunction_3c_20t_2c_20safe_5fmath_20_3e_4',['dispersion_function&lt; T, SAFE_MATH &gt;',['../classdispersion_1_1dispersion__function.html',1,'dispersion']]],
   ['dispersion_5finterface_5',['dispersion_interface',['../classdispersion_1_1dispersion__interface.html',1,'dispersion']]],
-  ['divide_5fnode_6',['divide_node',['../classgraph_1_1divide__node.html',1,'graph']]]
+  ['divide_5fnode_6',['divide_node',['../classgraph_1_1divide__node.html',1,'graph']]],
+  ['dummy_7',['dummy',['../classdummy.html',1,'']]]
 ];

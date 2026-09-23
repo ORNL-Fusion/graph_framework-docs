@@ -1,9 +1,11 @@
 var searchData=
 [
-  ['y_0',['y',['../classsolver_1_1solver__interface.html#acb689cfc34ec8d188c92e6e2c156a1af',1,'solver::solver_interface::y'],['../classgraph_1_1vector__quantity.html#a05a6a57a879e716568f0feb3093b792f',1,'graph::vector_quantity::y']]],
-  ['y1_1',['y1',['../classsolver_1_1rk2.html#a51a17cd0ed2a19ec7bc8a5987005bc43',1,'solver::rk2::y1'],['../classsolver_1_1rk4.html#ad463a1064e031c67e9ee9160927a43ca',1,'solver::rk4::y1'],['../classsolver_1_1split__simplextic.html#a0eb3aea9b30ef9f77570092b6eee1a93',1,'solver::split_simplextic::y1']]],
-  ['y2_2',['y2',['../classsolver_1_1rk2.html#a13789f52cc4ed87dbbf76fc75c4db66a',1,'solver::rk2::y2'],['../classsolver_1_1rk4.html#a888f6c6c0770e66c1a4bf8895be84621',1,'solver::rk4::y2']]],
-  ['y3_3',['y3',['../classsolver_1_1rk4.html#a7ba6337556fd41498879910583c5ddc7',1,'solver::rk4']]],
-  ['y4_4',['y4',['../classsolver_1_1rk4.html#a5b479161b547a639820c5c20c8b57004',1,'solver::rk4']]],
-  ['y_5fnext_5',['y_next',['../classsolver_1_1solver__interface.html#ae328ff2e48a0e19efc5824a3065ef25f',1,'solver::solver_interface']]]
+  ['x_0',['x',['../classpic_1_1ion.html#a623222df8588c8e0e9b3d0f0a2d6382c',1,'pic::ion::x'],['../classsolver_1_1solver__interface.html#ae71f0e08e6d672b344f143d77598a175',1,'solver::solver_interface::x'],['../classgraph_1_1vector__quantity.html#ae3e8acb914eaecc73c9b94ead03fc022',1,'graph::vector_quantity::x']]],
+  ['x1_1',['x1',['../classsolver_1_1rk2.html#a654607fc1c05ac2af3a61f71c3fc2f62',1,'solver::rk2::x1'],['../classsolver_1_1rk4.html#ae99601d63586d53e1695141bc272425c',1,'solver::rk4::x1'],['../classsolver_1_1split__simplextic.html#a487a2e24b86530941adaa649d356bedc',1,'solver::split_simplextic::x1']]],
+  ['x2_2',['x2',['../classsolver_1_1rk2.html#af8d5c6be0e0e29e5378c29bb563cae2a',1,'solver::rk2::x2'],['../classsolver_1_1rk4.html#a1affeba9cc8759191f460ffdfacc4030',1,'solver::rk4::x2']]],
+  ['x3_3',['x3',['../classsolver_1_1rk4.html#ad4157e39a84a41933200c1f26e825a11',1,'solver::rk4']]],
+  ['x4_4',['x4',['../classsolver_1_1rk4.html#a943c2256dd5629ca60619e8c8e9021ed',1,'solver::rk4']]],
+  ['x_5fnext_5',['x_next',['../classsolver_1_1solver__interface.html#a64200cf799645c791f4ea6e7f66127f4',1,'solver::solver_interface']]],
+  ['xmax_6',['xmax',['../classpic_1_1mesh.html#a4d179818b8b0775fdfb5d67e2a429e6e',1,'pic::mesh']]],
+  ['xmin_7',['xmin',['../classpic_1_1mesh.html#af7a6367336be925e7306c76288e5349b',1,'pic::mesh']]]
 ];

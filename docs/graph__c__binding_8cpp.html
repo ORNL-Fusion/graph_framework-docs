@@ -182,9 +182,9 @@ Functions</h2></td></tr>
 <tr class="memitem:a9e14798f513cdf75dfdfa8c9b1c34341" id="r_a9e14798f513cdf75dfdfa8c9b1c34341"><td class="memItemLeft" align="right" valign="top"><a class="el" href="graph__c__binding_8h.html#a8e6fcd751f4c2482c8db8507457de11d">graph_node</a>&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="graph__c__binding_8cpp.html#a9e14798f513cdf75dfdfa8c9b1c34341">graph_atan</a> (<a class="el" href="graph__c__binding_8h.html#acc7562479385b14d7073c95b1cb03992">STRUCT_TAG</a> <a class="el" href="structgraph__c__context.html">graph_c_context</a> *c, <a class="el" href="graph__c__binding_8h.html#a8e6fcd751f4c2482c8db8507457de11d">graph_node</a> left, <a class="el" href="graph__c__binding_8h.html#a8e6fcd751f4c2482c8db8507457de11d">graph_node</a> right)</td></tr>
 <tr class="memdesc:a9e14798f513cdf75dfdfa8c9b1c34341"><td class="mdescLeft">&#160;</td><td class="mdescRight">Create arctangent node.  <br /></td></tr>
 <tr class="separator:a9e14798f513cdf75dfdfa8c9b1c34341"><td class="memSeparator" colspan="2">&#160;</td></tr>
-<tr class="memitem:ad6018056303af30eb8e8c3166dbd9850" id="r_ad6018056303af30eb8e8c3166dbd9850"><td class="memItemLeft" align="right" valign="top"><a class="el" href="graph__c__binding_8h.html#a8e6fcd751f4c2482c8db8507457de11d">graph_node</a>&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="graph__c__binding_8cpp.html#ad6018056303af30eb8e8c3166dbd9850">graph_random_state</a> (<a class="el" href="graph__c__binding_8h.html#acc7562479385b14d7073c95b1cb03992">STRUCT_TAG</a> <a class="el" href="structgraph__c__context.html">graph_c_context</a> *c, const uint32_t seed)</td></tr>
-<tr class="memdesc:ad6018056303af30eb8e8c3166dbd9850"><td class="mdescLeft">&#160;</td><td class="mdescRight">Construct a random state node.  <br /></td></tr>
-<tr class="separator:ad6018056303af30eb8e8c3166dbd9850"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:a31aadbbe81bb8bc0a4515e86da6fca2f" id="r_a31aadbbe81bb8bc0a4515e86da6fca2f"><td class="memItemLeft" align="right" valign="top"><a class="el" href="graph__c__binding_8h.html#a8e6fcd751f4c2482c8db8507457de11d">graph_node</a>&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="graph__c__binding_8cpp.html#a31aadbbe81bb8bc0a4515e86da6fca2f">graph_random_state</a> (<a class="el" href="graph__c__binding_8h.html#acc7562479385b14d7073c95b1cb03992">STRUCT_TAG</a> <a class="el" href="structgraph__c__context.html">graph_c_context</a> *c, const size_t size, const uint32_t seed)</td></tr>
+<tr class="memdesc:a31aadbbe81bb8bc0a4515e86da6fca2f"><td class="mdescLeft">&#160;</td><td class="mdescRight">Construct a random state node.  <br /></td></tr>
+<tr class="separator:a31aadbbe81bb8bc0a4515e86da6fca2f"><td class="memSeparator" colspan="2">&#160;</td></tr>
 <tr class="memitem:ab3bc21203f3cd200859dd6bd19e23d56" id="r_ab3bc21203f3cd200859dd6bd19e23d56"><td class="memItemLeft" align="right" valign="top"><a class="el" href="graph__c__binding_8h.html#a8e6fcd751f4c2482c8db8507457de11d">graph_node</a>&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="graph__c__binding_8cpp.html#ab3bc21203f3cd200859dd6bd19e23d56">graph_random</a> (<a class="el" href="graph__c__binding_8h.html#acc7562479385b14d7073c95b1cb03992">STRUCT_TAG</a> <a class="el" href="structgraph__c__context.html">graph_c_context</a> *c, <a class="el" href="graph__c__binding_8h.html#a8e6fcd751f4c2482c8db8507457de11d">graph_node</a> arg)</td></tr>
 <tr class="memdesc:ab3bc21203f3cd200859dd6bd19e23d56"><td class="mdescLeft">&#160;</td><td class="mdescRight">Create random node.  <br /></td></tr>
 <tr class="separator:ab3bc21203f3cd200859dd6bd19e23d56"><td class="memSeparator" colspan="2">&#160;</td></tr>
@@ -200,21 +200,93 @@ Functions</h2></td></tr>
 <tr class="memitem:a1fbe6e15a1f2b98023af35febb278cb6" id="r_a1fbe6e15a1f2b98023af35febb278cb6"><td class="memItemLeft" align="right" valign="top"><a class="el" href="graph__c__binding_8h.html#a8e6fcd751f4c2482c8db8507457de11d">graph_node</a>&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="graph__c__binding_8cpp.html#a1fbe6e15a1f2b98023af35febb278cb6">graph_index_2D</a> (<a class="el" href="graph__c__binding_8h.html#acc7562479385b14d7073c95b1cb03992">STRUCT_TAG</a> <a class="el" href="structgraph__c__context.html">graph_c_context</a> *c, <a class="el" href="graph__c__binding_8h.html#a8e6fcd751f4c2482c8db8507457de11d">graph_node</a> variable, const size_t num_cols, <a class="el" href="graph__c__binding_8h.html#a8e6fcd751f4c2482c8db8507457de11d">graph_node</a> x_arg, const double x_scale, const double x_offset, <a class="el" href="graph__c__binding_8h.html#a8e6fcd751f4c2482c8db8507457de11d">graph_node</a> y_arg, const double y_scale, const double y_offset)</td></tr>
 <tr class="memdesc:a1fbe6e15a1f2b98023af35febb278cb6"><td class="mdescLeft">&#160;</td><td class="mdescRight">Create a 2D index.  <br /></td></tr>
 <tr class="separator:a1fbe6e15a1f2b98023af35febb278cb6"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:a208376491c6d52cc293a383a0adf6260" id="r_a208376491c6d52cc293a383a0adf6260"><td class="memItemLeft" align="right" valign="top"><a class="el" href="graph__c__binding_8h.html#a8e6fcd751f4c2482c8db8507457de11d">graph_node</a>&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="graph__c__binding_8cpp.html#a208376491c6d52cc293a383a0adf6260">graph_atomic_accumulate_1D</a> (<a class="el" href="graph__c__binding_8h.html#acc7562479385b14d7073c95b1cb03992">STRUCT_TAG</a> <a class="el" href="structgraph__c__context.html">graph_c_context</a> *c, <a class="el" href="graph__c__binding_8h.html#a8e6fcd751f4c2482c8db8507457de11d">graph_node</a> variable, <a class="el" href="graph__c__binding_8h.html#a8e6fcd751f4c2482c8db8507457de11d">graph_node</a> index, const double scale, const double offset, <a class="el" href="graph__c__binding_8h.html#a8e6fcd751f4c2482c8db8507457de11d">graph_node</a> arg)</td></tr>
+<tr class="memdesc:a208376491c6d52cc293a383a0adf6260"><td class="mdescLeft">&#160;</td><td class="mdescRight">Create an atomic accumulate 1D index.  <br /></td></tr>
+<tr class="separator:a208376491c6d52cc293a383a0adf6260"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:a09748107e61234cfa8536b512e71329b" id="r_a09748107e61234cfa8536b512e71329b"><td class="memItemLeft" align="right" valign="top"><a class="el" href="graph__c__binding_8h.html#a8e6fcd751f4c2482c8db8507457de11d">graph_node</a>&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="graph__c__binding_8cpp.html#a09748107e61234cfa8536b512e71329b">graph_index</a> (<a class="el" href="graph__c__binding_8h.html#acc7562479385b14d7073c95b1cb03992">STRUCT_TAG</a> <a class="el" href="structgraph__c__context.html">graph_c_context</a> *c)</td></tr>
+<tr class="memdesc:a09748107e61234cfa8536b512e71329b"><td class="mdescLeft">&#160;</td><td class="mdescRight">Create an index code.  <br /></td></tr>
+<tr class="separator:a09748107e61234cfa8536b512e71329b"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:a9fd2c2a67a15e3fb2d406e75d5f3d28b" id="r_a9fd2c2a67a15e3fb2d406e75d5f3d28b"><td class="memItemLeft" align="right" valign="top"><a class="el" href="graph__c__binding_8h.html#a8e6fcd751f4c2482c8db8507457de11d">graph_node</a>&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="graph__c__binding_8cpp.html#a9fd2c2a67a15e3fb2d406e75d5f3d28b">graph_not</a> (<a class="el" href="graph__c__binding_8h.html#acc7562479385b14d7073c95b1cb03992">STRUCT_TAG</a> <a class="el" href="structgraph__c__context.html">graph_c_context</a> *c, <a class="el" href="graph__c__binding_8h.html#a8e6fcd751f4c2482c8db8507457de11d">graph_node</a> arg)</td></tr>
+<tr class="memdesc:a9fd2c2a67a15e3fb2d406e75d5f3d28b"><td class="mdescLeft">&#160;</td><td class="mdescRight">Create not node.  <br /></td></tr>
+<tr class="separator:a9fd2c2a67a15e3fb2d406e75d5f3d28b"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:ab71bbeea599d2a5f9be10d062f2e9482" id="r_ab71bbeea599d2a5f9be10d062f2e9482"><td class="memItemLeft" align="right" valign="top"><a class="el" href="graph__c__binding_8h.html#a8e6fcd751f4c2482c8db8507457de11d">graph_node</a>&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="graph__c__binding_8cpp.html#ab71bbeea599d2a5f9be10d062f2e9482">graph_equal</a> (<a class="el" href="graph__c__binding_8h.html#acc7562479385b14d7073c95b1cb03992">STRUCT_TAG</a> <a class="el" href="structgraph__c__context.html">graph_c_context</a> *c, <a class="el" href="graph__c__binding_8h.html#a8e6fcd751f4c2482c8db8507457de11d">graph_node</a> left, <a class="el" href="graph__c__binding_8h.html#a8e6fcd751f4c2482c8db8507457de11d">graph_node</a> right)</td></tr>
+<tr class="memdesc:ab71bbeea599d2a5f9be10d062f2e9482"><td class="mdescLeft">&#160;</td><td class="mdescRight">Create an equal node.  <br /></td></tr>
+<tr class="separator:ab71bbeea599d2a5f9be10d062f2e9482"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:abaf3b997e287ee9ebb7cd80da2e32670" id="r_abaf3b997e287ee9ebb7cd80da2e32670"><td class="memItemLeft" align="right" valign="top"><a class="el" href="graph__c__binding_8h.html#a8e6fcd751f4c2482c8db8507457de11d">graph_node</a>&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="graph__c__binding_8cpp.html#abaf3b997e287ee9ebb7cd80da2e32670">graph_not_equal</a> (<a class="el" href="graph__c__binding_8h.html#acc7562479385b14d7073c95b1cb03992">STRUCT_TAG</a> <a class="el" href="structgraph__c__context.html">graph_c_context</a> *c, <a class="el" href="graph__c__binding_8h.html#a8e6fcd751f4c2482c8db8507457de11d">graph_node</a> left, <a class="el" href="graph__c__binding_8h.html#a8e6fcd751f4c2482c8db8507457de11d">graph_node</a> right)</td></tr>
+<tr class="memdesc:abaf3b997e287ee9ebb7cd80da2e32670"><td class="mdescLeft">&#160;</td><td class="mdescRight">Create a not equal node.  <br /></td></tr>
+<tr class="separator:abaf3b997e287ee9ebb7cd80da2e32670"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:a099a8ae18baf88c8eb61d275033d6165" id="r_a099a8ae18baf88c8eb61d275033d6165"><td class="memItemLeft" align="right" valign="top"><a class="el" href="graph__c__binding_8h.html#a8e6fcd751f4c2482c8db8507457de11d">graph_node</a>&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="graph__c__binding_8cpp.html#a099a8ae18baf88c8eb61d275033d6165">graph_greater_than</a> (<a class="el" href="graph__c__binding_8h.html#acc7562479385b14d7073c95b1cb03992">STRUCT_TAG</a> <a class="el" href="structgraph__c__context.html">graph_c_context</a> *c, <a class="el" href="graph__c__binding_8h.html#a8e6fcd751f4c2482c8db8507457de11d">graph_node</a> left, <a class="el" href="graph__c__binding_8h.html#a8e6fcd751f4c2482c8db8507457de11d">graph_node</a> right)</td></tr>
+<tr class="memdesc:a099a8ae18baf88c8eb61d275033d6165"><td class="mdescLeft">&#160;</td><td class="mdescRight">Create a greater than node.  <br /></td></tr>
+<tr class="separator:a099a8ae18baf88c8eb61d275033d6165"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:aa789a45c9237305e00400bc833d095ee" id="r_aa789a45c9237305e00400bc833d095ee"><td class="memItemLeft" align="right" valign="top"><a class="el" href="graph__c__binding_8h.html#a8e6fcd751f4c2482c8db8507457de11d">graph_node</a>&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="graph__c__binding_8cpp.html#aa789a45c9237305e00400bc833d095ee">graph_less_than</a> (<a class="el" href="graph__c__binding_8h.html#acc7562479385b14d7073c95b1cb03992">STRUCT_TAG</a> <a class="el" href="structgraph__c__context.html">graph_c_context</a> *c, <a class="el" href="graph__c__binding_8h.html#a8e6fcd751f4c2482c8db8507457de11d">graph_node</a> left, <a class="el" href="graph__c__binding_8h.html#a8e6fcd751f4c2482c8db8507457de11d">graph_node</a> right)</td></tr>
+<tr class="memdesc:aa789a45c9237305e00400bc833d095ee"><td class="mdescLeft">&#160;</td><td class="mdescRight">Create a less than node.  <br /></td></tr>
+<tr class="separator:aa789a45c9237305e00400bc833d095ee"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:ae970f15ba18fae2c72a902acbc1f1b4e" id="r_ae970f15ba18fae2c72a902acbc1f1b4e"><td class="memItemLeft" align="right" valign="top"><a class="el" href="graph__c__binding_8h.html#a8e6fcd751f4c2482c8db8507457de11d">graph_node</a>&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="graph__c__binding_8cpp.html#ae970f15ba18fae2c72a902acbc1f1b4e">graph_greater_than_equal</a> (<a class="el" href="graph__c__binding_8h.html#acc7562479385b14d7073c95b1cb03992">STRUCT_TAG</a> <a class="el" href="structgraph__c__context.html">graph_c_context</a> *c, <a class="el" href="graph__c__binding_8h.html#a8e6fcd751f4c2482c8db8507457de11d">graph_node</a> left, <a class="el" href="graph__c__binding_8h.html#a8e6fcd751f4c2482c8db8507457de11d">graph_node</a> right)</td></tr>
+<tr class="memdesc:ae970f15ba18fae2c72a902acbc1f1b4e"><td class="mdescLeft">&#160;</td><td class="mdescRight">Create a greater than equal node.  <br /></td></tr>
+<tr class="separator:ae970f15ba18fae2c72a902acbc1f1b4e"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:a4e22e8736164437f0b8411cf4910b557" id="r_a4e22e8736164437f0b8411cf4910b557"><td class="memItemLeft" align="right" valign="top"><a class="el" href="graph__c__binding_8h.html#a8e6fcd751f4c2482c8db8507457de11d">graph_node</a>&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="graph__c__binding_8cpp.html#a4e22e8736164437f0b8411cf4910b557">graph_less_than_equal</a> (<a class="el" href="graph__c__binding_8h.html#acc7562479385b14d7073c95b1cb03992">STRUCT_TAG</a> <a class="el" href="structgraph__c__context.html">graph_c_context</a> *c, <a class="el" href="graph__c__binding_8h.html#a8e6fcd751f4c2482c8db8507457de11d">graph_node</a> left, <a class="el" href="graph__c__binding_8h.html#a8e6fcd751f4c2482c8db8507457de11d">graph_node</a> right)</td></tr>
+<tr class="memdesc:a4e22e8736164437f0b8411cf4910b557"><td class="mdescLeft">&#160;</td><td class="mdescRight">Create a less than node.  <br /></td></tr>
+<tr class="separator:a4e22e8736164437f0b8411cf4910b557"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:ad22a04277c57f125e192d8409c7ce8ff" id="r_ad22a04277c57f125e192d8409c7ce8ff"><td class="memItemLeft" align="right" valign="top"><a class="el" href="graph__c__binding_8h.html#a8e6fcd751f4c2482c8db8507457de11d">graph_node</a>&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="graph__c__binding_8cpp.html#ad22a04277c57f125e192d8409c7ce8ff">graph_and</a> (<a class="el" href="graph__c__binding_8h.html#acc7562479385b14d7073c95b1cb03992">STRUCT_TAG</a> <a class="el" href="structgraph__c__context.html">graph_c_context</a> *c, <a class="el" href="graph__c__binding_8h.html#a8e6fcd751f4c2482c8db8507457de11d">graph_node</a> left, <a class="el" href="graph__c__binding_8h.html#a8e6fcd751f4c2482c8db8507457de11d">graph_node</a> right)</td></tr>
+<tr class="memdesc:ad22a04277c57f125e192d8409c7ce8ff"><td class="mdescLeft">&#160;</td><td class="mdescRight">Create an and node.  <br /></td></tr>
+<tr class="separator:ad22a04277c57f125e192d8409c7ce8ff"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:a546b4831ba7f5e01fb38cbffa4ce0e5d" id="r_a546b4831ba7f5e01fb38cbffa4ce0e5d"><td class="memItemLeft" align="right" valign="top"><a class="el" href="graph__c__binding_8h.html#a8e6fcd751f4c2482c8db8507457de11d">graph_node</a>&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="graph__c__binding_8cpp.html#a546b4831ba7f5e01fb38cbffa4ce0e5d">graph_or</a> (<a class="el" href="graph__c__binding_8h.html#acc7562479385b14d7073c95b1cb03992">STRUCT_TAG</a> <a class="el" href="structgraph__c__context.html">graph_c_context</a> *c, <a class="el" href="graph__c__binding_8h.html#a8e6fcd751f4c2482c8db8507457de11d">graph_node</a> left, <a class="el" href="graph__c__binding_8h.html#a8e6fcd751f4c2482c8db8507457de11d">graph_node</a> right)</td></tr>
+<tr class="memdesc:a546b4831ba7f5e01fb38cbffa4ce0e5d"><td class="mdescLeft">&#160;</td><td class="mdescRight">Create an or node.  <br /></td></tr>
+<tr class="separator:a546b4831ba7f5e01fb38cbffa4ce0e5d"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:ab458d03f326836b49c4626b02cce9f1b" id="r_ab458d03f326836b49c4626b02cce9f1b"><td class="memItemLeft" align="right" valign="top"><a class="el" href="graph__c__binding_8h.html#a8e6fcd751f4c2482c8db8507457de11d">graph_node</a>&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="graph__c__binding_8cpp.html#ab458d03f326836b49c4626b02cce9f1b">graph_if</a> (<a class="el" href="graph__c__binding_8h.html#acc7562479385b14d7073c95b1cb03992">STRUCT_TAG</a> <a class="el" href="structgraph__c__context.html">graph_c_context</a> *c, <a class="el" href="graph__c__binding_8h.html#a8e6fcd751f4c2482c8db8507457de11d">graph_node</a> condition, <a class="el" href="graph__c__binding_8h.html#a8e6fcd751f4c2482c8db8507457de11d">graph_node</a> t, <a class="el" href="graph__c__binding_8h.html#a8e6fcd751f4c2482c8db8507457de11d">graph_node</a> f)</td></tr>
+<tr class="memdesc:ab458d03f326836b49c4626b02cce9f1b"><td class="mdescLeft">&#160;</td><td class="mdescRight">Create a if node.  <br /></td></tr>
+<tr class="separator:ab458d03f326836b49c4626b02cce9f1b"><td class="memSeparator" colspan="2">&#160;</td></tr>
 <tr class="memitem:af7c4e0073f40cb0f406095aeb23a4b4c" id="r_af7c4e0073f40cb0f406095aeb23a4b4c"><td class="memItemLeft" align="right" valign="top">size_t&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="graph__c__binding_8cpp.html#af7c4e0073f40cb0f406095aeb23a4b4c">graph_get_max_concurrency</a> (<a class="el" href="structgraph__c__context.html">graph_c_context</a> *c)</td></tr>
 <tr class="memdesc:af7c4e0073f40cb0f406095aeb23a4b4c"><td class="mdescLeft">&#160;</td><td class="mdescRight">Create 2D piecewise node with complex arguments.  <br /></td></tr>
 <tr class="separator:af7c4e0073f40cb0f406095aeb23a4b4c"><td class="memSeparator" colspan="2">&#160;</td></tr>
 <tr class="memitem:a77d71e86780c6c6f2cb4e04bdb5facd9" id="r_a77d71e86780c6c6f2cb4e04bdb5facd9"><td class="memItemLeft" align="right" valign="top">void&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="graph__c__binding_8cpp.html#a77d71e86780c6c6f2cb4e04bdb5facd9">graph_set_device_number</a> (<a class="el" href="graph__c__binding_8h.html#acc7562479385b14d7073c95b1cb03992">STRUCT_TAG</a> <a class="el" href="structgraph__c__context.html">graph_c_context</a> *c, const size_t num)</td></tr>
 <tr class="memdesc:a77d71e86780c6c6f2cb4e04bdb5facd9"><td class="mdescLeft">&#160;</td><td class="mdescRight">Choose the device number.  <br /></td></tr>
 <tr class="separator:a77d71e86780c6c6f2cb4e04bdb5facd9"><td class="memSeparator" colspan="2">&#160;</td></tr>
-<tr class="memitem:abb4efee2721d70131a5fdbb2a5cde424" id="r_abb4efee2721d70131a5fdbb2a5cde424"><td class="memItemLeft" align="right" valign="top">void&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="graph__c__binding_8cpp.html#abb4efee2721d70131a5fdbb2a5cde424">graph_add_pre_item</a> (<a class="el" href="graph__c__binding_8h.html#acc7562479385b14d7073c95b1cb03992">STRUCT_TAG</a> <a class="el" href="structgraph__c__context.html">graph_c_context</a> *c, <a class="el" href="graph__c__binding_8h.html#a8e6fcd751f4c2482c8db8507457de11d">graph_node</a> *inputs, size_t num_inputs, <a class="el" href="graph__c__binding_8h.html#a8e6fcd751f4c2482c8db8507457de11d">graph_node</a> *outputs, size_t num_outputs, <a class="el" href="graph__c__binding_8h.html#a8e6fcd751f4c2482c8db8507457de11d">graph_node</a> *map_inputs, <a class="el" href="graph__c__binding_8h.html#a8e6fcd751f4c2482c8db8507457de11d">graph_node</a> *map_outputs, size_t num_maps, <a class="el" href="graph__c__binding_8h.html#a8e6fcd751f4c2482c8db8507457de11d">graph_node</a> random_state, const char *name, const size_t size)</td></tr>
-<tr class="memdesc:abb4efee2721d70131a5fdbb2a5cde424"><td class="mdescLeft">&#160;</td><td class="mdescRight">Add pre workflow item.  <br /></td></tr>
-<tr class="separator:abb4efee2721d70131a5fdbb2a5cde424"><td class="memSeparator" colspan="2">&#160;</td></tr>
-<tr class="memitem:a441c7cd59ad32fb59445f8d8bf20b040" id="r_a441c7cd59ad32fb59445f8d8bf20b040"><td class="memItemLeft" align="right" valign="top">void&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="graph__c__binding_8cpp.html#a441c7cd59ad32fb59445f8d8bf20b040">graph_add_item</a> (<a class="el" href="graph__c__binding_8h.html#acc7562479385b14d7073c95b1cb03992">STRUCT_TAG</a> <a class="el" href="structgraph__c__context.html">graph_c_context</a> *c, <a class="el" href="graph__c__binding_8h.html#a8e6fcd751f4c2482c8db8507457de11d">graph_node</a> *inputs, size_t num_inputs, <a class="el" href="graph__c__binding_8h.html#a8e6fcd751f4c2482c8db8507457de11d">graph_node</a> *outputs, size_t num_outputs, <a class="el" href="graph__c__binding_8h.html#a8e6fcd751f4c2482c8db8507457de11d">graph_node</a> *map_inputs, <a class="el" href="graph__c__binding_8h.html#a8e6fcd751f4c2482c8db8507457de11d">graph_node</a> *map_outputs, size_t num_maps, <a class="el" href="graph__c__binding_8h.html#a8e6fcd751f4c2482c8db8507457de11d">graph_node</a> random_state, const char *name, const size_t size)</td></tr>
-<tr class="memdesc:a441c7cd59ad32fb59445f8d8bf20b040"><td class="mdescLeft">&#160;</td><td class="mdescRight">Add workflow item.  <br /></td></tr>
-<tr class="separator:a441c7cd59ad32fb59445f8d8bf20b040"><td class="memSeparator" colspan="2">&#160;</td></tr>
-<tr class="memitem:a47950c27a02e666e86614580e2ee50d8" id="r_a47950c27a02e666e86614580e2ee50d8"><td class="memItemLeft" align="right" valign="top">void&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="graph__c__binding_8cpp.html#a47950c27a02e666e86614580e2ee50d8">graph_add_converge_item</a> (<a class="el" href="graph__c__binding_8h.html#acc7562479385b14d7073c95b1cb03992">STRUCT_TAG</a> <a class="el" href="structgraph__c__context.html">graph_c_context</a> *c, <a class="el" href="graph__c__binding_8h.html#a8e6fcd751f4c2482c8db8507457de11d">graph_node</a> *inputs, size_t num_inputs, <a class="el" href="graph__c__binding_8h.html#a8e6fcd751f4c2482c8db8507457de11d">graph_node</a> *outputs, size_t num_outputs, <a class="el" href="graph__c__binding_8h.html#a8e6fcd751f4c2482c8db8507457de11d">graph_node</a> *map_inputs, <a class="el" href="graph__c__binding_8h.html#a8e6fcd751f4c2482c8db8507457de11d">graph_node</a> *map_outputs, size_t num_maps, <a class="el" href="graph__c__binding_8h.html#a8e6fcd751f4c2482c8db8507457de11d">graph_node</a> random_state, const char *name, const size_t size, const double tol, const size_t max_iter)</td></tr>
-<tr class="memdesc:a47950c27a02e666e86614580e2ee50d8"><td class="mdescLeft">&#160;</td><td class="mdescRight">Add a converge item.  <br /></td></tr>
-<tr class="separator:a47950c27a02e666e86614580e2ee50d8"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:a42de36effabae8c25348004922897697" id="r_a42de36effabae8c25348004922897697"><td class="memItemLeft" align="right" valign="top">void&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="graph__c__binding_8cpp.html#a42de36effabae8c25348004922897697">graph_add_pre_item</a> (<a class="el" href="graph__c__binding_8h.html#acc7562479385b14d7073c95b1cb03992">STRUCT_TAG</a> <a class="el" href="structgraph__c__context.html">graph_c_context</a> *c, <a class="el" href="graph__c__binding_8h.html#a8e6fcd751f4c2482c8db8507457de11d">graph_node</a> *inputs, size_t num_inputs, <a class="el" href="graph__c__binding_8h.html#a8e6fcd751f4c2482c8db8507457de11d">graph_node</a> *outputs, size_t num_outputs, <a class="el" href="graph__c__binding_8h.html#a8e6fcd751f4c2482c8db8507457de11d">graph_node</a> *map_inputs, <a class="el" href="graph__c__binding_8h.html#a8e6fcd751f4c2482c8db8507457de11d">graph_node</a> *map_outputs, size_t num_maps, <a class="el" href="graph__c__binding_8h.html#a8e6fcd751f4c2482c8db8507457de11d">graph_node</a> *atomics, size_t num_atomics, <a class="el" href="graph__c__binding_8h.html#a8e6fcd751f4c2482c8db8507457de11d">graph_node</a> random_state, const char *name, const size_t size)</td></tr>
+<tr class="memdesc:a42de36effabae8c25348004922897697"><td class="mdescLeft">&#160;</td><td class="mdescRight">Add pre workflow item.  <br /></td></tr>
+<tr class="separator:a42de36effabae8c25348004922897697"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:a02e3fb34a13689a4fb7abaa6aefc3f07" id="r_a02e3fb34a13689a4fb7abaa6aefc3f07"><td class="memItemLeft" align="right" valign="top">void&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="graph__c__binding_8cpp.html#a02e3fb34a13689a4fb7abaa6aefc3f07">graph_add_item</a> (<a class="el" href="graph__c__binding_8h.html#acc7562479385b14d7073c95b1cb03992">STRUCT_TAG</a> <a class="el" href="structgraph__c__context.html">graph_c_context</a> *c, <a class="el" href="graph__c__binding_8h.html#a8e6fcd751f4c2482c8db8507457de11d">graph_node</a> *inputs, size_t num_inputs, <a class="el" href="graph__c__binding_8h.html#a8e6fcd751f4c2482c8db8507457de11d">graph_node</a> *outputs, size_t num_outputs, <a class="el" href="graph__c__binding_8h.html#a8e6fcd751f4c2482c8db8507457de11d">graph_node</a> *map_inputs, <a class="el" href="graph__c__binding_8h.html#a8e6fcd751f4c2482c8db8507457de11d">graph_node</a> *map_outputs, size_t num_maps, <a class="el" href="graph__c__binding_8h.html#a8e6fcd751f4c2482c8db8507457de11d">graph_node</a> *atomics, size_t num_atomics, <a class="el" href="graph__c__binding_8h.html#a8e6fcd751f4c2482c8db8507457de11d">graph_node</a> random_state, const char *name, const size_t size)</td></tr>
+<tr class="memdesc:a02e3fb34a13689a4fb7abaa6aefc3f07"><td class="mdescLeft">&#160;</td><td class="mdescRight">Add workflow item.  <br /></td></tr>
+<tr class="separator:a02e3fb34a13689a4fb7abaa6aefc3f07"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:ad068ac6b232ba39f163a931253c070a2" id="r_ad068ac6b232ba39f163a931253c070a2"><td class="memItemLeft" align="right" valign="top">void&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="graph__c__binding_8cpp.html#ad068ac6b232ba39f163a931253c070a2">graph_add_post_item</a> (<a class="el" href="graph__c__binding_8h.html#acc7562479385b14d7073c95b1cb03992">STRUCT_TAG</a> <a class="el" href="structgraph__c__context.html">graph_c_context</a> *c, <a class="el" href="graph__c__binding_8h.html#a8e6fcd751f4c2482c8db8507457de11d">graph_node</a> *inputs, size_t num_inputs, <a class="el" href="graph__c__binding_8h.html#a8e6fcd751f4c2482c8db8507457de11d">graph_node</a> *outputs, size_t num_outputs, <a class="el" href="graph__c__binding_8h.html#a8e6fcd751f4c2482c8db8507457de11d">graph_node</a> *map_inputs, <a class="el" href="graph__c__binding_8h.html#a8e6fcd751f4c2482c8db8507457de11d">graph_node</a> *map_outputs, size_t num_maps, <a class="el" href="graph__c__binding_8h.html#a8e6fcd751f4c2482c8db8507457de11d">graph_node</a> *atomics, size_t num_atomics, <a class="el" href="graph__c__binding_8h.html#a8e6fcd751f4c2482c8db8507457de11d">graph_node</a> random_state, const char *name, const size_t size)</td></tr>
+<tr class="memdesc:ad068ac6b232ba39f163a931253c070a2"><td class="mdescLeft">&#160;</td><td class="mdescRight">Add post workflow item.  <br /></td></tr>
+<tr class="separator:ad068ac6b232ba39f163a931253c070a2"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:aef0f49dc4ea1120f8fe7e377215e51da" id="r_aef0f49dc4ea1120f8fe7e377215e51da"><td class="memItemLeft" align="right" valign="top">void&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="graph__c__binding_8cpp.html#aef0f49dc4ea1120f8fe7e377215e51da">graph_add_pre_loop_item</a> (<a class="el" href="graph__c__binding_8h.html#acc7562479385b14d7073c95b1cb03992">STRUCT_TAG</a> <a class="el" href="structgraph__c__context.html">graph_c_context</a> *c, <a class="el" href="graph__c__binding_8h.html#a8e6fcd751f4c2482c8db8507457de11d">graph_node</a> *inputs, size_t num_inputs, <a class="el" href="graph__c__binding_8h.html#a8e6fcd751f4c2482c8db8507457de11d">graph_node</a> *outputs, size_t num_outputs, <a class="el" href="graph__c__binding_8h.html#a8e6fcd751f4c2482c8db8507457de11d">graph_node</a> *map_inputs, <a class="el" href="graph__c__binding_8h.html#a8e6fcd751f4c2482c8db8507457de11d">graph_node</a> *map_outputs, size_t num_maps, <a class="el" href="graph__c__binding_8h.html#a8e6fcd751f4c2482c8db8507457de11d">graph_node</a> *atomics, size_t num_atomics, <a class="el" href="graph__c__binding_8h.html#a8e6fcd751f4c2482c8db8507457de11d">graph_node</a> random_state, const char *name, const size_t size, const size_t iterations)</td></tr>
+<tr class="memdesc:aef0f49dc4ea1120f8fe7e377215e51da"><td class="mdescLeft">&#160;</td><td class="mdescRight">Add pre workflow loop item.  <br /></td></tr>
+<tr class="separator:aef0f49dc4ea1120f8fe7e377215e51da"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:a82fdf2ffee1fea0d8be5db89c2d38c63" id="r_a82fdf2ffee1fea0d8be5db89c2d38c63"><td class="memItemLeft" align="right" valign="top">void&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="graph__c__binding_8cpp.html#a82fdf2ffee1fea0d8be5db89c2d38c63">graph_add_loop_item</a> (<a class="el" href="graph__c__binding_8h.html#acc7562479385b14d7073c95b1cb03992">STRUCT_TAG</a> <a class="el" href="structgraph__c__context.html">graph_c_context</a> *c, <a class="el" href="graph__c__binding_8h.html#a8e6fcd751f4c2482c8db8507457de11d">graph_node</a> *inputs, size_t num_inputs, <a class="el" href="graph__c__binding_8h.html#a8e6fcd751f4c2482c8db8507457de11d">graph_node</a> *outputs, size_t num_outputs, <a class="el" href="graph__c__binding_8h.html#a8e6fcd751f4c2482c8db8507457de11d">graph_node</a> *map_inputs, <a class="el" href="graph__c__binding_8h.html#a8e6fcd751f4c2482c8db8507457de11d">graph_node</a> *map_outputs, size_t num_maps, <a class="el" href="graph__c__binding_8h.html#a8e6fcd751f4c2482c8db8507457de11d">graph_node</a> *atomics, size_t num_atomics, <a class="el" href="graph__c__binding_8h.html#a8e6fcd751f4c2482c8db8507457de11d">graph_node</a> random_state, const char *name, const size_t size, const size_t iterations)</td></tr>
+<tr class="memdesc:a82fdf2ffee1fea0d8be5db89c2d38c63"><td class="mdescLeft">&#160;</td><td class="mdescRight">Add workflow loopitem.  <br /></td></tr>
+<tr class="separator:a82fdf2ffee1fea0d8be5db89c2d38c63"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:ad94b174dea2d599a6b0a61ba28b90c40" id="r_ad94b174dea2d599a6b0a61ba28b90c40"><td class="memItemLeft" align="right" valign="top">void&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="graph__c__binding_8cpp.html#ad94b174dea2d599a6b0a61ba28b90c40">graph_add_post_loop_item</a> (<a class="el" href="graph__c__binding_8h.html#acc7562479385b14d7073c95b1cb03992">STRUCT_TAG</a> <a class="el" href="structgraph__c__context.html">graph_c_context</a> *c, <a class="el" href="graph__c__binding_8h.html#a8e6fcd751f4c2482c8db8507457de11d">graph_node</a> *inputs, size_t num_inputs, <a class="el" href="graph__c__binding_8h.html#a8e6fcd751f4c2482c8db8507457de11d">graph_node</a> *outputs, size_t num_outputs, <a class="el" href="graph__c__binding_8h.html#a8e6fcd751f4c2482c8db8507457de11d">graph_node</a> *map_inputs, <a class="el" href="graph__c__binding_8h.html#a8e6fcd751f4c2482c8db8507457de11d">graph_node</a> *map_outputs, size_t num_maps, <a class="el" href="graph__c__binding_8h.html#a8e6fcd751f4c2482c8db8507457de11d">graph_node</a> *atomics, size_t num_atomics, <a class="el" href="graph__c__binding_8h.html#a8e6fcd751f4c2482c8db8507457de11d">graph_node</a> random_state, const char *name, const size_t size, const size_t iterations)</td></tr>
+<tr class="memdesc:ad94b174dea2d599a6b0a61ba28b90c40"><td class="mdescLeft">&#160;</td><td class="mdescRight">Add post workflow loopitem.  <br /></td></tr>
+<tr class="separator:ad94b174dea2d599a6b0a61ba28b90c40"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:ae1eb6734b000bc81a146b6347d23763e" id="r_ae1eb6734b000bc81a146b6347d23763e"><td class="memItemLeft" align="right" valign="top">void&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="graph__c__binding_8cpp.html#ae1eb6734b000bc81a146b6347d23763e">graph_add_pre_converge_item</a> (<a class="el" href="graph__c__binding_8h.html#acc7562479385b14d7073c95b1cb03992">STRUCT_TAG</a> <a class="el" href="structgraph__c__context.html">graph_c_context</a> *c, <a class="el" href="graph__c__binding_8h.html#a8e6fcd751f4c2482c8db8507457de11d">graph_node</a> *inputs, size_t num_inputs, <a class="el" href="graph__c__binding_8h.html#a8e6fcd751f4c2482c8db8507457de11d">graph_node</a> *outputs, size_t num_outputs, <a class="el" href="graph__c__binding_8h.html#a8e6fcd751f4c2482c8db8507457de11d">graph_node</a> *map_inputs, <a class="el" href="graph__c__binding_8h.html#a8e6fcd751f4c2482c8db8507457de11d">graph_node</a> *map_outputs, size_t num_maps, <a class="el" href="graph__c__binding_8h.html#a8e6fcd751f4c2482c8db8507457de11d">graph_node</a> *atomics, size_t num_atomics, <a class="el" href="graph__c__binding_8h.html#a8e6fcd751f4c2482c8db8507457de11d">graph_node</a> random_state, const char *name, const size_t size, const double tol, const size_t max_iter)</td></tr>
+<tr class="memdesc:ae1eb6734b000bc81a146b6347d23763e"><td class="mdescLeft">&#160;</td><td class="mdescRight">Add a pre converge item.  <br /></td></tr>
+<tr class="separator:ae1eb6734b000bc81a146b6347d23763e"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:aa6d0b3da71c2f2a7f04d55215b9294fe" id="r_aa6d0b3da71c2f2a7f04d55215b9294fe"><td class="memItemLeft" align="right" valign="top">void&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="graph__c__binding_8cpp.html#aa6d0b3da71c2f2a7f04d55215b9294fe">graph_add_converge_item</a> (<a class="el" href="graph__c__binding_8h.html#acc7562479385b14d7073c95b1cb03992">STRUCT_TAG</a> <a class="el" href="structgraph__c__context.html">graph_c_context</a> *c, <a class="el" href="graph__c__binding_8h.html#a8e6fcd751f4c2482c8db8507457de11d">graph_node</a> *inputs, size_t num_inputs, <a class="el" href="graph__c__binding_8h.html#a8e6fcd751f4c2482c8db8507457de11d">graph_node</a> *outputs, size_t num_outputs, <a class="el" href="graph__c__binding_8h.html#a8e6fcd751f4c2482c8db8507457de11d">graph_node</a> *map_inputs, <a class="el" href="graph__c__binding_8h.html#a8e6fcd751f4c2482c8db8507457de11d">graph_node</a> *map_outputs, size_t num_maps, <a class="el" href="graph__c__binding_8h.html#a8e6fcd751f4c2482c8db8507457de11d">graph_node</a> *atomics, size_t num_atomics, <a class="el" href="graph__c__binding_8h.html#a8e6fcd751f4c2482c8db8507457de11d">graph_node</a> random_state, const char *name, const size_t size, const double tol, const size_t max_iter)</td></tr>
+<tr class="memdesc:aa6d0b3da71c2f2a7f04d55215b9294fe"><td class="mdescLeft">&#160;</td><td class="mdescRight">Add a converge item.  <br /></td></tr>
+<tr class="separator:aa6d0b3da71c2f2a7f04d55215b9294fe"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:ad107c1e691f07139cfa2a4e6d83725bf" id="r_ad107c1e691f07139cfa2a4e6d83725bf"><td class="memItemLeft" align="right" valign="top">void&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="graph__c__binding_8cpp.html#ad107c1e691f07139cfa2a4e6d83725bf">graph_add_post_converge_item</a> (<a class="el" href="graph__c__binding_8h.html#acc7562479385b14d7073c95b1cb03992">STRUCT_TAG</a> <a class="el" href="structgraph__c__context.html">graph_c_context</a> *c, <a class="el" href="graph__c__binding_8h.html#a8e6fcd751f4c2482c8db8507457de11d">graph_node</a> *inputs, size_t num_inputs, <a class="el" href="graph__c__binding_8h.html#a8e6fcd751f4c2482c8db8507457de11d">graph_node</a> *outputs, size_t num_outputs, <a class="el" href="graph__c__binding_8h.html#a8e6fcd751f4c2482c8db8507457de11d">graph_node</a> *map_inputs, <a class="el" href="graph__c__binding_8h.html#a8e6fcd751f4c2482c8db8507457de11d">graph_node</a> *map_outputs, size_t num_maps, <a class="el" href="graph__c__binding_8h.html#a8e6fcd751f4c2482c8db8507457de11d">graph_node</a> *atomics, size_t num_atomics, <a class="el" href="graph__c__binding_8h.html#a8e6fcd751f4c2482c8db8507457de11d">graph_node</a> random_state, const char *name, const size_t size, const double tol, const size_t max_iter)</td></tr>
+<tr class="memdesc:ad107c1e691f07139cfa2a4e6d83725bf"><td class="mdescLeft">&#160;</td><td class="mdescRight">Add a post converge item.  <br /></td></tr>
+<tr class="separator:ad107c1e691f07139cfa2a4e6d83725bf"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:a4a57bf80ea92b737c4bf8955bfdb7c66" id="r_a4a57bf80ea92b737c4bf8955bfdb7c66"><td class="memItemLeft" align="right" valign="top">void&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="graph__c__binding_8cpp.html#a4a57bf80ea92b737c4bf8955bfdb7c66">graph_add_pre_zero_item</a> (<a class="el" href="graph__c__binding_8h.html#acc7562479385b14d7073c95b1cb03992">STRUCT_TAG</a> <a class="el" href="structgraph__c__context.html">graph_c_context</a> *c, <a class="el" href="graph__c__binding_8h.html#a8e6fcd751f4c2482c8db8507457de11d">graph_node</a> *inputs, size_t num_inputs)</td></tr>
+<tr class="memdesc:a4a57bf80ea92b737c4bf8955bfdb7c66"><td class="mdescLeft">&#160;</td><td class="mdescRight">Add a pre zero item.  <br /></td></tr>
+<tr class="separator:a4a57bf80ea92b737c4bf8955bfdb7c66"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:a62350237ffb6db6ec9da024b2e3954c6" id="r_a62350237ffb6db6ec9da024b2e3954c6"><td class="memItemLeft" align="right" valign="top">void&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="graph__c__binding_8cpp.html#a62350237ffb6db6ec9da024b2e3954c6">graph_add_zero_item</a> (<a class="el" href="graph__c__binding_8h.html#acc7562479385b14d7073c95b1cb03992">STRUCT_TAG</a> <a class="el" href="structgraph__c__context.html">graph_c_context</a> *c, <a class="el" href="graph__c__binding_8h.html#a8e6fcd751f4c2482c8db8507457de11d">graph_node</a> *inputs, size_t num_inputs)</td></tr>
+<tr class="memdesc:a62350237ffb6db6ec9da024b2e3954c6"><td class="mdescLeft">&#160;</td><td class="mdescRight">Add a copy item.  <br /></td></tr>
+<tr class="separator:a62350237ffb6db6ec9da024b2e3954c6"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:ac560c99e9ecea988c85d61546fa07bba" id="r_ac560c99e9ecea988c85d61546fa07bba"><td class="memItemLeft" align="right" valign="top">void&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="graph__c__binding_8cpp.html#ac560c99e9ecea988c85d61546fa07bba">graph_add_post_zero_item</a> (<a class="el" href="graph__c__binding_8h.html#acc7562479385b14d7073c95b1cb03992">STRUCT_TAG</a> <a class="el" href="structgraph__c__context.html">graph_c_context</a> *c, <a class="el" href="graph__c__binding_8h.html#a8e6fcd751f4c2482c8db8507457de11d">graph_node</a> *inputs, size_t num_inputs)</td></tr>
+<tr class="memdesc:ac560c99e9ecea988c85d61546fa07bba"><td class="mdescLeft">&#160;</td><td class="mdescRight">Add a post zero item.  <br /></td></tr>
+<tr class="separator:ac560c99e9ecea988c85d61546fa07bba"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:a6e8c254692169d73d8daa210803390ce" id="r_a6e8c254692169d73d8daa210803390ce"><td class="memItemLeft" align="right" valign="top">void&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="graph__c__binding_8cpp.html#a6e8c254692169d73d8daa210803390ce">graph_add_pre_copy_item</a> (<a class="el" href="graph__c__binding_8h.html#acc7562479385b14d7073c95b1cb03992">STRUCT_TAG</a> <a class="el" href="structgraph__c__context.html">graph_c_context</a> *c, <a class="el" href="graph__c__binding_8h.html#a8e6fcd751f4c2482c8db8507457de11d">graph_node</a> *map_inputs, <a class="el" href="graph__c__binding_8h.html#a8e6fcd751f4c2482c8db8507457de11d">graph_node</a> *map_outputs, size_t num_maps)</td></tr>
+<tr class="memdesc:a6e8c254692169d73d8daa210803390ce"><td class="mdescLeft">&#160;</td><td class="mdescRight">Add a pre copy item.  <br /></td></tr>
+<tr class="separator:a6e8c254692169d73d8daa210803390ce"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:a730d0e4ac813fc92bceade58cc85ca00" id="r_a730d0e4ac813fc92bceade58cc85ca00"><td class="memItemLeft" align="right" valign="top">void&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="graph__c__binding_8cpp.html#a730d0e4ac813fc92bceade58cc85ca00">graph_add_copy_item</a> (<a class="el" href="graph__c__binding_8h.html#acc7562479385b14d7073c95b1cb03992">STRUCT_TAG</a> <a class="el" href="structgraph__c__context.html">graph_c_context</a> *c, <a class="el" href="graph__c__binding_8h.html#a8e6fcd751f4c2482c8db8507457de11d">graph_node</a> *map_inputs, <a class="el" href="graph__c__binding_8h.html#a8e6fcd751f4c2482c8db8507457de11d">graph_node</a> *map_outputs, size_t num_maps)</td></tr>
+<tr class="memdesc:a730d0e4ac813fc92bceade58cc85ca00"><td class="mdescLeft">&#160;</td><td class="mdescRight">Add a copy item.  <br /></td></tr>
+<tr class="separator:a730d0e4ac813fc92bceade58cc85ca00"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:a5c2d80ffed876159811812220dadd15a" id="r_a5c2d80ffed876159811812220dadd15a"><td class="memItemLeft" align="right" valign="top">void&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="graph__c__binding_8cpp.html#a5c2d80ffed876159811812220dadd15a">graph_add_post_copy_item</a> (<a class="el" href="graph__c__binding_8h.html#acc7562479385b14d7073c95b1cb03992">STRUCT_TAG</a> <a class="el" href="structgraph__c__context.html">graph_c_context</a> *c, <a class="el" href="graph__c__binding_8h.html#a8e6fcd751f4c2482c8db8507457de11d">graph_node</a> *map_inputs, <a class="el" href="graph__c__binding_8h.html#a8e6fcd751f4c2482c8db8507457de11d">graph_node</a> *map_outputs, size_t num_maps)</td></tr>
+<tr class="memdesc:a5c2d80ffed876159811812220dadd15a"><td class="mdescLeft">&#160;</td><td class="mdescRight">Add a post copy item.  <br /></td></tr>
+<tr class="separator:a5c2d80ffed876159811812220dadd15a"><td class="memSeparator" colspan="2">&#160;</td></tr>
 <tr class="memitem:a42bb9bbc7ce48f166cbec0456ea05cc0" id="r_a42bb9bbc7ce48f166cbec0456ea05cc0"><td class="memItemLeft" align="right" valign="top">void&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="graph__c__binding_8cpp.html#a42bb9bbc7ce48f166cbec0456ea05cc0">graph_compile</a> (<a class="el" href="structgraph__c__context.html">graph_c_context</a> *c)</td></tr>
 <tr class="memdesc:a42bb9bbc7ce48f166cbec0456ea05cc0"><td class="mdescLeft">&#160;</td><td class="mdescRight">Compile the work items.  <br /></td></tr>
 <tr class="separator:a42bb9bbc7ce48f166cbec0456ea05cc0"><td class="memSeparator" colspan="2">&#160;</td></tr>
@@ -224,6 +296,9 @@ Functions</h2></td></tr>
 <tr class="memitem:a8b3fcb56f93a4f95258f9e675b93f2e4" id="r_a8b3fcb56f93a4f95258f9e675b93f2e4"><td class="memItemLeft" align="right" valign="top">void&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="graph__c__binding_8cpp.html#a8b3fcb56f93a4f95258f9e675b93f2e4">graph_run</a> (<a class="el" href="structgraph__c__context.html">graph_c_context</a> *c)</td></tr>
 <tr class="memdesc:a8b3fcb56f93a4f95258f9e675b93f2e4"><td class="mdescLeft">&#160;</td><td class="mdescRight">Run work items.  <br /></td></tr>
 <tr class="separator:a8b3fcb56f93a4f95258f9e675b93f2e4"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:af4ea37e27f4446d254b628a0d1c942b8" id="r_af4ea37e27f4446d254b628a0d1c942b8"><td class="memItemLeft" align="right" valign="top">void&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="graph__c__binding_8cpp.html#af4ea37e27f4446d254b628a0d1c942b8">graph_post_run</a> (<a class="el" href="structgraph__c__context.html">graph_c_context</a> *c)</td></tr>
+<tr class="memdesc:af4ea37e27f4446d254b628a0d1c942b8"><td class="mdescLeft">&#160;</td><td class="mdescRight">Run post work items.  <br /></td></tr>
+<tr class="separator:af4ea37e27f4446d254b628a0d1c942b8"><td class="memSeparator" colspan="2">&#160;</td></tr>
 <tr class="memitem:a364794fe8b03fff3db80a885f07e41e4" id="r_a364794fe8b03fff3db80a885f07e41e4"><td class="memItemLeft" align="right" valign="top">void&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="graph__c__binding_8cpp.html#a364794fe8b03fff3db80a885f07e41e4">graph_wait</a> (<a class="el" href="structgraph__c__context.html">graph_c_context</a> *c)</td></tr>
 <tr class="memdesc:a364794fe8b03fff3db80a885f07e41e4"><td class="mdescLeft">&#160;</td><td class="mdescRight">Wait for work items to complete.  <br /></td></tr>
 <tr class="separator:a364794fe8b03fff3db80a885f07e41e4"><td class="memSeparator" colspan="2">&#160;</td></tr>
@@ -289,8 +364,8 @@ Functions</h2></td></tr>
 
 </div>
 </div>
-<a id="a47950c27a02e666e86614580e2ee50d8" name="a47950c27a02e666e86614580e2ee50d8"></a>
-<h2 class="memtitle"><span class="permalink"><a href="#a47950c27a02e666e86614580e2ee50d8">&#9670;&#160;</a></span>graph_add_converge_item()</h2>
+<a id="aa6d0b3da71c2f2a7f04d55215b9294fe" name="aa6d0b3da71c2f2a7f04d55215b9294fe"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#aa6d0b3da71c2f2a7f04d55215b9294fe">&#9670;&#160;</a></span>graph_add_converge_item()</h2>
 
 <div class="memitem">
 <div class="memproto">
@@ -346,6 +421,18 @@ Functions</h2></td></tr>
         <tr>
           <td class="paramkey"></td>
           <td></td>
+          <td class="paramtype"><a class="el" href="graph__c__binding_8h.html#a8e6fcd751f4c2482c8db8507457de11d">graph_node</a> *&#160;</td>
+          <td class="paramname"><em>atomics</em>, </td>
+        </tr>
+        <tr>
+          <td class="paramkey"></td>
+          <td></td>
+          <td class="paramtype">size_t&#160;</td>
+          <td class="paramname"><em>num_atomics</em>, </td>
+        </tr>
+        <tr>
+          <td class="paramkey"></td>
+          <td></td>
           <td class="paramtype"><a class="el" href="graph__c__binding_8h.html#a8e6fcd751f4c2482c8db8507457de11d">graph_node</a>&#160;</td>
           <td class="paramname"><em>random_state</em>, </td>
         </tr>
@@ -392,6 +479,8 @@ Functions</h2></td></tr>
     <tr><td class="paramdir">[in]</td><td class="paramname">map_inputs</td><td>Array of map input nodes. </td></tr>
     <tr><td class="paramdir">[in]</td><td class="paramname">map_outputs</td><td>Array of map output nodes. </td></tr>
     <tr><td class="paramdir">[in]</td><td class="paramname">num_maps</td><td>Number of maps. </td></tr>
+    <tr><td class="paramdir">[in]</td><td class="paramname">atomics</td><td>Array of atomic nodes. </td></tr>
+    <tr><td class="paramdir">[in]</td><td class="paramname">num_atomics</td><td>Number of atomics. </td></tr>
     <tr><td class="paramdir">[in]</td><td class="paramname">random_state</td><td>Optional random state, can be NULL if not used. </td></tr>
     <tr><td class="paramdir">[in]</td><td class="paramname">name</td><td>Name for the kernel. </td></tr>
     <tr><td class="paramdir">[in]</td><td class="paramname">size</td><td>Number of elements to operate on. </td></tr>
@@ -403,8 +492,59 @@ Functions</h2></td></tr>
 
 </div>
 </div>
-<a id="a441c7cd59ad32fb59445f8d8bf20b040" name="a441c7cd59ad32fb59445f8d8bf20b040"></a>
-<h2 class="memtitle"><span class="permalink"><a href="#a441c7cd59ad32fb59445f8d8bf20b040">&#9670;&#160;</a></span>graph_add_item()</h2>
+<a id="a730d0e4ac813fc92bceade58cc85ca00" name="a730d0e4ac813fc92bceade58cc85ca00"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#a730d0e4ac813fc92bceade58cc85ca00">&#9670;&#160;</a></span>graph_add_copy_item()</h2>
+
+<div class="memitem">
+<div class="memproto">
+      <table class="memname">
+        <tr>
+          <td class="memname">void graph_add_copy_item </td>
+          <td>(</td>
+          <td class="paramtype"><a class="el" href="graph__c__binding_8h.html#acc7562479385b14d7073c95b1cb03992">STRUCT_TAG</a> <a class="el" href="structgraph__c__context.html">graph_c_context</a> *&#160;</td>
+          <td class="paramname"><em>c</em>, </td>
+        </tr>
+        <tr>
+          <td class="paramkey"></td>
+          <td></td>
+          <td class="paramtype"><a class="el" href="graph__c__binding_8h.html#a8e6fcd751f4c2482c8db8507457de11d">graph_node</a> *&#160;</td>
+          <td class="paramname"><em>map_inputs</em>, </td>
+        </tr>
+        <tr>
+          <td class="paramkey"></td>
+          <td></td>
+          <td class="paramtype"><a class="el" href="graph__c__binding_8h.html#a8e6fcd751f4c2482c8db8507457de11d">graph_node</a> *&#160;</td>
+          <td class="paramname"><em>map_outputs</em>, </td>
+        </tr>
+        <tr>
+          <td class="paramkey"></td>
+          <td></td>
+          <td class="paramtype">size_t&#160;</td>
+          <td class="paramname"><em>num_maps</em>&#160;</td>
+        </tr>
+        <tr>
+          <td></td>
+          <td>)</td>
+          <td></td><td></td>
+        </tr>
+      </table>
+</div><div class="memdoc">
+
+<p>Add a copy item. </p>
+<dl class="params"><dt>Parameters</dt><dd>
+  <table class="params">
+    <tr><td class="paramdir">[in]</td><td class="paramname">c</td><td>The graph C context. </td></tr>
+    <tr><td class="paramdir">[in]</td><td class="paramname">map_inputs</td><td>Array of map input nodes. </td></tr>
+    <tr><td class="paramdir">[in]</td><td class="paramname">map_outputs</td><td>Array of map output nodes. </td></tr>
+    <tr><td class="paramdir">[in]</td><td class="paramname">num_maps</td><td>Number of maps. </td></tr>
+  </table>
+  </dd>
+</dl>
+
+</div>
+</div>
+<a id="a02e3fb34a13689a4fb7abaa6aefc3f07" name="a02e3fb34a13689a4fb7abaa6aefc3f07"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#a02e3fb34a13689a4fb7abaa6aefc3f07">&#9670;&#160;</a></span>graph_add_item()</h2>
 
 <div class="memitem">
 <div class="memproto">
@@ -460,6 +600,18 @@ Functions</h2></td></tr>
         <tr>
           <td class="paramkey"></td>
           <td></td>
+          <td class="paramtype"><a class="el" href="graph__c__binding_8h.html#a8e6fcd751f4c2482c8db8507457de11d">graph_node</a> *&#160;</td>
+          <td class="paramname"><em>atomics</em>, </td>
+        </tr>
+        <tr>
+          <td class="paramkey"></td>
+          <td></td>
+          <td class="paramtype">size_t&#160;</td>
+          <td class="paramname"><em>num_atomics</em>, </td>
+        </tr>
+        <tr>
+          <td class="paramkey"></td>
+          <td></td>
           <td class="paramtype"><a class="el" href="graph__c__binding_8h.html#a8e6fcd751f4c2482c8db8507457de11d">graph_node</a>&#160;</td>
           <td class="paramname"><em>random_state</em>, </td>
         </tr>
@@ -494,6 +646,8 @@ Functions</h2></td></tr>
     <tr><td class="paramdir">[in]</td><td class="paramname">map_inputs</td><td>Array of map input nodes. </td></tr>
     <tr><td class="paramdir">[in]</td><td class="paramname">map_outputs</td><td>Array of map output nodes. </td></tr>
     <tr><td class="paramdir">[in]</td><td class="paramname">num_maps</td><td>Number of maps. </td></tr>
+    <tr><td class="paramdir">[in]</td><td class="paramname">atomics</td><td>Array of atomic nodes. </td></tr>
+    <tr><td class="paramdir">[in]</td><td class="paramname">num_atomics</td><td>Number of atomics. </td></tr>
     <tr><td class="paramdir">[in]</td><td class="paramname">random_state</td><td>Optional random state, can be NULL if not used. </td></tr>
     <tr><td class="paramdir">[in]</td><td class="paramname">name</td><td>Name for the kernel. </td></tr>
     <tr><td class="paramdir">[in]</td><td class="paramname">size</td><td>Number of elements to operate on. </td></tr>
@@ -503,8 +657,767 @@ Functions</h2></td></tr>
 
 </div>
 </div>
-<a id="abb4efee2721d70131a5fdbb2a5cde424" name="abb4efee2721d70131a5fdbb2a5cde424"></a>
-<h2 class="memtitle"><span class="permalink"><a href="#abb4efee2721d70131a5fdbb2a5cde424">&#9670;&#160;</a></span>graph_add_pre_item()</h2>
+<a id="a82fdf2ffee1fea0d8be5db89c2d38c63" name="a82fdf2ffee1fea0d8be5db89c2d38c63"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#a82fdf2ffee1fea0d8be5db89c2d38c63">&#9670;&#160;</a></span>graph_add_loop_item()</h2>
+
+<div class="memitem">
+<div class="memproto">
+      <table class="memname">
+        <tr>
+          <td class="memname">void graph_add_loop_item </td>
+          <td>(</td>
+          <td class="paramtype"><a class="el" href="graph__c__binding_8h.html#acc7562479385b14d7073c95b1cb03992">STRUCT_TAG</a> <a class="el" href="structgraph__c__context.html">graph_c_context</a> *&#160;</td>
+          <td class="paramname"><em>c</em>, </td>
+        </tr>
+        <tr>
+          <td class="paramkey"></td>
+          <td></td>
+          <td class="paramtype"><a class="el" href="graph__c__binding_8h.html#a8e6fcd751f4c2482c8db8507457de11d">graph_node</a> *&#160;</td>
+          <td class="paramname"><em>inputs</em>, </td>
+        </tr>
+        <tr>
+          <td class="paramkey"></td>
+          <td></td>
+          <td class="paramtype">size_t&#160;</td>
+          <td class="paramname"><em>num_inputs</em>, </td>
+        </tr>
+        <tr>
+          <td class="paramkey"></td>
+          <td></td>
+          <td class="paramtype"><a class="el" href="graph__c__binding_8h.html#a8e6fcd751f4c2482c8db8507457de11d">graph_node</a> *&#160;</td>
+          <td class="paramname"><em>outputs</em>, </td>
+        </tr>
+        <tr>
+          <td class="paramkey"></td>
+          <td></td>
+          <td class="paramtype">size_t&#160;</td>
+          <td class="paramname"><em>num_outputs</em>, </td>
+        </tr>
+        <tr>
+          <td class="paramkey"></td>
+          <td></td>
+          <td class="paramtype"><a class="el" href="graph__c__binding_8h.html#a8e6fcd751f4c2482c8db8507457de11d">graph_node</a> *&#160;</td>
+          <td class="paramname"><em>map_inputs</em>, </td>
+        </tr>
+        <tr>
+          <td class="paramkey"></td>
+          <td></td>
+          <td class="paramtype"><a class="el" href="graph__c__binding_8h.html#a8e6fcd751f4c2482c8db8507457de11d">graph_node</a> *&#160;</td>
+          <td class="paramname"><em>map_outputs</em>, </td>
+        </tr>
+        <tr>
+          <td class="paramkey"></td>
+          <td></td>
+          <td class="paramtype">size_t&#160;</td>
+          <td class="paramname"><em>num_maps</em>, </td>
+        </tr>
+        <tr>
+          <td class="paramkey"></td>
+          <td></td>
+          <td class="paramtype"><a class="el" href="graph__c__binding_8h.html#a8e6fcd751f4c2482c8db8507457de11d">graph_node</a> *&#160;</td>
+          <td class="paramname"><em>atomics</em>, </td>
+        </tr>
+        <tr>
+          <td class="paramkey"></td>
+          <td></td>
+          <td class="paramtype">size_t&#160;</td>
+          <td class="paramname"><em>num_atomics</em>, </td>
+        </tr>
+        <tr>
+          <td class="paramkey"></td>
+          <td></td>
+          <td class="paramtype"><a class="el" href="graph__c__binding_8h.html#a8e6fcd751f4c2482c8db8507457de11d">graph_node</a>&#160;</td>
+          <td class="paramname"><em>random_state</em>, </td>
+        </tr>
+        <tr>
+          <td class="paramkey"></td>
+          <td></td>
+          <td class="paramtype">const char *&#160;</td>
+          <td class="paramname"><em>name</em>, </td>
+        </tr>
+        <tr>
+          <td class="paramkey"></td>
+          <td></td>
+          <td class="paramtype">const size_t&#160;</td>
+          <td class="paramname"><em>size</em>, </td>
+        </tr>
+        <tr>
+          <td class="paramkey"></td>
+          <td></td>
+          <td class="paramtype">const size_t&#160;</td>
+          <td class="paramname"><em>iterations</em>&#160;</td>
+        </tr>
+        <tr>
+          <td></td>
+          <td>)</td>
+          <td></td><td></td>
+        </tr>
+      </table>
+</div><div class="memdoc">
+
+<p>Add workflow loopitem. </p>
+<p>Add workflow loop item.</p>
+<dl class="params"><dt>Parameters</dt><dd>
+  <table class="params">
+    <tr><td class="paramdir">[in]</td><td class="paramname">c</td><td>The graph C context. </td></tr>
+    <tr><td class="paramdir">[in]</td><td class="paramname">inputs</td><td>Array of input nodes. </td></tr>
+    <tr><td class="paramdir">[in]</td><td class="paramname">num_inputs</td><td>Number of inputs. </td></tr>
+    <tr><td class="paramdir">[in]</td><td class="paramname">outputs</td><td>Array of output nodes. </td></tr>
+    <tr><td class="paramdir">[in]</td><td class="paramname">num_outputs</td><td>Number of outputs. </td></tr>
+    <tr><td class="paramdir">[in]</td><td class="paramname">map_inputs</td><td>Array of map input nodes. </td></tr>
+    <tr><td class="paramdir">[in]</td><td class="paramname">map_outputs</td><td>Array of map output nodes. </td></tr>
+    <tr><td class="paramdir">[in]</td><td class="paramname">num_maps</td><td>Number of maps. </td></tr>
+    <tr><td class="paramdir">[in]</td><td class="paramname">atomics</td><td>Array of atomic nodes. </td></tr>
+    <tr><td class="paramdir">[in]</td><td class="paramname">num_atomics</td><td>Number of atomics. </td></tr>
+    <tr><td class="paramdir">[in]</td><td class="paramname">random_state</td><td>Optional random state, can be NULL if not used. </td></tr>
+    <tr><td class="paramdir">[in]</td><td class="paramname">name</td><td>Name for the kernel. </td></tr>
+    <tr><td class="paramdir">[in]</td><td class="paramname">size</td><td>Number of elements to operate on. </td></tr>
+    <tr><td class="paramdir">[in]</td><td class="paramname">iterations</td><td>Number of loop iterations. </td></tr>
+  </table>
+  </dd>
+</dl>
+
+</div>
+</div>
+<a id="ad107c1e691f07139cfa2a4e6d83725bf" name="ad107c1e691f07139cfa2a4e6d83725bf"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#ad107c1e691f07139cfa2a4e6d83725bf">&#9670;&#160;</a></span>graph_add_post_converge_item()</h2>
+
+<div class="memitem">
+<div class="memproto">
+      <table class="memname">
+        <tr>
+          <td class="memname">void graph_add_post_converge_item </td>
+          <td>(</td>
+          <td class="paramtype"><a class="el" href="graph__c__binding_8h.html#acc7562479385b14d7073c95b1cb03992">STRUCT_TAG</a> <a class="el" href="structgraph__c__context.html">graph_c_context</a> *&#160;</td>
+          <td class="paramname"><em>c</em>, </td>
+        </tr>
+        <tr>
+          <td class="paramkey"></td>
+          <td></td>
+          <td class="paramtype"><a class="el" href="graph__c__binding_8h.html#a8e6fcd751f4c2482c8db8507457de11d">graph_node</a> *&#160;</td>
+          <td class="paramname"><em>inputs</em>, </td>
+        </tr>
+        <tr>
+          <td class="paramkey"></td>
+          <td></td>
+          <td class="paramtype">size_t&#160;</td>
+          <td class="paramname"><em>num_inputs</em>, </td>
+        </tr>
+        <tr>
+          <td class="paramkey"></td>
+          <td></td>
+          <td class="paramtype"><a class="el" href="graph__c__binding_8h.html#a8e6fcd751f4c2482c8db8507457de11d">graph_node</a> *&#160;</td>
+          <td class="paramname"><em>outputs</em>, </td>
+        </tr>
+        <tr>
+          <td class="paramkey"></td>
+          <td></td>
+          <td class="paramtype">size_t&#160;</td>
+          <td class="paramname"><em>num_outputs</em>, </td>
+        </tr>
+        <tr>
+          <td class="paramkey"></td>
+          <td></td>
+          <td class="paramtype"><a class="el" href="graph__c__binding_8h.html#a8e6fcd751f4c2482c8db8507457de11d">graph_node</a> *&#160;</td>
+          <td class="paramname"><em>map_inputs</em>, </td>
+        </tr>
+        <tr>
+          <td class="paramkey"></td>
+          <td></td>
+          <td class="paramtype"><a class="el" href="graph__c__binding_8h.html#a8e6fcd751f4c2482c8db8507457de11d">graph_node</a> *&#160;</td>
+          <td class="paramname"><em>map_outputs</em>, </td>
+        </tr>
+        <tr>
+          <td class="paramkey"></td>
+          <td></td>
+          <td class="paramtype">size_t&#160;</td>
+          <td class="paramname"><em>num_maps</em>, </td>
+        </tr>
+        <tr>
+          <td class="paramkey"></td>
+          <td></td>
+          <td class="paramtype"><a class="el" href="graph__c__binding_8h.html#a8e6fcd751f4c2482c8db8507457de11d">graph_node</a> *&#160;</td>
+          <td class="paramname"><em>atomics</em>, </td>
+        </tr>
+        <tr>
+          <td class="paramkey"></td>
+          <td></td>
+          <td class="paramtype">size_t&#160;</td>
+          <td class="paramname"><em>num_atomics</em>, </td>
+        </tr>
+        <tr>
+          <td class="paramkey"></td>
+          <td></td>
+          <td class="paramtype"><a class="el" href="graph__c__binding_8h.html#a8e6fcd751f4c2482c8db8507457de11d">graph_node</a>&#160;</td>
+          <td class="paramname"><em>random_state</em>, </td>
+        </tr>
+        <tr>
+          <td class="paramkey"></td>
+          <td></td>
+          <td class="paramtype">const char *&#160;</td>
+          <td class="paramname"><em>name</em>, </td>
+        </tr>
+        <tr>
+          <td class="paramkey"></td>
+          <td></td>
+          <td class="paramtype">const size_t&#160;</td>
+          <td class="paramname"><em>size</em>, </td>
+        </tr>
+        <tr>
+          <td class="paramkey"></td>
+          <td></td>
+          <td class="paramtype">const double&#160;</td>
+          <td class="paramname"><em>tol</em>, </td>
+        </tr>
+        <tr>
+          <td class="paramkey"></td>
+          <td></td>
+          <td class="paramtype">const size_t&#160;</td>
+          <td class="paramname"><em>max_iter</em>&#160;</td>
+        </tr>
+        <tr>
+          <td></td>
+          <td>)</td>
+          <td></td><td></td>
+        </tr>
+      </table>
+</div><div class="memdoc">
+
+<p>Add a post converge item. </p>
+<dl class="params"><dt>Parameters</dt><dd>
+  <table class="params">
+    <tr><td class="paramdir">[in]</td><td class="paramname">c</td><td>The graph C context. </td></tr>
+    <tr><td class="paramdir">[in]</td><td class="paramname">inputs</td><td>Array of input nodes. </td></tr>
+    <tr><td class="paramdir">[in]</td><td class="paramname">num_inputs</td><td>Number of inputs. </td></tr>
+    <tr><td class="paramdir">[in]</td><td class="paramname">outputs</td><td>Array of output nodes. </td></tr>
+    <tr><td class="paramdir">[in]</td><td class="paramname">num_outputs</td><td>Number of outputs. </td></tr>
+    <tr><td class="paramdir">[in]</td><td class="paramname">map_inputs</td><td>Array of map input nodes. </td></tr>
+    <tr><td class="paramdir">[in]</td><td class="paramname">map_outputs</td><td>Array of map output nodes. </td></tr>
+    <tr><td class="paramdir">[in]</td><td class="paramname">num_maps</td><td>Number of maps. </td></tr>
+    <tr><td class="paramdir">[in]</td><td class="paramname">atomics</td><td>Array of atomic nodes. </td></tr>
+    <tr><td class="paramdir">[in]</td><td class="paramname">num_atomics</td><td>Number of atomics. </td></tr>
+    <tr><td class="paramdir">[in]</td><td class="paramname">random_state</td><td>Optional random state, can be NULL if not used. </td></tr>
+    <tr><td class="paramdir">[in]</td><td class="paramname">name</td><td>Name for the kernel. </td></tr>
+    <tr><td class="paramdir">[in]</td><td class="paramname">size</td><td>Number of elements to operate on. </td></tr>
+    <tr><td class="paramdir">[in]</td><td class="paramname">tol</td><td>Tolerance to converge the function to. </td></tr>
+    <tr><td class="paramdir">[in]</td><td class="paramname">max_iter</td><td>Maximum number of iterations before giving up. </td></tr>
+  </table>
+  </dd>
+</dl>
+
+</div>
+</div>
+<a id="a5c2d80ffed876159811812220dadd15a" name="a5c2d80ffed876159811812220dadd15a"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#a5c2d80ffed876159811812220dadd15a">&#9670;&#160;</a></span>graph_add_post_copy_item()</h2>
+
+<div class="memitem">
+<div class="memproto">
+      <table class="memname">
+        <tr>
+          <td class="memname">void graph_add_post_copy_item </td>
+          <td>(</td>
+          <td class="paramtype"><a class="el" href="graph__c__binding_8h.html#acc7562479385b14d7073c95b1cb03992">STRUCT_TAG</a> <a class="el" href="structgraph__c__context.html">graph_c_context</a> *&#160;</td>
+          <td class="paramname"><em>c</em>, </td>
+        </tr>
+        <tr>
+          <td class="paramkey"></td>
+          <td></td>
+          <td class="paramtype"><a class="el" href="graph__c__binding_8h.html#a8e6fcd751f4c2482c8db8507457de11d">graph_node</a> *&#160;</td>
+          <td class="paramname"><em>map_inputs</em>, </td>
+        </tr>
+        <tr>
+          <td class="paramkey"></td>
+          <td></td>
+          <td class="paramtype"><a class="el" href="graph__c__binding_8h.html#a8e6fcd751f4c2482c8db8507457de11d">graph_node</a> *&#160;</td>
+          <td class="paramname"><em>map_outputs</em>, </td>
+        </tr>
+        <tr>
+          <td class="paramkey"></td>
+          <td></td>
+          <td class="paramtype">size_t&#160;</td>
+          <td class="paramname"><em>num_maps</em>&#160;</td>
+        </tr>
+        <tr>
+          <td></td>
+          <td>)</td>
+          <td></td><td></td>
+        </tr>
+      </table>
+</div><div class="memdoc">
+
+<p>Add a post copy item. </p>
+<dl class="params"><dt>Parameters</dt><dd>
+  <table class="params">
+    <tr><td class="paramdir">[in]</td><td class="paramname">c</td><td>The graph C context. </td></tr>
+    <tr><td class="paramdir">[in]</td><td class="paramname">map_inputs</td><td>Array of map input nodes. </td></tr>
+    <tr><td class="paramdir">[in]</td><td class="paramname">map_outputs</td><td>Array of map output nodes. </td></tr>
+    <tr><td class="paramdir">[in]</td><td class="paramname">num_maps</td><td>Number of maps. </td></tr>
+  </table>
+  </dd>
+</dl>
+
+</div>
+</div>
+<a id="ad068ac6b232ba39f163a931253c070a2" name="ad068ac6b232ba39f163a931253c070a2"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#ad068ac6b232ba39f163a931253c070a2">&#9670;&#160;</a></span>graph_add_post_item()</h2>
+
+<div class="memitem">
+<div class="memproto">
+      <table class="memname">
+        <tr>
+          <td class="memname">void graph_add_post_item </td>
+          <td>(</td>
+          <td class="paramtype"><a class="el" href="graph__c__binding_8h.html#acc7562479385b14d7073c95b1cb03992">STRUCT_TAG</a> <a class="el" href="structgraph__c__context.html">graph_c_context</a> *&#160;</td>
+          <td class="paramname"><em>c</em>, </td>
+        </tr>
+        <tr>
+          <td class="paramkey"></td>
+          <td></td>
+          <td class="paramtype"><a class="el" href="graph__c__binding_8h.html#a8e6fcd751f4c2482c8db8507457de11d">graph_node</a> *&#160;</td>
+          <td class="paramname"><em>inputs</em>, </td>
+        </tr>
+        <tr>
+          <td class="paramkey"></td>
+          <td></td>
+          <td class="paramtype">size_t&#160;</td>
+          <td class="paramname"><em>num_inputs</em>, </td>
+        </tr>
+        <tr>
+          <td class="paramkey"></td>
+          <td></td>
+          <td class="paramtype"><a class="el" href="graph__c__binding_8h.html#a8e6fcd751f4c2482c8db8507457de11d">graph_node</a> *&#160;</td>
+          <td class="paramname"><em>outputs</em>, </td>
+        </tr>
+        <tr>
+          <td class="paramkey"></td>
+          <td></td>
+          <td class="paramtype">size_t&#160;</td>
+          <td class="paramname"><em>num_outputs</em>, </td>
+        </tr>
+        <tr>
+          <td class="paramkey"></td>
+          <td></td>
+          <td class="paramtype"><a class="el" href="graph__c__binding_8h.html#a8e6fcd751f4c2482c8db8507457de11d">graph_node</a> *&#160;</td>
+          <td class="paramname"><em>map_inputs</em>, </td>
+        </tr>
+        <tr>
+          <td class="paramkey"></td>
+          <td></td>
+          <td class="paramtype"><a class="el" href="graph__c__binding_8h.html#a8e6fcd751f4c2482c8db8507457de11d">graph_node</a> *&#160;</td>
+          <td class="paramname"><em>map_outputs</em>, </td>
+        </tr>
+        <tr>
+          <td class="paramkey"></td>
+          <td></td>
+          <td class="paramtype">size_t&#160;</td>
+          <td class="paramname"><em>num_maps</em>, </td>
+        </tr>
+        <tr>
+          <td class="paramkey"></td>
+          <td></td>
+          <td class="paramtype"><a class="el" href="graph__c__binding_8h.html#a8e6fcd751f4c2482c8db8507457de11d">graph_node</a> *&#160;</td>
+          <td class="paramname"><em>atomics</em>, </td>
+        </tr>
+        <tr>
+          <td class="paramkey"></td>
+          <td></td>
+          <td class="paramtype">size_t&#160;</td>
+          <td class="paramname"><em>num_atomics</em>, </td>
+        </tr>
+        <tr>
+          <td class="paramkey"></td>
+          <td></td>
+          <td class="paramtype"><a class="el" href="graph__c__binding_8h.html#a8e6fcd751f4c2482c8db8507457de11d">graph_node</a>&#160;</td>
+          <td class="paramname"><em>random_state</em>, </td>
+        </tr>
+        <tr>
+          <td class="paramkey"></td>
+          <td></td>
+          <td class="paramtype">const char *&#160;</td>
+          <td class="paramname"><em>name</em>, </td>
+        </tr>
+        <tr>
+          <td class="paramkey"></td>
+          <td></td>
+          <td class="paramtype">const size_t&#160;</td>
+          <td class="paramname"><em>size</em>&#160;</td>
+        </tr>
+        <tr>
+          <td></td>
+          <td>)</td>
+          <td></td><td></td>
+        </tr>
+      </table>
+</div><div class="memdoc">
+
+<p>Add post workflow item. </p>
+<dl class="params"><dt>Parameters</dt><dd>
+  <table class="params">
+    <tr><td class="paramdir">[in]</td><td class="paramname">c</td><td>The graph C context. </td></tr>
+    <tr><td class="paramdir">[in]</td><td class="paramname">inputs</td><td>Array of input nodes. </td></tr>
+    <tr><td class="paramdir">[in]</td><td class="paramname">num_inputs</td><td>Number of inputs. </td></tr>
+    <tr><td class="paramdir">[in]</td><td class="paramname">outputs</td><td>Array of output nodes. </td></tr>
+    <tr><td class="paramdir">[in]</td><td class="paramname">num_outputs</td><td>Number of outputs. </td></tr>
+    <tr><td class="paramdir">[in]</td><td class="paramname">map_inputs</td><td>Array of map input nodes. </td></tr>
+    <tr><td class="paramdir">[in]</td><td class="paramname">map_outputs</td><td>Array of map output nodes. </td></tr>
+    <tr><td class="paramdir">[in]</td><td class="paramname">num_maps</td><td>Number of maps. </td></tr>
+    <tr><td class="paramdir">[in]</td><td class="paramname">atomics</td><td>Array of atomic nodes. </td></tr>
+    <tr><td class="paramdir">[in]</td><td class="paramname">num_atomics</td><td>Number of atomics. </td></tr>
+    <tr><td class="paramdir">[in]</td><td class="paramname">random_state</td><td>Optional random state, can be NULL if not used. </td></tr>
+    <tr><td class="paramdir">[in]</td><td class="paramname">name</td><td>Name for the kernel. </td></tr>
+    <tr><td class="paramdir">[in]</td><td class="paramname">size</td><td>Number of elements to operate on. </td></tr>
+  </table>
+  </dd>
+</dl>
+
+</div>
+</div>
+<a id="ad94b174dea2d599a6b0a61ba28b90c40" name="ad94b174dea2d599a6b0a61ba28b90c40"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#ad94b174dea2d599a6b0a61ba28b90c40">&#9670;&#160;</a></span>graph_add_post_loop_item()</h2>
+
+<div class="memitem">
+<div class="memproto">
+      <table class="memname">
+        <tr>
+          <td class="memname">void graph_add_post_loop_item </td>
+          <td>(</td>
+          <td class="paramtype"><a class="el" href="graph__c__binding_8h.html#acc7562479385b14d7073c95b1cb03992">STRUCT_TAG</a> <a class="el" href="structgraph__c__context.html">graph_c_context</a> *&#160;</td>
+          <td class="paramname"><em>c</em>, </td>
+        </tr>
+        <tr>
+          <td class="paramkey"></td>
+          <td></td>
+          <td class="paramtype"><a class="el" href="graph__c__binding_8h.html#a8e6fcd751f4c2482c8db8507457de11d">graph_node</a> *&#160;</td>
+          <td class="paramname"><em>inputs</em>, </td>
+        </tr>
+        <tr>
+          <td class="paramkey"></td>
+          <td></td>
+          <td class="paramtype">size_t&#160;</td>
+          <td class="paramname"><em>num_inputs</em>, </td>
+        </tr>
+        <tr>
+          <td class="paramkey"></td>
+          <td></td>
+          <td class="paramtype"><a class="el" href="graph__c__binding_8h.html#a8e6fcd751f4c2482c8db8507457de11d">graph_node</a> *&#160;</td>
+          <td class="paramname"><em>outputs</em>, </td>
+        </tr>
+        <tr>
+          <td class="paramkey"></td>
+          <td></td>
+          <td class="paramtype">size_t&#160;</td>
+          <td class="paramname"><em>num_outputs</em>, </td>
+        </tr>
+        <tr>
+          <td class="paramkey"></td>
+          <td></td>
+          <td class="paramtype"><a class="el" href="graph__c__binding_8h.html#a8e6fcd751f4c2482c8db8507457de11d">graph_node</a> *&#160;</td>
+          <td class="paramname"><em>map_inputs</em>, </td>
+        </tr>
+        <tr>
+          <td class="paramkey"></td>
+          <td></td>
+          <td class="paramtype"><a class="el" href="graph__c__binding_8h.html#a8e6fcd751f4c2482c8db8507457de11d">graph_node</a> *&#160;</td>
+          <td class="paramname"><em>map_outputs</em>, </td>
+        </tr>
+        <tr>
+          <td class="paramkey"></td>
+          <td></td>
+          <td class="paramtype">size_t&#160;</td>
+          <td class="paramname"><em>num_maps</em>, </td>
+        </tr>
+        <tr>
+          <td class="paramkey"></td>
+          <td></td>
+          <td class="paramtype"><a class="el" href="graph__c__binding_8h.html#a8e6fcd751f4c2482c8db8507457de11d">graph_node</a> *&#160;</td>
+          <td class="paramname"><em>atomics</em>, </td>
+        </tr>
+        <tr>
+          <td class="paramkey"></td>
+          <td></td>
+          <td class="paramtype">size_t&#160;</td>
+          <td class="paramname"><em>num_atomics</em>, </td>
+        </tr>
+        <tr>
+          <td class="paramkey"></td>
+          <td></td>
+          <td class="paramtype"><a class="el" href="graph__c__binding_8h.html#a8e6fcd751f4c2482c8db8507457de11d">graph_node</a>&#160;</td>
+          <td class="paramname"><em>random_state</em>, </td>
+        </tr>
+        <tr>
+          <td class="paramkey"></td>
+          <td></td>
+          <td class="paramtype">const char *&#160;</td>
+          <td class="paramname"><em>name</em>, </td>
+        </tr>
+        <tr>
+          <td class="paramkey"></td>
+          <td></td>
+          <td class="paramtype">const size_t&#160;</td>
+          <td class="paramname"><em>size</em>, </td>
+        </tr>
+        <tr>
+          <td class="paramkey"></td>
+          <td></td>
+          <td class="paramtype">const size_t&#160;</td>
+          <td class="paramname"><em>iterations</em>&#160;</td>
+        </tr>
+        <tr>
+          <td></td>
+          <td>)</td>
+          <td></td><td></td>
+        </tr>
+      </table>
+</div><div class="memdoc">
+
+<p>Add post workflow loopitem. </p>
+<dl class="params"><dt>Parameters</dt><dd>
+  <table class="params">
+    <tr><td class="paramdir">[in]</td><td class="paramname">c</td><td>The graph C context. </td></tr>
+    <tr><td class="paramdir">[in]</td><td class="paramname">inputs</td><td>Array of input nodes. </td></tr>
+    <tr><td class="paramdir">[in]</td><td class="paramname">num_inputs</td><td>Number of inputs. </td></tr>
+    <tr><td class="paramdir">[in]</td><td class="paramname">outputs</td><td>Array of output nodes. </td></tr>
+    <tr><td class="paramdir">[in]</td><td class="paramname">num_outputs</td><td>Number of outputs. </td></tr>
+    <tr><td class="paramdir">[in]</td><td class="paramname">map_inputs</td><td>Array of map input nodes. </td></tr>
+    <tr><td class="paramdir">[in]</td><td class="paramname">map_outputs</td><td>Array of map output nodes. </td></tr>
+    <tr><td class="paramdir">[in]</td><td class="paramname">num_maps</td><td>Number of maps. </td></tr>
+    <tr><td class="paramdir">[in]</td><td class="paramname">atomics</td><td>Array of atomic nodes. </td></tr>
+    <tr><td class="paramdir">[in]</td><td class="paramname">num_atomics</td><td>Number of atomics. </td></tr>
+    <tr><td class="paramdir">[in]</td><td class="paramname">random_state</td><td>Optional random state, can be NULL if not used. </td></tr>
+    <tr><td class="paramdir">[in]</td><td class="paramname">name</td><td>Name for the kernel. </td></tr>
+    <tr><td class="paramdir">[in]</td><td class="paramname">size</td><td>Number of elements to operate on. </td></tr>
+    <tr><td class="paramdir">[in]</td><td class="paramname">iterations</td><td>Number of loop iterations. </td></tr>
+  </table>
+  </dd>
+</dl>
+
+</div>
+</div>
+<a id="ac560c99e9ecea988c85d61546fa07bba" name="ac560c99e9ecea988c85d61546fa07bba"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#ac560c99e9ecea988c85d61546fa07bba">&#9670;&#160;</a></span>graph_add_post_zero_item()</h2>
+
+<div class="memitem">
+<div class="memproto">
+      <table class="memname">
+        <tr>
+          <td class="memname">void graph_add_post_zero_item </td>
+          <td>(</td>
+          <td class="paramtype"><a class="el" href="graph__c__binding_8h.html#acc7562479385b14d7073c95b1cb03992">STRUCT_TAG</a> <a class="el" href="structgraph__c__context.html">graph_c_context</a> *&#160;</td>
+          <td class="paramname"><em>c</em>, </td>
+        </tr>
+        <tr>
+          <td class="paramkey"></td>
+          <td></td>
+          <td class="paramtype"><a class="el" href="graph__c__binding_8h.html#a8e6fcd751f4c2482c8db8507457de11d">graph_node</a> *&#160;</td>
+          <td class="paramname"><em>inputs</em>, </td>
+        </tr>
+        <tr>
+          <td class="paramkey"></td>
+          <td></td>
+          <td class="paramtype">size_t&#160;</td>
+          <td class="paramname"><em>num_inputs</em>&#160;</td>
+        </tr>
+        <tr>
+          <td></td>
+          <td>)</td>
+          <td></td><td></td>
+        </tr>
+      </table>
+</div><div class="memdoc">
+
+<p>Add a post zero item. </p>
+<dl class="params"><dt>Parameters</dt><dd>
+  <table class="params">
+    <tr><td class="paramdir">[in]</td><td class="paramname">c</td><td>The graph C context. </td></tr>
+    <tr><td class="paramdir">[in]</td><td class="paramname">inputs</td><td>Array of input nodes. </td></tr>
+    <tr><td class="paramdir">[in]</td><td class="paramname">num_inputs</td><td>Number of inputs. </td></tr>
+  </table>
+  </dd>
+</dl>
+
+</div>
+</div>
+<a id="ae1eb6734b000bc81a146b6347d23763e" name="ae1eb6734b000bc81a146b6347d23763e"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#ae1eb6734b000bc81a146b6347d23763e">&#9670;&#160;</a></span>graph_add_pre_converge_item()</h2>
+
+<div class="memitem">
+<div class="memproto">
+      <table class="memname">
+        <tr>
+          <td class="memname">void graph_add_pre_converge_item </td>
+          <td>(</td>
+          <td class="paramtype"><a class="el" href="graph__c__binding_8h.html#acc7562479385b14d7073c95b1cb03992">STRUCT_TAG</a> <a class="el" href="structgraph__c__context.html">graph_c_context</a> *&#160;</td>
+          <td class="paramname"><em>c</em>, </td>
+        </tr>
+        <tr>
+          <td class="paramkey"></td>
+          <td></td>
+          <td class="paramtype"><a class="el" href="graph__c__binding_8h.html#a8e6fcd751f4c2482c8db8507457de11d">graph_node</a> *&#160;</td>
+          <td class="paramname"><em>inputs</em>, </td>
+        </tr>
+        <tr>
+          <td class="paramkey"></td>
+          <td></td>
+          <td class="paramtype">size_t&#160;</td>
+          <td class="paramname"><em>num_inputs</em>, </td>
+        </tr>
+        <tr>
+          <td class="paramkey"></td>
+          <td></td>
+          <td class="paramtype"><a class="el" href="graph__c__binding_8h.html#a8e6fcd751f4c2482c8db8507457de11d">graph_node</a> *&#160;</td>
+          <td class="paramname"><em>outputs</em>, </td>
+        </tr>
+        <tr>
+          <td class="paramkey"></td>
+          <td></td>
+          <td class="paramtype">size_t&#160;</td>
+          <td class="paramname"><em>num_outputs</em>, </td>
+        </tr>
+        <tr>
+          <td class="paramkey"></td>
+          <td></td>
+          <td class="paramtype"><a class="el" href="graph__c__binding_8h.html#a8e6fcd751f4c2482c8db8507457de11d">graph_node</a> *&#160;</td>
+          <td class="paramname"><em>map_inputs</em>, </td>
+        </tr>
+        <tr>
+          <td class="paramkey"></td>
+          <td></td>
+          <td class="paramtype"><a class="el" href="graph__c__binding_8h.html#a8e6fcd751f4c2482c8db8507457de11d">graph_node</a> *&#160;</td>
+          <td class="paramname"><em>map_outputs</em>, </td>
+        </tr>
+        <tr>
+          <td class="paramkey"></td>
+          <td></td>
+          <td class="paramtype">size_t&#160;</td>
+          <td class="paramname"><em>num_maps</em>, </td>
+        </tr>
+        <tr>
+          <td class="paramkey"></td>
+          <td></td>
+          <td class="paramtype"><a class="el" href="graph__c__binding_8h.html#a8e6fcd751f4c2482c8db8507457de11d">graph_node</a> *&#160;</td>
+          <td class="paramname"><em>atomics</em>, </td>
+        </tr>
+        <tr>
+          <td class="paramkey"></td>
+          <td></td>
+          <td class="paramtype">size_t&#160;</td>
+          <td class="paramname"><em>num_atomics</em>, </td>
+        </tr>
+        <tr>
+          <td class="paramkey"></td>
+          <td></td>
+          <td class="paramtype"><a class="el" href="graph__c__binding_8h.html#a8e6fcd751f4c2482c8db8507457de11d">graph_node</a>&#160;</td>
+          <td class="paramname"><em>random_state</em>, </td>
+        </tr>
+        <tr>
+          <td class="paramkey"></td>
+          <td></td>
+          <td class="paramtype">const char *&#160;</td>
+          <td class="paramname"><em>name</em>, </td>
+        </tr>
+        <tr>
+          <td class="paramkey"></td>
+          <td></td>
+          <td class="paramtype">const size_t&#160;</td>
+          <td class="paramname"><em>size</em>, </td>
+        </tr>
+        <tr>
+          <td class="paramkey"></td>
+          <td></td>
+          <td class="paramtype">const double&#160;</td>
+          <td class="paramname"><em>tol</em>, </td>
+        </tr>
+        <tr>
+          <td class="paramkey"></td>
+          <td></td>
+          <td class="paramtype">const size_t&#160;</td>
+          <td class="paramname"><em>max_iter</em>&#160;</td>
+        </tr>
+        <tr>
+          <td></td>
+          <td>)</td>
+          <td></td><td></td>
+        </tr>
+      </table>
+</div><div class="memdoc">
+
+<p>Add a pre converge item. </p>
+<dl class="params"><dt>Parameters</dt><dd>
+  <table class="params">
+    <tr><td class="paramdir">[in]</td><td class="paramname">c</td><td>The graph C context. </td></tr>
+    <tr><td class="paramdir">[in]</td><td class="paramname">inputs</td><td>Array of input nodes. </td></tr>
+    <tr><td class="paramdir">[in]</td><td class="paramname">num_inputs</td><td>Number of inputs. </td></tr>
+    <tr><td class="paramdir">[in]</td><td class="paramname">outputs</td><td>Array of output nodes. </td></tr>
+    <tr><td class="paramdir">[in]</td><td class="paramname">num_outputs</td><td>Number of outputs. </td></tr>
+    <tr><td class="paramdir">[in]</td><td class="paramname">map_inputs</td><td>Array of map input nodes. </td></tr>
+    <tr><td class="paramdir">[in]</td><td class="paramname">map_outputs</td><td>Array of map output nodes. </td></tr>
+    <tr><td class="paramdir">[in]</td><td class="paramname">num_maps</td><td>Number of maps. </td></tr>
+    <tr><td class="paramdir">[in]</td><td class="paramname">atomics</td><td>Array of atomic nodes. </td></tr>
+    <tr><td class="paramdir">[in]</td><td class="paramname">num_atomics</td><td>Number of atomics. </td></tr>
+    <tr><td class="paramdir">[in]</td><td class="paramname">random_state</td><td>Optional random state, can be NULL if not used. </td></tr>
+    <tr><td class="paramdir">[in]</td><td class="paramname">name</td><td>Name for the kernel. </td></tr>
+    <tr><td class="paramdir">[in]</td><td class="paramname">size</td><td>Number of elements to operate on. </td></tr>
+    <tr><td class="paramdir">[in]</td><td class="paramname">tol</td><td>Tolerance to converge the function to. </td></tr>
+    <tr><td class="paramdir">[in]</td><td class="paramname">max_iter</td><td>Maximum number of iterations before giving up. </td></tr>
+  </table>
+  </dd>
+</dl>
+
+</div>
+</div>
+<a id="a6e8c254692169d73d8daa210803390ce" name="a6e8c254692169d73d8daa210803390ce"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#a6e8c254692169d73d8daa210803390ce">&#9670;&#160;</a></span>graph_add_pre_copy_item()</h2>
+
+<div class="memitem">
+<div class="memproto">
+      <table class="memname">
+        <tr>
+          <td class="memname">void graph_add_pre_copy_item </td>
+          <td>(</td>
+          <td class="paramtype"><a class="el" href="graph__c__binding_8h.html#acc7562479385b14d7073c95b1cb03992">STRUCT_TAG</a> <a class="el" href="structgraph__c__context.html">graph_c_context</a> *&#160;</td>
+          <td class="paramname"><em>c</em>, </td>
+        </tr>
+        <tr>
+          <td class="paramkey"></td>
+          <td></td>
+          <td class="paramtype"><a class="el" href="graph__c__binding_8h.html#a8e6fcd751f4c2482c8db8507457de11d">graph_node</a> *&#160;</td>
+          <td class="paramname"><em>map_inputs</em>, </td>
+        </tr>
+        <tr>
+          <td class="paramkey"></td>
+          <td></td>
+          <td class="paramtype"><a class="el" href="graph__c__binding_8h.html#a8e6fcd751f4c2482c8db8507457de11d">graph_node</a> *&#160;</td>
+          <td class="paramname"><em>map_outputs</em>, </td>
+        </tr>
+        <tr>
+          <td class="paramkey"></td>
+          <td></td>
+          <td class="paramtype">size_t&#160;</td>
+          <td class="paramname"><em>num_maps</em>&#160;</td>
+        </tr>
+        <tr>
+          <td></td>
+          <td>)</td>
+          <td></td><td></td>
+        </tr>
+      </table>
+</div><div class="memdoc">
+
+<p>Add a pre copy item. </p>
+<dl class="params"><dt>Parameters</dt><dd>
+  <table class="params">
+    <tr><td class="paramdir">[in]</td><td class="paramname">c</td><td>The graph C context. </td></tr>
+    <tr><td class="paramdir">[in]</td><td class="paramname">map_inputs</td><td>Array of map input nodes. </td></tr>
+    <tr><td class="paramdir">[in]</td><td class="paramname">map_outputs</td><td>Array of map output nodes. </td></tr>
+    <tr><td class="paramdir">[in]</td><td class="paramname">num_maps</td><td>Number of maps. </td></tr>
+  </table>
+  </dd>
+</dl>
+
+</div>
+</div>
+<a id="a42de36effabae8c25348004922897697" name="a42de36effabae8c25348004922897697"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#a42de36effabae8c25348004922897697">&#9670;&#160;</a></span>graph_add_pre_item()</h2>
 
 <div class="memitem">
 <div class="memproto">
@@ -560,6 +1473,18 @@ Functions</h2></td></tr>
         <tr>
           <td class="paramkey"></td>
           <td></td>
+          <td class="paramtype"><a class="el" href="graph__c__binding_8h.html#a8e6fcd751f4c2482c8db8507457de11d">graph_node</a> *&#160;</td>
+          <td class="paramname"><em>atomics</em>, </td>
+        </tr>
+        <tr>
+          <td class="paramkey"></td>
+          <td></td>
+          <td class="paramtype">size_t&#160;</td>
+          <td class="paramname"><em>num_atomics</em>, </td>
+        </tr>
+        <tr>
+          <td class="paramkey"></td>
+          <td></td>
           <td class="paramtype"><a class="el" href="graph__c__binding_8h.html#a8e6fcd751f4c2482c8db8507457de11d">graph_node</a>&#160;</td>
           <td class="paramname"><em>random_state</em>, </td>
         </tr>
@@ -594,12 +1519,269 @@ Functions</h2></td></tr>
     <tr><td class="paramdir">[in]</td><td class="paramname">map_inputs</td><td>Array of map input nodes. </td></tr>
     <tr><td class="paramdir">[in]</td><td class="paramname">map_outputs</td><td>Array of map output nodes. </td></tr>
     <tr><td class="paramdir">[in]</td><td class="paramname">num_maps</td><td>Number of maps. </td></tr>
+    <tr><td class="paramdir">[in]</td><td class="paramname">atomics</td><td>Array of atomic nodes. </td></tr>
+    <tr><td class="paramdir">[in]</td><td class="paramname">num_atomics</td><td>Number of atomics. </td></tr>
     <tr><td class="paramdir">[in]</td><td class="paramname">random_state</td><td>Optional random state, can be NULL if not used. </td></tr>
     <tr><td class="paramdir">[in]</td><td class="paramname">name</td><td>Name for the kernel. </td></tr>
     <tr><td class="paramdir">[in]</td><td class="paramname">size</td><td>Number of elements to operate on. </td></tr>
   </table>
   </dd>
 </dl>
+
+</div>
+</div>
+<a id="aef0f49dc4ea1120f8fe7e377215e51da" name="aef0f49dc4ea1120f8fe7e377215e51da"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#aef0f49dc4ea1120f8fe7e377215e51da">&#9670;&#160;</a></span>graph_add_pre_loop_item()</h2>
+
+<div class="memitem">
+<div class="memproto">
+      <table class="memname">
+        <tr>
+          <td class="memname">void graph_add_pre_loop_item </td>
+          <td>(</td>
+          <td class="paramtype"><a class="el" href="graph__c__binding_8h.html#acc7562479385b14d7073c95b1cb03992">STRUCT_TAG</a> <a class="el" href="structgraph__c__context.html">graph_c_context</a> *&#160;</td>
+          <td class="paramname"><em>c</em>, </td>
+        </tr>
+        <tr>
+          <td class="paramkey"></td>
+          <td></td>
+          <td class="paramtype"><a class="el" href="graph__c__binding_8h.html#a8e6fcd751f4c2482c8db8507457de11d">graph_node</a> *&#160;</td>
+          <td class="paramname"><em>inputs</em>, </td>
+        </tr>
+        <tr>
+          <td class="paramkey"></td>
+          <td></td>
+          <td class="paramtype">size_t&#160;</td>
+          <td class="paramname"><em>num_inputs</em>, </td>
+        </tr>
+        <tr>
+          <td class="paramkey"></td>
+          <td></td>
+          <td class="paramtype"><a class="el" href="graph__c__binding_8h.html#a8e6fcd751f4c2482c8db8507457de11d">graph_node</a> *&#160;</td>
+          <td class="paramname"><em>outputs</em>, </td>
+        </tr>
+        <tr>
+          <td class="paramkey"></td>
+          <td></td>
+          <td class="paramtype">size_t&#160;</td>
+          <td class="paramname"><em>num_outputs</em>, </td>
+        </tr>
+        <tr>
+          <td class="paramkey"></td>
+          <td></td>
+          <td class="paramtype"><a class="el" href="graph__c__binding_8h.html#a8e6fcd751f4c2482c8db8507457de11d">graph_node</a> *&#160;</td>
+          <td class="paramname"><em>map_inputs</em>, </td>
+        </tr>
+        <tr>
+          <td class="paramkey"></td>
+          <td></td>
+          <td class="paramtype"><a class="el" href="graph__c__binding_8h.html#a8e6fcd751f4c2482c8db8507457de11d">graph_node</a> *&#160;</td>
+          <td class="paramname"><em>map_outputs</em>, </td>
+        </tr>
+        <tr>
+          <td class="paramkey"></td>
+          <td></td>
+          <td class="paramtype">size_t&#160;</td>
+          <td class="paramname"><em>num_maps</em>, </td>
+        </tr>
+        <tr>
+          <td class="paramkey"></td>
+          <td></td>
+          <td class="paramtype"><a class="el" href="graph__c__binding_8h.html#a8e6fcd751f4c2482c8db8507457de11d">graph_node</a> *&#160;</td>
+          <td class="paramname"><em>atomics</em>, </td>
+        </tr>
+        <tr>
+          <td class="paramkey"></td>
+          <td></td>
+          <td class="paramtype">size_t&#160;</td>
+          <td class="paramname"><em>num_atomics</em>, </td>
+        </tr>
+        <tr>
+          <td class="paramkey"></td>
+          <td></td>
+          <td class="paramtype"><a class="el" href="graph__c__binding_8h.html#a8e6fcd751f4c2482c8db8507457de11d">graph_node</a>&#160;</td>
+          <td class="paramname"><em>random_state</em>, </td>
+        </tr>
+        <tr>
+          <td class="paramkey"></td>
+          <td></td>
+          <td class="paramtype">const char *&#160;</td>
+          <td class="paramname"><em>name</em>, </td>
+        </tr>
+        <tr>
+          <td class="paramkey"></td>
+          <td></td>
+          <td class="paramtype">const size_t&#160;</td>
+          <td class="paramname"><em>size</em>, </td>
+        </tr>
+        <tr>
+          <td class="paramkey"></td>
+          <td></td>
+          <td class="paramtype">const size_t&#160;</td>
+          <td class="paramname"><em>iterations</em>&#160;</td>
+        </tr>
+        <tr>
+          <td></td>
+          <td>)</td>
+          <td></td><td></td>
+        </tr>
+      </table>
+</div><div class="memdoc">
+
+<p>Add pre workflow loop item. </p>
+<p>Add pre loop workflow item.</p>
+<dl class="params"><dt>Parameters</dt><dd>
+  <table class="params">
+    <tr><td class="paramdir">[in]</td><td class="paramname">c</td><td>The graph C context. </td></tr>
+    <tr><td class="paramdir">[in]</td><td class="paramname">inputs</td><td>Array of input nodes. </td></tr>
+    <tr><td class="paramdir">[in]</td><td class="paramname">num_inputs</td><td>Number of inputs. </td></tr>
+    <tr><td class="paramdir">[in]</td><td class="paramname">outputs</td><td>Array of output nodes. </td></tr>
+    <tr><td class="paramdir">[in]</td><td class="paramname">num_outputs</td><td>Number of outputs. </td></tr>
+    <tr><td class="paramdir">[in]</td><td class="paramname">map_inputs</td><td>Array of map input nodes. </td></tr>
+    <tr><td class="paramdir">[in]</td><td class="paramname">map_outputs</td><td>Array of map output nodes. </td></tr>
+    <tr><td class="paramdir">[in]</td><td class="paramname">num_maps</td><td>Number of maps. </td></tr>
+    <tr><td class="paramdir">[in]</td><td class="paramname">atomics</td><td>Array of atomic nodes. </td></tr>
+    <tr><td class="paramdir">[in]</td><td class="paramname">num_atomics</td><td>Number of atomics. </td></tr>
+    <tr><td class="paramdir">[in]</td><td class="paramname">random_state</td><td>Optional random state, can be NULL if not used. </td></tr>
+    <tr><td class="paramdir">[in]</td><td class="paramname">name</td><td>Name for the kernel. </td></tr>
+    <tr><td class="paramdir">[in]</td><td class="paramname">size</td><td>Number of elements to operate on. </td></tr>
+    <tr><td class="paramdir">[in]</td><td class="paramname">iterations</td><td>Number of loop iterations. </td></tr>
+  </table>
+  </dd>
+</dl>
+
+</div>
+</div>
+<a id="a4a57bf80ea92b737c4bf8955bfdb7c66" name="a4a57bf80ea92b737c4bf8955bfdb7c66"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#a4a57bf80ea92b737c4bf8955bfdb7c66">&#9670;&#160;</a></span>graph_add_pre_zero_item()</h2>
+
+<div class="memitem">
+<div class="memproto">
+      <table class="memname">
+        <tr>
+          <td class="memname">void graph_add_pre_zero_item </td>
+          <td>(</td>
+          <td class="paramtype"><a class="el" href="graph__c__binding_8h.html#acc7562479385b14d7073c95b1cb03992">STRUCT_TAG</a> <a class="el" href="structgraph__c__context.html">graph_c_context</a> *&#160;</td>
+          <td class="paramname"><em>c</em>, </td>
+        </tr>
+        <tr>
+          <td class="paramkey"></td>
+          <td></td>
+          <td class="paramtype"><a class="el" href="graph__c__binding_8h.html#a8e6fcd751f4c2482c8db8507457de11d">graph_node</a> *&#160;</td>
+          <td class="paramname"><em>inputs</em>, </td>
+        </tr>
+        <tr>
+          <td class="paramkey"></td>
+          <td></td>
+          <td class="paramtype">size_t&#160;</td>
+          <td class="paramname"><em>num_inputs</em>&#160;</td>
+        </tr>
+        <tr>
+          <td></td>
+          <td>)</td>
+          <td></td><td></td>
+        </tr>
+      </table>
+</div><div class="memdoc">
+
+<p>Add a pre zero item. </p>
+<dl class="params"><dt>Parameters</dt><dd>
+  <table class="params">
+    <tr><td class="paramdir">[in]</td><td class="paramname">c</td><td>The graph C context. </td></tr>
+    <tr><td class="paramdir">[in]</td><td class="paramname">inputs</td><td>Array of input nodes. </td></tr>
+    <tr><td class="paramdir">[in]</td><td class="paramname">num_inputs</td><td>Number of inputs. </td></tr>
+  </table>
+  </dd>
+</dl>
+
+</div>
+</div>
+<a id="a62350237ffb6db6ec9da024b2e3954c6" name="a62350237ffb6db6ec9da024b2e3954c6"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#a62350237ffb6db6ec9da024b2e3954c6">&#9670;&#160;</a></span>graph_add_zero_item()</h2>
+
+<div class="memitem">
+<div class="memproto">
+      <table class="memname">
+        <tr>
+          <td class="memname">void graph_add_zero_item </td>
+          <td>(</td>
+          <td class="paramtype"><a class="el" href="graph__c__binding_8h.html#acc7562479385b14d7073c95b1cb03992">STRUCT_TAG</a> <a class="el" href="structgraph__c__context.html">graph_c_context</a> *&#160;</td>
+          <td class="paramname"><em>c</em>, </td>
+        </tr>
+        <tr>
+          <td class="paramkey"></td>
+          <td></td>
+          <td class="paramtype"><a class="el" href="graph__c__binding_8h.html#a8e6fcd751f4c2482c8db8507457de11d">graph_node</a> *&#160;</td>
+          <td class="paramname"><em>inputs</em>, </td>
+        </tr>
+        <tr>
+          <td class="paramkey"></td>
+          <td></td>
+          <td class="paramtype">size_t&#160;</td>
+          <td class="paramname"><em>num_inputs</em>&#160;</td>
+        </tr>
+        <tr>
+          <td></td>
+          <td>)</td>
+          <td></td><td></td>
+        </tr>
+      </table>
+</div><div class="memdoc">
+
+<p>Add a copy item. </p>
+<dl class="params"><dt>Parameters</dt><dd>
+  <table class="params">
+    <tr><td class="paramdir">[in]</td><td class="paramname">c</td><td>The graph C context. </td></tr>
+    <tr><td class="paramdir">[in]</td><td class="paramname">inputs</td><td>Array of input nodes. </td></tr>
+    <tr><td class="paramdir">[in]</td><td class="paramname">num_inputs</td><td>Number of inputs. </td></tr>
+  </table>
+  </dd>
+</dl>
+
+</div>
+</div>
+<a id="ad22a04277c57f125e192d8409c7ce8ff" name="ad22a04277c57f125e192d8409c7ce8ff"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#ad22a04277c57f125e192d8409c7ce8ff">&#9670;&#160;</a></span>graph_and()</h2>
+
+<div class="memitem">
+<div class="memproto">
+      <table class="memname">
+        <tr>
+          <td class="memname"><a class="el" href="graph__c__binding_8h.html#a8e6fcd751f4c2482c8db8507457de11d">graph_node</a> graph_and </td>
+          <td>(</td>
+          <td class="paramtype"><a class="el" href="graph__c__binding_8h.html#acc7562479385b14d7073c95b1cb03992">STRUCT_TAG</a> <a class="el" href="structgraph__c__context.html">graph_c_context</a> *&#160;</td>
+          <td class="paramname"><em>c</em>, </td>
+        </tr>
+        <tr>
+          <td class="paramkey"></td>
+          <td></td>
+          <td class="paramtype"><a class="el" href="graph__c__binding_8h.html#a8e6fcd751f4c2482c8db8507457de11d">graph_node</a>&#160;</td>
+          <td class="paramname"><em>left</em>, </td>
+        </tr>
+        <tr>
+          <td class="paramkey"></td>
+          <td></td>
+          <td class="paramtype"><a class="el" href="graph__c__binding_8h.html#a8e6fcd751f4c2482c8db8507457de11d">graph_node</a>&#160;</td>
+          <td class="paramname"><em>right</em>&#160;</td>
+        </tr>
+        <tr>
+          <td></td>
+          <td>)</td>
+          <td></td><td></td>
+        </tr>
+      </table>
+</div><div class="memdoc">
+
+<p>Create an and node. </p>
+<dl class="params"><dt>Parameters</dt><dd>
+  <table class="params">
+    <tr><td class="paramdir">[in]</td><td class="paramname">c</td><td>The graph C context. </td></tr>
+    <tr><td class="paramdir">[in]</td><td class="paramname">left</td><td>The left operand. </td></tr>
+    <tr><td class="paramdir">[in]</td><td class="paramname">right</td><td>The right operand. </td></tr>
+  </table>
+  </dd>
+</dl>
+<dl class="section return"><dt>Returns</dt><dd>left &amp;&amp; right </dd></dl>
 
 </div>
 </div>
@@ -645,6 +1827,72 @@ Functions</h2></td></tr>
   </dd>
 </dl>
 <dl class="section return"><dt>Returns</dt><dd>atan(left, right) </dd></dl>
+
+</div>
+</div>
+<a id="a208376491c6d52cc293a383a0adf6260" name="a208376491c6d52cc293a383a0adf6260"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#a208376491c6d52cc293a383a0adf6260">&#9670;&#160;</a></span>graph_atomic_accumulate_1D()</h2>
+
+<div class="memitem">
+<div class="memproto">
+      <table class="memname">
+        <tr>
+          <td class="memname"><a class="el" href="graph__c__binding_8h.html#a8e6fcd751f4c2482c8db8507457de11d">graph_node</a> graph_atomic_accumulate_1D </td>
+          <td>(</td>
+          <td class="paramtype"><a class="el" href="graph__c__binding_8h.html#acc7562479385b14d7073c95b1cb03992">STRUCT_TAG</a> <a class="el" href="structgraph__c__context.html">graph_c_context</a> *&#160;</td>
+          <td class="paramname"><em>c</em>, </td>
+        </tr>
+        <tr>
+          <td class="paramkey"></td>
+          <td></td>
+          <td class="paramtype"><a class="el" href="graph__c__binding_8h.html#a8e6fcd751f4c2482c8db8507457de11d">graph_node</a>&#160;</td>
+          <td class="paramname"><em>variable</em>, </td>
+        </tr>
+        <tr>
+          <td class="paramkey"></td>
+          <td></td>
+          <td class="paramtype"><a class="el" href="graph__c__binding_8h.html#a8e6fcd751f4c2482c8db8507457de11d">graph_node</a>&#160;</td>
+          <td class="paramname"><em>index</em>, </td>
+        </tr>
+        <tr>
+          <td class="paramkey"></td>
+          <td></td>
+          <td class="paramtype">const double&#160;</td>
+          <td class="paramname"><em>scale</em>, </td>
+        </tr>
+        <tr>
+          <td class="paramkey"></td>
+          <td></td>
+          <td class="paramtype">const double&#160;</td>
+          <td class="paramname"><em>offset</em>, </td>
+        </tr>
+        <tr>
+          <td class="paramkey"></td>
+          <td></td>
+          <td class="paramtype"><a class="el" href="graph__c__binding_8h.html#a8e6fcd751f4c2482c8db8507457de11d">graph_node</a>&#160;</td>
+          <td class="paramname"><em>arg</em>&#160;</td>
+        </tr>
+        <tr>
+          <td></td>
+          <td>)</td>
+          <td></td><td></td>
+        </tr>
+      </table>
+</div><div class="memdoc">
+
+<p>Create an atomic accumulate 1D index. </p>
+<dl class="params"><dt>Parameters</dt><dd>
+  <table class="params">
+    <tr><td class="paramdir">[in]</td><td class="paramname">c</td><td>The graph C context. </td></tr>
+    <tr><td class="paramdir">[in]</td><td class="paramname">variable</td><td>The variable to index. </td></tr>
+    <tr><td class="paramdir">[in]</td><td class="paramname">index</td><td>The function argument. </td></tr>
+    <tr><td class="paramdir">[in]</td><td class="paramname">scale</td><td>Scale factor argument. </td></tr>
+    <tr><td class="paramdir">[in]</td><td class="paramname">offset</td><td>Offset factor argument. </td></tr>
+    <tr><td class="paramdir">[in]</td><td class="paramname">arg</td><td>Argument. </td></tr>
+  </table>
+  </dd>
+</dl>
+<dl class="section return"><dt>Returns</dt><dd>An atomic accumulate 1D node. </dd></dl>
 
 </div>
 </div>
@@ -1036,6 +2284,51 @@ Functions</h2></td></tr>
 
 </div>
 </div>
+<a id="ab71bbeea599d2a5f9be10d062f2e9482" name="ab71bbeea599d2a5f9be10d062f2e9482"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#ab71bbeea599d2a5f9be10d062f2e9482">&#9670;&#160;</a></span>graph_equal()</h2>
+
+<div class="memitem">
+<div class="memproto">
+      <table class="memname">
+        <tr>
+          <td class="memname"><a class="el" href="graph__c__binding_8h.html#a8e6fcd751f4c2482c8db8507457de11d">graph_node</a> graph_equal </td>
+          <td>(</td>
+          <td class="paramtype"><a class="el" href="graph__c__binding_8h.html#acc7562479385b14d7073c95b1cb03992">STRUCT_TAG</a> <a class="el" href="structgraph__c__context.html">graph_c_context</a> *&#160;</td>
+          <td class="paramname"><em>c</em>, </td>
+        </tr>
+        <tr>
+          <td class="paramkey"></td>
+          <td></td>
+          <td class="paramtype"><a class="el" href="graph__c__binding_8h.html#a8e6fcd751f4c2482c8db8507457de11d">graph_node</a>&#160;</td>
+          <td class="paramname"><em>left</em>, </td>
+        </tr>
+        <tr>
+          <td class="paramkey"></td>
+          <td></td>
+          <td class="paramtype"><a class="el" href="graph__c__binding_8h.html#a8e6fcd751f4c2482c8db8507457de11d">graph_node</a>&#160;</td>
+          <td class="paramname"><em>right</em>&#160;</td>
+        </tr>
+        <tr>
+          <td></td>
+          <td>)</td>
+          <td></td><td></td>
+        </tr>
+      </table>
+</div><div class="memdoc">
+
+<p>Create an equal node. </p>
+<dl class="params"><dt>Parameters</dt><dd>
+  <table class="params">
+    <tr><td class="paramdir">[in]</td><td class="paramname">c</td><td>The graph C context. </td></tr>
+    <tr><td class="paramdir">[in]</td><td class="paramname">left</td><td>The left operand. </td></tr>
+    <tr><td class="paramdir">[in]</td><td class="paramname">right</td><td>The right operand. </td></tr>
+  </table>
+  </dd>
+</dl>
+<dl class="section return"><dt>Returns</dt><dd>left == right </dd></dl>
+
+</div>
+</div>
 <a id="a65ead6ac05b8d6844de48372eaf28843" name="a65ead6ac05b8d6844de48372eaf28843"></a>
 <h2 class="memtitle"><span class="permalink"><a href="#a65ead6ac05b8d6844de48372eaf28843">&#9670;&#160;</a></span>graph_erfi()</h2>
 
@@ -1136,6 +2429,175 @@ Functions</h2></td></tr>
   </dd>
 </dl>
 <dl class="section return"><dt>Returns</dt><dd>The number of concurrent devices. </dd></dl>
+
+</div>
+</div>
+<a id="a099a8ae18baf88c8eb61d275033d6165" name="a099a8ae18baf88c8eb61d275033d6165"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#a099a8ae18baf88c8eb61d275033d6165">&#9670;&#160;</a></span>graph_greater_than()</h2>
+
+<div class="memitem">
+<div class="memproto">
+      <table class="memname">
+        <tr>
+          <td class="memname"><a class="el" href="graph__c__binding_8h.html#a8e6fcd751f4c2482c8db8507457de11d">graph_node</a> graph_greater_than </td>
+          <td>(</td>
+          <td class="paramtype"><a class="el" href="graph__c__binding_8h.html#acc7562479385b14d7073c95b1cb03992">STRUCT_TAG</a> <a class="el" href="structgraph__c__context.html">graph_c_context</a> *&#160;</td>
+          <td class="paramname"><em>c</em>, </td>
+        </tr>
+        <tr>
+          <td class="paramkey"></td>
+          <td></td>
+          <td class="paramtype"><a class="el" href="graph__c__binding_8h.html#a8e6fcd751f4c2482c8db8507457de11d">graph_node</a>&#160;</td>
+          <td class="paramname"><em>left</em>, </td>
+        </tr>
+        <tr>
+          <td class="paramkey"></td>
+          <td></td>
+          <td class="paramtype"><a class="el" href="graph__c__binding_8h.html#a8e6fcd751f4c2482c8db8507457de11d">graph_node</a>&#160;</td>
+          <td class="paramname"><em>right</em>&#160;</td>
+        </tr>
+        <tr>
+          <td></td>
+          <td>)</td>
+          <td></td><td></td>
+        </tr>
+      </table>
+</div><div class="memdoc">
+
+<p>Create a greater than node. </p>
+<dl class="params"><dt>Parameters</dt><dd>
+  <table class="params">
+    <tr><td class="paramdir">[in]</td><td class="paramname">c</td><td>The graph C context. </td></tr>
+    <tr><td class="paramdir">[in]</td><td class="paramname">left</td><td>The left operand. </td></tr>
+    <tr><td class="paramdir">[in]</td><td class="paramname">right</td><td>The right operand. </td></tr>
+  </table>
+  </dd>
+</dl>
+<dl class="section return"><dt>Returns</dt><dd>left &gt; right </dd></dl>
+
+</div>
+</div>
+<a id="ae970f15ba18fae2c72a902acbc1f1b4e" name="ae970f15ba18fae2c72a902acbc1f1b4e"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#ae970f15ba18fae2c72a902acbc1f1b4e">&#9670;&#160;</a></span>graph_greater_than_equal()</h2>
+
+<div class="memitem">
+<div class="memproto">
+      <table class="memname">
+        <tr>
+          <td class="memname"><a class="el" href="graph__c__binding_8h.html#a8e6fcd751f4c2482c8db8507457de11d">graph_node</a> graph_greater_than_equal </td>
+          <td>(</td>
+          <td class="paramtype"><a class="el" href="graph__c__binding_8h.html#acc7562479385b14d7073c95b1cb03992">STRUCT_TAG</a> <a class="el" href="structgraph__c__context.html">graph_c_context</a> *&#160;</td>
+          <td class="paramname"><em>c</em>, </td>
+        </tr>
+        <tr>
+          <td class="paramkey"></td>
+          <td></td>
+          <td class="paramtype"><a class="el" href="graph__c__binding_8h.html#a8e6fcd751f4c2482c8db8507457de11d">graph_node</a>&#160;</td>
+          <td class="paramname"><em>left</em>, </td>
+        </tr>
+        <tr>
+          <td class="paramkey"></td>
+          <td></td>
+          <td class="paramtype"><a class="el" href="graph__c__binding_8h.html#a8e6fcd751f4c2482c8db8507457de11d">graph_node</a>&#160;</td>
+          <td class="paramname"><em>right</em>&#160;</td>
+        </tr>
+        <tr>
+          <td></td>
+          <td>)</td>
+          <td></td><td></td>
+        </tr>
+      </table>
+</div><div class="memdoc">
+
+<p>Create a greater than equal node. </p>
+<dl class="params"><dt>Parameters</dt><dd>
+  <table class="params">
+    <tr><td class="paramdir">[in]</td><td class="paramname">c</td><td>The graph C context. </td></tr>
+    <tr><td class="paramdir">[in]</td><td class="paramname">left</td><td>The left operand. </td></tr>
+    <tr><td class="paramdir">[in]</td><td class="paramname">right</td><td>The right operand. </td></tr>
+  </table>
+  </dd>
+</dl>
+<dl class="section return"><dt>Returns</dt><dd>left &gt;= right </dd></dl>
+
+</div>
+</div>
+<a id="ab458d03f326836b49c4626b02cce9f1b" name="ab458d03f326836b49c4626b02cce9f1b"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#ab458d03f326836b49c4626b02cce9f1b">&#9670;&#160;</a></span>graph_if()</h2>
+
+<div class="memitem">
+<div class="memproto">
+      <table class="memname">
+        <tr>
+          <td class="memname"><a class="el" href="graph__c__binding_8h.html#a8e6fcd751f4c2482c8db8507457de11d">graph_node</a> graph_if </td>
+          <td>(</td>
+          <td class="paramtype"><a class="el" href="graph__c__binding_8h.html#acc7562479385b14d7073c95b1cb03992">STRUCT_TAG</a> <a class="el" href="structgraph__c__context.html">graph_c_context</a> *&#160;</td>
+          <td class="paramname"><em>c</em>, </td>
+        </tr>
+        <tr>
+          <td class="paramkey"></td>
+          <td></td>
+          <td class="paramtype"><a class="el" href="graph__c__binding_8h.html#a8e6fcd751f4c2482c8db8507457de11d">graph_node</a>&#160;</td>
+          <td class="paramname"><em>condition</em>, </td>
+        </tr>
+        <tr>
+          <td class="paramkey"></td>
+          <td></td>
+          <td class="paramtype"><a class="el" href="graph__c__binding_8h.html#a8e6fcd751f4c2482c8db8507457de11d">graph_node</a>&#160;</td>
+          <td class="paramname"><em>t</em>, </td>
+        </tr>
+        <tr>
+          <td class="paramkey"></td>
+          <td></td>
+          <td class="paramtype"><a class="el" href="graph__c__binding_8h.html#a8e6fcd751f4c2482c8db8507457de11d">graph_node</a>&#160;</td>
+          <td class="paramname"><em>f</em>&#160;</td>
+        </tr>
+        <tr>
+          <td></td>
+          <td>)</td>
+          <td></td><td></td>
+        </tr>
+      </table>
+</div><div class="memdoc">
+
+<p>Create a if node. </p>
+<dl class="params"><dt>Parameters</dt><dd>
+  <table class="params">
+    <tr><td class="paramdir">[in]</td><td class="paramname">c</td><td>The graph C context. </td></tr>
+    <tr><td class="paramdir">[in]</td><td class="paramname">condition</td><td>The logical condition. </td></tr>
+    <tr><td class="paramdir">[in]</td><td class="paramname">t</td><td>The true case. </td></tr>
+    <tr><td class="paramdir">[in]</td><td class="paramname">f</td><td>The false case. </td></tr>
+  </table>
+  </dd>
+</dl>
+<dl class="section return"><dt>Returns</dt><dd>condiiton ? t : f </dd></dl>
+
+</div>
+</div>
+<a id="a09748107e61234cfa8536b512e71329b" name="a09748107e61234cfa8536b512e71329b"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#a09748107e61234cfa8536b512e71329b">&#9670;&#160;</a></span>graph_index()</h2>
+
+<div class="memitem">
+<div class="memproto">
+      <table class="memname">
+        <tr>
+          <td class="memname"><a class="el" href="graph__c__binding_8h.html#a8e6fcd751f4c2482c8db8507457de11d">graph_node</a> graph_index </td>
+          <td>(</td>
+          <td class="paramtype"><a class="el" href="graph__c__binding_8h.html#acc7562479385b14d7073c95b1cb03992">STRUCT_TAG</a> <a class="el" href="structgraph__c__context.html">graph_c_context</a> *&#160;</td>
+          <td class="paramname"><em>c</em></td><td>)</td>
+          <td></td>
+        </tr>
+      </table>
+</div><div class="memdoc">
+
+<p>Create an index code. </p>
+<dl class="params"><dt>Parameters</dt><dd>
+  <table class="params">
+    <tr><td class="paramdir">[in]</td><td class="paramname">c</td><td>The graph C context. </td></tr>
+  </table>
+  </dd>
+</dl>
+<dl class="section return"><dt>Returns</dt><dd>An index node. </dd></dl>
 
 </div>
 </div>
@@ -1285,6 +2747,96 @@ Functions</h2></td></tr>
 
 </div>
 </div>
+<a id="aa789a45c9237305e00400bc833d095ee" name="aa789a45c9237305e00400bc833d095ee"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#aa789a45c9237305e00400bc833d095ee">&#9670;&#160;</a></span>graph_less_than()</h2>
+
+<div class="memitem">
+<div class="memproto">
+      <table class="memname">
+        <tr>
+          <td class="memname"><a class="el" href="graph__c__binding_8h.html#a8e6fcd751f4c2482c8db8507457de11d">graph_node</a> graph_less_than </td>
+          <td>(</td>
+          <td class="paramtype"><a class="el" href="graph__c__binding_8h.html#acc7562479385b14d7073c95b1cb03992">STRUCT_TAG</a> <a class="el" href="structgraph__c__context.html">graph_c_context</a> *&#160;</td>
+          <td class="paramname"><em>c</em>, </td>
+        </tr>
+        <tr>
+          <td class="paramkey"></td>
+          <td></td>
+          <td class="paramtype"><a class="el" href="graph__c__binding_8h.html#a8e6fcd751f4c2482c8db8507457de11d">graph_node</a>&#160;</td>
+          <td class="paramname"><em>left</em>, </td>
+        </tr>
+        <tr>
+          <td class="paramkey"></td>
+          <td></td>
+          <td class="paramtype"><a class="el" href="graph__c__binding_8h.html#a8e6fcd751f4c2482c8db8507457de11d">graph_node</a>&#160;</td>
+          <td class="paramname"><em>right</em>&#160;</td>
+        </tr>
+        <tr>
+          <td></td>
+          <td>)</td>
+          <td></td><td></td>
+        </tr>
+      </table>
+</div><div class="memdoc">
+
+<p>Create a less than node. </p>
+<dl class="params"><dt>Parameters</dt><dd>
+  <table class="params">
+    <tr><td class="paramdir">[in]</td><td class="paramname">c</td><td>The graph C context. </td></tr>
+    <tr><td class="paramdir">[in]</td><td class="paramname">left</td><td>The left operand. </td></tr>
+    <tr><td class="paramdir">[in]</td><td class="paramname">right</td><td>The right operand. </td></tr>
+  </table>
+  </dd>
+</dl>
+<dl class="section return"><dt>Returns</dt><dd>left &lt; right </dd></dl>
+
+</div>
+</div>
+<a id="a4e22e8736164437f0b8411cf4910b557" name="a4e22e8736164437f0b8411cf4910b557"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#a4e22e8736164437f0b8411cf4910b557">&#9670;&#160;</a></span>graph_less_than_equal()</h2>
+
+<div class="memitem">
+<div class="memproto">
+      <table class="memname">
+        <tr>
+          <td class="memname"><a class="el" href="graph__c__binding_8h.html#a8e6fcd751f4c2482c8db8507457de11d">graph_node</a> graph_less_than_equal </td>
+          <td>(</td>
+          <td class="paramtype"><a class="el" href="graph__c__binding_8h.html#acc7562479385b14d7073c95b1cb03992">STRUCT_TAG</a> <a class="el" href="structgraph__c__context.html">graph_c_context</a> *&#160;</td>
+          <td class="paramname"><em>c</em>, </td>
+        </tr>
+        <tr>
+          <td class="paramkey"></td>
+          <td></td>
+          <td class="paramtype"><a class="el" href="graph__c__binding_8h.html#a8e6fcd751f4c2482c8db8507457de11d">graph_node</a>&#160;</td>
+          <td class="paramname"><em>left</em>, </td>
+        </tr>
+        <tr>
+          <td class="paramkey"></td>
+          <td></td>
+          <td class="paramtype"><a class="el" href="graph__c__binding_8h.html#a8e6fcd751f4c2482c8db8507457de11d">graph_node</a>&#160;</td>
+          <td class="paramname"><em>right</em>&#160;</td>
+        </tr>
+        <tr>
+          <td></td>
+          <td>)</td>
+          <td></td><td></td>
+        </tr>
+      </table>
+</div><div class="memdoc">
+
+<p>Create a less than node. </p>
+<dl class="params"><dt>Parameters</dt><dd>
+  <table class="params">
+    <tr><td class="paramdir">[in]</td><td class="paramname">c</td><td>The graph C context. </td></tr>
+    <tr><td class="paramdir">[in]</td><td class="paramname">left</td><td>The left operand. </td></tr>
+    <tr><td class="paramdir">[in]</td><td class="paramname">right</td><td>The right operand. </td></tr>
+  </table>
+  </dd>
+</dl>
+<dl class="section return"><dt>Returns</dt><dd>left &lt;= right </dd></dl>
+
+</div>
+</div>
 <a id="a033424193a4afdb3d5a950dd6ae84832" name="a033424193a4afdb3d5a950dd6ae84832"></a>
 <h2 class="memtitle"><span class="permalink"><a href="#a033424193a4afdb3d5a950dd6ae84832">&#9670;&#160;</a></span>graph_log()</h2>
 
@@ -1365,6 +2917,134 @@ Functions</h2></td></tr>
   </dd>
 </dl>
 <dl class="section return"><dt>Returns</dt><dd>left*right </dd></dl>
+
+</div>
+</div>
+<a id="a9fd2c2a67a15e3fb2d406e75d5f3d28b" name="a9fd2c2a67a15e3fb2d406e75d5f3d28b"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#a9fd2c2a67a15e3fb2d406e75d5f3d28b">&#9670;&#160;</a></span>graph_not()</h2>
+
+<div class="memitem">
+<div class="memproto">
+      <table class="memname">
+        <tr>
+          <td class="memname"><a class="el" href="graph__c__binding_8h.html#a8e6fcd751f4c2482c8db8507457de11d">graph_node</a> graph_not </td>
+          <td>(</td>
+          <td class="paramtype"><a class="el" href="graph__c__binding_8h.html#acc7562479385b14d7073c95b1cb03992">STRUCT_TAG</a> <a class="el" href="structgraph__c__context.html">graph_c_context</a> *&#160;</td>
+          <td class="paramname"><em>c</em>, </td>
+        </tr>
+        <tr>
+          <td class="paramkey"></td>
+          <td></td>
+          <td class="paramtype"><a class="el" href="graph__c__binding_8h.html#a8e6fcd751f4c2482c8db8507457de11d">graph_node</a>&#160;</td>
+          <td class="paramname"><em>arg</em>&#160;</td>
+        </tr>
+        <tr>
+          <td></td>
+          <td>)</td>
+          <td></td><td></td>
+        </tr>
+      </table>
+</div><div class="memdoc">
+
+<p>Create not node. </p>
+<dl class="params"><dt>Parameters</dt><dd>
+  <table class="params">
+    <tr><td class="paramdir">[in]</td><td class="paramname">c</td><td>The graph C context. </td></tr>
+    <tr><td class="paramdir">[in]</td><td class="paramname">arg</td><td>The function argument. </td></tr>
+  </table>
+  </dd>
+</dl>
+<dl class="section return"><dt>Returns</dt><dd>!arg </dd></dl>
+
+</div>
+</div>
+<a id="abaf3b997e287ee9ebb7cd80da2e32670" name="abaf3b997e287ee9ebb7cd80da2e32670"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#abaf3b997e287ee9ebb7cd80da2e32670">&#9670;&#160;</a></span>graph_not_equal()</h2>
+
+<div class="memitem">
+<div class="memproto">
+      <table class="memname">
+        <tr>
+          <td class="memname"><a class="el" href="graph__c__binding_8h.html#a8e6fcd751f4c2482c8db8507457de11d">graph_node</a> graph_not_equal </td>
+          <td>(</td>
+          <td class="paramtype"><a class="el" href="graph__c__binding_8h.html#acc7562479385b14d7073c95b1cb03992">STRUCT_TAG</a> <a class="el" href="structgraph__c__context.html">graph_c_context</a> *&#160;</td>
+          <td class="paramname"><em>c</em>, </td>
+        </tr>
+        <tr>
+          <td class="paramkey"></td>
+          <td></td>
+          <td class="paramtype"><a class="el" href="graph__c__binding_8h.html#a8e6fcd751f4c2482c8db8507457de11d">graph_node</a>&#160;</td>
+          <td class="paramname"><em>left</em>, </td>
+        </tr>
+        <tr>
+          <td class="paramkey"></td>
+          <td></td>
+          <td class="paramtype"><a class="el" href="graph__c__binding_8h.html#a8e6fcd751f4c2482c8db8507457de11d">graph_node</a>&#160;</td>
+          <td class="paramname"><em>right</em>&#160;</td>
+        </tr>
+        <tr>
+          <td></td>
+          <td>)</td>
+          <td></td><td></td>
+        </tr>
+      </table>
+</div><div class="memdoc">
+
+<p>Create a not equal node. </p>
+<dl class="params"><dt>Parameters</dt><dd>
+  <table class="params">
+    <tr><td class="paramdir">[in]</td><td class="paramname">c</td><td>The graph C context. </td></tr>
+    <tr><td class="paramdir">[in]</td><td class="paramname">left</td><td>The left operand. </td></tr>
+    <tr><td class="paramdir">[in]</td><td class="paramname">right</td><td>The right operand. </td></tr>
+  </table>
+  </dd>
+</dl>
+<dl class="section return"><dt>Returns</dt><dd>left != right </dd></dl>
+
+</div>
+</div>
+<a id="a546b4831ba7f5e01fb38cbffa4ce0e5d" name="a546b4831ba7f5e01fb38cbffa4ce0e5d"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#a546b4831ba7f5e01fb38cbffa4ce0e5d">&#9670;&#160;</a></span>graph_or()</h2>
+
+<div class="memitem">
+<div class="memproto">
+      <table class="memname">
+        <tr>
+          <td class="memname"><a class="el" href="graph__c__binding_8h.html#a8e6fcd751f4c2482c8db8507457de11d">graph_node</a> graph_or </td>
+          <td>(</td>
+          <td class="paramtype"><a class="el" href="graph__c__binding_8h.html#acc7562479385b14d7073c95b1cb03992">STRUCT_TAG</a> <a class="el" href="structgraph__c__context.html">graph_c_context</a> *&#160;</td>
+          <td class="paramname"><em>c</em>, </td>
+        </tr>
+        <tr>
+          <td class="paramkey"></td>
+          <td></td>
+          <td class="paramtype"><a class="el" href="graph__c__binding_8h.html#a8e6fcd751f4c2482c8db8507457de11d">graph_node</a>&#160;</td>
+          <td class="paramname"><em>left</em>, </td>
+        </tr>
+        <tr>
+          <td class="paramkey"></td>
+          <td></td>
+          <td class="paramtype"><a class="el" href="graph__c__binding_8h.html#a8e6fcd751f4c2482c8db8507457de11d">graph_node</a>&#160;</td>
+          <td class="paramname"><em>right</em>&#160;</td>
+        </tr>
+        <tr>
+          <td></td>
+          <td>)</td>
+          <td></td><td></td>
+        </tr>
+      </table>
+</div><div class="memdoc">
+
+<p>Create an or node. </p>
+<dl class="params"><dt>Parameters</dt><dd>
+  <table class="params">
+    <tr><td class="paramdir">[in]</td><td class="paramname">c</td><td>The graph C context. </td></tr>
+    <tr><td class="paramdir">[in]</td><td class="paramname">left</td><td>The left operand. </td></tr>
+    <tr><td class="paramdir">[in]</td><td class="paramname">right</td><td>The right operand. </td></tr>
+  </table>
+  </dd>
+</dl>
+<dl class="section return"><dt>Returns</dt><dd>left || right </dd></dl>
 
 </div>
 </div>
@@ -1525,6 +3205,32 @@ Functions</h2></td></tr>
   </dd>
 </dl>
 <dl class="section return"><dt>Returns</dt><dd>A 2D piecewise node. </dd></dl>
+
+</div>
+</div>
+<a id="af4ea37e27f4446d254b628a0d1c942b8" name="af4ea37e27f4446d254b628a0d1c942b8"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#af4ea37e27f4446d254b628a0d1c942b8">&#9670;&#160;</a></span>graph_post_run()</h2>
+
+<div class="memitem">
+<div class="memproto">
+      <table class="memname">
+        <tr>
+          <td class="memname">void graph_post_run </td>
+          <td>(</td>
+          <td class="paramtype"><a class="el" href="structgraph__c__context.html">graph_c_context</a> *&#160;</td>
+          <td class="paramname"><em>c</em></td><td>)</td>
+          <td></td>
+        </tr>
+      </table>
+</div><div class="memdoc">
+
+<p>Run post work items. </p>
+<dl class="params"><dt>Parameters</dt><dd>
+  <table class="params">
+    <tr><td class="paramdir">[in]</td><td class="paramname">c</td><td>The graph C context. </td></tr>
+  </table>
+  </dd>
+</dl>
 
 </div>
 </div>
@@ -1726,8 +3432,8 @@ Functions</h2></td></tr>
 
 </div>
 </div>
-<a id="ad6018056303af30eb8e8c3166dbd9850" name="ad6018056303af30eb8e8c3166dbd9850"></a>
-<h2 class="memtitle"><span class="permalink"><a href="#ad6018056303af30eb8e8c3166dbd9850">&#9670;&#160;</a></span>graph_random_state()</h2>
+<a id="a31aadbbe81bb8bc0a4515e86da6fca2f" name="a31aadbbe81bb8bc0a4515e86da6fca2f"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#a31aadbbe81bb8bc0a4515e86da6fca2f">&#9670;&#160;</a></span>graph_random_state()</h2>
 
 <div class="memitem">
 <div class="memproto">
@@ -1737,6 +3443,12 @@ Functions</h2></td></tr>
           <td>(</td>
           <td class="paramtype"><a class="el" href="graph__c__binding_8h.html#acc7562479385b14d7073c95b1cb03992">STRUCT_TAG</a> <a class="el" href="structgraph__c__context.html">graph_c_context</a> *&#160;</td>
           <td class="paramname"><em>c</em>, </td>
+        </tr>
+        <tr>
+          <td class="paramkey"></td>
+          <td></td>
+          <td class="paramtype">const size_t&#160;</td>
+          <td class="paramname"><em>size</em>, </td>
         </tr>
         <tr>
           <td class="paramkey"></td>
@@ -1756,6 +3468,7 @@ Functions</h2></td></tr>
 <dl class="params"><dt>Parameters</dt><dd>
   <table class="params">
     <tr><td class="paramdir">[in]</td><td class="paramname">c</td><td>The graph C context. </td></tr>
+    <tr><td class="paramdir">[in]</td><td class="paramname">size</td><td>The number of randoms needed. </td></tr>
     <tr><td class="paramdir">[in]</td><td class="paramname">seed</td><td>Intial random seed. </td></tr>
   </table>
   </dd>

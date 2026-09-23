@@ -142,298 +142,352 @@ $(document).ready(function(){initNavTree('jit_8hpp_source.html',''); initResizab
 <div class="line"><a id="l00049" name="l00049"></a><span class="lineno"><a class="line" href="classjit_1_1context.html">   49</a></span>    <span class="keyword">class </span><a class="code hl_class" href="classjit_1_1context.html">context</a> {</div>
 <div class="line"><a id="l00050" name="l00050"></a><span class="lineno">   50</span>    <span class="keyword">private</span>:</div>
 <div class="line"><a id="l00052" name="l00052"></a><span class="lineno">   52</span>        std::ostringstream source_buffer;</div>
-<div class="line"><a id="l00054" name="l00054"></a><span class="lineno">   54</span>        <a class="code hl_typedef" href="namespacejit.html#a9822ffd072bb1abcde9176028aa24a5e">register_map</a> registers;</div>
-<div class="line"><a id="l00056" name="l00056"></a><span class="lineno">   56</span>        std::vector&lt;std::string&gt; kernel_names;</div>
-<div class="line"><a id="l00058" name="l00058"></a><span class="lineno">   58</span>        std::map&lt;std::string, texture1d_list&gt; kernel_1dtextures;</div>
-<div class="line"><a id="l00060" name="l00060"></a><span class="lineno">   60</span>        std::map&lt;std::string, texture2d_list&gt; kernel_2dtextures;</div>
-<div class="line"><a id="l00061" name="l00061"></a><span class="lineno">   61</span> </div>
-<div class="line"><a id="l00063" name="l00063"></a><span class="lineno">   63</span>        <span class="keyword">using </span>gpu_context_type = <span class="keyword">typename</span> std::conditional&lt;use_gpu&lt;T&gt; (),</div>
-<div class="line"><a id="l00064" name="l00064"></a><span class="lineno">   64</span><span class="preprocessor">#ifdef USE_CUDA</span></div>
-<div class="line"><a id="l00065" name="l00065"></a><span class="lineno">   65</span>                                                           <a class="code hl_class" href="classgpu_1_1cuda__context.html">gpu::cuda_context&lt;T, SAFE_MATH&gt;</a>,</div>
-<div class="line"><a id="l00066" name="l00066"></a><span class="lineno">   66</span><span class="preprocessor">#elif defined(USE_METAL)</span></div>
-<div class="line"><a id="l00067" name="l00067"></a><span class="lineno">   67</span>                                                           <a class="code hl_class" href="classgpu_1_1metal__context.html">gpu::metal_context&lt;SAFE_MATH&gt;</a>,</div>
-<div class="line"><a id="l00068" name="l00068"></a><span class="lineno">   68</span><span class="preprocessor">#else</span></div>
-<div class="line"><a id="l00069" name="l00069"></a><span class="lineno">   69</span>                                                           <a class="code hl_class" href="classgpu_1_1cpu__context.html">gpu::cpu_context&lt;T, SAFE_MATH&gt;</a>,</div>
-<div class="line"><a id="l00070" name="l00070"></a><span class="lineno">   70</span><span class="preprocessor">#endif</span></div>
-<div class="line"><a id="l00071" name="l00071"></a><span class="lineno">   71</span>                                                           <a class="code hl_class" href="classgpu_1_1cpu__context.html">gpu::cpu_context&lt;T, SAFE_MATH&gt;</a>&gt;::type;</div>
-<div class="line"><a id="l00072" name="l00072"></a><span class="lineno">   72</span> </div>
-<div class="line"><a id="l00074" name="l00074"></a><span class="lineno">   74</span>        gpu_context_type gpu_context;</div>
-<div class="line"><a id="l00076" name="l00076"></a><span class="lineno">   76</span>        <span class="keywordtype">bool</span> used_random;</div>
+<div class="line"><a id="l00054" name="l00054"></a><span class="lineno">   54</span>        <a class="code hl_typedef" href="namespacejit.html#aaaa81016eb9cb161306980a63db3e720">register_map</a> registers;</div>
+<div class="line"><a id="l00056" name="l00056"></a><span class="lineno">   56</span>        <a class="code hl_typedef" href="namespacejit.html#a7f92c8c5094ad3c8c58438f2e73c8e81">preamble_map</a> pre_funcs;</div>
+<div class="line"><a id="l00058" name="l00058"></a><span class="lineno">   58</span>        std::vector&lt;std::string&gt; kernel_names;</div>
+<div class="line"><a id="l00060" name="l00060"></a><span class="lineno">   60</span>        std::unordered_map&lt;std::string, texture1d_list&gt; kernel_1dtextures;</div>
+<div class="line"><a id="l00062" name="l00062"></a><span class="lineno">   62</span>        std::unordered_map&lt;std::string, texture2d_list&gt; kernel_2dtextures;</div>
+<div class="line"><a id="l00063" name="l00063"></a><span class="lineno">   63</span> </div>
+<div class="line"><a id="l00065" name="l00065"></a><span class="lineno">   65</span>        <span class="keyword">using </span>gpu_context_type = <span class="keyword">typename</span> std::conditional&lt;use_gpu&lt;T&gt; (),</div>
+<div class="line"><a id="l00066" name="l00066"></a><span class="lineno">   66</span><span class="preprocessor">#ifdef USE_CUDA</span></div>
+<div class="line"><a id="l00067" name="l00067"></a><span class="lineno">   67</span>                                                           <a class="code hl_class" href="classgpu_1_1cuda__context.html">gpu::cuda_context&lt;T, SAFE_MATH&gt;</a>,</div>
+<div class="line"><a id="l00068" name="l00068"></a><span class="lineno">   68</span><span class="preprocessor">#elif defined(USE_METAL)</span></div>
+<div class="line"><a id="l00069" name="l00069"></a><span class="lineno">   69</span>                                                           <a class="code hl_class" href="classgpu_1_1metal__context.html">gpu::metal_context&lt;SAFE_MATH&gt;</a>,</div>
+<div class="line"><a id="l00070" name="l00070"></a><span class="lineno">   70</span><span class="preprocessor">#else</span></div>
+<div class="line"><a id="l00071" name="l00071"></a><span class="lineno">   71</span>                                                           <a class="code hl_class" href="classgpu_1_1cpu__context.html">gpu::cpu_context&lt;T, SAFE_MATH&gt;</a>,</div>
+<div class="line"><a id="l00072" name="l00072"></a><span class="lineno">   72</span><span class="preprocessor">#endif</span></div>
+<div class="line"><a id="l00073" name="l00073"></a><span class="lineno">   73</span>                                                           <a class="code hl_class" href="classgpu_1_1cpu__context.html">gpu::cpu_context&lt;T, SAFE_MATH&gt;</a>&gt;::type;</div>
+<div class="line"><a id="l00074" name="l00074"></a><span class="lineno">   74</span> </div>
+<div class="line"><a id="l00076" name="l00076"></a><span class="lineno">   76</span>        gpu_context_type gpu_context;</div>
 <div class="line"><a id="l00077" name="l00077"></a><span class="lineno">   77</span> </div>
 <div class="line"><a id="l00078" name="l00078"></a><span class="lineno">   78</span>    <span class="keyword">public</span>:</div>
 <div class="line"><a id="l00080" name="l00080"></a><span class="lineno"><a class="line" href="classjit_1_1context.html#a1e584241235100ab5c074e59a684654b">   80</a></span>        <span class="keyword">constexpr</span> <span class="keyword">static</span> <span class="keywordtype">size_t</span> <a class="code hl_variable" href="classjit_1_1context.html#a1e584241235100ab5c074e59a684654b">random_state_size</a> = gpu_context_type::random_state_size;</div>
 <div class="line"><a id="l00081" name="l00081"></a><span class="lineno">   81</span> </div>
 <div class="line"><a id="l00082" name="l00082"></a><span class="lineno">   82</span><span class="comment">//------------------------------------------------------------------------------</span></div>
-<div class="line"><a id="l00086" name="l00086"></a><span class="lineno">   86</span><span class="comment">//------------------------------------------------------------------------------</span></div>
-<div class="foldopen" id="foldopen00087" data-start="{" data-end="}">
-<div class="line"><a id="l00087" name="l00087"></a><span class="lineno"><a class="line" href="classjit_1_1context.html#a2d04d789825a5f04206a3d4d7765b930">   87</a></span>        <span class="keyword">static</span> <span class="keywordtype">size_t</span> <a class="code hl_function" href="classjit_1_1context.html#a2d04d789825a5f04206a3d4d7765b930">max_concurrency</a>() {</div>
-<div class="line"><a id="l00088" name="l00088"></a><span class="lineno">   88</span>            <span class="keyword">const</span> <span class="keywordtype">size_t</span> num = gpu_context_type::max_concurrency();</div>
-<div class="line"><a id="l00089" name="l00089"></a><span class="lineno">   89</span>            std::cout &lt;&lt; <span class="stringliteral">&quot;Located &quot;</span> &lt;&lt; num &lt;&lt; <span class="stringliteral">&quot; &quot;</span></div>
-<div class="line"><a id="l00090" name="l00090"></a><span class="lineno">   90</span>                      &lt;&lt; gpu_context_type::device_type() &lt;&lt; <span class="stringliteral">&quot; device&quot;</span></div>
-<div class="line"><a id="l00091" name="l00091"></a><span class="lineno">   91</span>                      &lt;&lt; (num == 1 ? <span class="stringliteral">&quot;.&quot;</span> : <span class="stringliteral">&quot;s.&quot;</span>)</div>
-<div class="line"><a id="l00092" name="l00092"></a><span class="lineno">   92</span>                      &lt;&lt; std::endl;</div>
-<div class="line"><a id="l00093" name="l00093"></a><span class="lineno">   93</span>            <span class="keywordflow">return</span> num;</div>
-<div class="line"><a id="l00094" name="l00094"></a><span class="lineno">   94</span>        }</div>
+<div class="line"><a id="l00087" name="l00087"></a><span class="lineno">   87</span><span class="comment">//------------------------------------------------------------------------------</span></div>
+<div class="foldopen" id="foldopen00088" data-start="{" data-end="}">
+<div class="line"><a id="l00088" name="l00088"></a><span class="lineno"><a class="line" href="classjit_1_1context.html#a7318993de30eedb364ba1d048d6f3ceb">   88</a></span>        <span class="keyword">static</span> <span class="keywordtype">size_t</span> <a class="code hl_function" href="classjit_1_1context.html#a7318993de30eedb364ba1d048d6f3ceb">max_random_state_size</a>(<span class="keyword">const</span> <span class="keywordtype">size_t</span> size) {</div>
+<div class="line"><a id="l00089" name="l00089"></a><span class="lineno">   89</span>            <span class="keywordflow">return</span> std::min(size, <a class="code hl_variable" href="classjit_1_1context.html#a1e584241235100ab5c074e59a684654b">random_state_size</a>);</div>
+<div class="line"><a id="l00090" name="l00090"></a><span class="lineno">   90</span>        }</div>
 </div>
-<div class="line"><a id="l00095" name="l00095"></a><span class="lineno">   95</span> </div>
+<div class="line"><a id="l00091" name="l00091"></a><span class="lineno">   91</span> </div>
+<div class="line"><a id="l00092" name="l00092"></a><span class="lineno">   92</span><span class="comment">//------------------------------------------------------------------------------</span></div>
 <div class="line"><a id="l00096" name="l00096"></a><span class="lineno">   96</span><span class="comment">//------------------------------------------------------------------------------</span></div>
-<div class="line"><a id="l00100" name="l00100"></a><span class="lineno">  100</span><span class="comment">//------------------------------------------------------------------------------</span></div>
-<div class="foldopen" id="foldopen00101" data-start="{" data-end="}">
-<div class="line"><a id="l00101" name="l00101"></a><span class="lineno"><a class="line" href="classjit_1_1context.html#a673c179cb1ae4ea23f65677be4bdf8ca">  101</a></span>        <a class="code hl_function" href="classjit_1_1context.html#a673c179cb1ae4ea23f65677be4bdf8ca">context</a>(<span class="keyword">const</span> <span class="keywordtype">size_t</span> index) : gpu_context(index), used_random(false) {</div>
-<div class="line"><a id="l00102" name="l00102"></a><span class="lineno">  102</span>            source_buffer &lt;&lt; std::setprecision(max_digits10&lt;T&gt; ());</div>
-<div class="line"><a id="l00103" name="l00103"></a><span class="lineno">  103</span>            gpu_context.create_header(source_buffer);</div>
+<div class="foldopen" id="foldopen00097" data-start="{" data-end="}">
+<div class="line"><a id="l00097" name="l00097"></a><span class="lineno"><a class="line" href="classjit_1_1context.html#a2d04d789825a5f04206a3d4d7765b930">   97</a></span>        <span class="keyword">static</span> <span class="keywordtype">size_t</span> <a class="code hl_function" href="classjit_1_1context.html#a2d04d789825a5f04206a3d4d7765b930">max_concurrency</a>() {</div>
+<div class="line"><a id="l00098" name="l00098"></a><span class="lineno">   98</span>            <span class="keyword">const</span> <span class="keywordtype">size_t</span> num = gpu_context_type::max_concurrency();</div>
+<div class="line"><a id="l00099" name="l00099"></a><span class="lineno">   99</span>            std::cout &lt;&lt; <span class="stringliteral">&quot;Located &quot;</span> &lt;&lt; num &lt;&lt; <span class="stringliteral">&quot; &quot;</span></div>
+<div class="line"><a id="l00100" name="l00100"></a><span class="lineno">  100</span>                      &lt;&lt; gpu_context_type::device_type() &lt;&lt; <span class="stringliteral">&quot; device&quot;</span></div>
+<div class="line"><a id="l00101" name="l00101"></a><span class="lineno">  101</span>                      &lt;&lt; (num == 1 ? <span class="stringliteral">&quot;.&quot;</span> : <span class="stringliteral">&quot;s.&quot;</span>)</div>
+<div class="line"><a id="l00102" name="l00102"></a><span class="lineno">  102</span>                      &lt;&lt; std::endl;</div>
+<div class="line"><a id="l00103" name="l00103"></a><span class="lineno">  103</span>            <span class="keywordflow">return</span> num;</div>
 <div class="line"><a id="l00104" name="l00104"></a><span class="lineno">  104</span>        }</div>
 </div>
 <div class="line"><a id="l00105" name="l00105"></a><span class="lineno">  105</span> </div>
 <div class="line"><a id="l00106" name="l00106"></a><span class="lineno">  106</span><span class="comment">//------------------------------------------------------------------------------</span></div>
-<div class="line"><a id="l00117" name="l00117"></a><span class="lineno">  117</span><span class="comment">//------------------------------------------------------------------------------</span></div>
-<div class="foldopen" id="foldopen00118" data-start="{" data-end="}">
-<div class="line"><a id="l00118" name="l00118"></a><span class="lineno"><a class="line" href="classjit_1_1context.html#af59762b162e5b6c134c334e4052e0117">  118</a></span>        <span class="keywordtype">void</span> <a class="code hl_function" href="classjit_1_1context.html#af59762b162e5b6c134c334e4052e0117">add_kernel</a>(<span class="keyword">const</span> std::string name,</div>
-<div class="line"><a id="l00119" name="l00119"></a><span class="lineno">  119</span>                        <a class="code hl_typedef" href="namespacegraph.html#a7f4f9ab246d37d23e0259709e626bc36">graph::input_nodes&lt;T, SAFE_MATH&gt;</a> inputs,</div>
-<div class="line"><a id="l00120" name="l00120"></a><span class="lineno">  120</span>                        <a class="code hl_typedef" href="namespacegraph.html#aec6ce7b08d650c6b236b68bd68a2ce0a">graph::output_nodes&lt;T, SAFE_MATH&gt;</a> outputs,</div>
-<div class="line"><a id="l00121" name="l00121"></a><span class="lineno">  121</span>                        <a class="code hl_typedef" href="namespacegraph.html#acd48d32bd7925b056e932559379d9b55">graph::map_nodes&lt;T, SAFE_MATH&gt;</a> setters,</div>
-<div class="line"><a id="l00122" name="l00122"></a><span class="lineno">  122</span>                        <a class="code hl_typedef" href="namespacegraph.html#a7d69a698d998bfb31f5611ad55e44092">graph::shared_random_state&lt;T, SAFE_MATH&gt;</a> state,</div>
-<div class="line"><a id="l00123" name="l00123"></a><span class="lineno">  123</span>                        <span class="keyword">const</span> <span class="keywordtype">size_t</span> size) {</div>
-<div class="line"><a id="l00124" name="l00124"></a><span class="lineno">  124</span>            kernel_names.push_back(name);</div>
-<div class="line"><a id="l00125" name="l00125"></a><span class="lineno">  125</span> </div>
-<div class="line"><a id="l00126" name="l00126"></a><span class="lineno">  126</span>            <span class="keywordflow">if</span> (state.get() &amp;&amp; !used_random) {</div>
-<div class="line"><a id="l00127" name="l00127"></a><span class="lineno">  127</span>                used_random = <span class="keyword">true</span>;</div>
-<div class="line"><a id="l00128" name="l00128"></a><span class="lineno">  128</span>                <a class="code hl_function" href="classgraph_1_1random__state__node.html#ae3b46c96b5dc3b2d86c01ba1e240bf03">graph::random_state_node&lt;T&gt;::compile_random_state</a>(source_buffer);</div>
-<div class="line"><a id="l00129" name="l00129"></a><span class="lineno">  129</span>                <a class="code hl_function" href="classgraph_1_1random__node.html#a9358ad49cd858a0e0637e0850a652867">graph::random_node&lt;T&gt;::compile_random</a>(source_buffer);</div>
-<div class="line"><a id="l00130" name="l00130"></a><span class="lineno">  130</span>            }</div>
-<div class="line"><a id="l00131" name="l00131"></a><span class="lineno">  131</span> </div>
-<div class="line"><a id="l00132" name="l00132"></a><span class="lineno">  132</span>            std::vector&lt;bool&gt; is_constant(inputs.size(), <span class="keyword">true</span>);</div>
-<div class="line"><a id="l00133" name="l00133"></a><span class="lineno">  133</span>            <a class="code hl_typedef" href="namespacejit.html#aed5672337b45a8b11f1351456d2284b8">visiter_map</a> visited;</div>
-<div class="line"><a id="l00134" name="l00134"></a><span class="lineno">  134</span>            <a class="code hl_typedef" href="namespacejit.html#a8f16308f3c321ac415daf451d0157a91">register_usage</a> usage;</div>
-<div class="line"><a id="l00135" name="l00135"></a><span class="lineno">  135</span>            kernel_1dtextures[name] = <a class="code hl_typedef" href="namespacejit.html#a040839202e492715169f0e33e63c1e2a">texture1d_list</a>();</div>
-<div class="line"><a id="l00136" name="l00136"></a><span class="lineno">  136</span>            kernel_2dtextures[name] = <a class="code hl_typedef" href="namespacejit.html#a7e7f6b3f955215cb43f9fde4d066ea2a">texture2d_list</a>();</div>
-<div class="line"><a id="l00137" name="l00137"></a><span class="lineno">  137</span>            <span class="keywordflow">for</span> (<span class="keyword">auto</span> &amp;[out, in] : setters) {</div>
-<div class="line"><a id="l00138" name="l00138"></a><span class="lineno">  138</span>                <span class="keyword">auto</span> found = std::distance(inputs.begin(),</div>
-<div class="line"><a id="l00139" name="l00139"></a><span class="lineno">  139</span>                                           std::find(inputs.begin(),</div>
-<div class="line"><a id="l00140" name="l00140"></a><span class="lineno">  140</span>                                                     inputs.end(), in));</div>
-<div class="line"><a id="l00141" name="l00141"></a><span class="lineno">  141</span>                <span class="keywordflow">if</span> (found &lt; is_constant.size()) {</div>
-<div class="line"><a id="l00142" name="l00142"></a><span class="lineno">  142</span>                    is_constant[found] = <span class="keyword">false</span>;</div>
-<div class="line"><a id="l00143" name="l00143"></a><span class="lineno">  143</span>                }</div>
-<div class="line"><a id="l00144" name="l00144"></a><span class="lineno">  144</span>                out-&gt;compile_preamble(source_buffer, registers,</div>
-<div class="line"><a id="l00145" name="l00145"></a><span class="lineno">  145</span>                                      visited, usage,</div>
-<div class="line"><a id="l00146" name="l00146"></a><span class="lineno">  146</span>                                      kernel_1dtextures[name],</div>
-<div class="line"><a id="l00147" name="l00147"></a><span class="lineno">  147</span>                                      kernel_2dtextures[name],</div>
-<div class="line"><a id="l00148" name="l00148"></a><span class="lineno">  148</span>                                      gpu_context.remaining_const_memory);</div>
-<div class="line"><a id="l00149" name="l00149"></a><span class="lineno">  149</span>            }</div>
-<div class="line"><a id="l00150" name="l00150"></a><span class="lineno">  150</span>            <span class="keywordflow">for</span> (<span class="keyword">auto</span> &amp;out : outputs) {</div>
-<div class="line"><a id="l00151" name="l00151"></a><span class="lineno">  151</span>                out-&gt;compile_preamble(source_buffer, registers,</div>
-<div class="line"><a id="l00152" name="l00152"></a><span class="lineno">  152</span>                                      visited, usage,</div>
-<div class="line"><a id="l00153" name="l00153"></a><span class="lineno">  153</span>                                      kernel_1dtextures[name],</div>
-<div class="line"><a id="l00154" name="l00154"></a><span class="lineno">  154</span>                                      kernel_2dtextures[name],</div>
-<div class="line"><a id="l00155" name="l00155"></a><span class="lineno">  155</span>                                      gpu_context.remaining_const_memory);</div>
-<div class="line"><a id="l00156" name="l00156"></a><span class="lineno">  156</span>            }</div>
-<div class="line"><a id="l00157" name="l00157"></a><span class="lineno">  157</span> </div>
-<div class="line"><a id="l00158" name="l00158"></a><span class="lineno">  158</span>            <span class="keywordflow">for</span> (<span class="keyword">auto</span> &amp;in : inputs) {</div>
-<div class="line"><a id="l00159" name="l00159"></a><span class="lineno">  159</span>                <span class="keywordflow">if</span> (usage.find(in.get()) == usage.end()) {</div>
-<div class="line"><a id="l00160" name="l00160"></a><span class="lineno">  160</span>                    usage[in.get()] = 0;</div>
-<div class="line"><a id="l00161" name="l00161"></a><span class="lineno">  161</span>                }</div>
-<div class="line"><a id="l00162" name="l00162"></a><span class="lineno">  162</span>            }</div>
-<div class="line"><a id="l00163" name="l00163"></a><span class="lineno">  163</span> </div>
-<div class="line"><a id="l00164" name="l00164"></a><span class="lineno">  164</span>            gpu_context.create_kernel_prefix(source_buffer,</div>
-<div class="line"><a id="l00165" name="l00165"></a><span class="lineno">  165</span>                                             name, inputs, outputs, state,</div>
-<div class="line"><a id="l00166" name="l00166"></a><span class="lineno">  166</span>                                             size, is_constant,</div>
-<div class="line"><a id="l00167" name="l00167"></a><span class="lineno">  167</span>                                             registers, usage,</div>
-<div class="line"><a id="l00168" name="l00168"></a><span class="lineno">  168</span>                                             kernel_1dtextures[name],</div>
-<div class="line"><a id="l00169" name="l00169"></a><span class="lineno">  169</span>                                             kernel_2dtextures[name]);</div>
-<div class="line"><a id="l00170" name="l00170"></a><span class="lineno">  170</span> </div>
-<div class="line"><a id="l00171" name="l00171"></a><span class="lineno">  171</span>            <a class="code hl_typedef" href="namespacejit.html#a9822ffd072bb1abcde9176028aa24a5e">register_map</a> indices;</div>
-<div class="line"><a id="l00172" name="l00172"></a><span class="lineno">  172</span>            <span class="keywordflow">for</span> (<span class="keyword">auto</span> &amp;[out, in] : setters) {</div>
-<div class="line"><a id="l00173" name="l00173"></a><span class="lineno">  173</span>                out-&gt;compile(source_buffer, registers, indices, usage);</div>
-<div class="line"><a id="l00174" name="l00174"></a><span class="lineno">  174</span>            }</div>
-<div class="line"><a id="l00175" name="l00175"></a><span class="lineno">  175</span>            <span class="keywordflow">for</span> (<span class="keyword">auto</span> &amp;out : outputs) {</div>
-<div class="line"><a id="l00176" name="l00176"></a><span class="lineno">  176</span>                out-&gt;compile(source_buffer, registers, indices, usage);</div>
-<div class="line"><a id="l00177" name="l00177"></a><span class="lineno">  177</span>            }</div>
-<div class="line"><a id="l00178" name="l00178"></a><span class="lineno">  178</span> </div>
-<div class="line"><a id="l00179" name="l00179"></a><span class="lineno">  179</span>            gpu_context.create_kernel_postfix(source_buffer, outputs,</div>
-<div class="line"><a id="l00180" name="l00180"></a><span class="lineno">  180</span>                                              setters, state,</div>
-<div class="line"><a id="l00181" name="l00181"></a><span class="lineno">  181</span>                                              registers, indices, usage);</div>
-<div class="line"><a id="l00182" name="l00182"></a><span class="lineno">  182</span> </div>
-<div class="line"><a id="l00183" name="l00183"></a><span class="lineno">  183</span><span class="comment">//  Delete the registers so that they can be used again in other kernels.</span></div>
-<div class="line"><a id="l00184" name="l00184"></a><span class="lineno">  184</span>            std::vector&lt;void *&gt; removed_elements;</div>
-<div class="line"><a id="l00185" name="l00185"></a><span class="lineno">  185</span>            <span class="keywordflow">for</span> (<span class="keyword">auto</span> &amp;[key, value] : registers) {</div>
-<div class="line"><a id="l00186" name="l00186"></a><span class="lineno">  186</span>                <span class="keywordflow">if</span> (value[0] == <span class="charliteral">&#39;r&#39;</span>) {</div>
-<div class="line"><a id="l00187" name="l00187"></a><span class="lineno">  187</span>                    removed_elements.push_back(key);</div>
-<div class="line"><a id="l00188" name="l00188"></a><span class="lineno">  188</span>                }</div>
-<div class="line"><a id="l00189" name="l00189"></a><span class="lineno">  189</span>            }</div>
-<div class="line"><a id="l00190" name="l00190"></a><span class="lineno">  190</span> </div>
-<div class="line"><a id="l00191" name="l00191"></a><span class="lineno">  191</span>            <span class="keywordflow">for</span> (<span class="keyword">auto</span> &amp;key : removed_elements) {</div>
-<div class="line"><a id="l00192" name="l00192"></a><span class="lineno">  192</span>                registers.erase(key);</div>
+<div class="line"><a id="l00110" name="l00110"></a><span class="lineno">  110</span><span class="comment">//------------------------------------------------------------------------------</span></div>
+<div class="foldopen" id="foldopen00111" data-start="{" data-end="}">
+<div class="line"><a id="l00111" name="l00111"></a><span class="lineno"><a class="line" href="classjit_1_1context.html#a673c179cb1ae4ea23f65677be4bdf8ca">  111</a></span>        <a class="code hl_function" href="classjit_1_1context.html#a673c179cb1ae4ea23f65677be4bdf8ca">context</a>(<span class="keyword">const</span> <span class="keywordtype">size_t</span> index) : gpu_context(index) {</div>
+<div class="line"><a id="l00112" name="l00112"></a><span class="lineno">  112</span>            source_buffer &lt;&lt; std::setprecision(max_digits10&lt;T&gt; ());</div>
+<div class="line"><a id="l00113" name="l00113"></a><span class="lineno">  113</span>            gpu_context.create_header(source_buffer);</div>
+<div class="line"><a id="l00114" name="l00114"></a><span class="lineno">  114</span>        }</div>
+</div>
+<div class="line"><a id="l00115" name="l00115"></a><span class="lineno">  115</span> </div>
+<div class="line"><a id="l00116" name="l00116"></a><span class="lineno">  116</span><span class="comment">//------------------------------------------------------------------------------</span></div>
+<div class="line"><a id="l00129" name="l00129"></a><span class="lineno">  129</span><span class="comment">//------------------------------------------------------------------------------</span></div>
+<div class="foldopen" id="foldopen00130" data-start="{" data-end="}">
+<div class="line"><a id="l00130" name="l00130"></a><span class="lineno"><a class="line" href="classjit_1_1context.html#aef7011dd12234b7bd060ad4694c8f96b">  130</a></span>        <span class="keywordtype">void</span> <a class="code hl_function" href="classjit_1_1context.html#aef7011dd12234b7bd060ad4694c8f96b">add_kernel</a>(<span class="keyword">const</span> std::string name,</div>
+<div class="line"><a id="l00131" name="l00131"></a><span class="lineno">  131</span>                        <a class="code hl_typedef" href="namespacegraph.html#a7f4f9ab246d37d23e0259709e626bc36">graph::input_nodes&lt;T, SAFE_MATH&gt;</a> &amp;inputs,</div>
+<div class="line"><a id="l00132" name="l00132"></a><span class="lineno">  132</span>                        <a class="code hl_typedef" href="namespacegraph.html#aec6ce7b08d650c6b236b68bd68a2ce0a">graph::output_nodes&lt;T, SAFE_MATH&gt;</a> &amp;outputs,</div>
+<div class="line"><a id="l00133" name="l00133"></a><span class="lineno">  133</span>                        <a class="code hl_typedef" href="namespacegraph.html#acd48d32bd7925b056e932559379d9b55">graph::map_nodes&lt;T, SAFE_MATH&gt;</a> &amp;setters,</div>
+<div class="line"><a id="l00134" name="l00134"></a><span class="lineno">  134</span>                        <a class="code hl_typedef" href="namespacegraph.html#a7f4f9ab246d37d23e0259709e626bc36">graph::input_nodes&lt;T, SAFE_MATH&gt;</a> &amp;atomics,</div>
+<div class="line"><a id="l00135" name="l00135"></a><span class="lineno">  135</span>                        <a class="code hl_typedef" href="namespacegraph.html#a7d69a698d998bfb31f5611ad55e44092">graph::shared_random_state&lt;T, SAFE_MATH&gt;</a> &amp;state,</div>
+<div class="line"><a id="l00136" name="l00136"></a><span class="lineno">  136</span>                        <span class="keyword">const</span> <span class="keywordtype">size_t</span> size,</div>
+<div class="line"><a id="l00137" name="l00137"></a><span class="lineno">  137</span>                        <span class="keyword">const</span> <span class="keywordtype">size_t</span> iterations=1) {</div>
+<div class="line"><a id="l00138" name="l00138"></a><span class="lineno">  138</span>            kernel_names.push_back(name);</div>
+<div class="line"><a id="l00139" name="l00139"></a><span class="lineno">  139</span> </div>
+<div class="line"><a id="l00140" name="l00140"></a><span class="lineno">  140</span>            std::vector&lt;bool&gt; is_constant(inputs.size(), <span class="keyword">true</span>);</div>
+<div class="line"><a id="l00141" name="l00141"></a><span class="lineno">  141</span>            <a class="code hl_typedef" href="namespacejit.html#a10fd02967defc21d99a010c9025e1d78">visiter_map</a> visited;</div>
+<div class="line"><a id="l00142" name="l00142"></a><span class="lineno">  142</span>            <a class="code hl_typedef" href="namespacejit.html#a6b1e88895ada14e42dfad16181ceb266">register_usage</a> usage;</div>
+<div class="line"><a id="l00143" name="l00143"></a><span class="lineno">  143</span>            kernel_1dtextures[name] = <a class="code hl_typedef" href="namespacejit.html#afd70e42a171bf30ee3f18dbd440cef51">texture1d_list</a>();</div>
+<div class="line"><a id="l00144" name="l00144"></a><span class="lineno">  144</span>            kernel_2dtextures[name] = <a class="code hl_typedef" href="namespacejit.html#afc6a80494e39f0058a6121ba0949b9eb">texture2d_list</a>();</div>
+<div class="line"><a id="l00145" name="l00145"></a><span class="lineno">  145</span>            <span class="keywordflow">for</span> (<span class="keyword">auto</span> &amp;[out, in] : setters) {</div>
+<div class="line"><a id="l00146" name="l00146"></a><span class="lineno">  146</span>                <span class="keyword">auto</span> found = std::distance(inputs.begin(),</div>
+<div class="line"><a id="l00147" name="l00147"></a><span class="lineno">  147</span>                                           std::find(inputs.begin(),</div>
+<div class="line"><a id="l00148" name="l00148"></a><span class="lineno">  148</span>                                                     inputs.end(), in));</div>
+<div class="line"><a id="l00149" name="l00149"></a><span class="lineno">  149</span>                <span class="keywordflow">if</span> (found &lt; is_constant.size()) {</div>
+<div class="line"><a id="l00150" name="l00150"></a><span class="lineno">  150</span>                    is_constant[found] = <span class="keyword">false</span>;</div>
+<div class="line"><a id="l00151" name="l00151"></a><span class="lineno">  151</span>                }</div>
+<div class="line"><a id="l00152" name="l00152"></a><span class="lineno">  152</span>                out-&gt;compile_preamble(source_buffer, registers,</div>
+<div class="line"><a id="l00153" name="l00153"></a><span class="lineno">  153</span>                                      visited, usage,</div>
+<div class="line"><a id="l00154" name="l00154"></a><span class="lineno">  154</span>                                      kernel_1dtextures[name],</div>
+<div class="line"><a id="l00155" name="l00155"></a><span class="lineno">  155</span>                                      kernel_2dtextures[name],</div>
+<div class="line"><a id="l00156" name="l00156"></a><span class="lineno">  156</span>                                      pre_funcs,</div>
+<div class="line"><a id="l00157" name="l00157"></a><span class="lineno">  157</span>                                      gpu_context.remaining_const_memory);</div>
+<div class="line"><a id="l00158" name="l00158"></a><span class="lineno">  158</span>            }</div>
+<div class="line"><a id="l00159" name="l00159"></a><span class="lineno">  159</span>            <span class="keywordflow">for</span> (<span class="keyword">auto</span> &amp;out : outputs) {</div>
+<div class="line"><a id="l00160" name="l00160"></a><span class="lineno">  160</span>                out-&gt;compile_preamble(source_buffer, registers,</div>
+<div class="line"><a id="l00161" name="l00161"></a><span class="lineno">  161</span>                                      visited, usage,</div>
+<div class="line"><a id="l00162" name="l00162"></a><span class="lineno">  162</span>                                      kernel_1dtextures[name],</div>
+<div class="line"><a id="l00163" name="l00163"></a><span class="lineno">  163</span>                                      kernel_2dtextures[name],</div>
+<div class="line"><a id="l00164" name="l00164"></a><span class="lineno">  164</span>                                      pre_funcs,</div>
+<div class="line"><a id="l00165" name="l00165"></a><span class="lineno">  165</span>                                      gpu_context.remaining_const_memory);</div>
+<div class="line"><a id="l00166" name="l00166"></a><span class="lineno">  166</span>            }</div>
+<div class="line"><a id="l00167" name="l00167"></a><span class="lineno">  167</span> </div>
+<div class="line"><a id="l00168" name="l00168"></a><span class="lineno">  168</span>            <span class="keywordflow">for</span> (<span class="keyword">auto</span> &amp;in : inputs) {</div>
+<div class="line"><a id="l00169" name="l00169"></a><span class="lineno">  169</span>                <span class="keywordflow">if</span> (usage.find(in.get()) == usage.end()) {</div>
+<div class="line"><a id="l00170" name="l00170"></a><span class="lineno">  170</span>                    usage[in.get()] = 0;</div>
+<div class="line"><a id="l00171" name="l00171"></a><span class="lineno">  171</span>                }</div>
+<div class="line"><a id="l00172" name="l00172"></a><span class="lineno">  172</span>            }</div>
+<div class="line"><a id="l00173" name="l00173"></a><span class="lineno">  173</span> </div>
+<div class="line"><a id="l00174" name="l00174"></a><span class="lineno">  174</span>            <a class="code hl_typedef" href="namespacejit.html#aff1d2e04194bc0f2161447446498e457">argument_set</a> thread_shared;</div>
+<div class="line"><a id="l00175" name="l00175"></a><span class="lineno">  175</span>            <a class="code hl_typedef" href="namespacejit.html#aaaa81016eb9cb161306980a63db3e720">jit::register_map</a> thread_mem;</div>
+<div class="line"><a id="l00176" name="l00176"></a><span class="lineno">  176</span> </div>
+<div class="line"><a id="l00177" name="l00177"></a><span class="lineno">  177</span>            gpu_context.create_kernel_prefix(source_buffer,</div>
+<div class="line"><a id="l00178" name="l00178"></a><span class="lineno">  178</span>                                             name, inputs, outputs,</div>
+<div class="line"><a id="l00179" name="l00179"></a><span class="lineno">  179</span>                                             atomics, state,</div>
+<div class="line"><a id="l00180" name="l00180"></a><span class="lineno">  180</span>                                             size, is_constant,</div>
+<div class="line"><a id="l00181" name="l00181"></a><span class="lineno">  181</span>                                             registers, usage,</div>
+<div class="line"><a id="l00182" name="l00182"></a><span class="lineno">  182</span>                                             kernel_1dtextures[name],</div>
+<div class="line"><a id="l00183" name="l00183"></a><span class="lineno">  183</span>                                             kernel_2dtextures[name],</div>
+<div class="line"><a id="l00184" name="l00184"></a><span class="lineno">  184</span>                                             thread_shared,</div>
+<div class="line"><a id="l00185" name="l00185"></a><span class="lineno">  185</span>                                             thread_mem,</div>
+<div class="line"><a id="l00186" name="l00186"></a><span class="lineno">  186</span>                                             iterations);</div>
+<div class="line"><a id="l00187" name="l00187"></a><span class="lineno">  187</span> </div>
+<div class="line"><a id="l00188" name="l00188"></a><span class="lineno">  188</span>            <span class="keywordflow">for</span> (<span class="keyword">auto</span> &amp;[out, in] : setters) {</div>
+<div class="line"><a id="l00189" name="l00189"></a><span class="lineno">  189</span>                out-&gt;compile(source_buffer, registers, thread_mem, usage);</div>
+<div class="line"><a id="l00190" name="l00190"></a><span class="lineno">  190</span>            }</div>
+<div class="line"><a id="l00191" name="l00191"></a><span class="lineno">  191</span>            <span class="keywordflow">for</span> (<span class="keyword">auto</span> &amp;out : outputs) {</div>
+<div class="line"><a id="l00192" name="l00192"></a><span class="lineno">  192</span>                out-&gt;compile(source_buffer, registers, thread_mem, usage);</div>
 <div class="line"><a id="l00193" name="l00193"></a><span class="lineno">  193</span>            }</div>
-<div class="line"><a id="l00194" name="l00194"></a><span class="lineno">  194</span>        }</div>
+<div class="line"><a id="l00194" name="l00194"></a><span class="lineno">  194</span> </div>
+<div class="line"><a id="l00195" name="l00195"></a><span class="lineno">  195</span>            gpu_context.create_kernel_postfix(source_buffer, outputs,</div>
+<div class="line"><a id="l00196" name="l00196"></a><span class="lineno">  196</span>                                              setters, state,</div>
+<div class="line"><a id="l00197" name="l00197"></a><span class="lineno">  197</span>                                              registers, usage,</div>
+<div class="line"><a id="l00198" name="l00198"></a><span class="lineno">  198</span>                                              thread_shared,</div>
+<div class="line"><a id="l00199" name="l00199"></a><span class="lineno">  199</span>                                              thread_mem,</div>
+<div class="line"><a id="l00200" name="l00200"></a><span class="lineno">  200</span>                                              iterations);</div>
+<div class="line"><a id="l00201" name="l00201"></a><span class="lineno">  201</span> </div>
+<div class="line"><a id="l00202" name="l00202"></a><span class="lineno">  202</span><span class="comment">//  Delete the registers so that they can be used again in other kernels.</span></div>
+<div class="line"><a id="l00203" name="l00203"></a><span class="lineno">  203</span>            std::vector&lt;void *&gt; removed_elements;</div>
+<div class="line"><a id="l00204" name="l00204"></a><span class="lineno">  204</span>            <span class="keywordflow">for</span> (<span class="keyword">auto</span> &amp;[key, value] : registers) {</div>
+<div class="line"><a id="l00205" name="l00205"></a><span class="lineno">  205</span>                <span class="keywordflow">if</span> (value[0] == <span class="charliteral">&#39;r&#39;</span> ||</div>
+<div class="line"><a id="l00206" name="l00206"></a><span class="lineno">  206</span>                    value[0] == <span class="charliteral">&#39;l&#39;</span> ||</div>
+<div class="line"><a id="l00207" name="l00207"></a><span class="lineno">  207</span>                    value[0] == <span class="charliteral">&#39;i&#39;</span>) {</div>
+<div class="line"><a id="l00208" name="l00208"></a><span class="lineno">  208</span>                    removed_elements.push_back(key);</div>
+<div class="line"><a id="l00209" name="l00209"></a><span class="lineno">  209</span>                }</div>
+<div class="line"><a id="l00210" name="l00210"></a><span class="lineno">  210</span>            }</div>
+<div class="line"><a id="l00211" name="l00211"></a><span class="lineno">  211</span>            <span class="keywordflow">for</span> (<span class="keyword">auto</span> &amp;out : outputs) {</div>
+<div class="line"><a id="l00212" name="l00212"></a><span class="lineno">  212</span>                <span class="keywordflow">if</span> (<a class="code hl_function" href="namespacegraph.html#a67ff2fd840e5977ee5bed2212a2f98b4">graph::atomic_accumulate_1D_cast</a>(out).get()) {</div>
+<div class="line"><a id="l00213" name="l00213"></a><span class="lineno">  213</span>                    removed_elements.push_back(out.get());</div>
+<div class="line"><a id="l00214" name="l00214"></a><span class="lineno">  214</span>                }</div>
+<div class="line"><a id="l00215" name="l00215"></a><span class="lineno">  215</span>            }</div>
+<div class="line"><a id="l00216" name="l00216"></a><span class="lineno">  216</span> </div>
+<div class="line"><a id="l00217" name="l00217"></a><span class="lineno">  217</span>            <span class="keywordflow">for</span> (<span class="keyword">auto</span> &amp;key : removed_elements) {</div>
+<div class="line"><a id="l00218" name="l00218"></a><span class="lineno">  218</span>                registers.erase(key);</div>
+<div class="line"><a id="l00219" name="l00219"></a><span class="lineno">  219</span>            }</div>
+<div class="line"><a id="l00220" name="l00220"></a><span class="lineno">  220</span>        }</div>
 </div>
-<div class="line"><a id="l00195" name="l00195"></a><span class="lineno">  195</span> </div>
-<div class="line"><a id="l00196" name="l00196"></a><span class="lineno">  196</span><span class="comment">//------------------------------------------------------------------------------</span></div>
-<div class="line"><a id="l00200" name="l00200"></a><span class="lineno">  200</span><span class="comment">//------------------------------------------------------------------------------</span></div>
-<div class="foldopen" id="foldopen00201" data-start="{" data-end="}">
-<div class="line"><a id="l00201" name="l00201"></a><span class="lineno"><a class="line" href="classjit_1_1context.html#abb574e028c4da2e8d730364f433cb8cb">  201</a></span>        <span class="keywordtype">void</span> <a class="code hl_function" href="classjit_1_1context.html#abb574e028c4da2e8d730364f433cb8cb">add_max_reduction</a>(<span class="keyword">const</span> <span class="keywordtype">size_t</span> size) {</div>
-<div class="line"><a id="l00202" name="l00202"></a><span class="lineno">  202</span>            gpu_context.create_reduction(source_buffer, size);</div>
-<div class="line"><a id="l00203" name="l00203"></a><span class="lineno">  203</span>        }</div>
+<div class="line"><a id="l00221" name="l00221"></a><span class="lineno">  221</span> </div>
+<div class="line"><a id="l00222" name="l00222"></a><span class="lineno">  222</span><span class="comment">//------------------------------------------------------------------------------</span></div>
+<div class="line"><a id="l00226" name="l00226"></a><span class="lineno">  226</span><span class="comment">//------------------------------------------------------------------------------</span></div>
+<div class="foldopen" id="foldopen00227" data-start="{" data-end="}">
+<div class="line"><a id="l00227" name="l00227"></a><span class="lineno"><a class="line" href="classjit_1_1context.html#abb574e028c4da2e8d730364f433cb8cb">  227</a></span>        <span class="keywordtype">void</span> <a class="code hl_function" href="classjit_1_1context.html#abb574e028c4da2e8d730364f433cb8cb">add_max_reduction</a>(<span class="keyword">const</span> <span class="keywordtype">size_t</span> size) {</div>
+<div class="line"><a id="l00228" name="l00228"></a><span class="lineno">  228</span>            gpu_context.create_reduction(source_buffer, size);</div>
+<div class="line"><a id="l00229" name="l00229"></a><span class="lineno">  229</span>        }</div>
 </div>
-<div class="line"><a id="l00204" name="l00204"></a><span class="lineno">  204</span> </div>
-<div class="line"><a id="l00205" name="l00205"></a><span class="lineno">  205</span><span class="comment">//------------------------------------------------------------------------------</span></div>
-<div class="line"><a id="l00207" name="l00207"></a><span class="lineno">  207</span><span class="comment">//------------------------------------------------------------------------------</span></div>
-<div class="foldopen" id="foldopen00208" data-start="{" data-end="}">
-<div class="line"><a id="l00208" name="l00208"></a><span class="lineno"><a class="line" href="classjit_1_1context.html#af9ea5fd0da1464a3a3a6a5b1ca28e584">  208</a></span>        <span class="keywordtype">void</span> <a class="code hl_function" href="classjit_1_1context.html#af9ea5fd0da1464a3a3a6a5b1ca28e584">print_source</a>() {</div>
-<div class="line"><a id="l00209" name="l00209"></a><span class="lineno">  209</span>            std::cout &lt;&lt; std::endl &lt;&lt; source_buffer.str() &lt;&lt; std::endl;</div>
-<div class="line"><a id="l00210" name="l00210"></a><span class="lineno">  210</span>        }</div>
+<div class="line"><a id="l00230" name="l00230"></a><span class="lineno">  230</span> </div>
+<div class="line"><a id="l00231" name="l00231"></a><span class="lineno">  231</span><span class="comment">//------------------------------------------------------------------------------</span></div>
+<div class="line"><a id="l00236" name="l00236"></a><span class="lineno">  236</span><span class="comment">//------------------------------------------------------------------------------</span></div>
+<div class="foldopen" id="foldopen00237" data-start="{" data-end="}">
+<div class="line"><a id="l00237" name="l00237"></a><span class="lineno"><a class="line" href="classjit_1_1context.html#ab1c3063533a2b6f56e944d6d97121675">  237</a></span>        std::function&lt;void(<span class="keywordtype">void</span>)&gt; <a class="code hl_function" href="classjit_1_1context.html#ab1c3063533a2b6f56e944d6d97121675">create_zero_call</a>(<a class="code hl_typedef" href="namespacegraph.html#a7f4f9ab246d37d23e0259709e626bc36">graph::input_nodes&lt;T, SAFE_MATH&gt;</a> inputs) {</div>
+<div class="line"><a id="l00238" name="l00238"></a><span class="lineno">  238</span>            <span class="keywordflow">return</span> gpu_context.create_zero_call(inputs);</div>
+<div class="line"><a id="l00239" name="l00239"></a><span class="lineno">  239</span>        }</div>
 </div>
-<div class="line"><a id="l00211" name="l00211"></a><span class="lineno">  211</span> </div>
-<div class="line"><a id="l00212" name="l00212"></a><span class="lineno">  212</span><span class="comment">//------------------------------------------------------------------------------</span></div>
-<div class="line"><a id="l00214" name="l00214"></a><span class="lineno">  214</span><span class="comment">//------------------------------------------------------------------------------</span></div>
-<div class="foldopen" id="foldopen00215" data-start="{" data-end="}">
-<div class="line"><a id="l00215" name="l00215"></a><span class="lineno"><a class="line" href="classjit_1_1context.html#ac1c85cd2c67cae81bf6f4d58563a0c6a">  215</a></span>        <span class="keywordtype">void</span> <a class="code hl_function" href="classjit_1_1context.html#ac1c85cd2c67cae81bf6f4d58563a0c6a">save_source</a>() {</div>
-<div class="line"><a id="l00216" name="l00216"></a><span class="lineno">  216</span>            std::string source = source_buffer.str();</div>
-<div class="line"><a id="l00217" name="l00217"></a><span class="lineno">  217</span>            std::ostringstream filename;</div>
-<div class="line"><a id="l00218" name="l00218"></a><span class="lineno">  218</span>            filename &lt;&lt; std::hash&lt;std::string&gt; {} (source)</div>
-<div class="line"><a id="l00219" name="l00219"></a><span class="lineno">  219</span>                     &lt;&lt; std::hash&lt;std::thread::id&gt;{}(std::this_thread::get_id());</div>
-<div class="line"><a id="l00220" name="l00220"></a><span class="lineno">  220</span>            <span class="keywordflow">if</span> <span class="keyword">constexpr</span> (<a class="code hl_function" href="namespacejit.html#ae80a1549652734bee27e671735538106">use_cuda</a>()) {</div>
-<div class="line"><a id="l00221" name="l00221"></a><span class="lineno">  221</span>                filename &lt;&lt; <span class="stringliteral">&quot;.cu&quot;</span>;</div>
-<div class="line"><a id="l00222" name="l00222"></a><span class="lineno">  222</span>            } <span class="keywordflow">else</span> <span class="keywordflow">if</span> <span class="keyword">constexpr</span> (use_metal&lt;T&gt; ()) {</div>
-<div class="line"><a id="l00223" name="l00223"></a><span class="lineno">  223</span>                filename &lt;&lt; <span class="stringliteral">&quot;.metal&quot;</span>;</div>
-<div class="line"><a id="l00224" name="l00224"></a><span class="lineno">  224</span>            } <span class="keywordflow">else</span> {</div>
-<div class="line"><a id="l00225" name="l00225"></a><span class="lineno">  225</span>                filename &lt;&lt; <span class="stringliteral">&quot;.cpp&quot;</span>;</div>
-<div class="line"><a id="l00226" name="l00226"></a><span class="lineno">  226</span>            }</div>
-<div class="line"><a id="l00227" name="l00227"></a><span class="lineno">  227</span> </div>
-<div class="line"><a id="l00228" name="l00228"></a><span class="lineno">  228</span>            std::ofstream outFile(filename.str());</div>
-<div class="line"><a id="l00229" name="l00229"></a><span class="lineno">  229</span>            outFile &lt;&lt; source;</div>
-<div class="line"><a id="l00230" name="l00230"></a><span class="lineno">  230</span>        }</div>
+<div class="line"><a id="l00240" name="l00240"></a><span class="lineno">  240</span> </div>
+<div class="line"><a id="l00241" name="l00241"></a><span class="lineno">  241</span><span class="comment">//------------------------------------------------------------------------------</span></div>
+<div class="line"><a id="l00246" name="l00246"></a><span class="lineno">  246</span><span class="comment">//------------------------------------------------------------------------------</span></div>
+<div class="foldopen" id="foldopen00247" data-start="{" data-end="}">
+<div class="line"><a id="l00247" name="l00247"></a><span class="lineno"><a class="line" href="classjit_1_1context.html#a0643ad182f1eb4aabf4be9537823148c">  247</a></span>        std::function&lt;void(<span class="keywordtype">void</span>)&gt; <a class="code hl_function" href="classjit_1_1context.html#a0643ad182f1eb4aabf4be9537823148c">create_copy_call</a>(<a class="code hl_typedef" href="namespacegraph.html#ab302ff23558d742b8b7cb899447f2ce1">graph::copy_nodes&lt;T, SAFE_MATH&gt;</a> setters) {</div>
+<div class="line"><a id="l00248" name="l00248"></a><span class="lineno">  248</span>            <span class="keywordflow">return</span> gpu_context.create_copy_call(setters);</div>
+<div class="line"><a id="l00249" name="l00249"></a><span class="lineno">  249</span>        }</div>
 </div>
-<div class="line"><a id="l00231" name="l00231"></a><span class="lineno">  231</span> </div>
-<div class="line"><a id="l00232" name="l00232"></a><span class="lineno">  232</span><span class="comment">//------------------------------------------------------------------------------</span></div>
-<div class="line"><a id="l00237" name="l00237"></a><span class="lineno">  237</span><span class="comment">//------------------------------------------------------------------------------</span></div>
-<div class="foldopen" id="foldopen00238" data-start="{" data-end="}">
-<div class="line"><a id="l00238" name="l00238"></a><span class="lineno"><a class="line" href="classjit_1_1context.html#a1b0a1180dc7b49c143ee1b5422f107b7">  238</a></span>        <span class="keywordtype">void</span> <a class="code hl_function" href="classjit_1_1context.html#a1b0a1180dc7b49c143ee1b5422f107b7">compile</a>(<span class="keyword">const</span> <span class="keywordtype">bool</span> add_reduction=<span class="keyword">false</span>) {</div>
-<div class="line"><a id="l00239" name="l00239"></a><span class="lineno">  239</span><span class="preprocessor">#ifdef SAVE_KERNEL_SOURCE</span></div>
-<div class="line"><a id="l00240" name="l00240"></a><span class="lineno">  240</span>            <a class="code hl_function" href="classjit_1_1context.html#ac1c85cd2c67cae81bf6f4d58563a0c6a">save_source</a>();</div>
-<div class="line"><a id="l00241" name="l00241"></a><span class="lineno">  241</span><span class="preprocessor">#endif</span></div>
-<div class="line"><a id="l00242" name="l00242"></a><span class="lineno">  242</span>            gpu_context.compile(source_buffer.str(),</div>
-<div class="line"><a id="l00243" name="l00243"></a><span class="lineno">  243</span>                                kernel_names,</div>
-<div class="line"><a id="l00244" name="l00244"></a><span class="lineno">  244</span>                                add_reduction);</div>
-<div class="line"><a id="l00245" name="l00245"></a><span class="lineno">  245</span>        }</div>
+<div class="line"><a id="l00250" name="l00250"></a><span class="lineno">  250</span> </div>
+<div class="line"><a id="l00251" name="l00251"></a><span class="lineno">  251</span><span class="comment">//------------------------------------------------------------------------------</span></div>
+<div class="line"><a id="l00253" name="l00253"></a><span class="lineno">  253</span><span class="comment">//------------------------------------------------------------------------------</span></div>
+<div class="foldopen" id="foldopen00254" data-start="{" data-end="}">
+<div class="line"><a id="l00254" name="l00254"></a><span class="lineno"><a class="line" href="classjit_1_1context.html#af9ea5fd0da1464a3a3a6a5b1ca28e584">  254</a></span>        <span class="keywordtype">void</span> <a class="code hl_function" href="classjit_1_1context.html#af9ea5fd0da1464a3a3a6a5b1ca28e584">print_source</a>() {</div>
+<div class="line"><a id="l00255" name="l00255"></a><span class="lineno">  255</span>            std::cout &lt;&lt; std::endl &lt;&lt; source_buffer.str() &lt;&lt; std::endl;</div>
+<div class="line"><a id="l00256" name="l00256"></a><span class="lineno">  256</span>        }</div>
 </div>
-<div class="line"><a id="l00246" name="l00246"></a><span class="lineno">  246</span> </div>
-<div class="line"><a id="l00247" name="l00247"></a><span class="lineno">  247</span><span class="comment">//------------------------------------------------------------------------------</span></div>
-<div class="line"><a id="l00256" name="l00256"></a><span class="lineno">  256</span><span class="comment">//------------------------------------------------------------------------------</span></div>
-<div class="foldopen" id="foldopen00257" data-start="{" data-end="}">
-<div class="line"><a id="l00257" name="l00257"></a><span class="lineno"><a class="line" href="classjit_1_1context.html#ac5d7dad83767b449ab17d9db4d5dfaf7">  257</a></span>        std::function&lt;void(<span class="keywordtype">void</span>)&gt; <a class="code hl_function" href="classjit_1_1context.html#ac5d7dad83767b449ab17d9db4d5dfaf7">create_kernel_call</a>(<span class="keyword">const</span> std::string kernel_name,</div>
-<div class="line"><a id="l00258" name="l00258"></a><span class="lineno">  258</span>                                                     <a class="code hl_typedef" href="namespacegraph.html#a7f4f9ab246d37d23e0259709e626bc36">graph::input_nodes&lt;T, SAFE_MATH&gt;</a> inputs,</div>
-<div class="line"><a id="l00259" name="l00259"></a><span class="lineno">  259</span>                                                     <a class="code hl_typedef" href="namespacegraph.html#aec6ce7b08d650c6b236b68bd68a2ce0a">graph::output_nodes&lt;T, SAFE_MATH&gt;</a> outputs,</div>
-<div class="line"><a id="l00260" name="l00260"></a><span class="lineno">  260</span>                                                     <a class="code hl_typedef" href="namespacegraph.html#a7d69a698d998bfb31f5611ad55e44092">graph::shared_random_state&lt;T, SAFE_MATH&gt;</a> state,</div>
-<div class="line"><a id="l00261" name="l00261"></a><span class="lineno">  261</span>                                                     <span class="keyword">const</span> <span class="keywordtype">size_t</span> num_rays) {</div>
-<div class="line"><a id="l00262" name="l00262"></a><span class="lineno">  262</span>            <span class="keywordflow">return</span> gpu_context.create_kernel_call(kernel_name, inputs, outputs, state, num_rays,</div>
-<div class="line"><a id="l00263" name="l00263"></a><span class="lineno">  263</span>                                                  kernel_1dtextures[kernel_name],</div>
-<div class="line"><a id="l00264" name="l00264"></a><span class="lineno">  264</span>                                                  kernel_2dtextures[kernel_name]);</div>
-<div class="line"><a id="l00265" name="l00265"></a><span class="lineno">  265</span>        }</div>
+<div class="line"><a id="l00257" name="l00257"></a><span class="lineno">  257</span> </div>
+<div class="line"><a id="l00258" name="l00258"></a><span class="lineno">  258</span><span class="comment">//------------------------------------------------------------------------------</span></div>
+<div class="line"><a id="l00260" name="l00260"></a><span class="lineno">  260</span><span class="comment">//------------------------------------------------------------------------------</span></div>
+<div class="foldopen" id="foldopen00261" data-start="{" data-end="}">
+<div class="line"><a id="l00261" name="l00261"></a><span class="lineno"><a class="line" href="classjit_1_1context.html#ac1c85cd2c67cae81bf6f4d58563a0c6a">  261</a></span>        <span class="keywordtype">void</span> <a class="code hl_function" href="classjit_1_1context.html#ac1c85cd2c67cae81bf6f4d58563a0c6a">save_source</a>() {</div>
+<div class="line"><a id="l00262" name="l00262"></a><span class="lineno">  262</span>            std::string source = source_buffer.str();</div>
+<div class="line"><a id="l00263" name="l00263"></a><span class="lineno">  263</span>            std::ostringstream filename;</div>
+<div class="line"><a id="l00264" name="l00264"></a><span class="lineno">  264</span>            filename &lt;&lt; std::hash&lt;std::string&gt; {} (source)</div>
+<div class="line"><a id="l00265" name="l00265"></a><span class="lineno">  265</span>                     &lt;&lt; std::hash&lt;std::thread::id&gt;{}(std::this_thread::get_id());</div>
+<div class="line"><a id="l00266" name="l00266"></a><span class="lineno">  266</span>            <span class="keywordflow">if</span> <span class="keyword">constexpr</span> (<a class="code hl_function" href="namespacejit.html#ae80a1549652734bee27e671735538106">use_cuda</a>()) {</div>
+<div class="line"><a id="l00267" name="l00267"></a><span class="lineno">  267</span>                filename &lt;&lt; <span class="stringliteral">&quot;.cu&quot;</span>;</div>
+<div class="line"><a id="l00268" name="l00268"></a><span class="lineno">  268</span>            } <span class="keywordflow">else</span> <span class="keywordflow">if</span> <span class="keyword">constexpr</span> (use_metal&lt;T&gt; ()) {</div>
+<div class="line"><a id="l00269" name="l00269"></a><span class="lineno">  269</span>                filename &lt;&lt; <span class="stringliteral">&quot;.metal&quot;</span>;</div>
+<div class="line"><a id="l00270" name="l00270"></a><span class="lineno">  270</span>            } <span class="keywordflow">else</span> {</div>
+<div class="line"><a id="l00271" name="l00271"></a><span class="lineno">  271</span>                filename &lt;&lt; <span class="stringliteral">&quot;.cpp&quot;</span>;</div>
+<div class="line"><a id="l00272" name="l00272"></a><span class="lineno">  272</span>            }</div>
+<div class="line"><a id="l00273" name="l00273"></a><span class="lineno">  273</span> </div>
+<div class="line"><a id="l00274" name="l00274"></a><span class="lineno">  274</span>            std::ofstream outFile(filename.str());</div>
+<div class="line"><a id="l00275" name="l00275"></a><span class="lineno">  275</span>            outFile &lt;&lt; source;</div>
+<div class="line"><a id="l00276" name="l00276"></a><span class="lineno">  276</span>        }</div>
 </div>
-<div class="line"><a id="l00266" name="l00266"></a><span class="lineno">  266</span> </div>
-<div class="line"><a id="l00267" name="l00267"></a><span class="lineno">  267</span><span class="comment">//------------------------------------------------------------------------------</span></div>
-<div class="line"><a id="l00273" name="l00273"></a><span class="lineno">  273</span><span class="comment">//------------------------------------------------------------------------------</span></div>
-<div class="foldopen" id="foldopen00274" data-start="{" data-end="}">
-<div class="line"><a id="l00274" name="l00274"></a><span class="lineno"><a class="line" href="classjit_1_1context.html#a9f87ab3252ebc38b99c268abfedc5794">  274</a></span>        std::function&lt;T(<span class="keywordtype">void</span>)&gt; <a class="code hl_function" href="classjit_1_1context.html#a9f87ab3252ebc38b99c268abfedc5794">create_max_call</a>(<a class="code hl_typedef" href="namespacegraph.html#ac8853b055dcbbfd35dff9b4584d5ef36">graph::shared_leaf&lt;T, SAFE_MATH&gt;</a> &amp;argument,</div>
-<div class="line"><a id="l00275" name="l00275"></a><span class="lineno">  275</span>                                               std::function&lt;<span class="keywordtype">void</span>(<span class="keywordtype">void</span>)&gt; run) {</div>
-<div class="line"><a id="l00276" name="l00276"></a><span class="lineno">  276</span>            <span class="keywordflow">return</span> gpu_context.create_max_call(argument, run);</div>
-<div class="line"><a id="l00277" name="l00277"></a><span class="lineno">  277</span>        }</div>
+<div class="line"><a id="l00277" name="l00277"></a><span class="lineno">  277</span> </div>
+<div class="line"><a id="l00278" name="l00278"></a><span class="lineno">  278</span><span class="comment">//------------------------------------------------------------------------------</span></div>
+<div class="line"><a id="l00283" name="l00283"></a><span class="lineno">  283</span><span class="comment">//------------------------------------------------------------------------------</span></div>
+<div class="foldopen" id="foldopen00284" data-start="{" data-end="}">
+<div class="line"><a id="l00284" name="l00284"></a><span class="lineno"><a class="line" href="classjit_1_1context.html#a1b0a1180dc7b49c143ee1b5422f107b7">  284</a></span>        <span class="keywordtype">void</span> <a class="code hl_function" href="classjit_1_1context.html#a1b0a1180dc7b49c143ee1b5422f107b7">compile</a>(<span class="keyword">const</span> <span class="keywordtype">bool</span> add_reduction=<span class="keyword">false</span>) {</div>
+<div class="line"><a id="l00285" name="l00285"></a><span class="lineno">  285</span><span class="preprocessor">#ifdef SAVE_KERNEL_SOURCE</span></div>
+<div class="line"><a id="l00286" name="l00286"></a><span class="lineno">  286</span>            <a class="code hl_function" href="classjit_1_1context.html#ac1c85cd2c67cae81bf6f4d58563a0c6a">save_source</a>();</div>
+<div class="line"><a id="l00287" name="l00287"></a><span class="lineno">  287</span><span class="preprocessor">#endif</span></div>
+<div class="line"><a id="l00288" name="l00288"></a><span class="lineno">  288</span>            gpu_context.compile(source_buffer.str(),</div>
+<div class="line"><a id="l00289" name="l00289"></a><span class="lineno">  289</span>                                kernel_names,</div>
+<div class="line"><a id="l00290" name="l00290"></a><span class="lineno">  290</span>                                add_reduction);</div>
+<div class="line"><a id="l00291" name="l00291"></a><span class="lineno">  291</span>        }</div>
 </div>
-<div class="line"><a id="l00278" name="l00278"></a><span class="lineno">  278</span> </div>
-<div class="line"><a id="l00279" name="l00279"></a><span class="lineno">  279</span><span class="comment">//------------------------------------------------------------------------------</span></div>
-<div class="line"><a id="l00284" name="l00284"></a><span class="lineno">  284</span><span class="comment">//------------------------------------------------------------------------------</span></div>
-<div class="foldopen" id="foldopen00285" data-start="{" data-end="}">
-<div class="line"><a id="l00285" name="l00285"></a><span class="lineno"><a class="line" href="classjit_1_1context.html#ad8de15095bc56bee0eeffaeeee36aafc">  285</a></span>        <span class="keywordtype">void</span> <a class="code hl_function" href="classjit_1_1context.html#ad8de15095bc56bee0eeffaeeee36aafc">print</a>(<span class="keyword">const</span> <span class="keywordtype">size_t</span> index,</div>
-<div class="line"><a id="l00286" name="l00286"></a><span class="lineno">  286</span>                   <span class="keyword">const</span> <a class="code hl_typedef" href="namespacegraph.html#aec6ce7b08d650c6b236b68bd68a2ce0a">graph::output_nodes&lt;T, SAFE_MATH&gt;</a> &amp;nodes) {</div>
-<div class="line"><a id="l00287" name="l00287"></a><span class="lineno">  287</span>            gpu_context.print_results(index, nodes);</div>
-<div class="line"><a id="l00288" name="l00288"></a><span class="lineno">  288</span>        }</div>
+<div class="line"><a id="l00292" name="l00292"></a><span class="lineno">  292</span> </div>
+<div class="line"><a id="l00293" name="l00293"></a><span class="lineno">  293</span><span class="comment">//------------------------------------------------------------------------------</span></div>
+<div class="line"><a id="l00303" name="l00303"></a><span class="lineno">  303</span><span class="comment">//------------------------------------------------------------------------------</span></div>
+<div class="foldopen" id="foldopen00304" data-start="{" data-end="}">
+<div class="line"><a id="l00304" name="l00304"></a><span class="lineno"><a class="line" href="classjit_1_1context.html#a5047883d31b0f0568338a0cdb61ac549">  304</a></span>        std::function&lt;void(<span class="keywordtype">void</span>)&gt; <a class="code hl_function" href="classjit_1_1context.html#a5047883d31b0f0568338a0cdb61ac549">create_kernel_call</a>(<span class="keyword">const</span> std::string kernel_name,</div>
+<div class="line"><a id="l00305" name="l00305"></a><span class="lineno">  305</span>                                                     <a class="code hl_typedef" href="namespacegraph.html#a7f4f9ab246d37d23e0259709e626bc36">graph::input_nodes&lt;T, SAFE_MATH&gt;</a> inputs,</div>
+<div class="line"><a id="l00306" name="l00306"></a><span class="lineno">  306</span>                                                     <a class="code hl_typedef" href="namespacegraph.html#aec6ce7b08d650c6b236b68bd68a2ce0a">graph::output_nodes&lt;T, SAFE_MATH&gt;</a> outputs,</div>
+<div class="line"><a id="l00307" name="l00307"></a><span class="lineno">  307</span>                                                     <a class="code hl_typedef" href="namespacegraph.html#a7f4f9ab246d37d23e0259709e626bc36">graph::input_nodes&lt;T, SAFE_MATH&gt;</a> atomics,</div>
+<div class="line"><a id="l00308" name="l00308"></a><span class="lineno">  308</span>                                                     <a class="code hl_typedef" href="namespacegraph.html#a7d69a698d998bfb31f5611ad55e44092">graph::shared_random_state&lt;T, SAFE_MATH&gt;</a> state,</div>
+<div class="line"><a id="l00309" name="l00309"></a><span class="lineno">  309</span>                                                     <span class="keyword">const</span> <span class="keywordtype">size_t</span> num_rays) {</div>
+<div class="line"><a id="l00310" name="l00310"></a><span class="lineno">  310</span>            <span class="keywordflow">return</span> gpu_context.create_kernel_call(kernel_name, inputs, outputs,</div>
+<div class="line"><a id="l00311" name="l00311"></a><span class="lineno">  311</span>                                                  atomics, state, num_rays,</div>
+<div class="line"><a id="l00312" name="l00312"></a><span class="lineno">  312</span>                                                  kernel_1dtextures[kernel_name],</div>
+<div class="line"><a id="l00313" name="l00313"></a><span class="lineno">  313</span>                                                  kernel_2dtextures[kernel_name]);</div>
+<div class="line"><a id="l00314" name="l00314"></a><span class="lineno">  314</span>        }</div>
 </div>
-<div class="line"><a id="l00289" name="l00289"></a><span class="lineno">  289</span> </div>
-<div class="line"><a id="l00290" name="l00290"></a><span class="lineno">  290</span><span class="comment">//------------------------------------------------------------------------------</span></div>
-<div class="line"><a id="l00296" name="l00296"></a><span class="lineno">  296</span><span class="comment">//------------------------------------------------------------------------------</span></div>
-<div class="foldopen" id="foldopen00297" data-start="{" data-end="}">
-<div class="line"><a id="l00297" name="l00297"></a><span class="lineno"><a class="line" href="classjit_1_1context.html#ae36e6ac9becee00647615a7ac14ec0f7">  297</a></span>        T <a class="code hl_function" href="classjit_1_1context.html#ae36e6ac9becee00647615a7ac14ec0f7">check_value</a>(<span class="keyword">const</span> <span class="keywordtype">size_t</span> index,</div>
-<div class="line"><a id="l00298" name="l00298"></a><span class="lineno">  298</span>                      <span class="keyword">const</span> <a class="code hl_typedef" href="namespacegraph.html#ac8853b055dcbbfd35dff9b4584d5ef36">graph::shared_leaf&lt;T, SAFE_MATH&gt;</a> &amp;node) {</div>
-<div class="line"><a id="l00299" name="l00299"></a><span class="lineno">  299</span>            <span class="keywordflow">return</span> gpu_context.check_value(index, node);</div>
-<div class="line"><a id="l00300" name="l00300"></a><span class="lineno">  300</span>        }</div>
+<div class="line"><a id="l00315" name="l00315"></a><span class="lineno">  315</span> </div>
+<div class="line"><a id="l00316" name="l00316"></a><span class="lineno">  316</span><span class="comment">//------------------------------------------------------------------------------</span></div>
+<div class="line"><a id="l00322" name="l00322"></a><span class="lineno">  322</span><span class="comment">//------------------------------------------------------------------------------</span></div>
+<div class="foldopen" id="foldopen00323" data-start="{" data-end="}">
+<div class="line"><a id="l00323" name="l00323"></a><span class="lineno"><a class="line" href="classjit_1_1context.html#a9f87ab3252ebc38b99c268abfedc5794">  323</a></span>        std::function&lt;T(<span class="keywordtype">void</span>)&gt; <a class="code hl_function" href="classjit_1_1context.html#a9f87ab3252ebc38b99c268abfedc5794">create_max_call</a>(<a class="code hl_typedef" href="namespacegraph.html#ac8853b055dcbbfd35dff9b4584d5ef36">graph::shared_leaf&lt;T, SAFE_MATH&gt;</a> &amp;argument,</div>
+<div class="line"><a id="l00324" name="l00324"></a><span class="lineno">  324</span>                                               std::function&lt;<span class="keywordtype">void</span>(<span class="keywordtype">void</span>)&gt; run) {</div>
+<div class="line"><a id="l00325" name="l00325"></a><span class="lineno">  325</span>            <span class="keywordflow">return</span> gpu_context.create_max_call(argument, run);</div>
+<div class="line"><a id="l00326" name="l00326"></a><span class="lineno">  326</span>        }</div>
 </div>
-<div class="line"><a id="l00301" name="l00301"></a><span class="lineno">  301</span> </div>
-<div class="line"><a id="l00302" name="l00302"></a><span class="lineno">  302</span><span class="comment">//------------------------------------------------------------------------------</span></div>
-<div class="line"><a id="l00304" name="l00304"></a><span class="lineno">  304</span><span class="comment">//------------------------------------------------------------------------------</span></div>
-<div class="foldopen" id="foldopen00305" data-start="{" data-end="}">
-<div class="line"><a id="l00305" name="l00305"></a><span class="lineno"><a class="line" href="classjit_1_1context.html#a41a3f9a0ec0cb39f5b7028e72f9d8be5">  305</a></span>        <span class="keywordtype">void</span> <a class="code hl_function" href="classjit_1_1context.html#a41a3f9a0ec0cb39f5b7028e72f9d8be5">wait</a>() {</div>
-<div class="line"><a id="l00306" name="l00306"></a><span class="lineno">  306</span>            gpu_context.wait();</div>
-<div class="line"><a id="l00307" name="l00307"></a><span class="lineno">  307</span>        }</div>
+<div class="line"><a id="l00327" name="l00327"></a><span class="lineno">  327</span> </div>
+<div class="line"><a id="l00328" name="l00328"></a><span class="lineno">  328</span><span class="comment">//------------------------------------------------------------------------------</span></div>
+<div class="line"><a id="l00333" name="l00333"></a><span class="lineno">  333</span><span class="comment">//------------------------------------------------------------------------------</span></div>
+<div class="foldopen" id="foldopen00334" data-start="{" data-end="}">
+<div class="line"><a id="l00334" name="l00334"></a><span class="lineno"><a class="line" href="classjit_1_1context.html#ad8de15095bc56bee0eeffaeeee36aafc">  334</a></span>        <span class="keywordtype">void</span> <a class="code hl_function" href="classjit_1_1context.html#ad8de15095bc56bee0eeffaeeee36aafc">print</a>(<span class="keyword">const</span> <span class="keywordtype">size_t</span> index,</div>
+<div class="line"><a id="l00335" name="l00335"></a><span class="lineno">  335</span>                   <span class="keyword">const</span> <a class="code hl_typedef" href="namespacegraph.html#aec6ce7b08d650c6b236b68bd68a2ce0a">graph::output_nodes&lt;T, SAFE_MATH&gt;</a> &amp;nodes) {</div>
+<div class="line"><a id="l00336" name="l00336"></a><span class="lineno">  336</span>            gpu_context.print_results(index, nodes);</div>
+<div class="line"><a id="l00337" name="l00337"></a><span class="lineno">  337</span>        }</div>
 </div>
-<div class="line"><a id="l00308" name="l00308"></a><span class="lineno">  308</span> </div>
-<div class="line"><a id="l00309" name="l00309"></a><span class="lineno">  309</span><span class="comment">//------------------------------------------------------------------------------</span></div>
-<div class="line"><a id="l00314" name="l00314"></a><span class="lineno">  314</span><span class="comment">//------------------------------------------------------------------------------</span></div>
-<div class="foldopen" id="foldopen00315" data-start="{" data-end="}">
-<div class="line"><a id="l00315" name="l00315"></a><span class="lineno"><a class="line" href="classjit_1_1context.html#add3757db47a4d224350aa92d962efdbd">  315</a></span>        <span class="keywordtype">void</span> <a class="code hl_function" href="classjit_1_1context.html#add3757db47a4d224350aa92d962efdbd">copy_to_device</a>(<a class="code hl_typedef" href="namespacegraph.html#ac8853b055dcbbfd35dff9b4584d5ef36">graph::shared_leaf&lt;T, SAFE_MATH&gt;</a> &amp;node,</div>
-<div class="line"><a id="l00316" name="l00316"></a><span class="lineno">  316</span>                            T *source) {</div>
-<div class="line"><a id="l00317" name="l00317"></a><span class="lineno">  317</span>            gpu_context.copy_to_device(node, source);</div>
-<div class="line"><a id="l00318" name="l00318"></a><span class="lineno">  318</span>        }</div>
+<div class="line"><a id="l00338" name="l00338"></a><span class="lineno">  338</span> </div>
+<div class="line"><a id="l00339" name="l00339"></a><span class="lineno">  339</span><span class="comment">//------------------------------------------------------------------------------</span></div>
+<div class="line"><a id="l00345" name="l00345"></a><span class="lineno">  345</span><span class="comment">//------------------------------------------------------------------------------</span></div>
+<div class="foldopen" id="foldopen00346" data-start="{" data-end="}">
+<div class="line"><a id="l00346" name="l00346"></a><span class="lineno"><a class="line" href="classjit_1_1context.html#ae36e6ac9becee00647615a7ac14ec0f7">  346</a></span>        T <a class="code hl_function" href="classjit_1_1context.html#ae36e6ac9becee00647615a7ac14ec0f7">check_value</a>(<span class="keyword">const</span> <span class="keywordtype">size_t</span> index,</div>
+<div class="line"><a id="l00347" name="l00347"></a><span class="lineno">  347</span>                      <span class="keyword">const</span> <a class="code hl_typedef" href="namespacegraph.html#ac8853b055dcbbfd35dff9b4584d5ef36">graph::shared_leaf&lt;T, SAFE_MATH&gt;</a> &amp;node) {</div>
+<div class="line"><a id="l00348" name="l00348"></a><span class="lineno">  348</span>            <span class="keywordflow">return</span> gpu_context.check_value(index, node);</div>
+<div class="line"><a id="l00349" name="l00349"></a><span class="lineno">  349</span>        }</div>
 </div>
-<div class="line"><a id="l00319" name="l00319"></a><span class="lineno">  319</span> </div>
-<div class="line"><a id="l00320" name="l00320"></a><span class="lineno">  320</span><span class="comment">//------------------------------------------------------------------------------</span></div>
-<div class="line"><a id="l00325" name="l00325"></a><span class="lineno">  325</span><span class="comment">//------------------------------------------------------------------------------</span></div>
-<div class="foldopen" id="foldopen00326" data-start="{" data-end="}">
-<div class="line"><a id="l00326" name="l00326"></a><span class="lineno"><a class="line" href="classjit_1_1context.html#afa510b5044594a5c3f169d4dfd655a3c">  326</a></span>        <span class="keywordtype">void</span> <a class="code hl_function" href="classjit_1_1context.html#afa510b5044594a5c3f169d4dfd655a3c">copy_to_host</a>(<a class="code hl_typedef" href="namespacegraph.html#ac8853b055dcbbfd35dff9b4584d5ef36">graph::shared_leaf&lt;T, SAFE_MATH&gt;</a> &amp;node,</div>
-<div class="line"><a id="l00327" name="l00327"></a><span class="lineno">  327</span>                          T *destination) {</div>
-<div class="line"><a id="l00328" name="l00328"></a><span class="lineno">  328</span>            gpu_context.copy_to_host(node, destination);</div>
-<div class="line"><a id="l00329" name="l00329"></a><span class="lineno">  329</span>        }</div>
+<div class="line"><a id="l00350" name="l00350"></a><span class="lineno">  350</span> </div>
+<div class="line"><a id="l00351" name="l00351"></a><span class="lineno">  351</span><span class="comment">//------------------------------------------------------------------------------</span></div>
+<div class="line"><a id="l00353" name="l00353"></a><span class="lineno">  353</span><span class="comment">//------------------------------------------------------------------------------</span></div>
+<div class="foldopen" id="foldopen00354" data-start="{" data-end="}">
+<div class="line"><a id="l00354" name="l00354"></a><span class="lineno"><a class="line" href="classjit_1_1context.html#a41a3f9a0ec0cb39f5b7028e72f9d8be5">  354</a></span>        <span class="keywordtype">void</span> <a class="code hl_function" href="classjit_1_1context.html#a41a3f9a0ec0cb39f5b7028e72f9d8be5">wait</a>() {</div>
+<div class="line"><a id="l00355" name="l00355"></a><span class="lineno">  355</span>            gpu_context.wait();</div>
+<div class="line"><a id="l00356" name="l00356"></a><span class="lineno">  356</span>        }</div>
 </div>
-<div class="line"><a id="l00330" name="l00330"></a><span class="lineno">  330</span> </div>
-<div class="line"><a id="l00331" name="l00331"></a><span class="lineno">  331</span><span class="comment">//------------------------------------------------------------------------------</span></div>
-<div class="line"><a id="l00335" name="l00335"></a><span class="lineno">  335</span><span class="comment">//------------------------------------------------------------------------------</span></div>
-<div class="foldopen" id="foldopen00336" data-start="{" data-end="}">
-<div class="line"><a id="l00336" name="l00336"></a><span class="lineno"><a class="line" href="classjit_1_1context.html#ae30cd8daa4206786442ee5efb405c982">  336</a></span>        T *<a class="code hl_function" href="classjit_1_1context.html#ae30cd8daa4206786442ee5efb405c982">get_buffer</a>(<a class="code hl_typedef" href="namespacegraph.html#ac8853b055dcbbfd35dff9b4584d5ef36">graph::shared_leaf&lt;T, SAFE_MATH&gt;</a> &amp;node) {</div>
-<div class="line"><a id="l00337" name="l00337"></a><span class="lineno">  337</span>            <span class="keywordflow">return</span> gpu_context.get_buffer(node);</div>
-<div class="line"><a id="l00338" name="l00338"></a><span class="lineno">  338</span>        }</div>
+<div class="line"><a id="l00357" name="l00357"></a><span class="lineno">  357</span> </div>
+<div class="line"><a id="l00358" name="l00358"></a><span class="lineno">  358</span><span class="comment">//------------------------------------------------------------------------------</span></div>
+<div class="line"><a id="l00362" name="l00362"></a><span class="lineno">  362</span><span class="comment">//------------------------------------------------------------------------------</span></div>
+<div class="foldopen" id="foldopen00363" data-start="{" data-end="}">
+<div class="line"><a id="l00363" name="l00363"></a><span class="lineno"><a class="line" href="classjit_1_1context.html#ae68dbae81eef4f9240a715354c024f64">  363</a></span>        std::function&lt;void(<span class="keywordtype">void</span>)&gt; <a class="code hl_function" href="classjit_1_1context.html#ae68dbae81eef4f9240a715354c024f64">run_function</a>(std::function&lt;<span class="keywordtype">void</span>(<span class="keywordtype">void</span>)&gt; callback) {</div>
+<div class="line"><a id="l00364" name="l00364"></a><span class="lineno">  364</span>            <span class="keywordflow">return</span> gpu_context.run_function(callback);</div>
+<div class="line"><a id="l00365" name="l00365"></a><span class="lineno">  365</span>        }</div>
 </div>
-<div class="line"><a id="l00339" name="l00339"></a><span class="lineno">  339</span>    };</div>
+<div class="line"><a id="l00366" name="l00366"></a><span class="lineno">  366</span> </div>
+<div class="line"><a id="l00367" name="l00367"></a><span class="lineno">  367</span><span class="comment">//------------------------------------------------------------------------------</span></div>
+<div class="line"><a id="l00372" name="l00372"></a><span class="lineno">  372</span><span class="comment">//------------------------------------------------------------------------------</span></div>
+<div class="foldopen" id="foldopen00373" data-start="{" data-end="}">
+<div class="line"><a id="l00373" name="l00373"></a><span class="lineno"><a class="line" href="classjit_1_1context.html#add3757db47a4d224350aa92d962efdbd">  373</a></span>        <span class="keywordtype">void</span> <a class="code hl_function" href="classjit_1_1context.html#add3757db47a4d224350aa92d962efdbd">copy_to_device</a>(<a class="code hl_typedef" href="namespacegraph.html#ac8853b055dcbbfd35dff9b4584d5ef36">graph::shared_leaf&lt;T, SAFE_MATH&gt;</a> &amp;node,</div>
+<div class="line"><a id="l00374" name="l00374"></a><span class="lineno">  374</span>                            T *source) {</div>
+<div class="line"><a id="l00375" name="l00375"></a><span class="lineno">  375</span>            gpu_context.copy_to_device(node, source);</div>
+<div class="line"><a id="l00376" name="l00376"></a><span class="lineno">  376</span>        }</div>
 </div>
-<div class="line"><a id="l00340" name="l00340"></a><span class="lineno">  340</span>}</div>
+<div class="line"><a id="l00377" name="l00377"></a><span class="lineno">  377</span> </div>
+<div class="line"><a id="l00378" name="l00378"></a><span class="lineno">  378</span><span class="comment">//------------------------------------------------------------------------------</span></div>
+<div class="line"><a id="l00383" name="l00383"></a><span class="lineno">  383</span><span class="comment">//------------------------------------------------------------------------------</span></div>
+<div class="foldopen" id="foldopen00384" data-start="{" data-end="}">
+<div class="line"><a id="l00384" name="l00384"></a><span class="lineno"><a class="line" href="classjit_1_1context.html#afa510b5044594a5c3f169d4dfd655a3c">  384</a></span>        <span class="keywordtype">void</span> <a class="code hl_function" href="classjit_1_1context.html#afa510b5044594a5c3f169d4dfd655a3c">copy_to_host</a>(<a class="code hl_typedef" href="namespacegraph.html#ac8853b055dcbbfd35dff9b4584d5ef36">graph::shared_leaf&lt;T, SAFE_MATH&gt;</a> &amp;node,</div>
+<div class="line"><a id="l00385" name="l00385"></a><span class="lineno">  385</span>                          T *destination) {</div>
+<div class="line"><a id="l00386" name="l00386"></a><span class="lineno">  386</span>            gpu_context.copy_to_host(node, destination);</div>
+<div class="line"><a id="l00387" name="l00387"></a><span class="lineno">  387</span>        }</div>
 </div>
-<div class="line"><a id="l00341" name="l00341"></a><span class="lineno">  341</span> </div>
-<div class="line"><a id="l00342" name="l00342"></a><span class="lineno">  342</span><span class="preprocessor">#endif </span><span class="comment">/* jit_h */</span><span class="preprocessor"></span></div>
-<div class="ttc" id="aclassgpu_1_1cpu__context_html"><div class="ttname"><a href="classgpu_1_1cpu__context.html">gpu::cpu_context</a></div><div class="ttdoc">Class representing a cpu context.</div><div class="ttdef"><b>Definition</b> cpu_context.hpp:82</div></div>
-<div class="ttc" id="aclassgpu_1_1cuda__context_html"><div class="ttname"><a href="classgpu_1_1cuda__context.html">gpu::cuda_context</a></div><div class="ttdoc">Class representing a cuda gpu context.</div><div class="ttdef"><b>Definition</b> cuda_context.hpp:73</div></div>
+<div class="line"><a id="l00388" name="l00388"></a><span class="lineno">  388</span> </div>
+<div class="line"><a id="l00389" name="l00389"></a><span class="lineno">  389</span><span class="comment">//------------------------------------------------------------------------------</span></div>
+<div class="line"><a id="l00393" name="l00393"></a><span class="lineno">  393</span><span class="comment">//------------------------------------------------------------------------------</span></div>
+<div class="foldopen" id="foldopen00394" data-start="{" data-end="}">
+<div class="line"><a id="l00394" name="l00394"></a><span class="lineno"><a class="line" href="classjit_1_1context.html#ae30cd8daa4206786442ee5efb405c982">  394</a></span>        T *<a class="code hl_function" href="classjit_1_1context.html#ae30cd8daa4206786442ee5efb405c982">get_buffer</a>(<a class="code hl_typedef" href="namespacegraph.html#ac8853b055dcbbfd35dff9b4584d5ef36">graph::shared_leaf&lt;T, SAFE_MATH&gt;</a> &amp;node) {</div>
+<div class="line"><a id="l00395" name="l00395"></a><span class="lineno">  395</span>            <span class="keywordflow">return</span> gpu_context.get_buffer(node);</div>
+<div class="line"><a id="l00396" name="l00396"></a><span class="lineno">  396</span>        }</div>
+</div>
+<div class="line"><a id="l00397" name="l00397"></a><span class="lineno">  397</span>    };</div>
+</div>
+<div class="line"><a id="l00398" name="l00398"></a><span class="lineno">  398</span>}</div>
+</div>
+<div class="line"><a id="l00399" name="l00399"></a><span class="lineno">  399</span> </div>
+<div class="line"><a id="l00400" name="l00400"></a><span class="lineno">  400</span><span class="preprocessor">#endif </span><span class="comment">/* jit_h */</span><span class="preprocessor"></span></div>
+<div class="ttc" id="aclassgpu_1_1cpu__context_html"><div class="ttname"><a href="classgpu_1_1cpu__context.html">gpu::cpu_context</a></div><div class="ttdoc">Class representing a cpu context.</div><div class="ttdef"><b>Definition</b> cpu_context.hpp:83</div></div>
+<div class="ttc" id="aclassgpu_1_1cuda__context_html"><div class="ttname"><a href="classgpu_1_1cuda__context.html">gpu::cuda_context</a></div><div class="ttdoc">Class representing a cuda gpu context.</div><div class="ttdef"><b>Definition</b> cuda_context.hpp:74</div></div>
 <div class="ttc" id="aclassgpu_1_1metal__context_html"><div class="ttname"><a href="classgpu_1_1metal__context.html">gpu::metal_context</a></div><div class="ttdoc">Class representing a metal gpu context.</div><div class="ttdef"><b>Definition</b> metal_context.hpp:25</div></div>
-<div class="ttc" id="aclassgraph_1_1random__node_html_a9358ad49cd858a0e0637e0850a652867"><div class="ttname"><a href="classgraph_1_1random__node.html#a9358ad49cd858a0e0637e0850a652867">graph::random_node::compile_random</a></div><div class="ttdeci">static void compile_random(std::ostringstream &amp;stream)</div><div class="ttdoc">Write the preamble for the random function.</div><div class="ttdef"><b>Definition</b> random.hpp:314</div></div>
-<div class="ttc" id="aclassgraph_1_1random__state__node_html_ae3b46c96b5dc3b2d86c01ba1e240bf03"><div class="ttname"><a href="classgraph_1_1random__state__node.html#ae3b46c96b5dc3b2d86c01ba1e240bf03">graph::random_state_node::compile_random_state</a></div><div class="ttdeci">static void compile_random_state(std::ostringstream &amp;stream)</div><div class="ttdoc">Write the preamble for the random state struct.</div><div class="ttdef"><b>Definition</b> random.hpp:31</div></div>
 <div class="ttc" id="aclassjit_1_1context_html"><div class="ttname"><a href="classjit_1_1context.html">jit::context</a></div><div class="ttdoc">Class for JIT compile of the GPU kernels.</div><div class="ttdef"><b>Definition</b> jit.hpp:49</div></div>
-<div class="ttc" id="aclassjit_1_1context_html_a1b0a1180dc7b49c143ee1b5422f107b7"><div class="ttname"><a href="classjit_1_1context.html#a1b0a1180dc7b49c143ee1b5422f107b7">jit::context::compile</a></div><div class="ttdeci">void compile(const bool add_reduction=false)</div><div class="ttdoc">Compile the kernel.</div><div class="ttdef"><b>Definition</b> jit.hpp:238</div></div>
+<div class="ttc" id="aclassjit_1_1context_html_a0643ad182f1eb4aabf4be9537823148c"><div class="ttname"><a href="classjit_1_1context.html#a0643ad182f1eb4aabf4be9537823148c">jit::context::create_copy_call</a></div><div class="ttdeci">std::function&lt; void(void)&gt; create_copy_call(graph::copy_nodes&lt; T, SAFE_MATH &gt; setters)</div><div class="ttdoc">Add copy.</div><div class="ttdef"><b>Definition</b> jit.hpp:247</div></div>
+<div class="ttc" id="aclassjit_1_1context_html_a1b0a1180dc7b49c143ee1b5422f107b7"><div class="ttname"><a href="classjit_1_1context.html#a1b0a1180dc7b49c143ee1b5422f107b7">jit::context::compile</a></div><div class="ttdeci">void compile(const bool add_reduction=false)</div><div class="ttdoc">Compile the kernel.</div><div class="ttdef"><b>Definition</b> jit.hpp:284</div></div>
 <div class="ttc" id="aclassjit_1_1context_html_a1e584241235100ab5c074e59a684654b"><div class="ttname"><a href="classjit_1_1context.html#a1e584241235100ab5c074e59a684654b">jit::context::random_state_size</a></div><div class="ttdeci">static constexpr size_t random_state_size</div><div class="ttdoc">Size of random state needed.</div><div class="ttdef"><b>Definition</b> jit.hpp:80</div></div>
-<div class="ttc" id="aclassjit_1_1context_html_a2d04d789825a5f04206a3d4d7765b930"><div class="ttname"><a href="classjit_1_1context.html#a2d04d789825a5f04206a3d4d7765b930">jit::context::max_concurrency</a></div><div class="ttdeci">static size_t max_concurrency()</div><div class="ttdoc">Get the maximum number of concurrent instances.</div><div class="ttdef"><b>Definition</b> jit.hpp:87</div></div>
-<div class="ttc" id="aclassjit_1_1context_html_a41a3f9a0ec0cb39f5b7028e72f9d8be5"><div class="ttname"><a href="classjit_1_1context.html#a41a3f9a0ec0cb39f5b7028e72f9d8be5">jit::context::wait</a></div><div class="ttdeci">void wait()</div><div class="ttdoc">Wait for kernel to finish.</div><div class="ttdef"><b>Definition</b> jit.hpp:305</div></div>
-<div class="ttc" id="aclassjit_1_1context_html_a673c179cb1ae4ea23f65677be4bdf8ca"><div class="ttname"><a href="classjit_1_1context.html#a673c179cb1ae4ea23f65677be4bdf8ca">jit::context::context</a></div><div class="ttdeci">context(const size_t index)</div><div class="ttdoc">Construct a jit context object.</div><div class="ttdef"><b>Definition</b> jit.hpp:101</div></div>
-<div class="ttc" id="aclassjit_1_1context_html_a9f87ab3252ebc38b99c268abfedc5794"><div class="ttname"><a href="classjit_1_1context.html#a9f87ab3252ebc38b99c268abfedc5794">jit::context::create_max_call</a></div><div class="ttdeci">std::function&lt; T(void)&gt; create_max_call(graph::shared_leaf&lt; T, SAFE_MATH &gt; &amp;argument, std::function&lt; void(void)&gt; run)</div><div class="ttdoc">Create a max compute kernel calling function.</div><div class="ttdef"><b>Definition</b> jit.hpp:274</div></div>
-<div class="ttc" id="aclassjit_1_1context_html_abb574e028c4da2e8d730364f433cb8cb"><div class="ttname"><a href="classjit_1_1context.html#abb574e028c4da2e8d730364f433cb8cb">jit::context::add_max_reduction</a></div><div class="ttdeci">void add_max_reduction(const size_t size)</div><div class="ttdoc">Add max reduction kernel.</div><div class="ttdef"><b>Definition</b> jit.hpp:201</div></div>
-<div class="ttc" id="aclassjit_1_1context_html_ac1c85cd2c67cae81bf6f4d58563a0c6a"><div class="ttname"><a href="classjit_1_1context.html#ac1c85cd2c67cae81bf6f4d58563a0c6a">jit::context::save_source</a></div><div class="ttdeci">void save_source()</div><div class="ttdoc">Save the kernel source code.</div><div class="ttdef"><b>Definition</b> jit.hpp:215</div></div>
-<div class="ttc" id="aclassjit_1_1context_html_ac5d7dad83767b449ab17d9db4d5dfaf7"><div class="ttname"><a href="classjit_1_1context.html#ac5d7dad83767b449ab17d9db4d5dfaf7">jit::context::create_kernel_call</a></div><div class="ttdeci">std::function&lt; void(void)&gt; create_kernel_call(const std::string kernel_name, graph::input_nodes&lt; T, SAFE_MATH &gt; inputs, graph::output_nodes&lt; T, SAFE_MATH &gt; outputs, graph::shared_random_state&lt; T, SAFE_MATH &gt; state, const size_t num_rays)</div><div class="ttdoc">Create a kernel calling function.</div><div class="ttdef"><b>Definition</b> jit.hpp:257</div></div>
-<div class="ttc" id="aclassjit_1_1context_html_ad8de15095bc56bee0eeffaeeee36aafc"><div class="ttname"><a href="classjit_1_1context.html#ad8de15095bc56bee0eeffaeeee36aafc">jit::context::print</a></div><div class="ttdeci">void print(const size_t index, const graph::output_nodes&lt; T, SAFE_MATH &gt; &amp;nodes)</div><div class="ttdoc">Print output.</div><div class="ttdef"><b>Definition</b> jit.hpp:285</div></div>
-<div class="ttc" id="aclassjit_1_1context_html_add3757db47a4d224350aa92d962efdbd"><div class="ttname"><a href="classjit_1_1context.html#add3757db47a4d224350aa92d962efdbd">jit::context::copy_to_device</a></div><div class="ttdeci">void copy_to_device(graph::shared_leaf&lt; T, SAFE_MATH &gt; &amp;node, T *source)</div><div class="ttdoc">Copy contexts of buffer to device.</div><div class="ttdef"><b>Definition</b> jit.hpp:315</div></div>
-<div class="ttc" id="aclassjit_1_1context_html_ae30cd8daa4206786442ee5efb405c982"><div class="ttname"><a href="classjit_1_1context.html#ae30cd8daa4206786442ee5efb405c982">jit::context::get_buffer</a></div><div class="ttdeci">T * get_buffer(graph::shared_leaf&lt; T, SAFE_MATH &gt; &amp;node)</div><div class="ttdoc">Get buffer from the gpu_context.</div><div class="ttdef"><b>Definition</b> jit.hpp:336</div></div>
-<div class="ttc" id="aclassjit_1_1context_html_ae36e6ac9becee00647615a7ac14ec0f7"><div class="ttname"><a href="classjit_1_1context.html#ae36e6ac9becee00647615a7ac14ec0f7">jit::context::check_value</a></div><div class="ttdeci">T check_value(const size_t index, const graph::shared_leaf&lt; T, SAFE_MATH &gt; &amp;node)</div><div class="ttdoc">Check the value.</div><div class="ttdef"><b>Definition</b> jit.hpp:297</div></div>
-<div class="ttc" id="aclassjit_1_1context_html_af59762b162e5b6c134c334e4052e0117"><div class="ttname"><a href="classjit_1_1context.html#af59762b162e5b6c134c334e4052e0117">jit::context::add_kernel</a></div><div class="ttdeci">void add_kernel(const std::string name, graph::input_nodes&lt; T, SAFE_MATH &gt; inputs, graph::output_nodes&lt; T, SAFE_MATH &gt; outputs, graph::map_nodes&lt; T, SAFE_MATH &gt; setters, graph::shared_random_state&lt; T, SAFE_MATH &gt; state, const size_t size)</div><div class="ttdoc">Add a kernel.</div><div class="ttdef"><b>Definition</b> jit.hpp:118</div></div>
-<div class="ttc" id="aclassjit_1_1context_html_af9ea5fd0da1464a3a3a6a5b1ca28e584"><div class="ttname"><a href="classjit_1_1context.html#af9ea5fd0da1464a3a3a6a5b1ca28e584">jit::context::print_source</a></div><div class="ttdeci">void print_source()</div><div class="ttdoc">Print the kernel source.</div><div class="ttdef"><b>Definition</b> jit.hpp:208</div></div>
-<div class="ttc" id="aclassjit_1_1context_html_afa510b5044594a5c3f169d4dfd655a3c"><div class="ttname"><a href="classjit_1_1context.html#afa510b5044594a5c3f169d4dfd655a3c">jit::context::copy_to_host</a></div><div class="ttdeci">void copy_to_host(graph::shared_leaf&lt; T, SAFE_MATH &gt; &amp;node, T *destination)</div><div class="ttdoc">Copy contexts of buffer to host.</div><div class="ttdef"><b>Definition</b> jit.hpp:326</div></div>
+<div class="ttc" id="aclassjit_1_1context_html_a2d04d789825a5f04206a3d4d7765b930"><div class="ttname"><a href="classjit_1_1context.html#a2d04d789825a5f04206a3d4d7765b930">jit::context::max_concurrency</a></div><div class="ttdeci">static size_t max_concurrency()</div><div class="ttdoc">Get the maximum number of concurrent instances.</div><div class="ttdef"><b>Definition</b> jit.hpp:97</div></div>
+<div class="ttc" id="aclassjit_1_1context_html_a41a3f9a0ec0cb39f5b7028e72f9d8be5"><div class="ttname"><a href="classjit_1_1context.html#a41a3f9a0ec0cb39f5b7028e72f9d8be5">jit::context::wait</a></div><div class="ttdeci">void wait()</div><div class="ttdoc">Wait for kernel to finish.</div><div class="ttdef"><b>Definition</b> jit.hpp:354</div></div>
+<div class="ttc" id="aclassjit_1_1context_html_a5047883d31b0f0568338a0cdb61ac549"><div class="ttname"><a href="classjit_1_1context.html#a5047883d31b0f0568338a0cdb61ac549">jit::context::create_kernel_call</a></div><div class="ttdeci">std::function&lt; void(void)&gt; create_kernel_call(const std::string kernel_name, graph::input_nodes&lt; T, SAFE_MATH &gt; inputs, graph::output_nodes&lt; T, SAFE_MATH &gt; outputs, graph::input_nodes&lt; T, SAFE_MATH &gt; atomics, graph::shared_random_state&lt; T, SAFE_MATH &gt; state, const size_t num_rays)</div><div class="ttdoc">Create a kernel calling function.</div><div class="ttdef"><b>Definition</b> jit.hpp:304</div></div>
+<div class="ttc" id="aclassjit_1_1context_html_a673c179cb1ae4ea23f65677be4bdf8ca"><div class="ttname"><a href="classjit_1_1context.html#a673c179cb1ae4ea23f65677be4bdf8ca">jit::context::context</a></div><div class="ttdeci">context(const size_t index)</div><div class="ttdoc">Construct a jit context object.</div><div class="ttdef"><b>Definition</b> jit.hpp:111</div></div>
+<div class="ttc" id="aclassjit_1_1context_html_a7318993de30eedb364ba1d048d6f3ceb"><div class="ttname"><a href="classjit_1_1context.html#a7318993de30eedb364ba1d048d6f3ceb">jit::context::max_random_state_size</a></div><div class="ttdeci">static size_t max_random_state_size(const size_t size)</div><div class="ttdoc">Get the number of random states needed.</div><div class="ttdef"><b>Definition</b> jit.hpp:88</div></div>
+<div class="ttc" id="aclassjit_1_1context_html_a9f87ab3252ebc38b99c268abfedc5794"><div class="ttname"><a href="classjit_1_1context.html#a9f87ab3252ebc38b99c268abfedc5794">jit::context::create_max_call</a></div><div class="ttdeci">std::function&lt; T(void)&gt; create_max_call(graph::shared_leaf&lt; T, SAFE_MATH &gt; &amp;argument, std::function&lt; void(void)&gt; run)</div><div class="ttdoc">Create a max compute kernel calling function.</div><div class="ttdef"><b>Definition</b> jit.hpp:323</div></div>
+<div class="ttc" id="aclassjit_1_1context_html_ab1c3063533a2b6f56e944d6d97121675"><div class="ttname"><a href="classjit_1_1context.html#ab1c3063533a2b6f56e944d6d97121675">jit::context::create_zero_call</a></div><div class="ttdeci">std::function&lt; void(void)&gt; create_zero_call(graph::input_nodes&lt; T, SAFE_MATH &gt; inputs)</div><div class="ttdoc">Add zero.</div><div class="ttdef"><b>Definition</b> jit.hpp:237</div></div>
+<div class="ttc" id="aclassjit_1_1context_html_abb574e028c4da2e8d730364f433cb8cb"><div class="ttname"><a href="classjit_1_1context.html#abb574e028c4da2e8d730364f433cb8cb">jit::context::add_max_reduction</a></div><div class="ttdeci">void add_max_reduction(const size_t size)</div><div class="ttdoc">Add max reduction kernel.</div><div class="ttdef"><b>Definition</b> jit.hpp:227</div></div>
+<div class="ttc" id="aclassjit_1_1context_html_ac1c85cd2c67cae81bf6f4d58563a0c6a"><div class="ttname"><a href="classjit_1_1context.html#ac1c85cd2c67cae81bf6f4d58563a0c6a">jit::context::save_source</a></div><div class="ttdeci">void save_source()</div><div class="ttdoc">Save the kernel source code.</div><div class="ttdef"><b>Definition</b> jit.hpp:261</div></div>
+<div class="ttc" id="aclassjit_1_1context_html_ad8de15095bc56bee0eeffaeeee36aafc"><div class="ttname"><a href="classjit_1_1context.html#ad8de15095bc56bee0eeffaeeee36aafc">jit::context::print</a></div><div class="ttdeci">void print(const size_t index, const graph::output_nodes&lt; T, SAFE_MATH &gt; &amp;nodes)</div><div class="ttdoc">Print output.</div><div class="ttdef"><b>Definition</b> jit.hpp:334</div></div>
+<div class="ttc" id="aclassjit_1_1context_html_add3757db47a4d224350aa92d962efdbd"><div class="ttname"><a href="classjit_1_1context.html#add3757db47a4d224350aa92d962efdbd">jit::context::copy_to_device</a></div><div class="ttdeci">void copy_to_device(graph::shared_leaf&lt; T, SAFE_MATH &gt; &amp;node, T *source)</div><div class="ttdoc">Copy contexts of buffer to device.</div><div class="ttdef"><b>Definition</b> jit.hpp:373</div></div>
+<div class="ttc" id="aclassjit_1_1context_html_ae30cd8daa4206786442ee5efb405c982"><div class="ttname"><a href="classjit_1_1context.html#ae30cd8daa4206786442ee5efb405c982">jit::context::get_buffer</a></div><div class="ttdeci">T * get_buffer(graph::shared_leaf&lt; T, SAFE_MATH &gt; &amp;node)</div><div class="ttdoc">Get buffer from the gpu_context.</div><div class="ttdef"><b>Definition</b> jit.hpp:394</div></div>
+<div class="ttc" id="aclassjit_1_1context_html_ae36e6ac9becee00647615a7ac14ec0f7"><div class="ttname"><a href="classjit_1_1context.html#ae36e6ac9becee00647615a7ac14ec0f7">jit::context::check_value</a></div><div class="ttdeci">T check_value(const size_t index, const graph::shared_leaf&lt; T, SAFE_MATH &gt; &amp;node)</div><div class="ttdoc">Check the value.</div><div class="ttdef"><b>Definition</b> jit.hpp:346</div></div>
+<div class="ttc" id="aclassjit_1_1context_html_ae68dbae81eef4f9240a715354c024f64"><div class="ttname"><a href="classjit_1_1context.html#ae68dbae81eef4f9240a715354c024f64">jit::context::run_function</a></div><div class="ttdeci">std::function&lt; void(void)&gt; run_function(std::function&lt; void(void)&gt; callback)</div><div class="ttdoc">Run a function.</div><div class="ttdef"><b>Definition</b> jit.hpp:363</div></div>
+<div class="ttc" id="aclassjit_1_1context_html_aef7011dd12234b7bd060ad4694c8f96b"><div class="ttname"><a href="classjit_1_1context.html#aef7011dd12234b7bd060ad4694c8f96b">jit::context::add_kernel</a></div><div class="ttdeci">void add_kernel(const std::string name, graph::input_nodes&lt; T, SAFE_MATH &gt; &amp;inputs, graph::output_nodes&lt; T, SAFE_MATH &gt; &amp;outputs, graph::map_nodes&lt; T, SAFE_MATH &gt; &amp;setters, graph::input_nodes&lt; T, SAFE_MATH &gt; &amp;atomics, graph::shared_random_state&lt; T, SAFE_MATH &gt; &amp;state, const size_t size, const size_t iterations=1)</div><div class="ttdoc">Add a kernel.</div><div class="ttdef"><b>Definition</b> jit.hpp:130</div></div>
+<div class="ttc" id="aclassjit_1_1context_html_af9ea5fd0da1464a3a3a6a5b1ca28e584"><div class="ttname"><a href="classjit_1_1context.html#af9ea5fd0da1464a3a3a6a5b1ca28e584">jit::context::print_source</a></div><div class="ttdeci">void print_source()</div><div class="ttdoc">Print the kernel source.</div><div class="ttdef"><b>Definition</b> jit.hpp:254</div></div>
+<div class="ttc" id="aclassjit_1_1context_html_afa510b5044594a5c3f169d4dfd655a3c"><div class="ttname"><a href="classjit_1_1context.html#afa510b5044594a5c3f169d4dfd655a3c">jit::context::copy_to_host</a></div><div class="ttdeci">void copy_to_host(graph::shared_leaf&lt; T, SAFE_MATH &gt; &amp;node, T *destination)</div><div class="ttdoc">Copy contexts of buffer to host.</div><div class="ttdef"><b>Definition</b> jit.hpp:384</div></div>
 <div class="ttc" id="acpu__context_8hpp_html"><div class="ttname"><a href="cpu__context_8hpp.html">cpu_context.hpp</a></div><div class="ttdoc">Cpu context for cpus.</div></div>
 <div class="ttc" id="acuda__context_8hpp_html"><div class="ttname"><a href="cuda__context_8hpp.html">cuda_context.hpp</a></div><div class="ttdoc">Cuda context for metal based gpus.</div></div>
 <div class="ttc" id="ametal__context_8hpp_html"><div class="ttname"><a href="metal__context_8hpp.html">metal_context.hpp</a></div><div class="ttdoc">Metal context for metal based gpus.</div></div>
-<div class="ttc" id="anamespacegraph_html_a7d69a698d998bfb31f5611ad55e44092"><div class="ttname"><a href="namespacegraph.html#a7d69a698d998bfb31f5611ad55e44092">graph::shared_random_state</a></div><div class="ttdeci">std::shared_ptr&lt; random_state_node&lt; T, SAFE_MATH &gt; &gt; shared_random_state</div><div class="ttdoc">Convenience type alias for shared sqrt nodes.</div><div class="ttdef"><b>Definition</b> random.hpp:270</div></div>
-<div class="ttc" id="anamespacegraph_html_a7f4f9ab246d37d23e0259709e626bc36"><div class="ttname"><a href="namespacegraph.html#a7f4f9ab246d37d23e0259709e626bc36">graph::input_nodes</a></div><div class="ttdeci">std::vector&lt; shared_variable&lt; T, SAFE_MATH &gt; &gt; input_nodes</div><div class="ttdoc">Convenience type alias for a vector of inputs.</div><div class="ttdef"><b>Definition</b> node.hpp:1711</div></div>
-<div class="ttc" id="anamespacegraph_html_ac8853b055dcbbfd35dff9b4584d5ef36"><div class="ttname"><a href="namespacegraph.html#ac8853b055dcbbfd35dff9b4584d5ef36">graph::shared_leaf</a></div><div class="ttdeci">std::shared_ptr&lt; leaf_node&lt; T, SAFE_MATH &gt; &gt; shared_leaf</div><div class="ttdoc">Convenience type alias for shared leaf nodes.</div><div class="ttdef"><b>Definition</b> node.hpp:676</div></div>
-<div class="ttc" id="anamespacegraph_html_acd48d32bd7925b056e932559379d9b55"><div class="ttname"><a href="namespacegraph.html#acd48d32bd7925b056e932559379d9b55">graph::map_nodes</a></div><div class="ttdeci">std::vector&lt; std::pair&lt; shared_leaf&lt; T, SAFE_MATH &gt;, shared_variable&lt; T, SAFE_MATH &gt; &gt; &gt; map_nodes</div><div class="ttdoc">Convenience type alias for mapping end codes back to inputs.</div><div class="ttdef"><b>Definition</b> node.hpp:1715</div></div>
-<div class="ttc" id="anamespacegraph_html_aec6ce7b08d650c6b236b68bd68a2ce0a"><div class="ttname"><a href="namespacegraph.html#aec6ce7b08d650c6b236b68bd68a2ce0a">graph::output_nodes</a></div><div class="ttdeci">std::vector&lt; shared_leaf&lt; T, SAFE_MATH &gt; &gt; output_nodes</div><div class="ttdoc">Convenience type alias for a vector of output nodes.</div><div class="ttdef"><b>Definition</b> node.hpp:691</div></div>
+<div class="ttc" id="anamespacegraph_html_a67ff2fd840e5977ee5bed2212a2f98b4"><div class="ttname"><a href="namespacegraph.html#a67ff2fd840e5977ee5bed2212a2f98b4">graph::atomic_accumulate_1D_cast</a></div><div class="ttdeci">shared_atomic_accumulate_1D&lt; T, SAFE_MATH &gt; atomic_accumulate_1D_cast(shared_leaf&lt; T, SAFE_MATH &gt; x)</div><div class="ttdoc">Cast to a atomic accumulate 1D node.</div><div class="ttdef"><b>Definition</b> piecewise.hpp:2426</div></div>
+<div class="ttc" id="anamespacegraph_html_a7d69a698d998bfb31f5611ad55e44092"><div class="ttname"><a href="namespacegraph.html#a7d69a698d998bfb31f5611ad55e44092">graph::shared_random_state</a></div><div class="ttdeci">std::shared_ptr&lt; random_state_node&lt; T, SAFE_MATH &gt; &gt; shared_random_state</div><div class="ttdoc">Convenience type alias for shared sqrt nodes.</div><div class="ttdef"><b>Definition</b> random.hpp:269</div></div>
+<div class="ttc" id="anamespacegraph_html_a7f4f9ab246d37d23e0259709e626bc36"><div class="ttname"><a href="namespacegraph.html#a7f4f9ab246d37d23e0259709e626bc36">graph::input_nodes</a></div><div class="ttdeci">std::vector&lt; shared_variable&lt; T, SAFE_MATH &gt; &gt; input_nodes</div><div class="ttdoc">Convenience type alias for a vector of inputs.</div><div class="ttdef"><b>Definition</b> node.hpp:2149</div></div>
+<div class="ttc" id="anamespacegraph_html_ab302ff23558d742b8b7cb899447f2ce1"><div class="ttname"><a href="namespacegraph.html#ab302ff23558d742b8b7cb899447f2ce1">graph::copy_nodes</a></div><div class="ttdeci">std::vector&lt; std::pair&lt; shared_variable&lt; T, SAFE_MATH &gt;, shared_variable&lt; T, SAFE_MATH &gt; &gt; &gt; copy_nodes</div><div class="ttdoc">Convenience type alias for copying buffers.</div><div class="ttdef"><b>Definition</b> node.hpp:2157</div></div>
+<div class="ttc" id="anamespacegraph_html_ac8853b055dcbbfd35dff9b4584d5ef36"><div class="ttname"><a href="namespacegraph.html#ac8853b055dcbbfd35dff9b4584d5ef36">graph::shared_leaf</a></div><div class="ttdeci">std::shared_ptr&lt; leaf_node&lt; T, SAFE_MATH &gt; &gt; shared_leaf</div><div class="ttdoc">Convenience type alias for shared leaf nodes.</div><div class="ttdef"><b>Definition</b> node.hpp:691</div></div>
+<div class="ttc" id="anamespacegraph_html_acd48d32bd7925b056e932559379d9b55"><div class="ttname"><a href="namespacegraph.html#acd48d32bd7925b056e932559379d9b55">graph::map_nodes</a></div><div class="ttdeci">std::vector&lt; std::pair&lt; shared_leaf&lt; T, SAFE_MATH &gt;, shared_variable&lt; T, SAFE_MATH &gt; &gt; &gt; map_nodes</div><div class="ttdoc">Convenience type alias for mapping end codes back to inputs.</div><div class="ttdef"><b>Definition</b> node.hpp:2153</div></div>
+<div class="ttc" id="anamespacegraph_html_aec6ce7b08d650c6b236b68bd68a2ce0a"><div class="ttname"><a href="namespacegraph.html#aec6ce7b08d650c6b236b68bd68a2ce0a">graph::output_nodes</a></div><div class="ttdeci">std::vector&lt; shared_leaf&lt; T, SAFE_MATH &gt; &gt; output_nodes</div><div class="ttdoc">Convenience type alias for a vector of output nodes.</div><div class="ttdef"><b>Definition</b> node.hpp:706</div></div>
 <div class="ttc" id="anamespacejit_html"><div class="ttname"><a href="namespacejit.html">jit</a></div><div class="ttdoc">Name space for JIT functions.</div><div class="ttdef"><b>Definition</b> jit.hpp:41</div></div>
-<div class="ttc" id="anamespacejit_html_a040839202e492715169f0e33e63c1e2a"><div class="ttname"><a href="namespacejit.html#a040839202e492715169f0e33e63c1e2a">jit::texture1d_list</a></div><div class="ttdeci">std::map&lt; void *, size_t &gt; texture1d_list</div><div class="ttdoc">Type alias for indexing 1D textures.</div><div class="ttdef"><b>Definition</b> register.hpp:263</div></div>
-<div class="ttc" id="anamespacejit_html_a7e7f6b3f955215cb43f9fde4d066ea2a"><div class="ttname"><a href="namespacejit.html#a7e7f6b3f955215cb43f9fde4d066ea2a">jit::texture2d_list</a></div><div class="ttdeci">std::map&lt; void *, std::array&lt; size_t, 2 &gt; &gt; texture2d_list</div><div class="ttdoc">Type alias for indexing 2D textures.</div><div class="ttdef"><b>Definition</b> register.hpp:265</div></div>
-<div class="ttc" id="anamespacejit_html_a8f16308f3c321ac415daf451d0157a91"><div class="ttname"><a href="namespacejit.html#a8f16308f3c321ac415daf451d0157a91">jit::register_usage</a></div><div class="ttdeci">std::map&lt; void *, size_t &gt; register_usage</div><div class="ttdoc">Type alias for counting register usage.</div><div class="ttdef"><b>Definition</b> register.hpp:259</div></div>
-<div class="ttc" id="anamespacejit_html_a9822ffd072bb1abcde9176028aa24a5e"><div class="ttname"><a href="namespacejit.html#a9822ffd072bb1abcde9176028aa24a5e">jit::register_map</a></div><div class="ttdeci">std::map&lt; void *, std::string &gt; register_map</div><div class="ttdoc">Type alias for mapping node pointers to register names.</div><div class="ttdef"><b>Definition</b> register.hpp:257</div></div>
-<div class="ttc" id="anamespacejit_html_ae80a1549652734bee27e671735538106"><div class="ttname"><a href="namespacejit.html#ae80a1549652734bee27e671735538106">jit::use_cuda</a></div><div class="ttdeci">constexpr bool use_cuda()</div><div class="ttdoc">Test to use Cuda.</div><div class="ttdef"><b>Definition</b> register.hpp:67</div></div>
-<div class="ttc" id="anamespacejit_html_aed5672337b45a8b11f1351456d2284b8"><div class="ttname"><a href="namespacejit.html#aed5672337b45a8b11f1351456d2284b8">jit::visiter_map</a></div><div class="ttdeci">std::set&lt; void * &gt; visiter_map</div><div class="ttdoc">Type alias for listing visited nodes.</div><div class="ttdef"><b>Definition</b> register.hpp:261</div></div>
+<div class="ttc" id="anamespacejit_html_a10fd02967defc21d99a010c9025e1d78"><div class="ttname"><a href="namespacejit.html#a10fd02967defc21d99a010c9025e1d78">jit::visiter_map</a></div><div class="ttdeci">std::unordered_set&lt; void * &gt; visiter_map</div><div class="ttdoc">Type alias for listing visited nodes.</div><div class="ttdef"><b>Definition</b> register.hpp:263</div></div>
+<div class="ttc" id="anamespacejit_html_a6b1e88895ada14e42dfad16181ceb266"><div class="ttname"><a href="namespacejit.html#a6b1e88895ada14e42dfad16181ceb266">jit::register_usage</a></div><div class="ttdeci">std::unordered_map&lt; void *, size_t &gt; register_usage</div><div class="ttdoc">Type alias for counting register usage.</div><div class="ttdef"><b>Definition</b> register.hpp:261</div></div>
+<div class="ttc" id="anamespacejit_html_a7f92c8c5094ad3c8c58438f2e73c8e81"><div class="ttname"><a href="namespacejit.html#a7f92c8c5094ad3c8c58438f2e73c8e81">jit::preamble_map</a></div><div class="ttdeci">std::unordered_set&lt; std::string &gt; preamble_map</div><div class="ttdoc">Type alias for preamble defined functions.</div><div class="ttdef"><b>Definition</b> register.hpp:269</div></div>
+<div class="ttc" id="anamespacejit_html_aaaa81016eb9cb161306980a63db3e720"><div class="ttname"><a href="namespacejit.html#aaaa81016eb9cb161306980a63db3e720">jit::register_map</a></div><div class="ttdeci">std::unordered_map&lt; void *, std::string &gt; register_map</div><div class="ttdoc">Type alias for mapping node pointers to register names.</div><div class="ttdef"><b>Definition</b> register.hpp:259</div></div>
+<div class="ttc" id="anamespacejit_html_ae80a1549652734bee27e671735538106"><div class="ttname"><a href="namespacejit.html#ae80a1549652734bee27e671735538106">jit::use_cuda</a></div><div class="ttdeci">constexpr bool use_cuda()</div><div class="ttdoc">Test to use Cuda.</div><div class="ttdef"><b>Definition</b> register.hpp:68</div></div>
+<div class="ttc" id="anamespacejit_html_afc6a80494e39f0058a6121ba0949b9eb"><div class="ttname"><a href="namespacejit.html#afc6a80494e39f0058a6121ba0949b9eb">jit::texture2d_list</a></div><div class="ttdeci">std::unordered_map&lt; void *, std::array&lt; size_t, 2 &gt; &gt; texture2d_list</div><div class="ttdoc">Type alias for indexing 2D textures.</div><div class="ttdef"><b>Definition</b> register.hpp:267</div></div>
+<div class="ttc" id="anamespacejit_html_afd70e42a171bf30ee3f18dbd440cef51"><div class="ttname"><a href="namespacejit.html#afd70e42a171bf30ee3f18dbd440cef51">jit::texture1d_list</a></div><div class="ttdeci">std::unordered_map&lt; void *, size_t &gt; texture1d_list</div><div class="ttdoc">Type alias for indexing 1D textures.</div><div class="ttdef"><b>Definition</b> register.hpp:265</div></div>
+<div class="ttc" id="anamespacejit_html_aff1d2e04194bc0f2161447446498e457"><div class="ttname"><a href="namespacejit.html#aff1d2e04194bc0f2161447446498e457">jit::argument_set</a></div><div class="ttdeci">std::unordered_set&lt; void * &gt; argument_set</div><div class="ttdoc">Type for tacking thread shared memory.</div><div class="ttdef"><b>Definition</b> register.hpp:271</div></div>
 </div><!-- fragment --></div><!-- contents -->
 </div><!-- doc-content -->
 <!-- start footer part -->

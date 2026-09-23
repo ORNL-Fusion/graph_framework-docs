@@ -116,14 +116,15 @@ Inheritance diagram for graph::straight_node&lt; T, SAFE_MATH &gt;:</div>
   <map id="graph::straight_5Fnode_3C_20T_2C_20SAFE_5FMATH_20_3E_map" name="graph::straight_5Fnode_3C_20T_2C_20SAFE_5FMATH_20_3E_map">
 <area href="classgraph_1_1leaf__node.html" title="Class representing a node leaf." alt="graph::leaf_node&lt; T, SAFE_MATH &gt;" shape="rect" coords="0,56,323,80"/>
 <area href="classgraph_1_1cosine__node.html" title="Class representing a cosine_node leaf." alt="graph::cosine_node&lt; T, SAFE_MATH &gt;" shape="rect" coords="333,168,656,192"/>
-<area href="classgraph_1_1erfi__node.html" title="An imaginary error function node." alt="graph::erfi_node&lt; T, SAFE_MATH &gt;" shape="rect" coords="333,224,656,248"/>
-<area href="classgraph_1_1exp__node.html" title="A exp node." alt="graph::exp_node&lt; T, SAFE_MATH &gt;" shape="rect" coords="333,280,656,304"/>
-<area href="classgraph_1_1log__node.html" title="A log node." alt="graph::log_node&lt; T, SAFE_MATH &gt;" shape="rect" coords="333,336,656,360"/>
-<area href="classgraph_1_1piecewise__1D__node.html" title="Class representing a 1D piecewise constant." alt="graph::piecewise_1D_node&lt; T, SAFE_MATH &gt;" shape="rect" coords="333,392,656,416"/>
-<area href="classgraph_1_1pseudo__variable__node.html" title="Class representing a subexpression that acts like a variable." alt="graph::pseudo_variable_node&lt; T, SAFE_MATH &gt;" shape="rect" coords="333,448,656,472"/>
-<area href="classgraph_1_1random__node.html" title="Class representing a random_node leaf." alt="graph::random_node&lt; T, SAFE_MATH &gt;" shape="rect" coords="333,504,656,528"/>
-<area href="classgraph_1_1sine__node.html" title="Class representing a sine_node leaf." alt="graph::sine_node&lt; T, SAFE_MATH &gt;" shape="rect" coords="333,560,656,584"/>
-<area href="classgraph_1_1sqrt__node.html" title="A sqrt node." alt="graph::sqrt_node&lt; T, SAFE_MATH &gt;" shape="rect" coords="333,616,656,640"/>
+<area href="classgraph_1_1erf__node.html" title="An error function node." alt="graph::erf_node&lt; T, SAFE_MATH &gt;" shape="rect" coords="333,224,656,248"/>
+<area href="classgraph_1_1erfi__node.html" title="An imaginary error function node." alt="graph::erfi_node&lt; T, SAFE_MATH &gt;" shape="rect" coords="333,280,656,304"/>
+<area href="classgraph_1_1exp__node.html" title="A exp node." alt="graph::exp_node&lt; T, SAFE_MATH &gt;" shape="rect" coords="333,336,656,360"/>
+<area href="classgraph_1_1log__node.html" title="A log node." alt="graph::log_node&lt; T, SAFE_MATH &gt;" shape="rect" coords="333,392,656,416"/>
+<area href="classgraph_1_1piecewise__1D__node.html" title="Class representing a 1D piecewise constant." alt="graph::piecewise_1D_node&lt; T, SAFE_MATH &gt;" shape="rect" coords="333,448,656,472"/>
+<area href="classgraph_1_1pseudo__variable__node.html" title="Class representing a subexpression that acts like a variable." alt="graph::pseudo_variable_node&lt; T, SAFE_MATH &gt;" shape="rect" coords="333,504,656,528"/>
+<area href="classgraph_1_1random__node.html" title="Class representing a random_node leaf." alt="graph::random_node&lt; T, SAFE_MATH &gt;" shape="rect" coords="333,560,656,584"/>
+<area href="classgraph_1_1sine__node.html" title="Class representing a sine_node leaf." alt="graph::sine_node&lt; T, SAFE_MATH &gt;" shape="rect" coords="333,616,656,640"/>
+<area href="classgraph_1_1sqrt__node.html" title="A sqrt node." alt="graph::sqrt_node&lt; T, SAFE_MATH &gt;" shape="rect" coords="333,672,656,696"/>
   </map>
 </div></div>
 <table class="memberdecls">
@@ -135,16 +136,15 @@ Public Member Functions</h2></td></tr>
 <tr class="memitem:a26a730eb860c594c01d9eb2e2c011de2" id="r_a26a730eb860c594c01d9eb2e2c011de2"><td class="memItemLeft" align="right" valign="top"><a class="el" href="namespacegraph.html#a2b36a8e136f4187b4de7e2e31a3e4168">virtual</a> <a class="el" href="classbackend_1_1buffer.html">backend::buffer</a>&lt; T &gt;&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="classgraph_1_1straight__node.html#a26a730eb860c594c01d9eb2e2c011de2">evaluate</a> ()</td></tr>
 <tr class="memdesc:a26a730eb860c594c01d9eb2e2c011de2"><td class="mdescLeft">&#160;</td><td class="mdescRight">Evaluate method.  <br /></td></tr>
 <tr class="separator:a26a730eb860c594c01d9eb2e2c011de2"><td class="memSeparator" colspan="2">&#160;</td></tr>
-<tr class="memitem:a9ed882183f431cd5133fa9cc7972d46c" id="r_a9ed882183f431cd5133fa9cc7972d46c"><td class="memItemLeft" align="right" valign="top"><a class="el" href="namespacegraph.html#a2b36a8e136f4187b4de7e2e31a3e4168">virtual</a> <a class="el" href="namespacegraph.html#a2b36a8e136f4187b4de7e2e31a3e4168">void</a>&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="classgraph_1_1straight__node.html#a9ed882183f431cd5133fa9cc7972d46c">compile_preamble</a> (std::ostringstream &amp;stream, <a class="el" href="namespacejit.html#a9822ffd072bb1abcde9176028aa24a5e">jit::register_map</a> &amp;registers, <a class="el" href="namespacejit.html#aed5672337b45a8b11f1351456d2284b8">jit::visiter_map</a> &amp;<a class="el" href="namespacegraph.html#a2b36a8e136f4187b4de7e2e31a3e4168">visited</a>, <a class="el" href="namespacejit.html#a8f16308f3c321ac415daf451d0157a91">jit::register_usage</a> &amp;<a class="el" href="namespacegraph.html#a2b36a8e136f4187b4de7e2e31a3e4168">usage</a>, <a class="el" href="namespacejit.html#a040839202e492715169f0e33e63c1e2a">jit::texture1d_list</a> &amp;<a class="el" href="namespacegraph.html#a2b36a8e136f4187b4de7e2e31a3e4168">textures1d</a>, <a class="el" href="namespacejit.html#a7e7f6b3f955215cb43f9fde4d066ea2a">jit::texture2d_list</a> &amp;<a class="el" href="namespacegraph.html#a2b36a8e136f4187b4de7e2e31a3e4168">textures2d</a>, <a class="el" href="namespacegraph.html#a2b36a8e136f4187b4de7e2e31a3e4168">int</a> &amp;<a class="el" href="namespacegraph.html#a2b36a8e136f4187b4de7e2e31a3e4168">avail_const_mem</a>)</td></tr>
-<tr class="memdesc:a9ed882183f431cd5133fa9cc7972d46c"><td class="mdescLeft">&#160;</td><td class="mdescRight">Compile preamble.  <br /></td></tr>
-<tr class="separator:a9ed882183f431cd5133fa9cc7972d46c"><td class="memSeparator" colspan="2">&#160;</td></tr>
-<tr class="memitem:aec51bb9cc6d95226fdfaeea56e7ea773" id="r_aec51bb9cc6d95226fdfaeea56e7ea773"><td class="memItemLeft" align="right" valign="top"><a class="el" href="namespacegraph.html#a2b36a8e136f4187b4de7e2e31a3e4168">virtual</a> <a class="el" href="namespacegraph.html#ac8853b055dcbbfd35dff9b4584d5ef36">shared_leaf</a>&lt; T, <a class="el" href="namespacegraph.html#a2b36a8e136f4187b4de7e2e31a3e4168">SAFE_MATH</a> &gt;&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="classgraph_1_1straight__node.html#aec51bb9cc6d95226fdfaeea56e7ea773">compile</a> (std::ostringstream &amp;stream, <a class="el" href="namespacejit.html#a9822ffd072bb1abcde9176028aa24a5e">jit::register_map</a> &amp;registers, <a class="el" href="namespacejit.html#a9822ffd072bb1abcde9176028aa24a5e">jit::register_map</a> &amp;<a class="el" href="namespacegraph.html#a2b36a8e136f4187b4de7e2e31a3e4168">indices</a>, <a class="el" href="namespacegraph.html#a2b36a8e136f4187b4de7e2e31a3e4168">const</a> <a class="el" href="namespacejit.html#a8f16308f3c321ac415daf451d0157a91">jit::register_usage</a> &amp;<a class="el" href="namespacegraph.html#a2b36a8e136f4187b4de7e2e31a3e4168">usage</a>)</td></tr>
-<tr class="memdesc:aec51bb9cc6d95226fdfaeea56e7ea773"><td class="mdescLeft">&#160;</td><td class="mdescRight">Compile the node.  <br /></td></tr>
-<tr class="separator:aec51bb9cc6d95226fdfaeea56e7ea773"><td class="memSeparator" colspan="2">&#160;</td></tr>
-<tr class="memitem:a672bbddf33781689c356abcfb9be972a" id="r_a672bbddf33781689c356abcfb9be972a"><td class="memItemLeft" align="right" valign="top"><a id="a672bbddf33781689c356abcfb9be972a" name="a672bbddf33781689c356abcfb9be972a"></a>
-<a class="el" href="namespacegraph.html#ac8853b055dcbbfd35dff9b4584d5ef36">shared_leaf</a>&lt; T, <a class="el" href="namespacegraph.html#a2b36a8e136f4187b4de7e2e31a3e4168">SAFE_MATH</a> &gt;&#160;</td><td class="memItemRight" valign="bottom"><b>get_arg</b> ()</td></tr>
-<tr class="memdesc:a672bbddf33781689c356abcfb9be972a"><td class="mdescLeft">&#160;</td><td class="mdescRight">Get the argument. <br /></td></tr>
-<tr class="separator:a672bbddf33781689c356abcfb9be972a"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:a3644ba151ef62e6607844faf77d75ba6" id="r_a3644ba151ef62e6607844faf77d75ba6"><td class="memItemLeft" align="right" valign="top"><a class="el" href="namespacegraph.html#a2b36a8e136f4187b4de7e2e31a3e4168">virtual</a> <a class="el" href="namespacegraph.html#a2b36a8e136f4187b4de7e2e31a3e4168">void</a>&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="classgraph_1_1straight__node.html#a3644ba151ef62e6607844faf77d75ba6">compile_preamble</a> (std::ostringstream &amp;stream, <a class="el" href="namespacejit.html#aaaa81016eb9cb161306980a63db3e720">jit::register_map</a> &amp;registers, <a class="el" href="namespacejit.html#a10fd02967defc21d99a010c9025e1d78">jit::visiter_map</a> &amp;<a class="el" href="namespacegraph.html#a2b36a8e136f4187b4de7e2e31a3e4168">visited</a>, <a class="el" href="namespacejit.html#a6b1e88895ada14e42dfad16181ceb266">jit::register_usage</a> &amp;<a class="el" href="namespacegraph.html#a2b36a8e136f4187b4de7e2e31a3e4168">usage</a>, <a class="el" href="namespacejit.html#afd70e42a171bf30ee3f18dbd440cef51">jit::texture1d_list</a> &amp;<a class="el" href="namespacegraph.html#a2b36a8e136f4187b4de7e2e31a3e4168">textures1d</a>, <a class="el" href="namespacejit.html#afc6a80494e39f0058a6121ba0949b9eb">jit::texture2d_list</a> &amp;<a class="el" href="namespacegraph.html#a2b36a8e136f4187b4de7e2e31a3e4168">textures2d</a>, <a class="el" href="namespacejit.html#a7f92c8c5094ad3c8c58438f2e73c8e81">jit::preamble_map</a> &amp;pre_funcs, <a class="el" href="namespacegraph.html#a2b36a8e136f4187b4de7e2e31a3e4168">int</a> &amp;<a class="el" href="namespacegraph.html#a2b36a8e136f4187b4de7e2e31a3e4168">avail_const_mem</a>)</td></tr>
+<tr class="memdesc:a3644ba151ef62e6607844faf77d75ba6"><td class="mdescLeft">&#160;</td><td class="mdescRight">Compile preamble.  <br /></td></tr>
+<tr class="separator:a3644ba151ef62e6607844faf77d75ba6"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:afbcdcb24eb83991e4405f9b7031480f5" id="r_afbcdcb24eb83991e4405f9b7031480f5"><td class="memItemLeft" align="right" valign="top"><a class="el" href="namespacegraph.html#a2b36a8e136f4187b4de7e2e31a3e4168">virtual</a> <a class="el" href="namespacegraph.html#ac8853b055dcbbfd35dff9b4584d5ef36">shared_leaf</a>&lt; T, <a class="el" href="namespacegraph.html#a2b36a8e136f4187b4de7e2e31a3e4168">SAFE_MATH</a> &gt;&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="classgraph_1_1straight__node.html#afbcdcb24eb83991e4405f9b7031480f5">compile</a> (std::ostringstream &amp;stream, <a class="el" href="namespacejit.html#aaaa81016eb9cb161306980a63db3e720">jit::register_map</a> &amp;registers, <a class="el" href="namespacegraph.html#a2b36a8e136f4187b4de7e2e31a3e4168">const</a> <a class="el" href="namespacejit.html#aaaa81016eb9cb161306980a63db3e720">jit::register_map</a> &amp;<a class="el" href="namespacegraph.html#a2b36a8e136f4187b4de7e2e31a3e4168">thread_mem</a>, <a class="el" href="namespacegraph.html#a2b36a8e136f4187b4de7e2e31a3e4168">const</a> <a class="el" href="namespacejit.html#a6b1e88895ada14e42dfad16181ceb266">jit::register_usage</a> &amp;<a class="el" href="namespacegraph.html#a2b36a8e136f4187b4de7e2e31a3e4168">usage</a>)</td></tr>
+<tr class="memdesc:afbcdcb24eb83991e4405f9b7031480f5"><td class="mdescLeft">&#160;</td><td class="mdescRight">Compile the node.  <br /></td></tr>
+<tr class="separator:afbcdcb24eb83991e4405f9b7031480f5"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:a2fa8fb40ad1ea73a6e4992dfc587fa5b" id="r_a2fa8fb40ad1ea73a6e4992dfc587fa5b"><td class="memItemLeft" align="right" valign="top"><a class="el" href="namespacegraph.html#ac8853b055dcbbfd35dff9b4584d5ef36">shared_leaf</a>&lt; T, <a class="el" href="namespacegraph.html#a2b36a8e136f4187b4de7e2e31a3e4168">SAFE_MATH</a> &gt;&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="classgraph_1_1straight__node.html#a2fa8fb40ad1ea73a6e4992dfc587fa5b">get_arg</a> () <a class="el" href="namespacegraph.html#a2b36a8e136f4187b4de7e2e31a3e4168">const</a></td></tr>
+<tr class="memdesc:a2fa8fb40ad1ea73a6e4992dfc587fa5b"><td class="mdescLeft">&#160;</td><td class="mdescRight">Get the argument.  <br /></td></tr>
+<tr class="separator:a2fa8fb40ad1ea73a6e4992dfc587fa5b"><td class="memSeparator" colspan="2">&#160;</td></tr>
 <tr class="memitem:ace25ede9a8d9817dfe23de929e934113" id="r_ace25ede9a8d9817dfe23de929e934113"><td class="memItemLeft" align="right" valign="top"><a class="el" href="namespacegraph.html#a2b36a8e136f4187b4de7e2e31a3e4168">virtual</a> <a class="el" href="namespacegraph.html#a2b36a8e136f4187b4de7e2e31a3e4168">bool</a>&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="classgraph_1_1straight__node.html#ace25ede9a8d9817dfe23de929e934113">is_all_variables</a> () <a class="el" href="namespacegraph.html#a2b36a8e136f4187b4de7e2e31a3e4168">const</a></td></tr>
 <tr class="memdesc:ace25ede9a8d9817dfe23de929e934113"><td class="mdescLeft">&#160;</td><td class="mdescRight">Test if node acts like a variable.  <br /></td></tr>
 <tr class="separator:ace25ede9a8d9817dfe23de929e934113"><td class="memSeparator" colspan="2">&#160;</td></tr>
@@ -162,9 +162,9 @@ Public Member Functions</h2></td></tr>
 <tr class="memitem:a7f71e922df4426c403a7c5df9b2fb47c inherit pub_methods_classgraph_1_1leaf__node" id="r_a7f71e922df4426c403a7c5df9b2fb47c"><td class="memItemLeft" align="right" valign="top"><a class="el" href="namespacegraph.html#a2b36a8e136f4187b4de7e2e31a3e4168">virtual</a> std::shared_ptr&lt; <a class="el" href="classgraph_1_1leaf__node.html">leaf_node</a>&lt; T, <a class="el" href="namespacegraph.html#a2b36a8e136f4187b4de7e2e31a3e4168">SAFE_MATH</a> &gt; &gt;&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="classgraph_1_1leaf__node.html#a7f71e922df4426c403a7c5df9b2fb47c">reduce</a> ()</td></tr>
 <tr class="memdesc:a7f71e922df4426c403a7c5df9b2fb47c inherit pub_methods_classgraph_1_1leaf__node"><td class="mdescLeft">&#160;</td><td class="mdescRight">Reduction method.  <br /></td></tr>
 <tr class="separator:a7f71e922df4426c403a7c5df9b2fb47c inherit pub_methods_classgraph_1_1leaf__node"><td class="memSeparator" colspan="2">&#160;</td></tr>
-<tr class="memitem:a4785ca42cddfcfd126bba0bc78a62cab inherit pub_methods_classgraph_1_1leaf__node" id="r_a4785ca42cddfcfd126bba0bc78a62cab"><td class="memItemLeft" align="right" valign="top"><a class="el" href="namespacegraph.html#a2b36a8e136f4187b4de7e2e31a3e4168">virtual</a> std::shared_ptr&lt; <a class="el" href="classgraph_1_1leaf__node.html">leaf_node</a>&lt; T, <a class="el" href="namespacegraph.html#a2b36a8e136f4187b4de7e2e31a3e4168">SAFE_MATH</a> &gt; &gt;&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="classgraph_1_1leaf__node.html#a4785ca42cddfcfd126bba0bc78a62cab">df</a> (std::shared_ptr&lt; <a class="el" href="classgraph_1_1leaf__node.html">leaf_node</a>&lt; T, <a class="el" href="namespacegraph.html#a2b36a8e136f4187b4de7e2e31a3e4168">SAFE_MATH</a> &gt; &gt; x)=0</td></tr>
-<tr class="memdesc:a4785ca42cddfcfd126bba0bc78a62cab inherit pub_methods_classgraph_1_1leaf__node"><td class="mdescLeft">&#160;</td><td class="mdescRight">Transform node to derivative.  <br /></td></tr>
-<tr class="separator:a4785ca42cddfcfd126bba0bc78a62cab inherit pub_methods_classgraph_1_1leaf__node"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:a92beac028981a51dbb1a2b2bd5711d6b inherit pub_methods_classgraph_1_1leaf__node" id="r_a92beac028981a51dbb1a2b2bd5711d6b"><td class="memItemLeft" align="right" valign="top"><a class="el" href="namespacegraph.html#a2b36a8e136f4187b4de7e2e31a3e4168">virtual</a> std::shared_ptr&lt; <a class="el" href="classgraph_1_1leaf__node.html">leaf_node</a>&lt; T, <a class="el" href="namespacegraph.html#a2b36a8e136f4187b4de7e2e31a3e4168">SAFE_MATH</a> &gt; &gt;&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="classgraph_1_1leaf__node.html#a92beac028981a51dbb1a2b2bd5711d6b">df</a> (std::shared_ptr&lt; <a class="el" href="classgraph_1_1leaf__node.html">leaf_node</a>&lt; T, <a class="el" href="namespacegraph.html#a2b36a8e136f4187b4de7e2e31a3e4168">SAFE_MATH</a> &gt; &gt; x)</td></tr>
+<tr class="memdesc:a92beac028981a51dbb1a2b2bd5711d6b inherit pub_methods_classgraph_1_1leaf__node"><td class="mdescLeft">&#160;</td><td class="mdescRight">Transform node to derivative.  <br /></td></tr>
+<tr class="separator:a92beac028981a51dbb1a2b2bd5711d6b inherit pub_methods_classgraph_1_1leaf__node"><td class="memSeparator" colspan="2">&#160;</td></tr>
 <tr class="memitem:a1c6a48a7d7ecd0ff21c1b6a6ec5ea862 inherit pub_methods_classgraph_1_1leaf__node" id="r_a1c6a48a7d7ecd0ff21c1b6a6ec5ea862"><td class="memItemLeft" align="right" valign="top"><a class="el" href="namespacegraph.html#a2b36a8e136f4187b4de7e2e31a3e4168">virtual</a> <a class="el" href="namespacegraph.html#a2b36a8e136f4187b4de7e2e31a3e4168">bool</a>&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="classgraph_1_1leaf__node.html#a1c6a48a7d7ecd0ff21c1b6a6ec5ea862">is_match</a> (std::shared_ptr&lt; <a class="el" href="classgraph_1_1leaf__node.html">leaf_node</a>&lt; T, <a class="el" href="namespacegraph.html#a2b36a8e136f4187b4de7e2e31a3e4168">SAFE_MATH</a> &gt; &gt; x)</td></tr>
 <tr class="memdesc:a1c6a48a7d7ecd0ff21c1b6a6ec5ea862 inherit pub_methods_classgraph_1_1leaf__node"><td class="mdescLeft">&#160;</td><td class="mdescRight">Query if the nodes match.  <br /></td></tr>
 <tr class="separator:a1c6a48a7d7ecd0ff21c1b6a6ec5ea862 inherit pub_methods_classgraph_1_1leaf__node"><td class="memSeparator" colspan="2">&#160;</td></tr>
@@ -174,7 +174,7 @@ Public Member Functions</h2></td></tr>
 <tr class="memitem:a94806db93134104970bfc730a56d7a2f inherit pub_methods_classgraph_1_1leaf__node" id="r_a94806db93134104970bfc730a56d7a2f"><td class="memItemLeft" align="right" valign="top"><a class="el" href="namespacegraph.html#a2b36a8e136f4187b4de7e2e31a3e4168">virtual</a> <a class="el" href="namespacegraph.html#a2b36a8e136f4187b4de7e2e31a3e4168">void</a>&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="classgraph_1_1leaf__node.html#a94806db93134104970bfc730a56d7a2f">set</a> (<a class="el" href="namespacegraph.html#a2b36a8e136f4187b4de7e2e31a3e4168">const</a> T <a class="el" href="namespacegraph.html#a2b36a8e136f4187b4de7e2e31a3e4168">d</a>)</td></tr>
 <tr class="memdesc:a94806db93134104970bfc730a56d7a2f inherit pub_methods_classgraph_1_1leaf__node"><td class="mdescLeft">&#160;</td><td class="mdescRight">Set the value of variable data.  <br /></td></tr>
 <tr class="separator:a94806db93134104970bfc730a56d7a2f inherit pub_methods_classgraph_1_1leaf__node"><td class="memSeparator" colspan="2">&#160;</td></tr>
-<tr class="memitem:a7cbc0a3a2a7dc6319173644d5438ef89 inherit pub_methods_classgraph_1_1leaf__node" id="r_a7cbc0a3a2a7dc6319173644d5438ef89"><td class="memItemLeft" align="right" valign="top"><a class="el" href="namespacegraph.html#a2b36a8e136f4187b4de7e2e31a3e4168">virtual</a> <a class="el" href="namespacegraph.html#a2b36a8e136f4187b4de7e2e31a3e4168">void</a>&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="classgraph_1_1leaf__node.html#a7cbc0a3a2a7dc6319173644d5438ef89">set</a> (<a class="el" href="namespacegraph.html#a2b36a8e136f4187b4de7e2e31a3e4168">const</a> <a class="el" href="namespacegraph.html#a2b36a8e136f4187b4de7e2e31a3e4168">size_t</a> index, <a class="el" href="namespacegraph.html#a2b36a8e136f4187b4de7e2e31a3e4168">const</a> T <a class="el" href="namespacegraph.html#a2b36a8e136f4187b4de7e2e31a3e4168">d</a>)</td></tr>
+<tr class="memitem:a7cbc0a3a2a7dc6319173644d5438ef89 inherit pub_methods_classgraph_1_1leaf__node" id="r_a7cbc0a3a2a7dc6319173644d5438ef89"><td class="memItemLeft" align="right" valign="top"><a class="el" href="namespacegraph.html#a2b36a8e136f4187b4de7e2e31a3e4168">virtual</a> <a class="el" href="namespacegraph.html#a2b36a8e136f4187b4de7e2e31a3e4168">void</a>&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="classgraph_1_1leaf__node.html#a7cbc0a3a2a7dc6319173644d5438ef89">set</a> (<a class="el" href="namespacegraph.html#a2b36a8e136f4187b4de7e2e31a3e4168">const</a> <a class="el" href="namespacegraph.html#a2b36a8e136f4187b4de7e2e31a3e4168">size_t</a> <a class="el" href="namespacegraph.html#a63045a98da9d5ca4ac70c56b696d5081">index</a>, <a class="el" href="namespacegraph.html#a2b36a8e136f4187b4de7e2e31a3e4168">const</a> T <a class="el" href="namespacegraph.html#a2b36a8e136f4187b4de7e2e31a3e4168">d</a>)</td></tr>
 <tr class="memdesc:a7cbc0a3a2a7dc6319173644d5438ef89 inherit pub_methods_classgraph_1_1leaf__node"><td class="mdescLeft">&#160;</td><td class="mdescRight">Set the value of variable data.  <br /></td></tr>
 <tr class="separator:a7cbc0a3a2a7dc6319173644d5438ef89 inherit pub_methods_classgraph_1_1leaf__node"><td class="memSeparator" colspan="2">&#160;</td></tr>
 <tr class="memitem:a1017817ac66b94c463715b7a40f2630d inherit pub_methods_classgraph_1_1leaf__node" id="r_a1017817ac66b94c463715b7a40f2630d"><td class="memItemLeft" align="right" valign="top"><a class="el" href="namespacegraph.html#a2b36a8e136f4187b4de7e2e31a3e4168">virtual</a> <a class="el" href="namespacegraph.html#a2b36a8e136f4187b4de7e2e31a3e4168">void</a>&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="classgraph_1_1leaf__node.html#a1017817ac66b94c463715b7a40f2630d">set</a> (<a class="el" href="namespacegraph.html#a2b36a8e136f4187b4de7e2e31a3e4168">const</a> std::vector&lt; T &gt; &amp;<a class="el" href="namespacegraph.html#a2b36a8e136f4187b4de7e2e31a3e4168">d</a>)</td></tr>
@@ -183,10 +183,10 @@ Public Member Functions</h2></td></tr>
 <tr class="memitem:a4ee90b25279f9ca84c7e21bd820b479a inherit pub_methods_classgraph_1_1leaf__node" id="r_a4ee90b25279f9ca84c7e21bd820b479a"><td class="memItemLeft" align="right" valign="top"><a class="el" href="namespacegraph.html#a2b36a8e136f4187b4de7e2e31a3e4168">virtual</a> <a class="el" href="namespacegraph.html#a2b36a8e136f4187b4de7e2e31a3e4168">void</a>&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="classgraph_1_1leaf__node.html#a4ee90b25279f9ca84c7e21bd820b479a">set</a> (<a class="el" href="namespacegraph.html#a2b36a8e136f4187b4de7e2e31a3e4168">const</a> <a class="el" href="classbackend_1_1buffer.html">backend::buffer</a>&lt; T &gt; &amp;<a class="el" href="namespacegraph.html#a2b36a8e136f4187b4de7e2e31a3e4168">d</a>)</td></tr>
 <tr class="memdesc:a4ee90b25279f9ca84c7e21bd820b479a inherit pub_methods_classgraph_1_1leaf__node"><td class="mdescLeft">&#160;</td><td class="mdescRight">Set the value of variable data.  <br /></td></tr>
 <tr class="separator:a4ee90b25279f9ca84c7e21bd820b479a inherit pub_methods_classgraph_1_1leaf__node"><td class="memSeparator" colspan="2">&#160;</td></tr>
-<tr class="memitem:a352c9f2f999474709decec8acd8f79d0 inherit pub_methods_classgraph_1_1leaf__node" id="r_a352c9f2f999474709decec8acd8f79d0"><td class="memItemLeft" align="right" valign="top"><a class="el" href="namespacegraph.html#a2b36a8e136f4187b4de7e2e31a3e4168">virtual</a> <a class="el" href="namespacegraph.html#a2b36a8e136f4187b4de7e2e31a3e4168">void</a>&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="classgraph_1_1leaf__node.html#a352c9f2f999474709decec8acd8f79d0">to_latex</a> () <a class="el" href="namespacegraph.html#a2b36a8e136f4187b4de7e2e31a3e4168">const</a> =0</td></tr>
-<tr class="memdesc:a352c9f2f999474709decec8acd8f79d0 inherit pub_methods_classgraph_1_1leaf__node"><td class="mdescLeft">&#160;</td><td class="mdescRight">Convert the node to latex.  <br /></td></tr>
-<tr class="separator:a352c9f2f999474709decec8acd8f79d0 inherit pub_methods_classgraph_1_1leaf__node"><td class="memSeparator" colspan="2">&#160;</td></tr>
-<tr class="memitem:a7d416f1358601c3f009e430e86900a93 inherit pub_methods_classgraph_1_1leaf__node" id="r_a7d416f1358601c3f009e430e86900a93"><td class="memItemLeft" align="right" valign="top"><a class="el" href="namespacegraph.html#a2b36a8e136f4187b4de7e2e31a3e4168">virtual</a> std::shared_ptr&lt; <a class="el" href="classgraph_1_1leaf__node.html">leaf_node</a>&lt; T, <a class="el" href="namespacegraph.html#a2b36a8e136f4187b4de7e2e31a3e4168">SAFE_MATH</a> &gt; &gt;&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="classgraph_1_1leaf__node.html#a7d416f1358601c3f009e430e86900a93">to_vizgraph</a> (std::stringstream &amp;stream, <a class="el" href="namespacejit.html#a9822ffd072bb1abcde9176028aa24a5e">jit::register_map</a> &amp;registers)=0</td></tr>
+<tr class="memitem:a48ba6915424ecb7d97df3b644a24ee1c inherit pub_methods_classgraph_1_1leaf__node" id="r_a48ba6915424ecb7d97df3b644a24ee1c"><td class="memItemLeft" align="right" valign="top"><a class="el" href="namespacegraph.html#a2b36a8e136f4187b4de7e2e31a3e4168">virtual</a> <a class="el" href="namespacegraph.html#a2b36a8e136f4187b4de7e2e31a3e4168">void</a>&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="classgraph_1_1leaf__node.html#a48ba6915424ecb7d97df3b644a24ee1c">to_latex</a> () <a class="el" href="namespacegraph.html#a2b36a8e136f4187b4de7e2e31a3e4168">const</a></td></tr>
+<tr class="memdesc:a48ba6915424ecb7d97df3b644a24ee1c inherit pub_methods_classgraph_1_1leaf__node"><td class="mdescLeft">&#160;</td><td class="mdescRight">Convert the node to latex.  <br /></td></tr>
+<tr class="separator:a48ba6915424ecb7d97df3b644a24ee1c inherit pub_methods_classgraph_1_1leaf__node"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:a7d416f1358601c3f009e430e86900a93 inherit pub_methods_classgraph_1_1leaf__node" id="r_a7d416f1358601c3f009e430e86900a93"><td class="memItemLeft" align="right" valign="top"><a class="el" href="namespacegraph.html#a2b36a8e136f4187b4de7e2e31a3e4168">virtual</a> std::shared_ptr&lt; <a class="el" href="classgraph_1_1leaf__node.html">leaf_node</a>&lt; T, <a class="el" href="namespacegraph.html#a2b36a8e136f4187b4de7e2e31a3e4168">SAFE_MATH</a> &gt; &gt;&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="classgraph_1_1leaf__node.html#a7d416f1358601c3f009e430e86900a93">to_vizgraph</a> (std::stringstream &amp;stream, <a class="el" href="namespacejit.html#aaaa81016eb9cb161306980a63db3e720">jit::register_map</a> &amp;registers)=0</td></tr>
 <tr class="memdesc:a7d416f1358601c3f009e430e86900a93 inherit pub_methods_classgraph_1_1leaf__node"><td class="mdescLeft">&#160;</td><td class="mdescRight">Convert the node to vizgraph.  <br /></td></tr>
 <tr class="separator:a7d416f1358601c3f009e430e86900a93 inherit pub_methods_classgraph_1_1leaf__node"><td class="memSeparator" colspan="2">&#160;</td></tr>
 <tr class="memitem:a71b4e927ba07c0b4f539f3aba5694ec4 inherit pub_methods_classgraph_1_1leaf__node" id="r_a71b4e927ba07c0b4f539f3aba5694ec4"><td class="memItemLeft" align="right" valign="top"><a class="el" href="namespacegraph.html#a2b36a8e136f4187b4de7e2e31a3e4168">virtual</a> <a class="el" href="namespacegraph.html#a2b36a8e136f4187b4de7e2e31a3e4168">bool</a>&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="classgraph_1_1leaf__node.html#a71b4e927ba07c0b4f539f3aba5694ec4">is_constant</a> () <a class="el" href="namespacegraph.html#a2b36a8e136f4187b4de7e2e31a3e4168">const</a></td></tr>
@@ -216,9 +216,9 @@ Public Member Functions</h2></td></tr>
 <tr class="memitem:a4d86845a2db28f977ca015d4d93b6f39 inherit pub_methods_classgraph_1_1leaf__node" id="r_a4d86845a2db28f977ca015d4d93b6f39"><td class="memItemLeft" align="right" valign="top"><a class="el" href="namespacegraph.html#a2b36a8e136f4187b4de7e2e31a3e4168">virtual</a> std::shared_ptr&lt; <a class="el" href="classgraph_1_1leaf__node.html">leaf_node</a>&lt; T, <a class="el" href="namespacegraph.html#a2b36a8e136f4187b4de7e2e31a3e4168">SAFE_MATH</a> &gt; &gt;&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="classgraph_1_1leaf__node.html#a4d86845a2db28f977ca015d4d93b6f39">remove_pseudo</a> ()</td></tr>
 <tr class="memdesc:a4d86845a2db28f977ca015d4d93b6f39 inherit pub_methods_classgraph_1_1leaf__node"><td class="mdescLeft">&#160;</td><td class="mdescRight">Remove pseudo variable nodes.  <br /></td></tr>
 <tr class="separator:a4d86845a2db28f977ca015d4d93b6f39 inherit pub_methods_classgraph_1_1leaf__node"><td class="memSeparator" colspan="2">&#160;</td></tr>
-<tr class="memitem:a0fcb10084c7623a732020e5807791ca0 inherit pub_methods_classgraph_1_1leaf__node" id="r_a0fcb10084c7623a732020e5807791ca0"><td class="memItemLeft" align="right" valign="top"><a class="el" href="namespacegraph.html#a2b36a8e136f4187b4de7e2e31a3e4168">virtual</a> <a class="el" href="namespacegraph.html#a2b36a8e136f4187b4de7e2e31a3e4168">void</a>&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="classgraph_1_1leaf__node.html#a0fcb10084c7623a732020e5807791ca0">endline</a> (std::ostringstream &amp;stream, <a class="el" href="namespacegraph.html#a2b36a8e136f4187b4de7e2e31a3e4168">const</a> <a class="el" href="namespacejit.html#a8f16308f3c321ac415daf451d0157a91">jit::register_usage</a> &amp;<a class="el" href="namespacegraph.html#a2b36a8e136f4187b4de7e2e31a3e4168">usage</a>) <a class="el" href="namespacegraph.html#a2b36a8e136f4187b4de7e2e31a3e4168">const</a> <a class="el" href="namespacegraph.html#a2b36a8e136f4187b4de7e2e31a3e4168">final</a></td></tr>
-<tr class="memdesc:a0fcb10084c7623a732020e5807791ca0 inherit pub_methods_classgraph_1_1leaf__node"><td class="mdescLeft">&#160;</td><td class="mdescRight">End a line in the kernel source.  <br /></td></tr>
-<tr class="separator:a0fcb10084c7623a732020e5807791ca0 inherit pub_methods_classgraph_1_1leaf__node"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:a6ca416b85368964396170309e32f73be inherit pub_methods_classgraph_1_1leaf__node" id="r_a6ca416b85368964396170309e32f73be"><td class="memItemLeft" align="right" valign="top"><a class="el" href="namespacegraph.html#a2b36a8e136f4187b4de7e2e31a3e4168">virtual</a> <a class="el" href="namespacegraph.html#a2b36a8e136f4187b4de7e2e31a3e4168">void</a>&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="classgraph_1_1leaf__node.html#a6ca416b85368964396170309e32f73be">endline</a> (std::ostringstream &amp;stream, <a class="el" href="namespacegraph.html#a2b36a8e136f4187b4de7e2e31a3e4168">const</a> <a class="el" href="namespacejit.html#a6b1e88895ada14e42dfad16181ceb266">jit::register_usage</a> &amp;<a class="el" href="namespacegraph.html#a2b36a8e136f4187b4de7e2e31a3e4168">usage</a>, <a class="el" href="namespacegraph.html#a2b36a8e136f4187b4de7e2e31a3e4168">const</a> <a class="el" href="namespacegraph.html#a2b36a8e136f4187b4de7e2e31a3e4168">char</a> end=';') <a class="el" href="namespacegraph.html#a2b36a8e136f4187b4de7e2e31a3e4168">const</a></td></tr>
+<tr class="memdesc:a6ca416b85368964396170309e32f73be inherit pub_methods_classgraph_1_1leaf__node"><td class="mdescLeft">&#160;</td><td class="mdescRight">End a line in the kernel source.  <br /></td></tr>
+<tr class="separator:a6ca416b85368964396170309e32f73be inherit pub_methods_classgraph_1_1leaf__node"><td class="memSeparator" colspan="2">&#160;</td></tr>
 </table><table class="memberdecls">
 <tr class="heading"><td colspan="2"><h2 class="groupheader"><a id="pro-attribs" name="pro-attribs"></a>
 Protected Attributes</h2></td></tr>
@@ -235,10 +235,10 @@ Protected Attributes</h2></td></tr>
 <a class="el" href="namespacegraph.html#a2b36a8e136f4187b4de7e2e31a3e4168">const</a> <a class="el" href="namespacegraph.html#a2b36a8e136f4187b4de7e2e31a3e4168">size_t</a>&#160;</td><td class="memItemRight" valign="bottom"><b>complexity</b></td></tr>
 <tr class="memdesc:a963847ffce01b1552281c93cf8dc8a2b inherit pro_attribs_classgraph_1_1leaf__node"><td class="mdescLeft">&#160;</td><td class="mdescRight">Graph complexity. <br /></td></tr>
 <tr class="separator:a963847ffce01b1552281c93cf8dc8a2b inherit pro_attribs_classgraph_1_1leaf__node"><td class="memSeparator" colspan="2">&#160;</td></tr>
-<tr class="memitem:aa5c836403ccaa4fe8231cbaaaac02060 inherit pro_attribs_classgraph_1_1leaf__node" id="r_aa5c836403ccaa4fe8231cbaaaac02060"><td class="memItemLeft" align="right" valign="top">
-std::map&lt; <a class="el" href="namespacegraph.html#a2b36a8e136f4187b4de7e2e31a3e4168">size_t</a>, std::shared_ptr&lt; <a class="el" href="classgraph_1_1leaf__node.html">leaf_node</a>&lt; T, <a class="el" href="namespacegraph.html#a2b36a8e136f4187b4de7e2e31a3e4168">SAFE_MATH</a> &gt; &gt; &gt;&#160;</td><td class="memItemRight" valign="bottom"><b>df_cache</b></td></tr>
-<tr class="memdesc:aa5c836403ccaa4fe8231cbaaaac02060 inherit pro_attribs_classgraph_1_1leaf__node"><td class="mdescLeft">&#160;</td><td class="mdescRight">Cache derivative terms. <br /></td></tr>
-<tr class="separator:aa5c836403ccaa4fe8231cbaaaac02060 inherit pro_attribs_classgraph_1_1leaf__node"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:af8064cde16dec4e66390835da208dcc5 inherit pro_attribs_classgraph_1_1leaf__node" id="r_af8064cde16dec4e66390835da208dcc5"><td class="memItemLeft" align="right" valign="top">
+std::unordered_map&lt; <a class="el" href="namespacegraph.html#a2b36a8e136f4187b4de7e2e31a3e4168">size_t</a>, std::shared_ptr&lt; <a class="el" href="classgraph_1_1leaf__node.html">leaf_node</a>&lt; T, <a class="el" href="namespacegraph.html#a2b36a8e136f4187b4de7e2e31a3e4168">SAFE_MATH</a> &gt; &gt; &gt;&#160;</td><td class="memItemRight" valign="bottom"><b>df_cache</b></td></tr>
+<tr class="memdesc:af8064cde16dec4e66390835da208dcc5 inherit pro_attribs_classgraph_1_1leaf__node"><td class="mdescLeft">&#160;</td><td class="mdescRight">Cache derivative terms. <br /></td></tr>
+<tr class="separator:af8064cde16dec4e66390835da208dcc5 inherit pro_attribs_classgraph_1_1leaf__node"><td class="memSeparator" colspan="2">&#160;</td></tr>
 <tr class="memitem:a48e0548af53da52815f077e3c998a99a inherit pro_attribs_classgraph_1_1leaf__node" id="r_a48e0548af53da52815f077e3c998a99a"><td class="memItemLeft" align="right" valign="top">
 <a class="el" href="namespacegraph.html#a2b36a8e136f4187b4de7e2e31a3e4168">const</a> <a class="el" href="namespacegraph.html#a2b36a8e136f4187b4de7e2e31a3e4168">bool</a>&#160;</td><td class="memItemRight" valign="bottom"><b>contains_pseudo</b></td></tr>
 <tr class="memdesc:a48e0548af53da52815f077e3c998a99a inherit pro_attribs_classgraph_1_1leaf__node"><td class="mdescLeft">&#160;</td><td class="mdescRight">Node contains pseudo variables. <br /></td></tr>
@@ -317,8 +317,8 @@ template&lt;<a class="el" href="conceptjit_1_1float__scalar.html">jit::float_sca
 </div>
 </div>
 <h2 class="groupheader">Member Function Documentation</h2>
-<a id="aec51bb9cc6d95226fdfaeea56e7ea773" name="aec51bb9cc6d95226fdfaeea56e7ea773"></a>
-<h2 class="memtitle"><span class="permalink"><a href="#aec51bb9cc6d95226fdfaeea56e7ea773">&#9670;&#160;</a></span>compile()</h2>
+<a id="afbcdcb24eb83991e4405f9b7031480f5" name="afbcdcb24eb83991e4405f9b7031480f5"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#afbcdcb24eb83991e4405f9b7031480f5">&#9670;&#160;</a></span>compile()</h2>
 
 <div class="memitem">
 <div class="memproto">
@@ -337,19 +337,19 @@ template&lt;<a class="el" href="conceptjit_1_1float__scalar.html">jit::float_sca
         <tr>
           <td class="paramkey"></td>
           <td></td>
-          <td class="paramtype"><a class="el" href="namespacejit.html#a9822ffd072bb1abcde9176028aa24a5e">jit::register_map</a> &amp;&#160;</td>
+          <td class="paramtype"><a class="el" href="namespacejit.html#aaaa81016eb9cb161306980a63db3e720">jit::register_map</a> &amp;&#160;</td>
           <td class="paramname"><em>registers</em>, </td>
         </tr>
         <tr>
           <td class="paramkey"></td>
           <td></td>
-          <td class="paramtype"><a class="el" href="namespacejit.html#a9822ffd072bb1abcde9176028aa24a5e">jit::register_map</a> &amp;&#160;</td>
-          <td class="paramname"><em>indices</em>, </td>
+          <td class="paramtype"><a class="el" href="namespacegraph.html#a2b36a8e136f4187b4de7e2e31a3e4168">const</a> <a class="el" href="namespacejit.html#aaaa81016eb9cb161306980a63db3e720">jit::register_map</a> &amp;&#160;</td>
+          <td class="paramname"><em>thread_mem</em>, </td>
         </tr>
         <tr>
           <td class="paramkey"></td>
           <td></td>
-          <td class="paramtype"><a class="el" href="namespacegraph.html#a2b36a8e136f4187b4de7e2e31a3e4168">const</a> <a class="el" href="namespacejit.html#a8f16308f3c321ac415daf451d0157a91">jit::register_usage</a> &amp;&#160;</td>
+          <td class="paramtype"><a class="el" href="namespacegraph.html#a2b36a8e136f4187b4de7e2e31a3e4168">const</a> <a class="el" href="namespacejit.html#a6b1e88895ada14e42dfad16181ceb266">jit::register_usage</a> &amp;&#160;</td>
           <td class="paramname"><em>usage</em>&#160;</td>
         </tr>
         <tr>
@@ -370,21 +370,21 @@ template&lt;<a class="el" href="conceptjit_1_1float__scalar.html">jit::float_sca
   <table class="params">
     <tr><td class="paramdir">[in,out]</td><td class="paramname">stream</td><td>String buffer stream. </td></tr>
     <tr><td class="paramdir">[in,out]</td><td class="paramname">registers</td><td>List of defined registers. </td></tr>
-    <tr><td class="paramdir">[in,out]</td><td class="paramname">indices</td><td>List of defined indices. </td></tr>
+    <tr><td class="paramdir">[in]</td><td class="paramname">thread_mem</td><td>List of defined thread memory registers. </td></tr>
     <tr><td class="paramdir">[in]</td><td class="paramname">usage</td><td>List of register usage count. </td></tr>
   </table>
   </dd>
 </dl>
 <dl class="section return"><dt>Returns</dt><dd>The current node. </dd></dl>
 
-<p>Implements <a class="el" href="classgraph_1_1leaf__node.html#a24ee329d565a0ad0396374a1b7c784b4">graph::leaf_node&lt; T, SAFE_MATH &gt;</a>.</p>
+<p>Implements <a class="el" href="classgraph_1_1leaf__node.html#a43920593105ef36390669bcc617aed5c">graph::leaf_node&lt; T, SAFE_MATH &gt;</a>.</p>
 
-<p>Reimplemented in <a class="el" href="classgraph_1_1sqrt__node.html#aae360c92edd5f4e37035390271b92ee0">graph::sqrt_node&lt; T, SAFE_MATH &gt;</a>, <a class="el" href="classgraph_1_1exp__node.html#ac5baa1ec5168143792f0e69ab19a0490">graph::exp_node&lt; T, SAFE_MATH &gt;</a>, <a class="el" href="classgraph_1_1log__node.html#a8985670d263ba76314e9155b3a2fc108">graph::log_node&lt; T, SAFE_MATH &gt;</a>, <a class="el" href="classgraph_1_1erfi__node.html#a25878f615225752763bf0e41482847fa">graph::erfi_node&lt; T, SAFE_MATH &gt;</a>, <a class="el" href="classgraph_1_1piecewise__1D__node.html#a98204d8be056b1b19d316efb8316774b">graph::piecewise_1D_node&lt; T, SAFE_MATH &gt;</a>, <a class="el" href="classgraph_1_1random__node.html#ab2a89430e960630d430dc388ec77ea4c">graph::random_node&lt; T, SAFE_MATH &gt;</a>, <a class="el" href="classgraph_1_1sine__node.html#afe3433923748a134795f94e99df824b4">graph::sine_node&lt; T, SAFE_MATH &gt;</a>, and <a class="el" href="classgraph_1_1cosine__node.html#a6dfbebd10b09de559864319b42154d2d">graph::cosine_node&lt; T, SAFE_MATH &gt;</a>.</p>
+<p>Reimplemented in <a class="el" href="classgraph_1_1sqrt__node.html#a265308c58574dc6b468cd35809ea7b5b">graph::sqrt_node&lt; T, SAFE_MATH &gt;</a>, <a class="el" href="classgraph_1_1exp__node.html#a50374b8f469e048af0b385f5dbef51fe">graph::exp_node&lt; T, SAFE_MATH &gt;</a>, <a class="el" href="classgraph_1_1log__node.html#a0014eeae30defc4bafb458add90fe5f3">graph::log_node&lt; T, SAFE_MATH &gt;</a>, <a class="el" href="classgraph_1_1erf__node.html#afaa73216257242879bc3d01fa954e0b1">graph::erf_node&lt; T, SAFE_MATH &gt;</a>, <a class="el" href="classgraph_1_1erfi__node.html#a08186a1b3d0484050cbd06b64eb4eccb">graph::erfi_node&lt; T, SAFE_MATH &gt;</a>, <a class="el" href="classgraph_1_1piecewise__1D__node.html#af52e8994084c8a567435b9e77c6c882e">graph::piecewise_1D_node&lt; T, SAFE_MATH &gt;</a>, <a class="el" href="classgraph_1_1random__node.html#aaa9ab25cbfe6c4bfcfd3596a0e6ec3c9">graph::random_node&lt; T, SAFE_MATH &gt;</a>, <a class="el" href="classgraph_1_1sine__node.html#af442b2977ebb6003f51a593fc7c9cec3">graph::sine_node&lt; T, SAFE_MATH &gt;</a>, and <a class="el" href="classgraph_1_1cosine__node.html#a7dee6c594cc04ecac957549374cfb793">graph::cosine_node&lt; T, SAFE_MATH &gt;</a>.</p>
 
 </div>
 </div>
-<a id="a9ed882183f431cd5133fa9cc7972d46c" name="a9ed882183f431cd5133fa9cc7972d46c"></a>
-<h2 class="memtitle"><span class="permalink"><a href="#a9ed882183f431cd5133fa9cc7972d46c">&#9670;&#160;</a></span>compile_preamble()</h2>
+<a id="a3644ba151ef62e6607844faf77d75ba6" name="a3644ba151ef62e6607844faf77d75ba6"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#a3644ba151ef62e6607844faf77d75ba6">&#9670;&#160;</a></span>compile_preamble()</h2>
 
 <div class="memitem">
 <div class="memproto">
@@ -403,32 +403,38 @@ template&lt;<a class="el" href="conceptjit_1_1float__scalar.html">jit::float_sca
         <tr>
           <td class="paramkey"></td>
           <td></td>
-          <td class="paramtype"><a class="el" href="namespacejit.html#a9822ffd072bb1abcde9176028aa24a5e">jit::register_map</a> &amp;&#160;</td>
+          <td class="paramtype"><a class="el" href="namespacejit.html#aaaa81016eb9cb161306980a63db3e720">jit::register_map</a> &amp;&#160;</td>
           <td class="paramname"><em>registers</em>, </td>
         </tr>
         <tr>
           <td class="paramkey"></td>
           <td></td>
-          <td class="paramtype"><a class="el" href="namespacejit.html#aed5672337b45a8b11f1351456d2284b8">jit::visiter_map</a> &amp;&#160;</td>
+          <td class="paramtype"><a class="el" href="namespacejit.html#a10fd02967defc21d99a010c9025e1d78">jit::visiter_map</a> &amp;&#160;</td>
           <td class="paramname"><em>visited</em>, </td>
         </tr>
         <tr>
           <td class="paramkey"></td>
           <td></td>
-          <td class="paramtype"><a class="el" href="namespacejit.html#a8f16308f3c321ac415daf451d0157a91">jit::register_usage</a> &amp;&#160;</td>
+          <td class="paramtype"><a class="el" href="namespacejit.html#a6b1e88895ada14e42dfad16181ceb266">jit::register_usage</a> &amp;&#160;</td>
           <td class="paramname"><em>usage</em>, </td>
         </tr>
         <tr>
           <td class="paramkey"></td>
           <td></td>
-          <td class="paramtype"><a class="el" href="namespacejit.html#a040839202e492715169f0e33e63c1e2a">jit::texture1d_list</a> &amp;&#160;</td>
+          <td class="paramtype"><a class="el" href="namespacejit.html#afd70e42a171bf30ee3f18dbd440cef51">jit::texture1d_list</a> &amp;&#160;</td>
           <td class="paramname"><em>textures1d</em>, </td>
         </tr>
         <tr>
           <td class="paramkey"></td>
           <td></td>
-          <td class="paramtype"><a class="el" href="namespacejit.html#a7e7f6b3f955215cb43f9fde4d066ea2a">jit::texture2d_list</a> &amp;&#160;</td>
+          <td class="paramtype"><a class="el" href="namespacejit.html#afc6a80494e39f0058a6121ba0949b9eb">jit::texture2d_list</a> &amp;&#160;</td>
           <td class="paramname"><em>textures2d</em>, </td>
+        </tr>
+        <tr>
+          <td class="paramkey"></td>
+          <td></td>
+          <td class="paramtype"><a class="el" href="namespacejit.html#a7f92c8c5094ad3c8c58438f2e73c8e81">jit::preamble_map</a> &amp;&#160;</td>
+          <td class="paramname"><em>pre_funcs</em>, </td>
         </tr>
         <tr>
           <td class="paramkey"></td>
@@ -458,14 +464,15 @@ template&lt;<a class="el" href="conceptjit_1_1float__scalar.html">jit::float_sca
     <tr><td class="paramdir">[in,out]</td><td class="paramname">usage</td><td>List of register usage count. </td></tr>
     <tr><td class="paramdir">[in,out]</td><td class="paramname">textures1d</td><td>List of 1D textures. </td></tr>
     <tr><td class="paramdir">[in,out]</td><td class="paramname">textures2d</td><td>List of 2D textures. </td></tr>
+    <tr><td class="paramdir">[in,out]</td><td class="paramname">pre_funcs</td><td>Set of preamble functions. </td></tr>
     <tr><td class="paramdir">[in,out]</td><td class="paramname">avail_const_mem</td><td>Available constant memory. </td></tr>
   </table>
   </dd>
 </dl>
 
-<p>Reimplemented from <a class="el" href="classgraph_1_1leaf__node.html#afc102b9a3b9a61ec917750fe96e98f53">graph::leaf_node&lt; T, SAFE_MATH &gt;</a>.</p>
+<p>Reimplemented from <a class="el" href="classgraph_1_1leaf__node.html#a0fd734d2fde7b7b0168ab90877e65c8a">graph::leaf_node&lt; T, SAFE_MATH &gt;</a>.</p>
 
-<p>Reimplemented in <a class="el" href="classgraph_1_1piecewise__1D__node.html#a028dea070f29e9e5bc7c37db935d46ed">graph::piecewise_1D_node&lt; T, SAFE_MATH &gt;</a>, and <a class="el" href="classgraph_1_1random__node.html#aa187c7d744c891a4a02d557401a31356">graph::random_node&lt; T, SAFE_MATH &gt;</a>.</p>
+<p>Reimplemented in <a class="el" href="classgraph_1_1piecewise__1D__node.html#a179f7c2c661797f140e5145360b28207">graph::piecewise_1D_node&lt; T, SAFE_MATH &gt;</a>, and <a class="el" href="classgraph_1_1random__node.html#a1ee460c682efb294ec04d8bc6144f44f">graph::random_node&lt; T, SAFE_MATH &gt;</a>.</p>
 
 </div>
 </div>
@@ -499,7 +506,37 @@ template&lt;<a class="el" href="conceptjit_1_1float__scalar.html">jit::float_sca
 
 <p>Implements <a class="el" href="classgraph_1_1leaf__node.html#a9dffad49122136d0353d709e0906e8b4">graph::leaf_node&lt; T, SAFE_MATH &gt;</a>.</p>
 
-<p>Reimplemented in <a class="el" href="classgraph_1_1sqrt__node.html#a5824ad9989dfa12fd3e6803172833304">graph::sqrt_node&lt; T, SAFE_MATH &gt;</a>, <a class="el" href="classgraph_1_1exp__node.html#a050d9242e30e69466c7669d6e778873f">graph::exp_node&lt; T, SAFE_MATH &gt;</a>, <a class="el" href="classgraph_1_1log__node.html#a59b5038c69599451a35b936d3cb31e94">graph::log_node&lt; T, SAFE_MATH &gt;</a>, <a class="el" href="classgraph_1_1erfi__node.html#aa083ea6157f8e1d9d07eac23fc909843">graph::erfi_node&lt; T, SAFE_MATH &gt;</a>, <a class="el" href="classgraph_1_1piecewise__1D__node.html#a4d7d76a475bdb58b078be0f49704d188">graph::piecewise_1D_node&lt; T, SAFE_MATH &gt;</a>, <a class="el" href="classgraph_1_1random__node.html#a2e7dd1f72333fc84ace8d1c28fc9a8f8">graph::random_node&lt; T, SAFE_MATH &gt;</a>, <a class="el" href="classgraph_1_1sine__node.html#aa223102c15f1fbe56a5d9cf17a5e98b6">graph::sine_node&lt; T, SAFE_MATH &gt;</a>, and <a class="el" href="classgraph_1_1cosine__node.html#ac609593b5677dd9b0ce5dfee1a098708">graph::cosine_node&lt; T, SAFE_MATH &gt;</a>.</p>
+<p>Reimplemented in <a class="el" href="classgraph_1_1sqrt__node.html#a5824ad9989dfa12fd3e6803172833304">graph::sqrt_node&lt; T, SAFE_MATH &gt;</a>, <a class="el" href="classgraph_1_1exp__node.html#a050d9242e30e69466c7669d6e778873f">graph::exp_node&lt; T, SAFE_MATH &gt;</a>, <a class="el" href="classgraph_1_1log__node.html#a59b5038c69599451a35b936d3cb31e94">graph::log_node&lt; T, SAFE_MATH &gt;</a>, <a class="el" href="classgraph_1_1erf__node.html#a0065caee23614c55e9bb85f009e43be3">graph::erf_node&lt; T, SAFE_MATH &gt;</a>, <a class="el" href="classgraph_1_1erfi__node.html#aa083ea6157f8e1d9d07eac23fc909843">graph::erfi_node&lt; T, SAFE_MATH &gt;</a>, <a class="el" href="classgraph_1_1piecewise__1D__node.html#a4d7d76a475bdb58b078be0f49704d188">graph::piecewise_1D_node&lt; T, SAFE_MATH &gt;</a>, <a class="el" href="classgraph_1_1random__node.html#a2e7dd1f72333fc84ace8d1c28fc9a8f8">graph::random_node&lt; T, SAFE_MATH &gt;</a>, <a class="el" href="classgraph_1_1sine__node.html#aa223102c15f1fbe56a5d9cf17a5e98b6">graph::sine_node&lt; T, SAFE_MATH &gt;</a>, and <a class="el" href="classgraph_1_1cosine__node.html#ac609593b5677dd9b0ce5dfee1a098708">graph::cosine_node&lt; T, SAFE_MATH &gt;</a>.</p>
+
+</div>
+</div>
+<a id="a2fa8fb40ad1ea73a6e4992dfc587fa5b" name="a2fa8fb40ad1ea73a6e4992dfc587fa5b"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#a2fa8fb40ad1ea73a6e4992dfc587fa5b">&#9670;&#160;</a></span>get_arg()</h2>
+
+<div class="memitem">
+<div class="memproto">
+<div class="memtemplate">
+template&lt;<a class="el" href="conceptjit_1_1float__scalar.html">jit::float_scalar</a> T, <a class="el" href="namespacegraph.html#a2b36a8e136f4187b4de7e2e31a3e4168">bool</a> SAFE_MATH = false&gt; </div>
+<table class="mlabels">
+  <tr>
+  <td class="mlabels-left">
+      <table class="memname">
+        <tr>
+          <td class="memname"><a class="el" href="namespacegraph.html#ac8853b055dcbbfd35dff9b4584d5ef36">shared_leaf</a>&lt; T, <a class="el" href="namespacegraph.html#a2b36a8e136f4187b4de7e2e31a3e4168">SAFE_MATH</a> &gt; <a class="el" href="classgraph_1_1straight__node.html">graph::straight_node</a>&lt; T, <a class="el" href="namespacegraph.html#a2b36a8e136f4187b4de7e2e31a3e4168">SAFE_MATH</a> &gt;::get_arg </td>
+          <td>(</td>
+          <td class="paramname"></td><td>)</td>
+          <td> const</td>
+        </tr>
+      </table>
+  </td>
+  <td class="mlabels-right">
+<span class="mlabels"><span class="mlabel">inline</span></span>  </td>
+  </tr>
+</table>
+</div><div class="memdoc">
+
+<p>Get the argument. </p>
+<dl class="section return"><dt>Returns</dt><dd>The argument. </dd></dl>
 
 </div>
 </div>
@@ -565,9 +602,9 @@ template&lt;<a class="el" href="conceptjit_1_1float__scalar.html">jit::float_sca
 <p>Test if node acts like a variable. </p>
 <dl class="section return"><dt>Returns</dt><dd>True if the node acts like a variable. </dd></dl>
 
-<p>Implements <a class="el" href="classgraph_1_1leaf__node.html#ace34ab51ff0edd4c85fea31a0f303ab8">graph::leaf_node&lt; T, SAFE_MATH &gt;</a>.</p>
+<p>Reimplemented from <a class="el" href="classgraph_1_1leaf__node.html#a6bc5f429458f7f539a5f1336b8aef4e6">graph::leaf_node&lt; T, SAFE_MATH &gt;</a>.</p>
 
-<p>Reimplemented in <a class="el" href="classgraph_1_1pseudo__variable__node.html#a8ac1d11f3761a9d5ea427438b9abcd50">graph::pseudo_variable_node&lt; T, SAFE_MATH &gt;</a>, <a class="el" href="classgraph_1_1piecewise__1D__node.html#ac2e7826e09478764340704f066742f39">graph::piecewise_1D_node&lt; T, SAFE_MATH &gt;</a>, and <a class="el" href="classgraph_1_1random__node.html#a9c80084ff5ea3438fd852ff36413c484">graph::random_node&lt; T, SAFE_MATH &gt;</a>.</p>
+<p>Reimplemented in <a class="el" href="classgraph_1_1pseudo__variable__node.html#a8ac1d11f3761a9d5ea427438b9abcd50">graph::pseudo_variable_node&lt; T, SAFE_MATH &gt;</a>, and <a class="el" href="classgraph_1_1piecewise__1D__node.html#ac2e7826e09478764340704f066742f39">graph::piecewise_1D_node&lt; T, SAFE_MATH &gt;</a>.</p>
 
 </div>
 </div>

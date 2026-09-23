@@ -125,7 +125,8 @@ var NAVTREE =
     [ "Use Cases", "use_cases.html", [
       [ "Introduction", "use_cases.html#use_cases_introduction", [
         [ "RF Ray tracing", "use_cases.html#use_cases_rf", [
-          [ "Correctness", "use_cases.html#use_cases_rf_correctness", null ]
+          [ "Correctness", "use_cases.html#use_cases_rf_correctness", null ],
+          [ "Comparison to GENRAY", "use_cases.html#use_cases_rf_correctness_genray", null ]
         ] ]
       ] ],
       [ "Particle Pushing", "use_cases.html#use_cases_particle_pushing", null ]
@@ -227,9 +228,11 @@ var NAVTREE =
       [ "Namespace List", "namespaces.html", "namespaces_dup" ],
       [ "Namespace Members", "namespacemembers.html", [
         [ "All", "namespacemembers.html", "namespacemembers_dup" ],
-        [ "Functions", "namespacemembers_func.html", null ],
+        [ "Functions", "namespacemembers_func.html", "namespacemembers_func" ],
         [ "Variables", "namespacemembers_vars.html", null ],
-        [ "Typedefs", "namespacemembers_type.html", null ]
+        [ "Typedefs", "namespacemembers_type.html", null ],
+        [ "Enumerations", "namespacemembers_enum.html", null ],
+        [ "Enumerator", "namespacemembers_eval.html", null ]
       ] ]
     ] ],
     [ "Concepts", "concepts.html", "concepts" ],
@@ -241,14 +244,16 @@ var NAVTREE =
         [ "All", "functions.html", "functions_dup" ],
         [ "Functions", "functions_func.html", "functions_func" ],
         [ "Variables", "functions_vars.html", null ],
-        [ "Typedefs", "functions_type.html", null ]
+        [ "Typedefs", "functions_type.html", null ],
+        [ "Enumerations", "functions_enum.html", null ],
+        [ "Enumerator", "functions_eval.html", null ]
       ] ]
     ] ],
     [ "Files", "files.html", [
       [ "File List", "files.html", "files_dup" ],
       [ "File Members", "globals.html", [
-        [ "All", "globals.html", null ],
-        [ "Functions", "globals_func.html", null ],
+        [ "All", "globals.html", "globals_dup" ],
+        [ "Functions", "globals_func.html", "globals_func" ],
         [ "Typedefs", "globals_type.html", null ],
         [ "Enumerations", "globals_enum.html", null ],
         [ "Macros", "globals_defs.html", null ]
@@ -260,17 +265,21 @@ var NAVTREE =
 var NAVTREEINDEX =
 [
 "absorption_8hpp.html",
-"classdispersion_1_1dispersion__interface.html#a2914b2d6fc11578f431e84ce04a66961",
-"classequilibrium_1_1vmec.html#a4970a52f2f57dc891bf947bdf0ec6b67",
-"classgraph_1_1divide__node.html#a3e2b429f204c85414b30f483e8debc47",
-"classgraph_1_1multiply__node.html#a434963d065c6bf35b9ca2b7962d42786",
-"classgraph_1_1straight__node.html#a1cb6954066754e1b240e225a41e2b615",
-"classsolver_1_1rk4.html#a6802b3aa027892301faf587cb23a1a0e",
-"conceptjit_1_1float__base.html",
-"graph__c__binding_8h.html#af7ea070bd985b7fa0f8ff2694df73474",
-"namespacegpu.html",
-"namespacespecial.html#af6b90fefc8e8399e5b98b5e09e992820",
-"structgraph__fortran_1_1graph__context.html#aff4597e81bef5d942878aae442274e78"
+"classbackend_1_1buffer.html#af9928266a07dedb776d5e4c9eaa069d1",
+"classequilibrium_1_1no__magnetic__field.html#ac69fe62d4607739a896ad78669082017",
+"classgraph_1_1apply__u__node.html#a39fc726eeba3d6ec43ce0ba35b9abf2c",
+"classgraph_1_1erfi__node.html#a394297026425e49da191569a541beb2e",
+"classgraph_1_1leaf__node.html#a92beac028981a51dbb1a2b2bd5711d6b",
+"classgraph_1_1piecewise__2D__node.html#a01f14724a2688e176b463cec2394c2f3",
+"classgraph_1_1variable__node.html#a77dff063669883fb188664ef1c814221",
+"classsolver_1_1rk4.html#a5b81914155b1b22a18a27cca460d6954",
+"classworkflow_1_1manager.html#ab04754fe10164787d6dafb77b3051bee",
+"globals_func_s.html",
+"interfacegraph__fortran_1_1graph__constant__c.html",
+"namespacegraph.html#a014d926e8347b0a7bbb081cfb3acb4e1",
+"namespacegraph__fortran.html#a33d223be003ae0abb431506fe55a9662",
+"piecewise_8hpp.html",
+"vector_8hpp.html#aaf10e93720233046bb17a3738fca77ac"
 ];
 
 var SYNCONMSG = 'click to disable panel synchronisation';

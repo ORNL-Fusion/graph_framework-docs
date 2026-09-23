@@ -1,7 +1,7 @@
 var classgraph_1_1arctan__node =
 [
     [ "arctan_node", "classgraph_1_1arctan__node.html#a3afd31c5e5705c481c8837c4470acfa3", null ],
-    [ "compile", "classgraph_1_1arctan__node.html#a7d0d4ec33e7e0110123b7ec10a6118f7", null ],
+    [ "compile", "classgraph_1_1arctan__node.html#a2b55642d4b50a75d908d441ad364362b", null ],
     [ "df", "classgraph_1_1arctan__node.html#a1de096a65452aa335b8c8346afbae19a", null ],
     [ "evaluate", "classgraph_1_1arctan__node.html#a9d0fb3d05bd21b189b544579a65206db", null ],
     [ "is_match", "classgraph_1_1arctan__node.html#a85b5701928a0a7ce0fd4370e488ba5fd", null ],
