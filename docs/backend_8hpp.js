@@ -4,7 +4,6 @@ var backend_8hpp =
     [ "apply_op", "backend_8hpp.html#ac561fd43b541e79f7ac9e8e95059fc0d", null ],
     [ "branch_fn", "backend_8hpp.html#a54188510f5bf9fd5222727740636b36f", null ],
     [ "build_assoc_func", "backend_8hpp.html#a8af7d2de75c0073addfade26919bbd88", null ],
-    [ "build_assoc_func", "backend_8hpp.html#a8af7d2de75c0073addfade26919bbd88", null ],
     [ "build_assoc_op", "backend_8hpp.html#aa2ccea33afc9af2214babc9670bffbdb", null ],
     [ "build_non_assoc_op", "backend_8hpp.html#ac09e035d3e8556eb9b5b691ea310c14a", null ],
     [ "col_fn", "backend_8hpp.html#a53224aabd766afd4db59ed465d5eba35", null ],

@@ -156,9 +156,6 @@ Macros</h2></td></tr>
 <tr class="memitem:ac09e035d3e8556eb9b5b691ea310c14a" id="r_ac09e035d3e8556eb9b5b691ea310c14a"><td class="memItemLeft" align="right" valign="top">#define&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="backend_8hpp.html#ac09e035d3e8556eb9b5b691ea310c14a">build_non_assoc_op</a>(op,  opeq)</td></tr>
 <tr class="memdesc:ac09e035d3e8556eb9b5b691ea310c14a"><td class="mdescLeft">&#160;</td><td class="mdescRight">Applies a non-associative operator.  <br /></td></tr>
 <tr class="separator:ac09e035d3e8556eb9b5b691ea310c14a"><td class="memSeparator" colspan="2">&#160;</td></tr>
-<tr class="memitem:a8af7d2de75c0073addfade26919bbd88" id="r_a8af7d2de75c0073addfade26919bbd88"><td class="memItemLeft" align="right" valign="top">#define&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="backend_8hpp.html#a8af7d2de75c0073addfade26919bbd88">build_assoc_func</a>(func)</td></tr>
-<tr class="memdesc:a8af7d2de75c0073addfade26919bbd88"><td class="mdescLeft">&#160;</td><td class="mdescRight">Applies an associative function.  <br /></td></tr>
-<tr class="separator:a8af7d2de75c0073addfade26919bbd88"><td class="memSeparator" colspan="2">&#160;</td></tr>
 <tr class="memitem:a830349149e0982b9453ddbf5664d0055" id="r_a830349149e0982b9453ddbf5664d0055"><td class="memItemLeft" align="right" valign="top">#define&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="backend_8hpp.html#a830349149e0982b9453ddbf5664d0055">logic_op</a>(op)</td></tr>
 <tr class="memdesc:a830349149e0982b9453ddbf5664d0055"><td class="mdescLeft">&#160;</td><td class="mdescRight">Applies a logical operator.  <br /></td></tr>
 <tr class="separator:a830349149e0982b9453ddbf5664d0055"><td class="memSeparator" colspan="2">&#160;</td></tr>
@@ -334,7 +331,7 @@ Functions</h2></td></tr>
 </div>
 </div>
 <a id="a8af7d2de75c0073addfade26919bbd88" name="a8af7d2de75c0073addfade26919bbd88"></a>
-<h2 class="memtitle"><span class="permalink"><a href="#a8af7d2de75c0073addfade26919bbd88">&#9670;&#160;</a></span>build_assoc_func <span class="overload">[1/2]</span></h2>
+<h2 class="memtitle"><span class="permalink"><a href="#a8af7d2de75c0073addfade26919bbd88">&#9670;&#160;</a></span>build_assoc_func</h2>
 
 <div class="memitem">
 <div class="memproto">
@@ -375,55 +372,7 @@ Functions</h2></td></tr>
 <p>Applies an associative function. </p>
 <dl class="params"><dt>Parameters</dt><dd>
   <table class="params">
-    <tr><td class="paramname">op</td><td>The operation to apply.</td></tr>
-    <tr><td class="paramname">func</td><td>The function to apply. </td></tr>
-  </table>
-  </dd>
-</dl>
-
-</div>
-</div>
-<a id="a8af7d2de75c0073addfade26919bbd88" name="a8af7d2de75c0073addfade26919bbd88"></a>
-<h2 class="memtitle"><span class="permalink"><a href="#a8af7d2de75c0073addfade26919bbd88">&#9670;&#160;</a></span>build_assoc_func <span class="overload">[2/2]</span></h2>
-
-<div class="memitem">
-<div class="memproto">
-      <table class="memname">
-        <tr>
-          <td class="memname">#define build_assoc_func</td>
-          <td>(</td>
-          <td class="paramtype">&#160;</td>
-          <td class="paramname">func</td><td>)</td>
-          <td></td>
-        </tr>
-      </table>
-</div><div class="memdoc">
-<b>Value:</b><div class="fragment"><div class="line"><span class="keywordflow">if</span> (b.size() == 1) {                              \</div>
-<div class="line">    <span class="keyword">const</span> T right = b[0];                         \</div>
-<div class="line">    for (T &amp;l : a) {                              \</div>
-<div class="line">        l = func(l, right);                       \</div>
-<div class="line">    }                                             \</div>
-<div class="line">    <span class="keywordflow">return</span> a;                                     \</div>
-<div class="line">} <span class="keywordflow">else</span> <span class="keywordflow">if</span> (a.size() == 1) {                       \</div>
-<div class="line">    <span class="keyword">const</span> T left = a[0];                          \</div>
-<div class="line">    for (T &amp;r : b) {                              \</div>
-<div class="line">        r = func(r, left);                        \</div>
-<div class="line">    }                                             \</div>
-<div class="line">    <span class="keywordflow">return</span> b;                                     \</div>
-<div class="line">}                                                 \</div>
-<div class="line">                                                  \</div>
-<div class="line">assert(a.size() == b.size() &amp;&amp;                    \</div>
-<div class="line">       <span class="stringliteral">&quot;Left and right sizes are incompatible.&quot;</span>); \</div>
-<div class="line">for (<span class="keywordtype">size_t</span> i = 0, ie = a.size(); <a class="code hl_variable" href="namespacegraph.html#a9b84f5a5f048fe7931dc4f9d39f5efa6">i</a> &lt; ie; <a class="code hl_variable" href="namespacegraph.html#a9b84f5a5f048fe7931dc4f9d39f5efa6">i</a>++) {  \</div>
-<div class="line">    a[<a class="code hl_variable" href="namespacegraph.html#a9b84f5a5f048fe7931dc4f9d39f5efa6">i</a>] = func(a[i], b[i]);                      \</div>
-<div class="line">}                                                 \</div>
-<div class="line"><span class="keywordflow">return</span> a;</div>
-</div><!-- fragment -->
-<p>Applies an associative function. </p>
-<dl class="params"><dt>Parameters</dt><dd>
-  <table class="params">
-    <tr><td class="paramname">op</td><td>The operation to apply.</td></tr>
-    <tr><td class="paramname">func</td><td>The function to apply. </td></tr>
+    <tr><td class="paramname">op</td><td>The operation to apply. </td></tr>
   </table>
   </dd>
 </dl>

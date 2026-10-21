@@ -267,19 +267,19 @@ var NAVTREEINDEX =
 "absorption_8hpp.html",
 "classbackend_1_1buffer.html#af9928266a07dedb776d5e4c9eaa069d1",
 "classequilibrium_1_1no__magnetic__field.html#ac69fe62d4607739a896ad78669082017",
-"classgraph_1_1apply__u__node.html#a39fc726eeba3d6ec43ce0ba35b9abf2c",
-"classgraph_1_1erfi__node.html#a394297026425e49da191569a541beb2e",
-"classgraph_1_1leaf__node.html#a92beac028981a51dbb1a2b2bd5711d6b",
-"classgraph_1_1piecewise__2D__node.html#a01f14724a2688e176b463cec2394c2f3",
-"classgraph_1_1variable__node.html#a77dff063669883fb188664ef1c814221",
-"classsolver_1_1rk4.html#a5b81914155b1b22a18a27cca460d6954",
-"classworkflow_1_1manager.html#ab04754fe10164787d6dafb77b3051bee",
-"globals_func_s.html",
-"interfacegraph__fortran_1_1graph__constant__c.html",
-"namespacegraph.html#a014d926e8347b0a7bbb081cfb3acb4e1",
-"namespacegraph__fortran.html#a33d223be003ae0abb431506fe55a9662",
-"piecewise_8hpp.html",
-"vector_8hpp.html#aaf10e93720233046bb17a3738fca77ac"
+"classgraph_1_1apply__u__node.html#a4ce5b407d91e010bdece45672fbbddd8",
+"classgraph_1_1erfi__node.html#a67af21f5dcf94c195515f7b0f500e61b",
+"classgraph_1_1leaf__node.html#a94806db93134104970bfc730a56d7a2f",
+"classgraph_1_1piecewise__2D__node.html#a364f7203cbd00116988d56e1c2e41907",
+"classgraph_1_1variable__node.html#a8cf55878fa99f2055483dbd58a8a38cc",
+"classsolver_1_1rk4.html#a6802b3aa027892301faf587cb23a1a0e",
+"classworkflow_1_1manager.html#aba9b78a9c3d95b785986135800662e6d",
+"globals_func_t.html",
+"interfacegraph__fortran_1_1graph__construct__context.html",
+"namespacegraph.html#a01ad87b7901bcba474cb79d9e1cf70c3",
+"namespacegraph__fortran.html#a3f0fca3518b442da9be57ee937592365",
+"piecewise_8hpp.html#a00b3dbe30432a41df1ac81814f5eb458",
+"vector_8hpp.html#abde0ad21951280248831f694092f9edb"
 ];
 
 var SYNCONMSG = 'click to disable panel synchronisation';
