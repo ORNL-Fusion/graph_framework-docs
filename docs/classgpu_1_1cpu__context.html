@@ -119,9 +119,9 @@ Public Member Functions</h2></td></tr>
 <tr class="memitem:aa5dde7c91db5555c253ad6bf0db16d98" id="r_aa5dde7c91db5555c253ad6bf0db16d98"><td class="memItemLeft" align="right" valign="top">void&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="classgpu_1_1cpu__context.html#aa5dde7c91db5555c253ad6bf0db16d98">compile</a> (const std::string kernel_source, std::vector&lt; std::string &gt; names, const bool add_reduction=false)</td></tr>
 <tr class="memdesc:aa5dde7c91db5555c253ad6bf0db16d98"><td class="mdescLeft">&#160;</td><td class="mdescRight">Compile the kernels.  <br /></td></tr>
 <tr class="separator:aa5dde7c91db5555c253ad6bf0db16d98"><td class="memSeparator" colspan="2">&#160;</td></tr>
-<tr class="memitem:a726bbddff3a6b789dac0677e5a13540e" id="r_a726bbddff3a6b789dac0677e5a13540e"><td class="memItemLeft" align="right" valign="top">std::function&lt; void(void)&gt;&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="classgpu_1_1cpu__context.html#a726bbddff3a6b789dac0677e5a13540e">create_kernel_call</a> (const std::string kernel_name, <a class="el" href="namespacegraph.html#a7f4f9ab246d37d23e0259709e626bc36">graph::input_nodes</a>&lt; T, SAFE_MATH &gt; inputs, <a class="el" href="namespacegraph.html#aec6ce7b08d650c6b236b68bd68a2ce0a">graph::output_nodes</a>&lt; T, SAFE_MATH &gt; outputs, <a class="el" href="namespacegraph.html#a7f4f9ab246d37d23e0259709e626bc36">graph::input_nodes</a>&lt; T, SAFE_MATH &gt; atomics, <a class="el" href="namespacegraph.html#a7d69a698d998bfb31f5611ad55e44092">graph::shared_random_state</a>&lt; T, SAFE_MATH &gt; state, const size_t num_rays, const <a class="el" href="namespacejit.html#afd70e42a171bf30ee3f18dbd440cef51">jit::texture1d_list</a> &amp;tex1d_list, const <a class="el" href="namespacejit.html#afc6a80494e39f0058a6121ba0949b9eb">jit::texture2d_list</a> &amp;tex2d_list)</td></tr>
-<tr class="memdesc:a726bbddff3a6b789dac0677e5a13540e"><td class="mdescLeft">&#160;</td><td class="mdescRight">Create a kernel calling function.  <br /></td></tr>
-<tr class="separator:a726bbddff3a6b789dac0677e5a13540e"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:a50691276fe0c222d123c5e9248d4116c" id="r_a50691276fe0c222d123c5e9248d4116c"><td class="memItemLeft" align="right" valign="top">std::function&lt; void(void)&gt;&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="classgpu_1_1cpu__context.html#a50691276fe0c222d123c5e9248d4116c">create_kernel_call</a> (const std::string kernel_name, <a class="el" href="namespacegraph.html#a7f4f9ab246d37d23e0259709e626bc36">graph::input_nodes</a>&lt; T, SAFE_MATH &gt; inputs, <a class="el" href="namespacegraph.html#aec6ce7b08d650c6b236b68bd68a2ce0a">graph::output_nodes</a>&lt; T, SAFE_MATH &gt; outputs, <a class="el" href="namespacegraph.html#abe1ccc3ebe54f9db7732194c293c4e85">graph::atomic_nodes</a>&lt; T, SAFE_MATH &gt; atomics, <a class="el" href="namespacegraph.html#a7d69a698d998bfb31f5611ad55e44092">graph::shared_random_state</a>&lt; T, SAFE_MATH &gt; state, const size_t num_rays, const <a class="el" href="namespacejit.html#afd70e42a171bf30ee3f18dbd440cef51">jit::texture1d_list</a> &amp;tex1d_list, const <a class="el" href="namespacejit.html#afc6a80494e39f0058a6121ba0949b9eb">jit::texture2d_list</a> &amp;tex2d_list)</td></tr>
+<tr class="memdesc:a50691276fe0c222d123c5e9248d4116c"><td class="mdescLeft">&#160;</td><td class="mdescRight">Create a kernel calling function.  <br /></td></tr>
+<tr class="separator:a50691276fe0c222d123c5e9248d4116c"><td class="memSeparator" colspan="2">&#160;</td></tr>
 <tr class="memitem:acd63f57ffe4e595cf2d5300b413c84a9" id="r_acd63f57ffe4e595cf2d5300b413c84a9"><td class="memItemLeft" align="right" valign="top">std::function&lt; T(void)&gt;&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="classgpu_1_1cpu__context.html#acd63f57ffe4e595cf2d5300b413c84a9">create_max_call</a> (<a class="el" href="namespacegraph.html#ac8853b055dcbbfd35dff9b4584d5ef36">graph::shared_leaf</a>&lt; T, SAFE_MATH &gt; &amp;argument, std::function&lt; void(void)&gt; run)</td></tr>
 <tr class="memdesc:acd63f57ffe4e595cf2d5300b413c84a9"><td class="mdescLeft">&#160;</td><td class="mdescRight">Create a max compute pipeline.  <br /></td></tr>
 <tr class="separator:acd63f57ffe4e595cf2d5300b413c84a9"><td class="memSeparator" colspan="2">&#160;</td></tr>
@@ -152,9 +152,9 @@ Public Member Functions</h2></td></tr>
 <tr class="memitem:ae01f6559a838f97fef4810b86f0ac4ae" id="r_ae01f6559a838f97fef4810b86f0ac4ae"><td class="memItemLeft" align="right" valign="top">void&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="classgpu_1_1cpu__context.html#ae01f6559a838f97fef4810b86f0ac4ae">create_header</a> (std::ostringstream &amp;source_buffer)</td></tr>
 <tr class="memdesc:ae01f6559a838f97fef4810b86f0ac4ae"><td class="mdescLeft">&#160;</td><td class="mdescRight">Create the source header.  <br /></td></tr>
 <tr class="separator:ae01f6559a838f97fef4810b86f0ac4ae"><td class="memSeparator" colspan="2">&#160;</td></tr>
-<tr class="memitem:a8f1341bb6068eeda2e6fba572e55dc6e" id="r_a8f1341bb6068eeda2e6fba572e55dc6e"><td class="memItemLeft" align="right" valign="top">void&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="classgpu_1_1cpu__context.html#a8f1341bb6068eeda2e6fba572e55dc6e">create_kernel_prefix</a> (std::ostringstream &amp;source_buffer, const std::string name, <a class="el" href="namespacegraph.html#a7f4f9ab246d37d23e0259709e626bc36">graph::input_nodes</a>&lt; T, SAFE_MATH &gt; &amp;inputs, <a class="el" href="namespacegraph.html#aec6ce7b08d650c6b236b68bd68a2ce0a">graph::output_nodes</a>&lt; T, SAFE_MATH &gt; &amp;outputs, <a class="el" href="namespacegraph.html#a7f4f9ab246d37d23e0259709e626bc36">graph::input_nodes</a>&lt; T, SAFE_MATH &gt; atomics, <a class="el" href="namespacegraph.html#a7d69a698d998bfb31f5611ad55e44092">graph::shared_random_state</a>&lt; T, SAFE_MATH &gt; state, const size_t size, const std::vector&lt; bool &gt; &amp;is_constant, <a class="el" href="namespacejit.html#aaaa81016eb9cb161306980a63db3e720">jit::register_map</a> &amp;registers, const <a class="el" href="namespacejit.html#a6b1e88895ada14e42dfad16181ceb266">jit::register_usage</a> &amp;usage, <a class="el" href="namespacejit.html#afd70e42a171bf30ee3f18dbd440cef51">jit::texture1d_list</a> &amp;textures1d, <a class="el" href="namespacejit.html#afc6a80494e39f0058a6121ba0949b9eb">jit::texture2d_list</a> &amp;textures2d, <a class="el" href="namespacejit.html#aff1d2e04194bc0f2161447446498e457">jit::argument_set</a> &amp;thread_shared, <a class="el" href="namespacejit.html#aaaa81016eb9cb161306980a63db3e720">jit::register_map</a> &amp;thread_mem, const size_t iterations=1)</td></tr>
-<tr class="memdesc:a8f1341bb6068eeda2e6fba572e55dc6e"><td class="mdescLeft">&#160;</td><td class="mdescRight">Create kernel prefix.  <br /></td></tr>
-<tr class="separator:a8f1341bb6068eeda2e6fba572e55dc6e"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:a8fefab25e35ad325d2d535fe0fabad64" id="r_a8fefab25e35ad325d2d535fe0fabad64"><td class="memItemLeft" align="right" valign="top">void&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="classgpu_1_1cpu__context.html#a8fefab25e35ad325d2d535fe0fabad64">create_kernel_prefix</a> (std::ostringstream &amp;source_buffer, const std::string name, <a class="el" href="namespacegraph.html#a7f4f9ab246d37d23e0259709e626bc36">graph::input_nodes</a>&lt; T, SAFE_MATH &gt; &amp;inputs, <a class="el" href="namespacegraph.html#aec6ce7b08d650c6b236b68bd68a2ce0a">graph::output_nodes</a>&lt; T, SAFE_MATH &gt; &amp;outputs, <a class="el" href="namespacegraph.html#abe1ccc3ebe54f9db7732194c293c4e85">graph::atomic_nodes</a>&lt; T, SAFE_MATH &gt; atomics, <a class="el" href="namespacegraph.html#a7d69a698d998bfb31f5611ad55e44092">graph::shared_random_state</a>&lt; T, SAFE_MATH &gt; state, const size_t size, const std::vector&lt; bool &gt; &amp;is_constant, <a class="el" href="namespacejit.html#aaaa81016eb9cb161306980a63db3e720">jit::register_map</a> &amp;registers, const <a class="el" href="namespacejit.html#a6b1e88895ada14e42dfad16181ceb266">jit::register_usage</a> &amp;usage, <a class="el" href="namespacejit.html#afd70e42a171bf30ee3f18dbd440cef51">jit::texture1d_list</a> &amp;textures1d, <a class="el" href="namespacejit.html#afc6a80494e39f0058a6121ba0949b9eb">jit::texture2d_list</a> &amp;textures2d, <a class="el" href="namespacejit.html#aff1d2e04194bc0f2161447446498e457">jit::argument_set</a> &amp;thread_shared, <a class="el" href="namespacejit.html#aaaa81016eb9cb161306980a63db3e720">jit::register_map</a> &amp;thread_mem, const size_t iterations=1)</td></tr>
+<tr class="memdesc:a8fefab25e35ad325d2d535fe0fabad64"><td class="mdescLeft">&#160;</td><td class="mdescRight">Create kernel prefix.  <br /></td></tr>
+<tr class="separator:a8fefab25e35ad325d2d535fe0fabad64"><td class="memSeparator" colspan="2">&#160;</td></tr>
 <tr class="memitem:a4a9182b68a258640822cdc91c2c35f23" id="r_a4a9182b68a258640822cdc91c2c35f23"><td class="memItemLeft" align="right" valign="top">void&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="classgpu_1_1cpu__context.html#a4a9182b68a258640822cdc91c2c35f23">create_kernel_postfix</a> (std::ostringstream &amp;source_buffer, <a class="el" href="namespacegraph.html#aec6ce7b08d650c6b236b68bd68a2ce0a">graph::output_nodes</a>&lt; T, SAFE_MATH &gt; &amp;outputs, <a class="el" href="namespacegraph.html#acd48d32bd7925b056e932559379d9b55">graph::map_nodes</a>&lt; T, SAFE_MATH &gt; &amp;setters, <a class="el" href="namespacegraph.html#a7d69a698d998bfb31f5611ad55e44092">graph::shared_random_state</a>&lt; T, SAFE_MATH &gt; state, <a class="el" href="namespacejit.html#aaaa81016eb9cb161306980a63db3e720">jit::register_map</a> &amp;registers, const <a class="el" href="namespacejit.html#a6b1e88895ada14e42dfad16181ceb266">jit::register_usage</a> &amp;usage, const <a class="el" href="namespacejit.html#aff1d2e04194bc0f2161447446498e457">jit::argument_set</a> &amp;thread_shared, <a class="el" href="namespacejit.html#aaaa81016eb9cb161306980a63db3e720">jit::register_map</a> &amp;thread_mem, const size_t iterations=1)</td></tr>
 <tr class="memdesc:a4a9182b68a258640822cdc91c2c35f23"><td class="mdescLeft">&#160;</td><td class="mdescRight">Create kernel postfix.  <br /></td></tr>
 <tr class="separator:a4a9182b68a258640822cdc91c2c35f23"><td class="memSeparator" colspan="2">&#160;</td></tr>
@@ -506,8 +506,8 @@ template&lt;<a class="el" href="conceptjit_1_1float__scalar.html">jit::float_sca
 
 </div>
 </div>
-<a id="a726bbddff3a6b789dac0677e5a13540e" name="a726bbddff3a6b789dac0677e5a13540e"></a>
-<h2 class="memtitle"><span class="permalink"><a href="#a726bbddff3a6b789dac0677e5a13540e">&#9670;&#160;</a></span>create_kernel_call()</h2>
+<a id="a50691276fe0c222d123c5e9248d4116c" name="a50691276fe0c222d123c5e9248d4116c"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#a50691276fe0c222d123c5e9248d4116c">&#9670;&#160;</a></span>create_kernel_call()</h2>
 
 <div class="memitem">
 <div class="memproto">
@@ -538,7 +538,7 @@ template&lt;<a class="el" href="conceptjit_1_1float__scalar.html">jit::float_sca
         <tr>
           <td class="paramkey"></td>
           <td></td>
-          <td class="paramtype"><a class="el" href="namespacegraph.html#a7f4f9ab246d37d23e0259709e626bc36">graph::input_nodes</a>&lt; T, SAFE_MATH &gt;&#160;</td>
+          <td class="paramtype"><a class="el" href="namespacegraph.html#abe1ccc3ebe54f9db7732194c293c4e85">graph::atomic_nodes</a>&lt; T, SAFE_MATH &gt;&#160;</td>
           <td class="paramname"><em>atomics</em>, </td>
         </tr>
         <tr>
@@ -692,8 +692,8 @@ template&lt;<a class="el" href="conceptjit_1_1float__scalar.html">jit::float_sca
 
 </div>
 </div>
-<a id="a8f1341bb6068eeda2e6fba572e55dc6e" name="a8f1341bb6068eeda2e6fba572e55dc6e"></a>
-<h2 class="memtitle"><span class="permalink"><a href="#a8f1341bb6068eeda2e6fba572e55dc6e">&#9670;&#160;</a></span>create_kernel_prefix()</h2>
+<a id="a8fefab25e35ad325d2d535fe0fabad64" name="a8fefab25e35ad325d2d535fe0fabad64"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#a8fefab25e35ad325d2d535fe0fabad64">&#9670;&#160;</a></span>create_kernel_prefix()</h2>
 
 <div class="memitem">
 <div class="memproto">
@@ -730,7 +730,7 @@ template&lt;<a class="el" href="conceptjit_1_1float__scalar.html">jit::float_sca
         <tr>
           <td class="paramkey"></td>
           <td></td>
-          <td class="paramtype"><a class="el" href="namespacegraph.html#a7f4f9ab246d37d23e0259709e626bc36">graph::input_nodes</a>&lt; T, SAFE_MATH &gt;&#160;</td>
+          <td class="paramtype"><a class="el" href="namespacegraph.html#abe1ccc3ebe54f9db7732194c293c4e85">graph::atomic_nodes</a>&lt; T, SAFE_MATH &gt;&#160;</td>
           <td class="paramname"><em>atomics</em>, </td>
         </tr>
         <tr>

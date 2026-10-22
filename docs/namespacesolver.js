@@ -6,5 +6,5 @@ var namespacesolver =
     [ "solver_interface", "classsolver_1_1solver__interface.html", "classsolver_1_1solver__interface" ],
     [ "split_simplextic", "classsolver_1_1split__simplextic.html", "classsolver_1_1split__simplextic" ],
     [ "method", "conceptsolver_1_1method.html", null ],
-    [ "newton", "namespacesolver.html#ae31aae3b4744338e333c6989be8ed766", null ]
+    [ "newton", "namespacesolver.html#aa5c36de6e9a6ebc3b8c461a351e91a6b", null ]
 ];

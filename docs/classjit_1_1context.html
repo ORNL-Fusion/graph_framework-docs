@@ -115,9 +115,9 @@ Public Member Functions</h2></td></tr>
 <tr class="memitem:a673c179cb1ae4ea23f65677be4bdf8ca" id="r_a673c179cb1ae4ea23f65677be4bdf8ca"><td class="memItemLeft" align="right" valign="top">&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="classjit_1_1context.html#a673c179cb1ae4ea23f65677be4bdf8ca">context</a> (const size_t index)</td></tr>
 <tr class="memdesc:a673c179cb1ae4ea23f65677be4bdf8ca"><td class="mdescLeft">&#160;</td><td class="mdescRight">Construct a jit context object.  <br /></td></tr>
 <tr class="separator:a673c179cb1ae4ea23f65677be4bdf8ca"><td class="memSeparator" colspan="2">&#160;</td></tr>
-<tr class="memitem:aef7011dd12234b7bd060ad4694c8f96b" id="r_aef7011dd12234b7bd060ad4694c8f96b"><td class="memItemLeft" align="right" valign="top">void&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="classjit_1_1context.html#aef7011dd12234b7bd060ad4694c8f96b">add_kernel</a> (const std::string name, <a class="el" href="namespacegraph.html#a7f4f9ab246d37d23e0259709e626bc36">graph::input_nodes</a>&lt; T, SAFE_MATH &gt; &amp;inputs, <a class="el" href="namespacegraph.html#aec6ce7b08d650c6b236b68bd68a2ce0a">graph::output_nodes</a>&lt; T, SAFE_MATH &gt; &amp;outputs, <a class="el" href="namespacegraph.html#acd48d32bd7925b056e932559379d9b55">graph::map_nodes</a>&lt; T, SAFE_MATH &gt; &amp;setters, <a class="el" href="namespacegraph.html#a7f4f9ab246d37d23e0259709e626bc36">graph::input_nodes</a>&lt; T, SAFE_MATH &gt; &amp;atomics, <a class="el" href="namespacegraph.html#a7d69a698d998bfb31f5611ad55e44092">graph::shared_random_state</a>&lt; T, SAFE_MATH &gt; &amp;state, const size_t size, const size_t iterations=1)</td></tr>
-<tr class="memdesc:aef7011dd12234b7bd060ad4694c8f96b"><td class="mdescLeft">&#160;</td><td class="mdescRight">Add a kernel.  <br /></td></tr>
-<tr class="separator:aef7011dd12234b7bd060ad4694c8f96b"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:a2ce065eece2a61b61543fd9502bd1285" id="r_a2ce065eece2a61b61543fd9502bd1285"><td class="memItemLeft" align="right" valign="top">void&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="classjit_1_1context.html#a2ce065eece2a61b61543fd9502bd1285">add_kernel</a> (const std::string name, <a class="el" href="namespacegraph.html#a7f4f9ab246d37d23e0259709e626bc36">graph::input_nodes</a>&lt; T, SAFE_MATH &gt; &amp;inputs, <a class="el" href="namespacegraph.html#aec6ce7b08d650c6b236b68bd68a2ce0a">graph::output_nodes</a>&lt; T, SAFE_MATH &gt; &amp;outputs, <a class="el" href="namespacegraph.html#acd48d32bd7925b056e932559379d9b55">graph::map_nodes</a>&lt; T, SAFE_MATH &gt; &amp;setters, <a class="el" href="namespacegraph.html#abe1ccc3ebe54f9db7732194c293c4e85">graph::atomic_nodes</a>&lt; T, SAFE_MATH &gt; &amp;atomics, <a class="el" href="namespacegraph.html#a7d69a698d998bfb31f5611ad55e44092">graph::shared_random_state</a>&lt; T, SAFE_MATH &gt; &amp;state, const size_t size, const size_t iterations=1)</td></tr>
+<tr class="memdesc:a2ce065eece2a61b61543fd9502bd1285"><td class="mdescLeft">&#160;</td><td class="mdescRight">Add a kernel.  <br /></td></tr>
+<tr class="separator:a2ce065eece2a61b61543fd9502bd1285"><td class="memSeparator" colspan="2">&#160;</td></tr>
 <tr class="memitem:abb574e028c4da2e8d730364f433cb8cb" id="r_abb574e028c4da2e8d730364f433cb8cb"><td class="memItemLeft" align="right" valign="top">void&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="classjit_1_1context.html#abb574e028c4da2e8d730364f433cb8cb">add_max_reduction</a> (const size_t size)</td></tr>
 <tr class="memdesc:abb574e028c4da2e8d730364f433cb8cb"><td class="mdescLeft">&#160;</td><td class="mdescRight">Add max reduction kernel.  <br /></td></tr>
 <tr class="separator:abb574e028c4da2e8d730364f433cb8cb"><td class="memSeparator" colspan="2">&#160;</td></tr>
@@ -138,9 +138,9 @@ void&#160;</td><td class="memItemRight" valign="bottom"><b>save_source</b> ()</t
 <tr class="memitem:a1b0a1180dc7b49c143ee1b5422f107b7" id="r_a1b0a1180dc7b49c143ee1b5422f107b7"><td class="memItemLeft" align="right" valign="top">void&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="classjit_1_1context.html#a1b0a1180dc7b49c143ee1b5422f107b7">compile</a> (const bool add_reduction=false)</td></tr>
 <tr class="memdesc:a1b0a1180dc7b49c143ee1b5422f107b7"><td class="mdescLeft">&#160;</td><td class="mdescRight">Compile the kernel.  <br /></td></tr>
 <tr class="separator:a1b0a1180dc7b49c143ee1b5422f107b7"><td class="memSeparator" colspan="2">&#160;</td></tr>
-<tr class="memitem:a5047883d31b0f0568338a0cdb61ac549" id="r_a5047883d31b0f0568338a0cdb61ac549"><td class="memItemLeft" align="right" valign="top">std::function&lt; void(void)&gt;&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="classjit_1_1context.html#a5047883d31b0f0568338a0cdb61ac549">create_kernel_call</a> (const std::string kernel_name, <a class="el" href="namespacegraph.html#a7f4f9ab246d37d23e0259709e626bc36">graph::input_nodes</a>&lt; T, SAFE_MATH &gt; inputs, <a class="el" href="namespacegraph.html#aec6ce7b08d650c6b236b68bd68a2ce0a">graph::output_nodes</a>&lt; T, SAFE_MATH &gt; outputs, <a class="el" href="namespacegraph.html#a7f4f9ab246d37d23e0259709e626bc36">graph::input_nodes</a>&lt; T, SAFE_MATH &gt; atomics, <a class="el" href="namespacegraph.html#a7d69a698d998bfb31f5611ad55e44092">graph::shared_random_state</a>&lt; T, SAFE_MATH &gt; state, const size_t num_rays)</td></tr>
-<tr class="memdesc:a5047883d31b0f0568338a0cdb61ac549"><td class="mdescLeft">&#160;</td><td class="mdescRight">Create a kernel calling function.  <br /></td></tr>
-<tr class="separator:a5047883d31b0f0568338a0cdb61ac549"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:a5e69f93a6364d51d8d3fb4deee3da452" id="r_a5e69f93a6364d51d8d3fb4deee3da452"><td class="memItemLeft" align="right" valign="top">std::function&lt; void(void)&gt;&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="classjit_1_1context.html#a5e69f93a6364d51d8d3fb4deee3da452">create_kernel_call</a> (const std::string kernel_name, <a class="el" href="namespacegraph.html#a7f4f9ab246d37d23e0259709e626bc36">graph::input_nodes</a>&lt; T, SAFE_MATH &gt; inputs, <a class="el" href="namespacegraph.html#aec6ce7b08d650c6b236b68bd68a2ce0a">graph::output_nodes</a>&lt; T, SAFE_MATH &gt; outputs, <a class="el" href="namespacegraph.html#abe1ccc3ebe54f9db7732194c293c4e85">graph::atomic_nodes</a>&lt; T, SAFE_MATH &gt; atomics, <a class="el" href="namespacegraph.html#a7d69a698d998bfb31f5611ad55e44092">graph::shared_random_state</a>&lt; T, SAFE_MATH &gt; state, const size_t num_rays)</td></tr>
+<tr class="memdesc:a5e69f93a6364d51d8d3fb4deee3da452"><td class="mdescLeft">&#160;</td><td class="mdescRight">Create a kernel calling function.  <br /></td></tr>
+<tr class="separator:a5e69f93a6364d51d8d3fb4deee3da452"><td class="memSeparator" colspan="2">&#160;</td></tr>
 <tr class="memitem:a9f87ab3252ebc38b99c268abfedc5794" id="r_a9f87ab3252ebc38b99c268abfedc5794"><td class="memItemLeft" align="right" valign="top">std::function&lt; T(void)&gt;&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="classjit_1_1context.html#a9f87ab3252ebc38b99c268abfedc5794">create_max_call</a> (<a class="el" href="namespacegraph.html#ac8853b055dcbbfd35dff9b4584d5ef36">graph::shared_leaf</a>&lt; T, SAFE_MATH &gt; &amp;argument, std::function&lt; void(void)&gt; run)</td></tr>
 <tr class="memdesc:a9f87ab3252ebc38b99c268abfedc5794"><td class="mdescLeft">&#160;</td><td class="mdescRight">Create a max compute kernel calling function.  <br /></td></tr>
 <tr class="separator:a9f87ab3252ebc38b99c268abfedc5794"><td class="memSeparator" colspan="2">&#160;</td></tr>
@@ -231,8 +231,8 @@ template&lt;float_scalar T, bool SAFE_MATH = false&gt; </div>
 </div>
 </div>
 <h2 class="groupheader">Member Function Documentation</h2>
-<a id="aef7011dd12234b7bd060ad4694c8f96b" name="aef7011dd12234b7bd060ad4694c8f96b"></a>
-<h2 class="memtitle"><span class="permalink"><a href="#aef7011dd12234b7bd060ad4694c8f96b">&#9670;&#160;</a></span>add_kernel()</h2>
+<a id="a2ce065eece2a61b61543fd9502bd1285" name="a2ce065eece2a61b61543fd9502bd1285"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#a2ce065eece2a61b61543fd9502bd1285">&#9670;&#160;</a></span>add_kernel()</h2>
 
 <div class="memitem">
 <div class="memproto">
@@ -269,7 +269,7 @@ template&lt;float_scalar T, bool SAFE_MATH = false&gt; </div>
         <tr>
           <td class="paramkey"></td>
           <td></td>
-          <td class="paramtype"><a class="el" href="namespacegraph.html#a7f4f9ab246d37d23e0259709e626bc36">graph::input_nodes</a>&lt; T, SAFE_MATH &gt; &amp;&#160;</td>
+          <td class="paramtype"><a class="el" href="namespacegraph.html#abe1ccc3ebe54f9db7732194c293c4e85">graph::atomic_nodes</a>&lt; T, SAFE_MATH &gt; &amp;&#160;</td>
           <td class="paramname"><em>atomics</em>, </td>
         </tr>
         <tr>
@@ -572,8 +572,8 @@ template&lt;float_scalar T, bool SAFE_MATH = false&gt; </div>
 
 </div>
 </div>
-<a id="a5047883d31b0f0568338a0cdb61ac549" name="a5047883d31b0f0568338a0cdb61ac549"></a>
-<h2 class="memtitle"><span class="permalink"><a href="#a5047883d31b0f0568338a0cdb61ac549">&#9670;&#160;</a></span>create_kernel_call()</h2>
+<a id="a5e69f93a6364d51d8d3fb4deee3da452" name="a5e69f93a6364d51d8d3fb4deee3da452"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#a5e69f93a6364d51d8d3fb4deee3da452">&#9670;&#160;</a></span>create_kernel_call()</h2>
 
 <div class="memitem">
 <div class="memproto">
@@ -604,7 +604,7 @@ template&lt;float_scalar T, bool SAFE_MATH = false&gt; </div>
         <tr>
           <td class="paramkey"></td>
           <td></td>
-          <td class="paramtype"><a class="el" href="namespacegraph.html#a7f4f9ab246d37d23e0259709e626bc36">graph::input_nodes</a>&lt; T, SAFE_MATH &gt;&#160;</td>
+          <td class="paramtype"><a class="el" href="namespacegraph.html#abe1ccc3ebe54f9db7732194c293c4e85">graph::atomic_nodes</a>&lt; T, SAFE_MATH &gt;&#160;</td>
           <td class="paramname"><em>atomics</em>, </td>
         </tr>
         <tr>

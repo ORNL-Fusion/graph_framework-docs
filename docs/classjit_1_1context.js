@@ -1,14 +1,14 @@
 var classjit_1_1context =
 [
     [ "context", "classjit_1_1context.html#a673c179cb1ae4ea23f65677be4bdf8ca", null ],
-    [ "add_kernel", "classjit_1_1context.html#aef7011dd12234b7bd060ad4694c8f96b", null ],
+    [ "add_kernel", "classjit_1_1context.html#a2ce065eece2a61b61543fd9502bd1285", null ],
     [ "add_max_reduction", "classjit_1_1context.html#abb574e028c4da2e8d730364f433cb8cb", null ],
     [ "check_value", "classjit_1_1context.html#ae36e6ac9becee00647615a7ac14ec0f7", null ],
     [ "compile", "classjit_1_1context.html#a1b0a1180dc7b49c143ee1b5422f107b7", null ],
     [ "copy_to_device", "classjit_1_1context.html#add3757db47a4d224350aa92d962efdbd", null ],
     [ "copy_to_host", "classjit_1_1context.html#afa510b5044594a5c3f169d4dfd655a3c", null ],
     [ "create_copy_call", "classjit_1_1context.html#a0643ad182f1eb4aabf4be9537823148c", null ],
-    [ "create_kernel_call", "classjit_1_1context.html#a5047883d31b0f0568338a0cdb61ac549", null ],
+    [ "create_kernel_call", "classjit_1_1context.html#a5e69f93a6364d51d8d3fb4deee3da452", null ],
     [ "create_max_call", "classjit_1_1context.html#a9f87ab3252ebc38b99c268abfedc5794", null ],
     [ "create_zero_call", "classjit_1_1context.html#ab1c3063533a2b6f56e944d6d97121675", null ],
     [ "get_buffer", "classjit_1_1context.html#ae30cd8daa4206786442ee5efb405c982", null ],

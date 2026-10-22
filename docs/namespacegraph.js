@@ -53,6 +53,7 @@ var namespacegraph =
     [ "triple_node", "classgraph_1_1triple__node.html", "classgraph_1_1triple__node" ],
     [ "variable_node", "classgraph_1_1variable__node.html", "classgraph_1_1variable__node" ],
     [ "vector_quantity", "classgraph_1_1vector__quantity.html", "classgraph_1_1vector__quantity" ],
+    [ "atomic_nodes", "namespacegraph.html#abe1ccc3ebe54f9db7732194c293c4e85", null ],
     [ "copy_nodes", "namespacegraph.html#ab302ff23558d742b8b7cb899447f2ce1", null ],
     [ "input_nodes", "namespacegraph.html#a7f4f9ab246d37d23e0259709e626bc36", null ],
     [ "map_nodes", "namespacegraph.html#acd48d32bd7925b056e932559379d9b55", null ],

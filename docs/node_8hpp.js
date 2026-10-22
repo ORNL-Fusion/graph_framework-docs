@@ -12,6 +12,7 @@ var node_8hpp =
     [ "graph::no_derivative< T, SAFE_MATH, BASE_NODE, N >", "classgraph_1_1no__derivative.html", "classgraph_1_1no__derivative" ],
     [ "graph::variable_node< T, SAFE_MATH >", "classgraph_1_1variable__node.html", "classgraph_1_1variable__node" ],
     [ "graph::pseudo_variable_node< T, SAFE_MATH >", "classgraph_1_1pseudo__variable__node.html", "classgraph_1_1pseudo__variable__node" ],
+    [ "atomic_nodes", "node_8hpp.html#abe1ccc3ebe54f9db7732194c293c4e85", null ],
     [ "copy_nodes", "node_8hpp.html#ab302ff23558d742b8b7cb899447f2ce1", null ],
     [ "input_nodes", "node_8hpp.html#a7f4f9ab246d37d23e0259709e626bc36", null ],
     [ "map_nodes", "node_8hpp.html#acd48d32bd7925b056e932559379d9b55", null ],
