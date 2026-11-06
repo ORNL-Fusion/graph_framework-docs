@@ -247,9 +247,9 @@ Making workflows.</h1>
 <div class="line">    <a class="code hl_function" href="namespacegraph.html#a9321a15c96554d065da2ffe49e969ff4">graph::variable_cast</a>(x)</div>
 <div class="line">}, {</div>
 <div class="line">    y, dydx</div>
-<div class="line">}, {}, NULL, <span class="stringliteral">&quot;my_first_kernel&quot;</span>, 3);</div>
+<div class="line">}, {}, {}, NULL, <span class="stringliteral">&quot;my_first_kernel&quot;</span>, 3);</div>
 <div class="ttc" id="anamespacegraph_html_a9321a15c96554d065da2ffe49e969ff4"><div class="ttname"><a href="namespacegraph.html#a9321a15c96554d065da2ffe49e969ff4">graph::variable_cast</a></div><div class="ttdeci">shared_variable&lt; T, SAFE_MATH &gt; variable_cast(shared_leaf&lt; T, SAFE_MATH &gt; x)</div><div class="ttdoc">Cast to a variable node.</div><div class="ttdef"><b>Definition</b> node.hpp:2172</div></div>
-</div><!-- fragment --><p> Here we have created a kernel which computes the outputs of \(y\) and \(\frac{\partial y}{\partial x}\). The third and forth arguments are blank because there are no maps and we are not using random numbers. The last argument needs to match the dimensions of the inputs. Inputs need to be cast from generic <a class="el" href="classgraph_1_1leaf__node.html">graph::leaf_node</a> to the specific <a class="el" href="classgraph_1_1variable__node.html">graph::variable_node</a>.</p>
+</div><!-- fragment --><p> Here we have created a kernel which computes the outputs of \(y\) and \(\frac{\partial y}{\partial x}\). The third and forth arguments are blank because there are no maps, no atomics and we are not using random numbers. The last argument needs to match the dimensions of the inputs. Inputs need to be cast from generic <a class="el" href="classgraph_1_1leaf__node.html">graph::leaf_node</a> to the specific <a class="el" href="classgraph_1_1variable__node.html">graph::variable_node</a>.</p>
 <p>To evaluate the kernel, we need to first compile it. Then set the values for \(x\) and run the kernel. To see the results we can print the values of the nodes used. </p><div class="fragment"><div class="line">x-&gt;set({1.0, 2.0, 3.0});</div>
 <div class="line"> </div>
 <div class="line"><a class="code hl_class" href="classworkflow_1_1manager.html">workflow::manager&lt;T&gt;</a> work(0);</div>
@@ -257,7 +257,7 @@ Making workflows.</h1>
 <div class="line">    <a class="code hl_function" href="namespacegraph.html#a9321a15c96554d065da2ffe49e969ff4">graph::variable_cast</a>(x)</div>
 <div class="line">}, {</div>
 <div class="line">    y, dydx</div>
-<div class="line">}, {}, NULL, <span class="stringliteral">&quot;my_first_kernel&quot;</span>, 3);</div>
+<div class="line">}, {}, {}, NULL, <span class="stringliteral">&quot;my_first_kernel&quot;</span>, 3);</div>
 <div class="line">work.compile();</div>
 <div class="line"> </div>
 <div class="line">work.run();</div>
@@ -272,7 +272,7 @@ Making workflows.</h1>
 <div class="line">    <a class="code hl_function" href="namespacegraph.html#a9321a15c96554d065da2ffe49e969ff4">graph::variable_cast</a>(x)</div>
 <div class="line">}, {</div>
 <div class="line">    y, dydx</div>
-<div class="line">}, {}, NULL, <span class="stringliteral">&quot;my_first_kernel&quot;</span>, 3);</div>
+<div class="line">}, {}, {}, NULL, <span class="stringliteral">&quot;my_first_kernel&quot;</span>, 3);</div>
 <div class="line">work.compile();</div>
 <div class="line"> </div>
 <div class="line">x-&gt;set({1.0, 2.0, 3.0});</div>
@@ -302,7 +302,7 @@ Iteration</h2>
 <div class="line">    <a class="code hl_function" href="namespacegraph.html#a9321a15c96554d065da2ffe49e969ff4">graph::variable_cast</a>(x)</div>
 <div class="line">}, {}, {</div>
 <div class="line">    {y, <a class="code hl_function" href="namespacegraph.html#a9321a15c96554d065da2ffe49e969ff4">graph::variable_cast</a>(x)}</div>
-<div class="line">}, NULL, <span class="stringliteral">&quot;iteration_kernel&quot;</span>, 3);</div>
+<div class="line">}, {}, NULL, <span class="stringliteral">&quot;iteration_kernel&quot;</span>, 3);</div>
 <div class="line">work.compile();</div>
 <div class="line"> </div>
 <div class="line"><span class="keywordflow">for</span> (<span class="keywordtype">size_t</span> i = 0; <a class="code hl_variable" href="namespacegraph.html#a9b84f5a5f048fe7931dc4f9d39f5efa6">i</a> &lt; 10; <a class="code hl_variable" href="namespacegraph.html#a9b84f5a5f048fe7931dc4f9d39f5efa6">i</a>++) {</div>
@@ -343,7 +343,7 @@ Newton's Method.</h1>
 <div class="line">        <a class="code hl_function" href="namespacegraph.html#a9321a15c96554d065da2ffe49e969ff4">graph::variable_cast</a>(x)</div>
 <div class="line">    }, {f}, {</div>
 <div class="line">        {x_new, <a class="code hl_function" href="namespacegraph.html#a9321a15c96554d065da2ffe49e969ff4">graph::variable_cast</a>(x)}</div>
-<div class="line">    }, NULL, <span class="stringliteral">&quot;newton_kernel&quot;</span>, 3);</div>
+<div class="line">    }, {}, NULL, <span class="stringliteral">&quot;newton_kernel&quot;</span>, 3);</div>
 <div class="line">    work.compile();</div>
 <div class="line"> </div>
 <div class="line">    std::array&lt;T, 3&gt; result;</div>
@@ -378,7 +378,7 @@ Newton's Method.</h1>
 <div class="line">    <a class="code hl_function" href="namespacegraph.html#a9321a15c96554d065da2ffe49e969ff4">graph::variable_cast</a>(x)</div>
 <div class="line">}, {f*f}, {</div>
 <div class="line">    {x_new, <a class="code hl_function" href="namespacegraph.html#a9321a15c96554d065da2ffe49e969ff4">graph::variable_cast</a>(x)}</div>
-<div class="line">}, NULL, <span class="stringliteral">&quot;newton_kernel&quot;</span>, 3, 1.0E-14);</div>
+<div class="line">}, {}, NULL, <span class="stringliteral">&quot;newton_kernel&quot;</span>, 3, 1.0E-14);</div>
 <div class="line">work.compile();</div>
 <div class="line"> </div>
 <div class="line">work.run();</div>
