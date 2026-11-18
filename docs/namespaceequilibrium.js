@@ -1,14 +1,14 @@
 var namespaceequilibrium =
 [
-    [ "efit", "classequilibrium_1_1efit.html", "classequilibrium_1_1efit" ],
-    [ "gaussian_density", "classequilibrium_1_1gaussian__density.html", "classequilibrium_1_1gaussian__density" ],
     [ "generic", "classequilibrium_1_1generic.html", "classequilibrium_1_1generic" ],
     [ "no_magnetic_field", "classequilibrium_1_1no__magnetic__field.html", "classequilibrium_1_1no__magnetic__field" ],
     [ "slab", "classequilibrium_1_1slab.html", "classequilibrium_1_1slab" ],
     [ "slab_density", "classequilibrium_1_1slab__density.html", "classequilibrium_1_1slab__density" ],
     [ "slab_field", "classequilibrium_1_1slab__field.html", "classequilibrium_1_1slab__field" ],
+    [ "gaussian_density", "classequilibrium_1_1gaussian__density.html", "classequilibrium_1_1gaussian__density" ],
+    [ "efit", "classequilibrium_1_1efit.html", "classequilibrium_1_1efit" ],
     [ "vmec", "classequilibrium_1_1vmec.html", "classequilibrium_1_1vmec" ],
-    [ "shared", "namespaceequilibrium.html#a9f4ba1563110e2443131808c94663444", null ],
+    [ "shared", "namespaceequilibrium.html#a35e922cfb2df6595e5e398e26c034f87", null ],
     [ "build_1D_spline", "namespaceequilibrium.html#af5381850f5f350604b0d00fa40514376", null ],
     [ "make_efit", "namespaceequilibrium.html#afe3234694e2e2d1e2dcd4cbde92f3e36", null ],
     [ "make_gaussian_density", "namespaceequilibrium.html#a5c681ea4a42cdbb3bfbcdc9a8c584d9b", null ],

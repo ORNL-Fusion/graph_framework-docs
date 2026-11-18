@@ -1,4 +1,4 @@
 var searchData=
 [
-  ['build_20system_0',['Build System',['../build_system.html',1,'']]]
+  ['4th_20order_20runge_20kutta_0',['4th Order Runge Kutta',['../solvers.html#solvers_rk4',1,'4th Order Runge Kutta'],['../solvers.html#solvers_adaptive_rk4',1,'Adaptive 4th Order Runge Kutta']]]
 ];

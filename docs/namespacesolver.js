@@ -1,9 +1,9 @@
 var namespacesolver =
 [
-    [ "adaptive_rk4", "classsolver_1_1adaptive__rk4.html", "classsolver_1_1adaptive__rk4" ],
+    [ "solver_interface", "classsolver_1_1solver__interface.html", "classsolver_1_1solver__interface" ],
     [ "rk2", "classsolver_1_1rk2.html", "classsolver_1_1rk2" ],
     [ "rk4", "classsolver_1_1rk4.html", "classsolver_1_1rk4" ],
-    [ "solver_interface", "classsolver_1_1solver__interface.html", "classsolver_1_1solver__interface" ],
+    [ "adaptive_rk4", "classsolver_1_1adaptive__rk4.html", "classsolver_1_1adaptive__rk4" ],
     [ "split_simplextic", "classsolver_1_1split__simplextic.html", "classsolver_1_1split__simplextic" ],
     [ "method", "conceptsolver_1_1method.html", null ],
     [ "newton", "namespacesolver.html#aa5c36de6e9a6ebc3b8c461a351e91a6b", null ]

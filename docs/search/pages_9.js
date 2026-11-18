@@ -1,4 +1,4 @@
 var searchData=
 [
-  ['line_20arguments_0',['xrays Command Line Arguments',['../xrays_commandline.html',1,'']]]
+  ['hot_20plasma_20dispersion_20function_0',['Hot Plasma Dispersion Function',['../absorption_model.html#absorption_model_hot',1,'']]]
 ];

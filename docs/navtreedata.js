@@ -265,22 +265,21 @@ var NAVTREE =
 var NAVTREEINDEX =
 [
 "absorption_8hpp.html",
-"classbackend_1_1buffer.html#af9928266a07dedb776d5e4c9eaa069d1",
-"classequilibrium_1_1no__magnetic__field.html#ac69fe62d4607739a896ad78669082017",
-"classgraph_1_1apply__u__node.html#a4ce5b407d91e010bdece45672fbbddd8",
-"classgraph_1_1erfi__node.html#a67af21f5dcf94c195515f7b0f500e61b",
-"classgraph_1_1leaf__node.html#a94806db93134104970bfc730a56d7a2f",
-"classgraph_1_1piecewise__2D__node.html#a364f7203cbd00116988d56e1c2e41907",
-"classgraph_1_1variable__node.html#a8cf55878fa99f2055483dbd58a8a38cc",
-"classsolver_1_1rk4.html#a6802b3aa027892301faf587cb23a1a0e",
-"classworkflow_1_1manager.html#abcf904f1176e01f4cfbaeab9ad4aa7ec",
-"globals_func_t.html",
-"interfacegraph__fortran_1_1graph__construct__context.html",
-"namespacegraph.html#a01ad87b7901bcba474cb79d9e1cf70c3",
-"namespacegraph__fortran.html#a33d223be003ae0abb431506fe55a9662",
-"pic__test_8cpp.html#ac1ada086083c7761b34652ea7bc20355",
-"vector_8hpp.html#aac7ece00fbd5f11f03e1e13454d22bcf"
+"classdispersion_1_1dispersion__interface.html#a762be5369c655bdc8a1ece11979c1abc",
+"classequilibrium_1_1vmec.html#aa9774395c87cd1a53febb300968c9cfd",
+"classgraph_1_1argument__node.html#aec14a29b415e942cd08071ea14776803",
+"classgraph_1_1greater__than__node.html#a45e32c28f57ec20e9a8061c6e4b985d6",
+"classgraph_1_1log__node.html#a8bfc14b28546174101e9a81c75113d40",
+"classgraph_1_1pseudo__variable__node.html",
+"classjit_1_1context.html#a9f87ab3252ebc38b99c268abfedc5794",
+"classsolver_1_1solver__interface.html#a48c82d37f560ef4d10d337aa7b19df91",
+"conceptjit_1_1double__base.html",
+"graph__c__binding_8h.html#a1fbe6e15a1f2b98023af35febb278cb6",
+"namespaceequilibrium.html#af6cb4eb52ad26ab176efe85e91a30de9",
+"namespacegraph__fortran.html#a158629a44faadcefb01fcf48b24b61f4",
+"structgraph__c__context.html"
 ];
 
-var SYNCONMSG = 'click to disable panel synchronisation';
-var SYNCOFFMSG = 'click to enable panel synchronisation';
+var SYNCONMSG = 'click to disable panel synchronization';
+var SYNCOFFMSG = 'click to enable panel synchronization';
+var LISTOFALLMEMBERS = 'List of all members';

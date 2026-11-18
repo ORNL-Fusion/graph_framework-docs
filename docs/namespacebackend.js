@@ -7,6 +7,7 @@ var namespacebackend =
     [ "hypot", "namespacebackend.html#aedb8028cd6f07b7ca51a1ebc96515667", null ],
     [ "max", "namespacebackend.html#a63b5cd19a61729666865b65911e7411f", null ],
     [ "min", "namespacebackend.html#a4e5f0b7330f1261e15c6ff277d18e62f", null ],
+    [ "min", "namespacebackend.html#a4e5f0b7330f1261e15c6ff277d18e62f", null ],
     [ "operator!=", "namespacebackend.html#a8f01cffe6c1ac41d4b55c57ec59b6b28", null ],
     [ "operator%", "namespacebackend.html#ac61b2dc53f40cc0df369e58ae0f70df0", null ],
     [ "operator&&", "namespacebackend.html#a49e9ba0a2c08c4401f421874d4c481e6", null ],

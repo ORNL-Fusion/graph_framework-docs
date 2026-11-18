@@ -10,8 +10,8 @@ var indexSectionsWithContent =
   7: "gmo",
   8: "chlpr",
   9: "abcelmrs",
-  10: "abcdefgiklmnopqstux",
-  11: "adjs"
+  10: "24abcdefghijklmnopqrstuvwxz",
+  11: "cdfmsz"
 };
 
 var indexSectionNames =

@@ -1,5 +1,27 @@
 var searchData=
 [
-  ['in_20c_20code_0',['Embedding in C code',['../graph_c_binding.html',1,'']]],
-  ['in_20fortran_20code_1',['Embedding in Fortran code',['../graph_fortran_binding.html',1,'']]]
+  ['file_0',['xrays Output File',['../xrays_output.html',1,'']]],
+  ['file_20format_1',['File Format',['../xrays_output.html#xrays_output_format',1,'']]],
+  ['file_20format_2',['file format',['../equilibrium_models.html#equilibrium_efit_format',1,'EFIT file format'],['../equilibrium_models.html#equilibrium_vmec_format',1,'VMEC file format']]],
+  ['files_3',['Post processes result files.',['../bin_8py.html#autotoc_md4',1,'']]],
+  ['files_20to_20remove_20nan_20values_4',['Post processes result files to remove NaN values.',['../fix__NaN_8py.html#autotoc_md7',1,'']]],
+  ['find_5',['Root Find',['../absorption_model.html#absorption_model_root',1,'']]],
+  ['flags_6',['Sanitizer flags',['../build_system.html#build_system_sanitizer',1,'']]],
+  ['flags_20from_20the_20system_20compiler_7',['Get the needed include flags from the system compiler.',['../get__includes_8py.html#autotoc_md10',1,'']]],
+  ['for_20rf_20ray_20tracing_8',['Developer guide for RF Ray Tracing',['../index.html#framework_developer_tools',1,'']]],
+  ['for_20throughput_20benchmark_20comparison_9',['Source codes for throughput benchmark comparison',['../code_performance.html#code_performance_comparison_codes',1,'']]],
+  ['for_20tools_10',['User guides for tools',['../index.html#tools',1,'']]],
+  ['format_11',['File Format',['../xrays_output.html#xrays_output_format',1,'']]],
+  ['format_12',['format',['../equilibrium_models.html#equilibrium_efit_format',1,'EFIT file format'],['../equilibrium_models.html#equilibrium_vmec_format',1,'VMEC file format']]],
+  ['formatting_13',['Spline Formatting',['../equilibrium_models.html#equilibrium_splines',1,'']]],
+  ['fortran_20binding_20interface_14',['Fortran Binding Interface',['../graph_fortran_binding.html#graph_fortran_binding_interface',1,'']]],
+  ['fortran_20code_15',['Embedding in Fortran code',['../graph_fortran_binding.html',1,'']]],
+  ['framework_16',['Framework',['../code_structure.html#code_structure_framework',1,'Framework'],['../index.html',1,'Graph Framework'],['../code_performance.html#code_performance_comparison_graph',1,'Graph Framework']]],
+  ['framework_20developer_20guides_17',['Framework developer guides',['../index.html#framework_developer',1,'']]],
+  ['framework_20user_20guides_18',['Framework user guides',['../index.html#framework_user',1,'']]],
+  ['frameworks_19',['Comparison to other Frameworks',['../code_performance.html#code_performance_comparison',1,'']]],
+  ['from_20the_20system_20compiler_20',['Get the needed include flags from the system compiler.',['../get__includes_8py.html#autotoc_md10',1,'']]],
+  ['function_21',['Hot Plasma Dispersion Function',['../absorption_model.html#absorption_model_hot',1,'']]],
+  ['functions_22',['Functions',['../dispersion_function.html#dispersion_function_avail',1,'Available Dispersion Functions'],['../dispersion_function.html',1,'Dispersion Functions']]],
+  ['functions_23',['Developing new dispersion functions',['../dispersion_function.html#dispersion_function_devel',1,'']]]
 ];

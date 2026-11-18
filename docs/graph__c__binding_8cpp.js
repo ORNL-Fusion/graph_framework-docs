@@ -1,6 +1,6 @@
 var graph__c__binding_8cpp =
 [
-    [ "graph_c_context_type< T, SAFE_MATH >", "structgraph__c__context__type.html", "structgraph__c__context__type" ],
+    [ "graph_c_context_type&lt; T, SAFE_MATH &gt;", "structgraph__c__context__type.html", "structgraph__c__context__type" ],
     [ "graph_add", "graph__c__binding_8cpp.html#a2c2aab9c274d73b4d620203b16c6b1af", null ],
     [ "graph_add_converge_item", "graph__c__binding_8cpp.html#aa6d0b3da71c2f2a7f04d55215b9294fe", null ],
     [ "graph_add_copy_item", "graph__c__binding_8cpp.html#a730d0e4ac813fc92bceade58cc85ca00", null ],

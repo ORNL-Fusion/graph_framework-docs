@@ -1,17 +1,20 @@
 var hierarchy =
 [
-    [ "graph::leaf_node< T, SAFE_MATH >::caches_t", "structgraph_1_1leaf__node_1_1caches__t.html", null ],
-    [ "pic::characteristics< T >", "classpic_1_1characteristics.html", null ],
-    [ "jit::context< T, SAFE_MATH >", "classjit_1_1context.html", null ],
-    [ "jit::context< T, false >", "classjit_1_1context.html", null ],
-    [ "jit::context< T, SAFE_MATH >", "classjit_1_1context.html", null ],
-    [ "gpu::cpu_context< T, SAFE_MATH >", "classgpu_1_1cpu__context.html", null ],
-    [ "gpu::cuda_context< T, SAFE_MATH >", "classgpu_1_1cuda__context.html", null ],
-    [ "output::data_set< T >", "classoutput_1_1data__set.html", null ],
-    [ "output::data_set< typename DISPERSION_FUNCTION::base >", "classoutput_1_1data__set.html", null ],
-    [ "dispersion::dispersion_function< T, SAFE_MATH >", "classdispersion_1_1dispersion__function.html", [
+    [ "graph::leaf_node&lt; T, SAFE_MATH &gt;::caches_t", "structgraph_1_1leaf__node_1_1caches__t.html", null ],
+    [ "pic::characteristics&lt; T &gt;", "classpic_1_1characteristics.html", null ],
+    [ "jit::context&lt; T, SAFE_MATH &gt;", "classjit_1_1context.html", null ],
+    [ "gpu::cpu_context&lt; T, SAFE_MATH &gt;", "classgpu_1_1cpu__context.html", null ],
+    [ "gpu::cuda_context&lt; T, SAFE_MATH &gt;", "classgpu_1_1cuda__context.html", null ],
+    [ "output::data_set&lt; T &gt;", "classoutput_1_1data__set.html", null ],
+    [ "dispersion::dispersion_function&lt; T, SAFE_MATH &gt;", "classdispersion_1_1dispersion__function.html", null ],
+    [ "dispersion::dispersion_function&lt; T, false &gt;", "classdispersion_1_1dispersion__function.html", [
       [ "dispersion::gaussian_well< T, SAFE_MATH >", "classdispersion_1_1gaussian__well.html", null ],
-      [ "dispersion::physics< T, SAFE_MATH >", "classdispersion_1_1physics.html", [
+      [ "dispersion::physics< T, SAFE_MATH >", "classdispersion_1_1physics.html", null ],
+      [ "dispersion::simple< T, SAFE_MATH >", "classdispersion_1_1simple.html", null ],
+      [ "dispersion::stiff< T, SAFE_MATH >", "classdispersion_1_1stiff.html", null ]
+    ] ],
+    [ "dispersion::dispersion_function&lt; T, SAFE_MATH &gt;", "classdispersion_1_1dispersion__function.html", [
+      [ "dispersion::physics< T, false >", "classdispersion_1_1physics.html", [
         [ "dispersion::acoustic_wave< T, SAFE_MATH >", "classdispersion_1_1acoustic__wave.html", null ],
         [ "dispersion::bohm_gross< T, SAFE_MATH >", "classdispersion_1_1bohm__gross.html", null ],
         [ "dispersion::cold_plasma< T, SAFE_MATH >", "classdispersion_1_1cold__plasma.html", null ],
@@ -22,15 +25,9 @@ var hierarchy =
         [ "dispersion::ion_cyclotron< T, SAFE_MATH >", "classdispersion_1_1ion__cyclotron.html", null ],
         [ "dispersion::light_wave< T, SAFE_MATH >", "classdispersion_1_1light__wave.html", null ],
         [ "dispersion::ordinary_wave< T, SAFE_MATH >", "classdispersion_1_1ordinary__wave.html", null ]
-      ] ],
-      [ "dispersion::simple< T, SAFE_MATH >", "classdispersion_1_1simple.html", null ],
-      [ "dispersion::stiff< T, SAFE_MATH >", "classdispersion_1_1stiff.html", null ]
+      ] ]
     ] ],
-    [ "dispersion::dispersion_function< T, false >", "classdispersion_1_1dispersion__function.html", null ],
-    [ "dispersion::dispersion_function< T, SAFE_MATH >", "classdispersion_1_1dispersion__function.html", [
-      [ "dispersion::physics< T, false >", "classdispersion_1_1physics.html", null ]
-    ] ],
-    [ "dispersion::dispersion_interface< DISPERSION_FUNCTION >", "classdispersion_1_1dispersion__interface.html", null ],
+    [ "dispersion::dispersion_interface&lt; DISPERSION_FUNCTION &gt;", "classdispersion_1_1dispersion__interface.html", null ],
     [ "std::enable_shared_from_this", null, [
       [ "graph::leaf_node< float, false >", "classgraph_1_1leaf__node.html", [
         [ "graph::no_derivative< float, false, graph::leaf_node< float, false > >", "classgraph_1_1no__derivative.html", [
@@ -39,10 +36,37 @@ var hierarchy =
       ] ],
       [ "graph::leaf_node< T, SAFE_MATH >", "classgraph_1_1leaf__node.html", [
         [ "graph::branch_node< T, false >", "classgraph_1_1branch__node.html", [
-          [ "graph::no_derivative< T, false, branch_node< T, false > >", "classgraph_1_1no__derivative.html", null ]
+          [ "graph::no_derivative< T, false, branch_node< T, false > >", "classgraph_1_1no__derivative.html", [
+            [ "graph::and_node< T, SAFE_MATH >", "classgraph_1_1and__node.html", null ],
+            [ "graph::copysign_node< T, SAFE_MATH >", "classgraph_1_1copysign__node.html", null ],
+            [ "graph::equal_node< T, SAFE_MATH >", "classgraph_1_1equal__node.html", null ],
+            [ "graph::greater_than_equal_node< T, SAFE_MATH >", "classgraph_1_1greater__than__equal__node.html", null ],
+            [ "graph::greater_than_node< T, SAFE_MATH >", "classgraph_1_1greater__than__node.html", null ],
+            [ "graph::less_than_equal_node< T, SAFE_MATH >", "classgraph_1_1less__than__equal__node.html", null ],
+            [ "graph::less_than_node< T, SAFE_MATH >", "classgraph_1_1less__than__node.html", null ],
+            [ "graph::modulo_node< T, SAFE_MATH >", "classgraph_1_1modulo__node.html", null ],
+            [ "graph::not_equal_node< T, SAFE_MATH >", "classgraph_1_1not__equal__node.html", null ],
+            [ "graph::or_node< T, SAFE_MATH >", "classgraph_1_1or__node.html", null ]
+          ] ],
+          [ "graph::add_node< T, SAFE_MATH >", "classgraph_1_1add__node.html", null ],
+          [ "graph::arctan_node< T, SAFE_MATH >", "classgraph_1_1arctan__node.html", null ],
+          [ "graph::divide_node< T, SAFE_MATH >", "classgraph_1_1divide__node.html", null ],
+          [ "graph::hypot_node< T, SAFE_MATH >", "classgraph_1_1hypot__node.html", null ],
+          [ "graph::index_1D_node< T, SAFE_MATH >", "classgraph_1_1index__1D__node.html", null ],
+          [ "graph::min_node< T, SAFE_MATH >", "classgraph_1_1min__node.html", null ],
+          [ "graph::multiply_node< T, SAFE_MATH >", "classgraph_1_1multiply__node.html", null ],
+          [ "graph::piecewise_2D_node< T, SAFE_MATH >", "classgraph_1_1piecewise__2D__node.html", null ],
+          [ "graph::pow_node< T, SAFE_MATH >", "classgraph_1_1pow__node.html", null ],
+          [ "graph::subtract_node< T, SAFE_MATH >", "classgraph_1_1subtract__node.html", null ],
+          [ "graph::triple_node< T, SAFE_MATH >", "classgraph_1_1triple__node.html", null ]
         ] ],
         [ "graph::branch_node< T, SAFE_MATH >", "classgraph_1_1branch__node.html", [
-          [ "graph::triple_node< T, false >", "classgraph_1_1triple__node.html", null ]
+          [ "graph::triple_node< T, false >", "classgraph_1_1triple__node.html", [
+            [ "graph::atomic_accumulate_1D_node< T, SAFE_MATH >", "classgraph_1_1atomic__accumulate__1D__node.html", null ],
+            [ "graph::fma_node< T, SAFE_MATH >", "classgraph_1_1fma__node.html", null ],
+            [ "graph::if_node< T, SAFE_MATH >", "classgraph_1_1if__node.html", null ],
+            [ "graph::index_2D_node< T, SAFE_MATH >", "classgraph_1_1index__2D__node.html", null ]
+          ] ]
         ] ],
         [ "graph::n_branch_node< 7, T, false >", "classgraph_1_1n__branch__node.html", [
           [ "graph::no_derivative< T, false, n_branch_node< 7, T, false >, 7 >", "classgraph_1_1no__derivative.html", [
@@ -55,50 +79,12 @@ var hierarchy =
           ] ]
         ] ],
         [ "graph::straight_node< T, false >", "classgraph_1_1straight__node.html", [
-          [ "graph::no_derivative< T, false, straight_node< T, false > >", "classgraph_1_1no__derivative.html", null ]
-        ] ]
-      ] ],
-      [ "graph::leaf_node< T, false >", "classgraph_1_1leaf__node.html", null ],
-      [ "graph::leaf_node< T, SAFE_MATH >", "classgraph_1_1leaf__node.html", [
-        [ "graph::branch_node< T, SAFE_MATH >", "classgraph_1_1branch__node.html", [
-          [ "graph::add_node< T, SAFE_MATH >", "classgraph_1_1add__node.html", null ],
-          [ "graph::arctan_node< T, SAFE_MATH >", "classgraph_1_1arctan__node.html", null ],
-          [ "graph::divide_node< T, SAFE_MATH >", "classgraph_1_1divide__node.html", null ],
-          [ "graph::hypot_node< T, SAFE_MATH >", "classgraph_1_1hypot__node.html", null ],
-          [ "graph::index_1D_node< T, SAFE_MATH >", "classgraph_1_1index__1D__node.html", null ],
-          [ "graph::min_node< T, SAFE_MATH >", "classgraph_1_1min__node.html", null ],
-          [ "graph::multiply_node< T, SAFE_MATH >", "classgraph_1_1multiply__node.html", null ],
-          [ "graph::piecewise_2D_node< T, SAFE_MATH >", "classgraph_1_1piecewise__2D__node.html", null ],
-          [ "graph::pow_node< T, SAFE_MATH >", "classgraph_1_1pow__node.html", null ],
-          [ "graph::subtract_node< T, SAFE_MATH >", "classgraph_1_1subtract__node.html", null ],
-          [ "graph::triple_node< T, SAFE_MATH >", "classgraph_1_1triple__node.html", [
-            [ "graph::atomic_accumulate_1D_node< T, SAFE_MATH >", "classgraph_1_1atomic__accumulate__1D__node.html", null ],
-            [ "graph::fma_node< T, SAFE_MATH >", "classgraph_1_1fma__node.html", null ],
-            [ "graph::if_node< T, SAFE_MATH >", "classgraph_1_1if__node.html", null ],
-            [ "graph::index_2D_node< T, SAFE_MATH >", "classgraph_1_1index__2D__node.html", null ]
-          ] ]
-        ] ],
-        [ "graph::constant_node< T, SAFE_MATH >", "classgraph_1_1constant__node.html", null ],
-        [ "graph::index_node< T, SAFE_MATH >", "classgraph_1_1index__node.html", null ],
-        [ "graph::n_branch_node< N, T, SAFE_MATH >", "classgraph_1_1n__branch__node.html", null ],
-        [ "graph::no_derivative< T, SAFE_MATH, BASE_NODE, N >", "classgraph_1_1no__derivative.html", [
-          [ "graph::and_node< T, SAFE_MATH >", "classgraph_1_1and__node.html", null ],
-          [ "graph::argument_node< T, SAFE_MATH >", "classgraph_1_1argument__node.html", null ],
-          [ "graph::copysign_node< T, SAFE_MATH >", "classgraph_1_1copysign__node.html", null ],
-          [ "graph::equal_node< T, SAFE_MATH >", "classgraph_1_1equal__node.html", null ],
-          [ "graph::greater_than_equal_node< T, SAFE_MATH >", "classgraph_1_1greater__than__equal__node.html", null ],
-          [ "graph::greater_than_node< T, SAFE_MATH >", "classgraph_1_1greater__than__node.html", null ],
-          [ "graph::isinf_node< T, SAFE_MATH >", "classgraph_1_1isinf__node.html", null ],
-          [ "graph::isnan_node< T, SAFE_MATH >", "classgraph_1_1isnan__node.html", null ],
-          [ "graph::less_than_equal_node< T, SAFE_MATH >", "classgraph_1_1less__than__equal__node.html", null ],
-          [ "graph::less_than_node< T, SAFE_MATH >", "classgraph_1_1less__than__node.html", null ],
-          [ "graph::modulo_node< T, SAFE_MATH >", "classgraph_1_1modulo__node.html", null ],
-          [ "graph::not_equal_node< T, SAFE_MATH >", "classgraph_1_1not__equal__node.html", null ],
-          [ "graph::not_node< T, SAFE_MATH >", "classgraph_1_1not__node.html", null ],
-          [ "graph::or_node< T, SAFE_MATH >", "classgraph_1_1or__node.html", null ]
-        ] ],
-        [ "graph::random_state_node< T, SAFE_MATH >", "classgraph_1_1random__state__node.html", null ],
-        [ "graph::straight_node< T, SAFE_MATH >", "classgraph_1_1straight__node.html", [
+          [ "graph::no_derivative< T, false, straight_node< T, false > >", "classgraph_1_1no__derivative.html", [
+            [ "graph::argument_node< T, SAFE_MATH >", "classgraph_1_1argument__node.html", null ],
+            [ "graph::isinf_node< T, SAFE_MATH >", "classgraph_1_1isinf__node.html", null ],
+            [ "graph::isnan_node< T, SAFE_MATH >", "classgraph_1_1isnan__node.html", null ],
+            [ "graph::not_node< T, SAFE_MATH >", "classgraph_1_1not__node.html", null ]
+          ] ],
           [ "graph::cosine_node< T, SAFE_MATH >", "classgraph_1_1cosine__node.html", null ],
           [ "graph::erf_node< T, SAFE_MATH >", "classgraph_1_1erf__node.html", null ],
           [ "graph::erfi_node< T, SAFE_MATH >", "classgraph_1_1erfi__node.html", null ],
@@ -109,8 +95,19 @@ var hierarchy =
           [ "graph::random_node< T, SAFE_MATH >", "classgraph_1_1random__node.html", null ],
           [ "graph::sine_node< T, SAFE_MATH >", "classgraph_1_1sine__node.html", null ],
           [ "graph::sqrt_node< T, SAFE_MATH >", "classgraph_1_1sqrt__node.html", null ]
-        ] ],
+        ] ]
+      ] ],
+      [ "graph::leaf_node< T, false >", "classgraph_1_1leaf__node.html", [
+        [ "graph::branch_node< T, SAFE_MATH >", "classgraph_1_1branch__node.html", null ],
+        [ "graph::constant_node< T, SAFE_MATH >", "classgraph_1_1constant__node.html", null ],
+        [ "graph::index_node< T, SAFE_MATH >", "classgraph_1_1index__node.html", null ],
+        [ "graph::n_branch_node< N, T, SAFE_MATH >", "classgraph_1_1n__branch__node.html", null ],
+        [ "graph::random_state_node< T, SAFE_MATH >", "classgraph_1_1random__state__node.html", null ],
+        [ "graph::straight_node< T, SAFE_MATH >", "classgraph_1_1straight__node.html", null ],
         [ "graph::variable_node< T, SAFE_MATH >", "classgraph_1_1variable__node.html", null ]
+      ] ],
+      [ "graph::leaf_node< T, SAFE_MATH >", "classgraph_1_1leaf__node.html", [
+        [ "graph::no_derivative< T, SAFE_MATH, BASE_NODE, N >", "classgraph_1_1no__derivative.html", null ]
       ] ],
       [ "graph::matrix_quantity< T, SAFE_MATH >", "classgraph_1_1matrix__quantity.html", null ],
       [ "graph::vector_quantity< T, SAFE_MATH >", "classgraph_1_1vector__quantity.html", null ]
@@ -118,8 +115,9 @@ var hierarchy =
     [ "std::false_type", null, [
       [ "graph::has_no_derivative< T >", "structgraph_1_1has__no__derivative.html", null ]
     ] ],
-    [ "jit::float_compare< T >", "classjit_1_1float__compare.html", null ],
-    [ "equilibrium::generic< T, SAFE_MATH >", "classequilibrium_1_1generic.html", [
+    [ "jit::float_compare&lt; T &gt;", "classjit_1_1float__compare.html", null ],
+    [ "equilibrium::generic&lt; T, SAFE_MATH &gt;", "classequilibrium_1_1generic.html", null ],
+    [ "equilibrium::generic&lt; T, false &gt;", "classequilibrium_1_1generic.html", [
       [ "equilibrium::efit< T, SAFE_MATH >", "classequilibrium_1_1efit.html", null ],
       [ "equilibrium::gaussian_density< T, SAFE_MATH >", "classequilibrium_1_1gaussian__density.html", null ],
       [ "equilibrium::no_magnetic_field< T, SAFE_MATH >", "classequilibrium_1_1no__magnetic__field.html", null ],
@@ -128,8 +126,7 @@ var hierarchy =
       [ "equilibrium::slab_field< T, SAFE_MATH >", "classequilibrium_1_1slab__field.html", null ],
       [ "equilibrium::vmec< T, SAFE_MATH >", "classequilibrium_1_1vmec.html", null ]
     ] ],
-    [ "equilibrium::generic< T, false >", "classequilibrium_1_1generic.html", null ],
-    [ "gold_data< T >", "classgold__data.html", null ],
+    [ "gold_data&lt; T &gt;", "classgold__data.html", null ],
     [ "graph_fortran::graph_add", "interfacegraph__fortran_1_1graph__add.html", null ],
     [ "graph_fortran::graph_add_converge_item", "interfacegraph__fortran_1_1graph__add__converge__item.html", null ],
     [ "graph_fortran::graph_add_item", "interfacegraph__fortran_1_1graph__add__item.html", null ],
@@ -177,40 +174,37 @@ var hierarchy =
     [ "graph_fortran::graph_sub", "interfacegraph__fortran_1_1graph__sub.html", null ],
     [ "graph_fortran::graph_variable", "interfacegraph__fortran_1_1graph__variable.html", null ],
     [ "graph_fortran::graph_wait", "interfacegraph__fortran_1_1graph__wait.html", null ],
-    [ "pic::ion< T >", "classpic_1_1ion.html", null ],
-    [ "workflow::item< T, SAFE_MATH >", "classworkflow_1_1item.html", [
+    [ "pic::ion&lt; T &gt;", "classpic_1_1ion.html", null ],
+    [ "workflow::item&lt; T, SAFE_MATH &gt;", "classworkflow_1_1item.html", null ],
+    [ "workflow::item&lt; T, false &gt;", "classworkflow_1_1item.html", [
       [ "workflow::callback_item< T, SAFE_MATH >", "classworkflow_1_1callback__item.html", null ],
       [ "workflow::copy_item< T, SAFE_MATH >", "classworkflow_1_1copy__item.html", null ],
       [ "workflow::loop_item< T, SAFE_MATH >", "classworkflow_1_1loop__item.html", null ],
-      [ "workflow::work_item< T, SAFE_MATH >", "classworkflow_1_1work__item.html", [
-        [ "workflow::converge_item< T, SAFE_MATH >", "classworkflow_1_1converge__item.html", null ]
-      ] ],
+      [ "workflow::work_item< T, SAFE_MATH >", "classworkflow_1_1work__item.html", null ],
       [ "workflow::zero_item< T, SAFE_MATH >", "classworkflow_1_1zero__item.html", null ]
     ] ],
-    [ "workflow::item< T, false >", "classworkflow_1_1item.html", null ],
-    [ "workflow::item< T, SAFE_MATH >", "classworkflow_1_1item.html", [
-      [ "workflow::work_item< T, false >", "classworkflow_1_1work__item.html", null ]
+    [ "workflow::item&lt; T, SAFE_MATH &gt;", "classworkflow_1_1item.html", [
+      [ "workflow::work_item< T, false >", "classworkflow_1_1work__item.html", [
+        [ "workflow::converge_item< T, SAFE_MATH >", "classworkflow_1_1converge__item.html", null ]
+      ] ]
     ] ],
-    [ "workflow::manager< T, SAFE_MATH >", "classworkflow_1_1manager.html", null ],
-    [ "workflow::manager< T, false >", "classworkflow_1_1manager.html", null ],
-    [ "workflow::manager< T, true >", "classworkflow_1_1manager.html", null ],
-    [ "workflow::manager< typename DISPERSION_FUNCTION::base, DISPERSION_FUNCTION::safe_math >", "classworkflow_1_1manager.html", null ],
+    [ "workflow::manager&lt; T, SAFE_MATH &gt;", "classworkflow_1_1manager.html", null ],
     [ "timing::measure_diagnostic", "classtiming_1_1measure__diagnostic.html", null ],
     [ "timing::measure_diagnostic_threaded", "classtiming_1_1measure__diagnostic__threaded.html", null ],
-    [ "pic::mesh< T >", "classpic_1_1mesh.html", null ],
-    [ "gpu::metal_context< SAFE_MATH >", "classgpu_1_1metal__context.html", null ],
-    [ "absorption::method< T, SAFE_MATH >", "classabsorption_1_1method.html", [
+    [ "pic::mesh&lt; T &gt;", "classpic_1_1mesh.html", null ],
+    [ "gpu::metal_context&lt; SAFE_MATH &gt;", "classgpu_1_1metal__context.html", null ],
+    [ "absorption::method&lt; T, SAFE_MATH &gt;", "classabsorption_1_1method.html", null ],
+    [ "absorption::method&lt; T, true &gt;", "classabsorption_1_1method.html", [
       [ "absorption::root_finder< T, SAFE_MATH >", "classabsorption_1_1root__finder.html", null ],
       [ "absorption::weak_damping< T, SAFE_MATH >", "classabsorption_1_1weak__damping.html", null ]
     ] ],
-    [ "absorption::method< T, true >", "classabsorption_1_1method.html", null ],
-    [ "graph::random_state_node< T, SAFE_MATH >::mt_state", "structgraph_1_1random__state__node_1_1mt__state.html", null ],
+    [ "graph::random_state_node&lt; T, SAFE_MATH &gt;::mt_state", "structgraph_1_1random__state__node_1_1mt__state.html", null ],
     [ "graph_fortran::objc_autoreleasepoolpop", "interfacegraph__fortran_1_1objc__autoreleasepoolpop.html", null ],
     [ "graph_fortran::objc_autoreleasepoolpush", "interfacegraph__fortran_1_1objc__autoreleasepoolpush.html", null ],
-    [ "pic::parameters< T >", "classpic_1_1parameters.html", null ],
+    [ "pic::parameters&lt; T &gt;", "classpic_1_1parameters.html", null ],
     [ "commandline::parser", "classcommandline_1_1parser.html", null ],
     [ "output::result_file", "classoutput_1_1result__file.html", null ],
-    [ "solver::solver_interface< DISPERSION_FUNCTION >", "classsolver_1_1solver__interface.html", [
+    [ "solver::solver_interface&lt; DISPERSION_FUNCTION &gt;", "classsolver_1_1solver__interface.html", [
       [ "solver::rk2< DISPERSION_FUNCTION >", "classsolver_1_1rk2.html", null ],
       [ "solver::rk4< DISPERSION_FUNCTION >", "classsolver_1_1rk4.html", [
         [ "solver::adaptive_rk4< DISPERSION_FUNCTION >", "classsolver_1_1adaptive__rk4.html", null ]
@@ -220,9 +214,9 @@ var hierarchy =
     [ "std::vector", null, [
       [ "backend::buffer< T >", "classbackend_1_1buffer.html", null ]
     ] ],
-    [ "dispersion::z_function< T, SAFE_MATH >", "classdispersion_1_1z__function.html", [
+    [ "dispersion::z_function&lt; T, SAFE_MATH &gt;", "classdispersion_1_1z__function.html", null ],
+    [ "dispersion::z_function&lt; T, false &gt;", "classdispersion_1_1z__function.html", [
       [ "dispersion::z_erfi< T, SAFE_MATH >", "classdispersion_1_1z__erfi.html", null ],
       [ "dispersion::z_power_series< T, SAFE_MATH >", "classdispersion_1_1z__power__series.html", null ]
-    ] ],
-    [ "dispersion::z_function< T, false >", "classdispersion_1_1z__function.html", null ]
+    ] ]
 ];

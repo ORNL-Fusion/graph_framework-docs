@@ -5,12 +5,7 @@ var graph__c__binding_8h =
     [ "START_GPU", "graph__c__binding_8h.html#ad8adc1545da096be4d3c3323b41f6d85", null ],
     [ "STRUCT_TAG", "graph__c__binding_8h.html#acc7562479385b14d7073c95b1cb03992", null ],
     [ "graph_node", "graph__c__binding_8h.html#a8e6fcd751f4c2482c8db8507457de11d", null ],
-    [ "graph_type", "graph__c__binding_8h.html#a577d8ca3257ce19c498bcbb1c859caf4", [
-      [ "FLOAT", "graph__c__binding_8h.html#a577d8ca3257ce19c498bcbb1c859caf4a9cf4a0866224b0bb4a7a895da27c9c4c", null ],
-      [ "DOUBLE", "graph__c__binding_8h.html#a577d8ca3257ce19c498bcbb1c859caf4a33465d1d419b1074fb259ef444609e92", null ],
-      [ "COMPLEX_FLOAT", "graph__c__binding_8h.html#a577d8ca3257ce19c498bcbb1c859caf4a08f311b866ff043d895efd364cc9f9bb", null ],
-      [ "COMPLEX_DOUBLE", "graph__c__binding_8h.html#a577d8ca3257ce19c498bcbb1c859caf4a49ac8a73140b424e274ab0d09e094a6a", null ]
-    ] ],
+    [ "graph_type", "graph__c__binding_8h.html#a577d8ca3257ce19c498bcbb1c859caf4", null ],
     [ "graph_add", "graph__c__binding_8h.html#a2c2aab9c274d73b4d620203b16c6b1af", null ],
     [ "graph_add_converge_item", "graph__c__binding_8h.html#aa6d0b3da71c2f2a7f04d55215b9294fe", null ],
     [ "graph_add_copy_item", "graph__c__binding_8h.html#a730d0e4ac813fc92bceade58cc85ca00", null ],

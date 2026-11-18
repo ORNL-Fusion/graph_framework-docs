@@ -1,4 +1,4 @@
 var searchData=
 [
-  ['new_20operations_20tutorial_0',['Adding New Operations Tutorial',['../new_operations_tutorial.html',1,'']]]
+  ['jax_0',['JAX',['../code_performance.html#code_performance_comparison_jaxx',1,'']]]
 ];

@@ -1,0 +1,27 @@
+var searchData=
+[
+  ['s_20method_0',['Newton&apos;s Method.',['../tutorial.html#tutorial_workflow_newton',1,'']]],
+  ['safe_20math_1',['Safe Math',['../general_concepts.html#general_concepts_safe_math',1,'']]],
+  ['sanitizer_20flags_2',['Sanitizer flags',['../build_system.html#build_system_sanitizer',1,'']]],
+  ['scaling_3',['Strong Scaling',['../code_performance.html#code_performance_scaling',1,'']]],
+  ['shooting_4',['Trouble Shooting.',['../build_system.html#build_system_trouble_shooting',1,'']]],
+  ['simple_5',['Simple',['../dispersion_function.html#dispersion_function_simple',1,'']]],
+  ['simplextic_6',['Split Simplextic',['../solvers.html#solvers_split_simplextic',1,'']]],
+  ['solvers_7',['Solvers',['../solvers.html',1,'']]],
+  ['solvers_8',['Developing new solvers',['../solvers.html#solvers_devel',1,'']]],
+  ['source_20code_9',['Source Code',['../kernel_optimization.html#kernel_optimization_source',1,'']]],
+  ['source_20codes_20for_20throughput_20benchmark_20comparison_10',['Source codes for throughput benchmark comparison',['../code_performance.html#code_performance_comparison_codes',1,'']]],
+  ['spline_20formatting_11',['Spline Formatting',['../equilibrium_models.html#equilibrium_splines',1,'']]],
+  ['splines_12',['Splines',['../equilibrium_models.html#equilibrium_splines_2D',1,'Bicubic Splines'],['../equilibrium_models.html#equilibrium_splines_1D',1,'Cubic Splines']]],
+  ['split_20simplextic_13',['Split Simplextic',['../solvers.html#solvers_split_simplextic',1,'']]],
+  ['start_20guide_14',['Quick Start Guide',['../md_README.html',1,'']]],
+  ['strong_20scaling_15',['Strong Scaling',['../code_performance.html#code_performance_scaling',1,'']]],
+  ['structure_16',['Code Structure',['../code_structure.html',1,'']]],
+  ['subclasses_17',['Node Subclasses',['../new_operations_tutorial.html#new_operations_tutorial_node_subclass',1,'']]],
+  ['supporting_20generalized_20coordinates_18',['Supporting generalized coordinates',['../dispersion_function.html#dispersion_function_devel_general',1,'']]],
+  ['system_19',['Build System',['../build_system.html',1,'']]],
+  ['system_20',['Generating the build system',['../build_system.html#build_system_gen',1,'']]],
+  ['system_20compiler_21',['Get the needed include flags from the system compiler.',['../get__includes_8py.html#autotoc_md10',1,'']]],
+  ['system_20options_22',['Build System Options',['../build_system.html#build_system_dev_options',1,'']]],
+  ['system_20options_23',['Build system Options',['../build_system.html#build_system_user_options',1,'']]]
+];
