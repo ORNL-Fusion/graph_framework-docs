@@ -989,15 +989,15 @@ $(function(){initNavTree('piecewise_8hpp_source.html','',''); });
 <div class="line"><a id="l01206" name="l01206"></a><span class="lineno"> 1206</span>                        stream &lt;&lt; <span class="stringliteral">&quot;        const &quot;</span></div>
 <div class="line"><a id="l01207" name="l01207"></a><span class="lineno"> 1207</span>                        &lt;&lt; <a class="code hl_function" href="namespacejit.html#a856b9bb9cf1d7cdd889911de16b8a6ff">jit::smallest_uint_type&lt;T&gt;</a> (this-&gt;<a class="code hl_function" href="classgraph_1_1piecewise__2D__node.html#a78e08232e44cc5ee90fe9b600cbaf528">get_num_columns</a>()*this-&gt;<a class="code hl_function" href="classgraph_1_1piecewise__2D__node.html#ab6944721f518600052214be26ad02021">get_num_rows</a>())</div>
 <div class="line"><a id="l01208" name="l01208"></a><span class="lineno"> 1208</span>                        &lt;&lt; <span class="stringliteral">&quot; &quot;</span> &lt;&lt; registers[temp.get()] &lt;&lt; <span class="stringliteral">&quot; = &quot;</span>;</div>
-<div class="line"><a id="l01209" name="l01209"></a><span class="lineno"> 1209</span>                        <a class="code hl_function" href="namespacegraph.html#a5e69e14b07378796d4c34217ce888ec3">compile_2D_index&lt;T&gt;</a> (stream, registers[x.get()], registers[y.get()],</div>
-<div class="line"><a id="l01210" name="l01210"></a><span class="lineno"> 1210</span>                                             this-&gt;get_num_columns());</div>
-<div class="line"><a id="l01211" name="l01211"></a><span class="lineno"> 1211</span>                        this-&gt;<a class="code hl_function" href="classgraph_1_1leaf__node.html#a6ca416b85368964396170309e32f73be">endline</a>(stream, usage);</div>
-<div class="line"><a id="l01212" name="l01212"></a><span class="lineno"> 1212</span><span class="preprocessor">#else</span></div>
-<div class="line"><a id="l01213" name="l01213"></a><span class="lineno"> 1213</span>                        std::ostringstream source_buffer;</div>
-<div class="line"><a id="l01214" name="l01214"></a><span class="lineno"> 1214</span>                        temp-&gt;compile(source_buffer,</div>
-<div class="line"><a id="l01215" name="l01215"></a><span class="lineno"> 1215</span>                                      registers,</div>
-<div class="line"><a id="l01216" name="l01216"></a><span class="lineno"> 1216</span>                                      thread_mem,</div>
-<div class="line"><a id="l01217" name="l01217"></a><span class="lineno"> 1217</span>                                      usage);</div>
+<div class="line"><a id="l01209" name="l01209"></a><span class="lineno"> 1209</span>                        <a class="code hl_function" href="namespacegraph.html#a5e69e14b07378796d4c34217ce888ec3">compile_2D_index&lt;T&gt;</a> (stream, registers[x.get()],</div>
+<div class="line"><a id="l01210" name="l01210"></a><span class="lineno"> 1210</span>                                             registers[y.get()],</div>
+<div class="line"><a id="l01211" name="l01211"></a><span class="lineno"> 1211</span>                                             this-&gt;get_num_columns());</div>
+<div class="line"><a id="l01212" name="l01212"></a><span class="lineno"> 1212</span>                        this-&gt;<a class="code hl_function" href="classgraph_1_1leaf__node.html#a6ca416b85368964396170309e32f73be">endline</a>(stream, usage);</div>
+<div class="line"><a id="l01213" name="l01213"></a><span class="lineno"> 1213</span><span class="preprocessor">#else</span></div>
+<div class="line"><a id="l01214" name="l01214"></a><span class="lineno"> 1214</span>                        std::ostringstream source_buffer;</div>
+<div class="line"><a id="l01215" name="l01215"></a><span class="lineno"> 1215</span>                        <a class="code hl_function" href="namespacegraph.html#a5e69e14b07378796d4c34217ce888ec3">compile_2D_index&lt;T&gt;</a> (source_buffer, registers[x.get()],</div>
+<div class="line"><a id="l01216" name="l01216"></a><span class="lineno"> 1216</span>                                             registers[y.get()],</div>
+<div class="line"><a id="l01217" name="l01217"></a><span class="lineno"> 1217</span>                                             this-&gt;get_num_columns());</div>
 <div class="line"><a id="l01218" name="l01218"></a><span class="lineno"> 1218</span>                        registers[temp.get()] = source_buffer.str();</div>
 <div class="line"><a id="l01219" name="l01219"></a><span class="lineno"> 1219</span><span class="preprocessor">#endif</span></div>
 <div class="line"><a id="l01220" name="l01220"></a><span class="lineno"> 1220</span><span class="preprocessor">#endif</span></div>
